@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8dc444f5-9e5d-4f07-a3e9-09e3d17a201d" name="Changes" comment="tokenaccess nodejs18 upgrade impact fix" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="b81b43ff29ce4b5a04df62ef613379a3c0612a3c" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1671518702" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="codefix16122023" />
+                    <option name="lastUsedInstant" value="1671517425" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IzQOy6jBVF4VsooXi1I2uX2Akr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "G:/My Drive/Python/Scraper/Lelongtips/sherlock-dms"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\r.a.ling\Documents\compare branch\sherlock-dms\resources\restAPI\DynamicSurvey\SurveyResult" />
+      <recent name="C:\Users\r.a.ling\Documents\compare branch\sherlock-dms\tests\restAPI\DynamicSurvey\SurveyResult" />
+      <recent name="C:\Users\r.a.ling\Documents\compare branch\sherlock-dms\tests\restAPI\TradeAsset\RabbitHole" />
+      <recent name="C:\Users\r.a.ling\Documents\compare branch\sherlock-dms\resources\restAPI\TradeAsset\RabbitHole" />
+      <recent name="C:\Users\r.a.ling\Documents\compare branch\sherlock-dms\tests\restAPI\TradeAsset\AssetActivity\AssetException" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\r.a.ling\Documents\compare branch\sherlock-dms\resources\restAPI\Common" />
+      <recent name="C:\Users\r.a.ling\Documents\compare branch\sherlock-dms\resources\restAPI\Merchandising\TradeProgramSetup\Objective" />
+      <recent name="C:\Users\r.a.ling\Documents\compare branch\sherlock-dms\tests\restAPI\Merchandising\TradeProgramSetup\TradeProgram" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8dc444f5-9e5d-4f07-a3e9-09e3d17a201d" name="Changes" comment="" />
+      <created>1671181903453</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671181903453</updated>
+    </task>
+    <task id="LOCAL-00001" summary="checkout branch for so, invoice fixing">
+      <created>1671182847910</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671182847910</updated>
+    </task>
+    <task id="LOCAL-00002" summary="- checkout branch for so, invoice fixing&#10;- fixed calling by xpath deprecated function&#10;- fix settings file text format error">
+      <created>1671183768321</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671183768321</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- fixed shipto not found error, url query changed">
+      <created>1671188669686</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671188669686</updated>
+    </task>
+    <task id="LOCAL-00004" summary="- changed product price api to call from metadata to dedicated endpoint&#10;- fixed data format for csv file&#10;- added rounding for attribute within payload&#10;- fixed keyword to point to correct module function&#10;- fix to instantiate variable&#10;- added update to check for duplicate product details">
+      <created>1671448187129</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671448187129</updated>
+    </task>
+    <task id="LOCAL-00005" summary="- fix product sector random assignment inconsistency">
+      <created>1671517340660</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671517340660</updated>
+    </task>
+    <task id="LOCAL-00006" summary="- fix product sector random assignment inconsistency">
+      <created>1671528144699</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671528144699</updated>
+    </task>
+    <task id="LOCAL-00007" summary="- fix cheque processing post on future date hardcode &#10;- impacted collection put to add parameter&#10;- credit note product add product assignment hqadm for teardown&#10;- debit note product add product assignment hqadm for teardown&#10;- fix product sector request method&#10;- fix product post randomize selling ind&#10;- fix sales invoice get request url&#10;- sales invoice post add product assignment hqadm for teardown&#10;- sales invoice put add product assignment hqadm for teardown&#10;- sales return get add product assignment hqadm for teardown&#10;- sales return post add product assignment hqadm for teardown&#10;- sales return put add product assignment hqadm for teardown">
+      <created>1673433021239</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673433021239</updated>
+    </task>
+    <task id="LOCAL-00008" summary="- fix worker performance issue bypass by hard waiting 1 sec between next validations, max 20 seconds">
+      <created>1673492918128</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673492918128</updated>
+    </task>
+    <task id="LOCAL-00009" summary="-added fix for master data management(product, product uom, product sector, price group, supplier, distributor, distributor ship to, distributor product sector, distributor transaction number, customer, customer shipto, customer option, customer approval, customer transfer)&#10;-added fix for cust trx(collection, cheque processing, route settlement, route settlement delivery rep)">
+      <created>1675941780571</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675941780571</updated>
+    </task>
+    <task id="LOCAL-00010" summary="-fix for cheque collection to use the created data">
+      <created>1675994949826</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675994949826</updated>
+    </task>
+    <task id="LOCAL-00011" summary="- fix and added test case/api for masterdatamanagement/routemgmt module">
+      <created>1676430021777</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676430021777</updated>
+    </task>
+    <task id="LOCAL-00012" summary="-added test case for inventory, stock adjustment, warehouse transfer, stock receipt">
+      <created>1676893616607</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676893616607</updated>
+    </task>
+    <task id="LOCAL-00013" summary="-added test case for warehouse inventory, binget, bin transfer">
+      <created>1677035892995</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677035892996</updated>
+    </task>
+    <task id="LOCAL-00014" summary="-added test case for warehouse inventory, binget, bin transfer">
+      <created>1677149254997</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1677149254997</updated>
+    </task>
+    <task id="LOCAL-00015" summary="-added test case for van inventory module, performance management">
+      <created>1677755273472</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1677755273472</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added testcase and fix for module merchandising">
+      <created>1678258891539</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1678258891539</updated>
+    </task>
+    <task id="LOCAL-00017" summary="added testcase and fix for module merchandising">
+      <created>1679644964687</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1679644964687</updated>
+    </task>
+    <task id="LOCAL-00018" summary="added test case for trade asset module">
+      <created>1680506030749</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1680506030749</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added test case for trade asset module">
+      <created>1680590508777</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1680590508777</updated>
+    </task>
+    <task id="LOCAL-00020" summary="modify tokenaccess to directly call api for token instead of spawning web drivers &#10;-to improve execution time and prevent crashes for multi threading">
+      <created>1681204027218</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1681204027218</updated>
+    </task>
+    <task id="LOCAL-00021" summary="tokenaccess dependent file">
+      <created>1681205695897</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1681205695897</updated>
+    </task>
+    <task id="LOCAL-00022" summary="tokenaccess nodejs18 upgrade impact fix">
+      <created>1682591540960</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1682591540960</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/testcasefix" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="codefix16122023" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="checkout branch for so, invoice fixing" />
+    <MESSAGE value="- checkout branch for so, invoice fixing&#10;- fixed calling by xpath deprecated function&#10;- fix settings file text format error" />
+    <MESSAGE value="- fixed shipto not found error, url query changed" />
+    <MESSAGE value="- changed product price api to call from metadata to dedicated endpoint&#10;- fixed data format for csv file&#10;- added rounding for attribute within payload&#10;- fixed keyword to point to correct module function&#10;- fix to instantiate variable&#10;- added update to check for duplicate product details" />
+    <MESSAGE value="- fix product sector random assignment inconsistency" />
+    <MESSAGE value="- fix cheque processing post on future date hardcode &#10;- impacted collection put to add parameter&#10;- credit note product add product assignment hqadm for teardown&#10;- debit note product add product assignment hqadm for teardown&#10;- fix product sector request method&#10;- fix product post randomize selling ind&#10;- fix sales invoice get request url&#10;- sales invoice post add product assignment hqadm for teardown&#10;- sales invoice put add product assignment hqadm for teardown&#10;- sales return get add product assignment hqadm for teardown&#10;- sales return post add product assignment hqadm for teardown&#10;- sales return put add product assignment hqadm for teardown" />
+    <MESSAGE value="- fix worker performance issue bypass by hard waiting 1 sec between next validations, max 20 seconds" />
+    <MESSAGE value="-added fix for master data management(product, product uom, product sector, price group, supplier, distributor, distributor ship to, distributor product sector, distributor transaction number, customer, customer shipto, customer option, customer approval, customer transfer)&#10;-added fix for cust trx(collection, cheque processing, route settlement, route settlement delivery rep)" />
+    <MESSAGE value="-fix for cheque collection to use the created data" />
+    <MESSAGE value="- fix and added test case/api for masterdatamanagement/routemgmt module" />
+    <MESSAGE value="-added test case for inventory, stock adjustment, warehouse transfer, stock receipt" />
+    <MESSAGE value="-added test case for warehouse inventory, binget, bin transfer" />
+    <MESSAGE value="-added test case for van inventory module, performance management" />
+    <MESSAGE value="added testcase and fix for module merchandising" />
+    <MESSAGE value="added test case for trade asset module" />
+    <MESSAGE value="modify tokenaccess to directly call api for token instead of spawning web drivers &#10;-to improve execution time and prevent crashes for multi threading" />
+    <MESSAGE value="tokenaccess dependent file" />
+    <MESSAGE value="tokenaccess nodejs18 upgrade impact fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="tokenaccess nodejs18 upgrade impact fix" />
+  </component>
+</project>

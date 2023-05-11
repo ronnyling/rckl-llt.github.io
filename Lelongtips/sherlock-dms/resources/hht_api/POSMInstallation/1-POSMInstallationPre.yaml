@@ -1,0 +1,24 @@
+Output:
+  1_POSMRequestPost:
+    ID: 0C08F827:2BE58A11-37A2-D7F8-8734-FBC8589CD22D
+  2_POSMRequestPost:
+    ID: 0B6B3128:79D82995-0B18-75A6-5D45-56EA61912E62
+PrerequisiteByPost:
+  1_POSMRequestPost:
+    module_location: resources.hht_api.POSMRequest.POSMRequestPost
+    test_variable_name: RequestDetails
+    method: user_creates_posm_request_with
+    request_type: installation
+    txn_status: C
+  2_POSMRequestPost:
+    module_location: resources.hht_api.POSMRequest.POSMRequestPost
+    test_variable_name: RequestDetails
+    method: user_creates_posm_request_with
+    request_type: removal
+    txn_status: C
+PrerequisiteByGet:
+  1_DistributorGet:
+    module_location: resources.restAPI.MasterDataMgmt.Distributor.DistributorGet
+    method: user_gets_distributor_by_using_code
+    required_parameters:
+    - DistPotato01

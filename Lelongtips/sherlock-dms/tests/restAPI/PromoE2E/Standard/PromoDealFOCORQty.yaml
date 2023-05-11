@@ -1,0 +1,48 @@
+#Create Promotion Promo & Deal with Discount by Free Product (OR condition) - Quantity and apply on Per Tier
+Promo 1:
+  Setup:
+    Type: PromoNDeal
+    Buy Type: Quantity
+    BUY UOM: EA
+    Discount Method: FreeProduct
+    FOC UOM: EA
+    Scheme:
+      Forevery: False
+      Prorata: True
+      MRP: False
+      QPS: False
+      Range: False
+      Combi: False
+      POSM Assignment: False
+      FOC Recurring: False
+    Apply On: PerTier
+    Apply Promo: Manual
+    FOC Condition: OrCond
+    Tier 1:
+      Total Buy: 5
+      Forevery: 0
+      Free Quantiy: 3
+      Free Product:
+        Product 1: AdePP1
+        Product 2: AdePP2
+    Tier 2:
+      Total Buy: 10
+      Forevery: 0
+      Free Quantiy: 5
+      Free Product:
+        Product 1: AdePP1
+        Product 2: AdePP2
+    Prod Assignment Type: Hierarchy
+    Product 1: A1002
+    Product 2: A1003
+  Sales Order:
+    Distributor: DistEgg
+    Customer: CXTESTTAX
+    Route: Rchoon
+    Warehouse: CCCC
+    Product 1:
+      Code: A1002
+      UOM:
+        EA: 6
+        CTN: 0
+        CS: 0

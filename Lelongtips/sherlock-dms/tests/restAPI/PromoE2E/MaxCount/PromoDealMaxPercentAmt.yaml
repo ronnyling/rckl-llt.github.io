@@ -1,0 +1,41 @@
+#Create Promotion Promo & Deal with Discount by Percentage - Amount with Max Count and apply on Per Tier
+Promo 1:
+  Setup:
+    Type: PromoNDeal
+    Buy Type: Amount
+    Discount Method: DiscountByPerc
+    Scheme:
+      Forevery: False
+      Max Flag: True
+      Max Count: 4
+      Prorata: True
+      MRP: False
+      QPS: False
+      Range: False
+      Combi: False
+      POSM Assignment: False
+      FOC Recurring: False
+    Apply On: PerTier
+    Apply Promo: Manual
+    Tier 1:
+      Total Buy: 70
+      Forevery: 0
+      Percentage: 3
+    Tier 2:
+      Total Buy: 100
+      Forevery: 0
+      Percentage: 5
+    Prod Assignment Type: Hierarchy
+    Product 1: A1002
+    Product 2: A1003
+  Sales Order:
+    Distributor: DistEgg
+    Customer: CXTESTTAX
+    Route: Rchoon
+    Warehouse: CCCC
+    Product 1:
+      Code: A1002
+      UOM:
+        EA: 2
+        CTN: 0
+        CS: 0

@@ -1,0 +1,196 @@
+#Create Promotion Promo & Deal with Discount by Free Product (AND condition) - Quantity and apply on Per Tier
+
+Promo 1:
+  Output:
+    API_RESULT: 4.0
+    PYTHON_RESULT: 4.0
+  Setup:
+    Type: PromoNDeal
+    Buy Type: Quantity
+    BUY UOM: EA
+    Discount Method: FreeProduct
+    FOC UOM: EA
+    Scheme:
+      Forevery: False
+      Prorata: False
+      MRP: False
+      QPS: False
+      Range: False
+      Combi: False
+      POSM Assignment: False
+      FOC Recurring: False
+    Apply On: PerTier
+    Apply Promo: Manual
+    FOC Condition: AndCond
+    Tier 1:
+      Total Buy: 10
+      Forevery: 0
+      Free Product:
+        Product 1:
+          Product: A1002
+          Free Quantiy: 1
+          Free UOM: CS
+          Cost Price: 0
+        Product 2:
+          Product: A1003
+          Free Quantiy: 2
+          Free UOM: EA
+          Cost Price: 5
+    Tier 2:
+      Total Buy: 20
+      Forevery: 0
+      Free Product:
+        Product 1:
+          Product: A1002
+          Free Quantiy: 2
+          Free UOM: CS
+          Cost Price: 0
+        Product 2:
+          Product: A1003
+          Free Quantiy: 3
+          Free UOM: EA
+          Cost Price: 5
+    Prod Assignment Type: Hierarchy
+    Product 1: A1002
+    Product 2: A1003
+  Sales Order:
+    Distributor: DistEgg
+    Customer: CXTESTTAX
+    Route: Rchoon
+    Warehouse: whtt
+    Product 1:
+      Code: A1002
+      UOM:
+        EA: 20
+        CTN: 0
+        CS: 0
+
+Promo 2:
+  Output:
+    API_RESULT: 4.0
+    PYTHON_RESULT: 4.0
+  Setup:
+    Type: PromoNDeal
+    Buy Type: Quantity
+    BUY UOM: EA
+    Discount Method: FreeProduct
+    FOC UOM: EA
+    Scheme:
+      Forevery: False
+      Prorata: True
+      MRP: False
+      QPS: False
+      Range: False
+      Combi: False
+      POSM Assignment: False
+      FOC Recurring: False
+    Apply On: PerTier
+    Apply Promo: Manual
+    FOC Condition: AndCond
+    Tier 1:
+      Total Buy: 20
+      Forevery: 0
+      Free Product:
+        Product 1:
+          Product: A1002
+          Free Quantiy: 1
+          Free UOM: CS
+          Cost Price: 0
+        Product 2:
+          Product: A1003
+          Free Quantiy: 2
+          Free UOM: EA
+          Cost Price: 5
+    Tier 2:
+      Total Buy: 40
+      Forevery: 0
+      Free Product:
+        Product 1:
+          Product: A1002
+          Free Quantiy: 2
+          Free UOM: CS
+          Cost Price: 0
+        Product 2:
+          Product: A1003
+          Free Quantiy: 3
+          Free UOM: EA
+          Cost Price: 5
+    Prod Assignment Type: Hierarchy
+    Product 1: A1002
+    Product 2: A1003
+  Sales Order:
+    Distributor: DistEgg
+    Customer: CXTESTTAX
+    Route: Rchoon
+    Warehouse: whtt
+    Product 1:
+      Code: A1002
+      UOM:
+        EA: 30
+        CTN: 0
+        CS: 0
+
+Promo 3:
+  Output:
+    API_RESULT: 4.0
+    PYTHON_RESULT: 4.0
+  Setup:
+    Type: PromoNDeal
+    Buy Type: Quantity
+    BUY UOM: EA
+    Discount Method: FreeProduct
+    FOC UOM: EA
+    Scheme:
+      Forevery: True
+      Prorata: False
+      MRP: False
+      QPS: False
+      Range: False
+      Combi: False
+      POSM Assignment: False
+      FOC Recurring: False
+    Apply On: PerTier
+    Apply Promo: Manual
+    FOC Condition: AndCond
+    Tier 1:
+      Total Buy: 20
+      Forevery: 5
+      Free Product:
+        Product 1:
+          Product: A1002
+          Free Quantiy: 1
+          Free UOM: CS
+          Cost Price: 0
+        Product 2:
+          Product: A1003
+          Free Quantiy: 2
+          Free UOM: EA
+          Cost Price: 5
+    Tier 2:
+      Total Buy: 40
+      Forevery: 5
+      Free Product:
+        Product 1:
+          Product: A1002
+          Free Quantiy: 2
+          Free UOM: CS
+          Cost Price: 0
+        Product 2:
+          Product: A1003
+          Free Quantiy: 3
+          Free UOM: EA
+          Cost Price: 5
+    Prod Assignment Type: Hierarchy
+    Product 1: A1002
+    Product 2: A1003
+  Sales Order:
+    Distributor: DistEgg
+    Customer: CXTESTTAX
+    Route: Rchoon
+    Warehouse: whtt
+    Product 1:
+      Code: A1002
+      UOM:
+        EA: 23
+        CTN: 0
+        CS: 0

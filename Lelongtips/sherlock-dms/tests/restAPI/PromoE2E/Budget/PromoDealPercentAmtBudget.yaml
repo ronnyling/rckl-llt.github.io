@@ -1,0 +1,40 @@
+#Create Promotion Promo & Deal with Discount by Percentage - Amount with budget
+Promo 1:
+  Output:
+    API_RESULT: 4.0
+    PYTHON_RESULT: 4.0
+  Setup:
+    Type: PromoNDeal
+    Buy Type: Amount
+    Discount Method: DiscountByPerc
+    Budget: 100
+    Scheme:
+      Forevery: true
+      Prorata: false
+      MRP: false
+      QPS: false
+      Range: false
+      Combi: false
+      POSM Assignment: false
+      FOC Recurring: False
+    Apply On: PerTier
+    Apply Promo: Manual
+    Tier 1:
+      Total Buy: 200
+      Forevery: 100
+      Percentage: 2
+    Tier 2:
+      Total Buy: 400
+      Forevery: 200
+      Percentage: 4
+    Prod Assignment Type: Hierarchy
+    Product 1: CNPD002
+  Sales Order:
+    Distributor: DistEgg
+    Customer: CXTESTTAX
+    Route: Rchoon
+    Warehouse: CCCC
+    Product 1:
+      Code: CNPD002
+      UOM:
+        EA: 12

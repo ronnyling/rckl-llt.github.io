@@ -1,0 +1,193 @@
+Promo 1:
+  Output:
+    API_RESULT: 10.0
+    PYTHON_RESULT: 10.0
+  Setup:
+    Type: PromoNDeal
+    Buy Type: Amount
+    Discount Method: DiscountByValue
+    Scheme:
+      Forevery: false
+      Prorata: false
+      MRP: false
+      QPS: false
+      Range: false
+      Combi: false
+      POSM Assignment: false
+      FOC Recurring: False
+    Apply On: PerTier
+    Apply Promo: Manual
+    Tier 1:
+      Total Buy: 1000
+      Discount: 10
+      Forevery: 0
+    Tier 2:
+      Total Buy: 2000
+      Discount: 30
+      Forevery: 0
+    Prod Assignment Type: Hierarchy
+    Product 1: CNPD002
+  Sales Order:
+    Distributor: DistEgg
+    Customer: CXTESTTAX
+    Route: Rchoon
+    Warehouse: whtt
+    Product 1:
+      Code: CNPD002
+      UOM:
+        EA: 75
+Promo 2:
+  Output:
+    API_RESULT: 16.5
+    PYTHON_RESULT: 16.5
+  Setup:
+    Type: PromoNDeal
+    Buy Type: Amount
+    Discount Method: DiscountByValue
+    Scheme:
+      Forevery: false
+      Prorata: true
+      MRP: false
+      QPS: false
+      Range: false
+      Combi: false
+      POSM Assignment: false
+      FOC Recurring: False
+    Apply On: PerTier
+    Apply Promo: Manual
+    Tier 1:
+      Total Buy: 1000
+      Discount: 10
+      Forevery: 0
+    Tier 2:
+      Total Buy: 2000
+      Discount: 30
+      Forevery: 0
+    Prod Assignment Type: Hierarchy
+    Product 1: CNPD002
+  Sales Order:
+    Distributor: DistEgg
+    Customer: CXTESTTAX
+    Route: Rchoon
+    Warehouse: whtt
+    Product 1:
+      Code: CNPD002
+      UOM:
+        EA: 75
+Promo 3:
+  Output:
+    API_RESULT: 6.0
+    PYTHON_RESULT: 6.0
+  Setup:
+    Type: PromoNDeal
+    Buy Type: Quantity
+    BUY UOM: EA
+    Discount Method: DiscountByValue
+    Scheme:
+      Forevery: true
+      Prorata: false
+      MRP: false
+      QPS: false
+      Range: false
+      Combi: false
+      POSM Assignment: false
+      FOC Recurring: False
+    Apply On: PerUOM
+    Apply Promo: Manual
+    Tier 1:
+      Total Buy: 20
+      Discount: 0.3
+      Forevery: 2
+    Tier 2:
+      Total Buy: 60
+      Discount: 0.6
+      Forevery: 6
+    Prod Assignment Type: Hierarchy
+    Product 1: CNPD002
+  Sales Order:
+    Distributor: DistEgg
+    Customer: CXTESTTAX
+    Route: Rchoon
+    Warehouse: whtt
+    Product 1:
+      Code: CNPD002
+      UOM:
+        EA: 21
+Promo 4:
+  Output:
+    API_RESULT: 6.0
+    PYTHON_RESULT: 6.0
+  Setup:
+    Type: PromoNDeal
+    Buy Type: Quantity
+    BUY UOM: EA
+    Discount Method: DiscountByValue
+    Scheme:
+      Forevery: false
+      Prorata: false
+      MRP: false
+      QPS: false
+      Range: false
+      Combi: false
+      POSM Assignment: false
+      FOC Recurring: False
+    Apply On: PerUOM
+    Apply Promo: Manual
+    Tier 1:
+      Total Buy: 20
+      Discount: 0.3
+      Forevery: 0
+    Tier 2:
+      Total Buy: 60
+      Discount: 0.6
+      Forevery: 0
+    Prod Assignment Type: Hierarchy
+    Product 1: CNPD002
+  Sales Order:
+    Distributor: DistEgg
+    Customer: CXTESTTAX
+    Route: Rchoon
+    Warehouse: whtt
+    Product 1:
+      Code: CNPD002
+      UOM:
+        EA: 60
+Promo 5:
+  Output:
+    API_RESULT: 18.0
+    PYTHON_RESULT: 18.0
+  Setup:
+    Type: PromoNDeal
+    Buy Type: Quantity
+    BUY UOM: EA
+    Discount Method: DiscountByValue
+    Scheme:
+      Forevery: false
+      Prorata: true
+      MRP: false
+      QPS: false
+      Range: false
+      Combi: false
+      POSM Assignment: false
+      FOC Recurring: False
+    Apply On: PerUOM
+    Apply Promo: Manual
+    Tier 1:
+      Total Buy: 20
+      Discount: 0.3
+      Forevery: 0
+    Tier 2:
+      Total Buy: 60
+      Discount: 0.6
+      Forevery: 0
+    Prod Assignment Type: Hierarchy
+    Product 1: CNPD002
+  Sales Order:
+    Distributor: DistEgg
+    Customer: CXTESTTAX
+    Route: Rchoon
+    Warehouse: whtt
+    Product 1:
+      Code: CNPD002
+      UOM:
+        EA: 60

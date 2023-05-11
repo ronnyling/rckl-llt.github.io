@@ -1,0 +1,5 @@
+#!groovy
+@Library('apiRegressions@feature/NRSZUANQ-16566') _
+apiRegressions.call{
+  	notificationID = 'devops_rep@accenture.com,qa_rep@accenture.com'
+}

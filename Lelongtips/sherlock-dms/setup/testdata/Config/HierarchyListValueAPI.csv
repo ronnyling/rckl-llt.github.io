@@ -1,0 +1,2 @@
+Testcase,Documentation,Value-ItemCode,Value-ItemDescription,ParentLevel,HierarchyStructureList,Expected_Status_Code
+HQ Admin,HQ user create new node value for General Product Hierarchy at Brand level,,new item,Channel,General Customer Hierarchy,200

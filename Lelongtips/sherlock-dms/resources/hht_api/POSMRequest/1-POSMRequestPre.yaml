@@ -1,0 +1,8 @@
+Output:
+PrerequisiteByPost:
+PrerequisiteByGet:
+  1_DistributorGet:
+    module_location: resources.restAPI.MasterDataMgmt.Distributor.DistributorGet
+    method: user_gets_distributor_by_using_code
+    required_parameters:
+    - DistPotato01

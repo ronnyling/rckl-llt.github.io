@@ -1,0 +1,18 @@
+from resources.restAPI import PROTOCOL, APP_URL
+from resources.restAPI.Common import APIMethod
+from robot.libraries.BuiltIn import BuiltIn
+
+END_POINT_URL = PROTOCOL + "setting" + APP_URL
+
+
+class VanDelete(object):
+    """ Functions to delete van record """
+
+    def user_deletes_van_with_created_data(self):
+        """ Function to delete van by using given id """
+        res_bd_van_id = BuiltIn().get_variable_value("${res_bd_van_id}")
+        distributor_id = BuiltIn().get_variable_value("${distributor_id}")
+        url = "{0}distributors/{1}/setting-van/{2}".format(END_POINT_URL, distributor_id, res_bd_van_id)
+        common = APIMethod.APIMethod()
+        response = common.trigger_api_request("DELETE", url, "")
+        BuiltIn().set_test_variable("${status_code}", response.status_code)
