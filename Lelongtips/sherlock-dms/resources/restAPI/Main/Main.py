@@ -9,7 +9,8 @@ import git
 import gmaps
 import requests
 from bs4 import BeautifulSoup
-from folium import folium
+# from folium import folium
+import folium
 from robot.api.deco import keyword
 from robot.libraries.BuiltIn import BuiltIn
 from resources.restAPI import PROTOCOL, APP_URL, COMMON_KEY, LLT_URL, LLT_TOKEN
@@ -42,7 +43,33 @@ class Main(object):
             self.save_draft(draft_content)
 
     def map_gen(self):
+        hi = 0
         m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10)
+        for i in range(10):
+            hi = hi + 1
+            html = f"""
+                <h1> Kingdom no {hi}</h1>
+                <p>Where should we makan next</p>
+                <ul>
+                    <li>Food 1</li>
+                    <li>Food 2</li>
+                </ul>
+                </p>
+                <p>And that's a <a href="https://www.python-graph-gallery.com">link</a></p>
+                """
+            iframe = folium.IFrame(html=html, width=200, height=200)
+            # folium.folium.Element.render()
+            popup = folium.Popup(iframe, max_width=2650)
+            folium.Marker(
+                location=(3.064119 + hi, 101.669488 ),
+                popup=popup,
+                icon=folium.DivIcon(html=f"""
+                <div><svg>
+                    <circle cx="50" cy="50" r="40" fill="#69b3a2" opacity=".4"/>
+                    <rect x="35", y="35" width="30" height="30", fill="red", opacity=".3" 
+                </svg></div>""")
+                # popup="hehe" + str(hi),
+            ).add_to(m)
         date_now = str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f"))
         date_file = re.sub(r'[^\w]', '', date_now)
         m.save(f"../../docs/index.html")

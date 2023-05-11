@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230511 17:57:18.116" rpa="false" schemaversion="3">
+<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230511 18:21:30.905" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\tests\restAPI\Main\Main.robot">
 <test id="s1-t1" name="1 - Executes Main flow" line="6">
 <kw name="When user runs main flow" library="Main">
-<msg timestamp="20230511 17:56:55.084" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20230511 17:56:55.446" level="DEBUG">Popen(['git', 'cat-file', '--batch-check'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
-<msg timestamp="20230511 17:56:56.904" level="DEBUG">Popen(['git', 'cat-file', '--batch'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
-<msg timestamp="20230511 17:56:58.237" level="DEBUG">Popen(['git', 'push', '--porcelain', '--', 'origin'], cwd=G:\My Drive\Python\Scraper, universal_newlines=True, shell=None, istream=None)</msg>
-<msg timestamp="20230511 17:57:17.482" level="INFO">hi</msg>
-<msg timestamp="20230511 17:57:17.482" level="FAIL">hehe</msg>
-<msg timestamp="20230511 17:57:17.506" level="DEBUG">Traceback (most recent call last):
-  File "G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py", line 30, in user_runs_main_flow
-    raise Exception("hehe")
-Exception: hehe</msg>
-<status status="FAIL" starttime="20230511 17:56:55.083" endtime="20230511 17:57:17.506"/>
+<msg timestamp="20230511 18:21:30.398" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230511 18:21:30.403" level="FAIL">AttributeError: module 'folium.folium' has no attribute 'element'</msg>
+<msg timestamp="20230511 18:21:30.427" level="DEBUG">Traceback (most recent call last):
+  File "G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py", line 28, in user_runs_main_flow
+    self.map_gen()
+  File "G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py", line 59, in map_gen
+    iframe = folium.element.IFrame(html=html, width=200, height=200)
+AttributeError: module 'folium.folium' has no attribute 'element'</msg>
+<status status="FAIL" starttime="20230511 18:21:30.396" endtime="20230511 18:21:30.427"/>
 </kw>
 <doc>Executes main flow</doc>
 <tag>flow</tag>
-<status status="FAIL" starttime="20230511 17:56:55.081" endtime="20230511 17:57:17.507">hehe</status>
+<status status="FAIL" starttime="20230511 18:21:30.395" endtime="20230511 18:21:30.428">AttributeError: module 'folium.folium' has no attribute 'element'</status>
 </test>
 <doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
-<status status="FAIL" starttime="20230511 17:56:46.596" endtime="20230511 17:57:17.510"/>
+<status status="FAIL" starttime="20230511 18:21:25.038" endtime="20230511 18:21:30.431"/>
 </suite>
 <statistics>
 <total>
@@ -34,6 +32,6 @@ Exception: hehe</msg>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230511 17:56:47.958" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
+<msg timestamp="20230511 18:21:25.693" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
 </errors>
 </robot>
