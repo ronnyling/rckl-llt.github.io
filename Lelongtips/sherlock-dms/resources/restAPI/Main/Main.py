@@ -1,11 +1,15 @@
 import math
+import os
 import secrets
 import re
 import time
+from datetime import datetime
 
+import git
 import gmaps
 import requests
 from bs4 import BeautifulSoup
+from folium import folium
 from robot.api.deco import keyword
 from robot.libraries.BuiltIn import BuiltIn
 from resources.restAPI import PROTOCOL, APP_URL, COMMON_KEY, LLT_URL, LLT_TOKEN
@@ -20,6 +24,10 @@ class Main(object):
     @keyword("user runs main flow")
     def user_runs_main_flow(self):
         common = APIMethod.APIMethod()
+
+        self.map_gen()
+        self.git_controls()
+        raise Exception("hehe")
         response = common.trigger_api_request("GET", MAIN_URL + str(1), "")
         draft_content = []
         if response.status_code == 200:
@@ -32,6 +40,23 @@ class Main(object):
             raise Exception("Initial load failed")
         if draft_content:
             self.save_draft(draft_content)
+
+    def map_gen(self):
+        m = folium.Map(location=(3.064119, 101.669488), tiles="cartodb positron")
+        date_now = str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f"))
+        date_file = re.sub(r'[^\w]', '', date_now)
+        m.save(f"LLT_results/LLT_" + date_file + ".html")
+
+    def git_controls(self):
+        save_folder = os.path.abspath(os.path.join(os.getcwd(), os.path.pardir))
+        repo = git.Repo(save_folder, search_parent_directories=True)  # ex. "/User/some_user/some_dir"
+        origin = repo.remote("origin")
+        assert origin.exists()
+        origin.fetch()
+        repo.index.commit("Update map html")
+        repo.git.push("--set-upstream", origin, repo.head.ref)
+
+        print("hi")
 
     def save_draft(self, draft_content):
         common = APIMethod.APIMethod()
