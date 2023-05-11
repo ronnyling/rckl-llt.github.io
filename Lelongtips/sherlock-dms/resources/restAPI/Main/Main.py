@@ -42,7 +42,7 @@ class Main(object):
             self.save_draft(draft_content)
 
     def map_gen(self):
-        m = folium.Map(location=(3.064119, 101.669488), tiles="cartodb positron")
+        m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10)
         date_now = str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f"))
         date_file = re.sub(r'[^\w]', '', date_now)
         m.save(f"../../docs/index.html")
@@ -51,11 +51,10 @@ class Main(object):
     def git_controls(self):
         save_folder = os.path.abspath(os.path.join(os.getcwd(), os.path.pardir))
         repo = git.Repo(save_folder, search_parent_directories=True)  # ex. "/User/some_user/some_dir"
-        origin = repo.remote("origin")
-        assert origin.exists()
-        origin.fetch()
+        repo.git.add(update=True)
         repo.index.commit("Update map html")
-        repo.git.push("--set-upstream", origin, repo.head.ref)
+        origin = repo.remote(name='origin')
+        origin.push()
 
         print("hi")
 
