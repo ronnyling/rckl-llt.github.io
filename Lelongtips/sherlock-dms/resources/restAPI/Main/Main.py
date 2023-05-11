@@ -45,7 +45,8 @@ class Main(object):
         m = folium.Map(location=(3.064119, 101.669488), tiles="cartodb positron")
         date_now = str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f"))
         date_file = re.sub(r'[^\w]', '', date_now)
-        m.save(f"../docs/LLT_" + date_file + ".html")
+        m.save(f"../../docs/index.html")
+        # m.save(f"../../docs/LLT_" + date_file + ".html")
 
     def git_controls(self):
         save_folder = os.path.abspath(os.path.join(os.getcwd(), os.path.pardir))
