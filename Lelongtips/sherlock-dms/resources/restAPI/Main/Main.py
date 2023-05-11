@@ -13,7 +13,7 @@ from folium import folium
 from robot.api.deco import keyword
 from robot.libraries.BuiltIn import BuiltIn
 from resources.restAPI import PROTOCOL, APP_URL, COMMON_KEY, LLT_URL, LLT_TOKEN
-from resources.restAPI.Common import APIMethod
+# from resources.restAPI.Common import APIMethod
 
 MAIN_URL = PROTOCOL + LLT_URL
 
@@ -23,7 +23,7 @@ class Main(object):
 
     @keyword("user runs main flow")
     def user_runs_main_flow(self):
-        common = APIMethod.APIMethod()
+        # common = APIMethod.APIMethod()
 
         self.map_gen()
         self.git_controls()
@@ -59,7 +59,7 @@ class Main(object):
         print("hi")
 
     def save_draft(self, draft_content):
-        common = APIMethod.APIMethod()
+        # common = APIMethod.APIMethod()
         url = "https://api.medium.com/v1"
         header = {
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
@@ -127,11 +127,14 @@ class Main(object):
         fig
 
     def get_pages(self, page_no_upper):
-        common = APIMethod.APIMethod()
+        # common = APIMethod.APIMethod()
         k = 0
         draft_content = []
         for i in range(1, int(page_no_upper)+1):
-            response = common.trigger_api_request("GET", MAIN_URL + str(i), "")
+            response = requests.get(
+                url=MAIN_URL + str(i)
+            )
+            # response = common.trigger_api_request("GET", MAIN_URL + str(i), "")
             body_result = response.text
             content_list = self.get_contents(body_result)
             draft_content.extend(content_list)
