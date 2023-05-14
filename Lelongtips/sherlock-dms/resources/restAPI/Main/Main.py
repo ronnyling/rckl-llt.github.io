@@ -4,7 +4,7 @@ import secrets
 import re
 import time
 from datetime import datetime
-
+from geopy.geocoders import Nominatim
 import git
 import gmaps
 import requests
@@ -26,15 +26,18 @@ class Main(object):
     def user_runs_main_flow(self):
         # common = APIMethod.APIMethod()
 
-        self.map_gen()
-        self.git_controls()
-        raise Exception("hehe")
-        response = common.trigger_api_request("GET", MAIN_URL + str(1), "")
+
+        # response = common.trigger_api_request("GET", MAIN_URL + str(1), "")
+        response = requests.get(
+            url=MAIN_URL + str(1)
+        )
         draft_content = []
         if response.status_code == 200:
             body_result = response.text
             page_no_upper = self.set_pages(body_result)
             draft_content = self.get_pages(page_no_upper)
+            self.map_gen(draft_content)
+            self.git_controls()
             print("Total number of records retrieved are ", len(body_result))
             print("Response body= ", str(body_result))
         else:
@@ -42,26 +45,46 @@ class Main(object):
         if draft_content:
             self.save_draft(draft_content)
 
-    def map_gen(self):
-        hi = 0
+    def map_gen(self, draft_content):
         m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10)
-        for i in range(10):
-            hi = hi + 1
+        print(type(draft_content))
+        # apijiu = (loc['address'] for loc in draft_content)
+        print(str(asd) for asd in draft_content)
+        # big_apijiu = re.findall(".*  (.*)\\n", apijiu)
+        # loc = 'Taj Mahal, Agra, Uttar Pradesh 282001'
+        # geolocator = Nominatim(user_agent="my_request")
+        # location = geolocator.geocode(loc)
+        # print(location.address)
+        # print((location.latitude, location.longitude))
+        # raise Exception("ehehe")
+        print(str(draft_content))
+        # raise Exception (type(draft_content))
+        for i in draft_content[0]:
+            # hi = hi + 1
+            loc = i['address']
+            geolocator = Nominatim(user_agent="my_request")
+            location = geolocator.geocode(loc)
+            if not location:
+                continue
             html = f"""
-                <h1> Kingdom no {hi}</h1>
-                <p>Where should we makan next</p>
+                <p> {3} </p>
+                <h2> {1} </h2>
+                <h1> {0} </h1>
+                <p>Details:- </p>
                 <ul>
-                    <li>Food 1</li>
-                    <li>Food 2</li>
+                    <li>buildup {2}</li>
+                    <li>RM {4}</li>
+                    <li> {5} </li>
+                    <li> {6} </li>
                 </ul>
                 </p>
                 <p>And that's a <a href="https://www.python-graph-gallery.com">link</a></p>
-                """
+                """.format(i['prop_name'], i['prop_type'], i['build_up'], i['date'], i['price'], i['psf'], i['others'])
             iframe = folium.IFrame(html=html, width=200, height=200)
             # folium.folium.Element.render()
             popup = folium.Popup(iframe, max_width=2650)
             folium.Marker(
-                location=(3.064119 + hi, 101.669488 ),
+                location=(location.latitude, location.longitude),
                 popup=popup,
                 icon=folium.DivIcon(html=f"""
                 <div><svg>
@@ -164,7 +187,7 @@ class Main(object):
             # response = common.trigger_api_request("GET", MAIN_URL + str(i), "")
             body_result = response.text
             content_list = self.get_contents(body_result)
-            draft_content.extend(content_list)
+            draft_content.append(content_list)
             time.sleep(secrets.randbelow(10))
             k = k + 1
             if k > 2:
@@ -184,8 +207,10 @@ class Main(object):
             content_details['prop_type'] = self.handle_value(i, 'p', 'class', "text-info crop-text-2 list-none mb-2")
             content_details['build_up'] = self.handle_value(i, 'div', 'class', "fs-5 mb-1 me-2 me-md-1 me-lg-2 list-none")
             content_details['date'] = self.handle_value(i, 'div', 'class', "fs-6 d-block fw-bold")
-            content_details['price'] = self.handle_value(i, 'h4', 'class', "fw-bold text-nowrap d-flex flex-row flex-sm-column position-relative")
-            content_details['psf'] = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none')
+            content_details['price'] = re.findall("\d+", self.handle_value(i, 'h4', 'class', "fw-bold text-nowrap d-flex flex-row flex-sm-column position-relative"))[0]
+            psf_raw = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none')
+            psf = re.findall("\d+", psf_raw[0] if psf_raw else "0")
+            content_details['psf'] = psf
             content_details['others'] = self.handle_value(i, 'td', 'class', "position-relative")
             # content_details['tenure'] = re.findall()
             # content_details['psf'] = i.find('div', attrs={'class': 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none'}).text
@@ -193,13 +218,17 @@ class Main(object):
             content_details['restriction'] = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none')
             content_list.append(content_details)
             print("content_details= " + str(content_details))
+            counter = 0
+            # for i in content_details
+
+            # print("testitem " + str(content_list))
         return content_list
         # print(parsed_html.body.find('div', attrs={'class': 'col details-col flex-grow-1'}).text)
 
     def handle_value(self, i, name_div, name_class, name_subclass):
         value = None
         if i.find(name_div, attrs={name_class: name_subclass}):
-            value = i.find(name_div, attrs={name_class: name_subclass}).text
+            value = i.find(name_div, attrs={name_class: name_subclass}).text.strip()
         return value
 
     def set_pages(self, body_text):
