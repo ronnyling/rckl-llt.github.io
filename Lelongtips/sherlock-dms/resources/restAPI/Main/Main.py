@@ -233,10 +233,10 @@ class Main(object):
             content_details['prop_type'] = self.handle_value(i, 'p', 'class', "text-info crop-text-2 list-none mb-2")
             content_details['build_up'] = self.handle_value(i, 'div', 'class', "fs-5 mb-1 me-2 me-md-1 me-lg-2 list-none")
             content_details['date'] = self.handle_value(i, 'div', 'class', "fs-6 d-block fw-bold")
-            content_details['price'] = re.findall("\d+", self.handle_value(i, 'h4', 'class', "fw-bold text-nowrap d-flex flex-row flex-sm-column position-relative"))[0]
+            content_details['price'] = ''.join(re.findall("\d+", self.handle_value(i, 'h4', 'class', "fw-bold text-nowrap d-flex flex-row flex-sm-column position-relative")))
             psf_raw = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none')
             psf = re.findall("\d+", psf_raw[0] if psf_raw else "0")
-            content_details['psf'] = psf
+            content_details['psf'] = ''.join(psf)
             content_details['others'] = self.handle_value(i, 'td', 'class', "position-relative")
             # content_details['tenure'] = re.findall()
             # content_details['psf'] = i.find('div', attrs={'class': 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none'}).text
