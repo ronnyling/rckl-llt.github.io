@@ -95,6 +95,8 @@ class Main(object):
                 </p>
                 <p>And that's a <a href="https://www.python-graph-gallery.com">link</a></p>
                 """.format(i['prop_name'], i['prop_type'], i['build_up'], i['date'], i['price'], i['psf'], i['others'], formatted_address_name)
+            print("is this gg= " + html)
+
             iframe = folium.IFrame(html=html, width=200, height=200)
             # folium.folium.Element.render()
             popup = folium.Popup(iframe, max_width=2650)
