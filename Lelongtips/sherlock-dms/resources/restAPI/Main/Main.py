@@ -4,6 +4,8 @@ import secrets
 import re
 import time
 from datetime import datetime
+
+import googlemaps
 from geopy.geocoders import Nominatim
 import git
 import gmaps
@@ -17,6 +19,7 @@ from resources.restAPI import PROTOCOL, APP_URL, COMMON_KEY, LLT_URL, LLT_TOKEN
 # from resources.restAPI.Common import APIMethod
 
 MAIN_URL = PROTOCOL + LLT_URL
+gmaps = googlemaps.Client(key='AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk')
 
 
 
@@ -61,9 +64,20 @@ class Main(object):
         # raise Exception (type(draft_content))
         for i in draft_content[0]:
             # hi = hi + 1
+            location = {}
             loc = i['address']
+            formatted_address_name = None
             geolocator = Nominatim(user_agent="my_request")
-            location = geolocator.geocode(loc)
+            # location = geolocator.geocode(loc)
+            geocode_result = gmaps.geocode(loc)
+            # print(str(geocode_result))
+            # if len(geocode_result[0]['address_components']) > 1 or geocode_result['status'] is not "OK":
+            #     print("Please inspect and fix geocode= " + str(geocode_result))
+            location_raw = geocode_result[0]['geometry']['location']
+            formatted_address_name = geocode_result[0]['formatted_address']
+            location.update({'latitude': location_raw['lat']})
+            location.update({'longitude': location_raw['lng']})
+
             if not location:
                 continue
             html = f"""
@@ -76,15 +90,16 @@ class Main(object):
                     <li>RM {4}</li>
                     <li> {5} </li>
                     <li> {6} </li>
+                    <li> {7} </li>                    
                 </ul>
                 </p>
                 <p>And that's a <a href="https://www.python-graph-gallery.com">link</a></p>
-                """.format(i['prop_name'], i['prop_type'], i['build_up'], i['date'], i['price'], i['psf'], i['others'])
+                """.format(i['prop_name'], i['prop_type'], i['build_up'], i['date'], i['price'], i['psf'], i['others'], formatted_address_name)
             iframe = folium.IFrame(html=html, width=200, height=200)
             # folium.folium.Element.render()
             popup = folium.Popup(iframe, max_width=2650)
             folium.Marker(
-                location=(location.latitude, location.longitude),
+                location=(location['latitude'], location['longitude']),
                 popup=popup,
                 icon=folium.DivIcon(html=f"""
                 <div><svg>
