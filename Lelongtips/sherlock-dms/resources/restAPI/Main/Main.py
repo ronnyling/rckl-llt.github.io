@@ -77,7 +77,34 @@ class Main(object):
             formatted_address_name = geocode_result[0]['formatted_address']
             location.update({'latitude': location_raw['lat']})
             location.update({'longitude': location_raw['lng']})
-
+            div_icon = None
+            price = i['price']
+            build_up = i['build_up']
+            if not price or not build_up:
+                div_icon = f"""
+                                <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                </div>"""
+            else:
+                price = float(price)
+                build_up = float(build_up)
+                if price/build_up >= 700:
+                    continue
+                elif price/build_up <= 300 and price <= 800000:
+                    div_icon = f"""
+                                    <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.6 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"/></svg>
+                                    </div>"""
+                elif re.findall(".*(torey).*", i['prop_type']) or re.findall(".*(tory).*", i['prop_type']):
+                    div_icon = f"""
+                                    <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"/></svg>
+                                    </div>"""
+                else:
+                    div_icon = f"""
+                                    <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                    </div>"""
             if not location:
                 continue
             html = f"""
@@ -93,8 +120,9 @@ class Main(object):
                     <li> {{7}} </li>                    
                 </ul>
                 </p>
-                <p>And that's a <a href="https://www.python-graph-gallery.com">link</a></p>
-                """.format(i['prop_name'], i['prop_type'], i['build_up'], i['date'], i['price'], i['psf'], i['others'], formatted_address_name)
+                <p>And that's a <a href="{{8}}">link</a></p>
+                """.format(i['prop_name'], i['prop_type'], build_up, i['date'], price, i['psf'], i['others'],
+                           formatted_address_name, i['h_ref'])
             print(i['prop_name'] + " is this gg= " + html)
 
             iframe = folium.IFrame(html=html, width=400, height=300)
@@ -113,10 +141,7 @@ class Main(object):
 
                 #green
                 # <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
-                icon=folium.DivIcon(html=f"""
-                <div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
-                </div>""")
+                icon=folium.DivIcon(html=div_icon)
                 # popup="hehe" + str(hi),
             ).add_to(m)
         date_now = str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f"))
@@ -216,9 +241,9 @@ class Main(object):
             draft_content.append(content_list)
             time.sleep(secrets.randbelow(10))
             k = k + 1
-            if k > 2:
+            if k > 1:
                 break
-                raise Exception("Test end")
+            #     raise Exception("Test end")
         return draft_content
 
     def get_contents(self, body_text):
@@ -231,13 +256,20 @@ class Main(object):
             content_details['address'] = self.handle_value(i, 'h5', 'class', "fw-bold crop-text-3 mb-0")
             content_details['prop_name'] = self.handle_value(i, 'p', 'class', "text-muted mb-0 text-truncate")
             content_details['prop_type'] = self.handle_value(i, 'p', 'class', "text-info crop-text-2 list-none mb-2")
-            content_details['build_up'] = self.handle_value(i, 'div', 'class', "fs-5 mb-1 me-2 me-md-1 me-lg-2 list-none")
+            raw_str = re.findall("(\d+)", str(self.handle_value(i, 'div', 'class', "fs-5 mb-1 me-2 me-md-1 me-lg-2 list-none")))
+            if raw_str:
+                build_up_raw = ''.join(raw_str)
+            else:
+                build_up_raw = None
+            # print("builup raw= " + build_up_raw)
+            content_details['build_up'] = build_up_raw
             content_details['date'] = self.handle_value(i, 'div', 'class', "fs-6 d-block fw-bold")
             content_details['price'] = ''.join(re.findall("\d+", self.handle_value(i, 'h4', 'class', "fw-bold text-nowrap d-flex flex-row flex-sm-column position-relative")))
             psf_raw = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none')
             psf = re.findall("\d+", psf_raw[0] if psf_raw else "0")
             content_details['psf'] = ''.join(psf)
             content_details['others'] = self.handle_value(i, 'td', 'class', "position-relative")
+            content_details['h_ref'] = self.handle_value(i, 'a', 'class', "stretched-link")
             # content_details['tenure'] = re.findall()
             # content_details['psf'] = i.find('div', attrs={'class': 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none'}).text
             # content_details['restriction'] = i.find('div', attrs={'class': 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none'}).text
