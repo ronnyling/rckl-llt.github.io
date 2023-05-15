@@ -15,11 +15,11 @@ from bs4 import BeautifulSoup
 import folium
 from robot.api.deco import keyword
 from robot.libraries.BuiltIn import BuiltIn
-from resources.restAPI import PROTOCOL, APP_URL, COMMON_KEY, LLT_URL, LLT_TOKEN
+from resources.restAPI import PROTOCOL, APP_URL, COMMON_KEY, LLT_URL, LLT_TOKEN, GMAPS_TOKEN
 # from resources.restAPI.Common import APIMethod
 
 MAIN_URL = PROTOCOL + LLT_URL
-gmaps = googlemaps.Client(key='AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk')
+gmaps = googlemaps.Client(key=GMAPS_TOKEN)
 
 
 
