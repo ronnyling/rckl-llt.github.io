@@ -107,6 +107,8 @@ class Main(object):
                                     </div>"""
             if not location:
                 continue
+
+            iframe_target = str(i['prop_name'])
             html = f"""
                 <p> {{3}} </p>
                 <h2> {{1}} </h2>
@@ -122,10 +124,10 @@ class Main(object):
                 </p>
                 <p>And that's a <a href="{{8}}" target="{{8}}">link</a></p>
                 """.format(i['prop_name'], i['prop_type'], build_up, i['date'], price, i['psf'], i['others'],
-                           formatted_address_name, i['h_ref'])
+                           formatted_address_name, i['h_ref'], iframe_target)
             print(i['prop_name'] + " is this gg= " + html)
 
-            iframe = folium.IFrame(html=html, width=400, height=300, name=i['h_ref'])
+            iframe = folium.IFrame(html=html, width=400, height=300, name=iframe_target)
             # iframe = folium.IFrame(html=html, width='90%', height='90%')
             # folium.folium.Element.render()
             popup = folium.Popup(iframe, max_width=2650)
