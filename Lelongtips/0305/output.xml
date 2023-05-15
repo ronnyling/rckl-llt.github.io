@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230515 13:03:55.588" rpa="false" schemaversion="3">
+<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230515 13:08:47.211" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\tests\restAPI\Main\Main.robot">
 <test id="s1-t1" name="1 - Executes Main flow" line="6">
 <kw name="When user runs main flow" library="Main">
-<msg timestamp="20230515 13:03:16.273" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20230515 13:03:16.276" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230515 13:03:17.042" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;state=kl_sel&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;page=1 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:17.046" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230515 13:03:17.813" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;state=kl_sel&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;page=1 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:22.933" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230515 13:03:23.916" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;state=kl_sel&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;page=2 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:33.049" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230515 13:03:33.830" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;state=kl_sel&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;page=3 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:41.953" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:41.953" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:41.953" level="DEBUG">Starting new HTTPS connection (1): maps.googleapis.com:443</msg>
-<msg timestamp="20230515 13:03:42.078" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+8%2C+Jalan+1%2F9%2C+43650+Bandar+Baru+Bangi%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:42.078" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.078" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.234" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+10%2C+Jalan+1%2F144A%2C+Taman+Bukit+Cheras%2C+56000%2C+Kuala+Lumpur&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:42.249" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.249" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.359" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Gugusan+Semarak%2C+Jalan+Camar+4%2F1%2C+Kota+Damansara%2C+47810+Petaling+Jaya%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:42.359" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.359" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.453" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+A%2C+Seri+Jati%2C+Taman+Balakong+Jayam+43000+Kajang%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:42.453" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.453" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.562" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+M2%2C+Jalan+Persiaran+Desa+Serdang+3%2C+Taman+Desa+Serdang%2C+43300+Seri+Kembangan%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:42.562" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.577" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.624" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Residensi+Warnasari+3%2C+Jalan+Residensi+Warnasari+13%2F1%2C+42300+Bandar+Puncak+Alam%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:42.624" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.624" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.687" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+B02%2C+Apartment+Melor%2C+Taman+Sutera+Kajang%2C+43000+Kajang%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:42.687" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.687" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.781" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Pangsapuri+Subang+Hijauan%2C+Jalan+Bintang+U5%2F33%2C+Seksyen+U5+40150+Shah+Alam%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:42.796" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.796" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.922" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+53%2C+Abadi+Indah+Apartment%2C+Jalan+3%2F109C%2C+Taman+Abadi+Indah%2C+Off+Jalan+Kelang+Lama%2C+58100%2C+Kuala+Lumpur&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:42.922" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.922" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.968" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Orkid+1%2C+Taman+Orkid%2C+43200+Cheras%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:42.968" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:42.968" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:43.078" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+E%2C+Harmoni+Apartment%2C+No.+55%2C+Jalan+PJU+10%2F4C%2C+Damansara+Damai%2C+47830+Petaling+Jaya%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:43.078" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:43.078" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 13:03:43.172" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+C%2C+Pangsapuri+Putra+Impian%2C+Jalan+PP+39%2C+Taman+Pinggiran+Putra+Seksyen+2%2C+43300+Seri+Kembangan%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:43.221" level="DEBUG">Popen(['git', 'add', '--update'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=None)</msg>
-<msg timestamp="20230515 13:03:45.207" level="DEBUG">Popen(['git', 'cat-file', '--batch-check'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
-<msg timestamp="20230515 13:03:45.685" level="DEBUG">Popen(['git', 'cat-file', '--batch'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
-<msg timestamp="20230515 13:03:46.138" level="DEBUG">Popen(['git', 'push', '--porcelain', '--', 'origin'], cwd=G:\My Drive\Python\Scraper, universal_newlines=True, shell=None, istream=None)</msg>
-<msg timestamp="20230515 13:03:53.953" level="DEBUG">Starting new HTTPS connection (1): api.medium.com:443</msg>
-<msg timestamp="20230515 13:03:54.314" level="DEBUG">https://api.medium.com:443 "GET /v1/me?accessToken=2a2528f1fe702b30de4754240bfbf1f24a50eddb5928cc5bd0eb30c21ccc22f05 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 13:03:54.319" level="DEBUG">Starting new HTTPS connection (1): api.medium.com:443</msg>
-<msg timestamp="20230515 13:03:55.007" level="DEBUG">https://api.medium.com:443 "POST /v1/users/1489a7ba40854e1663de46c31d7e15e2a19ab642b186ddc014b78fbb63b9e5092/posts HTTP/1.1" 201 349</msg>
-<msg timestamp="20230515 13:03:55.012" level="INFO">hi 240
+<msg timestamp="20230515 13:08:01.503" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230515 13:08:01.506" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230515 13:08:02.772" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;state=kl_sel&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:02.798" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230515 13:08:03.885" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;state=kl_sel&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:06.019" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230515 13:08:07.610" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;state=kl_sel&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;page=2 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:13.732" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230515 13:08:15.060" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;state=kl_sel&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;page=3 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:24.198" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:24.198" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:24.198" level="DEBUG">Starting new HTTPS connection (1): maps.googleapis.com:443</msg>
+<msg timestamp="20230515 13:08:24.339" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+8%2C+Jalan+1%2F9%2C+43650+Bandar+Baru+Bangi%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:24.354" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:24.354" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:24.433" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+10%2C+Jalan+1%2F144A%2C+Taman+Bukit+Cheras%2C+56000%2C+Kuala+Lumpur&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:24.433" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:24.433" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:24.527" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Gugusan+Semarak%2C+Jalan+Camar+4%2F1%2C+Kota+Damansara%2C+47810+Petaling+Jaya%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:24.527" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:24.527" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:24.620" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+A%2C+Seri+Jati%2C+Taman+Balakong+Jayam+43000+Kajang%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:24.620" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:24.620" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:24.713" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+M2%2C+Jalan+Persiaran+Desa+Serdang+3%2C+Taman+Desa+Serdang%2C+43300+Seri+Kembangan%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:24.713" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:24.713" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:24.823" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Residensi+Warnasari+3%2C+Jalan+Residensi+Warnasari+13%2F1%2C+42300+Bandar+Puncak+Alam%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:24.823" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:24.823" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:24.948" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+B02%2C+Apartment+Melor%2C+Taman+Sutera+Kajang%2C+43000+Kajang%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:24.963" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:24.963" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:25.042" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Pangsapuri+Subang+Hijauan%2C+Jalan+Bintang+U5%2F33%2C+Seksyen+U5+40150+Shah+Alam%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:25.042" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:25.042" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:25.167" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+53%2C+Abadi+Indah+Apartment%2C+Jalan+3%2F109C%2C+Taman+Abadi+Indah%2C+Off+Jalan+Kelang+Lama%2C+58100%2C+Kuala+Lumpur&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:25.167" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:25.167" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:25.261" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Orkid+1%2C+Taman+Orkid%2C+43200+Cheras%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:25.261" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:25.261" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:25.354" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+E%2C+Harmoni+Apartment%2C+No.+55%2C+Jalan+PJU+10%2F4C%2C+Damansara+Damai%2C+47830+Petaling+Jaya%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:25.354" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:25.354" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230515 13:08:25.432" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+C%2C+Pangsapuri+Putra+Impian%2C+Jalan+PP+39%2C+Taman+Pinggiran+Putra+Seksyen+2%2C+43300+Seri+Kembangan%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:25.524" level="DEBUG">Popen(['git', 'add', '--update'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=None)</msg>
+<msg timestamp="20230515 13:08:27.480" level="DEBUG">Popen(['git', 'cat-file', '--batch-check'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
+<msg timestamp="20230515 13:08:27.970" level="DEBUG">Popen(['git', 'cat-file', '--batch'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
+<msg timestamp="20230515 13:08:28.439" level="DEBUG">Popen(['git', 'push', '--porcelain', '--', 'origin'], cwd=G:\My Drive\Python\Scraper, universal_newlines=True, shell=None, istream=None)</msg>
+<msg timestamp="20230515 13:08:45.228" level="DEBUG">Starting new HTTPS connection (1): api.medium.com:443</msg>
+<msg timestamp="20230515 13:08:45.672" level="DEBUG">https://api.medium.com:443 "GET /v1/me?accessToken=2a2528f1fe702b30de4754240bfbf1f24a50eddb5928cc5bd0eb30c21ccc22f05 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230515 13:08:45.677" level="DEBUG">Starting new HTTPS connection (1): api.medium.com:443</msg>
+<msg timestamp="20230515 13:08:46.528" level="DEBUG">https://api.medium.com:443 "POST /v1/users/1489a7ba40854e1663de46c31d7e15e2a19ab642b186ddc014b78fbb63b9e5092/posts HTTP/1.1" 201 349</msg>
+<msg timestamp="20230515 13:08:46.534" level="INFO">hi 240
 content_details= {'address': 'Block 8, Jalan 1/9, 43650 Bandar Baru Bangi, Selangor', 'prop_name': 'Seksyen 1, Selangor', 'prop_type': 'Apartment', 'build_up': '614 sq.ft', 'date': '20 May 2023 (Sat)', 'price': '150', 'psf': ['0'], 'others': None, 'restriction': 'Bumi Quota'}
 content_details= {'address': 'Block 10, Jalan 1/144A, Taman Bukit Cheras, 56000, Kuala Lumpur', 'prop_name': 'Taman Bukit Cheras (Cheras Heights), Kuala Lumpur', 'prop_type': None, 'build_up': '517 sq.ft', 'date': '1 Jun 2023 (Thu)', 'price': '150', 'psf': [], 'others': None, 'restriction': None}
 content_details= {'address': 'Gugusan Semarak, Jalan Camar 4/1, Kota Damansara, 47810 Petaling Jaya, Selangor', 'prop_name': 'Gugusan Semarak, Selangor', 'prop_type': 'Gugusan Semarak Apartment [3 min to Surian MRT Station &amp; Sunway Giza Mall; 9 min to 1 Utama Shopping Centre]', 'build_up': '646 sq.ft', 'date': '26 May 2023 (Fri)', 'price': '150', 'psf': ['3'], 'others': None, 'restriction': 'Bumi Lot'}
@@ -95,8 +95,188 @@ content_details= {'address': 'Pangsapuri Mayang, Jalan Puncak Jalil 8, Taman Pun
 content_details= {'address': 'Block A, Residensi Rimbun, Jalan Zamrud Utama, 43000 Kajang, Selangor', 'prop_name': 'Canopy Hills (Residensi Rimbun), Selangor', 'prop_type': 'Small Office Home Office (SOHO)', 'build_up': '450 sq.ft', 'date': '20 May 2023 (Sat)', 'price': '165', 'psf': ['0'], 'others': None, 'restriction': None}
 content_details= {'address': 'Block A, Residensi Rimbun, Jalan Zamrud Utama, Persiaran Kajang 2, 43000 Kajang, Selangor', 'prop_name': 'Canopy Hills (Residensi Rimbun), Selangor', 'prop_type': 'Small Office Home Office (SOHO)', 'build_up': '450 sq.ft', 'date': '17 May 2023 (Wed)', 'price': '165', 'psf': ['0'], 'others': None, 'restriction': None}
 &lt;class 'list'&gt;
-&lt;generator object Main.map_gen.&lt;locals&gt;.&lt;genexpr&gt; at 0x000001F50B630580&gt;
+&lt;generator object Main.map_gen.&lt;locals&gt;.&lt;genexpr&gt; at 0x000001FEC20C0580&gt;
 [[{'address': 'Block 8, Jalan 1/9, 43650 Bandar Baru Bangi, Selangor', 'prop_name': 'Seksyen 1, Selangor', 'prop_type': 'Apartment', 'build_up': '614 sq.ft', 'date': '20 May 2023 (Sat)', 'price': '150', 'psf': ['0'], 'others': None, 'restriction': 'Bumi Quota'}, {'address': 'Block 10, Jalan 1/144A, Taman Bukit Cheras, 56000, Kuala Lumpur', 'prop_name': 'Taman Bukit Cheras (Cheras Heights), Kuala Lumpur', 'prop_type': None, 'build_up': '517 sq.ft', 'date': '1 Jun 2023 (Thu)', 'price': '150', 'psf': [], 'others': None, 'restriction': None}, {'address': 'Gugusan Semarak, Jalan Camar 4/1, Kota Damansara, 47810 Petaling Jaya, Selangor', 'prop_name': 'Gugusan Semarak, Selangor', 'prop_type': 'Gugusan Semarak Apartment [3 min to Surian MRT Station &amp; Sunway Giza Mall; 9 min to 1 Utama Shopping Centre]', 'build_up': '646 sq.ft', 'date': '26 May 2023 (Fri)', 'price': '150', 'psf': ['3'], 'others': None, 'restriction': 'Bumi Lot'}, {'address': 'Block A, Seri Jati, Taman Balakong Jayam 43000 Kajang, Selangor', 'prop_name': 'Pangsapuri Seri Jati, Selangor', 'prop_type': 'Seri Jati Apartment', 'build_up': '707 sq.ft', 'date': '17 May 2023 (Wed)', 'price': '150', 'psf': ['0'], 'others': None, 'restriction': None}, {'address': 'Block M2, Jalan Persiaran Desa Serdang 3, Taman Desa Serdang, 43300 Seri Kembangan, Selangor', 'prop_name': 'Taman Desa Serdang, Selangor', 'prop_type': 'Apartment', 'build_up': '826 sq.ft', 'date': '30 May 2023 (Tue)', 'price': '150', 'psf': ['3'], 'others': None, 'restriction': None}, {'address': 'Residensi Warnasari 3, Jalan Residensi Warnasari 13/1, 42300 Bandar Puncak Alam, Selangor', 'prop_name': 'Pangsapuri Begonia (Begonia Kristal), Selangor', 'prop_type': 'Apartment', 'build_up': '720 sq.ft', 'date': '17 May 2023 (Wed)', 'price': '150', 'psf': ['0'], 'others': None, 'restriction': None}, {'address': 'Block B02, Apartment Melor, Taman Sutera Kajang, 43000 Kajang, Selangor', 'prop_name': 'Pangsapuri Melor, Selangor', 'prop_type': 'Melor Apartment', 'build_up': None, 'date': '29 May 2023 (Mon)', 'price': '150', 'psf': ['0'], 'others': None, 'restriction': None}, {'address': 'Pangsapuri Subang Hijauan, Jalan Bintang U5/33, Seksyen U5 40150 Shah Alam, Selangor', 'prop_name': 'Subang Hijauan, Selangor', 'prop_type': 'Apartment', 'build_up': '650 sq.ft', 'date': '6 Jun 2023 (Tue)', 'price': '150', 'psf': ['0'], 'others': None, 'restriction': None}, {'address': 'Block 53, Abadi Indah Apartment, Jalan 3/109C, Taman Abadi Indah, Off Jalan Kelang Lama, 58100, Kuala Lumpur', 'prop_name': 'Abadi Indah, Kuala Lumpur', 'prop_type': '[ROI up to 6%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]', 'build_up': '947 sq.ft', 'date': '26 May 2023 (Fri)', 'price': '150', 'psf': [], 'others': None, 'restriction': None}, {'address': 'Jalan Orkid 1, Taman Orkid, 43200 Cheras, Selangor', 'prop_name': 'Taman Orkid, Selangor', 'prop_type': 'Apartment', 'build_up': '754 sq.ft', 'date': '26 May 2023 (Fri)', 'price': '150', 'psf': ['0'], 'others': None, 'restriction': None}, {'address': 'Block E, Harmoni Apartment, No. 55, Jalan PJU 10/4C, Damansara Damai, 47830 Petaling Jaya, Selangor', 'prop_name': 'Harmoni Apartment, Selangor', 'prop_type': 'Apartment', 'build_up': '650 sq.ft', 'date': '22 May 2023 (Mon)', 'price': '150', 'psf': [], 'others': None, 'restriction': None}, {'address': 'Block C, Pangsapuri Putra Impian, Jalan PP 39, Taman Pinggiran Putra Seksyen 2, 43300 Seri Kembangan, Selangor', 'prop_name': 'Pangsapuri Putra Impian, Selangor', 'prop_type': None, 'build_up': '753 sq.ft', 'date': '16 May 2023 (Tue)', 'price': '153', 'psf': ['3'], 'others': None, 'restriction': None}], [{'address': 'Blok 20, Rumah Pangsa Seksyen 8, Jalan Liku 8/1, Seksyen 8, 40000 Shah Alam, Selangor', 'prop_name': 'Flat PKNS Seksyen 8, Selangor', 'prop_type': 'Seksyen 8 Apartment', 'build_up': '755 sq.ft', 'date': '20 May 2023 (Sat)', 'price': '153', 'psf': [], 'others': None, 'restriction': None}, {'address': 'Block 35, Seksyen 24, 40300 Shah Alam, Selangor', 'prop_name': 'Flat PKNS Seksyen 24, Selangor', 'prop_type': 'Apartment', 'build_up': '754 sq.ft', 'date': '20 May 2023 (Sat)', 'price': '153', 'psf': [], 'others': None, 'restriction': None}, {'address': 'Tingkat 3, Jalan 10/2, Taman Perkasa, 43100 Hulu Langat, Selangor', 'prop_name': 'Taman Perkasa, Selangor', 'prop_type': None, 'build_up': '753 sq.ft', 'date': '25 May 2023 (Thu)', 'price': '153', 'psf': ['3'], 'others': None, 'restriction': None}, {'address': 'Rumah Pangsa, Jalan Kosas Utama 5, Taman Kosas, 68000 Ampang, Selangor', 'prop_name': 'Flat Taman Kosas, Selangor', 'prop_type': 'Apartment', 'build_up': '657 sq.ft', 'date': '22 May 2023 (Mon)', 'price': '155', 'psf': [], 'others': None, 'restriction': None}, {'address': 'Vega Residensi 1, Persiaran Sepang, Seksyen 6, 63300 Cyberjaya, Selangor', 'prop_name': 'Vega Residensi, Selangor', 'prop_type': 'Vega Residensi 1 Service Apartment', 'build_up': '535 sq.ft', 'date': '26 May 2023 (Fri)', 'price': '157', 'psf': ['1'], 'others': None, 'restriction': 'Bumi Lot'}, {'address': "Saville @ D'Lake, Jalan Saville, 47130 Puchong, Selangor", 'prop_name': "Saville @ D'Lake, Selangor", 'prop_type': "[-47%] Studio Unit, Intermediate with 2 Car parks [9 min to Lotus's Bandar Bukit Puchong]", 'build_up': '775 sq.ft', 'date': '30 May 2023 (Tue)', 'price': '159', 'psf': ['0'], 'others': None, 'restriction': 'Bumi Lot'}, {'address': 'Block A, Villa Sentosa, Jalan Dato Yusof Shahbudin 3, Taman Sentosa, 41200 Klang, Selangor', 'prop_name': 'Villa Sentosa, Selangor', 'prop_type': None, 'build_up': '850 sq.ft', 'date': '25 Jul 2023 (Tue)', 'price': '160', 'psf': ['0'], 'others': None, 'restriction': None}, {'address': 'Gugusan Dedap, Block 9, Jalan Kenyalang 11/1, Kota Damansara, 47810 Petaling Jaya, Selangor', 'prop_name': 'Gugusan Dedap, Selangor', 'prop_type': None, 'build_up': '667 sq.ft', 'date': '31 May 2023 (Wed)', 'price': '160', 'psf': [], 'others': None, 'restriction': None}, {'address': 'Level 1, Block A, Pangsapuri Ceria, Jalan TK 4/5, Taman Kinrara, 47100 Puchong, Selangor', 'prop_name': 'Pangsapuri Ceria, Selangor', 'prop_type': 'Apartment', 'build_up': '650 sq.ft', 'date': '23 May 2023 (Tue)', 'price': '160', 'psf': ['0'], 'others': None, 'restriction': 'Bumi Lot'}, {'address': 'Block D, Apartment Idaman, No. 9, Jalan PJU 10/1, PJU, Damansara Damai, 47200 Petaling Jaya, Selangor', 'prop_name': 'Pangsapuri Idaman, Selangor', 'prop_type': '3 Bedroom Idaman Apartment, Low Cost [3 min to Seasons Square; 5 min to Damansara Damai MRT Station; 10 min to DA Square]', 'build_up': '650 sq.ft', 'date': '26 May 2023 (Fri)', 'price': '160', 'psf': ['3'], 'others': None, 'restriction': None}, {'address': 'Ground Floor, Block 17, Jalan SP 4/3, Rumah Pangsa Impian, Bandar Saujana Putra, 42610 Jenjarom, Selangor', 'prop_name': 'Rumah Pangsa Impian, Selangor', 'prop_type': '3 Bedroom Apartment', 'build_up': '635 sq.ft', 'date': '30 May 2023 (Tue)', 'price': '160', 'psf': ['3'], 'others': None, 'restriction': None}, {'address': 'Block 1, Gugusan Dedap, Jalan Kenyalang 11/1, PJU 5, Kota Damansara, 47810 Petaling Jaya, Selangor', 'prop_name': 'Petaling Jaya, Selangor', 'prop_type': 'Apartment', 'build_up': '667 sq.ft', 'date': '22 May 2023 (Mon)', 'price': '160', 'psf': [], 'others': None, 'restriction': None}], [{'address': 'Jalan Tasik Biru 17, Laguna Biru, Taman Tasik Biru, 48050 Rawang, Selangor', 'prop_name': 'Pangsapuri Laguna Biru, Selangor', 'prop_type': None, 'build_up': '850 sq.ft', 'date': '17 May 2023 (Wed)', 'price': '162', 'psf': ['3'], 'others': None, 'restriction': None}, {'address': 'Block B, Pangsapuri Damai, No. 1A, Jalan PJS 8/9, 46000 Petaling Jaya, Selangor', 'prop_name': 'Damai Apartment, Selangor', 'prop_type': 'Damai Apartment, Low-Medium Cost [6 min to Sunway Pyramid]', 'build_up': '602 sq.ft', 'date': '20 May 2023 (Sat)', 'price': '162', 'psf': ['0'], 'others': None, 'restriction': None}, {'address': 'Apartment Zapin C2, Taman Impian Ehsan, 43300 Seri Kembangan, Selangor', 'prop_name': 'Pangsapuri Zapin, Selangor', 'prop_type': 'Zapin C2 Apartment [8 min to Amerin Mall]', 'build_up': '950 sq.ft', 'date': '20 May 2023 (Sat)', 'price': '162', 'psf': ['0'], 'others': None, 'restriction': None}, {'address': 'Block D, Apartment Indah 1, Jalan PJU 10/9, Prima Damansara, 47830 Petaling Jaya, Selangor', 'prop_name': 'Pangsapuri Indah, Selangor', 'prop_type': None, 'build_up': '753 sq.ft', 'date': '31 May 2023 (Wed)', 'price': '162', 'psf': ['3'], 'others': None, 'restriction': None}, {'address': 'Permata Fadason, Blok E, Jalan 2/17, Taman Fadason, 52000, Kuala Lumpur', 'prop_name': 'Permata Fadason, Kuala Lumpur', 'prop_type': 'Permata Fadason Apartment', 'build_up': '699 sq.ft', 'date': '20 May 2023 (Sat)', 'price': '162', 'psf': ['0'], 'others': None, 'restriction': None}, {'address': 'Pangsapuri Sri Baiduri, Jalan Ukay Perdana 3, Taman Ukay Perdana, 68000 Ampang, Selangor', 'prop_name': 'Pangsapuri Sri Baiduri, Selangor', 'prop_type': 'Sri Baiduri Apartment', 'build_up': '900 sq.ft', 'date': '20 May 2023 (Sat)', 'price': '162', 'psf': ['0'], 'others': None, 'restriction': None}, {'address': 'Apartment Zapin C1, Jalan Zapin, Taman Impian Ehsan, 43300 Seri Kembangan, Selangor', 'prop_name': 'Pangsapuri Zapin, Selangor', 'prop_type': 'Zapin C1 Apartment', 'build_up': '950 sq.ft', 'date': '20 May 2023 (Sat)', 'price': '162', 'psf': ['3'], 'others': None, 'restriction': None}, {'address': 'Block A, Pangsapuri Villamas, Jalan Muhibbah KU3, Sungai Pinang, 42100 Klang, Selangor', 'prop_name': 'Pangsapuri Villamas, Selangor', 'prop_type': 'Apartment', 'build_up': '850 sq.ft', 'date': '20 May 2023 (Sat)', 'price': '162', 'psf': [], 'others': None, 'restriction': None}, {'address': 'Block D, Pangsapuri Villamas, Jalan Muhibbah KU3, Sungai Pinang, 42100 Klang, Selangor', 'prop_name': 'Pangsapuri Villamas, Selangor', 'prop_type': 'Villamas Apartment', 'build_up': '850 sq.ft', 'date': '20 May 2023 (Sat)', 'price': '162', 'psf': [], 'others': None, 'restriction': None}, {'address': 'Pangsapuri Mayang, Jalan Puncak Jalil 8, Taman Puncak Jalil, Bandar Putra Permai, 43300 Seri Kembangan, Selangor', 'prop_name': 'Pangsapuri Mayang, Selangor', 'prop_type': '[ROI up to 7%] 3 Bedroom Mayang Apartment [5 min to Mydin Puncak Jalil; 9 min to Pavilion Bukit Jalil]', 'build_up': '807 sq.ft', 'date': '26 May 2023 (Fri)', 'price': '162', 'psf': ['0'], 'others': None, 'restriction': None}, {'address': 'Block A, Residensi Rimbun, Jalan Zamrud Utama, 43000 Kajang, Selangor', 'prop_name': 'Canopy Hills (Residensi Rimbun), Selangor', 'prop_type': 'Small Office Home Office (SOHO)', 'build_up': '450 sq.ft', 'date': '20 May 2023 (Sat)', 'price': '165', 'psf': ['0'], 'others': None, 'restriction': None}, {'address': 'Block A, Residensi Rimbun, Jalan Zamrud Utama, Persiaran Kajang 2, 43000 Kajang, Selangor', 'prop_name': 'Canopy Hills (Residensi Rimbun), Selangor', 'prop_type': 'Small Office Home Office (SOHO)', 'build_up': '450 sq.ft', 'date': '17 May 2023 (Wed)', 'price': '165', 'psf': ['0'], 'others': None, 'restriction': None}]]
+is this gg= 
+                &lt;p&gt; 3 &lt;/p&gt;
+                &lt;h2&gt; 1 &lt;/h2&gt;
+                &lt;h1&gt; 0 &lt;/h1&gt;
+                &lt;p&gt;Details:- &lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;buildup 2&lt;/li&gt;
+                    &lt;li&gt;RM 4&lt;/li&gt;
+                    &lt;li&gt; 5 &lt;/li&gt;
+                    &lt;li&gt; 6 &lt;/li&gt;
+                    &lt;li&gt; 7 &lt;/li&gt;                    
+                &lt;/ul&gt;
+                &lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.python-graph-gallery.com"&gt;link&lt;/a&gt;&lt;/p&gt;
+                
+is this gg= 
+                &lt;p&gt; 3 &lt;/p&gt;
+                &lt;h2&gt; 1 &lt;/h2&gt;
+                &lt;h1&gt; 0 &lt;/h1&gt;
+                &lt;p&gt;Details:- &lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;buildup 2&lt;/li&gt;
+                    &lt;li&gt;RM 4&lt;/li&gt;
+                    &lt;li&gt; 5 &lt;/li&gt;
+                    &lt;li&gt; 6 &lt;/li&gt;
+                    &lt;li&gt; 7 &lt;/li&gt;                    
+                &lt;/ul&gt;
+                &lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.python-graph-gallery.com"&gt;link&lt;/a&gt;&lt;/p&gt;
+                
+is this gg= 
+                &lt;p&gt; 3 &lt;/p&gt;
+                &lt;h2&gt; 1 &lt;/h2&gt;
+                &lt;h1&gt; 0 &lt;/h1&gt;
+                &lt;p&gt;Details:- &lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;buildup 2&lt;/li&gt;
+                    &lt;li&gt;RM 4&lt;/li&gt;
+                    &lt;li&gt; 5 &lt;/li&gt;
+                    &lt;li&gt; 6 &lt;/li&gt;
+                    &lt;li&gt; 7 &lt;/li&gt;                    
+                &lt;/ul&gt;
+                &lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.python-graph-gallery.com"&gt;link&lt;/a&gt;&lt;/p&gt;
+                
+is this gg= 
+                &lt;p&gt; 3 &lt;/p&gt;
+                &lt;h2&gt; 1 &lt;/h2&gt;
+                &lt;h1&gt; 0 &lt;/h1&gt;
+                &lt;p&gt;Details:- &lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;buildup 2&lt;/li&gt;
+                    &lt;li&gt;RM 4&lt;/li&gt;
+                    &lt;li&gt; 5 &lt;/li&gt;
+                    &lt;li&gt; 6 &lt;/li&gt;
+                    &lt;li&gt; 7 &lt;/li&gt;                    
+                &lt;/ul&gt;
+                &lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.python-graph-gallery.com"&gt;link&lt;/a&gt;&lt;/p&gt;
+                
+is this gg= 
+                &lt;p&gt; 3 &lt;/p&gt;
+                &lt;h2&gt; 1 &lt;/h2&gt;
+                &lt;h1&gt; 0 &lt;/h1&gt;
+                &lt;p&gt;Details:- &lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;buildup 2&lt;/li&gt;
+                    &lt;li&gt;RM 4&lt;/li&gt;
+                    &lt;li&gt; 5 &lt;/li&gt;
+                    &lt;li&gt; 6 &lt;/li&gt;
+                    &lt;li&gt; 7 &lt;/li&gt;                    
+                &lt;/ul&gt;
+                &lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.python-graph-gallery.com"&gt;link&lt;/a&gt;&lt;/p&gt;
+                
+is this gg= 
+                &lt;p&gt; 3 &lt;/p&gt;
+                &lt;h2&gt; 1 &lt;/h2&gt;
+                &lt;h1&gt; 0 &lt;/h1&gt;
+                &lt;p&gt;Details:- &lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;buildup 2&lt;/li&gt;
+                    &lt;li&gt;RM 4&lt;/li&gt;
+                    &lt;li&gt; 5 &lt;/li&gt;
+                    &lt;li&gt; 6 &lt;/li&gt;
+                    &lt;li&gt; 7 &lt;/li&gt;                    
+                &lt;/ul&gt;
+                &lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.python-graph-gallery.com"&gt;link&lt;/a&gt;&lt;/p&gt;
+                
+is this gg= 
+                &lt;p&gt; 3 &lt;/p&gt;
+                &lt;h2&gt; 1 &lt;/h2&gt;
+                &lt;h1&gt; 0 &lt;/h1&gt;
+                &lt;p&gt;Details:- &lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;buildup 2&lt;/li&gt;
+                    &lt;li&gt;RM 4&lt;/li&gt;
+                    &lt;li&gt; 5 &lt;/li&gt;
+                    &lt;li&gt; 6 &lt;/li&gt;
+                    &lt;li&gt; 7 &lt;/li&gt;                    
+                &lt;/ul&gt;
+                &lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.python-graph-gallery.com"&gt;link&lt;/a&gt;&lt;/p&gt;
+                
+is this gg= 
+                &lt;p&gt; 3 &lt;/p&gt;
+                &lt;h2&gt; 1 &lt;/h2&gt;
+                &lt;h1&gt; 0 &lt;/h1&gt;
+                &lt;p&gt;Details:- &lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;buildup 2&lt;/li&gt;
+                    &lt;li&gt;RM 4&lt;/li&gt;
+                    &lt;li&gt; 5 &lt;/li&gt;
+                    &lt;li&gt; 6 &lt;/li&gt;
+                    &lt;li&gt; 7 &lt;/li&gt;                    
+                &lt;/ul&gt;
+                &lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.python-graph-gallery.com"&gt;link&lt;/a&gt;&lt;/p&gt;
+                
+is this gg= 
+                &lt;p&gt; 3 &lt;/p&gt;
+                &lt;h2&gt; 1 &lt;/h2&gt;
+                &lt;h1&gt; 0 &lt;/h1&gt;
+                &lt;p&gt;Details:- &lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;buildup 2&lt;/li&gt;
+                    &lt;li&gt;RM 4&lt;/li&gt;
+                    &lt;li&gt; 5 &lt;/li&gt;
+                    &lt;li&gt; 6 &lt;/li&gt;
+                    &lt;li&gt; 7 &lt;/li&gt;                    
+                &lt;/ul&gt;
+                &lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.python-graph-gallery.com"&gt;link&lt;/a&gt;&lt;/p&gt;
+                
+is this gg= 
+                &lt;p&gt; 3 &lt;/p&gt;
+                &lt;h2&gt; 1 &lt;/h2&gt;
+                &lt;h1&gt; 0 &lt;/h1&gt;
+                &lt;p&gt;Details:- &lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;buildup 2&lt;/li&gt;
+                    &lt;li&gt;RM 4&lt;/li&gt;
+                    &lt;li&gt; 5 &lt;/li&gt;
+                    &lt;li&gt; 6 &lt;/li&gt;
+                    &lt;li&gt; 7 &lt;/li&gt;                    
+                &lt;/ul&gt;
+                &lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.python-graph-gallery.com"&gt;link&lt;/a&gt;&lt;/p&gt;
+                
+is this gg= 
+                &lt;p&gt; 3 &lt;/p&gt;
+                &lt;h2&gt; 1 &lt;/h2&gt;
+                &lt;h1&gt; 0 &lt;/h1&gt;
+                &lt;p&gt;Details:- &lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;buildup 2&lt;/li&gt;
+                    &lt;li&gt;RM 4&lt;/li&gt;
+                    &lt;li&gt; 5 &lt;/li&gt;
+                    &lt;li&gt; 6 &lt;/li&gt;
+                    &lt;li&gt; 7 &lt;/li&gt;                    
+                &lt;/ul&gt;
+                &lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.python-graph-gallery.com"&gt;link&lt;/a&gt;&lt;/p&gt;
+                
+is this gg= 
+                &lt;p&gt; 3 &lt;/p&gt;
+                &lt;h2&gt; 1 &lt;/h2&gt;
+                &lt;h1&gt; 0 &lt;/h1&gt;
+                &lt;p&gt;Details:- &lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;buildup 2&lt;/li&gt;
+                    &lt;li&gt;RM 4&lt;/li&gt;
+                    &lt;li&gt; 5 &lt;/li&gt;
+                    &lt;li&gt; 6 &lt;/li&gt;
+                    &lt;li&gt; 7 &lt;/li&gt;                    
+                &lt;/ul&gt;
+                &lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.python-graph-gallery.com"&gt;link&lt;/a&gt;&lt;/p&gt;
+                
 hi
 Total number of records retrieved are  218978
 Response body=  &lt;!DOCTYPE html&gt;
@@ -109,7 +289,7 @@ Response body=  &lt;!DOCTYPE html&gt;
     &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
     &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
     &lt;link rel="icon" href="https://www.lelongtips.com.my/images/favicon.ico" type="image/x-icon"&gt;
-    &lt;meta name="csrf-token" content="pmbnSfrGbHAk2UggHuOlJ9GTp6wMX9dmoFsd6HnR"&gt;
+    &lt;meta name="csrf-token" content="FUSRC6p4DVltY0WFA5UKldP8p66DIhkXoUn8UkP2"&gt;
     &lt;title&gt;Search Results&lt;/title&gt;
     &lt;meta name="title" content="Search Results"&gt;
     &lt;meta name="description" content="We have total 1570 properties upcoming for auction. Total listing of 367861 past auction properties with auction bank, auction venue, auction time, auctioneer, lawyer &amp;amp; assignor/ defendant."&gt;
@@ -1959,7 +2139,7 @@ Response body=  &lt;!DOCTYPE html&gt;
         &lt;div class="container my-4"&gt;
             &lt;h4 class="text-white fw-bold text-center"&gt;Subscribe Newsletter&lt;/h4&gt;
             &lt;p class="text-white text-center"&gt;Receive selected hot picks and exclusive promotions!&lt;/p&gt;
-            &lt;form method="POST" action="https://www.lelongtips.com.my/subscribe-newsletter" accept-charset="UTF-8" name="subscribe-newsletter" class="row justify-content-center" data-form-action="newsletter"&gt;&lt;input name="_token" type="hidden" value="pmbnSfrGbHAk2UggHuOlJ9GTp6wMX9dmoFsd6HnR"&gt;
+            &lt;form method="POST" action="https://www.lelongtips.com.my/subscribe-newsletter" accept-charset="UTF-8" name="subscribe-newsletter" class="row justify-content-center" data-form-action="newsletter"&gt;&lt;input name="_token" type="hidden" value="FUSRC6p4DVltY0WFA5UKldP8p66DIhkXoUn8UkP2"&gt;
             &lt;input name="captToken" type="hidden"&gt;
             &lt;div class="col-lg-10 col-xl-8 d-flex flex-column flex-md-row justify-content-center"&gt;
                 &lt;div class="flex-fill d-grid mb-3 mb-md-0"&gt;
@@ -2019,7 +2199,7 @@ Response body=  &lt;!DOCTYPE html&gt;
                 &lt;div class="d-inline-block me-2"&gt;&lt;i class="fas fa-phone fa-flip-horizontal text-dark fa-fw"&gt;&lt;/i&gt; &amp;nbsp; &lt;a href="tel:0123613988" class="border-0 text-warning fw-bold"&gt; 012-361 3988&lt;/a&gt;&lt;/div&gt;
                 &lt;div class="d-inline-block"&gt;&lt;i class="fas fa-envelope text-dark fa-fw"&gt;&lt;/i&gt; &amp;nbsp; &lt;a href="mailto:general@lelongtips.com" class="border-0 text-warning fw-bold"&gt; general@lelongtips.com&lt;/a&gt;&lt;/div&gt;
             &lt;/div&gt;
-            &lt;p class="text-end fst-italic"&gt;&lt;small&gt;Printed on 2023-05-15 13:03:17&lt;/small&gt;&lt;/p&gt;
+            &lt;p class="text-end fst-italic"&gt;&lt;small&gt;Printed on 2023-05-15 13:08:02&lt;/small&gt;&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/footer&gt;&lt;/div&gt;
@@ -2039,7 +2219,7 @@ Response body=  &lt;!DOCTYPE html&gt;
 &lt;div class="modal fade" id="applyPanelshipModal" tabindex="-1" aria-labelledby="applyPanelshipModal" aria-hidden="true"&gt;
     &lt;div class="modal-dialog"&gt;
         &lt;div class="modal-content"&gt;
-            &lt;form method="POST" action="https://www.lelongtips.com.my/apply-panelship" accept-charset="UTF-8" name="apply-panelship" data-form-action="apply_panelship" class="mt-4"&gt;&lt;input name="_token" type="hidden" value="pmbnSfrGbHAk2UggHuOlJ9GTp6wMX9dmoFsd6HnR"&gt;
+            &lt;form method="POST" action="https://www.lelongtips.com.my/apply-panelship" accept-charset="UTF-8" name="apply-panelship" data-form-action="apply_panelship" class="mt-4"&gt;&lt;input name="_token" type="hidden" value="FUSRC6p4DVltY0WFA5UKldP8p66DIhkXoUn8UkP2"&gt;
             &lt;input name="captToken" type="hidden"&gt;
             &lt;div class="modal-header pt-0"&gt;
                 &lt;h4 class="fw-bold"&gt;Join as our panel referrer today!&lt;/h4&gt;
@@ -2392,21 +2572,21 @@ Response body=  &lt;!DOCTYPE html&gt;
     &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-{"data":{"id":"9f1144e4e4f2","title":"This is title","authorId":"1489a7ba40854e1663de46c31d7e15e2a19ab642b186ddc014b78fbb63b9e5092","url":"https://medium.com/@ronnyling/9f1144e4e4f2","canonicalUrl":"","publishStatus":"draft","license":"","licenseUrl":"https://policy.medium.com/medium-terms-of-service-9db0094a1e0f","tags":["design","development"]}}</msg>
-<msg timestamp="20230515 13:03:55.019" level="INFO">G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:214: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("html.parser"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+{"data":{"id":"d07561640efc","title":"This is title","authorId":"1489a7ba40854e1663de46c31d7e15e2a19ab642b186ddc014b78fbb63b9e5092","url":"https://medium.com/@ronnyling/d07561640efc","canonicalUrl":"","publishStatus":"draft","license":"","licenseUrl":"https://policy.medium.com/medium-terms-of-service-9db0094a1e0f","tags":["development","design"]}}</msg>
+<msg timestamp="20230515 13:08:46.543" level="INFO">G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:216: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("html.parser"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
 
-The code that caused this warning is on line 214 of the file G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py. To get rid of this warning, pass the additional argument 'features="html.parser"' to the BeautifulSoup constructor.
+The code that caused this warning is on line 216 of the file G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py. To get rid of this warning, pass the additional argument 'features="html.parser"' to the BeautifulSoup constructor.
 
   parsed_html = BeautifulSoup(body_text)</msg>
-<msg timestamp="20230515 13:03:55.020" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20230515 13:03:16.272" endtime="20230515 13:03:55.020"/>
+<msg timestamp="20230515 13:08:46.543" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230515 13:08:01.502" endtime="20230515 13:08:46.543"/>
 </kw>
 <doc>Executes main flow</doc>
 <tag>flow</tag>
-<status status="PASS" starttime="20230515 13:03:16.271" endtime="20230515 13:03:55.020"/>
+<status status="PASS" starttime="20230515 13:08:01.501" endtime="20230515 13:08:46.544"/>
 </test>
 <doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
-<status status="PASS" starttime="20230515 13:03:12.914" endtime="20230515 13:03:55.022"/>
+<status status="PASS" starttime="20230515 13:07:58.076" endtime="20230515 13:08:46.547"/>
 </suite>
 <statistics>
 <total>
@@ -2420,6 +2600,6 @@ The code that caused this warning is on line 214 of the file G:\My Drive\Python\
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230515 13:03:13.454" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
+<msg timestamp="20230515 13:07:58.695" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
 </errors>
 </robot>
