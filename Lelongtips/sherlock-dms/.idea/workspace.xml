@@ -69,23 +69,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/My Drive/Python/Scraper/Lelongtips/sherlock-dms&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "G:/My Drive/Python/Scraper/Lelongtips/sherlock-dms/resources"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources" />
       <recent name="C:\Users\r.a.ling\Documents\compare branch\sherlock-dms\resources\restAPI\DynamicSurvey\SurveyResult" />
       <recent name="C:\Users\r.a.ling\Documents\compare branch\sherlock-dms\tests\restAPI\DynamicSurvey\SurveyResult" />
       <recent name="C:\Users\r.a.ling\Documents\compare branch\sherlock-dms\tests\restAPI\TradeAsset\RabbitHole" />
       <recent name="C:\Users\r.a.ling\Documents\compare branch\sherlock-dms\resources\restAPI\TradeAsset\RabbitHole" />
-      <recent name="C:\Users\r.a.ling\Documents\compare branch\sherlock-dms\tests\restAPI\TradeAsset\AssetActivity\AssetException" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\r.a.ling\Documents\compare branch\sherlock-dms\resources\restAPI\Common" />

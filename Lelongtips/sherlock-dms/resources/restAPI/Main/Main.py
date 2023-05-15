@@ -120,12 +120,12 @@ class Main(object):
                     <li> {{7}} </li>                    
                 </ul>
                 </p>
-                <p>And that's a <a href="{{8}}">link</a></p>
+                <p>And that's a <a href="{{8}}" target="{{8}}">link</a></p>
                 """.format(i['prop_name'], i['prop_type'], build_up, i['date'], price, i['psf'], i['others'],
                            formatted_address_name, i['h_ref'])
             print(i['prop_name'] + " is this gg= " + html)
 
-            iframe = folium.IFrame(html=html, width=400, height=300)
+            iframe = folium.IFrame(html=html, width=400, height=300, name=i['h_ref'])
             # iframe = folium.IFrame(html=html, width='90%', height='90%')
             # folium.folium.Element.render()
             popup = folium.Popup(iframe, max_width=2650)
