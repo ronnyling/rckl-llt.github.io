@@ -82,15 +82,15 @@ class Main(object):
                 continue
             html = f"""
                 <p> {{3}} </p>
-                <h2> {1} </h2>
-                <h1> {0} </h1>
+                <h2> {{1}} </h2>
+                <h1> {{0}} </h1>
                 <p>Details:- </p>
                 <ul>
-                    <li>buildup {2}</li>
-                    <li>RM {4}</li>
-                    <li> {5} </li>
-                    <li> {6} </li>
-                    <li> {7} </li>                    
+                    <li>buildup {{2}}</li>
+                    <li>RM {{4}}</li>
+                    <li> {{5}} </li>
+                    <li> {{6}} </li>
+                    <li> {{7}} </li>                    
                 </ul>
                 </p>
                 <p>And that's a <a href="https://www.python-graph-gallery.com">link</a></p>
