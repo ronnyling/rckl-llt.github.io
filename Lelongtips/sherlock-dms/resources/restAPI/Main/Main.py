@@ -269,7 +269,7 @@ class Main(object):
             psf = re.findall("\d+", psf_raw[0] if psf_raw else "0")
             content_details['psf'] = ''.join(psf)
             content_details['others'] = self.handle_value(i, 'td', 'class', "position-relative")
-            content_details['h_ref'] = re.findall(".*<a class=\"stretched-link\" href=\"(.*)\" title=.*", str(i))
+            content_details['h_ref'] = re.findall(".*<a class=\"stretched-link\" href=\"(.*)\" title=.*", str(i))[0]
             print("check_xia= " + str(content_details['h_ref']))
 
             # content_details['tenure'] = re.findall()
