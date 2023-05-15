@@ -269,7 +269,7 @@ class Main(object):
             psf = re.findall("\d+", psf_raw[0] if psf_raw else "0")
             content_details['psf'] = ''.join(psf)
             content_details['others'] = self.handle_value(i, 'td', 'class', "position-relative")
-            content_details['h_ref'] = self.handle_value(i, 'a', 'class', "stretched-link")
+            content_details['h_ref'] = self.handle_value(i, 'a', 'href', "stretched-link")
             print("check_xia= " + str(content_details['h_ref']))
 
             # content_details['tenure'] = re.findall()
@@ -288,7 +288,10 @@ class Main(object):
     def handle_value(self, i, name_div, name_class, name_subclass):
         value = None
         if i.find(name_div, attrs={name_class: name_subclass}):
-            value = i.find(name_div, attrs={name_class: name_subclass}).text.strip()
+            if name_div == "a":
+                value = next(i.findall('a'), None)
+            else:
+                value = i.find(name_div, attrs={name_class: name_subclass}).text.strip()
         return value
 
     def set_pages(self, body_text):
