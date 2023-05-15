@@ -81,7 +81,7 @@ class Main(object):
             if not location:
                 continue
             html = f"""
-                <p> {3} </p>
+                <p> {{3}} </p>
                 <h2> {1} </h2>
                 <h1> {0} </h1>
                 <p>Details:- </p>
