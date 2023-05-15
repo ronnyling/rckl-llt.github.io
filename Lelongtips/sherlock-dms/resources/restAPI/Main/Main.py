@@ -97,17 +97,23 @@ class Main(object):
                 """.format(i['prop_name'], i['prop_type'], i['build_up'], i['date'], i['price'], i['psf'], i['others'], formatted_address_name)
             print(i['prop_name'] + " is this gg= " + html)
 
-            iframe = folium.IFrame(html=html, width=200, height=200)
+            # iframe = folium.IFrame(html=html, width=200, height=200)
+            iframe = folium.IFrame(html=html, width='90%', height='90%')
             # folium.folium.Element.render()
-            popup = folium.Popup(iframe, max_width=2650)
+            # popup = folium.Popup(iframe, max_width=2650)
+            popup = folium.Popup(iframe)
             folium.Marker(
                 location=(location['latitude'], location['longitude']),
                 popup=popup,
+                # icon=folium.DivIcon(html=f"""
+                # <div><svg>
+                #     <circle cx="50" cy="50" r="40" fill="#69b3a2" opacity=".4"/>
+                #     <rect x="35", y="35" width="30" height="30", fill="red", opacity=".3"
+                # </svg></div>""")
                 icon=folium.DivIcon(html=f"""
-                <div><svg>
-                    <circle cx="50" cy="50" r="40" fill="#69b3a2" opacity=".4"/>
-                    <rect x="35", y="35" width="30" height="30", fill="red", opacity=".3" 
-                </svg></div>""")
+                <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                </div>""")
                 # popup="hehe" + str(hi),
             ).add_to(m)
         date_now = str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f"))
