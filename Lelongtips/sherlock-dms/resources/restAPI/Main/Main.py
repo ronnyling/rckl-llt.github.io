@@ -64,92 +64,93 @@ class Main(object):
         # raise Exception (type(draft_content))
         print("draft_content= " + str(len(draft_content)))
         print("draft_content[0]= " + str(len(draft_content[0])))
-        for i in draft_content[0]:
-            # hi = hi + 1
-            location = {}
-            loc = i['address']
-            formatted_address_name = None
-            geolocator = Nominatim(user_agent="my_request")
-            # location = geolocator.geocode(loc)
-            geocode_result = gmaps.geocode(loc)
-            # print(str(geocode_result))
-            # if len(geocode_result[0]['address_components']) > 1 or geocode_result['status'] is not "OK":
-            #     print("Please inspect and fix geocode= " + str(geocode_result))
-            location_raw = geocode_result[0]['geometry']['location']
-            formatted_address_name = geocode_result[0]['formatted_address']
-            location.update({'latitude': location_raw['lat']})
-            location.update({'longitude': location_raw['lng']})
-            div_icon = None
-            price = i['price']
-            build_up = i['build_up']
-            if not price or not build_up:
-                div_icon = f"""
-                                <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
-                                </div>"""
-            else:
-                price = float(price)
-                build_up = float(build_up)
-                if price/build_up >= 700:
-                    continue
-                elif price/build_up <= 300 and price <= 800000:
-                    div_icon = f"""
-                                    <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
-                                    </div>"""
-                elif re.findall(".*(torey).*", i['prop_type']) or re.findall(".*(tory).*", i['prop_type']):
-                    div_icon = f"""
-                                    <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"/></svg>
-                                    </div>"""
-                else:
+        for j in draft_content:
+            for i in j:
+                # hi = hi + 1
+                location = {}
+                loc = i['address']
+                formatted_address_name = None
+                geolocator = Nominatim(user_agent="my_request")
+                # location = geolocator.geocode(loc)
+                geocode_result = gmaps.geocode(loc)
+                # print(str(geocode_result))
+                # if len(geocode_result[0]['address_components']) > 1 or geocode_result['status'] is not "OK":
+                #     print("Please inspect and fix geocode= " + str(geocode_result))
+                location_raw = geocode_result[0]['geometry']['location']
+                formatted_address_name = geocode_result[0]['formatted_address']
+                location.update({'latitude': location_raw['lat']})
+                location.update({'longitude': location_raw['lng']})
+                div_icon = None
+                price = i['price']
+                build_up = i['build_up']
+                if not price or not build_up:
                     div_icon = f"""
                                     <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                                     </div>"""
-            if not location:
-                continue
+                else:
+                    price = float(price)
+                    build_up = float(build_up)
+                    if price/build_up >= 700:
+                        continue
+                    elif price/build_up <= 300 and price <= 800000:
+                        div_icon = f"""
+                                        <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+                                        </div>"""
+                    elif re.findall(".*(torey).*", i['prop_type']) or re.findall(".*(tory).*", i['prop_type']):
+                        div_icon = f"""
+                                        <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"/></svg>
+                                        </div>"""
+                    else:
+                        div_icon = f"""
+                                        <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                        </div>"""
+                if not location:
+                    continue
 
-            iframe_target = str(i['prop_name'])
-            html = f"""
-                <p> {{3}} </p>
-                <h2> {{1}} </h2>
-                <h1> {{0}} </h1>
-                <p>Details:- </p>
-                <ul>
-                    <li>buildup {{2}}</li>
-                    <li>RM {{4}}</li>
-                    <li> {{5}} </li>
-                    <li> {{6}} </li>
-                    <li> {{7}} </li>                    
-                </ul>
-                </p>
-                <p>And that's a <a href="{{8}}" target=window.name>link</a></p>
-                """.format(i['prop_name'], i['prop_type'], build_up, i['date'], price, i['psf'], i['others'],
-                           formatted_address_name, i['h_ref'], iframe_target)
-            # print(i['prop_name'] + " is this gg= " + html)
-            iframe = folium.IFrame(html=html, width=300, height=200)
-            # iframe.add_child(iframe.get_name())
-            # iframe_name = iframe.get_name()
-            # print("iframe name= " + iframe_name)
-            # iframe = folium.IFrame(html=html, width='90%', height='90%')
-            # folium.folium.Element.render()
-            popup = folium.Popup(iframe, max_width=2650)
-            # popup = folium.Popup(iframe)
-            folium.Marker(
-                location=(location['latitude'], location['longitude']),
-                popup=popup,
-                # icon=folium.DivIcon(html=f"""
-                # <div><svg>
-                #     <circle cx="50" cy="50" r="40" fill="#69b3a2" opacity=".4"/>
-                #     <rect x="35", y="35" width="30" height="30", fill="red", opacity=".3"
-                # </svg></div>""")
+                iframe_target = str(i['prop_name'])
+                html = f"""
+                    <p> {{3}} </p>
+                    <h2> {{1}} </h2>
+                    <h1> {{0}} </h1>
+                    <p>Details:- </p>
+                    <ul>
+                        <li>buildup {{2}}</li>
+                        <li>RM {{4}}</li>
+                        <li> {{5}} </li>
+                        <li> {{6}} </li>
+                        <li> {{7}} </li>                    
+                    </ul>
+                    </p>
+                    <p>And that's a <a href="{{8}}" target=window.name>link</a></p>
+                    """.format(i['prop_name'], i['prop_type'], build_up, i['date'], price, i['psf'], i['others'],
+                               formatted_address_name, i['h_ref'], iframe_target)
+                # print(i['prop_name'] + " is this gg= " + html)
+                iframe = folium.IFrame(html=html, width=300, height=200)
+                # iframe.add_child(iframe.get_name())
+                # iframe_name = iframe.get_name()
+                # print("iframe name= " + iframe_name)
+                # iframe = folium.IFrame(html=html, width='90%', height='90%')
+                # folium.folium.Element.render()
+                popup = folium.Popup(iframe, max_width=2650)
+                # popup = folium.Popup(iframe)
+                folium.Marker(
+                    location=(location['latitude'], location['longitude']),
+                    popup=popup,
+                    # icon=folium.DivIcon(html=f"""
+                    # <div><svg>
+                    #     <circle cx="50" cy="50" r="40" fill="#69b3a2" opacity=".4"/>
+                    #     <rect x="35", y="35" width="30" height="30", fill="red", opacity=".3"
+                    # </svg></div>""")
 
-                #green
-                # <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
-                icon=folium.DivIcon(html=div_icon)
-                # popup="hehe" + str(hi),
-            ).add_to(m)
+                    #green
+                    # <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                    icon=folium.DivIcon(html=div_icon)
+                    # popup="hehe" + str(hi),
+                ).add_to(m)
         date_now = str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f"))
         date_file = re.sub(r'[^\w]', '', date_now)
         m.save(f"../../docs/index.html")
