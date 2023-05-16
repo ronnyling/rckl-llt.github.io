@@ -238,6 +238,7 @@ class Main(object):
         k = 0
         draft_content = []
         for i in range(1, int(page_no_upper)+1):
+            print("now i am at page " + str(i))
             response = requests.get(
                 url=MAIN_URL + str(i)
             )
