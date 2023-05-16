@@ -127,7 +127,9 @@ class Main(object):
                            formatted_address_name, i['h_ref'], iframe_target)
             print(i['prop_name'] + " is this gg= " + html)
 
-            iframe = folium.IFrame(html=html, width=400, height=300)
+            iframe = folium.IFrame(html=html, width=300, height=200)
+            iframe_name = iframe.get_name()
+            print("iframe name= " + iframe_name)
             # iframe = folium.IFrame(html=html, width='90%', height='90%')
             # folium.folium.Element.render()
             popup = folium.Popup(iframe, max_width=2650)

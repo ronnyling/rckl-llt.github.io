@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230515 21:14:29.478" rpa="false" schemaversion="3">
+<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230516 11:07:19.497" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\tests\restAPI\Main\Main.robot">
 <test id="s1-t1" name="1 - Executes Main flow" line="6">
 <kw name="When user runs main flow" library="Main">
-<msg timestamp="20230515 21:13:46.395" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20230515 21:13:46.401" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230515 21:13:47.479" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;state=kl_sel&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;page=1 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 21:13:47.494" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230515 21:13:48.496" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;state=kl_sel&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;page=1 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 21:13:54.704" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230515 21:13:55.748" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;state=kl_sel&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;page=2 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 21:13:56.945" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:56.945" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:56.953" level="DEBUG">Starting new HTTPS connection (1): maps.googleapis.com:443</msg>
-<msg timestamp="20230515 21:13:57.090" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+8%2C+Jalan+1%2F9%2C+43650+Bandar+Baru+Bangi%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 21:13:57.093" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:57.096" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:57.239" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+10%2C+Jalan+1%2F144A%2C+Taman+Bukit+Cheras%2C+56000%2C+Kuala+Lumpur&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 21:13:57.244" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:57.246" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:57.387" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Gugusan+Semarak%2C+Jalan+Camar+4%2F1%2C+Kota+Damansara%2C+47810+Petaling+Jaya%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 21:13:57.394" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:57.395" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:57.531" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+A%2C+Seri+Jati%2C+Taman+Balakong+Jayam+43000+Kajang%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 21:13:57.540" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:57.542" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:57.681" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+M2%2C+Jalan+Persiaran+Desa+Serdang+3%2C+Taman+Desa+Serdang%2C+43300+Seri+Kembangan%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 21:13:57.686" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:57.689" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:58.044" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Residensi+Warnasari+3%2C+Jalan+Residensi+Warnasari+13%2F1%2C+42300+Bandar+Puncak+Alam%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 21:13:58.050" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:58.051" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:58.158" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+B02%2C+Apartment+Melor%2C+Taman+Sutera+Kajang%2C+43000+Kajang%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 21:13:58.159" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:58.162" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:58.285" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Pangsapuri+Subang+Hijauan%2C+Jalan+Bintang+U5%2F33%2C+Seksyen+U5+40150+Shah+Alam%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 21:13:58.313" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:58.317" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:58.471" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+53%2C+Abadi+Indah+Apartment%2C+Jalan+3%2F109C%2C+Taman+Abadi+Indah%2C+Off+Jalan+Kelang+Lama%2C+58100%2C+Kuala+Lumpur&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 21:13:58.473" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:58.479" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:58.651" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Orkid+1%2C+Taman+Orkid%2C+43200+Cheras%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 21:13:58.661" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:58.663" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:58.803" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+E%2C+Harmoni+Apartment%2C+No.+55%2C+Jalan+PJU+10%2F4C%2C+Damansara+Damai%2C+47830+Petaling+Jaya%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 21:13:58.804" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:58.810" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230515 21:13:58.966" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=1st+Floor%2C+Jalan+B%2FP+1%2C+Taman+Bukit+Pandan%2C+56100%2C+Kuala+Lumpur&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 21:13:59.200" level="DEBUG">Popen(['git', 'add', '--update'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=None)</msg>
-<msg timestamp="20230515 21:14:04.053" level="DEBUG">Popen(['git', 'cat-file', '--batch-check'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
-<msg timestamp="20230515 21:14:05.252" level="DEBUG">Popen(['git', 'cat-file', '--batch'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
-<msg timestamp="20230515 21:14:07.627" level="DEBUG">Popen(['git', 'push', '--porcelain', '--', 'origin'], cwd=G:\My Drive\Python\Scraper, universal_newlines=True, shell=None, istream=None)</msg>
-<msg timestamp="20230515 21:14:26.827" level="DEBUG">Starting new HTTPS connection (1): api.medium.com:443</msg>
-<msg timestamp="20230515 21:14:27.258" level="DEBUG">https://api.medium.com:443 "GET /v1/me?accessToken=2a2528f1fe702b30de4754240bfbf1f24a50eddb5928cc5bd0eb30c21ccc22f05 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230515 21:14:27.270" level="DEBUG">Starting new HTTPS connection (1): api.medium.com:443</msg>
-<msg timestamp="20230515 21:14:28.485" level="DEBUG">https://api.medium.com:443 "POST /v1/users/1489a7ba40854e1663de46c31d7e15e2a19ab642b186ddc014b78fbb63b9e5092/posts HTTP/1.1" 201 349</msg>
-<msg timestamp="20230515 21:14:28.522" level="INFO">hi 240
+<msg timestamp="20230516 11:06:44.875" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230516 11:06:44.879" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230516 11:06:46.297" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;state=kl_sel&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230516 11:06:46.310" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230516 11:06:47.080" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;state=kl_sel&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230516 11:06:51.285" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230516 11:06:52.514" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;state=kl_sel&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;page=2 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230516 11:06:56.697" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:56.698" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:56.699" level="DEBUG">Starting new HTTPS connection (1): maps.googleapis.com:443</msg>
+<msg timestamp="20230516 11:06:56.923" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+8%2C+Jalan+1%2F9%2C+43650+Bandar+Baru+Bangi%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230516 11:06:56.927" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:56.927" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:57.070" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+10%2C+Jalan+1%2F144A%2C+Taman+Bukit+Cheras%2C+56000%2C+Kuala+Lumpur&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230516 11:06:57.072" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:57.072" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:57.226" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Gugusan+Semarak%2C+Jalan+Camar+4%2F1%2C+Kota+Damansara%2C+47810+Petaling+Jaya%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230516 11:06:57.229" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:57.229" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:57.366" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+A%2C+Seri+Jati%2C+Taman+Balakong+Jayam+43000+Kajang%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230516 11:06:57.369" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:57.372" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:57.525" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+M2%2C+Jalan+Persiaran+Desa+Serdang+3%2C+Taman+Desa+Serdang%2C+43300+Seri+Kembangan%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230516 11:06:57.528" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:57.528" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:57.663" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Residensi+Warnasari+3%2C+Jalan+Residensi+Warnasari+13%2F1%2C+42300+Bandar+Puncak+Alam%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230516 11:06:57.666" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:57.666" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:57.774" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+B02%2C+Apartment+Melor%2C+Taman+Sutera+Kajang%2C+43000+Kajang%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230516 11:06:57.775" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:57.776" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:57.919" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Pangsapuri+Subang+Hijauan%2C+Jalan+Bintang+U5%2F33%2C+Seksyen+U5+40150+Shah+Alam%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230516 11:06:57.921" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:57.921" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:58.124" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+53%2C+Abadi+Indah+Apartment%2C+Jalan+3%2F109C%2C+Taman+Abadi+Indah%2C+Off+Jalan+Kelang+Lama%2C+58100%2C+Kuala+Lumpur&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230516 11:06:58.135" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:58.136" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:58.245" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Orkid+1%2C+Taman+Orkid%2C+43200+Cheras%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230516 11:06:58.247" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:58.247" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:58.381" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+E%2C+Harmoni+Apartment%2C+No.+55%2C+Jalan+PJU+10%2F4C%2C+Damansara+Damai%2C+47830+Petaling+Jaya%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230516 11:06:58.383" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:58.383" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230516 11:06:58.498" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=1st+Floor%2C+Jalan+B%2FP+1%2C+Taman+Bukit+Pandan%2C+56100%2C+Kuala+Lumpur&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230516 11:06:58.611" level="DEBUG">Popen(['git', 'add', '--update'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=None)</msg>
+<msg timestamp="20230516 11:07:02.434" level="DEBUG">Popen(['git', 'cat-file', '--batch-check'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
+<msg timestamp="20230516 11:07:03.041" level="DEBUG">Popen(['git', 'cat-file', '--batch'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
+<msg timestamp="20230516 11:07:03.577" level="DEBUG">Popen(['git', 'push', '--porcelain', '--', 'origin'], cwd=G:\My Drive\Python\Scraper, universal_newlines=True, shell=None, istream=None)</msg>
+<msg timestamp="20230516 11:07:16.122" level="DEBUG">Starting new HTTPS connection (1): api.medium.com:443</msg>
+<msg timestamp="20230516 11:07:17.530" level="DEBUG">https://api.medium.com:443 "GET /v1/me?accessToken=2a2528f1fe702b30de4754240bfbf1f24a50eddb5928cc5bd0eb30c21ccc22f05 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230516 11:07:17.534" level="DEBUG">Starting new HTTPS connection (1): api.medium.com:443</msg>
+<msg timestamp="20230516 11:07:18.960" level="DEBUG">https://api.medium.com:443 "POST /v1/users/1489a7ba40854e1663de46c31d7e15e2a19ab642b186ddc014b78fbb63b9e5092/posts HTTP/1.1" 201 349</msg>
+<msg timestamp="20230516 11:07:18.969" level="INFO">hi 240
 iii= &lt;div class="col details-col flex-grow-1"&gt;
 &lt;div class="d-flex flex-column p-3 position-relative h-100"&gt;
 &lt;div class="content-header"&gt;
@@ -564,12 +564,12 @@ iii= &lt;div class="col details-col flex-grow-1"&gt;
 &lt;div class="content-header"&gt;
 &lt;div class="d-flex flex-column flex-sm-row justify-content-between"&gt;
 &lt;h4 class="fw-bold text-nowrap d-flex flex-row flex-sm-column position-relative"&gt;
-&lt;a class="stretched-link" href="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-ROI-up-to-6-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000" title="[ROI up to 6%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]"&gt;&lt;/a&gt;
+&lt;a class="stretched-link" href="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-45-ROI-up-to-10-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000" title="[-45% &amp;amp; ROI up to 10%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]"&gt;&lt;/a&gt;
 &lt;span class="fs-6 d-sm-block text-muted mt-1 mt-sm-0 mb-1 me-2 me-sm-0"&gt;&lt;small class="fw-normal"&gt;Auction Price&lt;/small&gt;&lt;/span&gt;
                                 RM150,000
                             &lt;/h4&gt;
 &lt;h4 class="text-nowrap text-end d-flex flex-row flex-sm-column list-none position-relative"&gt;
-&lt;a class="stretched-link" href="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-ROI-up-to-6-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000" title="[ROI up to 6%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]"&gt;&lt;/a&gt;
+&lt;a class="stretched-link" href="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-45-ROI-up-to-10-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000" title="[-45% &amp;amp; ROI up to 10%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]"&gt;&lt;/a&gt;
 &lt;span class="fs-6 d-block text-muted mb-2 me-2 me-sm-0"&gt;&lt;small class="fw-normal"&gt;Auction Date&lt;/small&gt;&lt;/span&gt;
 &lt;div class="fs-6 d-block fw-bold"&gt;26 May 2023 (Fri)&lt;/div&gt;
 &lt;/h4&gt;
@@ -579,17 +579,17 @@ iii= &lt;div class="col details-col flex-grow-1"&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="content-body position-relative mb-3 pb-3"&gt;
-&lt;a class="stretched-link" href="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-ROI-up-to-6-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000" title="[ROI up to 6%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]"&gt;&lt;/a&gt;
+&lt;a class="stretched-link" href="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-45-ROI-up-to-10-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000" title="[-45% &amp;amp; ROI up to 10%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]"&gt;&lt;/a&gt;
 &lt;p class="text-muted mb-0 text-truncate"&gt;Abadi Indah, Kuala Lumpur&lt;/p&gt;
 &lt;h5 class="fw-bold crop-text-3 mb-0"&gt;
                             Block 53, Abadi Indah Apartment, Jalan 3/109C, Taman Abadi Indah, Off Jalan Kelang Lama, 58100, Kuala Lumpur
                         &lt;/h5&gt;
 &lt;p class="text-info crop-text-2 list-none mb-2"&gt;
-                            [ROI up to 6%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]
+                            [-45% &amp;amp; ROI up to 10%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]
                         &lt;/p&gt;
 &lt;div class="grid-none"&gt;
 &lt;p class="text-info text-truncate mb-0"&gt;
-                                [ROI up to 6%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]
+                                [-45% &amp;amp; ROI up to 10%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]
                             &lt;/p&gt;
 &lt;div class="d-flex flex-row py-2"&gt;
 &lt;div class="text-nowrap pe-4"&gt;
@@ -618,8 +618,8 @@ iii= &lt;div class="col details-col flex-grow-1"&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-check_xia= https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-ROI-up-to-6-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000
-content_details= {'address': 'Block 53, Abadi Indah Apartment, Jalan 3/109C, Taman Abadi Indah, Off Jalan Kelang Lama, 58100, Kuala Lumpur', 'prop_name': 'Abadi Indah, Kuala Lumpur', 'prop_type': '[ROI up to 6%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]', 'build_up': '947', 'date': '26 May 2023 (Fri)', 'price': '150000', 'psf': '', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-ROI-up-to-6-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000', 'restriction': None}
+check_xia= https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-45-ROI-up-to-10-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000
+content_details= {'address': 'Block 53, Abadi Indah Apartment, Jalan 3/109C, Taman Abadi Indah, Off Jalan Kelang Lama, 58100, Kuala Lumpur', 'prop_name': 'Abadi Indah, Kuala Lumpur', 'prop_type': '[-45% &amp; ROI up to 10%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]', 'build_up': '947', 'date': '26 May 2023 (Fri)', 'price': '150000', 'psf': '', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-45-ROI-up-to-10-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000', 'restriction': None}
 iii= &lt;div class="col details-col flex-grow-1"&gt;
 &lt;div class="d-flex flex-column p-3 position-relative h-100"&gt;
 &lt;div class="content-header"&gt;
@@ -732,9 +732,10 @@ iii= &lt;div class="col details-col flex-grow-1"&gt;
 &lt;div class="position-absolute bottom-0"&gt;
 &lt;div class="d-flex flex-row pb-2"&gt;
 &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;LACA&lt;/span&gt;&lt;/div&gt;
+&lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;1&lt;sup&gt;st&lt;/sup&gt; Auction&lt;/span&gt;&lt;/div&gt;
 &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 list-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;650 sq.ft&lt;/span&gt;&lt;/div&gt;
 &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;3 &lt;i class="fas fa-bed"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;&lt;span title="Online"&gt;&lt;i class="fas fa-fw fa-wifi"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;&lt;span title="Online"&gt;&lt;i class="fas fa-fw fa-wifi"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;RM231 per sf&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -742,7 +743,7 @@ iii= &lt;div class="col details-col flex-grow-1"&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 check_xia= https://www.lelongtips.com.my/property/eE5yL1gvZWwwUUdMa2xQZERBM1JNZz09/Lelong-Auction-Apartment-in-Petaling-Jaya-Selangor-for-RM150000
-content_details= {'address': 'Block E, Harmoni Apartment, No. 55, Jalan PJU 10/4C, Damansara Damai, 47830 Petaling Jaya, Selangor', 'prop_name': 'Pangsapuri Harmoni, Selangor', 'prop_type': 'Apartment', 'build_up': '650', 'date': '22 May 2023 (Mon)', 'price': '150000', 'psf': '', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/eE5yL1gvZWwwUUdMa2xQZERBM1JNZz09/Lelong-Auction-Apartment-in-Petaling-Jaya-Selangor-for-RM150000', 'restriction': None}
+content_details= {'address': 'Block E, Harmoni Apartment, No. 55, Jalan PJU 10/4C, Damansara Damai, 47830 Petaling Jaya, Selangor', 'prop_name': 'Pangsapuri Harmoni, Selangor', 'prop_type': 'Apartment', 'build_up': '650', 'date': '22 May 2023 (Mon)', 'price': '150000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/eE5yL1gvZWwwUUdMa2xQZERBM1JNZz09/Lelong-Auction-Apartment-in-Petaling-Jaya-Selangor-for-RM150000', 'restriction': None}
 iii= &lt;div class="col details-col flex-grow-1"&gt;
 &lt;div class="d-flex flex-column p-3 position-relative h-100"&gt;
 &lt;div class="content-header"&gt;
@@ -793,9 +794,10 @@ iii= &lt;div class="col details-col flex-grow-1"&gt;
 &lt;div class="position-absolute bottom-0"&gt;
 &lt;div class="d-flex flex-row pb-2"&gt;
 &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;LACA&lt;/span&gt;&lt;/div&gt;
+&lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;1&lt;sup&gt;st&lt;/sup&gt; Auction&lt;/span&gt;&lt;/div&gt;
 &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 list-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;755 sq.ft&lt;/span&gt;&lt;/div&gt;
 &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;LH&lt;/span&gt;&lt;/div&gt;
-&lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;3 &lt;i class="fas fa-bed"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;3 &lt;i class="fas fa-bed"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;&lt;span title="Online"&gt;&lt;i class="fas fa-fw fa-wifi"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;RM199 per sf&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -804,7 +806,7 @@ iii= &lt;div class="col details-col flex-grow-1"&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 check_xia= https://www.lelongtips.com.my/property/ZnFZMDRMb2FmOEFvMk1vQkJSeVRFQT09/Lelong-Auction-Apartment-in-Taman-Bukit-Pandan-Kuala-Lumpur-for-RM150000
-content_details= {'address': '1st Floor, Jalan B/P 1, Taman Bukit Pandan, 56100, Kuala Lumpur', 'prop_name': 'Taman Bukit Pandan, Kuala Lumpur', 'prop_type': 'Apartment', 'build_up': '755', 'date': '22 May 2023 (Mon)', 'price': '150000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/ZnFZMDRMb2FmOEFvMk1vQkJSeVRFQT09/Lelong-Auction-Apartment-in-Taman-Bukit-Pandan-Kuala-Lumpur-for-RM150000', 'restriction': None}
+content_details= {'address': '1st Floor, Jalan B/P 1, Taman Bukit Pandan, 56100, Kuala Lumpur', 'prop_name': 'Taman Bukit Pandan, Kuala Lumpur', 'prop_type': 'Apartment', 'build_up': '755', 'date': '22 May 2023 (Mon)', 'price': '150000', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/ZnFZMDRMb2FmOEFvMk1vQkJSeVRFQT09/Lelong-Auction-Apartment-in-Taman-Bukit-Pandan-Kuala-Lumpur-for-RM150000', 'restriction': None}
 iii= &lt;div class="col details-col flex-grow-1"&gt;
 &lt;div class="d-flex flex-column p-3 position-relative h-100"&gt;
 &lt;div class="content-header"&gt;
@@ -1103,9 +1105,10 @@ iii= &lt;div class="col details-col flex-grow-1"&gt;
 &lt;div class="position-absolute bottom-0"&gt;
 &lt;div class="d-flex flex-row pb-2"&gt;
 &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;LACA&lt;/span&gt;&lt;/div&gt;
+&lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;1&lt;sup&gt;st&lt;/sup&gt; Auction&lt;/span&gt;&lt;/div&gt;
 &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 list-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;657 sq.ft&lt;/span&gt;&lt;/div&gt;
 &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;LH&lt;/span&gt;&lt;/div&gt;
-&lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;3 &lt;i class="fas fa-bed"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;3 &lt;i class="fas fa-bed"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;&lt;span title="On-site + Online"&gt;&lt;i class="fas fa-neuter"&gt;&lt;/i&gt; + &lt;i class="fas fa-fw fa-wifi"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;RM236 per sf&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -1114,7 +1117,7 @@ iii= &lt;div class="col details-col flex-grow-1"&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 check_xia= https://www.lelongtips.com.my/property/dXgwSzFTWnhZa3p0RndTdjRlMjBSZz09/Lelong-Auction-Apartment-in-Taman-Kosas-Selangor-for-RM155000
-content_details= {'address': 'Rumah Pangsa, Jalan Kosas Utama 5, Taman Kosas, 68000 Ampang, Selangor', 'prop_name': 'Flat Taman Kosas, Selangor', 'prop_type': 'Apartment', 'build_up': '657', 'date': '22 May 2023 (Mon)', 'price': '155000', 'psf': '', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/dXgwSzFTWnhZa3p0RndTdjRlMjBSZz09/Lelong-Auction-Apartment-in-Taman-Kosas-Selangor-for-RM155000', 'restriction': None}
+content_details= {'address': 'Rumah Pangsa, Jalan Kosas Utama 5, Taman Kosas, 68000 Ampang, Selangor', 'prop_name': 'Flat Taman Kosas, Selangor', 'prop_type': 'Apartment', 'build_up': '657', 'date': '22 May 2023 (Mon)', 'price': '155000', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/dXgwSzFTWnhZa3p0RndTdjRlMjBSZz09/Lelong-Auction-Apartment-in-Taman-Kosas-Selangor-for-RM155000', 'restriction': None}
 iii= &lt;div class="col details-col flex-grow-1"&gt;
 &lt;div class="d-flex flex-column p-3 position-relative h-100"&gt;
 &lt;div class="content-header"&gt;
@@ -1570,8 +1573,8 @@ iii= &lt;div class="col details-col flex-grow-1"&gt;
 check_xia= https://www.lelongtips.com.my/property/Yk1PZkh5SkZtYmhHekl2U2xncUNSUT09/Lelong-Auction-3-Bedroom-Apartment-in-Jenjarom-Selangor-for-RM160000
 content_details= {'address': 'Ground Floor, Block 17, Jalan SP 4/3, Rumah Pangsa Impian, Bandar Saujana Putra, 42610 Jenjarom, Selangor', 'prop_name': 'Rumah Pangsa Impian, Selangor', 'prop_type': '3 Bedroom Apartment', 'build_up': '635', 'date': '30 May 2023 (Tue)', 'price': '160000', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/Yk1PZkh5SkZtYmhHekl2U2xncUNSUT09/Lelong-Auction-3-Bedroom-Apartment-in-Jenjarom-Selangor-for-RM160000', 'restriction': None}
 &lt;class 'list'&gt;
-&lt;generator object Main.map_gen.&lt;locals&gt;.&lt;genexpr&gt; at 0x000001BEE0172650&gt;
-[[{'address': 'Block 8, Jalan 1/9, 43650 Bandar Baru Bangi, Selangor', 'prop_name': 'Seksyen 1, Selangor', 'prop_type': 'Apartment', 'build_up': '614', 'date': '20 May 2023 (Sat)', 'price': '150000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/Tlp1UlZHc245alZQYXY4WDdRa2dEQT09/Lelong-Auction-Apartment-in-Bandar-Baru-Bangi-Selangor-for-RM150000', 'restriction': 'Bumi Quota'}, {'address': 'Block 10, Jalan 1/144A, Taman Bukit Cheras, 56000, Kuala Lumpur', 'prop_name': 'Taman Bukit Cheras (Cheras Heights), Kuala Lumpur', 'prop_type': None, 'build_up': '517', 'date': '1 Jun 2023 (Thu)', 'price': '150000', 'psf': '', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/TVdsUlBnUDlFZ05CWFMveEg3aytFdz09/Lelong-Auction-Apartment-in-Taman-Bukit-Cheras-Kuala-Lumpur-for-RM150000', 'restriction': None}, {'address': 'Gugusan Semarak, Jalan Camar 4/1, Kota Damansara, 47810 Petaling Jaya, Selangor', 'prop_name': 'Gugusan Semarak, Selangor', 'prop_type': 'Gugusan Semarak Apartment [3 min to Surian MRT Station &amp; Sunway Giza Mall; 9 min to 1 Utama Shopping Centre]', 'build_up': '646', 'date': '26 May 2023 (Fri)', 'price': '150000', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/Q2FuandPQitVeUxFRGhpa0VadjZiZz09/Lelong-Auction-Gugusan-Semarak-Apartment-3-min-to-Surian-MRT-Station-Sunway-Giza-Mall-9-min-to-1-Utama-Shopping-Centre-in-Petaling-Jaya-Selangor-for-RM150000', 'restriction': 'Bumi Lot'}, {'address': 'Block A, Seri Jati, Taman Balakong Jayam 43000 Kajang, Selangor', 'prop_name': 'Pangsapuri Seri Jati, Selangor', 'prop_type': 'Seri Jati Apartment', 'build_up': '707', 'date': '17 May 2023 (Wed)', 'price': '150000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/QTNnenQwUC9JZk1UcEE1OTdDenQ5dz09/Lelong-Auction-Seri-Jati-Apartment-in-Balakong-Selangor-for-RM150000', 'restriction': None}, {'address': 'Block M2, Jalan Persiaran Desa Serdang 3, Taman Desa Serdang, 43300 Seri Kembangan, Selangor', 'prop_name': 'Taman Desa Serdang, Selangor', 'prop_type': 'Apartment', 'build_up': '826', 'date': '30 May 2023 (Tue)', 'price': '150000', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/UkhDVzJCdkxPanVMTmpMaERwa3NZZz09/Lelong-Auction-Apartment-in-Taman-Desa-Serdang-Selangor-for-RM150000', 'restriction': None}, {'address': 'Residensi Warnasari 3, Jalan Residensi Warnasari 13/1, 42300 Bandar Puncak Alam, Selangor', 'prop_name': 'Pangsapuri Begonia (Begonia Kristal), Selangor', 'prop_type': 'Apartment', 'build_up': '720', 'date': '17 May 2023 (Wed)', 'price': '150000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/bEZKaDhtQ1RQZGRSREhXQTFnTWNZQT09/Lelong-Auction-Apartment-in-Bandar-Puncak-Alam-Selangor-for-RM150000', 'restriction': None}, {'address': 'Block B02, Apartment Melor, Taman Sutera Kajang, 43000 Kajang, Selangor', 'prop_name': 'Pangsapuri Melor, Selangor', 'prop_type': 'Melor Apartment', 'build_up': None, 'date': '29 May 2023 (Mon)', 'price': '150000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/Y2VyemUxakV2aU12TVNqT3UvQTk2Zz09/Lelong-Auction-Melor-Apartment-in-Taman-Sutera-Kajang-Selangor-for-RM150000', 'restriction': None}, {'address': 'Pangsapuri Subang Hijauan, Jalan Bintang U5/33, Seksyen U5 40150 Shah Alam, Selangor', 'prop_name': 'Subang Hijauan, Selangor', 'prop_type': 'Apartment', 'build_up': '650', 'date': '6 Jun 2023 (Tue)', 'price': '150000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/bDI1UW9VZW05bU5QamwvRjVxVS9Zdz09/Lelong-Auction-Apartment-in-Shah-Alam-Selangor-for-RM150000', 'restriction': None}, {'address': 'Block 53, Abadi Indah Apartment, Jalan 3/109C, Taman Abadi Indah, Off Jalan Kelang Lama, 58100, Kuala Lumpur', 'prop_name': 'Abadi Indah, Kuala Lumpur', 'prop_type': '[ROI up to 6%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]', 'build_up': '947', 'date': '26 May 2023 (Fri)', 'price': '150000', 'psf': '', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-ROI-up-to-6-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000', 'restriction': None}, {'address': 'Jalan Orkid 1, Taman Orkid, 43200 Cheras, Selangor', 'prop_name': 'Taman Orkid, Selangor', 'prop_type': 'Apartment', 'build_up': '754', 'date': '26 May 2023 (Fri)', 'price': '150000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/YU5XdnhKQlk2NkRucVhPOGZIU3NPdz09/Lelong-Auction-Apartment-in-Taman-Orkid-Selangor-for-RM150000', 'restriction': None}, {'address': 'Block E, Harmoni Apartment, No. 55, Jalan PJU 10/4C, Damansara Damai, 47830 Petaling Jaya, Selangor', 'prop_name': 'Pangsapuri Harmoni, Selangor', 'prop_type': 'Apartment', 'build_up': '650', 'date': '22 May 2023 (Mon)', 'price': '150000', 'psf': '', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/eE5yL1gvZWwwUUdMa2xQZERBM1JNZz09/Lelong-Auction-Apartment-in-Petaling-Jaya-Selangor-for-RM150000', 'restriction': None}, {'address': '1st Floor, Jalan B/P 1, Taman Bukit Pandan, 56100, Kuala Lumpur', 'prop_name': 'Taman Bukit Pandan, Kuala Lumpur', 'prop_type': 'Apartment', 'build_up': '755', 'date': '22 May 2023 (Mon)', 'price': '150000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/ZnFZMDRMb2FmOEFvMk1vQkJSeVRFQT09/Lelong-Auction-Apartment-in-Taman-Bukit-Pandan-Kuala-Lumpur-for-RM150000', 'restriction': None}], [{'address': 'Block C, Pangsapuri Putra Impian, Jalan PP 39, Taman Pinggiran Putra Seksyen 2, 43300 Seri Kembangan, Selangor', 'prop_name': 'Pangsapuri Putra Impian, Selangor', 'prop_type': None, 'build_up': '753', 'date': '16 May 2023 (Tue)', 'price': '153000', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/TVd2OCtWNDZLbVBaRm5WM3Y1ZHBiUT09/Lelong-Auction-Putra-Impian-Apartment-in-Seri-Kembangan-Selangor-for-RM153000', 'restriction': None}, {'address': 'Blok 20, Rumah Pangsa Seksyen 8, Jalan Liku 8/1, Seksyen 8, 40000 Shah Alam, Selangor', 'prop_name': 'Flat PKNS Seksyen 8, Selangor', 'prop_type': 'Seksyen 8 Apartment', 'build_up': '755', 'date': '20 May 2023 (Sat)', 'price': '153000', 'psf': '', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/MWh2SzBsUFl2Ty9Sa1BDMlRDZlowdz09/Lelong-Auction-Seksyen-8-Apartment-in-Shah-Alam-Selangor-for-RM153000', 'restriction': None}, {'address': 'Block 35, Seksyen 24, 40300 Shah Alam, Selangor', 'prop_name': 'Flat PKNS Seksyen 24, Selangor', 'prop_type': 'Apartment', 'build_up': '754', 'date': '20 May 2023 (Sat)', 'price': '153000', 'psf': '', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/RFczQVo3cmpBcVd2WlBYMXdsSzZlZz09/Lelong-Auction-Apartment-in-Shah-Alam-Selangor-for-RM153000', 'restriction': None}, {'address': 'Tingkat 3, Jalan 10/2, Taman Perkasa, 43100 Hulu Langat, Selangor', 'prop_name': 'Taman Perkasa, Selangor', 'prop_type': None, 'build_up': '753', 'date': '25 May 2023 (Thu)', 'price': '153900', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/NVJ2Q3dRM0gxa2ViOTV5Q0dxRkx6Zz09/Lelong-Auction-Flat-in-Taman-Perkasa-Selangor-for-RM153900', 'restriction': None}, {'address': 'Rumah Pangsa, Jalan Kosas Utama 5, Taman Kosas, 68000 Ampang, Selangor', 'prop_name': 'Flat Taman Kosas, Selangor', 'prop_type': 'Apartment', 'build_up': '657', 'date': '22 May 2023 (Mon)', 'price': '155000', 'psf': '', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/dXgwSzFTWnhZa3p0RndTdjRlMjBSZz09/Lelong-Auction-Apartment-in-Taman-Kosas-Selangor-for-RM155000', 'restriction': None}, {'address': 'Vega Residensi 1, Persiaran Sepang, Seksyen 6, 63300 Cyberjaya, Selangor', 'prop_name': 'Vega Residensi, Selangor', 'prop_type': 'Vega Residensi 1 Service Apartment', 'build_up': '535', 'date': '26 May 2023 (Fri)', 'price': '157460', 'psf': '1', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/ZGY0bFUyaXdvV1dLT1hkaVpLaWI3Zz09/Lelong-Auction-Vega-Residensi-1-Service-Apartment-in-Cyberjaya-Selangor-for-RM157460', 'restriction': 'Bumi Lot'}, {'address': "Saville @ D'Lake, Jalan Saville, 47130 Puchong, Selangor", 'prop_name': "Saville @ D'Lake, Selangor", 'prop_type': "[-47%] Studio Unit, Intermediate with 2 Car parks [9 min to Lotus's Bandar Bukit Puchong]", 'build_up': '775', 'date': '30 May 2023 (Tue)', 'price': '159000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/MmdWU1lGUEV6cXNYcTlZTldxL1NSQT09/Lelong-Auction-47-Studio-Unit-Intermediate-with-2-Car-parks-9-min-to-Lotus-s-Bandar-Bukit-Puchong-in-Puchong-Selangor-for-RM159000', 'restriction': 'Bumi Lot'}, {'address': 'Block A, Villa Sentosa, Jalan Dato Yusof Shahbudin 3, Taman Sentosa, 41200 Klang, Selangor', 'prop_name': 'Villa Sentosa, Selangor', 'prop_type': None, 'build_up': '850', 'date': '25 Jul 2023 (Tue)', 'price': '160000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/SUJDbUU0M2ZVYzdoK29iZEdtMTZBZz09/Lelong-Auction-Freehold-3-Bedroom-Villa-Sentosa-Apartment-9-min-to-GM-Klang-Wholesale-City-Econsave-Kampung-Jawa-in-Taman-Sentosa-Selangor-for-RM160000', 'restriction': None}, {'address': 'Gugusan Dedap, Block 9, Jalan Kenyalang 11/1, Kota Damansara, 47810 Petaling Jaya, Selangor', 'prop_name': 'Gugusan Dedap, Selangor', 'prop_type': None, 'build_up': '667', 'date': '31 May 2023 (Wed)', 'price': '160000', 'psf': '', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/cXYzMUJ4dFY0YVJwSjlMNjc3d2JTZz09/Lelong-Auction-Apartment-in-Petaling-Jaya-Selangor-for-RM160000', 'restriction': None}, {'address': 'Level 1, Block A, Pangsapuri Ceria, Jalan TK 4/5, Taman Kinrara, 47100 Puchong, Selangor', 'prop_name': 'Pangsapuri Ceria, Selangor', 'prop_type': 'Apartment', 'build_up': '650', 'date': '23 May 2023 (Tue)', 'price': '160000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/U0lIdlZOUjg4SVFrYURrbm14NUkvUT09/Lelong-Auction-Apartment-in-Taman-Kinrara-Selangor-for-RM160000', 'restriction': 'Bumi Lot'}, {'address': 'Block D, Apartment Idaman, No. 9, Jalan PJU 10/1, PJU, Damansara Damai, 47200 Petaling Jaya, Selangor', 'prop_name': 'Pangsapuri Idaman, Selangor', 'prop_type': '3 Bedroom Idaman Apartment, Low Cost [3 min to Seasons Square; 5 min to Damansara Damai MRT Station; 10 min to DA Square]', 'build_up': '650', 'date': '26 May 2023 (Fri)', 'price': '160000', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/cm96VkhPMnlyN2tZNFUxbDBTQ2ovZz09/Lelong-Auction-3-Bedroom-Idaman-Apartment-Low-Cost-3-min-to-Seasons-Square-5-min-to-Damansara-Damai-MRT-Station-10-min-to-DA-Square-in-Petaling-Jaya-Selangor-for-RM160000', 'restriction': None}, {'address': 'Ground Floor, Block 17, Jalan SP 4/3, Rumah Pangsa Impian, Bandar Saujana Putra, 42610 Jenjarom, Selangor', 'prop_name': 'Rumah Pangsa Impian, Selangor', 'prop_type': '3 Bedroom Apartment', 'build_up': '635', 'date': '30 May 2023 (Tue)', 'price': '160000', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/Yk1PZkh5SkZtYmhHekl2U2xncUNSUT09/Lelong-Auction-3-Bedroom-Apartment-in-Jenjarom-Selangor-for-RM160000', 'restriction': None}]]
+&lt;generator object Main.map_gen.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000028750CE30D0&gt;
+[[{'address': 'Block 8, Jalan 1/9, 43650 Bandar Baru Bangi, Selangor', 'prop_name': 'Seksyen 1, Selangor', 'prop_type': 'Apartment', 'build_up': '614', 'date': '20 May 2023 (Sat)', 'price': '150000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/Tlp1UlZHc245alZQYXY4WDdRa2dEQT09/Lelong-Auction-Apartment-in-Bandar-Baru-Bangi-Selangor-for-RM150000', 'restriction': 'Bumi Quota'}, {'address': 'Block 10, Jalan 1/144A, Taman Bukit Cheras, 56000, Kuala Lumpur', 'prop_name': 'Taman Bukit Cheras (Cheras Heights), Kuala Lumpur', 'prop_type': None, 'build_up': '517', 'date': '1 Jun 2023 (Thu)', 'price': '150000', 'psf': '', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/TVdsUlBnUDlFZ05CWFMveEg3aytFdz09/Lelong-Auction-Apartment-in-Taman-Bukit-Cheras-Kuala-Lumpur-for-RM150000', 'restriction': None}, {'address': 'Gugusan Semarak, Jalan Camar 4/1, Kota Damansara, 47810 Petaling Jaya, Selangor', 'prop_name': 'Gugusan Semarak, Selangor', 'prop_type': 'Gugusan Semarak Apartment [3 min to Surian MRT Station &amp; Sunway Giza Mall; 9 min to 1 Utama Shopping Centre]', 'build_up': '646', 'date': '26 May 2023 (Fri)', 'price': '150000', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/Q2FuandPQitVeUxFRGhpa0VadjZiZz09/Lelong-Auction-Gugusan-Semarak-Apartment-3-min-to-Surian-MRT-Station-Sunway-Giza-Mall-9-min-to-1-Utama-Shopping-Centre-in-Petaling-Jaya-Selangor-for-RM150000', 'restriction': 'Bumi Lot'}, {'address': 'Block A, Seri Jati, Taman Balakong Jayam 43000 Kajang, Selangor', 'prop_name': 'Pangsapuri Seri Jati, Selangor', 'prop_type': 'Seri Jati Apartment', 'build_up': '707', 'date': '17 May 2023 (Wed)', 'price': '150000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/QTNnenQwUC9JZk1UcEE1OTdDenQ5dz09/Lelong-Auction-Seri-Jati-Apartment-in-Balakong-Selangor-for-RM150000', 'restriction': None}, {'address': 'Block M2, Jalan Persiaran Desa Serdang 3, Taman Desa Serdang, 43300 Seri Kembangan, Selangor', 'prop_name': 'Taman Desa Serdang, Selangor', 'prop_type': 'Apartment', 'build_up': '826', 'date': '30 May 2023 (Tue)', 'price': '150000', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/UkhDVzJCdkxPanVMTmpMaERwa3NZZz09/Lelong-Auction-Apartment-in-Taman-Desa-Serdang-Selangor-for-RM150000', 'restriction': None}, {'address': 'Residensi Warnasari 3, Jalan Residensi Warnasari 13/1, 42300 Bandar Puncak Alam, Selangor', 'prop_name': 'Pangsapuri Begonia (Begonia Kristal), Selangor', 'prop_type': 'Apartment', 'build_up': '720', 'date': '17 May 2023 (Wed)', 'price': '150000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/bEZKaDhtQ1RQZGRSREhXQTFnTWNZQT09/Lelong-Auction-Apartment-in-Bandar-Puncak-Alam-Selangor-for-RM150000', 'restriction': None}, {'address': 'Block B02, Apartment Melor, Taman Sutera Kajang, 43000 Kajang, Selangor', 'prop_name': 'Pangsapuri Melor, Selangor', 'prop_type': 'Melor Apartment', 'build_up': None, 'date': '29 May 2023 (Mon)', 'price': '150000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/Y2VyemUxakV2aU12TVNqT3UvQTk2Zz09/Lelong-Auction-Melor-Apartment-in-Taman-Sutera-Kajang-Selangor-for-RM150000', 'restriction': None}, {'address': 'Pangsapuri Subang Hijauan, Jalan Bintang U5/33, Seksyen U5 40150 Shah Alam, Selangor', 'prop_name': 'Subang Hijauan, Selangor', 'prop_type': 'Apartment', 'build_up': '650', 'date': '6 Jun 2023 (Tue)', 'price': '150000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/bDI1UW9VZW05bU5QamwvRjVxVS9Zdz09/Lelong-Auction-Apartment-in-Shah-Alam-Selangor-for-RM150000', 'restriction': None}, {'address': 'Block 53, Abadi Indah Apartment, Jalan 3/109C, Taman Abadi Indah, Off Jalan Kelang Lama, 58100, Kuala Lumpur', 'prop_name': 'Abadi Indah, Kuala Lumpur', 'prop_type': '[-45% &amp; ROI up to 10%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]', 'build_up': '947', 'date': '26 May 2023 (Fri)', 'price': '150000', 'psf': '', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-45-ROI-up-to-10-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000', 'restriction': None}, {'address': 'Jalan Orkid 1, Taman Orkid, 43200 Cheras, Selangor', 'prop_name': 'Taman Orkid, Selangor', 'prop_type': 'Apartment', 'build_up': '754', 'date': '26 May 2023 (Fri)', 'price': '150000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/YU5XdnhKQlk2NkRucVhPOGZIU3NPdz09/Lelong-Auction-Apartment-in-Taman-Orkid-Selangor-for-RM150000', 'restriction': None}, {'address': 'Block E, Harmoni Apartment, No. 55, Jalan PJU 10/4C, Damansara Damai, 47830 Petaling Jaya, Selangor', 'prop_name': 'Pangsapuri Harmoni, Selangor', 'prop_type': 'Apartment', 'build_up': '650', 'date': '22 May 2023 (Mon)', 'price': '150000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/eE5yL1gvZWwwUUdMa2xQZERBM1JNZz09/Lelong-Auction-Apartment-in-Petaling-Jaya-Selangor-for-RM150000', 'restriction': None}, {'address': '1st Floor, Jalan B/P 1, Taman Bukit Pandan, 56100, Kuala Lumpur', 'prop_name': 'Taman Bukit Pandan, Kuala Lumpur', 'prop_type': 'Apartment', 'build_up': '755', 'date': '22 May 2023 (Mon)', 'price': '150000', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/ZnFZMDRMb2FmOEFvMk1vQkJSeVRFQT09/Lelong-Auction-Apartment-in-Taman-Bukit-Pandan-Kuala-Lumpur-for-RM150000', 'restriction': None}], [{'address': 'Block C, Pangsapuri Putra Impian, Jalan PP 39, Taman Pinggiran Putra Seksyen 2, 43300 Seri Kembangan, Selangor', 'prop_name': 'Pangsapuri Putra Impian, Selangor', 'prop_type': None, 'build_up': '753', 'date': '16 May 2023 (Tue)', 'price': '153000', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/TVd2OCtWNDZLbVBaRm5WM3Y1ZHBiUT09/Lelong-Auction-Putra-Impian-Apartment-in-Seri-Kembangan-Selangor-for-RM153000', 'restriction': None}, {'address': 'Blok 20, Rumah Pangsa Seksyen 8, Jalan Liku 8/1, Seksyen 8, 40000 Shah Alam, Selangor', 'prop_name': 'Flat PKNS Seksyen 8, Selangor', 'prop_type': 'Seksyen 8 Apartment', 'build_up': '755', 'date': '20 May 2023 (Sat)', 'price': '153000', 'psf': '', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/MWh2SzBsUFl2Ty9Sa1BDMlRDZlowdz09/Lelong-Auction-Seksyen-8-Apartment-in-Shah-Alam-Selangor-for-RM153000', 'restriction': None}, {'address': 'Block 35, Seksyen 24, 40300 Shah Alam, Selangor', 'prop_name': 'Flat PKNS Seksyen 24, Selangor', 'prop_type': 'Apartment', 'build_up': '754', 'date': '20 May 2023 (Sat)', 'price': '153000', 'psf': '', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/RFczQVo3cmpBcVd2WlBYMXdsSzZlZz09/Lelong-Auction-Apartment-in-Shah-Alam-Selangor-for-RM153000', 'restriction': None}, {'address': 'Tingkat 3, Jalan 10/2, Taman Perkasa, 43100 Hulu Langat, Selangor', 'prop_name': 'Taman Perkasa, Selangor', 'prop_type': None, 'build_up': '753', 'date': '25 May 2023 (Thu)', 'price': '153900', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/NVJ2Q3dRM0gxa2ViOTV5Q0dxRkx6Zz09/Lelong-Auction-Flat-in-Taman-Perkasa-Selangor-for-RM153900', 'restriction': None}, {'address': 'Rumah Pangsa, Jalan Kosas Utama 5, Taman Kosas, 68000 Ampang, Selangor', 'prop_name': 'Flat Taman Kosas, Selangor', 'prop_type': 'Apartment', 'build_up': '657', 'date': '22 May 2023 (Mon)', 'price': '155000', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/dXgwSzFTWnhZa3p0RndTdjRlMjBSZz09/Lelong-Auction-Apartment-in-Taman-Kosas-Selangor-for-RM155000', 'restriction': None}, {'address': 'Vega Residensi 1, Persiaran Sepang, Seksyen 6, 63300 Cyberjaya, Selangor', 'prop_name': 'Vega Residensi, Selangor', 'prop_type': 'Vega Residensi 1 Service Apartment', 'build_up': '535', 'date': '26 May 2023 (Fri)', 'price': '157460', 'psf': '1', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/ZGY0bFUyaXdvV1dLT1hkaVpLaWI3Zz09/Lelong-Auction-Vega-Residensi-1-Service-Apartment-in-Cyberjaya-Selangor-for-RM157460', 'restriction': 'Bumi Lot'}, {'address': "Saville @ D'Lake, Jalan Saville, 47130 Puchong, Selangor", 'prop_name': "Saville @ D'Lake, Selangor", 'prop_type': "[-47%] Studio Unit, Intermediate with 2 Car parks [9 min to Lotus's Bandar Bukit Puchong]", 'build_up': '775', 'date': '30 May 2023 (Tue)', 'price': '159000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/MmdWU1lGUEV6cXNYcTlZTldxL1NSQT09/Lelong-Auction-47-Studio-Unit-Intermediate-with-2-Car-parks-9-min-to-Lotus-s-Bandar-Bukit-Puchong-in-Puchong-Selangor-for-RM159000', 'restriction': 'Bumi Lot'}, {'address': 'Block A, Villa Sentosa, Jalan Dato Yusof Shahbudin 3, Taman Sentosa, 41200 Klang, Selangor', 'prop_name': 'Villa Sentosa, Selangor', 'prop_type': None, 'build_up': '850', 'date': '25 Jul 2023 (Tue)', 'price': '160000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/SUJDbUU0M2ZVYzdoK29iZEdtMTZBZz09/Lelong-Auction-Freehold-3-Bedroom-Villa-Sentosa-Apartment-9-min-to-GM-Klang-Wholesale-City-Econsave-Kampung-Jawa-in-Taman-Sentosa-Selangor-for-RM160000', 'restriction': None}, {'address': 'Gugusan Dedap, Block 9, Jalan Kenyalang 11/1, Kota Damansara, 47810 Petaling Jaya, Selangor', 'prop_name': 'Gugusan Dedap, Selangor', 'prop_type': None, 'build_up': '667', 'date': '31 May 2023 (Wed)', 'price': '160000', 'psf': '', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/cXYzMUJ4dFY0YVJwSjlMNjc3d2JTZz09/Lelong-Auction-Apartment-in-Petaling-Jaya-Selangor-for-RM160000', 'restriction': None}, {'address': 'Level 1, Block A, Pangsapuri Ceria, Jalan TK 4/5, Taman Kinrara, 47100 Puchong, Selangor', 'prop_name': 'Pangsapuri Ceria, Selangor', 'prop_type': 'Apartment', 'build_up': '650', 'date': '23 May 2023 (Tue)', 'price': '160000', 'psf': '0', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/U0lIdlZOUjg4SVFrYURrbm14NUkvUT09/Lelong-Auction-Apartment-in-Taman-Kinrara-Selangor-for-RM160000', 'restriction': 'Bumi Lot'}, {'address': 'Block D, Apartment Idaman, No. 9, Jalan PJU 10/1, PJU, Damansara Damai, 47200 Petaling Jaya, Selangor', 'prop_name': 'Pangsapuri Idaman, Selangor', 'prop_type': '3 Bedroom Idaman Apartment, Low Cost [3 min to Seasons Square; 5 min to Damansara Damai MRT Station; 10 min to DA Square]', 'build_up': '650', 'date': '26 May 2023 (Fri)', 'price': '160000', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/cm96VkhPMnlyN2tZNFUxbDBTQ2ovZz09/Lelong-Auction-3-Bedroom-Idaman-Apartment-Low-Cost-3-min-to-Seasons-Square-5-min-to-Damansara-Damai-MRT-Station-10-min-to-DA-Square-in-Petaling-Jaya-Selangor-for-RM160000', 'restriction': None}, {'address': 'Ground Floor, Block 17, Jalan SP 4/3, Rumah Pangsa Impian, Bandar Saujana Putra, 42610 Jenjarom, Selangor', 'prop_name': 'Rumah Pangsa Impian, Selangor', 'prop_type': '3 Bedroom Apartment', 'build_up': '635', 'date': '30 May 2023 (Tue)', 'price': '160000', 'psf': '3', 'others': None, 'h_ref': 'https://www.lelongtips.com.my/property/Yk1PZkh5SkZtYmhHekl2U2xncUNSUT09/Lelong-Auction-3-Bedroom-Apartment-in-Jenjarom-Selangor-for-RM160000', 'restriction': None}]]
 Seksyen 1, Selangor is this gg= 
                 &lt;p&gt; 20 May 2023 (Sat) &lt;/p&gt;
                 &lt;h2&gt; Apartment &lt;/h2&gt;
@@ -1585,7 +1588,7 @@ Seksyen 1, Selangor is this gg=
                     &lt;li&gt; 8, Jalan 1/9, Seksyen 1, 43650 Bandar Baru Bangi, Selangor, Malaysia &lt;/li&gt;                    
                 &lt;/ul&gt;
                 &lt;/p&gt;
-                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/Tlp1UlZHc245alZQYXY4WDdRa2dEQT09/Lelong-Auction-Apartment-in-Bandar-Baru-Bangi-Selangor-for-RM150000" target="https://www.lelongtips.com.my/property/Tlp1UlZHc245alZQYXY4WDdRa2dEQT09/Lelong-Auction-Apartment-in-Bandar-Baru-Bangi-Selangor-for-RM150000"&gt;link&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/Tlp1UlZHc245alZQYXY4WDdRa2dEQT09/Lelong-Auction-Apartment-in-Bandar-Baru-Bangi-Selangor-for-RM150000" target="_self"&gt;link&lt;/a&gt;&lt;/p&gt;
                 
 Taman Bukit Cheras (Cheras Heights), Kuala Lumpur is this gg= 
                 &lt;p&gt; 1 Jun 2023 (Thu) &lt;/p&gt;
@@ -1600,7 +1603,7 @@ Taman Bukit Cheras (Cheras Heights), Kuala Lumpur is this gg=
                     &lt;li&gt; Jalan 1/144a, Taman Bukit Cheras, Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia &lt;/li&gt;                    
                 &lt;/ul&gt;
                 &lt;/p&gt;
-                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/TVdsUlBnUDlFZ05CWFMveEg3aytFdz09/Lelong-Auction-Apartment-in-Taman-Bukit-Cheras-Kuala-Lumpur-for-RM150000" target="https://www.lelongtips.com.my/property/TVdsUlBnUDlFZ05CWFMveEg3aytFdz09/Lelong-Auction-Apartment-in-Taman-Bukit-Cheras-Kuala-Lumpur-for-RM150000"&gt;link&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/TVdsUlBnUDlFZ05CWFMveEg3aytFdz09/Lelong-Auction-Apartment-in-Taman-Bukit-Cheras-Kuala-Lumpur-for-RM150000" target="_self"&gt;link&lt;/a&gt;&lt;/p&gt;
                 
 Gugusan Semarak, Selangor is this gg= 
                 &lt;p&gt; 26 May 2023 (Fri) &lt;/p&gt;
@@ -1615,7 +1618,7 @@ Gugusan Semarak, Selangor is this gg=
                     &lt;li&gt; Gugusan Semarak (Selatan), Kota Damansara, 47810 Petaling Jaya, Selangor, Malaysia &lt;/li&gt;                    
                 &lt;/ul&gt;
                 &lt;/p&gt;
-                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/Q2FuandPQitVeUxFRGhpa0VadjZiZz09/Lelong-Auction-Gugusan-Semarak-Apartment-3-min-to-Surian-MRT-Station-Sunway-Giza-Mall-9-min-to-1-Utama-Shopping-Centre-in-Petaling-Jaya-Selangor-for-RM150000" target="https://www.lelongtips.com.my/property/Q2FuandPQitVeUxFRGhpa0VadjZiZz09/Lelong-Auction-Gugusan-Semarak-Apartment-3-min-to-Surian-MRT-Station-Sunway-Giza-Mall-9-min-to-1-Utama-Shopping-Centre-in-Petaling-Jaya-Selangor-for-RM150000"&gt;link&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/Q2FuandPQitVeUxFRGhpa0VadjZiZz09/Lelong-Auction-Gugusan-Semarak-Apartment-3-min-to-Surian-MRT-Station-Sunway-Giza-Mall-9-min-to-1-Utama-Shopping-Centre-in-Petaling-Jaya-Selangor-for-RM150000" target="_self"&gt;link&lt;/a&gt;&lt;/p&gt;
                 
 Pangsapuri Seri Jati, Selangor is this gg= 
                 &lt;p&gt; 17 May 2023 (Wed) &lt;/p&gt;
@@ -1630,7 +1633,7 @@ Pangsapuri Seri Jati, Selangor is this gg=
                     &lt;li&gt; Jalan Balakong Jaya, Taman Balakong Jaya, 43300 Seri Kembangan, Selangor, Malaysia &lt;/li&gt;                    
                 &lt;/ul&gt;
                 &lt;/p&gt;
-                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/QTNnenQwUC9JZk1UcEE1OTdDenQ5dz09/Lelong-Auction-Seri-Jati-Apartment-in-Balakong-Selangor-for-RM150000" target="https://www.lelongtips.com.my/property/QTNnenQwUC9JZk1UcEE1OTdDenQ5dz09/Lelong-Auction-Seri-Jati-Apartment-in-Balakong-Selangor-for-RM150000"&gt;link&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/QTNnenQwUC9JZk1UcEE1OTdDenQ5dz09/Lelong-Auction-Seri-Jati-Apartment-in-Balakong-Selangor-for-RM150000" target="_self"&gt;link&lt;/a&gt;&lt;/p&gt;
                 
 Taman Desa Serdang, Selangor is this gg= 
                 &lt;p&gt; 30 May 2023 (Tue) &lt;/p&gt;
@@ -1645,7 +1648,7 @@ Taman Desa Serdang, Selangor is this gg=
                     &lt;li&gt; Jalan Persiaran Desa Serdang 3, Taman Desa Serdang, 43300 Balakong, Selangor, Malaysia &lt;/li&gt;                    
                 &lt;/ul&gt;
                 &lt;/p&gt;
-                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/UkhDVzJCdkxPanVMTmpMaERwa3NZZz09/Lelong-Auction-Apartment-in-Taman-Desa-Serdang-Selangor-for-RM150000" target="https://www.lelongtips.com.my/property/UkhDVzJCdkxPanVMTmpMaERwa3NZZz09/Lelong-Auction-Apartment-in-Taman-Desa-Serdang-Selangor-for-RM150000"&gt;link&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/UkhDVzJCdkxPanVMTmpMaERwa3NZZz09/Lelong-Auction-Apartment-in-Taman-Desa-Serdang-Selangor-for-RM150000" target="_self"&gt;link&lt;/a&gt;&lt;/p&gt;
                 
 Pangsapuri Begonia (Begonia Kristal), Selangor is this gg= 
                 &lt;p&gt; 17 May 2023 (Wed) &lt;/p&gt;
@@ -1660,7 +1663,7 @@ Pangsapuri Begonia (Begonia Kristal), Selangor is this gg=
                     &lt;li&gt; 6CVC+JW, Puncak Alam, 42300 Kuala Selangor, Selangor, Malaysia &lt;/li&gt;                    
                 &lt;/ul&gt;
                 &lt;/p&gt;
-                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/bEZKaDhtQ1RQZGRSREhXQTFnTWNZQT09/Lelong-Auction-Apartment-in-Bandar-Puncak-Alam-Selangor-for-RM150000" target="https://www.lelongtips.com.my/property/bEZKaDhtQ1RQZGRSREhXQTFnTWNZQT09/Lelong-Auction-Apartment-in-Bandar-Puncak-Alam-Selangor-for-RM150000"&gt;link&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/bEZKaDhtQ1RQZGRSREhXQTFnTWNZQT09/Lelong-Auction-Apartment-in-Bandar-Puncak-Alam-Selangor-for-RM150000" target="_self"&gt;link&lt;/a&gt;&lt;/p&gt;
                 
 Pangsapuri Melor, Selangor is this gg= 
                 &lt;p&gt; 29 May 2023 (Mon) &lt;/p&gt;
@@ -1675,7 +1678,7 @@ Pangsapuri Melor, Selangor is this gg=
                     &lt;li&gt; Jalan Sutera 1/5, Taman Sutera, 43000 Kajang, Selangor, Malaysia &lt;/li&gt;                    
                 &lt;/ul&gt;
                 &lt;/p&gt;
-                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/Y2VyemUxakV2aU12TVNqT3UvQTk2Zz09/Lelong-Auction-Melor-Apartment-in-Taman-Sutera-Kajang-Selangor-for-RM150000" target="https://www.lelongtips.com.my/property/Y2VyemUxakV2aU12TVNqT3UvQTk2Zz09/Lelong-Auction-Melor-Apartment-in-Taman-Sutera-Kajang-Selangor-for-RM150000"&gt;link&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/Y2VyemUxakV2aU12TVNqT3UvQTk2Zz09/Lelong-Auction-Melor-Apartment-in-Taman-Sutera-Kajang-Selangor-for-RM150000" target="_self"&gt;link&lt;/a&gt;&lt;/p&gt;
                 
 Subang Hijauan, Selangor is this gg= 
                 &lt;p&gt; 6 Jun 2023 (Tue) &lt;/p&gt;
@@ -1690,11 +1693,11 @@ Subang Hijauan, Selangor is this gg=
                     &lt;li&gt; Jalan Bintang U5/33, Subang Suria, 40150 Shah Alam, Selangor, Malaysia &lt;/li&gt;                    
                 &lt;/ul&gt;
                 &lt;/p&gt;
-                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/bDI1UW9VZW05bU5QamwvRjVxVS9Zdz09/Lelong-Auction-Apartment-in-Shah-Alam-Selangor-for-RM150000" target="https://www.lelongtips.com.my/property/bDI1UW9VZW05bU5QamwvRjVxVS9Zdz09/Lelong-Auction-Apartment-in-Shah-Alam-Selangor-for-RM150000"&gt;link&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/bDI1UW9VZW05bU5QamwvRjVxVS9Zdz09/Lelong-Auction-Apartment-in-Shah-Alam-Selangor-for-RM150000" target="_self"&gt;link&lt;/a&gt;&lt;/p&gt;
                 
 Abadi Indah, Kuala Lumpur is this gg= 
                 &lt;p&gt; 26 May 2023 (Fri) &lt;/p&gt;
-                &lt;h2&gt; [ROI up to 6%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall] &lt;/h2&gt;
+                &lt;h2&gt; [-45% &amp; ROI up to 10%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall] &lt;/h2&gt;
                 &lt;h1&gt; Abadi Indah, Kuala Lumpur &lt;/h1&gt;
                 &lt;p&gt;Details:- &lt;/p&gt;
                 &lt;ul&gt;
@@ -1705,7 +1708,7 @@ Abadi Indah, Kuala Lumpur is this gg=
                     &lt;li&gt; Abadi Indah Apartment, Jalan 3/109c, Taman Abadi Indah, 58100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia &lt;/li&gt;                    
                 &lt;/ul&gt;
                 &lt;/p&gt;
-                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-ROI-up-to-6-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000" target="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-ROI-up-to-6-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000"&gt;link&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-45-ROI-up-to-10-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000" target="_self"&gt;link&lt;/a&gt;&lt;/p&gt;
                 
 Taman Orkid, Selangor is this gg= 
                 &lt;p&gt; 26 May 2023 (Fri) &lt;/p&gt;
@@ -1720,7 +1723,7 @@ Taman Orkid, Selangor is this gg=
                     &lt;li&gt; Jalan Orkid 1, Taman Orkid, 43200 Cheras, Selangor, Malaysia &lt;/li&gt;                    
                 &lt;/ul&gt;
                 &lt;/p&gt;
-                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/YU5XdnhKQlk2NkRucVhPOGZIU3NPdz09/Lelong-Auction-Apartment-in-Taman-Orkid-Selangor-for-RM150000" target="https://www.lelongtips.com.my/property/YU5XdnhKQlk2NkRucVhPOGZIU3NPdz09/Lelong-Auction-Apartment-in-Taman-Orkid-Selangor-for-RM150000"&gt;link&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/YU5XdnhKQlk2NkRucVhPOGZIU3NPdz09/Lelong-Auction-Apartment-in-Taman-Orkid-Selangor-for-RM150000" target="_self"&gt;link&lt;/a&gt;&lt;/p&gt;
                 
 Pangsapuri Harmoni, Selangor is this gg= 
                 &lt;p&gt; 22 May 2023 (Mon) &lt;/p&gt;
@@ -1730,12 +1733,12 @@ Pangsapuri Harmoni, Selangor is this gg=
                 &lt;ul&gt;
                     &lt;li&gt;buildup 650.0&lt;/li&gt;
                     &lt;li&gt;RM 150000.0&lt;/li&gt;
-                    &lt;li&gt;  &lt;/li&gt;
+                    &lt;li&gt; 0 &lt;/li&gt;
                     &lt;li&gt; None &lt;/li&gt;
                     &lt;li&gt; Harmoni apartment, 55, Jalan PJU 10/4c, Damansara Damai, 47830 Petaling Jaya, Selangor, Malaysia &lt;/li&gt;                    
                 &lt;/ul&gt;
                 &lt;/p&gt;
-                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/eE5yL1gvZWwwUUdMa2xQZERBM1JNZz09/Lelong-Auction-Apartment-in-Petaling-Jaya-Selangor-for-RM150000" target="https://www.lelongtips.com.my/property/eE5yL1gvZWwwUUdMa2xQZERBM1JNZz09/Lelong-Auction-Apartment-in-Petaling-Jaya-Selangor-for-RM150000"&gt;link&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/eE5yL1gvZWwwUUdMa2xQZERBM1JNZz09/Lelong-Auction-Apartment-in-Petaling-Jaya-Selangor-for-RM150000" target="_self"&gt;link&lt;/a&gt;&lt;/p&gt;
                 
 Taman Bukit Pandan, Kuala Lumpur is this gg= 
                 &lt;p&gt; 22 May 2023 (Mon) &lt;/p&gt;
@@ -1745,15 +1748,15 @@ Taman Bukit Pandan, Kuala Lumpur is this gg=
                 &lt;ul&gt;
                     &lt;li&gt;buildup 755.0&lt;/li&gt;
                     &lt;li&gt;RM 150000.0&lt;/li&gt;
-                    &lt;li&gt; 0 &lt;/li&gt;
+                    &lt;li&gt; 3 &lt;/li&gt;
                     &lt;li&gt; None &lt;/li&gt;
                     &lt;li&gt; Jalan B/P 1, Bukit Pandan, 56100 Ampang, Selangor, Malaysia &lt;/li&gt;                    
                 &lt;/ul&gt;
                 &lt;/p&gt;
-                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/ZnFZMDRMb2FmOEFvMk1vQkJSeVRFQT09/Lelong-Auction-Apartment-in-Taman-Bukit-Pandan-Kuala-Lumpur-for-RM150000" target="https://www.lelongtips.com.my/property/ZnFZMDRMb2FmOEFvMk1vQkJSeVRFQT09/Lelong-Auction-Apartment-in-Taman-Bukit-Pandan-Kuala-Lumpur-for-RM150000"&gt;link&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;And that's a &lt;a href="https://www.lelongtips.com.my/property/ZnFZMDRMb2FmOEFvMk1vQkJSeVRFQT09/Lelong-Auction-Apartment-in-Taman-Bukit-Pandan-Kuala-Lumpur-for-RM150000" target="_self"&gt;link&lt;/a&gt;&lt;/p&gt;
                 
 hi
-Total number of records retrieved are  218199
+Total number of records retrieved are  219335
 Response body=  &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -1764,7 +1767,7 @@ Response body=  &lt;!DOCTYPE html&gt;
     &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
     &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
     &lt;link rel="icon" href="https://www.lelongtips.com.my/images/favicon.ico" type="image/x-icon"&gt;
-    &lt;meta name="csrf-token" content="vHFsAsSMc6t5z8uPd6L0ZOJfaIkn6rayTfdZ1TSr"&gt;
+    &lt;meta name="csrf-token" content="6ntGbdFhaLo8uHnH3rSyGHuFgqtJ3yJ44Uu1d4qK"&gt;
     &lt;title&gt;Search Results&lt;/title&gt;
     &lt;meta name="title" content="Search Results"&gt;
     &lt;meta name="description" content="We have total 1570 properties upcoming for auction. Total listing of 367861 past auction properties with auction bank, auction venue, auction time, auctioneer, lawyer &amp;amp; assignor/ defendant."&gt;
@@ -2160,7 +2163,7 @@ Response body=  &lt;!DOCTYPE html&gt;
                     &lt;div class="row g-4 g-xl-5 justify-content-center align-content-center"&gt;
                         &lt;div class="col-lg-8 col-xl-9"&gt;
                             &lt;h3 class="fw-bold align-items-lg-center"&gt;
-                                &lt;p&gt;&lt;small class="me-2"&gt;&lt;i class="fas fa-search text-secondary"&gt;&lt;/i&gt;&lt;/small&gt; Result(s): 2,874&lt;/p&gt;
+                                &lt;p&gt;&lt;small class="me-2"&gt;&lt;i class="fas fa-search text-secondary"&gt;&lt;/i&gt;&lt;/small&gt; Result(s): 2,871&lt;/p&gt;
                             &lt;/h3&gt;
                             &lt;div class="d-flex flex-row flex-wrap mb-4"&gt;
                                 &lt;a class="badge border border-primary text-primary rounded-pill fw-normal me-2 mb-2 fs-6 pe-auto search-label" data-field="state" href="#" title="Remove State"&gt;&lt;i class="fas fa-times small"&gt;&lt;/i&gt; Kuala Lumpur + Selangor&lt;/a&gt;&lt;a class="badge border border-primary text-primary rounded-pill fw-normal me-2 mb-2 fs-6 pe-auto search-label" href="#" data-field="property_type" data-id="1" title="Remove Apartment/Condo/SOHO"&gt;&lt;i class="fas fa-times small"&gt;&lt;/i&gt; Apartment/Condo/SOHO&lt;/a&gt; &lt;a class="badge border border-primary text-primary rounded-pill fw-normal me-2 mb-2 fs-6 pe-auto search-label" href="#" data-field="property_type" data-id="4" title="Remove Semi D/Bungalow/Villa"&gt;&lt;i class="fas fa-times small"&gt;&lt;/i&gt; Semi D/Bungalow/Villa&lt;/a&gt; &lt;a class="badge border border-primary text-primary rounded-pill fw-normal me-2 mb-2 fs-6 pe-auto search-label" href="#" data-field="property_type" data-id="5" title="Remove Shop/Shop Office/Retail Space/Office"&gt;&lt;i class="fas fa-times small"&gt;&lt;/i&gt; Shop/Shop Office/Retail Space/Office&lt;/a&gt; &lt;a class="badge border border-primary text-primary rounded-pill fw-normal me-2 mb-2 fs-6 pe-auto search-label" href="#" data-field="property_type" data-id="3" title="Remove Terrace/Link/Townhouse"&gt;&lt;i class="fas fa-times small"&gt;&lt;/i&gt; Terrace/Link/Townhouse&lt;/a&gt;&lt;a class="badge border border-primary text-primary rounded-pill fw-normal me-2 mb-2 fs-6 pe-auto search-label" data-field="price" href="#" title="Remove Price"&gt;&lt;i class="fas fa-times small"&gt;&lt;/i&gt; RM150,000 - RM1,000,000&lt;/a&gt;
@@ -2363,7 +2366,7 @@ Response body=  &lt;!DOCTYPE html&gt;
     &lt;/tr&gt;
         &lt;tr valign="top"&gt;
         &lt;td class="position-relative"&gt;
-            [ROI up to 6%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]
+            [-45% &amp;amp; ROI up to 10%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]
             &lt;br /&gt;
             &lt;strong&gt;Block 53, Abadi Indah Apartment, Jalan 3/109C, Taman Abadi Indah, Off Jalan Kelang Lama, 58100, Kuala Lumpur&lt;/strong&gt;
                         &lt;div class="px-2 d-flex flex-row position-absolute bottom-0 left-0 right-0"&gt;
@@ -2378,7 +2381,7 @@ Response body=  &lt;!DOCTYPE html&gt;
             &lt;p class="mb-1"&gt;Auction Date &lt;strong class="ps-2"&gt;26 May 2023 (Fri)&lt;/strong&gt;&lt;/p&gt;
             &lt;p class="m-0"&gt;Auction Price &lt;strong class="ps-2"&gt;RM150,000&lt;/strong&gt; &lt;span class="badge rounded-0 fw-normal bg-danger small"&gt;-45%&lt;/span&gt;&lt;/p&gt;
             &lt;div class="d-block py-2 px-4 text-center" style="page-break-inside: avoid!important;"&gt;
-                &lt;img src="data:image/png;base64,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" alt="" class="img-fluid"&gt;
+                &lt;img src="data:image/png;base64,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" alt="" class="img-fluid"&gt;
             &lt;/div&gt;
         &lt;/td&gt;
     &lt;/tr&gt;
@@ -2411,6 +2414,7 @@ Response body=  &lt;!DOCTYPE html&gt;
             &lt;strong&gt;Block E, Harmoni Apartment, No. 55, Jalan PJU 10/4C, Damansara Damai, 47830 Petaling Jaya, Selangor&lt;/strong&gt;
                         &lt;div class="px-2 d-flex flex-row position-absolute bottom-0 left-0 right-0"&gt;
                                     &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;LACA&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;1&lt;sup&gt;st&lt;/sup&gt; Auction&lt;/span&gt;&lt;/div&gt;
                                     &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;650 sq.ft&lt;/span&gt;&lt;/div&gt;
                                     &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;3 &lt;i class="fas fa-bed"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
                                     &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;&lt;span title="Online"&gt;&lt;i class="fas fa-fw fa-wifi"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
@@ -2432,6 +2436,7 @@ Response body=  &lt;!DOCTYPE html&gt;
             &lt;strong&gt;1st Floor, Jalan B/P 1, Taman Bukit Pandan, 56100, Kuala Lumpur&lt;/strong&gt;
                         &lt;div class="px-2 d-flex flex-row position-absolute bottom-0 left-0 right-0"&gt;
                                     &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;LACA&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;1&lt;sup&gt;st&lt;/sup&gt; Auction&lt;/span&gt;&lt;/div&gt;
                                     &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;755 sq.ft&lt;/span&gt;&lt;/div&gt;
                                     &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;LH&lt;/span&gt;&lt;/div&gt;
                                     &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;3 &lt;i class="fas fa-bed"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
@@ -3078,8 +3083,8 @@ Response body=  &lt;!DOCTYPE html&gt;
                 &lt;div class="thumbnail-panel position-relative overflow-hidden"&gt;
                     &lt;div class="ratio ratio-4x3"&gt;
                         &lt;div class="thumbnail-box bg-black"&gt;
-                            &lt;a href="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-ROI-up-to-6-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000" class=""&gt;
-                                &lt;img src="https://cdn.lelongtips.com.my/images/listings/713759.jpg" alt="[ROI up to 6%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]" class="w-100 h-100"&gt;
+                            &lt;a href="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-45-ROI-up-to-10-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000" class=""&gt;
+                                &lt;img src="https://cdn.lelongtips.com.my/images/listings/713759.jpg" alt="[-45% &amp;amp; ROI up to 10%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]" class="w-100 h-100"&gt;
                             &lt;/a&gt;
                                                     &lt;/div&gt;
                     &lt;/div&gt;
@@ -3094,12 +3099,12 @@ Response body=  &lt;!DOCTYPE html&gt;
                                         &lt;div class="content-header"&gt;
                         &lt;div class="d-flex flex-column flex-sm-row justify-content-between"&gt;
                             &lt;h4 class="fw-bold text-nowrap d-flex flex-row flex-sm-column position-relative"&gt;
-                                &lt;a href="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-ROI-up-to-6-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000" class="stretched-link" title="[ROI up to 6%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]"&gt;&lt;/a&gt;
+                                &lt;a href="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-45-ROI-up-to-10-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000" class="stretched-link" title="[-45% &amp;amp; ROI up to 10%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]"&gt;&lt;/a&gt;
                                 &lt;span class="fs-6 d-sm-block text-muted mt-1 mt-sm-0 mb-1 me-2 me-sm-0"&gt;&lt;small class="fw-normal"&gt;Auction Price&lt;/small&gt;&lt;/span&gt;
                                 RM150,000
                             &lt;/h4&gt;
                             &lt;h4 class="text-nowrap text-end d-flex flex-row flex-sm-column list-none position-relative"&gt;
-                                &lt;a href="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-ROI-up-to-6-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000" class="stretched-link" title="[ROI up to 6%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]"&gt;&lt;/a&gt;
+                                &lt;a href="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-45-ROI-up-to-10-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000" class="stretched-link" title="[-45% &amp;amp; ROI up to 10%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]"&gt;&lt;/a&gt;
                                 &lt;span class="fs-6 d-block text-muted mb-2 me-2 me-sm-0"&gt;&lt;small class="fw-normal"&gt;Auction Date&lt;/small&gt;&lt;/span&gt;
                                 &lt;div class="fs-6 d-block fw-bold"&gt;26 May 2023 (Fri)&lt;/div&gt;
                             &lt;/h4&gt;
@@ -3109,17 +3114,17 @@ Response body=  &lt;!DOCTYPE html&gt;
                                                     &lt;/div&gt;
                     &lt;/div&gt;
                     &lt;div class="content-body position-relative mb-3 pb-3"&gt;
-                        &lt;a href="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-ROI-up-to-6-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000" class="stretched-link" title="[ROI up to 6%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]"&gt;&lt;/a&gt;
+                        &lt;a href="https://www.lelongtips.com.my/property/TmI0NHEvK3c3TWxtWHcySVBBTG5VUT09/Lelong-Auction-45-ROI-up-to-10-Abadi-Indah-Apartment-6-min-away-from-Pantai-Dalam-KTM-Station-9-min-to-Mid-Valley-Megamall-in-Taman-Abadi-Indah-Kuala-Lumpur-for-RM150000" class="stretched-link" title="[-45% &amp;amp; ROI up to 10%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]"&gt;&lt;/a&gt;
                         &lt;p class="text-muted mb-0 text-truncate"&gt;Abadi Indah, Kuala Lumpur&lt;/p&gt;
                         &lt;h5 class="fw-bold crop-text-3 mb-0"&gt;
                             Block 53, Abadi Indah Apartment, Jalan 3/109C, Taman Abadi Indah, Off Jalan Kelang Lama, 58100, Kuala Lumpur
                         &lt;/h5&gt;
                         &lt;p class="text-info crop-text-2 list-none mb-2"&gt;
-                            [ROI up to 6%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]
+                            [-45% &amp;amp; ROI up to 10%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]
                         &lt;/p&gt;
                         &lt;div class="grid-none"&gt;
                             &lt;p class="text-info text-truncate mb-0"&gt;
-                                [ROI up to 6%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]
+                                [-45% &amp;amp; ROI up to 10%] Abadi Indah Apartment [6 min away from Pantai Dalam KTM Station; 9 min to Mid Valley Megamall]
                             &lt;/p&gt;
                             &lt;div class="d-flex flex-row py-2"&gt;
                                 &lt;div class="text-nowrap pe-4"&gt;
@@ -3292,9 +3297,10 @@ Response body=  &lt;!DOCTYPE html&gt;
                         &lt;div class="position-absolute bottom-0"&gt;
                             &lt;div class="d-flex flex-row pb-2"&gt;
                                                                                                                                     &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 "&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;LACA&lt;/span&gt;&lt;/div&gt;
+                                                                                                                                        &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 "&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;1&lt;sup&gt;st&lt;/sup&gt; Auction&lt;/span&gt;&lt;/div&gt;
                                                                                                                                         &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 list-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;650 sq.ft&lt;/span&gt;&lt;/div&gt;
                                                                                                                                         &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 "&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;3 &lt;i class="fas fa-bed"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
-                                                                                                                                        &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 "&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;&lt;span title="Online"&gt;&lt;i class="fas fa-fw fa-wifi"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+                                                                                                                                        &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;&lt;span title="Online"&gt;&lt;i class="fas fa-fw fa-wifi"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
                                                                                                                                         &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;RM231 per sf&lt;/span&gt;&lt;/div&gt;
                                                                                 &lt;/div&gt;
                         &lt;/div&gt;
@@ -3368,9 +3374,10 @@ Response body=  &lt;!DOCTYPE html&gt;
                         &lt;div class="position-absolute bottom-0"&gt;
                             &lt;div class="d-flex flex-row pb-2"&gt;
                                                                                                                                     &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 "&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;LACA&lt;/span&gt;&lt;/div&gt;
+                                                                                                                                        &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 "&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;1&lt;sup&gt;st&lt;/sup&gt; Auction&lt;/span&gt;&lt;/div&gt;
                                                                                                                                         &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 list-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;755 sq.ft&lt;/span&gt;&lt;/div&gt;
                                                                                                                                         &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 "&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;LH&lt;/span&gt;&lt;/div&gt;
-                                                                                                                                        &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 "&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;3 &lt;i class="fas fa-bed"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
+                                                                                                                                        &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;3 &lt;i class="fas fa-bed"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
                                                                                                                                         &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;&lt;span title="Online"&gt;&lt;i class="fas fa-fw fa-wifi"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
                                                                                                                                         &lt;div class="fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none"&gt;&lt;span class="badge p-1 small border fw-normal text-info border-info"&gt;RM199 per sf&lt;/span&gt;&lt;/div&gt;
                                                                                 &lt;/div&gt;
@@ -3612,7 +3619,7 @@ Response body=  &lt;!DOCTYPE html&gt;
         &lt;div class="container my-4"&gt;
             &lt;h4 class="text-white fw-bold text-center"&gt;Subscribe Newsletter&lt;/h4&gt;
             &lt;p class="text-white text-center"&gt;Receive selected hot picks and exclusive promotions!&lt;/p&gt;
-            &lt;form method="POST" action="https://www.lelongtips.com.my/subscribe-newsletter" accept-charset="UTF-8" name="subscribe-newsletter" class="row justify-content-center" data-form-action="newsletter"&gt;&lt;input name="_token" type="hidden" value="vHFsAsSMc6t5z8uPd6L0ZOJfaIkn6rayTfdZ1TSr"&gt;
+            &lt;form method="POST" action="https://www.lelongtips.com.my/subscribe-newsletter" accept-charset="UTF-8" name="subscribe-newsletter" class="row justify-content-center" data-form-action="newsletter"&gt;&lt;input name="_token" type="hidden" value="6ntGbdFhaLo8uHnH3rSyGHuFgqtJ3yJ44Uu1d4qK"&gt;
             &lt;input name="captToken" type="hidden"&gt;
             &lt;div class="col-lg-10 col-xl-8 d-flex flex-column flex-md-row justify-content-center"&gt;
                 &lt;div class="flex-fill d-grid mb-3 mb-md-0"&gt;
@@ -3672,7 +3679,7 @@ Response body=  &lt;!DOCTYPE html&gt;
                 &lt;div class="d-inline-block me-2"&gt;&lt;i class="fas fa-phone fa-flip-horizontal text-dark fa-fw"&gt;&lt;/i&gt; &amp;nbsp; &lt;a href="tel:0123613988" class="border-0 text-warning fw-bold"&gt; 012-361 3988&lt;/a&gt;&lt;/div&gt;
                 &lt;div class="d-inline-block"&gt;&lt;i class="fas fa-envelope text-dark fa-fw"&gt;&lt;/i&gt; &amp;nbsp; &lt;a href="mailto:general@lelongtips.com" class="border-0 text-warning fw-bold"&gt; general@lelongtips.com&lt;/a&gt;&lt;/div&gt;
             &lt;/div&gt;
-            &lt;p class="text-end fst-italic"&gt;&lt;small&gt;Printed on 2023-05-15 21:13:47&lt;/small&gt;&lt;/p&gt;
+            &lt;p class="text-end fst-italic"&gt;&lt;small&gt;Printed on 2023-05-16 11:06:46&lt;/small&gt;&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/footer&gt;&lt;/div&gt;
@@ -3692,7 +3699,7 @@ Response body=  &lt;!DOCTYPE html&gt;
 &lt;div class="modal fade" id="applyPanelshipModal" tabindex="-1" aria-labelledby="applyPanelshipModal" aria-hidden="true"&gt;
     &lt;div class="modal-dialog"&gt;
         &lt;div class="modal-content"&gt;
-            &lt;form method="POST" action="https://www.lelongtips.com.my/apply-panelship" accept-charset="UTF-8" name="apply-panelship" data-form-action="apply_panelship" class="mt-4"&gt;&lt;input name="_token" type="hidden" value="vHFsAsSMc6t5z8uPd6L0ZOJfaIkn6rayTfdZ1TSr"&gt;
+            &lt;form method="POST" action="https://www.lelongtips.com.my/apply-panelship" accept-charset="UTF-8" name="apply-panelship" data-form-action="apply_panelship" class="mt-4"&gt;&lt;input name="_token" type="hidden" value="6ntGbdFhaLo8uHnH3rSyGHuFgqtJ3yJ44Uu1d4qK"&gt;
             &lt;input name="captToken" type="hidden"&gt;
             &lt;div class="modal-header pt-0"&gt;
                 &lt;h4 class="fw-bold"&gt;Join as our panel referrer today!&lt;/h4&gt;
@@ -3946,14 +3953,14 @@ Response body=  &lt;!DOCTYPE html&gt;
         autoclose: true,
         format: 'yyyy-mm-dd',
         daysOfWeekDisabled: [0, 6],
-        startDate: '2023-05-11',
+        startDate: '2023-05-12',
         endDate: '0d',
     });
 
     $('.auction-datepicker').datepicker({
         autoclose: true,
         format: 'yyyy-mm-dd',
-        startDate: '2023-05-15'
+        startDate: '2023-05-16'
     });
     
     $('form').submit(function(e){
@@ -4045,21 +4052,21 @@ Response body=  &lt;!DOCTYPE html&gt;
     &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-{"data":{"id":"a3739d971af4","title":"This is title","authorId":"1489a7ba40854e1663de46c31d7e15e2a19ab642b186ddc014b78fbb63b9e5092","url":"https://medium.com/@ronnyling/a3739d971af4","canonicalUrl":"","publishStatus":"draft","license":"","licenseUrl":"https://policy.medium.com/medium-terms-of-service-9db0094a1e0f","tags":["design","development"]}}</msg>
-<msg timestamp="20230515 21:14:28.551" level="INFO">G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:252: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("html.parser"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+{"data":{"id":"de3c2ab78c26","title":"This is title","authorId":"1489a7ba40854e1663de46c31d7e15e2a19ab642b186ddc014b78fbb63b9e5092","url":"https://medium.com/@ronnyling/de3c2ab78c26","canonicalUrl":"","publishStatus":"draft","license":"","licenseUrl":"https://policy.medium.com/medium-terms-of-service-9db0094a1e0f","tags":["design","development"]}}</msg>
+<msg timestamp="20230516 11:07:18.980" level="INFO">G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:252: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("html.parser"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
 
 The code that caused this warning is on line 252 of the file G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py. To get rid of this warning, pass the additional argument 'features="html.parser"' to the BeautifulSoup constructor.
 
   parsed_html = BeautifulSoup(body_text)</msg>
-<msg timestamp="20230515 21:14:28.552" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20230515 21:13:46.391" endtime="20230515 21:14:28.552"/>
+<msg timestamp="20230516 11:07:18.982" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230516 11:06:44.874" endtime="20230516 11:07:18.982"/>
 </kw>
 <doc>Executes main flow</doc>
 <tag>flow</tag>
-<status status="PASS" starttime="20230515 21:13:46.389" endtime="20230515 21:14:28.553"/>
+<status status="PASS" starttime="20230516 11:06:44.873" endtime="20230516 11:07:18.983"/>
 </test>
 <doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
-<status status="PASS" starttime="20230515 21:13:40.866" endtime="20230515 21:14:28.557"/>
+<status status="PASS" starttime="20230516 11:06:38.972" endtime="20230516 11:07:18.986"/>
 </suite>
 <statistics>
 <total>
@@ -4073,6 +4080,6 @@ The code that caused this warning is on line 252 of the file G:\My Drive\Python\
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230515 21:13:41.491" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
+<msg timestamp="20230516 11:06:39.915" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
 </errors>
 </robot>
