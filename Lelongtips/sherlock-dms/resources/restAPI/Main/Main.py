@@ -247,7 +247,7 @@ class Main(object):
             draft_content.append(content_list)
             time.sleep(secrets.randbelow(10))
             k = k + 1
-            if k > 1:
+            if k > 5:
                 break
             #     raise Exception("Test end")
         return draft_content
