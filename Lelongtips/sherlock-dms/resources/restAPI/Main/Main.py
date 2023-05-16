@@ -41,8 +41,8 @@ class Main(object):
             draft_content = self.get_pages(page_no_upper)
             self.map_gen(draft_content)
             self.git_controls()
-            print("Total number of records retrieved are ", len(body_result))
-            print("Response body= ", str(body_result))
+            # print("Total number of records retrieved are ", len(body_result))
+            # print("Response body= ", str(body_result))
         else:
             raise Exception("Initial load failed")
         if draft_content:
@@ -50,9 +50,9 @@ class Main(object):
 
     def map_gen(self, draft_content):
         m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10)
-        print(type(draft_content))
+        # print(type(draft_content))
         # apijiu = (loc['address'] for loc in draft_content)
-        print(str(asd) for asd in draft_content)
+        # print(str(asd) for asd in draft_content)
         # big_apijiu = re.findall(".*  (.*)\\n", apijiu)
         # loc = 'Taj Mahal, Agra, Uttar Pradesh 282001'
         # geolocator = Nominatim(user_agent="my_request")
@@ -60,7 +60,7 @@ class Main(object):
         # print(location.address)
         # print((location.latitude, location.longitude))
         # raise Exception("ehehe")
-        print(str(draft_content))
+        # print(str(draft_content))
         # raise Exception (type(draft_content))
         for i in draft_content[0]:
             # hi = hi + 1
@@ -125,11 +125,11 @@ class Main(object):
                 <p>And that's a <a href="{{8}}" target=window.name>link</a></p>
                 """.format(i['prop_name'], i['prop_type'], build_up, i['date'], price, i['psf'], i['others'],
                            formatted_address_name, i['h_ref'], iframe_target)
-            print(i['prop_name'] + " is this gg= " + html)
-
+            # print(i['prop_name'] + " is this gg= " + html)
             iframe = folium.IFrame(html=html, width=300, height=200)
-            iframe_name = iframe.get_name()
-            print("iframe name= " + iframe_name)
+            # iframe.add_child(iframe.get_name())
+            # iframe_name = iframe.get_name()
+            # print("iframe name= " + iframe_name)
             # iframe = folium.IFrame(html=html, width='90%', height='90%')
             # folium.folium.Element.render()
             popup = folium.Popup(iframe, max_width=2650)
@@ -161,7 +161,7 @@ class Main(object):
         origin = repo.remote(name='origin')
         origin.push()
 
-        print("hi")
+        # print("hi")
 
     def save_draft(self, draft_content):
         # common = APIMethod.APIMethod()
@@ -203,11 +203,11 @@ class Main(object):
                 headers=header,
                 data=data
             )
-            print(response.text)
+            # print(response.text)
             if response.status_code == 200:
                 response_json = response.json()
-                url = response_json["data"]["url"]
-                print(url)
+                # url = response_json["data"]["url"]
+                # print(url)
     def get_gmaps(self):
         gmaps.configure(api_key='AI...')
         nuclear_power_plants = [
@@ -244,9 +244,9 @@ class Main(object):
             content_list = self.get_contents(body_result)
             draft_content.append(content_list)
             time.sleep(secrets.randbelow(10))
-            k = k + 1
-            if k > 1:
-                break
+            # k = k + 1
+            # if k > 1:
+            #     break
             #     raise Exception("Test end")
         return draft_content
 
@@ -255,7 +255,7 @@ class Main(object):
         content_list = []
         contents_raw = parsed_html.body.find_all('div', attrs={'class': 'col details-col flex-grow-1'})
         for i in contents_raw:
-            print("iii= " + str(i))
+            # print("iii= " + str(i))
             content_details = {}
             content_details['address'] = self.handle_value(i, 'h5', 'class', "fw-bold crop-text-3 mb-0")
             content_details['prop_name'] = self.handle_value(i, 'p', 'class', "text-muted mb-0 text-truncate")
@@ -274,14 +274,14 @@ class Main(object):
             content_details['psf'] = ''.join(psf)
             content_details['others'] = self.handle_value(i, 'td', 'class', "position-relative")
             content_details['h_ref'] = re.findall(".*<a class=\"stretched-link\" href=\"(.*)\" title=.*", str(i))[0]
-            print("check_xia= " + str(content_details['h_ref']))
+            # print("check_xia= " + str(content_details['h_ref']))
 
             # content_details['tenure'] = re.findall()
             # content_details['psf'] = i.find('div', attrs={'class': 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none'}).text
             # content_details['restriction'] = i.find('div', attrs={'class': 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none'}).text
             content_details['restriction'] = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none')
             content_list.append(content_details)
-            print("content_details= " + str(content_details))
+            # print("content_details= " + str(content_details))
             counter = 0
             # for i in content_details
 
@@ -300,7 +300,7 @@ class Main(object):
         page_no_refined = re.findall("(\d)", page_no_raw)
         page_no = ''.join(i for i in page_no_refined)
         page_no_upper = math.ceil(int(page_no)/12)
-        print("hi " + str(page_no_upper))
+        # print("hi " + str(page_no_upper))
         return page_no_upper
 
 
