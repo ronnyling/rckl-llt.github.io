@@ -62,6 +62,8 @@ class Main(object):
         # raise Exception("ehehe")
         # print(str(draft_content))
         # raise Exception (type(draft_content))
+        print("draft_content= " + str(len(draft_content)))
+        print("draft_content[0]= " + str(len(draft_content[0])))
         for i in draft_content[0]:
             # hi = hi + 1
             location = {}
@@ -244,9 +246,9 @@ class Main(object):
             content_list = self.get_contents(body_result)
             draft_content.append(content_list)
             time.sleep(secrets.randbelow(10))
-            # k = k + 1
-            # if k > 1:
-            #     break
+            k = k + 1
+            if k > 1:
+                break
             #     raise Exception("Test end")
         return draft_content
 
