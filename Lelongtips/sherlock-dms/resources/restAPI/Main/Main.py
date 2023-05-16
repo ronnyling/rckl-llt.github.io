@@ -53,9 +53,18 @@ class Main(object):
         m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10)
 
         # map = folium.Map(location=[0, 0], zoom_start=4)
-        fg = folium.FeatureGroup(name='My Points', show=False)
-        m.add_child(fg)
-        marker_cluster = MarkerCluster().add_to(fg)
+        fg_l = folium.FeatureGroup(name='Landed', show=False)
+        fg_lrd = folium.FeatureGroup(name='Low Risk Deals', show=False)
+        fg_gptd = folium.FeatureGroup(name='GPT Deals', show=False)
+        fg_o = folium.FeatureGroup(name='Others', show=False)
+        m.add_child(fg_l)
+        m.add_child(fg_lrd)
+        m.add_child(fg_gptd)
+        m.add_child(fg_o)
+        marker_cluster_l = MarkerCluster().add_to(fg_l)
+        marker_cluster_lrd = MarkerCluster().add_to(fg_lrd)
+        marker_cluster_gptd = MarkerCluster().add_to(fg_gptd)
+        marker_cluster_o = MarkerCluster().add_to(fg_o)
         folium.LayerControl().add_to(m)
 
         print("draft_content= " + str(len(draft_content)))
@@ -99,13 +108,24 @@ class Main(object):
                                     <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"/></svg>
                                     </div>"""
+                        i['tags'] = "l"
                     else:
                         div_icon = f"""
                                         <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                                         </div>"""
+                    if price < 300000:
+                        i['tags'] = "lrd"
+
                 if not location:
                     continue
+                add_marker = None
+                if i['tags'] == "l":
+                    add_marker = marker_cluster_l
+                elif i['tags'] == "lrd":
+                    add_marker = marker_cluster_lrd
+                else:
+                    add_marker = marker_cluster_o
 
                 iframe_target = str(i['prop_name'])
                 html = f"""
@@ -136,17 +156,8 @@ class Main(object):
                 folium.Marker(
                     location=(location['latitude'], location['longitude']),
                     popup=popup,
-                    # icon=folium.DivIcon(html=f"""
-                    # <div><svg>
-                    #     <circle cx="50" cy="50" r="40" fill="#69b3a2" opacity=".4"/>
-                    #     <rect x="35", y="35" width="30" height="30", fill="red", opacity=".3"
-                    # </svg></div>""")
-
-                    #green
-                    # <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                     icon=folium.DivIcon(html=div_icon)
-                    # popup="hehe" + str(hi),
-                ).add_to(marker_cluster)
+                ).add_to(add_marker)
         date_now = str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f"))
         date_file = re.sub(r'[^\w]', '', date_now)
         m.save(f"../../docs/index.html")
@@ -232,7 +243,7 @@ class Main(object):
 
     def get_pages(self, page_no_upper):
         # common = APIMethod.APIMethod()
-        # k = 0
+        k = 0
         draft_content = []
         for i in range(1, int(page_no_upper)+1):
             print("now i am at page " + str(i))
@@ -248,9 +259,9 @@ class Main(object):
             sleep_time = secrets.choice(range(5, 10))
             # print("i've slept for seconds= " + str(k) +" "+ str(sleep_time))
             time.sleep(sleep_time)
-            # k = k + 1
-            # if k > 2:
-            #     break
+            k = k + 1
+            if k > 0:
+                break
             #     raise Exception("Test end")
         return draft_content
 
@@ -278,12 +289,10 @@ class Main(object):
             content_details['psf'] = ''.join(psf)
             content_details['others'] = self.handle_value(i, 'td', 'class', "position-relative")
             content_details['h_ref'] = re.findall(".*<a class=\"stretched-link\" href=\"(.*)\" title=.*", str(i))[0]
-            # print("check_xia= " + str(content_details['h_ref']))
-
-            # content_details['tenure'] = re.findall()
-            # content_details['psf'] = i.find('div', attrs={'class': 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none'}).text
-            # content_details['restriction'] = i.find('div', attrs={'class': 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none'}).text
             content_details['restriction'] = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none')
+            tag = None
+
+            content_details['tags'] = tag
             content_list.append(content_details)
             # print("content_details= " + str(content_details))
             counter = 0
