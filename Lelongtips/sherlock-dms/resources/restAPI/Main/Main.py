@@ -246,6 +246,7 @@ class Main(object):
             body_result = response.text
             content_list = self.get_contents(body_result)
             print("size of content_list= " + str(len(content_list)))
+            print("size of draft_content= " + str(len(draft_content)))
             draft_content.append(content_list)
             sleep_time = secrets.choice(range(5, 10))
             print("i've slept for seconds= " + str(k) +" "+ str(sleep_time))
