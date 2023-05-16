@@ -245,12 +245,13 @@ class Main(object):
             # response = common.trigger_api_request("GET", MAIN_URL + str(i), "")
             body_result = response.text
             content_list = self.get_contents(body_result)
+            print("size of content_list= " + str(len(content_list)))
             draft_content.append(content_list)
             sleep_time = secrets.choice(range(5, 10))
-            print("i've slept for seconds= " + str(sleep_time))
+            print("i've slept for seconds= " + str(k) +" "+ str(sleep_time))
             time.sleep(sleep_time)
             k = k + 1
-            if k > 5:
+            if k > 2:
                 break
             #     raise Exception("Test end")
         return draft_content
