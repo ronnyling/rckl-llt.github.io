@@ -246,7 +246,9 @@ class Main(object):
             body_result = response.text
             content_list = self.get_contents(body_result)
             draft_content.append(content_list)
-            time.sleep(secrets.randbelow(10))
+            sleep_time = secrets.choice(range(5, 10))
+            print("i've slept for seconds= " + str(sleep_time))
+            time.sleep(sleep_time)
             k = k + 1
             if k > 5:
                 break

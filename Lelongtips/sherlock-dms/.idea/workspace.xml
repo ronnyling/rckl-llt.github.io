@@ -5,6 +5,9 @@
       <change beforePath="$PROJECT_DIR$/../0305/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/../0305/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../0305/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../0305/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../0305/pabot_results/0/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../0305/pabot_results/0/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0305/pabot_results/0/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../0305/pabot_results/0/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0305/pabot_results/0/robot_stderr.out" beforeDir="false" afterPath="$PROJECT_DIR$/../0305/pabot_results/0/robot_stderr.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0305/pabot_results/0/robot_stdout.out" beforeDir="false" afterPath="$PROJECT_DIR$/../0305/pabot_results/0/robot_stdout.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../0305/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../0305/report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
