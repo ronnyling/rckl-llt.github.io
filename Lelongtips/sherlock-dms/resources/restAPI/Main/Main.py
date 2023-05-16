@@ -6,6 +6,7 @@ import time
 from datetime import datetime
 
 import googlemaps
+from folium.plugins import MarkerCluster
 from geopy.geocoders import Nominatim
 import git
 import gmaps
@@ -50,18 +51,13 @@ class Main(object):
 
     def map_gen(self, draft_content):
         m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10)
-        # print(type(draft_content))
-        # apijiu = (loc['address'] for loc in draft_content)
-        # print(str(asd) for asd in draft_content)
-        # big_apijiu = re.findall(".*  (.*)\\n", apijiu)
-        # loc = 'Taj Mahal, Agra, Uttar Pradesh 282001'
-        # geolocator = Nominatim(user_agent="my_request")
-        # location = geolocator.geocode(loc)
-        # print(location.address)
-        # print((location.latitude, location.longitude))
-        # raise Exception("ehehe")
-        # print(str(draft_content))
-        # raise Exception (type(draft_content))
+
+        # map = folium.Map(location=[0, 0], zoom_start=4)
+        fg = folium.FeatureGroup(name='My Points', show=False)
+        m.add_child(fg)
+        marker_cluster = MarkerCluster().add_to(fg)
+        folium.LayerControl().add_to(m)
+
         print("draft_content= " + str(len(draft_content)))
         print("draft_content[0]= " + str(len(draft_content[0])))
         for j in draft_content:
@@ -98,11 +94,11 @@ class Main(object):
                                         <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
                                         </div>"""
-                    elif re.findall(".*(torey).*", i['prop_type']) or re.findall(".*(tory).*", i['prop_type']):
+                    elif i['prop_type'] and (re.findall(".*(torey).*", i['prop_type']) or re.findall(".*(tory).*", i['prop_type'])):
                         div_icon = f"""
-                                        <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"/></svg>
-                                        </div>"""
+                                    <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"/></svg>
+                                    </div>"""
                     else:
                         div_icon = f"""
                                         <div>
@@ -150,7 +146,7 @@ class Main(object):
                     # <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                     icon=folium.DivIcon(html=div_icon)
                     # popup="hehe" + str(hi),
-                ).add_to(m)
+                ).add_to(marker_cluster)
         date_now = str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f"))
         date_file = re.sub(r'[^\w]', '', date_now)
         m.save(f"../../docs/index.html")
@@ -236,7 +232,7 @@ class Main(object):
 
     def get_pages(self, page_no_upper):
         # common = APIMethod.APIMethod()
-        k = 0
+        # k = 0
         draft_content = []
         for i in range(1, int(page_no_upper)+1):
             print("now i am at page " + str(i))
@@ -250,11 +246,11 @@ class Main(object):
             print("size of draft_content= " + str(len(draft_content)))
             draft_content.append(content_list)
             sleep_time = secrets.choice(range(5, 10))
-            print("i've slept for seconds= " + str(k) +" "+ str(sleep_time))
+            # print("i've slept for seconds= " + str(k) +" "+ str(sleep_time))
             time.sleep(sleep_time)
-            k = k + 1
-            if k > 2:
-                break
+            # k = k + 1
+            # if k > 2:
+            #     break
             #     raise Exception("Test end")
         return draft_content
 
