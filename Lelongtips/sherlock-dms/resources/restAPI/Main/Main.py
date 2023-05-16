@@ -122,7 +122,7 @@ class Main(object):
                     <li> {{7}} </li>                    
                 </ul>
                 </p>
-                <p>And that's a <a href="{{8}}" target="_self">link</a></p>
+                <p>And that's a <a href="{{8}}" target=window.name>link</a></p>
                 """.format(i['prop_name'], i['prop_type'], build_up, i['date'], price, i['psf'], i['others'],
                            formatted_address_name, i['h_ref'], iframe_target)
             print(i['prop_name'] + " is this gg= " + html)
