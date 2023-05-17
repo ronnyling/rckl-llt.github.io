@@ -69,7 +69,6 @@ class Main(object):
                 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
                 <!--[if lte IE 8]><link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css" /><![endif]-->
             
-                <link rel="stylesheet" href="../css/leaflet-sidebar.css" />
             </head>
             <body>
                 <div id="sidebar" class="sidebar collapsed">
