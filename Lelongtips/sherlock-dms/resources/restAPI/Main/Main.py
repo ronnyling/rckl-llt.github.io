@@ -136,27 +136,6 @@ class Main(object):
                         </div>
                     </div>
                 </div>
-            
-                <div id="map" class="sidebar-map"></div>
-            
-                <a href="https://github.com/Turbo87/sidebar-v2/"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
-            
-                <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
-                <script src="../../../components/leaflet-sidebar.js"></script>
-            
-                <script>
-                    var map = L.map('map');
-                    map.setView([51.2, 7], 9);
-            
-                    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        maxZoom: 18,
-                        attribution: 'Map data &copy; OpenStreetMap contributors'
-                    }).addTo(map);
-            
-                    var marker = L.marker([51.2, 7]).addTo(map);
-            
-                    var sidebar = L.control.sidebar('sidebar').addTo(map);
-                </script>
             </body>
             </html>
         '''
