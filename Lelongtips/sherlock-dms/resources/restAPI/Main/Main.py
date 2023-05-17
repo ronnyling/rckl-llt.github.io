@@ -160,11 +160,11 @@ class Main(object):
             </html>
         '''
 
-        sidebar = folium.Html(data=html)
+        sidebar = folium.Html(data=html, script=True)
         # sidebar.html = html
         # sidebar.html.(html)
 
-        m.add_to(sidebar)
+        m.add_child(sidebar)
         m.add_child(fg_l)
         m.add_child(fg_lrd)
         m.add_child(fg_gptd)
