@@ -6,6 +6,7 @@ import time
 from datetime import datetime
 
 import googlemaps
+from branca.element import Element
 from folium.plugins import MarkerCluster
 from geopy.geocoders import Nominatim
 import git
@@ -161,6 +162,11 @@ class Main(object):
         '''
 
         sidebar = folium.Html(data=html, script=True)
+        m.get_root().header.add_child(folium.CssLink('../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.css'))
+        m.get_root().html.add_child(folium.JavascriptLink('../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.js'))
+        m.get_root().html.add_child(sidebar)
+        # m.get_root().html.add_child(Element(html))
+
         # sidebar.html = html
         # sidebar.html.(html)
 
