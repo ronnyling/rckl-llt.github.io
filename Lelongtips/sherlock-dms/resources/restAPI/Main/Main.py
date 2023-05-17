@@ -6,7 +6,6 @@ import time
 from datetime import datetime
 
 import googlemaps
-from branca.element import Element
 from folium.plugins import MarkerCluster
 from geopy.geocoders import Nominatim
 import git
@@ -18,11 +17,11 @@ import folium
 from robot.api.deco import keyword
 from robot.libraries.BuiltIn import BuiltIn
 from resources.restAPI import PROTOCOL, APP_URL, COMMON_KEY, LLT_URL, LLT_TOKEN, GMAPS_TOKEN
-
 # from resources.restAPI.Common import APIMethod
 
 MAIN_URL = PROTOCOL + LLT_URL
 gmaps = googlemaps.Client(key=GMAPS_TOKEN)
+
 
 
 class Main(object):
@@ -30,6 +29,7 @@ class Main(object):
     @keyword("user runs main flow")
     def user_runs_main_flow(self):
         # common = APIMethod.APIMethod()
+
 
         # response = common.trigger_api_request("GET", MAIN_URL + str(1), "")
         response = requests.get(
@@ -69,7 +69,7 @@ class Main(object):
                 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
                 <!--[if lte IE 8]><link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css" /><![endif]-->
             
-                <link rel="stylesheet" href="../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.css" />
+                <link rel="stylesheet" href="../css/leaflet-sidebar.css" />
             
                 <style>
                     body {
@@ -142,7 +142,7 @@ class Main(object):
                 <a href="https://github.com/Turbo87/sidebar-v2/"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
             
                 <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
-                <script src="../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.js"></script>
+                <script src="../../../components/leaflet-sidebar.js"></script>
             
                 <script>
                     var map = L.map('map');
@@ -160,17 +160,15 @@ class Main(object):
             </body>
             </html>
         '''
-
+        # sidebar = folium.Div()
+        # sidebar.html(html)
         sidebar = folium.Html(data=html, script=True)
         m.get_root().header.add_child(folium.CssLink('../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.css'))
         m.get_root().html.add_child(folium.JavascriptLink('../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.js'))
         m.get_root().html.add_child(sidebar)
         # m.get_root().html.add_child(Element(html))
 
-        # sidebar.html = html
-        # sidebar.html.(html)
-
-        m.add_child(sidebar)
+        # m.add_child(sidebar)
         m.add_child(fg_l)
         m.add_child(fg_lrd)
         m.add_child(fg_gptd)
@@ -210,15 +208,14 @@ class Main(object):
                 else:
                     price = float(price)
                     build_up = float(build_up)
-                    if price / build_up >= 700:
+                    if price/build_up >= 700:
                         continue
-                    elif price / build_up <= 300 and price <= 800000:
+                    elif price/build_up <= 300 and price <= 800000:
                         div_icon = f"""
                                         <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
                                         </div>"""
-                    elif i['prop_type'] and (
-                            re.findall(".*(torey).*", i['prop_type']) or re.findall(".*(tory).*", i['prop_type'])):
+                    elif i['prop_type'] and (re.findall(".*(torey).*", i['prop_type']) or re.findall(".*(tory).*", i['prop_type'])):
                         div_icon = f"""
                                     <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"/></svg>
@@ -305,8 +302,7 @@ class Main(object):
         data = {
             "title": "This is title",
             "contentFormat": "html",
-            "content": "<h1>hihi</h1><p>" + str(
-                draft_content) + "</p>\n \n \n <p>https://codepen.io/Meet-Ronny/pen/xxyWeNG</p>",
+            "content": "<h1>hihi</h1><p>" + str(draft_content) + "</p>\n \n \n <p>https://codepen.io/Meet-Ronny/pen/xxyWeNG</p>",
             "tags": ["development", "design"],
             "publishStatus": "draft"  # "public" will publish to gibubfor putting draft use value "draft"
         }
@@ -334,7 +330,6 @@ class Main(object):
                 response_json = response.json()
                 # url = response_json["data"]["url"]
                 # print(url)
-
     def get_gmaps(self):
         gmaps.configure(api_key='AI...')
         nuclear_power_plants = [
@@ -362,7 +357,7 @@ class Main(object):
         # common = APIMethod.APIMethod()
         k = 0
         draft_content = []
-        for i in range(1, int(page_no_upper) + 1):
+        for i in range(1, int(page_no_upper)+1):
             print("now i am at page " + str(i))
             response = requests.get(
                 url=MAIN_URL + str(i)
@@ -392,8 +387,7 @@ class Main(object):
             content_details['address'] = self.handle_value(i, 'h5', 'class', "fw-bold crop-text-3 mb-0")
             content_details['prop_name'] = self.handle_value(i, 'p', 'class', "text-muted mb-0 text-truncate")
             content_details['prop_type'] = self.handle_value(i, 'p', 'class', "text-info crop-text-2 list-none mb-2")
-            raw_str = re.findall("(\d+)",
-                                 str(self.handle_value(i, 'div', 'class', "fs-5 mb-1 me-2 me-md-1 me-lg-2 list-none")))
+            raw_str = re.findall("(\d+)", str(self.handle_value(i, 'div', 'class', "fs-5 mb-1 me-2 me-md-1 me-lg-2 list-none")))
             if raw_str:
                 build_up_raw = ''.join(raw_str)
             else:
@@ -401,15 +395,13 @@ class Main(object):
             # print("builup raw= " + build_up_raw)
             content_details['build_up'] = build_up_raw
             content_details['date'] = self.handle_value(i, 'div', 'class', "fs-6 d-block fw-bold")
-            content_details['price'] = ''.join(re.findall("\d+", self.handle_value(i, 'h4', 'class',
-                                                                                   "fw-bold text-nowrap d-flex flex-row flex-sm-column position-relative")))
+            content_details['price'] = ''.join(re.findall("\d+", self.handle_value(i, 'h4', 'class', "fw-bold text-nowrap d-flex flex-row flex-sm-column position-relative")))
             psf_raw = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none')
             psf = re.findall("\d+", psf_raw[0] if psf_raw else "0")
             content_details['psf'] = ''.join(psf)
             content_details['others'] = self.handle_value(i, 'td', 'class', "position-relative")
             content_details['h_ref'] = re.findall(".*<a class=\"stretched-link\" href=\"(.*)\" title=.*", str(i))[0]
-            content_details['restriction'] = self.handle_value(i, 'div', 'class',
-                                                               'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none')
+            content_details['restriction'] = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none')
             tag = None
 
             content_details['tags'] = tag
@@ -432,9 +424,10 @@ class Main(object):
         page_no_raw = re.findall(r"Result\(s\): (.*)</p>", body_text)[0]
         page_no_refined = re.findall("(\d)", page_no_raw)
         page_no = ''.join(i for i in page_no_refined)
-        page_no_upper = math.ceil(int(page_no) / 12)
+        page_no_upper = math.ceil(int(page_no)/12)
         # print("hi " + str(page_no_upper))
         return page_no_upper
+
 
         #     if len(body_result) > 1:
         #         rand_claims = secrets.choice(range(0, len(body_result)))
