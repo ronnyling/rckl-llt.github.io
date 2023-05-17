@@ -70,23 +70,6 @@ class Main(object):
                 <!--[if lte IE 8]><link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css" /><![endif]-->
             
                 <link rel="stylesheet" href="../css/leaflet-sidebar.css" />
-            
-                <style>
-                    body {
-                        padding: 0;
-                        margin: 0;
-                    }
-            
-                    html, body, #map {
-                        height: 100%;
-                        font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
-                    }
-            
-                    .lorem {
-                        font-style: italic;
-                        color: #AAA;
-                    }
-                </style>
             </head>
             <body>
                 <div id="sidebar" class="sidebar collapsed">
