@@ -26,7 +26,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_14964aaa48063237053b1ee1838556b2 {
+                #map_4e21ed3dfe25102827f5f01c303ce9cd {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -43,7 +43,7 @@
 <body>
     
     <script src="../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.js"></script>
-    <div id="html_dfa126f20a9d5fb9b0366679befe861e" style="width: 100.0%; height: 100.0%;">
+    <div id="html_ac78ce900e33dd359bae77f466dcc600" style="width: 100.0%; height: 100.0%;">
             <!DOCTYPE html>
             <html lang="en">
             <head>
@@ -57,6 +57,23 @@
                 <!--[if lte IE 8]><link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css" /><![endif]-->
             
                 <link rel="stylesheet" href="../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.css" />
+            
+                <style>
+                    body {
+                        padding: 0;
+                        margin: 0;
+                    }
+            
+                    html, body, #map {
+                        height: 100%;
+                        font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
+                    }
+            
+                    .lorem {
+                        font-style: italic;
+                        color: #AAA;
+                    }
+                </style>
             </head>
             <body>
                 <div id="sidebar" class="sidebar collapsed">
@@ -106,18 +123,39 @@
                         </div>
                     </div>
                 </div>
+            
+                <div id="map" class="sidebar-map"></div>
+            
+                <a href="https://github.com/Turbo87/sidebar-v2/"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+            
+                <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+                <script src="../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.js"></script>
+            
+                <script>
+                    var map = L.map('map');
+                    map.setView([51.2, 7], 9);
+            
+                    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 18,
+                        attribution: 'Map data &copy; OpenStreetMap contributors'
+                    }).addTo(map);
+            
+                    var marker = L.marker([51.2, 7]).addTo(map);
+            
+                    var sidebar = L.control.sidebar('sidebar').addTo(map);
+                </script>
             </body>
             </html>
         </div>
     
-            <div class="folium-map" id="map_14964aaa48063237053b1ee1838556b2" ></div>
+            <div class="folium-map" id="map_4e21ed3dfe25102827f5f01c303ce9cd" ></div>
         
 </body>
 <script>
     
     
-            var map_14964aaa48063237053b1ee1838556b2 = L.map(
-                "map_14964aaa48063237053b1ee1838556b2",
+            var map_4e21ed3dfe25102827f5f01c303ce9cd = L.map(
+                "map_4e21ed3dfe25102827f5f01c303ce9cd",
                 {
                     center: [3.064119, 101.669488],
                     crs: L.CRS.EPSG3857,
@@ -131,376 +169,376 @@
 
         
     
-            var tile_layer_87f556b8afee63172167a00f8fc80ce5 = L.tileLayer(
+            var tile_layer_146c7343775415252461133f4a4185a3 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_14964aaa48063237053b1ee1838556b2);
+            ).addTo(map_4e21ed3dfe25102827f5f01c303ce9cd);
         
     
-            var feature_group_d62ef9f9838a425d8f8b31f2120e5377 = L.featureGroup(
+            var feature_group_15850fd809a8a16bb27e288bd128e513 = L.featureGroup(
                 {}
-            ).addTo(map_14964aaa48063237053b1ee1838556b2);
+            ).addTo(map_4e21ed3dfe25102827f5f01c303ce9cd);
         
     
-            var marker_cluster_6dd64d652f1b2745d07de94270423868 = L.markerClusterGroup(
-                {}
-            );
-            feature_group_d62ef9f9838a425d8f8b31f2120e5377.addLayer(marker_cluster_6dd64d652f1b2745d07de94270423868);
-        
-    
-            var feature_group_59d05d8a06375a75ff595e11f5f04c64 = L.featureGroup(
-                {}
-            ).addTo(map_14964aaa48063237053b1ee1838556b2);
-        
-    
-            var marker_cluster_8db0285bf7b2d06ef67eacbd90414f08 = L.markerClusterGroup(
+            var marker_cluster_5c6f5c745c123df7d4f44ac77e7a1418 = L.markerClusterGroup(
                 {}
             );
-            feature_group_59d05d8a06375a75ff595e11f5f04c64.addLayer(marker_cluster_8db0285bf7b2d06ef67eacbd90414f08);
+            feature_group_15850fd809a8a16bb27e288bd128e513.addLayer(marker_cluster_5c6f5c745c123df7d4f44ac77e7a1418);
         
     
-            var marker_afc07b769dafcee32caa5171f2721b74 = L.marker(
+            var feature_group_ea5497fabb04e6f257bb68d45f8624de = L.featureGroup(
+                {}
+            ).addTo(map_4e21ed3dfe25102827f5f01c303ce9cd);
+        
+    
+            var marker_cluster_16b0475886a7371e770ea83d4a840aaa = L.markerClusterGroup(
+                {}
+            );
+            feature_group_ea5497fabb04e6f257bb68d45f8624de.addLayer(marker_cluster_16b0475886a7371e770ea83d4a840aaa);
+        
+    
+            var marker_17325fd0245c16378f2d7436ca2b44e8 = L.marker(
                 [2.9469029, 101.7650148],
                 {}
-            ).addTo(marker_cluster_8db0285bf7b2d06ef67eacbd90414f08);
+            ).addTo(marker_cluster_16b0475886a7371e770ea83d4a840aaa);
         
     
-            var div_icon_3cdb4ad2a87da0db07e48ae74fd7cf84 = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
-            marker_afc07b769dafcee32caa5171f2721b74.setIcon(div_icon_3cdb4ad2a87da0db07e48ae74fd7cf84);
+            var div_icon_9f7f03edfcf3ea7e5fd597a86fd60322 = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
+            marker_17325fd0245c16378f2d7436ca2b44e8.setIcon(div_icon_9f7f03edfcf3ea7e5fd597a86fd60322);
         
     
-        var popup_f920708e1fbbbac3498f9b7525abae4f = L.popup({"maxWidth": 2650});
+        var popup_33d328c332eb4085d211aff226b51096 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_925de2b79fc8ebe831c846631e01cf6a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjAgTWF5IDIwMjMgKFNhdCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBTZWtzeWVuIDEsIFNlbGFuZ29yIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwIDYxNC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPlJNIDE1MDAwMC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiAwIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IDgsIEphbGFuIDEvOSwgU2Vrc3llbiAxLCA0MzY1MCBCYW5kYXIgQmFydSBCYW5naSwgU2VsYW5nb3IsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5BbmQgdGhhdCdzIGEgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvVGxwMVVsWkhjMjQ1YWxaUVlYWTRXRGRSYTJkRVFUMDkvTGVsb25nLUF1Y3Rpb24tQXBhcnRtZW50LWluLUJhbmRhci1CYXJ1LUJhbmdpLVNlbGFuZ29yLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPmxpbms8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_f920708e1fbbbac3498f9b7525abae4f.setContent(i_frame_925de2b79fc8ebe831c846631e01cf6a);
+                var i_frame_3602449666b6aba8fd611dcf977b0dd6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjAgTWF5IDIwMjMgKFNhdCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBTZWtzeWVuIDEsIFNlbGFuZ29yIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwIDYxNC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPlJNIDE1MDAwMC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiAwIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IDgsIEphbGFuIDEvOSwgU2Vrc3llbiAxLCA0MzY1MCBCYW5kYXIgQmFydSBCYW5naSwgU2VsYW5nb3IsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5BbmQgdGhhdCdzIGEgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvVGxwMVVsWkhjMjQ1YWxaUVlYWTRXRGRSYTJkRVFUMDkvTGVsb25nLUF1Y3Rpb24tQXBhcnRtZW50LWluLUJhbmRhci1CYXJ1LUJhbmdpLVNlbGFuZ29yLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPmxpbms8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_33d328c332eb4085d211aff226b51096.setContent(i_frame_3602449666b6aba8fd611dcf977b0dd6);
             
         
 
-        marker_afc07b769dafcee32caa5171f2721b74.bindPopup(popup_f920708e1fbbbac3498f9b7525abae4f)
+        marker_17325fd0245c16378f2d7436ca2b44e8.bindPopup(popup_33d328c332eb4085d211aff226b51096)
         ;
 
         
     
     
-            var marker_a1366799b0da59b4f7c1237dfeeaa468 = L.marker(
+            var marker_c2edef1b6d38d7abeba89ee36a1a6a9e = L.marker(
                 [3.070207, 101.7498356],
                 {}
-            ).addTo(marker_cluster_8db0285bf7b2d06ef67eacbd90414f08);
+            ).addTo(marker_cluster_16b0475886a7371e770ea83d4a840aaa);
         
     
-            var div_icon_b015a702b5d235b071dd070b56ccf4b6 = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
-            marker_a1366799b0da59b4f7c1237dfeeaa468.setIcon(div_icon_b015a702b5d235b071dd070b56ccf4b6);
+            var div_icon_e2c73347b6a142609e26d8c7ea9b4544 = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
+            marker_c2edef1b6d38d7abeba89ee36a1a6a9e.setIcon(div_icon_e2c73347b6a142609e26d8c7ea9b4544);
         
     
-        var popup_633406497f45f8462fba1b6cac2f6239 = L.popup({"maxWidth": 2650});
+        var popup_ffee04e9df3df9750be43060c9a767f0 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_0423115ef0377a3ff982c2158e2c0d4e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMSBKdW4gMjAyMyAoVGh1KSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPGgyPiBOb25lIDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBUYW1hbiBCdWtpdCBDaGVyYXMgKENoZXJhcyBIZWlnaHRzKSwgS3VhbGEgTHVtcHVyIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwIDUxNy4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPlJNIDE1MDAwMC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiAgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gSmFsYW4gMS8xNDRhLCBUYW1hbiBCdWtpdCBDaGVyYXMsIEt1YWxhIEx1bXB1ciwgV2lsYXlhaCBQZXJzZWt1dHVhbiBLdWFsYSBMdW1wdXIsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5BbmQgdGhhdCdzIGEgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvVFZkc1VsQm5VRGxGWjA1Q1dGTXZlRWczYXl0RmR6MDkvTGVsb25nLUF1Y3Rpb24tQXBhcnRtZW50LWluLVRhbWFuLUJ1a2l0LUNoZXJhcy1LdWFsYS1MdW1wdXItZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+bGluazwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_633406497f45f8462fba1b6cac2f6239.setContent(i_frame_0423115ef0377a3ff982c2158e2c0d4e);
+                var i_frame_b8dcc6f67f4093e3fec53425612db2f1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMSBKdW4gMjAyMyAoVGh1KSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPGgyPiBOb25lIDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBUYW1hbiBCdWtpdCBDaGVyYXMgKENoZXJhcyBIZWlnaHRzKSwgS3VhbGEgTHVtcHVyIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwIDUxNy4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPlJNIDE1MDAwMC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiAgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gSmFsYW4gMS8xNDRhLCBUYW1hbiBCdWtpdCBDaGVyYXMsIEt1YWxhIEx1bXB1ciwgV2lsYXlhaCBQZXJzZWt1dHVhbiBLdWFsYSBMdW1wdXIsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5BbmQgdGhhdCdzIGEgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvVFZkc1VsQm5VRGxGWjA1Q1dGTXZlRWczYXl0RmR6MDkvTGVsb25nLUF1Y3Rpb24tQXBhcnRtZW50LWluLVRhbWFuLUJ1a2l0LUNoZXJhcy1LdWFsYS1MdW1wdXItZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+bGluazwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_ffee04e9df3df9750be43060c9a767f0.setContent(i_frame_b8dcc6f67f4093e3fec53425612db2f1);
             
         
 
-        marker_a1366799b0da59b4f7c1237dfeeaa468.bindPopup(popup_633406497f45f8462fba1b6cac2f6239)
+        marker_c2edef1b6d38d7abeba89ee36a1a6a9e.bindPopup(popup_ffee04e9df3df9750be43060c9a767f0)
         ;
 
         
     
     
-            var marker_2be34330404eea12e66afbc313ed8b2b = L.marker(
+            var marker_3f960050d7753d993471bce3fccc765c = L.marker(
                 [3.0070438, 101.7398731],
                 {}
-            ).addTo(marker_cluster_8db0285bf7b2d06ef67eacbd90414f08);
+            ).addTo(marker_cluster_16b0475886a7371e770ea83d4a840aaa);
         
     
-            var div_icon_a45fb612d1538047f3007495b6e13099 = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
-            marker_2be34330404eea12e66afbc313ed8b2b.setIcon(div_icon_a45fb612d1538047f3007495b6e13099);
+            var div_icon_113362720f5e05098cb0e359866b8ff1 = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
+            marker_3f960050d7753d993471bce3fccc765c.setIcon(div_icon_113362720f5e05098cb0e359866b8ff1);
         
     
-        var popup_91051d776dd716465305977eb313766f = L.popup({"maxWidth": 2650});
+        var popup_d533a89e0718515a91edc95646325cb0 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_2c46e825e8070d1168f62f22ce36b2ba = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTcgTWF5IDIwMjMgKFdlZCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gU2VyaSBKYXRpIEFwYXJ0bWVudCA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gUGFuZ3NhcHVyaSBTZXJpIEphdGksIFNlbGFuZ29yIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwIDcwNy4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPlJNIDE1MDAwMC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiAwIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IEphbGFuIEJhbGFrb25nIEpheWEsIFRhbWFuIEJhbGFrb25nIEpheWEsIDQzMzAwIFNlcmkgS2VtYmFuZ2FuLCBTZWxhbmdvciwgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPkFuZCB0aGF0J3MgYSA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9RVE5uZW5Rd1VDOUpaazFVY0VFMU9UZERlblE1ZHowOS9MZWxvbmctQXVjdGlvbi1TZXJpLUphdGktQXBhcnRtZW50LWluLUJhbGFrb25nLVNlbGFuZ29yLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPmxpbms8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_91051d776dd716465305977eb313766f.setContent(i_frame_2c46e825e8070d1168f62f22ce36b2ba);
+                var i_frame_fccf7ce7001abe3ff45d4bd1d182900c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTcgTWF5IDIwMjMgKFdlZCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gU2VyaSBKYXRpIEFwYXJ0bWVudCA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gUGFuZ3NhcHVyaSBTZXJpIEphdGksIFNlbGFuZ29yIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwIDcwNy4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPlJNIDE1MDAwMC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiAwIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IEphbGFuIEJhbGFrb25nIEpheWEsIFRhbWFuIEJhbGFrb25nIEpheWEsIDQzMzAwIFNlcmkgS2VtYmFuZ2FuLCBTZWxhbmdvciwgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPkFuZCB0aGF0J3MgYSA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9RVE5uZW5Rd1VDOUpaazFVY0VFMU9UZERlblE1ZHowOS9MZWxvbmctQXVjdGlvbi1TZXJpLUphdGktQXBhcnRtZW50LWluLUJhbGFrb25nLVNlbGFuZ29yLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPmxpbms8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_d533a89e0718515a91edc95646325cb0.setContent(i_frame_fccf7ce7001abe3ff45d4bd1d182900c);
             
         
 
-        marker_2be34330404eea12e66afbc313ed8b2b.bindPopup(popup_91051d776dd716465305977eb313766f)
+        marker_3f960050d7753d993471bce3fccc765c.bindPopup(popup_d533a89e0718515a91edc95646325cb0)
         ;
 
         
     
     
-            var marker_27e0aeafc51ef0b77372b8cfb30dee9e = L.marker(
+            var marker_f91156930a9347926493d695c6b8d2df = L.marker(
                 [3.011081, 101.732677],
                 {}
-            ).addTo(marker_cluster_8db0285bf7b2d06ef67eacbd90414f08);
+            ).addTo(marker_cluster_16b0475886a7371e770ea83d4a840aaa);
         
     
-            var div_icon_43d5773080cbeead43aef0a4c81cac84 = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
-            marker_27e0aeafc51ef0b77372b8cfb30dee9e.setIcon(div_icon_43d5773080cbeead43aef0a4c81cac84);
+            var div_icon_fc09f690d10c40c1ea20559d7bc69b5a = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
+            marker_f91156930a9347926493d695c6b8d2df.setIcon(div_icon_fc09f690d10c40c1ea20559d7bc69b5a);
         
     
-        var popup_a9124345093a8dcb8e0a1ff638613f7c = L.popup({"maxWidth": 2650});
+        var popup_28d1331aaeb03963281278a052b23745 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_3402703855db6171ea35336e335b8a31 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMzAgTWF5IDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBUYW1hbiBEZXNhIFNlcmRhbmcsIFNlbGFuZ29yIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwIDgyNi4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPlJNIDE1MDAwMC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiAzIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IEphbGFuIFBlcnNpYXJhbiBEZXNhIFNlcmRhbmcgMywgVGFtYW4gRGVzYSBTZXJkYW5nLCA0MzMwMCBCYWxha29uZywgU2VsYW5nb3IsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5BbmQgdGhhdCdzIGEgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvVWtoRFZ6SkNka3hQYW5WTVRtcE1hRVJ3YTNOWlp6MDkvTGVsb25nLUF1Y3Rpb24tQXBhcnRtZW50LWluLVRhbWFuLURlc2EtU2VyZGFuZy1TZWxhbmdvci1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT5saW5rPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_a9124345093a8dcb8e0a1ff638613f7c.setContent(i_frame_3402703855db6171ea35336e335b8a31);
+                var i_frame_cfb236c6827db3d23f726bb511127148 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMzAgTWF5IDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBUYW1hbiBEZXNhIFNlcmRhbmcsIFNlbGFuZ29yIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwIDgyNi4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPlJNIDE1MDAwMC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiAzIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IEphbGFuIFBlcnNpYXJhbiBEZXNhIFNlcmRhbmcgMywgVGFtYW4gRGVzYSBTZXJkYW5nLCA0MzMwMCBCYWxha29uZywgU2VsYW5nb3IsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5BbmQgdGhhdCdzIGEgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvVWtoRFZ6SkNka3hQYW5WTVRtcE1hRVJ3YTNOWlp6MDkvTGVsb25nLUF1Y3Rpb24tQXBhcnRtZW50LWluLVRhbWFuLURlc2EtU2VyZGFuZy1TZWxhbmdvci1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT5saW5rPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_28d1331aaeb03963281278a052b23745.setContent(i_frame_cfb236c6827db3d23f726bb511127148);
             
         
 
-        marker_27e0aeafc51ef0b77372b8cfb30dee9e.bindPopup(popup_a9124345093a8dcb8e0a1ff638613f7c)
+        marker_f91156930a9347926493d695c6b8d2df.bindPopup(popup_28d1331aaeb03963281278a052b23745)
         ;
 
         
     
     
-            var marker_2825a0432625e089d72572688dc43e52 = L.marker(
+            var marker_fb3afdc1797c09d99f5b3bab3144821d = L.marker(
                 [3.1882441, 101.5336598],
                 {}
-            ).addTo(marker_cluster_8db0285bf7b2d06ef67eacbd90414f08);
+            ).addTo(marker_cluster_16b0475886a7371e770ea83d4a840aaa);
         
     
-            var div_icon_32d558549985a1e50a052d4c987eaf11 = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
-            marker_2825a0432625e089d72572688dc43e52.setIcon(div_icon_32d558549985a1e50a052d4c987eaf11);
+            var div_icon_03b2e40b402393c9d0923ce0abbb9310 = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
+            marker_fb3afdc1797c09d99f5b3bab3144821d.setIcon(div_icon_03b2e40b402393c9d0923ce0abbb9310);
         
     
-        var popup_895f863fc26b6e5df56a8fec1373cbdb = L.popup({"maxWidth": 2650});
+        var popup_36c848f930ba759367c82cc9bc113437 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_18454b782f375c9c1f30a975ea2195bc = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gNiBKdW4gMjAyMyAoVHVlKSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPGgyPiBBcGFydG1lbnQgPC9oMj4KICAgICAgICAgICAgICAgICAgICA8aDE+IFN1YmFuZyBIaWphdWFuLCBTZWxhbmdvciA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cCA2NTAuMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5STSAxNTAwMDAuMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gMCA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBKYWxhbiBCaW50YW5nIFU1LzMzLCBTdWJhbmcgU3VyaWEsIDQwMTUwIFNoYWggQWxhbSwgU2VsYW5nb3IsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5BbmQgdGhhdCdzIGEgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvYkRJMVVXOVZaVzA1YlU1UWFtd3ZSalZ4VlM5WmR6MDkvTGVsb25nLUF1Y3Rpb24tQXBhcnRtZW50LWluLVNoYWgtQWxhbS1TZWxhbmdvci1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT5saW5rPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_895f863fc26b6e5df56a8fec1373cbdb.setContent(i_frame_18454b782f375c9c1f30a975ea2195bc);
+                var i_frame_2c2c2484999535ef536ec709baffcb7c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gNiBKdW4gMjAyMyAoVHVlKSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPGgyPiBBcGFydG1lbnQgPC9oMj4KICAgICAgICAgICAgICAgICAgICA8aDE+IFN1YmFuZyBIaWphdWFuLCBTZWxhbmdvciA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cCA2NTAuMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5STSAxNTAwMDAuMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gMCA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBKYWxhbiBCaW50YW5nIFU1LzMzLCBTdWJhbmcgU3VyaWEsIDQwMTUwIFNoYWggQWxhbSwgU2VsYW5nb3IsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5BbmQgdGhhdCdzIGEgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvYkRJMVVXOVZaVzA1YlU1UWFtd3ZSalZ4VlM5WmR6MDkvTGVsb25nLUF1Y3Rpb24tQXBhcnRtZW50LWluLVNoYWgtQWxhbS1TZWxhbmdvci1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT5saW5rPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_36c848f930ba759367c82cc9bc113437.setContent(i_frame_2c2c2484999535ef536ec709baffcb7c);
             
         
 
-        marker_2825a0432625e089d72572688dc43e52.bindPopup(popup_895f863fc26b6e5df56a8fec1373cbdb)
+        marker_fb3afdc1797c09d99f5b3bab3144821d.bindPopup(popup_36c848f930ba759367c82cc9bc113437)
         ;
 
         
     
     
-            var marker_a18ccf9e7442cfb7a087f91c9a01628d = L.marker(
+            var marker_b8df3e6e526b14f4baf417a2f97da4da = L.marker(
                 [3.0962884, 101.6857043],
                 {}
-            ).addTo(marker_cluster_8db0285bf7b2d06ef67eacbd90414f08);
+            ).addTo(marker_cluster_16b0475886a7371e770ea83d4a840aaa);
         
     
-            var div_icon_d73be1a5728d50da4531fe01d03e4a1c = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
-            marker_a18ccf9e7442cfb7a087f91c9a01628d.setIcon(div_icon_d73be1a5728d50da4531fe01d03e4a1c);
+            var div_icon_5ddc32ed7bad08912b5c4f8f5bfcb0fb = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
+            marker_b8df3e6e526b14f4baf417a2f97da4da.setIcon(div_icon_5ddc32ed7bad08912b5c4f8f5bfcb0fb);
         
     
-        var popup_25e0007856380c4293175bd4cc993a85 = L.popup({"maxWidth": 2650});
+        var popup_bcd259b368969e3226f4b832b3be1a38 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_6a8943944a62d10d73033b02a5104e2d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjYgTWF5IDIwMjMgKEZyaSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gWy00NSUgJiBST0kgdXAgdG8gMTAlXSBBYmFkaSBJbmRhaCBBcGFydG1lbnQgWzYgbWluIGF3YXkgZnJvbSBQYW50YWkgRGFsYW0gS1RNIFN0YXRpb247IDkgbWluIHRvIE1pZCBWYWxsZXkgTWVnYW1hbGxdIDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBBYmFkaSBJbmRhaCwgS3VhbGEgTHVtcHVyIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwIDk0Ny4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPlJNIDE1MDAwMC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiAwIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IEFiYWRpIEluZGFoIEFwYXJ0bWVudCwgSmFsYW4gMy8xMDljLCBUYW1hbiBBYmFkaSBJbmRhaCwgNTgxMDAgS3VhbGEgTHVtcHVyLCBXaWxheWFoIFBlcnNla3V0dWFuIEt1YWxhIEx1bXB1ciwgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPkFuZCB0aGF0J3MgYSA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9UbUkwTkhFdkszYzNUV3h0V0hjeVNWQkJURzVWVVQwOS9MZWxvbmctQXVjdGlvbi00NS1ST0ktdXAtdG8tMTAtQWJhZGktSW5kYWgtQXBhcnRtZW50LTYtbWluLWF3YXktZnJvbS1QYW50YWktRGFsYW0tS1RNLVN0YXRpb24tOS1taW4tdG8tTWlkLVZhbGxleS1NZWdhbWFsbC1pbi1UYW1hbi1BYmFkaS1JbmRhaC1LdWFsYS1MdW1wdXItZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+bGluazwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_25e0007856380c4293175bd4cc993a85.setContent(i_frame_6a8943944a62d10d73033b02a5104e2d);
+                var i_frame_cc982b58f091ad280073eaf228163e8f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjYgTWF5IDIwMjMgKEZyaSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gWy00NSUgJiBST0kgdXAgdG8gMTAlXSBBYmFkaSBJbmRhaCBBcGFydG1lbnQgWzYgbWluIGF3YXkgZnJvbSBQYW50YWkgRGFsYW0gS1RNIFN0YXRpb247IDkgbWluIHRvIE1pZCBWYWxsZXkgTWVnYW1hbGxdIDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBBYmFkaSBJbmRhaCwgS3VhbGEgTHVtcHVyIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwIDk0Ny4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPlJNIDE1MDAwMC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiAwIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IEFiYWRpIEluZGFoIEFwYXJ0bWVudCwgSmFsYW4gMy8xMDljLCBUYW1hbiBBYmFkaSBJbmRhaCwgNTgxMDAgS3VhbGEgTHVtcHVyLCBXaWxheWFoIFBlcnNla3V0dWFuIEt1YWxhIEx1bXB1ciwgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPkFuZCB0aGF0J3MgYSA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9UbUkwTkhFdkszYzNUV3h0V0hjeVNWQkJURzVWVVQwOS9MZWxvbmctQXVjdGlvbi00NS1ST0ktdXAtdG8tMTAtQWJhZGktSW5kYWgtQXBhcnRtZW50LTYtbWluLWF3YXktZnJvbS1QYW50YWktRGFsYW0tS1RNLVN0YXRpb24tOS1taW4tdG8tTWlkLVZhbGxleS1NZWdhbWFsbC1pbi1UYW1hbi1BYmFkaS1JbmRhaC1LdWFsYS1MdW1wdXItZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+bGluazwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_bcd259b368969e3226f4b832b3be1a38.setContent(i_frame_cc982b58f091ad280073eaf228163e8f);
             
         
 
-        marker_a18ccf9e7442cfb7a087f91c9a01628d.bindPopup(popup_25e0007856380c4293175bd4cc993a85)
+        marker_b8df3e6e526b14f4baf417a2f97da4da.bindPopup(popup_bcd259b368969e3226f4b832b3be1a38)
         ;
 
         
     
     
-            var marker_8d4706ccfe4f52cb82b272bd766f9c6a = L.marker(
+            var marker_41743754f4c0e8b3c23235df1ba23d07 = L.marker(
                 [3.0764667, 101.7665015],
                 {}
-            ).addTo(marker_cluster_8db0285bf7b2d06ef67eacbd90414f08);
+            ).addTo(marker_cluster_16b0475886a7371e770ea83d4a840aaa);
         
     
-            var div_icon_e479a65e1e53ddc4f70dff58672c81f6 = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
-            marker_8d4706ccfe4f52cb82b272bd766f9c6a.setIcon(div_icon_e479a65e1e53ddc4f70dff58672c81f6);
+            var div_icon_72c4ce38d685ad61337aad9cf7132089 = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
+            marker_41743754f4c0e8b3c23235df1ba23d07.setIcon(div_icon_72c4ce38d685ad61337aad9cf7132089);
         
     
-        var popup_c05573f467adb3573acbb055fc881f65 = L.popup({"maxWidth": 2650});
+        var popup_5d2d4db68eae96dc6570f46fa6f342dd = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_b48aa416ac756617d9bdf963363a93bb = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjYgTWF5IDIwMjMgKEZyaSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gRnJlZWhvbGQgQXBhcnRtZW50IFs5IG1pbiB0byBDaGVyYXMgTGVpc3VyZU1hbGwgJiBFa29DaGVyYXMgTWFsbDsgMTAgbWluIHdhbGsgdG8gVGFtYW4gU3VudGV4IE1SVCBTdGF0aW9uXSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gT3JraWQsIFNlbGFuZ29yIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwIDc1NC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPlJNIDE1MDAwMC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiAyIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IEphbGFuIE9ya2lkIDEsIFRhbWFuIE9ya2lkLCA0MzIwMCBDaGVyYXMsIFNlbGFuZ29yLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+QW5kIHRoYXQncyBhIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L1lVNVhkbmhLUWxrMk5rUnVjVmhQT0daSVUzTlBkejA5L0xlbG9uZy1BdWN0aW9uLUZyZWVob2xkLUFwYXJ0bWVudC05LW1pbi10by1DaGVyYXMtTGVpc3VyZU1hbGwtRWtvQ2hlcmFzLU1hbGwtMTAtbWluLXdhbGstdG8tVGFtYW4tU3VudGV4LU1SVC1TdGF0aW9uLWluLVRhbWFuLU9ya2lkLVNlbGFuZ29yLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPmxpbms8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_c05573f467adb3573acbb055fc881f65.setContent(i_frame_b48aa416ac756617d9bdf963363a93bb);
+                var i_frame_06f9d32050af92b8738daca12ff14abf = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjYgTWF5IDIwMjMgKEZyaSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gRnJlZWhvbGQgQXBhcnRtZW50IFs5IG1pbiB0byBDaGVyYXMgTGVpc3VyZU1hbGwgJiBFa29DaGVyYXMgTWFsbDsgMTAgbWluIHdhbGsgdG8gVGFtYW4gU3VudGV4IE1SVCBTdGF0aW9uXSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gT3JraWQsIFNlbGFuZ29yIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwIDc1NC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPlJNIDE1MDAwMC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiAyIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IEphbGFuIE9ya2lkIDEsIFRhbWFuIE9ya2lkLCA0MzIwMCBDaGVyYXMsIFNlbGFuZ29yLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+QW5kIHRoYXQncyBhIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L1lVNVhkbmhLUWxrMk5rUnVjVmhQT0daSVUzTlBkejA5L0xlbG9uZy1BdWN0aW9uLUZyZWVob2xkLUFwYXJ0bWVudC05LW1pbi10by1DaGVyYXMtTGVpc3VyZU1hbGwtRWtvQ2hlcmFzLU1hbGwtMTAtbWluLXdhbGstdG8tVGFtYW4tU3VudGV4LU1SVC1TdGF0aW9uLWluLVRhbWFuLU9ya2lkLVNlbGFuZ29yLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPmxpbms8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_5d2d4db68eae96dc6570f46fa6f342dd.setContent(i_frame_06f9d32050af92b8738daca12ff14abf);
             
         
 
-        marker_8d4706ccfe4f52cb82b272bd766f9c6a.bindPopup(popup_c05573f467adb3573acbb055fc881f65)
+        marker_41743754f4c0e8b3c23235df1ba23d07.bindPopup(popup_5d2d4db68eae96dc6570f46fa6f342dd)
         ;
 
         
     
     
-            var marker_25719615356dd480e080fa53e395d61f = L.marker(
+            var marker_f00a39822410107efbf1c8ae0befa05b = L.marker(
                 [3.1943461, 101.5847364],
                 {}
-            ).addTo(marker_cluster_8db0285bf7b2d06ef67eacbd90414f08);
+            ).addTo(marker_cluster_16b0475886a7371e770ea83d4a840aaa);
         
     
-            var div_icon_5ad120106cc8b6db4f2d4454d5b3fe2e = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
-            marker_25719615356dd480e080fa53e395d61f.setIcon(div_icon_5ad120106cc8b6db4f2d4454d5b3fe2e);
+            var div_icon_47c7b186906c8bed3cec6b78b0401bdb = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
+            marker_f00a39822410107efbf1c8ae0befa05b.setIcon(div_icon_47c7b186906c8bed3cec6b78b0401bdb);
         
     
-        var popup_ba6ce1372aed3cecbe9bd20cb7ad8bf6 = L.popup({"maxWidth": 2650});
+        var popup_f24b42896e24f1ec6089271094c46f70 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_4eba19e719fcdfa88b60e23913374846 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjIgTWF5IDIwMjMgKE1vbikgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBQYW5nc2FwdXJpIEhhcm1vbmksIFNlbGFuZ29yIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwIDY1MC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPlJNIDE1MDAwMC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiAwIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IEhhcm1vbmkgYXBhcnRtZW50LCA1NSwgSmFsYW4gUEpVIDEwLzRjLCBEYW1hbnNhcmEgRGFtYWksIDQ3ODMwIFBldGFsaW5nIEpheWEsIFNlbGFuZ29yLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+QW5kIHRoYXQncyBhIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L2VFNXlMMWd2Wld3d1VVZE1hMnhRWkVSQk0xSk5aejA5L0xlbG9uZy1BdWN0aW9uLUFwYXJ0bWVudC1pbi1QZXRhbGluZy1KYXlhLVNlbGFuZ29yLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPmxpbms8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_ba6ce1372aed3cecbe9bd20cb7ad8bf6.setContent(i_frame_4eba19e719fcdfa88b60e23913374846);
+                var i_frame_71b42186b3f3b873fe4929ff7f1b79b2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjIgTWF5IDIwMjMgKE1vbikgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBQYW5nc2FwdXJpIEhhcm1vbmksIFNlbGFuZ29yIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwIDY1MC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPlJNIDE1MDAwMC4wPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiAwIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IEhhcm1vbmkgYXBhcnRtZW50LCA1NSwgSmFsYW4gUEpVIDEwLzRjLCBEYW1hbnNhcmEgRGFtYWksIDQ3ODMwIFBldGFsaW5nIEpheWEsIFNlbGFuZ29yLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+QW5kIHRoYXQncyBhIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L2VFNXlMMWd2Wld3d1VVZE1hMnhRWkVSQk0xSk5aejA5L0xlbG9uZy1BdWN0aW9uLUFwYXJ0bWVudC1pbi1QZXRhbGluZy1KYXlhLVNlbGFuZ29yLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPmxpbms8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_f24b42896e24f1ec6089271094c46f70.setContent(i_frame_71b42186b3f3b873fe4929ff7f1b79b2);
             
         
 
-        marker_25719615356dd480e080fa53e395d61f.bindPopup(popup_ba6ce1372aed3cecbe9bd20cb7ad8bf6)
+        marker_f00a39822410107efbf1c8ae0befa05b.bindPopup(popup_f24b42896e24f1ec6089271094c46f70)
         ;
 
         
     
     
-            var marker_6113157e564916a57304aa3364aa8415 = L.marker(
+            var marker_35c351c5434af2a1e124101382c8d6f5 = L.marker(
                 [3.1061671, 101.7528589],
                 {}
-            ).addTo(marker_cluster_8db0285bf7b2d06ef67eacbd90414f08);
+            ).addTo(marker_cluster_16b0475886a7371e770ea83d4a840aaa);
         
     
-            var div_icon_87496cddcab027df08b0236c12892c14 = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
-            marker_6113157e564916a57304aa3364aa8415.setIcon(div_icon_87496cddcab027df08b0236c12892c14);
+            var div_icon_3eb41697f71197e5b6107a165653fb73 = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
+            marker_35c351c5434af2a1e124101382c8d6f5.setIcon(div_icon_3eb41697f71197e5b6107a165653fb73);
         
     
-        var popup_4b683edc21b6026b1459416f2fd1037c = L.popup({"maxWidth": 2650});
+        var popup_66e14800dd9d9030894f6b9498ed2c85 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_d9a94054ce3eb1c588aa29e94956f8a9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjIgTWF5IDIwMjMgKE1vbikgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBUYW1hbiBCdWtpdCBQYW5kYW4sIEt1YWxhIEx1bXB1ciA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cCA3NTUuMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5STSAxNTAwMDAuMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gMyA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBKYWxhbiBCL1AgMSwgQnVraXQgUGFuZGFuLCA1NjEwMCBBbXBhbmcsIFNlbGFuZ29yLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+QW5kIHRoYXQncyBhIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L1puRlpNRFJNYjJGbU9FRnZNazF2UWtKU2VWUkZRVDA5L0xlbG9uZy1BdWN0aW9uLUFwYXJ0bWVudC1pbi1UYW1hbi1CdWtpdC1QYW5kYW4tS3VhbGEtTHVtcHVyLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPmxpbms8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_4b683edc21b6026b1459416f2fd1037c.setContent(i_frame_d9a94054ce3eb1c588aa29e94956f8a9);
+                var i_frame_9db170f309867ef7c34ff3f0b946fdb4 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjIgTWF5IDIwMjMgKE1vbikgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBUYW1hbiBCdWtpdCBQYW5kYW4sIEt1YWxhIEx1bXB1ciA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cCA3NTUuMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5STSAxNTAwMDAuMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gMyA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBKYWxhbiBCL1AgMSwgQnVraXQgUGFuZGFuLCA1NjEwMCBBbXBhbmcsIFNlbGFuZ29yLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+QW5kIHRoYXQncyBhIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L1puRlpNRFJNYjJGbU9FRnZNazF2UWtKU2VWUkZRVDA5L0xlbG9uZy1BdWN0aW9uLUFwYXJ0bWVudC1pbi1UYW1hbi1CdWtpdC1QYW5kYW4tS3VhbGEtTHVtcHVyLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPmxpbms8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_66e14800dd9d9030894f6b9498ed2c85.setContent(i_frame_9db170f309867ef7c34ff3f0b946fdb4);
             
         
 
-        marker_6113157e564916a57304aa3364aa8415.bindPopup(popup_4b683edc21b6026b1459416f2fd1037c)
+        marker_35c351c5434af2a1e124101382c8d6f5.bindPopup(popup_66e14800dd9d9030894f6b9498ed2c85)
         ;
 
         
     
     
-            var marker_81b6949f5060a453a5fbc4f8dd34c139 = L.marker(
+            var marker_891bd9ca04ac37f095c6eee26d5ebe1d = L.marker(
                 [3.0180149, 101.425527],
                 {}
-            ).addTo(marker_cluster_8db0285bf7b2d06ef67eacbd90414f08);
+            ).addTo(marker_cluster_16b0475886a7371e770ea83d4a840aaa);
         
     
-            var div_icon_05b3cab3d274536690386fb0bf559341 = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
-            marker_81b6949f5060a453a5fbc4f8dd34c139.setIcon(div_icon_05b3cab3d274536690386fb0bf559341);
+            var div_icon_9019d7efc987574dadb269fbe04faed0 = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
+            marker_891bd9ca04ac37f095c6eee26d5ebe1d.setIcon(div_icon_9019d7efc987574dadb269fbe04faed0);
         
     
-        var popup_72406b65df10d689799a4e427f2224af = L.popup({"maxWidth": 2650});
+        var popup_db031349d79d61561b311d11b5fd3993 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_0a167cd7e0ae5ba23b00c52cda18335e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMzAgTWF5IDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBQYW5nc2FwdXJpIFNyaSBBbmdrYXNhLCBTZWxhbmdvciA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cCA2NDYuMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5STSAxNTAwMDAuMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IFBhbmdzYXB1cmkgU3JpIEFuZ2thc2EsIFRhbWFuIEJheXUgUGVyZGFuYSwgNDIwMDAgS2xhbmcsIFNlbGFuZ29yLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+QW5kIHRoYXQncyBhIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L2VYcHFSbkZ4VFdwR2FrTk5XbEYxT0hGSGJrOTNVVDA5L0xlbG9uZy1BdWN0aW9uLUFwYXJ0bWVudC1pbi1UYW1hbi1CYXl1LVBlcmRhbmEtU2VsYW5nb3ItZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+bGluazwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_72406b65df10d689799a4e427f2224af.setContent(i_frame_0a167cd7e0ae5ba23b00c52cda18335e);
+                var i_frame_0ec1df83a5b19bba2c65887657be75dd = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMzAgTWF5IDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBQYW5nc2FwdXJpIFNyaSBBbmdrYXNhLCBTZWxhbmdvciA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cCA2NDYuMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5STSAxNTAwMDAuMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IFBhbmdzYXB1cmkgU3JpIEFuZ2thc2EsIFRhbWFuIEJheXUgUGVyZGFuYSwgNDIwMDAgS2xhbmcsIFNlbGFuZ29yLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+QW5kIHRoYXQncyBhIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L2VYcHFSbkZ4VFdwR2FrTk5XbEYxT0hGSGJrOTNVVDA5L0xlbG9uZy1BdWN0aW9uLUFwYXJ0bWVudC1pbi1UYW1hbi1CYXl1LVBlcmRhbmEtU2VsYW5nb3ItZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+bGluazwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_db031349d79d61561b311d11b5fd3993.setContent(i_frame_0ec1df83a5b19bba2c65887657be75dd);
             
         
 
-        marker_81b6949f5060a453a5fbc4f8dd34c139.bindPopup(popup_72406b65df10d689799a4e427f2224af)
+        marker_891bd9ca04ac37f095c6eee26d5ebe1d.bindPopup(popup_db031349d79d61561b311d11b5fd3993)
         ;
 
         
     
     
-            var marker_5871216d5e10afc14c1b3ec2fa61e037 = L.marker(
+            var marker_01fb4925beb77c5c1b284aed72afd47f = L.marker(
                 [3.0890098, 101.5136425],
                 {}
-            ).addTo(marker_cluster_8db0285bf7b2d06ef67eacbd90414f08);
+            ).addTo(marker_cluster_16b0475886a7371e770ea83d4a840aaa);
         
     
-            var div_icon_323e621b82329981fd2be62fbe610a1e = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
-            marker_5871216d5e10afc14c1b3ec2fa61e037.setIcon(div_icon_323e621b82329981fd2be62fbe610a1e);
+            var div_icon_d397e60124bac3d25564f237a540f030 = L.divIcon({"className": "empty", "html": "\n                                        \u003cdiv\u003e\n                                        \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z\"/\u003e\u003c/svg\u003e\n                                        \u003c/div\u003e"});
+            marker_01fb4925beb77c5c1b284aed72afd47f.setIcon(div_icon_d397e60124bac3d25564f237a540f030);
         
     
-        var popup_ab18a6169eebaa406a6c8aa88708dede = L.popup({"maxWidth": 2650});
+        var popup_702f0c38eb49405ff9f5188ff8d9d46b = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_a469a34d9c7eb997dd088f01f4103211 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjAgTWF5IDIwMjMgKFNhdCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gU2Vrc3llbiA4IEFwYXJ0bWVudCA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gRmxhdCBQS05TIFNla3N5ZW4gOCwgU2VsYW5nb3IgPC9oMT4KICAgICAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXAgNzU1LjA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+Uk0gMTUzMDAwLjA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+ICA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiA4LCBKYWxhbiBMaWt1IDgvMSwgU2Vrc3llbiA4LCA0MDAwMCBTaGFoIEFsYW0sIFNlbGFuZ29yLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+QW5kIHRoYXQncyBhIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L01XaDJTekJzVUZsMlR5OVNhMUJETWxSRFpsb3dkejA5L0xlbG9uZy1BdWN0aW9uLVNla3N5ZW4tOC1BcGFydG1lbnQtaW4tU2hhaC1BbGFtLVNlbGFuZ29yLWZvci1STTE1MzAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPmxpbms8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_ab18a6169eebaa406a6c8aa88708dede.setContent(i_frame_a469a34d9c7eb997dd088f01f4103211);
+                var i_frame_f315b3399cf61372769139392740b290 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjAgTWF5IDIwMjMgKFNhdCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gU2Vrc3llbiA4IEFwYXJ0bWVudCA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gRmxhdCBQS05TIFNla3N5ZW4gOCwgU2VsYW5nb3IgPC9oMT4KICAgICAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXAgNzU1LjA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+Uk0gMTUzMDAwLjA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+ICA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiA4LCBKYWxhbiBMaWt1IDgvMSwgU2Vrc3llbiA4LCA0MDAwMCBTaGFoIEFsYW0sIFNlbGFuZ29yLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+QW5kIHRoYXQncyBhIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L01XaDJTekJzVUZsMlR5OVNhMUJETWxSRFpsb3dkejA5L0xlbG9uZy1BdWN0aW9uLVNla3N5ZW4tOC1BcGFydG1lbnQtaW4tU2hhaC1BbGFtLVNlbGFuZ29yLWZvci1STTE1MzAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPmxpbms8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_702f0c38eb49405ff9f5188ff8d9d46b.setContent(i_frame_f315b3399cf61372769139392740b290);
             
         
 
-        marker_5871216d5e10afc14c1b3ec2fa61e037.bindPopup(popup_ab18a6169eebaa406a6c8aa88708dede)
+        marker_01fb4925beb77c5c1b284aed72afd47f.bindPopup(popup_702f0c38eb49405ff9f5188ff8d9d46b)
         ;
 
         
     
     
-            var feature_group_d08d219611e2638e7a1eb84a917e9529 = L.featureGroup(
+            var feature_group_28cf707d3db46d1b12b3432802587666 = L.featureGroup(
                 {}
-            ).addTo(map_14964aaa48063237053b1ee1838556b2);
+            ).addTo(map_4e21ed3dfe25102827f5f01c303ce9cd);
         
     
-            var marker_cluster_bbffe38991399cbe7ad36e4f24a5b0c9 = L.markerClusterGroup(
-                {}
-            );
-            feature_group_d08d219611e2638e7a1eb84a917e9529.addLayer(marker_cluster_bbffe38991399cbe7ad36e4f24a5b0c9);
-        
-    
-            var feature_group_0a38d52276769dad6a20991a89480105 = L.featureGroup(
-                {}
-            ).addTo(map_14964aaa48063237053b1ee1838556b2);
-        
-    
-            var marker_cluster_905a337112b96f48fe065ae72f5a29c7 = L.markerClusterGroup(
+            var marker_cluster_6f1e2f32c9e77ba0b819eadec67077ef = L.markerClusterGroup(
                 {}
             );
-            feature_group_0a38d52276769dad6a20991a89480105.addLayer(marker_cluster_905a337112b96f48fe065ae72f5a29c7);
+            feature_group_28cf707d3db46d1b12b3432802587666.addLayer(marker_cluster_6f1e2f32c9e77ba0b819eadec67077ef);
         
     
-            var marker_92cde6c932ae21d70ef44efe4a9a7765 = L.marker(
+            var feature_group_5b2d7a39fd84e1733f05eda3ede84a51 = L.featureGroup(
+                {}
+            ).addTo(map_4e21ed3dfe25102827f5f01c303ce9cd);
+        
+    
+            var marker_cluster_8ce650cfe23cf59f509ee0e1905fe973 = L.markerClusterGroup(
+                {}
+            );
+            feature_group_5b2d7a39fd84e1733f05eda3ede84a51.addLayer(marker_cluster_8ce650cfe23cf59f509ee0e1905fe973);
+        
+    
+            var marker_1ff00ba72fc1cbdb633b0d38cfeb80de = L.marker(
                 [3.0068137, 101.7671598],
                 {}
-            ).addTo(marker_cluster_905a337112b96f48fe065ae72f5a29c7);
+            ).addTo(marker_cluster_8ce650cfe23cf59f509ee0e1905fe973);
         
     
-            var div_icon_d4b2c9ba3b6116190a885e1180155cc6 = L.divIcon({"className": "empty", "html": "\n                                    \u003cdiv\u003e\n                                    \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z\"/\u003e\u003c/svg\u003e\n                                    \u003c/div\u003e"});
-            marker_92cde6c932ae21d70ef44efe4a9a7765.setIcon(div_icon_d4b2c9ba3b6116190a885e1180155cc6);
+            var div_icon_a9be3e36172f72ea4d6342e07aa7656f = L.divIcon({"className": "empty", "html": "\n                                    \u003cdiv\u003e\n                                    \u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\"\u003e\u003c!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\u003e\u003cpath d=\"M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z\"/\u003e\u003c/svg\u003e\n                                    \u003c/div\u003e"});
+            marker_1ff00ba72fc1cbdb633b0d38cfeb80de.setIcon(div_icon_a9be3e36172f72ea4d6342e07aa7656f);
         
     
-        var popup_44fdb05b73f650d14f72515b14a66557 = L.popup({"maxWidth": 2650});
+        var popup_740d96420f6facf91c1762c420c5dea9 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_da310de2974ea8bb7871f112c74bc482 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjkgTWF5IDIwMjMgKE1vbikgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gTWVsb3IgQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBQYW5nc2FwdXJpIE1lbG9yLCBTZWxhbmdvciA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cCBOb25lPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPlJNIDE1MDAwMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gMCA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBKYWxhbiBTdXRlcmEgMS81LCBUYW1hbiBTdXRlcmEsIDQzMDAwIEthamFuZywgU2VsYW5nb3IsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5BbmQgdGhhdCdzIGEgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvWTJWeWVtVXhha1YyYVUxMlRWTnFUM1V2UVRrMlp6MDkvTGVsb25nLUF1Y3Rpb24tTWVsb3ItQXBhcnRtZW50LWluLVRhbWFuLVN1dGVyYS1LYWphbmctU2VsYW5nb3ItZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+bGluazwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_44fdb05b73f650d14f72515b14a66557.setContent(i_frame_da310de2974ea8bb7871f112c74bc482);
+                var i_frame_8e33cf90d4526e92880f30cdef49735a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjkgTWF5IDIwMjMgKE1vbikgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gTWVsb3IgQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBQYW5nc2FwdXJpIE1lbG9yLCBTZWxhbmdvciA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cCBOb25lPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPlJNIDE1MDAwMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gMCA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBKYWxhbiBTdXRlcmEgMS81LCBUYW1hbiBTdXRlcmEsIDQzMDAwIEthamFuZywgU2VsYW5nb3IsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5BbmQgdGhhdCdzIGEgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvWTJWeWVtVXhha1YyYVUxMlRWTnFUM1V2UVRrMlp6MDkvTGVsb25nLUF1Y3Rpb24tTWVsb3ItQXBhcnRtZW50LWluLVRhbWFuLVN1dGVyYS1LYWphbmctU2VsYW5nb3ItZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+bGluazwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_740d96420f6facf91c1762c420c5dea9.setContent(i_frame_8e33cf90d4526e92880f30cdef49735a);
             
         
 
-        marker_92cde6c932ae21d70ef44efe4a9a7765.bindPopup(popup_44fdb05b73f650d14f72515b14a66557)
+        marker_1ff00ba72fc1cbdb633b0d38cfeb80de.bindPopup(popup_740d96420f6facf91c1762c420c5dea9)
         ;
 
         
     
     
-            var layer_control_1f357c8eb30f3be67e93fd63a87f447e = {
+            var layer_control_4a26dcf6ee54418834c42ff06536dbce = {
                 base_layers : {
-                    "openstreetmap" : tile_layer_87f556b8afee63172167a00f8fc80ce5,
+                    "openstreetmap" : tile_layer_146c7343775415252461133f4a4185a3,
                 },
                 overlays :  {
-                    "Landed" : feature_group_d62ef9f9838a425d8f8b31f2120e5377,
-                    "Low Risk Deals" : feature_group_59d05d8a06375a75ff595e11f5f04c64,
-                    "GPT Deals" : feature_group_d08d219611e2638e7a1eb84a917e9529,
-                    "Others" : feature_group_0a38d52276769dad6a20991a89480105,
+                    "Landed" : feature_group_15850fd809a8a16bb27e288bd128e513,
+                    "Low Risk Deals" : feature_group_ea5497fabb04e6f257bb68d45f8624de,
+                    "GPT Deals" : feature_group_28cf707d3db46d1b12b3432802587666,
+                    "Others" : feature_group_5b2d7a39fd84e1733f05eda3ede84a51,
                 },
             };
             L.control.layers(
-                layer_control_1f357c8eb30f3be67e93fd63a87f447e.base_layers,
-                layer_control_1f357c8eb30f3be67e93fd63a87f447e.overlays,
+                layer_control_4a26dcf6ee54418834c42ff06536dbce.base_layers,
+                layer_control_4a26dcf6ee54418834c42ff06536dbce.overlays,
                 {"autoZIndex": true, "collapsed": true, "position": "topright"}
-            ).addTo(map_14964aaa48063237053b1ee1838556b2);
-            feature_group_d62ef9f9838a425d8f8b31f2120e5377.remove();
-            feature_group_59d05d8a06375a75ff595e11f5f04c64.remove();
-            feature_group_d08d219611e2638e7a1eb84a917e9529.remove();
-            feature_group_0a38d52276769dad6a20991a89480105.remove();
+            ).addTo(map_4e21ed3dfe25102827f5f01c303ce9cd);
+            feature_group_15850fd809a8a16bb27e288bd128e513.remove();
+            feature_group_ea5497fabb04e6f257bb68d45f8624de.remove();
+            feature_group_28cf707d3db46d1b12b3432802587666.remove();
+            feature_group_5b2d7a39fd84e1733f05eda3ede84a51.remove();
         
 </script>
 </html>
