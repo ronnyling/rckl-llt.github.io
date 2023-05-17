@@ -68,7 +68,7 @@ class Main(object):
                 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
                 <!--[if lte IE 8]><link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css" /><![endif]-->
             
-                <link rel="stylesheet" href="../../../components/leaflet-sidebar.css" />
+                <link rel="stylesheet" href="../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.css" />
             
                 <style>
                     body {
@@ -141,7 +141,7 @@ class Main(object):
                 <a href="https://github.com/Turbo87/sidebar-v2/"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
             
                 <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
-                <script src="../../../components/leaflet-sidebar.js"></script>
+                <script src="../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.js"></script>
             
                 <script>
                     var map = L.map('map');
