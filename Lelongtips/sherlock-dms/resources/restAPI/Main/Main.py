@@ -28,10 +28,6 @@ class Main(object):
 
     @keyword("user runs main flow")
     def user_runs_main_flow(self):
-        # common = APIMethod.APIMethod()
-
-
-        # response = common.trigger_api_request("GET", MAIN_URL + str(1), "")
         response = requests.get(
             url=MAIN_URL + str(1)
         )
@@ -246,8 +242,10 @@ class Main(object):
         fig.add_child(container)
         # fig.add_child(m)
         # container.add_child(fig)
-        container.add_child(css_link)
-        container.add_child(js_link)
+        # container.add_child(css_link)
+        # container.add_child(js_link)
+        m.get_root().header.add_child(css_link)
+        m.get_root().html.add_child(js_link)
 
         m.add_child(fg_l)
         m.add_child(fg_lrd)
