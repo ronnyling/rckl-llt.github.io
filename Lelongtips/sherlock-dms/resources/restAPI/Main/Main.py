@@ -246,8 +246,8 @@ class Main(object):
         fig.add_child(container)
         # fig.add_child(m)
         # container.add_child(fig)
-        sidebar.add_child(css_link)
-        sidebar.add_child(js_link)
+        container.add_child(css_link)
+        container.add_child(js_link)
 
         m.add_child(fg_l)
         m.add_child(fg_lrd)
