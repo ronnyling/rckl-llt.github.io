@@ -250,6 +250,8 @@ class Main(object):
         # m.get_root().html.add_child(html)
         # m.html.add_child(container)
         # m.get_root().html.add_child(fig)
+        fg_search = folium.FeatureGroup(html)
+        folium.plugins.Search(layer=fg_search, search_label="Codice").add_to(m)
 
         m.add_child(fg_l)
         m.add_child(fg_lrd)
