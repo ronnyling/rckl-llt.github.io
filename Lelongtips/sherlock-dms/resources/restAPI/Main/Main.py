@@ -162,23 +162,68 @@ class Main(object):
         '''
         # sidebar = folium.Div()
         # sidebar.html(html)
-        sidebar = folium.Html(data=html, script=True)
-        m.add_child(folium.CssLink('../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.css'))
-        m.add_child(folium.JavascriptLink('../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.js'))
+        # sidebar = folium.Html(data=html, script=True)
+        # m.add_child(folium.CssLink('../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.css'))
+        # m.add_child(folium.JavascriptLink('../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.js'))
         # m.get_root().html.add_child(sidebar)
         # m.get_root().html.add_child(Element(html))
 
         # sidebar_html = m.add_child(sidebar)
         # folium.Div().add_to(sidebar_html)
+
+        html = """
+        <div style="position:fixed;
+                    top:10px;
+                    right:10px;
+                    z-index:1000;
+                    background-color:white;
+                    padding:10px;">
+            <h4>Custom Sidebar</h4>
+            <p>This is a custom sidebar added using Folium.</p>
+            <p>You can add any HTML content here.</p>
+        </div>
+        """
+        html2 = """
+        <div style="position:fixed;
+                    top:10px;
+                    right:10px;
+                    z-index:1000;
+                    background-color:white;
+                    padding:10px;">
+            <h4>Custom Sidebar</h4>
+            <p>This is a custom sidebar added using Folium.</p>
+            <p>You can add any HTML content here.</p>
+        </div>
+        """
+
+        # Create a custom HTML element
+        sidebar = folium.Html(html)
+
+        # css_link = CssLink(css_file)
+        # js_link = JsLink(js_file)
+        fig = folium.Figure()
+        # fig.add_child(container)
+        fig.add_child(sidebar)
+        fig.add_child(m)
+        container = folium.Element()
+        container.add_child(fig)
+        # fig.add_child(css_link)
+        # fig.add_child(js_link)
+
         m.add_child(fg_l)
         m.add_child(fg_lrd)
         m.add_child(fg_gptd)
         m.add_child(fg_o)
-        # marker_cluster_l = MarkerCluster().add_to(fg_l)
+        marker_cluster_l = MarkerCluster().add_to(fg_l)
         marker_cluster_lrd = MarkerCluster().add_to(fg_lrd)
         marker_cluster_gptd = MarkerCluster().add_to(fg_gptd)
         marker_cluster_o = MarkerCluster().add_to(fg_o)
         folium.LayerControl().add_to(m)
+        # sidebar = folium.plugins.FloatSidebar(
+        #     position='left',
+        #     title='Cities',
+        #     pane='sidebar'
+        # ).add_to(m)
 
         print("draft_content= " + str(len(draft_content)))
         print("draft_content[0]= " + str(len(draft_content[0])))
@@ -265,15 +310,23 @@ class Main(object):
                 # iframe = folium.IFrame(html=html, width='90%', height='90%')
                 # folium.folium.Element.render()
                 popup = folium.Popup(iframe, max_width=2650)
+
                 # popup = folium.Popup(iframe)
                 folium.Marker(
                     location=(location['latitude'], location['longitude']),
                     popup=popup,
                     icon=folium.DivIcon(html=div_icon)
                 ).add_to(add_marker)
+                folium.Marker(
+                    location=(location['latitude'], location['longitude']),
+                    popup=popup,
+                    icon=folium.DivIcon(html=div_icon)
+                ).add_to(sidebar)
         date_now = str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f"))
         date_file = re.sub(r'[^\w]', '', date_now)
-        m.save(f"../../docs/index.html")
+        # m.save(f"../../docs/index.html")
+        # fig.save(f"../../docs/index.html")
+        container.save(f"../../docs/index.html")
         # m.save(f"../../docs/LLT_" + date_file + ".html")
 
     def git_controls(self):
