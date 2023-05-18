@@ -247,7 +247,8 @@ class Main(object):
         m.get_root().header.add_child(css_link)
         m.get_root().html.add_child(js_link)
         # m.get_root().html.add_child(sidebar)
-        m.get_root().html.add_child(container)
+        # m.get_root().html.add_child(html)
+        # m.html.add_child(container)
         # m.get_root().html.add_child(fig)
 
         m.add_child(fg_l)
