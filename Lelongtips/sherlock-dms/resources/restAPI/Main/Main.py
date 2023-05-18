@@ -51,6 +51,7 @@ class Main(object):
 
     def map_gen(self, draft_content):
         m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10)
+        m = self.add_sidebar(m)
         # map = folium.Map(location=[0, 0], zoom_start=4)
         fg_l = folium.FeatureGroup(name='Landed', show=False)
         fg_lrd = folium.FeatureGroup(name='Low Risk Deals', show=False)
@@ -220,6 +221,7 @@ class Main(object):
         marker_cluster_gptd = MarkerCluster().add_to(fg_gptd)
         marker_cluster_o = MarkerCluster().add_to(fg_o)
         folium.LayerControl().add_to(m)
+
         # sidebar = folium.plugins.FloatSidebar(
         #     position='left',
         #     title='Cities',
@@ -329,6 +331,53 @@ class Main(object):
         # fig.save(f"../../docs/index.html")
         fig.save(f"../../docs/index.html")
         # m.save(f"../../docs/LLT_" + date_file + ".html")
+
+    def add_sidebar(self, m):
+        # Create the sidebar HTML structure
+        sidebar_html = '''
+            <div id="sidebar" style="
+                position: fixed;
+                top: 50px;
+                left: 10px;
+                width: 200px;
+                height: 100%;
+                overflow: auto;
+                z-index: 9999;
+                background-color: white;
+                opacity: 0.8;
+                padding: 10px;
+            "></div>
+        '''
+
+        # Create a custom tile layer
+        tile_layer = folium.TileLayer('OpenStreetMap').add_to(m)
+
+        # Add the sidebar to the map
+        m.get_root().html.add_child(folium.Element(sidebar_html))
+
+        # Set the CSS style for the sidebar
+        style = '''
+            <style>
+                #sidebar::-webkit-scrollbar {
+                    width: 5px;
+                }
+
+                #sidebar::-webkit-scrollbar-track {
+                    background: #f1f1f1;
+                }
+
+                #sidebar::-webkit-scrollbar-thumb {
+                    background: #888;
+                }
+
+                #sidebar::-webkit-scrollbar-thumb:hover {
+                    background: #555;
+                }
+            </style>
+        '''
+        m.get_root().html.add_child(folium.Element(style))
+
+        return m
 
     def git_controls(self):
         save_folder = os.path.abspath(os.path.join(os.getcwd(), os.path.pardir))

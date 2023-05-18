@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230518 10:30:09.945" rpa="false" schemaversion="3">
+<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230518 11:03:28.411" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\tests\restAPI\Main\Main.robot">
 <test id="s1-t1" name="1 - Executes Main flow" line="6">
-<kw name="When user runs main flow">
-<msg timestamp="20230518 10:30:09.634" level="FAIL">No keyword with name 'When user runs main flow' found.</msg>
-<status status="FAIL" starttime="20230518 10:30:09.632" endtime="20230518 10:30:09.635"/>
+<kw name="When user runs main flow" library="Main">
+<msg timestamp="20230518 11:03:19.349" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230518 11:03:19.352" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230518 11:03:20.202" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;state=kl_sel&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230518 11:03:20.207" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230518 11:03:20.750" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;state=kl_sel&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230518 11:03:27.901" level="INFO">now i am at page 1
+size of content_list= 12
+size of draft_content= 0</msg>
+<msg timestamp="20230518 11:03:27.902" level="INFO">G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:485: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("html.parser"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 485 of the file G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py. To get rid of this warning, pass the additional argument 'features="html.parser"' to the BeautifulSoup constructor.
+
+  parsed_html = BeautifulSoup(body_text)</msg>
+<msg timestamp="20230518 11:03:27.903" level="FAIL">TypeError: Main.add_sidebar() takes 1 positional argument but 2 were given</msg>
+<msg timestamp="20230518 11:03:27.905" level="DEBUG">Traceback (most recent call last):
+  File "G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py", line 43, in user_runs_main_flow
+    self.map_gen(draft_content)
+  File "G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py", line 54, in map_gen
+    m = self.add_sidebar(m)
+TypeError: Main.add_sidebar() takes 1 positional argument but 2 were given</msg>
+<status status="FAIL" starttime="20230518 11:03:19.348" endtime="20230518 11:03:27.905"/>
 </kw>
 <doc>Executes main flow</doc>
 <tag>flow</tag>
-<status status="FAIL" starttime="20230518 10:30:09.629" endtime="20230518 10:30:09.635">No keyword with name 'When user runs main flow' found.</status>
+<status status="FAIL" starttime="20230518 11:03:19.347" endtime="20230518 11:03:27.905">TypeError: Main.add_sidebar() takes 1 positional argument but 2 were given</status>
 </test>
 <doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
-<status status="FAIL" starttime="20230518 10:30:09.129" endtime="20230518 10:30:09.636"/>
+<status status="FAIL" starttime="20230518 11:03:15.939" endtime="20230518 11:03:27.907"/>
 </suite>
 <statistics>
 <total>
@@ -25,23 +44,6 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230518 10:30:09.598" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
-<msg timestamp="20230518 10:30:09.625" level="ERROR">Error in file 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\tests\restAPI\Main\Main.robot' on line 3: Importing library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py' failed: SyntaxError: unmatched ')' (Main.py, line 167)
-Traceback (most recent call last):
-  None
-PYTHONPATH:
-  G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main
-  G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms
-  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\Scripts\robot.exe
-  G:\Other computers\My Laptop\GDrive\talentbook\sherlock-dms
-  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\python310.zip
-  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\DLLs
-  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\lib
-  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310
-  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\lib\site-packages
-  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\lib\site-packages\win32
-  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\lib\site-packages\win32\lib
-  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\lib\site-packages\Pythonwin
-  G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms</msg>
+<msg timestamp="20230518 11:03:16.527" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
 </errors>
 </robot>
