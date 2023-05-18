@@ -187,7 +187,7 @@ class Main(object):
         <div style="position:fixed;
                     top:10px;
                     right:10px;
-                    z-index:1000;
+                    z-index:2000;
                     background-color:white;
                     padding:10px;">
             <h4>Custom Sidebar</h4>
