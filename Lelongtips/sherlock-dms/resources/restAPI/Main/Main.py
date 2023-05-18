@@ -198,15 +198,16 @@ class Main(object):
 
         # Create a custom HTML element
         sidebar = folium.Html(html)
-
+        container = folium.Element()
+        container.add_child(sidebar)
+        container.add_child(m)
         # css_link = CssLink(css_file)
         # js_link = JsLink(js_file)
         fig = folium.Figure()
         # fig.add_child(container)
-        fig.add_child(sidebar)
-        fig.add_child(m)
-        container = folium.Element()
-        container.add_child(fig)
+        fig.add_child(container)
+        # fig.add_child(m)
+        # container.add_child(fig)
         # fig.add_child(css_link)
         # fig.add_child(js_link)
 
@@ -326,7 +327,7 @@ class Main(object):
         date_file = re.sub(r'[^\w]', '', date_now)
         # m.save(f"../../docs/index.html")
         # fig.save(f"../../docs/index.html")
-        container.save(f"../../docs/index.html")
+        fig.save(f"../../docs/index.html")
         # m.save(f"../../docs/LLT_" + date_file + ".html")
 
     def git_controls(self):
