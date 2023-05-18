@@ -163,8 +163,8 @@ class Main(object):
         # sidebar = folium.Div()
         # sidebar.html(html)
         # sidebar = folium.Html(data=html, script=True)
-        # m.add_child(folium.CssLink('../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.css'))
-        # m.add_child(folium.JavascriptLink('../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.js'))
+        css_link = folium.CssLink('../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.css')
+        js_link = folium.JavascriptLink('../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.js')
         # m.get_root().html.add_child(sidebar)
         # m.get_root().html.add_child(Element(html))
 
@@ -208,8 +208,8 @@ class Main(object):
         fig.add_child(container)
         # fig.add_child(m)
         # container.add_child(fig)
-        # fig.add_child(css_link)
-        # fig.add_child(js_link)
+        fig.add_child(css_link)
+        fig.add_child(js_link)
 
         m.add_child(fg_l)
         m.add_child(fg_lrd)
