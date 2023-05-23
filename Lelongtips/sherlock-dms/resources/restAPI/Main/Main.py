@@ -42,8 +42,8 @@ class Main(object):
             # print("Response body= ", str(body_result))
         else:
             raise Exception("Initial load failed")
-        if draft_content:
-            self.save_draft(draft_content)
+        # if draft_content:
+        #     self.save_draft(draft_content)
 
     def map_gen(self, draft_content):
         m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10)
@@ -510,24 +510,128 @@ class Main(object):
             # response = common.trigger_api_request("GET", MAIN_URL + str(i), "")
             body_result = response.text
             content_list = self.get_contents(body_result)
-            print("size of content_list= " + str(len(content_list)))
-            print("size of draft_content= " + str(len(draft_content)))
+            # print("size of content_list= " + str(len(content_list)))
+            # print("size of draft_content= " + str(len(draft_content)))
             draft_content.append(content_list)
-            sleep_time = secrets.choice(range(5, 10))
+            sleep_time = secrets.choice(range(2, 5))
             # print("i've slept for seconds= " + str(k) +" "+ str(sleep_time))
             time.sleep(sleep_time)
             k = k + 1
-            if k > 0:
+            if k > 10:
                 break
             #     raise Exception("Test end")
+        # print(str(draft_content))
         return draft_content
 
+    def get_contents_2(self, body_text):
+        # print("\n***\n" + body_text)
+
+        parsed_html = BeautifulSoup(body_text)
+        content_list = []
+        contents_raw = parsed_html.body.find_all('div', attrs={'class': 'col details-col flex-grow-1'})
+
+        # border_info = parsed_html.find_all('div', attrs={'class': 'fs-5 mb-1 me-2 me-md-1 me-lg-2'})
+        # print("iii= " + str(border_info))
+
+        for i in contents_raw:
+            print("xx= " + str(i))
+
+            markup_i = BeautifulSoup(str(i), "xml")
+            # parsed_border_info = BeautifulSoup(str(i))
+
+            # border_info = markup_i.find_all('div', attrs={'class': 'd-flex flex-row pb-2'})
+            for EachPart in markup_i.select('div[class*="fs-5 mb-1 me-2 me-md-1 me-lg-2"]'):
+                print("mytype2= " + str(EachPart.get_text()))
+                if EachPart.select('i[class*="fas fa-bed"]'):
+                    print("this is bed== ")
+                elif EachPart.select('i[class*="fas fa-fw fa-wifi"]'):
+                    print("this is online bidding== ")
+                elif EachPart.select('i[class*="fas fa-fw fa-neuter"]'):
+                    print("this is offline bidding== ")
+
+                elif not EachPart.get_text():
+                    raise Exception("clean this mess")
+
+            # for info in border_info:
+            #     info_items = BeautifulSoup(str(info), "xml")
+
+            # border_info = BeautifulSoup(str(border_info), "xml")
+            # print("mytype= " + str(border_info))
+            # for html in border_info:
+            #     print("mytype2= " + str(html.span))
+
+            # parsed_border_info = BeautifulSoup(str(border_info))
+            # border_info_list = border_info.find_all('div')
+            # print("iii= " + str(border_info_list))
+
+            # print("iii= " + str(i))
+
+            # border_info = i.find('div', attrs={'class': 'fs-5 mb-1 me-2 me-md-1 me-lg-2'})
+
+            content_details = {}
+            # content_details['auction_type'] = self.handle_value(i, 'h5', 'class', "fw-bold crop-text-3 mb-0")
+            # content_details['nth_auction'] = self.handle_value(i, 'h5', 'class', "fw-bold crop-text-3 mb-0")
+            # content_details['size'] = self.handle_value(i, 'h5', 'class', "fw-bold crop-text-3 mb-0")
+            # content_details['tenure'] = self.handle_value(i, 'h5', 'class', "fw-bold crop-text-3 mb-0")
+            # content_details['beds'] = self.handle_value(i, 'h5', 'class', "fw-bold crop-text-3 mb-0")
+            # content_details['auction_mode'] = self.handle_value(i, 'h5', 'class', "fw-bold crop-text-3 mb-0")
+            # content_details['restriction'] = self.handle_value(i, 'h5', 'class', "fw-bold crop-text-3 mb-0")
+
+            # content_details['address'] = self.handle_value(i, 'h5', 'class', "fw-bold crop-text-3 mb-0")
+            # content_details['prop_name'] = self.handle_value(i, 'p', 'class', "text-muted mb-0 text-truncate")
+            # content_details['prop_type'] = self.handle_value(i, 'p', 'class', "text-info crop-text-2 list-none mb-2")
+            # raw_str = re.findall("(\d+)", str(self.handle_value(i, 'div', 'class', "fs-5 mb-1 me-2 me-md-1 me-lg-2 list-none")))
+            # if raw_str:
+            #     build_up_raw = ''.join(raw_str)
+            # else:
+            #     build_up_raw = None
+            # # print("builup raw= " + build_up_raw)
+            # content_details['build_up'] = build_up_raw
+            # content_details['date'] = self.handle_value(i, 'div', 'class', "fs-6 d-block fw-bold")
+            # content_details['price'] = ''.join(re.findall("\d+", self.handle_value(i, 'h4', 'class', "fw-bold text-nowrap d-flex flex-row flex-sm-column position-relative")))
+            # psf_raw = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none')
+            # psf = re.findall("\d+", psf_raw[0] if psf_raw else "0")
+            # content_details['psf'] = ''.join(psf)
+            # content_details['others'] = self.handle_value(i, 'td', 'class', "position-relative")
+            # content_details['h_ref'] = re.findall(".*<a class=\"stretched-link\" href=\"(.*)\" title=.*", str(i))[0]
+            # content_details['restriction'] = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none')
+            # tag = None
+            #
+            # content_details['tags'] = tag
+            content_list.append(content_details)
+            # print("content_details= " + str(content_details))
+            counter = 0
+            # for i in content_details
+
+            # print("testitem " + str(content_list))
+        return content_list
+
     def get_contents(self, body_text):
+        # print("\n***\n" + body_text)
+
         parsed_html = BeautifulSoup(body_text)
         content_list = []
         contents_raw = parsed_html.body.find_all('div', attrs={'class': 'col details-col flex-grow-1'})
         for i in contents_raw:
-            # print("iii= " + str(i))
+            markup_i = BeautifulSoup(str(i), "xml")
+            misc = ''
+            for EachPart in markup_i.select('div[class*="fs-5 mb-1 me-2 me-md-1 me-lg-2"]'):
+                info = str(EachPart.get_text())
+                if EachPart.select('i[class*="fas fa-bed"]'):
+                    misc = self.add_string(misc, info + ' bedroom')
+                    # print("this is bed== ")
+                elif EachPart.select('i[class*="fas fa-fw fa-wifi"]'):
+                    misc = self.add_string(misc, info + ' online bidding')
+                    # print("this is online bidding== ")
+                elif EachPart.select('i[class*="fas fa-fw fa-neuter"]'):
+                    misc = self.add_string(misc, info + ' offline bidding')
+                    # print("this is offline bidding== ")
+                elif not EachPart.get_text():
+                    raise Exception("clean this mess")
+                else:
+                    misc = self.add_string(misc, info)
+                    # misc = misc + ' ' + str(EachPart.get_text())
+
             content_details = {}
             content_details['address'] = self.handle_value(i, 'h5', 'class', "fw-bold crop-text-3 mb-0")
             content_details['prop_name'] = self.handle_value(i, 'p', 'class', "text-muted mb-0 text-truncate")
@@ -544,7 +648,7 @@ class Main(object):
             psf_raw = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none')
             psf = re.findall("\d+", psf_raw[0] if psf_raw else "0")
             content_details['psf'] = ''.join(psf)
-            content_details['others'] = self.handle_value(i, 'td', 'class', "position-relative")
+            content_details['others'] = misc
             content_details['h_ref'] = re.findall(".*<a class=\"stretched-link\" href=\"(.*)\" title=.*", str(i))[0]
             content_details['restriction'] = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none')
             tag = None
@@ -558,6 +662,11 @@ class Main(object):
             # print("testitem " + str(content_list))
         return content_list
         # print(parsed_html.body.find('div', attrs={'class': 'col details-col flex-grow-1'}).text)
+
+    def add_string(self, misc, info):
+        misc = misc + ', ' + info
+        return misc
+
 
     def handle_value(self, i, name_div, name_class, name_subclass):
         value = None
