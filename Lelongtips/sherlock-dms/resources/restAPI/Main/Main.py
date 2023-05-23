@@ -341,20 +341,28 @@ class Main(object):
                 iframe_target = str(i['prop_name'])
                 html = f"""
                     <p> {{3}} </p>
-                    <h2> {{1}} </h2>
+                    {{1}}
                     <h1> {{0}} </h1>
                     <p>Details:- </p>
                     <ul>
-                        <li>buildup {{2}}</li>
-                        <li>RM {{4}}</li>
-                        <li> {{5}} </li>
-                        <li> {{6}} </li>
-                        <li> {{7}} </li>                    
+                        <li>buildup= {{2}}</li>
+                        <li>price= RM {{4}}</li>
+                        <li>psf= {{5}} </li>
+                        <li>others= {{6}} </li>
+                        <li>FormattedAddress= {{7}} </li>                    
                     </ul>
                     </p>
-                    <p>And that's a <a href="{{8}}" target=window.name>link</a></p>
-                    """.format(i['prop_name'], i['prop_type'], build_up, i['date'], price, i['psf'], i['others'],
-                               formatted_address_name, i['h_ref'], iframe_target)
+                    <p>More details  <a href="{{8}}" target=window.name> click here </a></p>
+                    """.format(i['prop_name'],
+                               '<h2> ' + i['prop_type'] + ' </h2>' if i['prop_type'] else None,
+                               build_up,
+                               i['date'],
+                               price,
+                               i['psf'],
+                               i['others'],
+                               formatted_address_name,
+                               i['h_ref'],
+                               iframe_target)
                 # print(i['prop_name'] + " is this gg= " + html)
                 iframe = folium.IFrame(html=html, width=300, height=200)
                 # iframe.add_child(iframe.get_name())
@@ -677,6 +685,9 @@ class Main(object):
         # print(parsed_html.body.find('div', attrs={'class': 'col details-col flex-grow-1'}).text)
 
     def add_string(self, misc, info):
+
+        if not misc:
+            return info
         misc = misc + ', ' + info
         return misc
 
