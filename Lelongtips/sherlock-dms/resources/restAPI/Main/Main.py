@@ -362,13 +362,13 @@ class Main(object):
                 # print("iframe name= " + iframe_name)
                 # iframe = folium.IFrame(html=html, width='90%', height='90%')
                 # folium.folium.Element.render()
-                popup = folium.Popup(iframe, max_width=20, min_width=20)
+                popup = folium.Popup(iframe, max_width=2650)
 
                 # popup = folium.Popup(iframe)
                 folium.Marker(
                     location=(location['latitude'], location['longitude']),
                     popup=popup,
-                    icon=folium.DivIcon(html=div_icon)
+                    icon=folium.DivIcon(html=div_icon, icon_size=(20,20))
                 ).add_to(add_marker)
                 # folium.Marker(
                 #     location=(location['latitude'], location['longitude']),
