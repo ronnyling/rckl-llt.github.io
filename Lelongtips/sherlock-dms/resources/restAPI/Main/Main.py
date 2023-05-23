@@ -362,7 +362,7 @@ class Main(object):
                 # print("iframe name= " + iframe_name)
                 # iframe = folium.IFrame(html=html, width='90%', height='90%')
                 # folium.folium.Element.render()
-                popup = folium.Popup(iframe, max_width=300, min_width=300)
+                popup = folium.Popup(iframe, max_width=20, min_width=20)
 
                 # popup = folium.Popup(iframe)
                 folium.Marker(
