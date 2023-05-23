@@ -51,7 +51,7 @@ class Main(object):
         # map = folium.Map(location=[0, 0], zoom_start=4)
         fg_l = folium.FeatureGroup(name='Landed', show=False)
         fg_lrd = folium.FeatureGroup(name='Low Risk Deals', show=False)
-        fg_gptd = folium.FeatureGroup(name='GPT Deals', show=False)
+        fg_att = folium.FeatureGroup(name='Attention', show=False)
         fg_o = folium.FeatureGroup(name='Others', show=False)
         html = '''
             <!DOCTYPE html>
@@ -255,11 +255,11 @@ class Main(object):
 
         m.add_child(fg_l)
         m.add_child(fg_lrd)
-        m.add_child(fg_gptd)
+        m.add_child(fg_att)
         m.add_child(fg_o)
         marker_cluster_l = MarkerCluster().add_to(fg_l)
         marker_cluster_lrd = MarkerCluster().add_to(fg_lrd)
-        marker_cluster_gptd = MarkerCluster().add_to(fg_gptd)
+        marker_cluster_attention = MarkerCluster().add_to(fg_att)
         marker_cluster_o = MarkerCluster().add_to(fg_o)
         folium.LayerControl().add_to(m)
 
@@ -329,7 +329,7 @@ class Main(object):
                     continue
                 add_marker = None
                 if i['tags'] == "attention":
-                    add_marker = m
+                    add_marker = marker_cluster_attention
                 elif i['tags'] == "lrd":
                     add_marker = marker_cluster_lrd
                 elif i['tags'] == "l":
