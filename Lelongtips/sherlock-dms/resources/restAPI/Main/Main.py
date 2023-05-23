@@ -526,7 +526,7 @@ class Main(object):
             # print("i've slept for seconds= " + str(k) +" "+ str(sleep_time))
             time.sleep(sleep_time)
             k = k + 1
-            if k > 10:
+            if k > 2:
                 break
             #     raise Exception("Test end")
         # print(str(draft_content))
@@ -625,10 +625,12 @@ class Main(object):
             markup_i = BeautifulSoup(str(i), "xml")
             misc = ''
             tag = ''
+            nth = ''
             for EachPart in markup_i.select('div[class*="fs-5 mb-1 me-2 me-md-1 me-lg-2"]'):
                 info = str(EachPart.get_text())
                 if EachPart.select('sup'):
-                    tag = 'attention'
+                    if int(re.findall("(\d+)", info)[0]) > 2:
+                        tag = 'attention'
                 if EachPart.select('i[class*="fas fa-bed"]'):
                     misc = self.add_string(misc, info + ' bedroom')
                     # print("this is bed== ")
@@ -661,6 +663,7 @@ class Main(object):
             psf = re.findall("\d+", psf_raw[0] if psf_raw else "0")
             content_details['psf'] = ''.join(psf)
             content_details['others'] = misc
+            content_details['nth'] = nth
             content_details['h_ref'] = re.findall(".*<a class=\"stretched-link\" href=\"(.*)\" title=.*", str(i))[0]
             content_details['restriction'] = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none')
             content_details['tags'] = tag
