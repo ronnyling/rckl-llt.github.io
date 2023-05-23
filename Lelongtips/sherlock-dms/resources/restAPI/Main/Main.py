@@ -47,7 +47,7 @@ class Main(object):
 
     def map_gen(self, draft_content):
         m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10)
-        m = self.add_sidebar(m)
+        # m = self.add_sidebar(m)
         # map = folium.Map(location=[0, 0], zoom_start=4)
         fg_l = folium.FeatureGroup(name='Landed', show=False)
         fg_lrd = folium.FeatureGroup(name='Low Risk Deals', show=False)
@@ -231,15 +231,15 @@ class Main(object):
         """
 
         # Create a custom HTML element
-        sidebar = folium.Html(html)
-        container = folium.Element()
-        container.add_child(sidebar)
-        container.add_child(m)
+        # sidebar = folium.Html(html)
+        # container = folium.Element()
+        # container.add_child(sidebar)
+        # container.add_child(m)
         # css_link = CssLink(css_file)
         # js_link = JsLink(js_file)
-        fig = folium.Figure()
+        # fig = folium.Figure()
         # fig.add_child(container)
-        fig.add_child(container)
+        # fig.add_child(container)
         # fig.add_child(m)
         # container.add_child(fig)
         # container.add_child(css_link)
@@ -250,8 +250,8 @@ class Main(object):
         # m.get_root().html.add_child(html)
         # m.html.add_child(container)
         # m.get_root().html.add_child(fig)
-        fg_search = folium.FeatureGroup(html)
-        folium.plugins.Search(layer=fg_search, search_label="Codice").add_to(m)
+        # fg_search = folium.FeatureGroup(html)
+        # folium.plugins.Search(layer=fg_search, search_label="Codice").add_to(m)
 
         m.add_child(fg_l)
         m.add_child(fg_lrd)
@@ -298,7 +298,13 @@ class Main(object):
                 else:
                     price = float(price)
                     build_up = float(build_up)
-                    if price/build_up >= 700:
+
+                    if i['tags'] == "attention":
+                        div_icon = f"""
+                                        <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM32 480a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/></svg>                                        
+                                        </div>"""
+                    elif price/build_up >= 700:
                         continue
                     elif price/build_up <= 300 and price <= 800000:
                         div_icon = f"""
@@ -322,10 +328,12 @@ class Main(object):
                 if not location:
                     continue
                 add_marker = None
-                if i['tags'] == "l":
-                    add_marker = marker_cluster_l
+                if i['tags'] == "attention":
+                    add_marker = m
                 elif i['tags'] == "lrd":
                     add_marker = marker_cluster_lrd
+                elif i['tags'] == "l":
+                    add_marker = marker_cluster_l
                 else:
                     add_marker = marker_cluster_o
 
@@ -361,16 +369,16 @@ class Main(object):
                     popup=popup,
                     icon=folium.DivIcon(html=div_icon)
                 ).add_to(add_marker)
-                folium.Marker(
-                    location=(location['latitude'], location['longitude']),
-                    popup=popup,
-                    icon=folium.DivIcon(html=div_icon)
-                ).add_to(sidebar)
+                # folium.Marker(
+                #     location=(location['latitude'], location['longitude']),
+                #     popup=popup,
+                #     icon=folium.DivIcon(html=div_icon)
+                # ).add_to(sidebar)
         date_now = str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f"))
         date_file = re.sub(r'[^\w]', '', date_now)
         # m.save(f"../../docs/index.html")
         # fig.save(f"../../docs/index.html")
-        fig.save(f"../../docs/index.html")
+        m.save(f"../../docs/index.html")
         # m.save(f"../../docs/LLT_" + date_file + ".html")
 
     def add_sidebar(self, m):
@@ -615,8 +623,11 @@ class Main(object):
         for i in contents_raw:
             markup_i = BeautifulSoup(str(i), "xml")
             misc = ''
+            tag = ''
             for EachPart in markup_i.select('div[class*="fs-5 mb-1 me-2 me-md-1 me-lg-2"]'):
                 info = str(EachPart.get_text())
+                if EachPart.select('sup'):
+                    tag = 'attention'
                 if EachPart.select('i[class*="fas fa-bed"]'):
                     misc = self.add_string(misc, info + ' bedroom')
                     # print("this is bed== ")
@@ -651,8 +662,6 @@ class Main(object):
             content_details['others'] = misc
             content_details['h_ref'] = re.findall(".*<a class=\"stretched-link\" href=\"(.*)\" title=.*", str(i))[0]
             content_details['restriction'] = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none')
-            tag = None
-
             content_details['tags'] = tag
             content_list.append(content_details)
             # print("content_details= " + str(content_details))
