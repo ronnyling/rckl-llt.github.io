@@ -347,18 +347,17 @@ class Main(object):
                     <ul>
                         <li>buildup= {{2}}</li>
                         <li>price= RM {{4}}</li>
-                        <li>psf= {{5}} </li>
                         <li>others= {{6}} </li>
                         <li>FormattedAddress= {{7}} </li>                    
                     </ul>
                     </p>
                     <p>More details  <a href="{{8}}" target=window.name> click here </a></p>
                     """.format(i['prop_name'],
-                               '<h2> ' + i['prop_type'] + ' </h2>' if i['prop_type'] else None,
+                               '<h2> ' + i['prop_type'] + ' </h2>' if i['prop_type'] else '',
                                build_up,
                                i['date'],
                                price,
-                               i['psf'],
+                               None,
                                i['others'],
                                formatted_address_name,
                                i['h_ref'],
@@ -533,9 +532,9 @@ class Main(object):
             sleep_time = secrets.choice(range(2, 5))
             # print("i've slept for seconds= " + str(k) +" "+ str(sleep_time))
             time.sleep(sleep_time)
-            k = k + 1
-            if k > 2:
-                break
+            # k = k + 1
+            # if k > 2:
+            #     break
             #     raise Exception("Test end")
         # print(str(draft_content))
         return draft_content
@@ -667,9 +666,9 @@ class Main(object):
             content_details['build_up'] = build_up_raw
             content_details['date'] = self.handle_value(i, 'div', 'class', "fs-6 d-block fw-bold")
             content_details['price'] = ''.join(re.findall("\d+", self.handle_value(i, 'h4', 'class', "fw-bold text-nowrap d-flex flex-row flex-sm-column position-relative")))
-            psf_raw = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none')
-            psf = re.findall("\d+", psf_raw[0] if psf_raw else "0")
-            content_details['psf'] = ''.join(psf)
+            # psf_raw = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none')
+            # psf = re.findall("\d+", psf_raw[0] if psf_raw else "0")
+            # content_details['psf'] = ''.join(psf)
             content_details['others'] = misc
             content_details['nth'] = nth
             content_details['h_ref'] = re.findall(".*<a class=\"stretched-link\" href=\"(.*)\" title=.*", str(i))[0]
