@@ -557,9 +557,9 @@ class Main(object):
             sleep_time = secrets.choice(range(2, 5))
             # print("i've slept for seconds= " + str(k) +" "+ str(sleep_time))
             time.sleep(sleep_time)
-            k = k + 1
-            if k > 2:
-                break
+            # k = k + 1
+            # if k > 2:
+            #     break
             #     raise Exception("Test end")
         # print(str(draft_content))
         return draft_content
