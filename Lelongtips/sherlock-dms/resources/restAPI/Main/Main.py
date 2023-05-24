@@ -17,6 +17,7 @@ import folium
 from robot.api.deco import keyword
 from robot.libraries.BuiltIn import BuiltIn
 from resources.restAPI import PROTOCOL, APP_URL, COMMON_KEY, LLT_URL, LLT_TOKEN, GMAPS_TOKEN
+
 # from resources.restAPI.Common import APIMethod
 
 MAIN_URL_LLT = PROTOCOL + LLT_URL
@@ -29,6 +30,8 @@ icon_url_durian_runtuh_lrd = "https://image.shutterstock.com/image-vector/vector
 icon_url_durian_runtuh_others = "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"
 icon_size_s = (70, 35)
 icon_size = (35, 35)
+today_date = datetime.today().date()
+
 
 class Main(object):
 
@@ -312,54 +315,54 @@ class Main(object):
                     build_up = float(build_up)
                     if price < 300000 and not i['tags'] == 'attention':
                         i['tags'] = "lrd"
+                        add_marker = marker_cluster_lrd
 
                     if i['tags'] == "attention":
                         if i['listing_status']:
-                            div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_expired_nobidder ,icon_size=icon_size)
+                            div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_expired_nobidder,
+                                                                  icon_size=icon_size)
                         else:
-                            div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_attention ,icon_size=icon_size_s)
+                            div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_attention,
+                                                                  icon_size=icon_size_s)
 
                             # div_icon = f"""
                             #             <div>
                             #             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-25 -25 550.00 550.00" xml:space="preserve" width="32px" height="32px" fill="#000000" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="100"> <style type="text/css"> .st0{{fill:#0d0d0d;stroke:#0d0d0d;stroke-width:50;stroke-miterlimit:10;}} .st1{{fill:#FFED1F;}} .st2{{fill:#E32B43;}} </style> <g id="border"> <path class="st0" d="M454.7,403.9L266.2,77.4c-7.2-12.4-25.1-12.4-32.3,0L45.3,403.9c-7.2,12.4,1.8,28,16.2,28h377.1 C452.9,431.9,461.9,416.4,454.7,403.9z"></path> </g> <g id="object" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"> <g> <path class="st1" d="M232,80.6L47.2,400.7c-8,13.9,2,31.2,18,31.2h369.6c16,0,26-17.3,18-31.2L268,80.6 C260,66.7,240,66.7,232,80.6z"></path> <path class="st2" d="M250,152.2c-21.2,0-38.4,19.6-38.4,43.8c0,73.8,17.2,133.6,38.4,133.6s38.4-59.8,38.4-133.6 C288.4,171.8,271.2,152.2,250,152.2z"></path> <circle class="st2" cx="250" cy="379.9" r="26.9"></circle> </g> </g> </g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{{fill:#0d0d0d;stroke:#0d0d0d;stroke-width:50;stroke-miterlimit:10;}} .st1{{fill:#FFED1F;}} .st2{{fill:#E32B43;}} </style> <g id="border"> <path class="st0" d="M454.7,403.9L266.2,77.4c-7.2-12.4-25.1-12.4-32.3,0L45.3,403.9c-7.2,12.4,1.8,28,16.2,28h377.1 C452.9,431.9,461.9,416.4,454.7,403.9z"></path> </g> <g id="object" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"> <g> <path class="st1" d="M232,80.6L47.2,400.7c-8,13.9,2,31.2,18,31.2h369.6c16,0,26-17.3,18-31.2L268,80.6 C260,66.7,240,66.7,232,80.6z"></path> <path class="st2" d="M250,152.2c-21.2,0-38.4,19.6-38.4,43.8c0,73.8,17.2,133.6,38.4,133.6s38.4-59.8,38.4-133.6 C288.4,171.8,271.2,152.2,250,152.2z"></path> <circle class="st2" cx="250" cy="379.9" r="26.9"></circle> </g> </g> </g></svg>
                             #             </div>"""
-                    elif price/build_up >= 700:
+                        add_marker = marker_cluster_attention
+
+                    elif price / build_up >= 700:
                         continue
-                    elif price/build_up <= 300 and price <= 800000:
+                    elif price / build_up <= 300 and price <= 800000:
                         div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_lrd, icon_size=icon_size)
 
                         # div_icon = f"""
                         #                 <div>
                         #                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
                         #                 </div>"""
-                    elif i['prop_type'] and (re.findall(".*(torey).*", i['prop_type']) or re.findall(".*(tory).*", i['prop_type'])):
+                    elif i['prop_type'] and (
+                            re.findall(".*(torey).*", i['prop_type']) or re.findall(".*(tory).*", i['prop_type'])):
                         div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_landed, icon_size=icon_size)
 
                         # div_icon = f"""
                         #             <div>
                         #             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"/></svg>
                         #             </div>"""
-                        i['tags'] = "l"
+                        # i['tags'] = "l"
+                        add_marker = marker_cluster_l
+
                     else:
                         div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_others, icon_size=icon_size)
+                        add_marker = marker_cluster_o
 
                         # div_icon = f"""
                         #                 <div>
                         #                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                         #                 </div>"""
 
-
                 if not location:
                     continue
-                add_marker = None
-                if i['tags'] == "attention":
-                    add_marker = marker_cluster_attention
-                elif i['tags'] == "lrd":
-                    add_marker = marker_cluster_lrd
-                elif i['tags'] == "l":
-                    add_marker = marker_cluster_l
-                else:
-                    add_marker = marker_cluster_o
+                # add_marker = None
 
                 iframe_target = str(i['prop_name'])
                 html = f"""
@@ -488,7 +491,8 @@ class Main(object):
         data = {
             "title": "This is title",
             "contentFormat": "html",
-            "content": "<h1>hihi</h1><p>" + str(draft_content) + "</p>\n \n \n <p>https://codepen.io/Meet-Ronny/pen/xxyWeNG</p>",
+            "content": "<h1>hihi</h1><p>" + str(
+                draft_content) + "</p>\n \n \n <p>https://codepen.io/Meet-Ronny/pen/xxyWeNG</p>",
             "tags": ["development", "design"],
             "publishStatus": "draft"  # "public" will publish to gibubfor putting draft use value "draft"
         }
@@ -516,6 +520,7 @@ class Main(object):
                 response_json = response.json()
                 # url = response_json["data"]["url"]
                 # print(url)
+
     def get_gmaps(self):
         gmaps.configure(api_key='AI...')
         nuclear_power_plants = [
@@ -543,7 +548,7 @@ class Main(object):
         # common = APIMethod.APIMethod()
         k = 0
         draft_content = []
-        for i in range(1, int(page_no_upper)+1):
+        for i in range(1, int(page_no_upper) + 1):
             print("now i am at page " + str(i))
             response = requests.get(
                 url=MAIN_URL_LLT + str(i)
@@ -557,9 +562,9 @@ class Main(object):
             sleep_time = secrets.choice(range(2, 5))
             # print("i've slept for seconds= " + str(k) +" "+ str(sleep_time))
             time.sleep(sleep_time)
-            # k = k + 1
-            # if k > 2:
-            #     break
+            k = k + 1
+            if k > 10:
+                break
             #     raise Exception("Test end")
         # print(str(draft_content))
         return draft_content
@@ -683,7 +688,8 @@ class Main(object):
             content_details['address'] = self.handle_value(i, 'h5', 'class', "fw-bold crop-text-3 mb-0")
             content_details['prop_name'] = self.handle_value(i, 'p', 'class', "text-muted mb-0 text-truncate")
             content_details['prop_type'] = self.handle_value(i, 'p', 'class', "text-info crop-text-2 list-none mb-2")
-            raw_str = re.findall("(\d+)", str(self.handle_value(i, 'div', 'class', "fs-5 mb-1 me-2 me-md-1 me-lg-2 list-none")))
+            raw_str = re.findall("(\d+)",
+                                 str(self.handle_value(i, 'div', 'class', "fs-5 mb-1 me-2 me-md-1 me-lg-2 list-none")))
             if raw_str:
                 build_up_raw = ''.join(raw_str)
             else:
@@ -694,16 +700,24 @@ class Main(object):
                 listing_status = "No Bidder"
             elif markup_i.select('div[class*="list-none status-label bg-purple"]'):
                 listing_status = "Expired"
-            content_details['listing_status'] = listing_status
             content_details['date'] = self.handle_value(i, 'div', 'class', "fs-6 d-block fw-bold")
-            content_details['price'] = ''.join(re.findall("\d+", self.handle_value(i, 'h4', 'class', "fw-bold text-nowrap d-flex flex-row flex-sm-column position-relative")))
+            try:
+                auction_date = datetime.strptime(content_details['date'], '%d %b %Y (%a)').date()
+                if auction_date < today_date:
+                    continue
+            except:
+                listing_status = "No Bidder"
+            content_details['listing_status'] = listing_status
+            content_details['price'] = ''.join(re.findall("\d+", self.handle_value(i, 'h4', 'class',
+                                                                                   "fw-bold text-nowrap d-flex flex-row flex-sm-column position-relative")))
             # psf_raw = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none')
             # psf = re.findall("\d+", psf_raw[0] if psf_raw else "0")
             # content_details['psf'] = ''.join(psf)
             content_details['others'] = misc
             content_details['nth'] = nth
             content_details['h_ref'] = re.findall(".*<a class=\"stretched-link\" href=\"(.*)\" title=.*", str(i))[0]
-            content_details['restriction'] = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none')
+            content_details['restriction'] = self.handle_value(i, 'div', 'class',
+                                                               'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none')
             content_details['tags'] = tag
             content_list.append(content_details)
             # print("content_details= " + str(content_details))
@@ -721,7 +735,6 @@ class Main(object):
         misc = misc + ', ' + info
         return misc
 
-
     def handle_value(self, i, name_div, name_class, name_subclass):
         value = None
         if i.find(name_div, attrs={name_class: name_subclass}):
@@ -732,10 +745,9 @@ class Main(object):
         page_no_raw = re.findall(r"Result\(s\): (.*)</p>", body_text)[0]
         page_no_refined = re.findall("(\d)", page_no_raw)
         page_no = ''.join(i for i in page_no_refined)
-        page_no_upper = math.ceil(int(page_no)/12)
+        page_no_upper = math.ceil(int(page_no) / 12)
         # print("hi " + str(page_no_upper))
         return page_no_upper
-
 
         #     if len(body_result) > 1:
         #         rand_claims = secrets.choice(range(0, len(body_result)))
