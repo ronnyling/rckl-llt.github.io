@@ -27,6 +27,8 @@ icon_url_durian_runtuh_landed = 'https://cdn.dribbble.com/users/1370570/screensh
 icon_url_durian_runtuh_expired_nobidder = "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237017.jpg"
 icon_url_durian_runtuh_lrd = "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"
 icon_url_durian_runtuh_others = "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"
+icon_size = (70, 35)
+icon_size_s = (35, 35)
 
 class Main(object):
 
@@ -303,7 +305,7 @@ class Main(object):
                                     <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                                     </div>"""
-                    div_icon = folium.DivIcon(html=icon_file, icon_size=(20, 20))
+                    div_icon = folium.DivIcon(html=icon_file, icon_size=icon_size)
 
                 else:
                     price = float(price)
@@ -312,10 +314,10 @@ class Main(object):
                         i['tags'] = "lrd"
 
                     if i['tags'] == "attention":
-                        if i['listing_status'] :
-                            div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_expired_nobidder ,icon_size=(20, 20))
+                        if i['listing_status']:
+                            div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_expired_nobidder ,icon_size=icon_size)
                         else:
-                            div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_attention ,icon_size=(20, 20))
+                            div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_attention ,icon_size=icon_size_s)
 
                             # div_icon = f"""
                             #             <div>
@@ -324,14 +326,14 @@ class Main(object):
                     elif price/build_up >= 700:
                         continue
                     elif price/build_up <= 300 and price <= 800000:
-                        div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_lrd, icon_size=(20, 20))
+                        div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_lrd, icon_size=icon_size)
 
                         # div_icon = f"""
                         #                 <div>
                         #                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
                         #                 </div>"""
                     elif i['prop_type'] and (re.findall(".*(torey).*", i['prop_type']) or re.findall(".*(tory).*", i['prop_type'])):
-                        div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_landed, icon_size=(20, 20))
+                        div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_landed, icon_size=icon_size)
 
                         # div_icon = f"""
                         #             <div>
@@ -339,7 +341,7 @@ class Main(object):
                         #             </div>"""
                         i['tags'] = "l"
                     else:
-                        div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_others, icon_size=(20, 20))
+                        div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_others, icon_size=icon_size)
 
                         # div_icon = f"""
                         #                 <div>
