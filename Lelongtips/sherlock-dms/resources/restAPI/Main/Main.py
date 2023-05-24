@@ -27,8 +27,8 @@ icon_url_durian_runtuh_landed = 'https://cdn.dribbble.com/users/1370570/screensh
 icon_url_durian_runtuh_expired_nobidder = "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237017.jpg"
 icon_url_durian_runtuh_lrd = "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"
 icon_url_durian_runtuh_others = "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"
-icon_size = (70, 35)
-icon_size_s = (35, 35)
+icon_size_s = (70, 35)
+icon_size = (35, 35)
 
 class Main(object):
 
