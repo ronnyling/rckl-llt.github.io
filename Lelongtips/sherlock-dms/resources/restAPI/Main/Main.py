@@ -1,3 +1,4 @@
+import json
 import math
 import os
 import secrets
@@ -16,7 +17,8 @@ from bs4 import BeautifulSoup
 import folium
 from robot.api.deco import keyword
 from robot.libraries.BuiltIn import BuiltIn
-from resources.restAPI import PROTOCOL, APP_URL, COMMON_KEY, LLT_URL, LLT_TOKEN, GMAPS_TOKEN
+from resources.restAPI import PROTOCOL, APP_URL, COMMON_KEY, LLT_URL, LLT_TOKEN, GMAPS_TOKEN, PHONE_ID, TOKEN, NUMBER, \
+    MESSAGE
 
 # from resources.restAPI.Common import APIMethod
 
@@ -31,6 +33,7 @@ icon_url_durian_runtuh_others = "https://image.shutterstock.com/image-vector/vec
 icon_size_s = (70, 35)
 icon_size = (35, 35)
 today_date = datetime.today().date()
+testing = True
 
 
 class Main(object):
@@ -39,6 +42,22 @@ class Main(object):
     def user_runs_main_flow(self):
         # self.iprop_scrape()
         self.lelongtips_scrape()
+    def notify_me(self):
+
+        URL = "https://graph.facebook.com/v13.0/" + PHONE_ID + "/messages"
+        headers = {
+            "Authorization": "Bearer " + TOKEN,
+            "Content-Type": "application/json"
+        }
+        data = {
+            "messaging_product": "whatsapp",
+            "to": NUMBER,
+            "type": "text",
+            "text": json.dumps({"preview_url": False, "body": MESSAGE})
+        }
+        response = requests.post(URL, headers=headers, data=data)
+        response_json = response.json()
+        print(response_json)
 
     def lelongtips_scrape(self):
         response = requests.get(
@@ -51,6 +70,7 @@ class Main(object):
             draft_content = self.get_pages(page_no_upper)
             self.map_gen(draft_content)
             self.git_controls()
+            self.notify_me()
             # print("Total number of records retrieved are ", len(body_result))
             # print("Response body= ", str(body_result))
         else:
@@ -338,6 +358,7 @@ class Main(object):
                         continue
                     elif price / build_up <= 300 and price <= 800000:
                         div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_lrd, icon_size=icon_size)
+                        add_marker = marker_cluster_lrd
 
                         # div_icon = f"""
                         #                 <div>
@@ -565,9 +586,9 @@ class Main(object):
             sleep_time = secrets.choice(range(2, 5))
             # print("i've slept for seconds= " + str(k) +" "+ str(sleep_time))
             time.sleep(sleep_time)
-            # k = k + 1
-            # if k > 10:
-            #     break
+            k = k + 1
+            if k > 10 and testing:
+                break
             #     raise Exception("Test end")
         # print(str(draft_content))
         return draft_content
