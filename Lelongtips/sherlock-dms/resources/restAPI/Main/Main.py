@@ -296,7 +296,10 @@ class Main(object):
                 # print(str(geocode_result))
                 # if len(geocode_result[0]['address_components']) > 1 or geocode_result['status'] is not "OK":
                 #     print("Please inspect and fix geocode= " + str(geocode_result))
-                location_raw = geocode_result[0]['geometry']['location']
+                try:
+                    location_raw = geocode_result[0]['geometry']['location']
+                except:
+                    continue
                 formatted_address_name = geocode_result[0]['formatted_address']
                 location.update({'latitude': location_raw['lat']})
                 location.update({'longitude': location_raw['lng']})
@@ -562,9 +565,9 @@ class Main(object):
             sleep_time = secrets.choice(range(2, 5))
             # print("i've slept for seconds= " + str(k) +" "+ str(sleep_time))
             time.sleep(sleep_time)
-            k = k + 1
-            if k > 10:
-                break
+            # k = k + 1
+            # if k > 10:
+            #     break
             #     raise Exception("Test end")
         # print(str(draft_content))
         return draft_content
