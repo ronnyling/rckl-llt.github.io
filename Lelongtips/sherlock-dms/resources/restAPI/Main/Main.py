@@ -33,7 +33,7 @@ icon_url_durian_runtuh_others = "https://image.shutterstock.com/image-vector/vec
 icon_size_s = (70, 35)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = True
+testing = False
 
 
 class Main(object):
@@ -42,6 +42,8 @@ class Main(object):
     def user_runs_main_flow(self):
         # self.iprop_scrape()
         self.lelongtips_scrape()
+        # self.
+
     def notify_me(self):
 
         URL = "https://graph.facebook.com/v13.0/" + PHONE_ID + "/messages"
