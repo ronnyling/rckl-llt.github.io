@@ -366,6 +366,7 @@ class Main(object):
                 popup = folium.Popup(iframe, max_width=2650)
 
                 if not price or not build_up:
+                    print("i am in not price")
                     icon_file = f"""
                                     <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
@@ -379,6 +380,7 @@ class Main(object):
                         )
                     )
                 else:
+                    print("i am in okay price")
                     price = float(price)
                     build_up = float(build_up)
                     if price < 300000 and not i['tags'] == 'attention':
@@ -481,6 +483,10 @@ class Main(object):
                 #     popup=popup,
                 #     icon=folium.DivIcon(html=div_icon)
                 # ).add_to(sidebar)
+        print(str(marker_cluster_o.__sizeof__()))
+        print(str(marker_cluster_lrd.__sizeof__()))
+        print(str(marker_cluster_attention.__sizeof__()))
+        print(str(marker_cluster_l.__sizeof__()))
         date_now = str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f"))
         date_file = re.sub(r'[^\w]', '', date_now)
         # m.save(f"../../docs/index.html")
