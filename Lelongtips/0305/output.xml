@@ -1,53 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230608 16:11:21.941" rpa="false" schemaversion="3">
+<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230608 17:16:16.691" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\tests\restAPI\Main\Main.robot">
 <test id="s1-t1" name="1 - Executes Main flow" line="6">
 <kw name="When user runs main flow" library="Main">
-<msg timestamp="20230608 16:11:04.038" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20230608 16:11:04.043" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230608 16:11:04.987" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=1 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 16:11:05.005" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230608 16:11:06.003" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=1 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 16:11:08.233" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230608 16:11:09.049" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=2 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 16:11:13.187" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230608 16:11:13.932" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=3 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 16:11:16.138" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230608 16:11:16.933" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=4 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 16:11:21.045" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 16:11:21.049" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 16:11:21.052" level="DEBUG">Starting new HTTPS connection (1): maps.googleapis.com:443</msg>
-<msg timestamp="20230608 16:11:21.272" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+BK+3%2F10A%2C+Bandar+Kinrara%2C+47180+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 16:11:21.274" level="INFO">now i am at page 1
+<msg timestamp="20230608 17:15:57.611" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230608 17:15:57.614" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230608 17:15:58.746" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230608 17:15:58.752" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230608 17:15:59.352" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230608 17:16:02.516" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230608 17:16:03.386" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=2 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230608 17:16:06.500" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230608 17:16:07.176" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=3 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230608 17:16:11.288" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230608 17:16:11.702" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=4 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230608 17:16:15.765" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230608 17:16:15.766" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230608 17:16:15.767" level="DEBUG">Starting new HTTPS connection (1): maps.googleapis.com:443</msg>
+<msg timestamp="20230608 17:16:16.204" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+BK+3%2F10A%2C+Bandar+Kinrara%2C+47180+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230608 17:16:16.207" level="INFO">now i am at page 1
 now i am at page 2
 now i am at page 3
 now i am at page 4
 draft_content= 4
 draft_content[0]= 5</msg>
-<msg timestamp="20230608 16:11:21.278" level="INFO">G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:689: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+<msg timestamp="20230608 17:16:16.208" level="INFO">G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:729: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
 
-The code that caused this warning is on line 689 of the file G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py. To get rid of this warning, pass the additional argument 'features="lxml"' to the BeautifulSoup constructor.
+The code that caused this warning is on line 729 of the file G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py. To get rid of this warning, pass the additional argument 'features="lxml"' to the BeautifulSoup constructor.
 
   parsed_html = BeautifulSoup(body_text)</msg>
-<msg timestamp="20230608 16:11:21.279" level="FAIL">AttributeError: 'NoneType' object has no attribute 'add_child'</msg>
-<msg timestamp="20230608 16:11:21.312" level="DEBUG">Traceback (most recent call last):
+<msg timestamp="20230608 17:16:16.210" level="FAIL">UnboundLocalError: local variable 'build_up' referenced before assignment</msg>
+<msg timestamp="20230608 17:16:16.214" level="DEBUG">Traceback (most recent call last):
   File "G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py", line 45, in user_runs_main_flow
     self.lelongtips_scrape()
   File "G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py", line 77, in lelongtips_scrape
     self.map_gen(draft_content)
-  File "G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py", line 438, in map_gen
-    ).add_to(add_marker)
-  File "C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\lib\site-packages\branca\element.py", line 136, in add_to
-    parent.add_child(self, name=name, index=index)
-AttributeError: 'NoneType' object has no attribute 'add_child'</msg>
-<status status="FAIL" starttime="20230608 16:11:04.036" endtime="20230608 16:11:21.313"/>
+  File "G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py", line 355, in map_gen
+    build_up,
+UnboundLocalError: local variable 'build_up' referenced before assignment</msg>
+<status status="FAIL" starttime="20230608 17:15:57.610" endtime="20230608 17:16:16.215"/>
 </kw>
 <doc>Executes main flow</doc>
 <tag>flow</tag>
-<status status="FAIL" starttime="20230608 16:11:04.034" endtime="20230608 16:11:21.314">AttributeError: 'NoneType' object has no attribute 'add_child'</status>
+<status status="FAIL" starttime="20230608 17:15:57.609" endtime="20230608 17:16:16.216">UnboundLocalError: local variable 'build_up' referenced before assignment</status>
 </test>
 <doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
-<status status="FAIL" starttime="20230608 16:10:57.697" endtime="20230608 16:11:21.319"/>
+<status status="FAIL" starttime="20230608 17:15:53.084" endtime="20230608 17:16:16.219"/>
 </suite>
 <statistics>
 <total>
@@ -61,6 +59,6 @@ AttributeError: 'NoneType' object has no attribute 'add_child'</msg>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230608 16:10:58.431" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
+<msg timestamp="20230608 17:15:54.248" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
 </errors>
 </robot>
