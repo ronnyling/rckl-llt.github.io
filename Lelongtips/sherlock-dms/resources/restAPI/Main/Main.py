@@ -373,13 +373,13 @@ class Main(object):
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                                     </div>"""
                     div_icon = folium.DivIcon(html=icon_file, icon_size=icon_size)
-                    marker_cluster_o.add_child(
-                        folium.Marker(
-                            location=(location['latitude'], location['longitude']),
-                            popup=popup,
-                            icon=div_icon
-                        )
-                    )
+                    # marker_cluster_o.add_child(
+                    folium.Marker(
+                        location=(location['latitude'], location['longitude']),
+                        popup=popup,
+                        icon=div_icon
+                    ).add_to(marker_cluster_o)
+                    # )
                 else:
                     print("i am in okay price")
                     price = float(price)
@@ -408,26 +408,26 @@ class Main(object):
                             #             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-25 -25 550.00 550.00" xml:space="preserve" width="32px" height="32px" fill="#000000" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="100"> <style type="text/css"> .st0{{fill:#0d0d0d;stroke:#0d0d0d;stroke-width:50;stroke-miterlimit:10;}} .st1{{fill:#FFED1F;}} .st2{{fill:#E32B43;}} </style> <g id="border"> <path class="st0" d="M454.7,403.9L266.2,77.4c-7.2-12.4-25.1-12.4-32.3,0L45.3,403.9c-7.2,12.4,1.8,28,16.2,28h377.1 C452.9,431.9,461.9,416.4,454.7,403.9z"></path> </g> <g id="object" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"> <g> <path class="st1" d="M232,80.6L47.2,400.7c-8,13.9,2,31.2,18,31.2h369.6c16,0,26-17.3,18-31.2L268,80.6 C260,66.7,240,66.7,232,80.6z"></path> <path class="st2" d="M250,152.2c-21.2,0-38.4,19.6-38.4,43.8c0,73.8,17.2,133.6,38.4,133.6s38.4-59.8,38.4-133.6 C288.4,171.8,271.2,152.2,250,152.2z"></path> <circle class="st2" cx="250" cy="379.9" r="26.9"></circle> </g> </g> </g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{{fill:#0d0d0d;stroke:#0d0d0d;stroke-width:50;stroke-miterlimit:10;}} .st1{{fill:#FFED1F;}} .st2{{fill:#E32B43;}} </style> <g id="border"> <path class="st0" d="M454.7,403.9L266.2,77.4c-7.2-12.4-25.1-12.4-32.3,0L45.3,403.9c-7.2,12.4,1.8,28,16.2,28h377.1 C452.9,431.9,461.9,416.4,454.7,403.9z"></path> </g> <g id="object" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"> <g> <path class="st1" d="M232,80.6L47.2,400.7c-8,13.9,2,31.2,18,31.2h369.6c16,0,26-17.3,18-31.2L268,80.6 C260,66.7,240,66.7,232,80.6z"></path> <path class="st2" d="M250,152.2c-21.2,0-38.4,19.6-38.4,43.8c0,73.8,17.2,133.6,38.4,133.6s38.4-59.8,38.4-133.6 C288.4,171.8,271.2,152.2,250,152.2z"></path> <circle class="st2" cx="250" cy="379.9" r="26.9"></circle> </g> </g> </g></svg>
                             #             </div>"""
                         # add_marker = marker_cluster_attention
-                        marker_cluster_attention.add_child(
-                            folium.Marker(
-                                location=(location['latitude'], location['longitude']),
-                                popup=popup,
-                                icon=div_icon
-                            )
-                        )
+                        # marker_cluster_attention.add_child(
+                        folium.Marker(
+                            location=(location['latitude'], location['longitude']),
+                            popup=popup,
+                            icon=div_icon
+                        ).add_to(marker_cluster_attention)
+                        # )
                     if price / build_up >= 700:
                         continue
 
                     if (price / build_up <= 300 and price <= 800000) or (i['tags'] == "lrd"):
                         div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_lrd, icon_size=icon_size)
                         # add_marker = marker_cluster_lrd
-                        marker_cluster_lrd.add_child(
-                            folium.Marker(
-                                location=(location['latitude'], location['longitude']),
-                                popup=popup,
-                                icon=div_icon
-                            )
-                        )
+                        # marker_cluster_lrd.add_child(
+                        folium.Marker(
+                            location=(location['latitude'], location['longitude']),
+                            popup=popup,
+                            icon=div_icon
+                        ).add_to(marker_cluster_lrd)
+
                         # div_icon = f"""
                         #                 <div>
                         #                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
@@ -442,32 +442,30 @@ class Main(object):
                         #             </div>"""
                         # i['tags'] = "l"
                         # add_marker = marker_cluster_l
-                        marker_cluster_l.add_child(
-                            folium.Marker(
-                                location=(location['latitude'], location['longitude']),
-                                popup=popup,
-                                icon=div_icon
-                            )
-                        )
 
-
-                    div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_others, icon_size=icon_size)
-                    # add_marker = marker_cluster_o
-                    marker_cluster_o.add_child(
                         folium.Marker(
                             location=(location['latitude'], location['longitude']),
                             popup=popup,
                             icon=div_icon
-                        )
-                    )
+                        ).add_to(marker_cluster_l)
+
+
+
+                    div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_others, icon_size=icon_size)
+                    # add_marker = marker_cluster_o
+
+                    folium.Marker(
+                        location=(location['latitude'], location['longitude']),
+                        popup=popup,
+                        icon=div_icon
+                    ).add_to(marker_cluster_o)
+
 
                         # div_icon = f"""
                         #                 <div>
                         #                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                         #                 </div>"""
 
-                if not location:
-                    continue
                 # add_marker = None
 
 

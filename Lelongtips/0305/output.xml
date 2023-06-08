@@ -1,76 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230608 17:58:47.033" rpa="false" schemaversion="3">
+<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230608 18:14:55.055" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\tests\restAPI\Main\Main.robot">
 <test id="s1-t1" name="1 - Executes Main flow" line="6">
 <kw name="When user runs main flow" library="Main">
-<msg timestamp="20230608 17:58:16.760" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20230608 17:58:16.765" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230608 17:58:17.641" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=1 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 17:58:17.646" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230608 17:58:18.466" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=1 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 17:58:20.599" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230608 17:58:21.413" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=2 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 17:58:25.517" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230608 17:58:26.606" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=3 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 17:58:29.714" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230608 17:58:30.175" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=4 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 17:58:33.221" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 17:58:33.222" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 17:58:33.224" level="DEBUG">Starting new HTTPS connection (1): maps.googleapis.com:443</msg>
-<msg timestamp="20230608 17:58:33.470" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+BK+3%2F10A%2C+Bandar+Kinrara%2C+47180+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 17:58:33.472" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 17:58:33.473" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 17:58:33.605" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=17th+Floor%2C+Block+A%2C+Pangsapuri+Koi+Kinrara%2C+Jalan+Pipit%2C+Bukit+Tandang%2C+47190+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 17:58:33.607" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 17:58:33.607" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 17:58:33.725" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Tkk+2%2F3%2C+Taman+Puncak+Kinrara%2C+47180+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 17:58:33.727" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 17:58:33.728" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 17:58:33.777" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Tingkat+4%2C+Block+D%2C+Melur+Apartment%2C+Jalan+TBK+1%2F10%2C+Taman+Bukit+Kinrara%2C+47100+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 17:58:33.779" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 17:58:33.780" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 17:58:33.862" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Level+4%2C+Block+D%2C+Jalan+TK+1%2F11E%2C+Section+1%2C+Taman+Kinrara%2C+47190+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 17:58:33.897" level="DEBUG">Popen(['git', 'add', '--update'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=None)</msg>
-<msg timestamp="20230608 17:58:35.999" level="DEBUG">Popen(['git', 'cat-file', '--batch-check'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
-<msg timestamp="20230608 17:58:36.494" level="DEBUG">Popen(['git', 'cat-file', '--batch'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
-<msg timestamp="20230608 17:58:36.932" level="DEBUG">Popen(['git', 'push', '--porcelain', '--', 'origin'], cwd=G:\My Drive\Python\Scraper, universal_newlines=True, shell=None, istream=None)</msg>
-<msg timestamp="20230608 17:58:46.158" level="DEBUG">Starting new HTTPS connection (1): graph.facebook.com:443</msg>
-<msg timestamp="20230608 17:58:46.476" level="DEBUG">https://graph.facebook.com:443 "POST /v13.0/%3Cwhatsapp-phone-id%3E/messages HTTP/1.1" 401 152</msg>
-<msg timestamp="20230608 17:58:46.478" level="INFO">now i am at page 1
+<msg timestamp="20230608 18:14:24.762" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230608 18:14:24.765" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230608 18:14:25.749" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230608 18:14:25.757" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230608 18:14:26.538" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230608 18:14:30.663" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230608 18:14:31.539" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=2 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230608 18:14:35.659" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230608 18:14:36.238" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=3 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230608 18:14:38.355" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230608 18:14:38.737" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=4 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230608 18:14:40.799" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230608 18:14:40.799" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230608 18:14:40.801" level="DEBUG">Starting new HTTPS connection (1): maps.googleapis.com:443</msg>
+<msg timestamp="20230608 18:14:41.058" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+BK+3%2F10A%2C+Bandar+Kinrara%2C+47180+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230608 18:14:41.064" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230608 18:14:41.065" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230608 18:14:41.177" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=17th+Floor%2C+Block+A%2C+Pangsapuri+Koi+Kinrara%2C+Jalan+Pipit%2C+Bukit+Tandang%2C+47190+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230608 18:14:41.179" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230608 18:14:41.179" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230608 18:14:41.288" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Tkk+2%2F3%2C+Taman+Puncak+Kinrara%2C+47180+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230608 18:14:41.292" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230608 18:14:41.293" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230608 18:14:41.422" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Tingkat+4%2C+Block+D%2C+Melur+Apartment%2C+Jalan+TBK+1%2F10%2C+Taman+Bukit+Kinrara%2C+47100+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230608 18:14:41.423" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230608 18:14:41.424" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230608 18:14:41.544" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Level+4%2C+Block+D%2C+Jalan+TK+1%2F11E%2C+Section+1%2C+Taman+Kinrara%2C+47190+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230608 18:14:41.634" level="DEBUG">Popen(['git', 'add', '--update'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=None)</msg>
+<msg timestamp="20230608 18:14:44.015" level="DEBUG">Popen(['git', 'cat-file', '--batch-check'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
+<msg timestamp="20230608 18:14:44.499" level="DEBUG">Popen(['git', 'cat-file', '--batch'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
+<msg timestamp="20230608 18:14:44.950" level="DEBUG">Popen(['git', 'push', '--porcelain', '--', 'origin'], cwd=G:\My Drive\Python\Scraper, universal_newlines=True, shell=None, istream=None)</msg>
+<msg timestamp="20230608 18:14:54.229" level="DEBUG">Starting new HTTPS connection (1): graph.facebook.com:443</msg>
+<msg timestamp="20230608 18:14:54.543" level="DEBUG">https://graph.facebook.com:443 "POST /v13.0/%3Cwhatsapp-phone-id%3E/messages HTTP/1.1" 401 152</msg>
+<msg timestamp="20230608 18:14:54.547" level="INFO">now i am at page 1
 now i am at page 2
 now i am at page 3
 now i am at page 4
 draft_content= 4
 draft_content[0]= 5
-prior to storm 560000 None
-i am in not price
-prior to storm 440000 None
-i am in not price
-prior to storm 190000 None
-i am in not price
-prior to storm 150000 None
-i am in not price
-prior to storm 130000 None
-i am in not price
+prior to storm 560000 2734
+i am in okay price
+prior to storm 440000 1216
+i am in okay price
+prior to storm 190000 753
+i am in okay price
+prior to storm 150000 603
+i am in okay price
+prior to storm 130000 646
+i am in okay price
 32
 32
 32
 32
-{'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'AegFIAd0Q6_pdJr1bjfQQbu'}}</msg>
-<msg timestamp="20230608 17:58:46.479" level="INFO">G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:736: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+{'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'AJxftDkzIvtfyZv94smvrW_'}}</msg>
+<msg timestamp="20230608 18:14:54.548" level="INFO">G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:736: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
 
 The code that caused this warning is on line 736 of the file G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py. To get rid of this warning, pass the additional argument 'features="lxml"' to the BeautifulSoup constructor.
 
   parsed_html = BeautifulSoup(body_text)</msg>
-<msg timestamp="20230608 17:58:46.479" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20230608 17:58:16.758" endtime="20230608 17:58:46.479"/>
+<msg timestamp="20230608 18:14:54.549" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230608 18:14:24.761" endtime="20230608 18:14:54.549"/>
 </kw>
 <doc>Executes main flow</doc>
 <tag>flow</tag>
-<status status="PASS" starttime="20230608 17:58:16.757" endtime="20230608 17:58:46.480"/>
+<status status="PASS" starttime="20230608 18:14:24.760" endtime="20230608 18:14:54.550"/>
 </test>
 <doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
-<status status="PASS" starttime="20230608 17:58:12.817" endtime="20230608 17:58:46.481"/>
+<status status="PASS" starttime="20230608 18:14:20.394" endtime="20230608 18:14:54.553"/>
 </suite>
 <statistics>
 <total>
@@ -84,6 +84,6 @@ The code that caused this warning is on line 736 of the file G:\My Drive\Python\
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230608 17:58:13.400" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
+<msg timestamp="20230608 18:14:21.112" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
 </errors>
 </robot>
