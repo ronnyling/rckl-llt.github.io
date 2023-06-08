@@ -767,7 +767,7 @@ class Main(object):
             content_details['prop_name'] = self.handle_value(i, 'p', 'class', "mb-0")
             content_details['prop_type'] = self.handle_value(i, 'p', 'class', "mb-2")
             raw_str = re.findall("(\d+)",
-                                 str(self.handle_value(i, 'div', 'class', "mb-1")))
+                                 str(self.handle_value(i, 'div', 'class', "fs-5 mb-1 me-2 me-md-1 me-lg-2 list-none")))
             if raw_str:
                 build_up_raw = ''.join(raw_str)
             else:

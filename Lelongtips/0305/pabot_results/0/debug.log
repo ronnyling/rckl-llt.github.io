@@ -1,33 +1,33 @@
 ==============================================================================
-20230608 17:58:16.756 - INFO - + START SUITE: Main [ ]
+20230608 18:14:24.758 - INFO - + START SUITE: Main [ ]
 ==============================================================================
-20230608 17:58:16.757 - INFO - +- START TEST: 1 - Executes Main flow [ ]
+20230608 18:14:24.760 - INFO - +- START TEST: 1 - Executes Main flow [ ]
 ------------------------------------------------------------------------------
-20230608 17:58:16.758 - INFO - +-- START KEYWORD: Main.When user runs main flow [ ]
-20230608 17:58:16.765 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
-20230608 17:58:17.641 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&state=&min_price=&max_price=&min_size=&max_size=&page=1 HTTP/1.1" 200 None
-20230608 17:58:17.646 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
-20230608 17:58:18.466 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&state=&min_price=&max_price=&min_size=&max_size=&page=1 HTTP/1.1" 200 None
-20230608 17:58:20.599 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
-20230608 17:58:21.413 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&state=&min_price=&max_price=&min_size=&max_size=&page=2 HTTP/1.1" 200 None
-20230608 17:58:25.517 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
-20230608 17:58:26.606 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&state=&min_price=&max_price=&min_size=&max_size=&page=3 HTTP/1.1" 200 None
-20230608 17:58:29.714 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
-20230608 17:58:30.175 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&state=&min_price=&max_price=&min_size=&max_size=&page=4 HTTP/1.1" 200 None
-20230608 17:58:33.221 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230608 17:58:33.222 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230608 17:58:33.224 - DEBUG - Starting new HTTPS connection (1): maps.googleapis.com:443
-20230608 17:58:33.470 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+BK+3%2F10A%2C+Bandar+Kinrara%2C+47180+Puchong%2C+Selangor&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230608 17:58:33.472 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230608 17:58:33.473 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230608 17:58:33.605 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=17th+Floor%2C+Block+A%2C+Pangsapuri+Koi+Kinrara%2C+Jalan+Pipit%2C+Bukit+Tandang%2C+47190+Puchong%2C+Selangor&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230608 17:58:33.607 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230608 17:58:33.607 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230608 17:58:33.725 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Tkk+2%2F3%2C+Taman+Puncak+Kinrara%2C+47180+Puchong%2C+Selangor&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230608 17:58:33.727 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230608 17:58:33.728 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230608 17:58:33.777 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Tingkat+4%2C+Block+D%2C+Melur+Apartment%2C+Jalan+TBK+1%2F10%2C+Taman+Bukit+Kinrara%2C+47100+Puchong%2C+Selangor&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230608 17:58:33.779 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230608 17:58:33.780 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230608 17:58:33.862 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Level+4%2C+Block+D%2C+Jalan+TK+1%2F11E%2C+Section+1%2C+Taman+Kinrara%2C+47190+Puchong%2C+Selangor&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230608 17:58:33.897 - DEBUG - Popen(['git', 'add', '--update'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=None)
+20230608 18:14:24.761 - INFO - +-- START KEYWORD: Main.When user runs main flow [ ]
+20230608 18:14:24.765 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+20230608 18:14:25.749 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&state=&min_price=&max_price=&min_size=&max_size=&page=1 HTTP/1.1" 200 None
+20230608 18:14:25.757 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+20230608 18:14:26.538 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&state=&min_price=&max_price=&min_size=&max_size=&page=1 HTTP/1.1" 200 None
+20230608 18:14:30.663 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+20230608 18:14:31.539 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&state=&min_price=&max_price=&min_size=&max_size=&page=2 HTTP/1.1" 200 None
+20230608 18:14:35.659 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+20230608 18:14:36.238 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&state=&min_price=&max_price=&min_size=&max_size=&page=3 HTTP/1.1" 200 None
+20230608 18:14:38.355 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+20230608 18:14:38.737 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&state=&min_price=&max_price=&min_size=&max_size=&page=4 HTTP/1.1" 200 None
+20230608 18:14:40.799 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230608 18:14:40.799 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230608 18:14:40.801 - DEBUG - Starting new HTTPS connection (1): maps.googleapis.com:443
+20230608 18:14:41.058 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+BK+3%2F10A%2C+Bandar+Kinrara%2C+47180+Puchong%2C+Selangor&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230608 18:14:41.064 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230608 18:14:41.065 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230608 18:14:41.177 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=17th+Floor%2C+Block+A%2C+Pangsapuri+Koi+Kinrara%2C+Jalan+Pipit%2C+Bukit+Tandang%2C+47190+Puchong%2C+Selangor&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230608 18:14:41.179 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230608 18:14:41.179 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230608 18:14:41.288 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Tkk+2%2F3%2C+Taman+Puncak+Kinrara%2C+47180+Puchong%2C+Selangor&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230608 18:14:41.292 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230608 18:14:41.293 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230608 18:14:41.422 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Tingkat+4%2C+Block+D%2C+Melur+Apartment%2C+Jalan+TBK+1%2F10%2C+Taman+Bukit+Kinrara%2C+47100+Puchong%2C+Selangor&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230608 18:14:41.423 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230608 18:14:41.424 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230608 18:14:41.544 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Level+4%2C+Block+D%2C+Jalan+TK+1%2F11E%2C+Section+1%2C+Taman+Kinrara%2C+47190+Puchong%2C+Selangor&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230608 18:14:41.634 - DEBUG - Popen(['git', 'add', '--update'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=None)
