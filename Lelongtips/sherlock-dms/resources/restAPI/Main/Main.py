@@ -18,11 +18,12 @@ import folium
 from robot.api.deco import keyword
 from robot.libraries.BuiltIn import BuiltIn
 from resources.restAPI import PROTOCOL, APP_URL, COMMON_KEY, LLT_URL, LLT_TOKEN, GMAPS_TOKEN, PHONE_ID, TOKEN, NUMBER, \
-    MESSAGE
+    MESSAGE, TEST_URL
 
 # from resources.restAPI.Common import APIMethod
 
 MAIN_URL_LLT = PROTOCOL + LLT_URL
+TEST_URL_LLT = PROTOCOL + TEST_URL
 # MAIN_URL_IP = PROTOCOL + IP_URL
 gmaps = googlemaps.Client(key=GMAPS_TOKEN)
 icon_url_durian_runtuh_attention = 'https://i0.wp.com/www.exabytes.com/blog/wp-content/uploads/2010/05/blog-durianruntuh-5.jpg'
@@ -33,7 +34,7 @@ icon_url_durian_runtuh_others = "https://image.shutterstock.com/image-vector/vec
 icon_size_s = (70, 35)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = False
+testing = True
 
 
 class Main(object):
@@ -62,14 +63,17 @@ class Main(object):
         print(response_json)
 
     def lelongtips_scrape(self):
+        operating_url = MAIN_URL_LLT
+        if testing:
+            operating_url = TEST_URL_LLT
         response = requests.get(
-            url=MAIN_URL_LLT + str(1)
+            url=operating_url + str(1)
         )
         draft_content = []
         if response.status_code == 200:
             body_result = response.text
             page_no_upper = self.set_pages(body_result)
-            draft_content = self.get_pages(page_no_upper)
+            draft_content = self.get_pages(page_no_upper, operating_url)
             self.map_gen(draft_content)
             self.git_controls()
             self.notify_me()
@@ -334,7 +338,7 @@ class Main(object):
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                                     </div>"""
                     div_icon = folium.DivIcon(html=icon_file, icon_size=icon_size)
-
+                    add_marker = marker_cluster_o
                 else:
                     price = float(price)
                     build_up = float(build_up)
@@ -570,14 +574,14 @@ class Main(object):
         fig.add_layer(marker_layer)
         fig
 
-    def get_pages(self, page_no_upper):
+    def get_pages(self, page_no_upper, operating_url):
         # common = APIMethod.APIMethod()
         k = 0
         draft_content = []
         for i in range(1, int(page_no_upper) + 1):
             print("now i am at page " + str(i))
             response = requests.get(
-                url=MAIN_URL_LLT + str(i)
+                url=operating_url + str(i)
             )
             # response = common.trigger_api_request("GET", MAIN_URL + str(i), "")
             body_result = response.text
@@ -711,11 +715,11 @@ class Main(object):
                     # misc = misc + ' ' + str(EachPart.get_text())
 
             content_details = {}
-            content_details['address'] = self.handle_value(i, 'h5', 'class', "fw-bold crop-text-3 mb-0")
-            content_details['prop_name'] = self.handle_value(i, 'p', 'class', "text-muted mb-0 text-truncate")
-            content_details['prop_type'] = self.handle_value(i, 'p', 'class', "text-info crop-text-2 list-none mb-2")
+            content_details['address'] = self.handle_value(i, 'h5', 'class', "mb-0")
+            content_details['prop_name'] = self.handle_value(i, 'p', 'class', "mb-0")
+            content_details['prop_type'] = self.handle_value(i, 'p', 'class', "mb-2")
             raw_str = re.findall("(\d+)",
-                                 str(self.handle_value(i, 'div', 'class', "fs-5 mb-1 me-2 me-md-1 me-lg-2 list-none")))
+                                 str(self.handle_value(i, 'div', 'class', "mb-1")))
             if raw_str:
                 build_up_raw = ''.join(raw_str)
             else:
@@ -735,7 +739,7 @@ class Main(object):
                 listing_status = "No Bidder"
             content_details['listing_status'] = listing_status
             content_details['price'] = ''.join(re.findall("\d+", self.handle_value(i, 'h4', 'class',
-                                                                                   "fw-bold text-nowrap d-flex flex-row flex-sm-column position-relative")))
+                                                                                   "text-nowrap d-flex flex-row flex-sm-column position-relative")))
             # psf_raw = self.handle_value(i, 'div', 'class', 'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none')
             # psf = re.findall("\d+", psf_raw[0] if psf_raw else "0")
             # content_details['psf'] = ''.join(psf)
@@ -763,8 +767,10 @@ class Main(object):
 
     def handle_value(self, i, name_div, name_class, name_subclass):
         value = None
-        if i.find(name_div, attrs={name_class: name_subclass}):
-            value = i.find(name_div, attrs={name_class: name_subclass}).text.strip()
+        # print("me again " + str(i.find(name_div, attrs={name_class: re.compile(name_subclass)})))
+        if i.find(name_div, attrs={name_class: re.compile(name_subclass)}):
+            value = i.find(name_div, attrs={name_class: re.compile(name_subclass)}).text.strip()
+        # print("me again after " + value)
         return value
 
     def set_pages(self, body_text):
