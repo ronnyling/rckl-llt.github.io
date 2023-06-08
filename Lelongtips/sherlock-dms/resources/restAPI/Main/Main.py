@@ -336,6 +336,7 @@ class Main(object):
                 div_icon = None
                 price = i['price']
                 build_up = i['build_up']
+                print("prior to storm " + str(price) + " " + str(build_up))
 
                 iframe_target = str(i['prop_name'])
                 html = f"""
