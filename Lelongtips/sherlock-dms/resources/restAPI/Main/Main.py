@@ -646,7 +646,7 @@ class Main(object):
             # print("i've slept for seconds= " + str(k) +" "+ str(sleep_time))
             time.sleep(sleep_time)
             k = k + 1
-            if k > 3 and testing:
+            if k > 1 and testing:
                 break
             #     raise Exception("Test end")
         # print(str(draft_content))
