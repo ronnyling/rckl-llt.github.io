@@ -500,6 +500,8 @@ class Main(object):
         print(str(marker_cluster_lrd.to_json()))
         print(str(marker_cluster_attention.to_json()))
         print(str(marker_cluster_l.to_json()))
+        m.add_child(fg_att)
+        fg_att.add_child(marker_cluster_attention)
         folium.LayerControl().add_to(m)
 
         # print("ultimate boss1 " + str(m.to_dict()))
