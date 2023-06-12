@@ -319,7 +319,6 @@ class Main(object):
         # flag_lrd = False
         # flag_attention = False
         # flag_o = False
-        folium.LayerControl().add_to(m)
 
         # sidebar = folium.plugins.FloatSidebar(
         #     position='left',
@@ -501,6 +500,8 @@ class Main(object):
         print(str(marker_cluster_lrd.to_json()))
         print(str(marker_cluster_attention.to_json()))
         print(str(marker_cluster_l.to_json()))
+        folium.LayerControl().add_to(m)
+
         # print("ultimate boss1 " + str(m.to_dict()))
         print("ultimate boss " + str(m.to_json()))
         # print("ultimate boss3 " + str(m.__dict__()))
