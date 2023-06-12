@@ -307,7 +307,7 @@ class Main(object):
         marker_cluster_l = folium.plugins.MarkerCluster()
         marker_cluster_lrd = folium.plugins.MarkerCluster()
         marker_cluster_attention = folium.plugins.MarkerCluster()
-        marker_cluster_o = folium.plugins.MarkerCluster()
+        marker_cluster_o = MarkerCluster()
         # flag_l = False
         # flag_lrd = False
         # flag_attention = False
