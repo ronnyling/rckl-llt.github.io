@@ -299,15 +299,15 @@ class Main(object):
         m.add_child(fg_lrd)
         m.add_child(fg_att)
         m.add_child(fg_o)
-        # marker_cluster_l = MarkerCluster().add_to(fg_l)
-        # marker_cluster_lrd = MarkerCluster().add_to(fg_lrd)
-        # marker_cluster_attention = MarkerCluster().add_to(fg_att)
-        # marker_cluster_o = MarkerCluster().add_to(fg_o)
+        marker_cluster_l = MarkerCluster().add_to(fg_l)
+        marker_cluster_lrd = MarkerCluster().add_to(fg_lrd)
+        marker_cluster_attention = MarkerCluster().add_to(fg_att)
+        marker_cluster_o = MarkerCluster().add_to(fg_o)
 
-        marker_cluster_l = folium.plugins.MarkerCluster()
-        marker_cluster_lrd = folium.plugins.MarkerCluster()
-        marker_cluster_attention = folium.plugins.MarkerCluster()
-        marker_cluster_o = folium.plugins.MarkerCluster()
+        # marker_cluster_l = folium.plugins.MarkerCluster()
+        # marker_cluster_lrd = folium.plugins.MarkerCluster()
+        # marker_cluster_attention = folium.plugins.MarkerCluster()
+        # marker_cluster_o = folium.plugins.MarkerCluster()
 
 
         marker_cluster_l.add_to(fg_l)
