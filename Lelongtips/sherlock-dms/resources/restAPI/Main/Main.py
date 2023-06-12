@@ -23,7 +23,7 @@ from resources.restAPI import PROTOCOL, APP_URL, COMMON_KEY, LLT_URL, LLT_TOKEN,
 # from resources.restAPI.Common import APIMethod
 
 MAIN_URL_LLT = PROTOCOL + LLT_URL
-TEST_URL_LLT = PROTOCOL + TEST_URL
+# TEST_URL_LLT = PROTOCOL + TEST_URL
 # MAIN_URL_IP = PROTOCOL + IP_URL
 gmaps = googlemaps.Client(key=GMAPS_TOKEN)
 icon_url_durian_runtuh_attention = 'https://i0.wp.com/www.exabytes.com/blog/wp-content/uploads/2010/05/blog-durianruntuh-5.jpg'
@@ -64,8 +64,10 @@ class Main(object):
 
     def lelongtips_scrape(self):
         operating_url = MAIN_URL_LLT
-        if testing:
-            operating_url = TEST_URL_LLT
+        if testing and TEST_URL:
+            operating_url = PROTOCOL + TEST_URL
+
+        # print("url = xx" + str(operating_url) + " xx " + str(MAIN_URL_LLT) + " xx " + str(TEST_URL_LLT))
         response = requests.get(
             url=operating_url + str(1)
         )
@@ -85,7 +87,7 @@ class Main(object):
         #     self.save_draft(draft_content)
 
     def map_gen(self, draft_content):
-        m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10)
+        m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
         # m = self.add_sidebar(m)
         # map = folium.Map(location=[0, 0], zoom_start=4)
         fg_l = folium.FeatureGroup(name='Landed', show=False)
@@ -196,6 +198,7 @@ class Main(object):
             </body>
             </html>
         '''
+
         # sidebar = folium.Div()
         # sidebar.html(html)
         # sidebar = folium.Html(data=html, script=True)

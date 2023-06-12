@@ -1,149 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230608 18:34:25.359" rpa="false" schemaversion="3">
+<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230612 13:59:13.103" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\tests\restAPI\Main\Main.robot">
 <test id="s1-t1" name="1 - Executes Main flow" line="6">
-<kw name="When user runs main flow" library="Main">
-<msg timestamp="20230608 18:34:04.115" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20230608 18:34:04.118" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230608 18:34:05.548" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=1 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 18:34:05.552" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230608 18:34:06.725" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=1 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 18:34:10.846" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230608 18:34:11.682" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=2 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 18:34:15.829" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230608 18:34:16.419" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=3 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 18:34:19.534" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230608 18:34:20.106" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=kinrara&amp;state=&amp;min_price=&amp;max_price=&amp;min_size=&amp;max_size=&amp;page=4 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 18:34:24.162" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 18:34:24.162" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 18:34:24.164" level="DEBUG">Starting new HTTPS connection (1): maps.googleapis.com:443</msg>
-<msg timestamp="20230608 18:34:24.401" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+BK+3%2F10A%2C+Bandar+Kinrara%2C+47180+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 18:34:24.408" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 18:34:24.409" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 18:34:24.531" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=17th+Floor%2C+Block+A%2C+Pangsapuri+Koi+Kinrara%2C+Jalan+Pipit%2C+Bukit+Tandang%2C+47190+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 18:34:24.533" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 18:34:24.534" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 18:34:24.641" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Tkk+2%2F3%2C+Taman+Puncak+Kinrara%2C+47180+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 18:34:24.644" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 18:34:24.645" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 18:34:24.748" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Tingkat+4%2C+Block+D%2C+Melur+Apartment%2C+Jalan+TBK+1%2F10%2C+Taman+Bukit+Kinrara%2C+47100+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 18:34:24.754" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 18:34:24.755" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230608 18:34:24.868" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Level+4%2C+Block+D%2C+Jalan+TK+1%2F11E%2C+Section+1%2C+Taman+Kinrara%2C+47190+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230608 18:34:24.875" level="INFO">now i am at page 1
-now i am at page 2
-now i am at page 3
-now i am at page 4
-draft_content= 4
-draft_content[0]= 5
-prior to storm 560000 2734
-i am in okay price 
-                    &lt;p&gt; 21 Jun 2023 (Wed) &lt;/p&gt;
-                    &lt;p&gt; RM 560000 &lt;/p&gt;
-                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
-                    &lt;h1&gt; Bandar Kinrara 3, Selangor &lt;/h1&gt;
-                    &lt;p&gt;Details:- &lt;/p&gt;
-                    &lt;ul&gt;
-                        &lt;li&gt;buildup= 2734&lt;/li&gt;
-                        &lt;li&gt;others= Title, 4th Auction, 2,734 sq.ft, FH,  online bidding, RM205 per sf &lt;/li&gt;
-                        &lt;li&gt; status= None &lt;/li&gt;
-                        &lt;li&gt;FormattedAddress= Jalan BK 3/10a, Bandar Kinrara 3, 47180 Puchong, Selangor, Malaysia &lt;/li&gt;                    
-                    &lt;/ul&gt;
-                    &lt;/p&gt;
-                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/cVE2SFNYZUg3OFRFYjZNbE1lSFdldz09/Lelong-Auction-1-Storey-Terrace-House-in-Puchong-Selangor-for-RM560000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
-                    
-prior to storm 440000 1216
-i am in okay price 
-                    &lt;p&gt; 8 Jun 2023 (Thu) &lt;/p&gt;
-                    &lt;p&gt; RM 440000 &lt;/p&gt;
-                    &lt;h2&gt; Condominium &lt;/h2&gt;
-                    &lt;h1&gt; Koi Kinrara Suites, Selangor &lt;/h1&gt;
-                    &lt;p&gt;Details:- &lt;/p&gt;
-                    &lt;ul&gt;
-                        &lt;li&gt;buildup= 1216&lt;/li&gt;
-                        &lt;li&gt;others= Title, 1st Auction, 1,216 sq.ft, FH, 3  bedroom,  offline bidding, RM362 per sf &lt;/li&gt;
-                        &lt;li&gt; status= None &lt;/li&gt;
-                        &lt;li&gt;FormattedAddress= Jalan Pipit, Bandar Puchong Jaya, 47100 Puchong, Selangor, Malaysia &lt;/li&gt;                    
-                    &lt;/ul&gt;
-                    &lt;/p&gt;
-                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/bnJ4N2JHcE5BWVJtWkdxT0FnaHVNUT09/Lelong-Auction-Condominium-in-Bukit-Tandang-Selangor-for-RM440000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
-                    
-prior to storm 190000 753
-i am in okay price 
-                    &lt;p&gt; 27 Jun 2023 (Tue) &lt;/p&gt;
-                    &lt;p&gt; RM 190000 &lt;/p&gt;
-                    &lt;h2&gt; Apartment &lt;/h2&gt;
-                    &lt;h1&gt; Taman Puncak Kinrara, Selangor &lt;/h1&gt;
-                    &lt;p&gt;Details:- &lt;/p&gt;
-                    &lt;ul&gt;
-                        &lt;li&gt;buildup= 753&lt;/li&gt;
-                        &lt;li&gt;others= Title, 1st Auction, 753 sq.ft, LH,  online bidding, RM252 per sf &lt;/li&gt;
-                        &lt;li&gt; status= None &lt;/li&gt;
-                        &lt;li&gt;FormattedAddress= Jln. Tkk 2/3, Taman Puncak Kinrara, 47100 Puchong, Selangor, Malaysia &lt;/li&gt;                    
-                    &lt;/ul&gt;
-                    &lt;/p&gt;
-                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/Q3A5NG1lSndoY0Rub0Q2QnBnbGo0UT09/Lelong-Auction-Apartment-in-Taman-Puncak-Kinrara-Selangor-for-RM190000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
-                    
-prior to storm 150000 603
-i am in okay price 
-                    &lt;p&gt; 8 Jun 2023 (Thu) &lt;/p&gt;
-                    &lt;p&gt; RM 150000 &lt;/p&gt;
-                    &lt;h2&gt; Apartment &lt;/h2&gt;
-                    &lt;h1&gt; Pangsapuri Melor, Selangor &lt;/h1&gt;
-                    &lt;p&gt;Details:- &lt;/p&gt;
-                    &lt;ul&gt;
-                        &lt;li&gt;buildup= 603&lt;/li&gt;
-                        &lt;li&gt;others= Title, 1st Auction, 603 sq.ft, LH,  offline bidding, RM249 per sf &lt;/li&gt;
-                        &lt;li&gt; status= None &lt;/li&gt;
-                        &lt;li&gt;FormattedAddress= Jalan Tbk 1/10, Taman Bukit Kinrara, 47100 Puchong, Selangor, Malaysia &lt;/li&gt;                    
-                    &lt;/ul&gt;
-                    &lt;/p&gt;
-                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/dEIzckhyOWlXdXdEeVRIcitZa0Rodz09/Lelong-Auction-Apartment-in-Taman-Bukit-Kinrara-Selangor-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
-                    
-prior to storm 130000 646
-i am in okay price 
-                    &lt;p&gt; 20 Jun 2023 (Tue) &lt;/p&gt;
-                    &lt;p&gt; RM 130000 &lt;/p&gt;
-                    &lt;h2&gt; Flat &lt;/h2&gt;
-                    &lt;h1&gt; Palm Terrace, Selangor &lt;/h1&gt;
-                    &lt;p&gt;Details:- &lt;/p&gt;
-                    &lt;ul&gt;
-                        &lt;li&gt;buildup= 646&lt;/li&gt;
-                        &lt;li&gt;others= LACA, 1st Auction, 646 sq.ft,  online bidding, RM201 per sf &lt;/li&gt;
-                        &lt;li&gt; status= None &lt;/li&gt;
-                        &lt;li&gt;FormattedAddress= Jalan TK 1/11e, Taman Kinrara Seksyen 1, 47180 Puchong, Selangor, Malaysia &lt;/li&gt;                    
-                    &lt;/ul&gt;
-                    &lt;/p&gt;
-                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/QUtMQi93OTNTcUtjdG1sanZzZXR3UT09/Lelong-Auction-Flat-in-Taman-Kinrara-Selangor-for-RM130000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
-                    
-32
-32
-32
-32
-ultimate boss1 OrderedDict([('name', 'Map'), ('id', '74d0ef95fecfb4ad7caa1c76c38270cb'), ('children', OrderedDict([('openstreetmap', OrderedDict([('name', 'TileLayer'), ('id', '48ba4899c37d9ea36e3122a4eb421a36'), ('children', OrderedDict())])), ('feature_group_b4a00575bb92e5b2061cc88c99cf5eec', OrderedDict([('name', 'FeatureGroup'), ('id', 'b4a00575bb92e5b2061cc88c99cf5eec'), ('children', OrderedDict([('marker_cluster_09731065553cbb9c6e4cfe3d84b30ce6', OrderedDict([('name', 'MarkerCluster'), ('id', '09731065553cbb9c6e4cfe3d84b30ce6'), ('children', OrderedDict([('marker_d01d4846dcc03e93095fbc263e04fb84', OrderedDict([('name', 'Marker'), ('id', 'd01d4846dcc03e93095fbc263e04fb84'), ('children', OrderedDict([('custom_icon_0af4411266f896e6a99b735940e831fc', OrderedDict([('name', 'CustomIcon'), ('id', '0af4411266f896e6a99b735940e831fc'), ('children', OrderedDict())])), ('popup_6e0f0abfe7b09719dc9cf28906a62762', OrderedDict([('name', 'Popup'), ('id', '6e0f0abfe7b09719dc9cf28906a62762'), ('children', OrderedDict())]))]))]))]))]))]))])), ('feature_group_9a7cb8582e11dec43d3d72720958865e', OrderedDict([('name', 'FeatureGroup'), ('id', '9a7cb8582e11dec43d3d72720958865e'), ('children', OrderedDict([('marker_cluster_10a09c5d3bbcbc03e76ed1848b113b14', OrderedDict([('name', 'MarkerCluster'), ('id', '10a09c5d3bbcbc03e76ed1848b113b14'), ('children', OrderedDict([('marker_4bbd49ba96baf379ed2eff806396f927', OrderedDict([('name', 'Marker'), ('id', '4bbd49ba96baf379ed2eff806396f927'), ('children', OrderedDict([('custom_icon_b9495287cea68048fea5f9feced5822b', OrderedDict([('name', 'CustomIcon'), ('id', 'b9495287cea68048fea5f9feced5822b'), ('children', OrderedDict())])), ('popup_6e0f0abfe7b09719dc9cf28906a62762', OrderedDict([('name', 'Popup'), ('id', '6e0f0abfe7b09719dc9cf28906a62762'), ('children', OrderedDict())]))]))])), ('marker_a8fd55be752942c5ca452877545bbdf6', OrderedDict([('name', 'Marker'), ('id', 'a8fd55be752942c5ca452877545bbdf6'), ('children', OrderedDict([('custom_icon_0b6bb4813d901a3f23d75238560d38f6', OrderedDict([('name', 'CustomIcon'), ('id', '0b6bb4813d901a3f23d75238560d38f6'), ('children', OrderedDict())])), ('popup_df60cf282235a2477809501a01b85d50', OrderedDict([('name', 'Popup'), ('id', 'df60cf282235a2477809501a01b85d50'), ('children', OrderedDict())]))]))])), ('marker_b8c2748b3194c8ee8348338809fd71cc', OrderedDict([('name', 'Marker'), ('id', 'b8c2748b3194c8ee8348338809fd71cc'), ('children', OrderedDict([('custom_icon_9a0982bd9f3bf23f9f1aa91d6c417003', OrderedDict([('name', 'CustomIcon'), ('id', '9a0982bd9f3bf23f9f1aa91d6c417003'), ('children', OrderedDict())])), ('popup_2bb629d70b9a4b175969b97f72a2e9c7', OrderedDict([('name', 'Popup'), ('id', '2bb629d70b9a4b175969b97f72a2e9c7'), ('children', OrderedDict())]))]))])), ('marker_3175ea5c1b8f2587c79c38361e83f3c3', OrderedDict([('name', 'Marker'), ('id', '3175ea5c1b8f2587c79c38361e83f3c3'), ('children', OrderedDict([('custom_icon_c399e935c0d43ece27610f080a8bb60b', OrderedDict([('name', 'CustomIcon'), ('id', 'c399e935c0d43ece27610f080a8bb60b'), ('children', OrderedDict())])), ('popup_a06768ee3dfb757e644afaa42d35f9bc', OrderedDict([('name', 'Popup'), ('id', 'a06768ee3dfb757e644afaa42d35f9bc'), ('children', OrderedDict())]))]))]))]))]))]))])), ('feature_group_13beb2925b2299f0581e2b49f923635e', OrderedDict([('name', 'FeatureGroup'), ('id', '13beb2925b2299f0581e2b49f923635e'), ('children', OrderedDict([('marker_cluster_609111d39409e8120902d8e6c5dab8b9', OrderedDict([('name', 'MarkerCluster'), ('id', '609111d39409e8120902d8e6c5dab8b9'), ('children', OrderedDict([('marker_0d5d90a95d911a65fe9c670a69b0baef', OrderedDict([('name', 'Marker'), ('id', '0d5d90a95d911a65fe9c670a69b0baef'), ('children', OrderedDict([('custom_icon_289569770c181564384b4ee91d6ff183', OrderedDict([('name', 'CustomIcon'), ('id', '289569770c181564384b4ee91d6ff183'), ('children', OrderedDict())])), ('popup_6e0f0abfe7b09719dc9cf28906a62762', OrderedDict([('name', 'Popup'), ('id', '6e0f0abfe7b09719dc9cf28906a62762'), ('children', OrderedDict())]))]))]))]))]))]))])), ('feature_group_88c45512fa61c830e7989ec834a2df75', OrderedDict([('name', 'FeatureGroup'), ('id', '88c45512fa61c830e7989ec834a2df75'), ('children', OrderedDict([('marker_cluster_c5ef1eed573885d3818821a412e13737', OrderedDict([('name', 'MarkerCluster'), ('id', 'c5ef1eed573885d3818821a412e13737'), ('children', OrderedDict([('marker_2ef35f934464d1afba65171b29e24cb7', OrderedDict([('name', 'Marker'), ('id', '2ef35f934464d1afba65171b29e24cb7'), ('children', OrderedDict([('custom_icon_e4ab814002d17dd2557333533a047232', OrderedDict([('name', 'CustomIcon'), ('id', 'e4ab814002d17dd2557333533a047232'), ('children', OrderedDict())])), ('popup_6e0f0abfe7b09719dc9cf28906a62762', OrderedDict([('name', 'Popup'), ('id', '6e0f0abfe7b09719dc9cf28906a62762'), ('children', OrderedDict())]))]))])), ('marker_c64c39790e25f69b247f75d5ade4de66', OrderedDict([('name', 'Marker'), ('id', 'c64c39790e25f69b247f75d5ade4de66'), ('children', OrderedDict([('custom_icon_e1f55cb6565e3b5928b0197fd2efb1b9', OrderedDict([('name', 'CustomIcon'), ('id', 'e1f55cb6565e3b5928b0197fd2efb1b9'), ('children', OrderedDict())])), ('popup_2a49a1acd201065878dfe7bcb77087c5', OrderedDict([('name', 'Popup'), ('id', '2a49a1acd201065878dfe7bcb77087c5'), ('children', OrderedDict())]))]))])), ('marker_1c91a6050a6b5c3007301cd6ace46644', OrderedDict([('name', 'Marker'), ('id', '1c91a6050a6b5c3007301cd6ace46644'), ('children', OrderedDict([('custom_icon_21159df2fb8dad6f5efd3cb5c9b53ef2', OrderedDict([('name', 'CustomIcon'), ('id', '21159df2fb8dad6f5efd3cb5c9b53ef2'), ('children', OrderedDict())])), ('popup_df60cf282235a2477809501a01b85d50', OrderedDict([('name', 'Popup'), ('id', 'df60cf282235a2477809501a01b85d50'), ('children', OrderedDict())]))]))])), ('marker_483a41223d9191c052b7c8e10c4d08a7', OrderedDict([('name', 'Marker'), ('id', '483a41223d9191c052b7c8e10c4d08a7'), ('children', OrderedDict([('custom_icon_d495c63ced80353a64fc16c936327a07', OrderedDict([('name', 'CustomIcon'), ('id', 'd495c63ced80353a64fc16c936327a07'), ('children', OrderedDict())])), ('popup_2bb629d70b9a4b175969b97f72a2e9c7', OrderedDict([('name', 'Popup'), ('id', '2bb629d70b9a4b175969b97f72a2e9c7'), ('children', OrderedDict())]))]))])), ('marker_b2cd57c4802a987e351fdfd896bed880', OrderedDict([('name', 'Marker'), ('id', 'b2cd57c4802a987e351fdfd896bed880'), ('children', OrderedDict([('custom_icon_b58c9fec02bb08763d4dbb7ee2055a70', OrderedDict([('name', 'CustomIcon'), ('id', 'b58c9fec02bb08763d4dbb7ee2055a70'), ('children', OrderedDict())])), ('popup_a06768ee3dfb757e644afaa42d35f9bc', OrderedDict([('name', 'Popup'), ('id', 'a06768ee3dfb757e644afaa42d35f9bc'), ('children', OrderedDict())]))]))]))]))]))]))])), ('layer_control_afdbedf8a515e836843c0c3e9e4b86ff', OrderedDict([('name', 'LayerControl'), ('id', 'afdbedf8a515e836843c0c3e9e4b86ff'), ('children', OrderedDict())]))]))])
-ultimate boss2 {"name": "Map", "id": "74d0ef95fecfb4ad7caa1c76c38270cb", "children": {"openstreetmap": {"name": "TileLayer", "id": "48ba4899c37d9ea36e3122a4eb421a36", "children": {}}, "feature_group_b4a00575bb92e5b2061cc88c99cf5eec": {"name": "FeatureGroup", "id": "b4a00575bb92e5b2061cc88c99cf5eec", "children": {"marker_cluster_09731065553cbb9c6e4cfe3d84b30ce6": {"name": "MarkerCluster", "id": "09731065553cbb9c6e4cfe3d84b30ce6", "children": {"marker_d01d4846dcc03e93095fbc263e04fb84": {"name": "Marker", "id": "d01d4846dcc03e93095fbc263e04fb84", "children": {"custom_icon_0af4411266f896e6a99b735940e831fc": {"name": "CustomIcon", "id": "0af4411266f896e6a99b735940e831fc", "children": {}}, "popup_6e0f0abfe7b09719dc9cf28906a62762": {"name": "Popup", "id": "6e0f0abfe7b09719dc9cf28906a62762", "children": {}}}}}}}}, "feature_group_9a7cb8582e11dec43d3d72720958865e": {"name": "FeatureGroup", "id": "9a7cb8582e11dec43d3d72720958865e", "children": {"marker_cluster_10a09c5d3bbcbc03e76ed1848b113b14": {"name": "MarkerCluster", "id": "10a09c5d3bbcbc03e76ed1848b113b14", "children": {"marker_4bbd49ba96baf379ed2eff806396f927": {"name": "Marker", "id": "4bbd49ba96baf379ed2eff806396f927", "children": {"custom_icon_b9495287cea68048fea5f9feced5822b": {"name": "CustomIcon", "id": "b9495287cea68048fea5f9feced5822b", "children": {}}, "popup_6e0f0abfe7b09719dc9cf28906a62762": {"name": "Popup", "id": "6e0f0abfe7b09719dc9cf28906a62762", "children": {}}}}, "marker_a8fd55be752942c5ca452877545bbdf6": {"name": "Marker", "id": "a8fd55be752942c5ca452877545bbdf6", "children": {"custom_icon_0b6bb4813d901a3f23d75238560d38f6": {"name": "CustomIcon", "id": "0b6bb4813d901a3f23d75238560d38f6", "children": {}}, "popup_df60cf282235a2477809501a01b85d50": {"name": "Popup", "id": "df60cf282235a2477809501a01b85d50", "children": {}}}}, "marker_b8c2748b3194c8ee8348338809fd71cc": {"name": "Marker", "id": "b8c2748b3194c8ee8348338809fd71cc", "children": {"custom_icon_9a0982bd9f3bf23f9f1aa91d6c417003": {"name": "CustomIcon", "id": "9a0982bd9f3bf23f9f1aa91d6c417003", "children": {}}, "popup_2bb629d70b9a4b175969b97f72a2e9c7": {"name": "Popup", "id": "2bb629d70b9a4b175969b97f72a2e9c7", "children": {}}}}, "marker_3175ea5c1b8f2587c79c38361e83f3c3": {"name": "Marker", "id": "3175ea5c1b8f2587c79c38361e83f3c3", "children": {"custom_icon_c399e935c0d43ece27610f080a8bb60b": {"name": "CustomIcon", "id": "c399e935c0d43ece27610f080a8bb60b", "children": {}}, "popup_a06768ee3dfb757e644afaa42d35f9bc": {"name": "Popup", "id": "a06768ee3dfb757e644afaa42d35f9bc", "children": {}}}}}}}}, "feature_group_13beb2925b2299f0581e2b49f923635e": {"name": "FeatureGroup", "id": "13beb2925b2299f0581e2b49f923635e", "children": {"marker_cluster_609111d39409e8120902d8e6c5dab8b9": {"name": "MarkerCluster", "id": "609111d39409e8120902d8e6c5dab8b9", "children": {"marker_0d5d90a95d911a65fe9c670a69b0baef": {"name": "Marker", "id": "0d5d90a95d911a65fe9c670a69b0baef", "children": {"custom_icon_289569770c181564384b4ee91d6ff183": {"name": "CustomIcon", "id": "289569770c181564384b4ee91d6ff183", "children": {}}, "popup_6e0f0abfe7b09719dc9cf28906a62762": {"name": "Popup", "id": "6e0f0abfe7b09719dc9cf28906a62762", "children": {}}}}}}}}, "feature_group_88c45512fa61c830e7989ec834a2df75": {"name": "FeatureGroup", "id": "88c45512fa61c830e7989ec834a2df75", "children": {"marker_cluster_c5ef1eed573885d3818821a412e13737": {"name": "MarkerCluster", "id": "c5ef1eed573885d3818821a412e13737", "children": {"marker_2ef35f934464d1afba65171b29e24cb7": {"name": "Marker", "id": "2ef35f934464d1afba65171b29e24cb7", "children": {"custom_icon_e4ab814002d17dd2557333533a047232": {"name": "CustomIcon", "id": "e4ab814002d17dd2557333533a047232", "children": {}}, "popup_6e0f0abfe7b09719dc9cf28906a62762": {"name": "Popup", "id": "6e0f0abfe7b09719dc9cf28906a62762", "children": {}}}}, "marker_c64c39790e25f69b247f75d5ade4de66": {"name": "Marker", "id": "c64c39790e25f69b247f75d5ade4de66", "children": {"custom_icon_e1f55cb6565e3b5928b0197fd2efb1b9": {"name": "CustomIcon", "id": "e1f55cb6565e3b5928b0197fd2efb1b9", "children": {}}, "popup_2a49a1acd201065878dfe7bcb77087c5": {"name": "Popup", "id": "2a49a1acd201065878dfe7bcb77087c5", "children": {}}}}, "marker_1c91a6050a6b5c3007301cd6ace46644": {"name": "Marker", "id": "1c91a6050a6b5c3007301cd6ace46644", "children": {"custom_icon_21159df2fb8dad6f5efd3cb5c9b53ef2": {"name": "CustomIcon", "id": "21159df2fb8dad6f5efd3cb5c9b53ef2", "children": {}}, "popup_df60cf282235a2477809501a01b85d50": {"name": "Popup", "id": "df60cf282235a2477809501a01b85d50", "children": {}}}}, "marker_483a41223d9191c052b7c8e10c4d08a7": {"name": "Marker", "id": "483a41223d9191c052b7c8e10c4d08a7", "children": {"custom_icon_d495c63ced80353a64fc16c936327a07": {"name": "CustomIcon", "id": "d495c63ced80353a64fc16c936327a07", "children": {}}, "popup_2bb629d70b9a4b175969b97f72a2e9c7": {"name": "Popup", "id": "2bb629d70b9a4b175969b97f72a2e9c7", "children": {}}}}, "marker_b2cd57c4802a987e351fdfd896bed880": {"name": "Marker", "id": "b2cd57c4802a987e351fdfd896bed880", "children": {"custom_icon_b58c9fec02bb08763d4dbb7ee2055a70": {"name": "CustomIcon", "id": "b58c9fec02bb08763d4dbb7ee2055a70", "children": {}}, "popup_a06768ee3dfb757e644afaa42d35f9bc": {"name": "Popup", "id": "a06768ee3dfb757e644afaa42d35f9bc", "children": {}}}}}}}}, "layer_control_afdbedf8a515e836843c0c3e9e4b86ff": {"name": "LayerControl", "id": "afdbedf8a515e836843c0c3e9e4b86ff", "children": {}}}}</msg>
-<msg timestamp="20230608 18:34:24.879" level="INFO">G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:738: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
-
-The code that caused this warning is on line 738 of the file G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py. To get rid of this warning, pass the additional argument 'features="lxml"' to the BeautifulSoup constructor.
-
-  parsed_html = BeautifulSoup(body_text)</msg>
-<msg timestamp="20230608 18:34:24.879" level="FAIL">TypeError: 'dict' object is not callable</msg>
-<msg timestamp="20230608 18:34:24.881" level="DEBUG">Traceback (most recent call last):
-  File "G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py", line 45, in user_runs_main_flow
-    self.lelongtips_scrape()
-  File "G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py", line 77, in lelongtips_scrape
-    self.map_gen(draft_content)
-  File "G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py", line 491, in map_gen
-    print("ultimate boss3 " + str(m.__dict__()))
-TypeError: 'dict' object is not callable</msg>
-<status status="FAIL" starttime="20230608 18:34:04.114" endtime="20230608 18:34:24.881"/>
+<kw name="When user runs main flow">
+<msg timestamp="20230612 13:59:12.684" level="FAIL">No keyword with name 'When user runs main flow' found.</msg>
+<status status="FAIL" starttime="20230612 13:59:12.682" endtime="20230612 13:59:12.684"/>
 </kw>
 <doc>Executes main flow</doc>
 <tag>flow</tag>
-<status status="FAIL" starttime="20230608 18:34:04.113" endtime="20230608 18:34:24.881">TypeError: 'dict' object is not callable</status>
+<status status="FAIL" starttime="20230612 13:59:12.679" endtime="20230612 13:59:12.684">No keyword with name 'When user runs main flow' found.</status>
 </test>
 <doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
-<status status="FAIL" starttime="20230608 18:34:00.745" endtime="20230608 18:34:24.883"/>
+<status status="FAIL" starttime="20230612 13:59:07.772" endtime="20230612 13:59:12.686"/>
 </suite>
 <statistics>
 <total>
@@ -157,6 +25,25 @@ TypeError: 'dict' object is not callable</msg>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230608 18:34:01.288" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
+<msg timestamp="20230612 13:59:09.027" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
+<msg timestamp="20230612 13:59:12.676" level="ERROR">Error in file 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\tests\restAPI\Main\Main.robot' on line 3: Importing library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py' failed: TypeError: can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py", line 26, in &lt;module&gt;
+    TEST_URL_LLT = PROTOCOL + TEST_URL
+PYTHONPATH:
+  G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main
+  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\lib\site-packages\git\ext\gitdb
+  G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms
+  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\Scripts\robot.exe
+  G:\Other computers\My Laptop\GDrive\talentbook\sherlock-dms
+  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310
+  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\lib\site-packages
+  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\lib\site-packages\win32
+  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\lib\site-packages\win32\lib
+  C:\Users\r.a.ling\AppData\Local\Programs\Python\Python310\lib\site-packages\Pythonwin
+  G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms</msg>
 </errors>
 </robot>
