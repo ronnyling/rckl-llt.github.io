@@ -389,11 +389,11 @@ class Main(object):
                                     </div>"""
                     div_icon = folium.DivIcon(html=icon_file, icon_size=icon_size)
                     # marker_cluster_o.add_child(
-                    folium.Marker(
+                    (folium.Marker(
                         location=(location['latitude'], location['longitude']),
                         popup=popup,
                         icon=div_icon
-                    ).add_to(marker_cluster_o)
+                    )).add_to(marker_cluster_o)
                     # )
                 else:
                     print("i am in okay price " + html)
@@ -437,11 +437,11 @@ class Main(object):
                         div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_lrd, icon_size=icon_size)
                         # add_marker = marker_cluster_lrd
                         # marker_cluster_lrd.add_child(
-                        folium.Marker(
+                        (folium.Marker(
                             location=(location['latitude'], location['longitude']),
                             popup=popup,
                             icon=div_icon
-                        ).add_to(marker_cluster_lrd)
+                        )).add_to(marker_cluster_lrd)
 
                         # div_icon = f"""
                         #                 <div>
@@ -458,22 +458,22 @@ class Main(object):
                         # i['tags'] = "l"
                         # add_marker = marker_cluster_l
 
-                        folium.Marker(
+                        (folium.Marker(
                             location=(location['latitude'], location['longitude']),
                             popup=popup,
                             icon=div_icon
-                        ).add_to(marker_cluster_l)
+                        )).add_to(marker_cluster_l)
 
 
 
                     div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_others, icon_size=icon_size)
                     # add_marker = marker_cluster_o
 
-                    folium.Marker(
+                    (folium.Marker(
                         location=(location['latitude'], location['longitude']),
                         popup=popup,
                         icon=div_icon
-                    ).add_to(marker_cluster_o)
+                    )).add_to(marker_cluster_o)
 
 
                         # div_icon = f"""
@@ -501,10 +501,10 @@ class Main(object):
         print(str(marker_cluster_lrd.__sizeof__()))
         print(str(marker_cluster_attention.__sizeof__()))
         print(str(marker_cluster_l.__sizeof__()))
-        print("ultimate boss1 " + str(m.to_dict()))
-        print("ultimate boss2 " + str(m.to_json()))
+        # print("ultimate boss1 " + str(m.to_dict()))
+        print("ultimate boss " + str(m.to_json()))
         # print("ultimate boss3 " + str(m.__dict__()))
-        print("ultimate boss4 " + str(m.__str__()))
+        # print("ultimate boss4 " + str(m.__str__()))
 
         date_now = str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f"))
         date_file = re.sub(r'[^\w]', '', date_now)
@@ -869,4 +869,4 @@ class Main(object):
             # print("Total number of records retrieved are ", len(body_result))
             # print("Response body= ", str(body_result))
         else:
-            raise Exception("Initial load failed")
+            raise Exception("Initial load failed"
