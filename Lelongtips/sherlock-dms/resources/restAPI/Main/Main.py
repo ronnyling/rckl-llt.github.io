@@ -299,10 +299,15 @@ class Main(object):
         m.add_child(fg_lrd)
         m.add_child(fg_att)
         m.add_child(fg_o)
-        marker_cluster_l = MarkerCluster().add_to(fg_l)
-        marker_cluster_lrd = MarkerCluster().add_to(fg_lrd)
-        marker_cluster_attention = MarkerCluster().add_to(fg_att)
-        marker_cluster_o = MarkerCluster().add_to(fg_o)
+        # marker_cluster_l = MarkerCluster().add_to(fg_l)
+        # marker_cluster_lrd = MarkerCluster().add_to(fg_lrd)
+        # marker_cluster_attention = MarkerCluster().add_to(fg_att)
+        # marker_cluster_o = MarkerCluster().add_to(fg_o)
+
+        marker_cluster_l = folium.plugins.MarkerCluster()
+        marker_cluster_lrd = folium.plugins.MarkerCluster()
+        marker_cluster_attention = folium.plugins.MarkerCluster()
+        marker_cluster_o = folium.plugins.MarkerCluster()
         # flag_l = False
         # flag_lrd = False
         # flag_attention = False
@@ -493,6 +498,12 @@ class Main(object):
         print("ultimate boss2 " + str(m.to_json()))
         # print("ultimate boss3 " + str(m.__dict__()))
         print("ultimate boss4 " + str(m.__str__()))
+
+        marker_cluster_l.add_to(fg_l)
+        marker_cluster_lrd.add_to(fg_lrd)
+        marker_cluster_attention.add_to(fg_att)
+        marker_cluster_o.add_to(fg_o)
+
         date_now = str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f"))
         date_file = re.sub(r'[^\w]', '', date_now)
         # m.save(f"../../docs/index.html")
