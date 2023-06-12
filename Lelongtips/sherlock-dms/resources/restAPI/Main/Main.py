@@ -497,10 +497,10 @@ class Main(object):
                 #     popup=popup,
                 #     icon=folium.DivIcon(html=div_icon)
                 # ).add_to(sidebar)
-        print(str(marker_cluster_o.__sizeof__()))
-        print(str(marker_cluster_lrd.__sizeof__()))
-        print(str(marker_cluster_attention.__sizeof__()))
-        print(str(marker_cluster_l.__sizeof__()))
+        print(str(marker_cluster_o.to_json()))
+        print(str(marker_cluster_lrd.to_json()))
+        print(str(marker_cluster_attention.to_json()))
+        print(str(marker_cluster_l.to_json()))
         # print("ultimate boss1 " + str(m.to_dict()))
         print("ultimate boss " + str(m.to_json()))
         # print("ultimate boss3 " + str(m.__dict__()))
@@ -869,4 +869,4 @@ class Main(object):
             # print("Total number of records retrieved are ", len(body_result))
             # print("Response body= ", str(body_result))
         else:
-            raise Exception("Initial load failed"
+            raise Exception("Initial load failed")
