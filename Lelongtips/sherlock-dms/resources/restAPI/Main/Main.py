@@ -539,13 +539,13 @@ class Main(object):
 
 
 
-                    div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_others, icon_size=icon_size)
-                    add_marker = folium.Marker(
-                            location=(location['latitude'], location['longitude']),
-                            popup=popup,
-                            icon=div_icon
-                        )
-                    marker_cluster_o.add_child(add_marker)
+                div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_others, icon_size=icon_size)
+                add_marker = folium.Marker(
+                        location=(location['latitude'], location['longitude']),
+                        popup=popup,
+                        icon=div_icon
+                    )
+                marker_cluster_o.add_child(add_marker)
                         # .add_to(marker_cluster_o)
 
 
