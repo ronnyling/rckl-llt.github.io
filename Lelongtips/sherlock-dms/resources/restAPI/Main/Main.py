@@ -373,6 +373,8 @@ class Main(object):
         marker_cluster_attention = MarkerCluster().add_to(fg_att)
         marker_cluster_o = MarkerCluster().add_to(fg_o)
 
+        folium.LayerControl().add_to(m)
+
         # marker_cluster_l = folium.plugins.MarkerCluster()
         # marker_cluster_lrd = folium.plugins.MarkerCluster()
         # marker_cluster_attention = folium.plugins.MarkerCluster()
@@ -571,7 +573,6 @@ class Main(object):
         print(str(marker_cluster_l.to_json()))
         m.add_child(fg_att)
         fg_att.add_child(marker_cluster_attention)
-        folium.LayerControl().add_to(m)
 
         # print("ultimate boss1 " + str(m.to_dict()))
         print("ultimate boss " + str(m.to_json()))

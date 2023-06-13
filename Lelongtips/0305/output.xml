@@ -1,19 +1,502 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230613 12:20:40.400" rpa="false" schemaversion="3">
+<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230613 12:28:05.538" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\tests\restAPI\Main\Main.robot">
 <test id="s1-t1" name="1 - Executes Main flow" line="6">
 <kw name="When user runs main flow" library="Main">
-<msg timestamp="20230613 12:20:39.874" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20230613 12:20:39.950" level="INFO">huehue {"name": "Map", "id": "63beb2c54e9278d50d9fa4b2a43361c8", "children": {"openstreetmap": {"name": "TileLayer", "id": "d257744fc5bf751ef03b12fdde39f46a", "children": {}}, "feature_group_c117a761edacfa2aea185c6ca37d9804": {"name": "FeatureGroup", "id": "c117a761edacfa2aea185c6ca37d9804", "children": {"marker_cluster_c40339fdf48146551cb713f118a4b96d": {"name": "MarkerCluster", "id": "c40339fdf48146551cb713f118a4b96d", "children": {"marker_a7849684f4cae2caac027c82b8b25cfc": {"name": "Marker", "id": "a7849684f4cae2caac027c82b8b25cfc", "children": {"popup_b70b5b97b35052ebe5ce07799e9a1cac": {"name": "Popup", "id": "b70b5b97b35052ebe5ce07799e9a1cac", "children": {}}}}}}}}, "feature_group_2cf38e4ae94bae83c23b642f1f8cf3ba": {"name": "FeatureGroup", "id": "2cf38e4ae94bae83c23b642f1f8cf3ba", "children": {"marker_cluster_4786a366185e4120a59c79b548a6c616": {"name": "MarkerCluster", "id": "4786a366185e4120a59c79b548a6c616", "children": {"marker_9d6ea2faec742c4cdf63151f6b387278": {"name": "Marker", "id": "9d6ea2faec742c4cdf63151f6b387278", "children": {"popup_4613ec963b58d241934ec63216962102": {"name": "Popup", "id": "4613ec963b58d241934ec63216962102", "children": {}}}}}}}}, "tile_layer_97286aebfcf31c994ac1802fb5501d49": {"name": "TileLayer", "id": "97286aebfcf31c994ac1802fb5501d49", "children": {}}, "tile_layer_bddd350913a5dd32684ec98862434967": {"name": "TileLayer", "id": "bddd350913a5dd32684ec98862434967", "children": {}}, "feature_group_5be547d4812c272cfdf7fbe84a537604": {"name": "FeatureGroup", "id": "5be547d4812c272cfdf7fbe84a537604", "children": {"marker_cluster_1c276415590ae037aa0cd0ff333dc057": {"name": "MarkerCluster", "id": "1c276415590ae037aa0cd0ff333dc057", "children": {"marker_7bb0a56bd7322a2f7ab444f69aa3fb82": {"name": "Marker", "id": "7bb0a56bd7322a2f7ab444f69aa3fb82", "children": {"popup_16d57167b00f019a571ab7268b90e4e2": {"name": "Popup", "id": "16d57167b00f019a571ab7268b90e4e2", "children": {}}}}}}}}}}</msg>
-<msg timestamp="20230613 12:20:39.951" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20230613 12:20:39.872" endtime="20230613 12:20:39.951"/>
+<msg timestamp="20230613 12:27:38.201" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230613 12:27:38.205" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230613 12:27:39.361" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:39.372" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230613 12:27:39.843" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:43.036" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230613 12:27:43.691" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=2 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:46.872" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:46.874" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:46.878" level="DEBUG">Starting new HTTPS connection (1): maps.googleapis.com:443</msg>
+<msg timestamp="20230613 12:27:47.128" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+SB+15%2C+Taman+Seri+Bertam%2C+75250+Tanjung+Minyak%2C+Melaka&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:47.130" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:47.131" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:47.253" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Semarak+Api+1%2C+Bandar+Baru+Air+Itam%2C+11500+Ayer+Itam%2C+Penang&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:47.255" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:47.256" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:47.376" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Pondok+Lama%2C+Kampung+Bechah+Peleting%2C+17500+Tanah+Merah%2C+Kelantan&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:47.378" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:47.379" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:47.482" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Taman+Seri+Batik+Teluk+Muruh%2C+32200%2C+Lumut%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:47.485" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:47.485" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:47.611" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+RJ+2%2F18%2C+Taman+Rasah+Jaya%2C+70300+Seremban%2C+Negeri+Sembilan&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:47.615" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:47.615" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:47.696" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Mesra%2C+Taman+Mesra+Rakyat%2C+31900+Kampar%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:47.702" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:47.703" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:47.819" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Laluan+Wawasan+6%2C+Taman+Wawasan+Tronoh%2C+31750+Tronoh%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:47.821" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:47.821" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:47.924" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Tingkat+Kledang+17%2C+Taman+Kledang+Sentosa%2C+31450+Menglembu%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:47.926" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:47.927" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:48.045" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Diawan+7%2C+Taman+Permai%2C+31950+Mambang+Diawan%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:48.047" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:48.047" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:48.172" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Chemor+Mesra+4%2C+Taman+Chemor+Mesra%2C+31200+Chemor%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:48.174" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:48.174" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:48.292" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Taman+SL+Permata%2C+Hutan+Pasir%2C+16450+Ketereh%2C+Kelantan&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:48.293" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:48.294" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:48.419" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Sm+3%2C+Taman+Seri+Manggis%2C+78000+Alor+Gajah%2C+Melaka&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:48.421" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:48.422" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:48.612" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Pangsapuri+Rosana+Villa%2C+Jalan+Putra+Perdana+9%2C+Taman+Putra+Perdana%2C+47130+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:48.614" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:48.614" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:48.726" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Taman+Mas+Kg+Koh%2C+32000+Sitiawan%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:48.728" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:48.728" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:48.815" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Dewi%2C+Taman+Mambang%2C+31950+Mambang+Di+Awan%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:48.817" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:48.818" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:48.895" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Mutiara+5%2F6%2C+Taman+Mutiara+%281001-1500%29%2C+09700+Karangan%2C+Kedah&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:48.897" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:48.898" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:49.068" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+11%2C+No.+22%2C+Jalan+PJS+2S%2F1%2C+Desa+Mentari+3%2C+46000+Petaling+Jaya%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:49.074" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:49.076" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:49.150" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Penor+Aman+10%2C+26060+Kuantan%2C+Pahang&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:49.157" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:49.159" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:49.218" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Penor+Aman+7%2C+26060+Kuantan%2C+Pahang&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:49.223" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:49.224" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:49.321" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Penor+Aman+9%2C+26060+Kuantan%2C+Pahang&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:49.326" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:49.326" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:49.443" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Anggerik+7%2C+Taman+PD+Utama%2C+71000+Port+Dickson%2C+Negeri+Sembilan&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:49.446" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:49.446" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:49.595" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Taman+SL+Lemal%2C+Kampung+Kekabu%2C+17000+Pasir+Mas%2C+Kelantan&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:49.597" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:49.597" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:49.679" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Kampung+Besut%2C+24000+Cukai%2C+Terengganu&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:49.681" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:49.682" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 12:27:49.757" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Tun+Ismail+6%2C+Sri+Dagangan+Kuantan%2C+25000+Kuantan%2C+Pahang&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 12:27:49.917" level="DEBUG">Popen(['git', 'add', '--update'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=None)</msg>
+<msg timestamp="20230613 12:27:52.414" level="DEBUG">Popen(['git', 'cat-file', '--batch-check'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
+<msg timestamp="20230613 12:27:53.024" level="DEBUG">Popen(['git', 'cat-file', '--batch'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
+<msg timestamp="20230613 12:27:53.519" level="DEBUG">Popen(['git', 'push', '--porcelain', '--', 'origin'], cwd=G:\My Drive\Python\Scraper, universal_newlines=True, shell=None, istream=None)</msg>
+<msg timestamp="20230613 12:28:04.597" level="DEBUG">Starting new HTTPS connection (1): graph.facebook.com:443</msg>
+<msg timestamp="20230613 12:28:04.964" level="DEBUG">https://graph.facebook.com:443 "POST /v13.0/%3Cwhatsapp-phone-id%3E/messages HTTP/1.1" 401 152</msg>
+<msg timestamp="20230613 12:28:04.967" level="INFO">now i am at page 1
+now i am at page 2
+draft_content= 2
+draft_content[0]= 12
+prior to storm 150000 1302
+i am in okay price 
+                    &lt;p&gt; 14 Jun 2023 (Wed) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Seri Bertam (Taman Desa Tanjung Minyak), Melaka &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1302&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,302 sq.ft, LH, KOD A, Intermediate,  online bidding, RM115 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan SB 15, 76450 Alor Gajah, Melaka, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/WHdGdHJjeTBLbjJNRTM0RE9uenRQQT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Seri-Bertam-Melaka-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 611
+i am in okay price 
+                    &lt;p&gt; 13 Jul 2023 (Thu) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; Apartment &lt;/h2&gt;
+                    &lt;h1&gt; Asia Heights (Seri Semarak), Penang &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 611&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 611 sq.ft, FH, 3  bedroom,  online bidding, RM246 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Lorong Semarak Api 1, Bandar Baru Air Itam, 11500 Ayer Itam, Pulau Pinang, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/K1dIZHJEYlZLc0cwVVZTbnhlTFdPUT09/Lelong-Auction-Apartment-in-Ayer-Itam-Penang-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1679
+i am in okay price 
+                    &lt;p&gt; 15 Jun 2023 (Thu) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Kampung Bechah Peleting, Kelantan &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1679&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,679 sq.ft, FH, Intermediate,  online bidding, RM89 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan Pondok Lama, Tanah Merah, 17500 Tanah Merah, Kelantan, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/RE81OWNpeDBVU1RKLzJzdUVYYWlVQT09/Lelong-Auction-1-Storey-Terrace-House-in-Kampung-Bechah-Peleting-Kelantan-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1485
+i am in okay price 
+                    &lt;p&gt; 13 Jun 2023 (Tue) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Sri Batik, Perak &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1485&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,485 sq.ft, Malay Reserve,  online bidding, RM101 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jln Teluk Muruh, 32200 Lumut, Perak, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/UHN2YTkxSkRkMk5qcmluc05kS012UT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Seri-Batik-Teluk-Muruh-Perak-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1396
+i am in okay price 
+                    &lt;p&gt; 14 Jun 2023 (Wed) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 2 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Rasah Jaya, Negeri Sembilan &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1396&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,396 sq.ft, FH, Intermediate,  online bidding, RM107 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan RJ 2/18, Taman Rasah Jaya, 70300 Seremban, Negeri Sembilan, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/NjZUSG9ObjVIL255UnF2L0ErRDIzQT09/Lelong-Auction-2-Storey-Terrace-House-in-Taman-Rasah-Jaya-Negeri-Sembilan-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1701
+i am in okay price 
+                    &lt;p&gt; 19 Jun 2023 (Mon) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Semi Detached House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Mesra Rakyat, Perak &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1701&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,701 sq.ft, LH,  online bidding, RM88 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= 2, Jalan Mesra, 31910 Kampar, Perak, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/SmdrWVR2dFFRMzlkSDAzbEQ4S2cwdz09/Lelong-Auction-1-Storey-Semi-Detached-House-in-Taman-Mesra-Rakyat-Perak-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1798
+i am in okay price 
+                    &lt;p&gt; 14 Jun 2023 (Wed) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Tronoh Wawasan, Perak &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1798&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,798 sq.ft, LH, Intermediate,  online bidding, RM83 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Laluan Wawasan 6, 31750 Teronoh, Perak, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/U0FpSG8zeE0wSXNtelFOWVdET2trdz09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Wawasan-Tronoh-Perak-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1496
+i am in okay price 
+                    &lt;p&gt; 13 Jun 2023 (Tue) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Kledang Sentosa, Perak &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1496&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,496 sq.ft, Intermediate,  online bidding, RM100 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Tingkat Kledang 17, Taman Kledang Sentosa, 31450 Menglembu, Perak, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/WVFEdWd0VnVtQWthc0hiUUk2dnVQQT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Kledang-Sentosa-Perak-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1399
+i am in okay price 
+                    &lt;p&gt; 20 Jun 2023 (Tue) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Diawan (Taman Permai / Taman Di Awan), Perak &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1399&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,399 sq.ft, LH,  online bidding, RM107 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan Diawan 7, 31950 Mambang Di Awan, Perak, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/OFUvVU5NRS9Md0FwcUhMWndGTEwxQT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Permai-Perak-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1324
+i am in okay price 
+                    &lt;p&gt; 5 Jul 2023 (Wed) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Chemor Mesra, Perak &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1324&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,324 sq.ft, LH, Intermediate,  online bidding, RM113 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan Chemor Mesra 4, 31200 Chemor, Perak, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/RDl0WGRjVGpmQVluU3Y1OXQrVk5JQT09/Lelong-Auction-Terrace-House-in-Taman-Chemor-Mesra-Perak-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1098
+i am in okay price 
+                    &lt;p&gt; 10 Jul 2023 (Mon) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman SL Permata, Kelantan &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1098&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,098 sq.ft, FH,  online bidding, RM137 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Taman SL Permata, 773, Jalan Zamrud, Kampung Jelatok, 17500 Tanah Merah, Kelantan, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/bWhkQnZEdVF3ZUkzdGxiRWdPMkdJUT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-SL-Permata-Kelantan-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1313
+i am in okay price 
+                    &lt;p&gt; 12 Jul 2023 (Wed) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Seri Manggis (Taman Gadek Perdana), Melaka &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1313&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,313 sq.ft, LH, KOD B, Intermediate,  online bidding, RM114 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan Sm, Pekan Selandar, 77500 Selandar, Melaka, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/WnZCZHh6RzF3ZjdUSS9EQzlNZnM4Zz09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Seri-Manggis-Melaka-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 703
+i am in okay price 
+                    &lt;p&gt; 26 Jul 2023 (Wed) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; Rosana Villa Apartment &lt;/h2&gt;
+                    &lt;h1&gt; Rosana Villa Apartment, Selangor &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 703&lt;/li&gt;
+                        &lt;li&gt;others= LACA, 1st Auction, 703 sq.ft, LH, Corner Lot,  online bidding, RM213 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Rosana Villa 2A Blok 10, 11, 12, Jalan Putra Perdana 9, Taman Putra Perdana, 47100 Puchong, Selangor, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/TXpTM283bUFmQjk4MnZmZVRBdFgzZz09/Lelong-Auction-Rosana-Villa-Apartment-in-Taman-Putra-Perdana-Selangor-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1399
+i am in okay price 
+                    &lt;p&gt; 10 Jul 2023 (Mon) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Mas, Perak &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1399&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,399 sq.ft,  online bidding, RM107 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Kampung Koh, 32000 Sitiawan, Perak, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/YkZWOWdlck9SbGswRkQ4QTNQUXlLdz09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Mas-Kg-Koh-Perak-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1798
+i am in okay price 
+                    &lt;p&gt; 6 Jul 2023 (Thu) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Semi Detached House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Mambang, Perak &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1798&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,798 sq.ft, LH,  online bidding, RM83 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Taman Sejahtera Utama, 31950 Kampar, Perak, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/UVFXdFlqd0hyUXNTUi9tZEFmZFRjdz09/Lelong-Auction-1-Storey-Semi-Detached-House-in-Taman-Mambang-Perak-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1195
+i am in okay price 
+                    &lt;p&gt; 18 Jul 2023 (Tue) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Mutiara, Kedah &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1195&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,195 sq.ft, FH,  online bidding, RM126 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan Mutiara 5, Kampung Jangkang, 09600 Karangan, Kedah, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/TDdGWVhSZ0RsTGVPSUlpTTlKM0syUT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Mutiara-1001-1500-Kedah-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 657
+i am in okay price 
+                    &lt;p&gt; 27 Jun 2023 (Tue) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; Apartment &lt;/h2&gt;
+                    &lt;h1&gt; Desa Mentari 3, Selangor &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 657&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 657 sq.ft, LH, 3  bedroom,  online bidding, RM228 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jln PJS 2d/1, Desa Mentari 3, 46000 Petaling Jaya, Selangor, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/bEtDREpGbTVMazVRaHJnRENmSTZ3dz09/Lelong-Auction-Apartment-in-Desa-Mentari-3-Selangor-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1195
+i am in okay price 
+                    &lt;p&gt; 24 Jun 2023 (Sat) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Kuantan, Pahang &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1195&lt;/li&gt;
+                        &lt;li&gt;others= LACA, 1st Auction, 1,195 sq.ft, Intermediate,  online bidding, RM126 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= 34, Jln K.S 2/4, 26060 Kuantan, Pahang, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/YTBlVjVMdnlHaHdzQ2FNTy8yTGNMZz09/Lelong-Auction-1-Storey-Terrace-House-in-Kuantan-Pahang-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1195
+i am in okay price 
+                    &lt;p&gt; 24 Jun 2023 (Sat) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Kuantan, Pahang &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1195&lt;/li&gt;
+                        &lt;li&gt;others= LACA, 1st Auction, 1,195 sq.ft, Intermediate,  online bidding, RM126 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= 34, Jln K.S 2/4, 26060 Kuantan, Pahang, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/eDgrOXFuM2taMThiYkNjVUNVTCtKdz09/Lelong-Auction-1-Storey-Terrace-House-in-Kuantan-Pahang-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1195
+i am in okay price 
+                    &lt;p&gt; 24 Jun 2023 (Sat) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Kuantan, Pahang &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1195&lt;/li&gt;
+                        &lt;li&gt;others= LACA, 1st Auction, 1,195 sq.ft, Intermediate,  online bidding, RM126 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= 34, Jln K.S 2/4, 26060 Kuantan, Pahang, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/eldranFlc3FXRDNPTWJQT2l6K2NoQT09/Lelong-Auction-1-Storey-Terrace-House-in-Kuantan-Pahang-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 842
+i am in okay price 
+                    &lt;p&gt; 11 Jul 2023 (Tue) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman PD Utama (Taman Port Dickson Utama), Negeri Sembilan &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 842&lt;/li&gt;
+                        &lt;li&gt;others= Title, 842 sq.ft, FH, Intermediate,  online bidding, RM178 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan Anggerik 7, Taman Port Dickson Utama, 71000 Port Dickson, Negeri Sembilan, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/OENOUmE5WkF2cHh6SVFrVzQzVGZYdz09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-PD-Utama-Negeri-Sembilan-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 820
+i am in okay price 
+                    &lt;p&gt; 25 Jul 2023 (Tue) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman SL Lemal, Kelantan &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 820&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 820 sq.ft, Malay Reserve,  online bidding, RM183 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan Kg Kekabu, 17000 Pasir Mas, Kelantan, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/QXhqK0ZHZXVXMmw1MXRZZjEvQzlIQT09/Lelong-Auction-Terrace-House-in-Taman-SL-Lemal-Kelantan-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 2280
+i am in okay price 
+                    &lt;p&gt; 5 Jul 2023 (Wed) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; Semi Detached House &lt;/h2&gt;
+                    &lt;h1&gt; Cukai, Terengganu &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 2280&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 2,280 sq.ft, LH, Malay Reserve,  online bidding, RM66 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Lorong Kampung Besut 12, Kampung Besut, 24000 Chukai, Terengganu, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/Y0paQ0JJcTcvMzJSeFdwbjFSZ005UT09/Lelong-Auction-Semi-Detached-House-in-Cukai-Terengganu-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 670
+i am in okay price 
+                    &lt;p&gt; 24 Jun 2023 (Sat) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; Apartment &lt;/h2&gt;
+                    &lt;h1&gt; Kuantan, Pahang &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 670&lt;/li&gt;
+                        &lt;li&gt;others= LACA, 1st Auction, 670 sq.ft, FH,  online bidding, RM224 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Lorong Tun Ismail 6, 25000 Kuantan, Pahang, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/RmJYRnJ5VGpkYVJjZXRlajJkampDQT09/Lelong-Auction-Apartment-in-Kuantan-Pahang-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+{"name": "MarkerCluster", "id": "2ee98ef6c51be91422c7b8112f110fa5", "children": {"marker_88ff5dfab90c5459f2c4d067a6d598c5": {"name": "Marker", "id": "88ff5dfab90c5459f2c4d067a6d598c5", "children": {"custom_icon_1b686cf619fa1ab07a852e9cbe145340": {"name": "CustomIcon", "id": "1b686cf619fa1ab07a852e9cbe145340", "children": {}}, "popup_ceb0421d9cf1c13dc0924526f28f5760": {"name": "Popup", "id": "ceb0421d9cf1c13dc0924526f28f5760", "children": {}}}}, "marker_221885f84f5e449a1ded6b986379c514": {"name": "Marker", "id": "221885f84f5e449a1ded6b986379c514", "children": {"custom_icon_ee82af698e9c342c6412bee06256b5fc": {"name": "CustomIcon", "id": "ee82af698e9c342c6412bee06256b5fc", "children": {}}, "popup_51d00f46ff7d9e2fb745dabbb52ce716": {"name": "Popup", "id": "51d00f46ff7d9e2fb745dabbb52ce716", "children": {}}}}, "marker_c89669fdf1a82538f7be8df3150cde53": {"name": "Marker", "id": "c89669fdf1a82538f7be8df3150cde53", "children": {"custom_icon_5ec1b79a1f44caca54f782435c151aaa": {"name": "CustomIcon", "id": "5ec1b79a1f44caca54f782435c151aaa", "children": {}}, "popup_1655d8e009123ae6dae15601d2b6e433": {"name": "Popup", "id": "1655d8e009123ae6dae15601d2b6e433", "children": {}}}}, "marker_c56acd949d3814876e2e8e3c49b2abaa": {"name": "Marker", "id": "c56acd949d3814876e2e8e3c49b2abaa", "children": {"custom_icon_95a40df99b700b118fe8ce37d358a16f": {"name": "CustomIcon", "id": "95a40df99b700b118fe8ce37d358a16f", "children": {}}, "popup_fb4a89dc8b58ae06bfce92d15bd89e80": {"name": "Popup", "id": "fb4a89dc8b58ae06bfce92d15bd89e80", "children": {}}}}, "marker_edf9eb53b4ae53c24c2f533b5a8bd35c": {"name": "Marker", "id": "edf9eb53b4ae53c24c2f533b5a8bd35c", "children": {"custom_icon_1bb531a527d0add35e3df7b8a51633e4": {"name": "CustomIcon", "id": "1bb531a527d0add35e3df7b8a51633e4", "children": {}}, "popup_5a269a0d6300fda81424f4e86c3b9573": {"name": "Popup", "id": "5a269a0d6300fda81424f4e86c3b9573", "children": {}}}}, "marker_31bce8a505f2739cb1683616ff2611aa": {"name": "Marker", "id": "31bce8a505f2739cb1683616ff2611aa", "children": {"custom_icon_415700007d8f40860447fddbaa30c0f2": {"name": "CustomIcon", "id": "415700007d8f40860447fddbaa30c0f2", "children": {}}, "popup_b5cb77e881d391b6e6acc08800bf32ae": {"name": "Popup", "id": "b5cb77e881d391b6e6acc08800bf32ae", "children": {}}}}, "marker_efeea2f2cc1082d8620b8604b588a738": {"name": "Marker", "id": "efeea2f2cc1082d8620b8604b588a738", "children": {"custom_icon_154a36f423f94f08f288ceae227e4941": {"name": "CustomIcon", "id": "154a36f423f94f08f288ceae227e4941", "children": {}}, "popup_e24cb0892389682a5c750709a803816b": {"name": "Popup", "id": "e24cb0892389682a5c750709a803816b", "children": {}}}}, "marker_fa1ec074b54256a6ae81dea59b0b093e": {"name": "Marker", "id": "fa1ec074b54256a6ae81dea59b0b093e", "children": {"custom_icon_91c5bfb5258276a3475228f271b504d9": {"name": "CustomIcon", "id": "91c5bfb5258276a3475228f271b504d9", "children": {}}, "popup_bfd861bfdf0ae626a0361ab1ab3f2169": {"name": "Popup", "id": "bfd861bfdf0ae626a0361ab1ab3f2169", "children": {}}}}, "marker_1be8e242f6f897bc6805442eafd6b17a": {"name": "Marker", "id": "1be8e242f6f897bc6805442eafd6b17a", "children": {"custom_icon_0deaf53d4c41b658e9463a8e69e0793a": {"name": "CustomIcon", "id": "0deaf53d4c41b658e9463a8e69e0793a", "children": {}}, "popup_2c6160378e1ebca39f39d7e967f0bf8b": {"name": "Popup", "id": "2c6160378e1ebca39f39d7e967f0bf8b", "children": {}}}}, "marker_d0a95b807f93f032c57ce72374088e80": {"name": "Marker", "id": "d0a95b807f93f032c57ce72374088e80", "children": {"custom_icon_d6c0b0ba4604bcbfd311324434f74deb": {"name": "CustomIcon", "id": "d6c0b0ba4604bcbfd311324434f74deb", "children": {}}, "popup_fd26d549181f98b9d353b0d52984fb7d": {"name": "Popup", "id": "fd26d549181f98b9d353b0d52984fb7d", "children": {}}}}, "marker_f3578fb6ade667c2afda11c33a81c532": {"name": "Marker", "id": "f3578fb6ade667c2afda11c33a81c532", "children": {"custom_icon_21f384168f347112908aa78cab227a33": {"name": "CustomIcon", "id": "21f384168f347112908aa78cab227a33", "children": {}}, "popup_009e0e38c02c4ff67b44e90d7fd4aa40": {"name": "Popup", "id": "009e0e38c02c4ff67b44e90d7fd4aa40", "children": {}}}}, "marker_d5ba68fb9a5607b7633ef66e793e5479": {"name": "Marker", "id": "d5ba68fb9a5607b7633ef66e793e5479", "children": {"custom_icon_38020bc1e62d701f3425f44ee8943a5b": {"name": "CustomIcon", "id": "38020bc1e62d701f3425f44ee8943a5b", "children": {}}, "popup_695174f188a3d334a0a8bd99fdd1f694": {"name": "Popup", "id": "695174f188a3d334a0a8bd99fdd1f694", "children": {}}}}, "marker_83b6e15771b415192d61ef31cfac52ff": {"name": "Marker", "id": "83b6e15771b415192d61ef31cfac52ff", "children": {"custom_icon_8a4827916d77384baca82d822ea969ac": {"name": "CustomIcon", "id": "8a4827916d77384baca82d822ea969ac", "children": {}}, "popup_43dcba1ba482d47fdccf3b595d74de76": {"name": "Popup", "id": "43dcba1ba482d47fdccf3b595d74de76", "children": {}}}}, "marker_c52eb7154d2924c092afdf92848648b2": {"name": "Marker", "id": "c52eb7154d2924c092afdf92848648b2", "children": {"custom_icon_ecd30c7685e424c2ec1b60af886d56d4": {"name": "CustomIcon", "id": "ecd30c7685e424c2ec1b60af886d56d4", "children": {}}, "popup_8173bec1e9560388e716024ca9c46c78": {"name": "Popup", "id": "8173bec1e9560388e716024ca9c46c78", "children": {}}}}, "marker_1faa27c1f522165ded5eab11e1b6c97d": {"name": "Marker", "id": "1faa27c1f522165ded5eab11e1b6c97d", "children": {"custom_icon_519350dd8c4f8941f4784f45e73566b0": {"name": "CustomIcon", "id": "519350dd8c4f8941f4784f45e73566b0", "children": {}}, "popup_555fbc5bd5584a4ee4863f712ea80b3a": {"name": "Popup", "id": "555fbc5bd5584a4ee4863f712ea80b3a", "children": {}}}}, "marker_bb3e2f8102d32c0ef7b0d89827f32cd4": {"name": "Marker", "id": "bb3e2f8102d32c0ef7b0d89827f32cd4", "children": {"custom_icon_3affcb6172a614f9189fa8d85d755e58": {"name": "CustomIcon", "id": "3affcb6172a614f9189fa8d85d755e58", "children": {}}, "popup_3c3e8faa7f514f470c6a81f0e831cbea": {"name": "Popup", "id": "3c3e8faa7f514f470c6a81f0e831cbea", "children": {}}}}, "marker_8c52abd01d16fe36b1bf816388f16947": {"name": "Marker", "id": "8c52abd01d16fe36b1bf816388f16947", "children": {"custom_icon_0802b5ad1806683407296fed5d878dc6": {"name": "CustomIcon", "id": "0802b5ad1806683407296fed5d878dc6", "children": {}}, "popup_542d513b8a4fc9274d07cac2b2e84181": {"name": "Popup", "id": "542d513b8a4fc9274d07cac2b2e84181", "children": {}}}}, "marker_130f037d7b6f5f284599cd3eee6e6420": {"name": "Marker", "id": "130f037d7b6f5f284599cd3eee6e6420", "children": {"custom_icon_4fd96da3662e1e53f5efdcfb776045e7": {"name": "CustomIcon", "id": "4fd96da3662e1e53f5efdcfb776045e7", "children": {}}, "popup_308e10d1a86f495fd96c676fff7f746e": {"name": "Popup", "id": "308e10d1a86f495fd96c676fff7f746e", "children": {}}}}, "marker_2d1fc96f09469a907043e0cb39c3d640": {"name": "Marker", "id": "2d1fc96f09469a907043e0cb39c3d640", "children": {"custom_icon_6b46e1e6be06dbd138deb613bbf0ff04": {"name": "CustomIcon", "id": "6b46e1e6be06dbd138deb613bbf0ff04", "children": {}}, "popup_e99dc83b03f5b1d297e4f449c6b88b69": {"name": "Popup", "id": "e99dc83b03f5b1d297e4f449c6b88b69", "children": {}}}}, "marker_df8d1b5f42942a42eb72af269163831b": {"name": "Marker", "id": "df8d1b5f42942a42eb72af269163831b", "children": {"custom_icon_48ce0978fad160620de92d4c2633d203": {"name": "CustomIcon", "id": "48ce0978fad160620de92d4c2633d203", "children": {}}, "popup_05130e69a30dd8ec32bc1e326838d24a": {"name": "Popup", "id": "05130e69a30dd8ec32bc1e326838d24a", "children": {}}}}, "marker_f92470caed94eeea9c38609dd981249c": {"name": "Marker", "id": "f92470caed94eeea9c38609dd981249c", "children": {"custom_icon_c6e2aa60401f6386bd6dcbeb6b96f364": {"name": "CustomIcon", "id": "c6e2aa60401f6386bd6dcbeb6b96f364", "children": {}}, "popup_3817913537cc3da73888a6895e4c23d2": {"name": "Popup", "id": "3817913537cc3da73888a6895e4c23d2", "children": {}}}}, "marker_97aa1fb3c72bc2a5c840be90bcb02c93": {"name": "Marker", "id": "97aa1fb3c72bc2a5c840be90bcb02c93", "children": {"custom_icon_03c7539d75daaa470319932cbc680a7e": {"name": "CustomIcon", "id": "03c7539d75daaa470319932cbc680a7e", "children": {}}, "popup_8641a35dbb830ae7eeee2e91a2405c8b": {"name": "Popup", "id": "8641a35dbb830ae7eeee2e91a2405c8b", "children": {}}}}, "marker_a43a780a328ac8be5cca1a2933c8529a": {"name": "Marker", "id": "a43a780a328ac8be5cca1a2933c8529a", "children": {"custom_icon_104bf55df77cf999c5e12838224eec32": {"name": "CustomIcon", "id": "104bf55df77cf999c5e12838224eec32", "children": {}}, "popup_79789ee6b7c6b3beb089ac2044ad3c10": {"name": "Popup", "id": "79789ee6b7c6b3beb089ac2044ad3c10", "children": {}}}}, "marker_5f2c4af22ed55da8ee68073cc049a72f": {"name": "Marker", "id": "5f2c4af22ed55da8ee68073cc049a72f", "children": {"custom_icon_2a39e9adf8882d20c90c38e04b05608d": {"name": "CustomIcon", "id": "2a39e9adf8882d20c90c38e04b05608d", "children": {}}, "popup_40975b65de4878fceaece12f50092b7e": {"name": "Popup", "id": "40975b65de4878fceaece12f50092b7e", "children": {}}}}}}
+{"name": "MarkerCluster", "id": "78d2e03d80908bfdc51fc798451f240f", "children": {"marker_05d3a3e8cd14682a91fd93b9de07c802": {"name": "Marker", "id": "05d3a3e8cd14682a91fd93b9de07c802", "children": {"custom_icon_7c4618932a4fea098f1244bebc6d8eda": {"name": "CustomIcon", "id": "7c4618932a4fea098f1244bebc6d8eda", "children": {}}, "popup_ceb0421d9cf1c13dc0924526f28f5760": {"name": "Popup", "id": "ceb0421d9cf1c13dc0924526f28f5760", "children": {}}}}, "marker_14dae9c6ee04e46c2612e2f3175d5c1f": {"name": "Marker", "id": "14dae9c6ee04e46c2612e2f3175d5c1f", "children": {"custom_icon_11adb2b22321d7afcd322f80dba44c39": {"name": "CustomIcon", "id": "11adb2b22321d7afcd322f80dba44c39", "children": {}}, "popup_51d00f46ff7d9e2fb745dabbb52ce716": {"name": "Popup", "id": "51d00f46ff7d9e2fb745dabbb52ce716", "children": {}}}}, "marker_e4931ae861c0e323de3f9308dc61b4b0": {"name": "Marker", "id": "e4931ae861c0e323de3f9308dc61b4b0", "children": {"custom_icon_5c128b841162304af11dc67ca32f357f": {"name": "CustomIcon", "id": "5c128b841162304af11dc67ca32f357f", "children": {}}, "popup_1655d8e009123ae6dae15601d2b6e433": {"name": "Popup", "id": "1655d8e009123ae6dae15601d2b6e433", "children": {}}}}, "marker_aff88241c5c845183a63a76ecc5df522": {"name": "Marker", "id": "aff88241c5c845183a63a76ecc5df522", "children": {"custom_icon_c77e07c4cbb6a53394996cf90763c360": {"name": "CustomIcon", "id": "c77e07c4cbb6a53394996cf90763c360", "children": {}}, "popup_fb4a89dc8b58ae06bfce92d15bd89e80": {"name": "Popup", "id": "fb4a89dc8b58ae06bfce92d15bd89e80", "children": {}}}}, "marker_59128fb05684c14498905d176de852a0": {"name": "Marker", "id": "59128fb05684c14498905d176de852a0", "children": {"custom_icon_97b472463561433b159b3bc85d1b954a": {"name": "CustomIcon", "id": "97b472463561433b159b3bc85d1b954a", "children": {}}, "popup_5a269a0d6300fda81424f4e86c3b9573": {"name": "Popup", "id": "5a269a0d6300fda81424f4e86c3b9573", "children": {}}}}, "marker_9c377067cd81a3513bf70bfb84950c40": {"name": "Marker", "id": "9c377067cd81a3513bf70bfb84950c40", "children": {"custom_icon_5e0cb7e2323e91586e161a7e6735b813": {"name": "CustomIcon", "id": "5e0cb7e2323e91586e161a7e6735b813", "children": {}}, "popup_b5cb77e881d391b6e6acc08800bf32ae": {"name": "Popup", "id": "b5cb77e881d391b6e6acc08800bf32ae", "children": {}}}}, "marker_32a5ce7e54f06c4e557de85eaad75eda": {"name": "Marker", "id": "32a5ce7e54f06c4e557de85eaad75eda", "children": {"custom_icon_4072424cec41e58c013d9aa5d49a3b83": {"name": "CustomIcon", "id": "4072424cec41e58c013d9aa5d49a3b83", "children": {}}, "popup_e24cb0892389682a5c750709a803816b": {"name": "Popup", "id": "e24cb0892389682a5c750709a803816b", "children": {}}}}, "marker_8b75b26c6c9df435fdc4e6d91cc08fcc": {"name": "Marker", "id": "8b75b26c6c9df435fdc4e6d91cc08fcc", "children": {"custom_icon_a1ec2a564077eccaaa5e698320ff8d2b": {"name": "CustomIcon", "id": "a1ec2a564077eccaaa5e698320ff8d2b", "children": {}}, "popup_bfd861bfdf0ae626a0361ab1ab3f2169": {"name": "Popup", "id": "bfd861bfdf0ae626a0361ab1ab3f2169", "children": {}}}}, "marker_9aa77a8da4c3c49f46b3586884415458": {"name": "Marker", "id": "9aa77a8da4c3c49f46b3586884415458", "children": {"custom_icon_b4deeadcf7ec35e6fb2c1c3faa310ea3": {"name": "CustomIcon", "id": "b4deeadcf7ec35e6fb2c1c3faa310ea3", "children": {}}, "popup_2c6160378e1ebca39f39d7e967f0bf8b": {"name": "Popup", "id": "2c6160378e1ebca39f39d7e967f0bf8b", "children": {}}}}, "marker_67442cbd0fda94e0479c1363e785d003": {"name": "Marker", "id": "67442cbd0fda94e0479c1363e785d003", "children": {"custom_icon_1f9b7b910a4eb34031f7d9de0e215b78": {"name": "CustomIcon", "id": "1f9b7b910a4eb34031f7d9de0e215b78", "children": {}}, "popup_fd26d549181f98b9d353b0d52984fb7d": {"name": "Popup", "id": "fd26d549181f98b9d353b0d52984fb7d", "children": {}}}}, "marker_c4d2b390fc90a8797d6a081a70d418b8": {"name": "Marker", "id": "c4d2b390fc90a8797d6a081a70d418b8", "children": {"custom_icon_0eae1fc6e564d84ddc99c715a2202518": {"name": "CustomIcon", "id": "0eae1fc6e564d84ddc99c715a2202518", "children": {}}, "popup_009e0e38c02c4ff67b44e90d7fd4aa40": {"name": "Popup", "id": "009e0e38c02c4ff67b44e90d7fd4aa40", "children": {}}}}, "marker_f00a3d51b4e698494abd623b3b48c221": {"name": "Marker", "id": "f00a3d51b4e698494abd623b3b48c221", "children": {"custom_icon_b2de00da7d19f38cb978a50e0b4c7345": {"name": "CustomIcon", "id": "b2de00da7d19f38cb978a50e0b4c7345", "children": {}}, "popup_695174f188a3d334a0a8bd99fdd1f694": {"name": "Popup", "id": "695174f188a3d334a0a8bd99fdd1f694", "children": {}}}}, "marker_3e678642e00ff02c31e17e959646b4e2": {"name": "Marker", "id": "3e678642e00ff02c31e17e959646b4e2", "children": {"custom_icon_7d59d50a835807fc1e7801078c16417d": {"name": "CustomIcon", "id": "7d59d50a835807fc1e7801078c16417d", "children": {}}, "popup_43dcba1ba482d47fdccf3b595d74de76": {"name": "Popup", "id": "43dcba1ba482d47fdccf3b595d74de76", "children": {}}}}, "marker_8ee930fc2a98419ec06856891a7d70db": {"name": "Marker", "id": "8ee930fc2a98419ec06856891a7d70db", "children": {"custom_icon_f18f527e0f911e116c753817f7fd70aa": {"name": "CustomIcon", "id": "f18f527e0f911e116c753817f7fd70aa", "children": {}}, "popup_8173bec1e9560388e716024ca9c46c78": {"name": "Popup", "id": "8173bec1e9560388e716024ca9c46c78", "children": {}}}}, "marker_0d88102550b18752a366bd87f8e83392": {"name": "Marker", "id": "0d88102550b18752a366bd87f8e83392", "children": {"custom_icon_b96d764deb64ef6ca2fc069dc63c6bc3": {"name": "CustomIcon", "id": "b96d764deb64ef6ca2fc069dc63c6bc3", "children": {}}, "popup_555fbc5bd5584a4ee4863f712ea80b3a": {"name": "Popup", "id": "555fbc5bd5584a4ee4863f712ea80b3a", "children": {}}}}, "marker_b7ec584112d7c2510ce3e83b3d9d71f5": {"name": "Marker", "id": "b7ec584112d7c2510ce3e83b3d9d71f5", "children": {"custom_icon_f34842aa690552c892f7118d36b26f0e": {"name": "CustomIcon", "id": "f34842aa690552c892f7118d36b26f0e", "children": {}}, "popup_3c3e8faa7f514f470c6a81f0e831cbea": {"name": "Popup", "id": "3c3e8faa7f514f470c6a81f0e831cbea", "children": {}}}}, "marker_36fe4fb4b042d9864b022a8f50553e61": {"name": "Marker", "id": "36fe4fb4b042d9864b022a8f50553e61", "children": {"custom_icon_d6f495dc4f22d8656aa83e46a585947d": {"name": "CustomIcon", "id": "d6f495dc4f22d8656aa83e46a585947d", "children": {}}, "popup_542d513b8a4fc9274d07cac2b2e84181": {"name": "Popup", "id": "542d513b8a4fc9274d07cac2b2e84181", "children": {}}}}, "marker_51dde2f1384d0d36cdaa68ece5bb78b1": {"name": "Marker", "id": "51dde2f1384d0d36cdaa68ece5bb78b1", "children": {"custom_icon_309b3f45706b766c2959811b6c7e275f": {"name": "CustomIcon", "id": "309b3f45706b766c2959811b6c7e275f", "children": {}}, "popup_308e10d1a86f495fd96c676fff7f746e": {"name": "Popup", "id": "308e10d1a86f495fd96c676fff7f746e", "children": {}}}}, "marker_293959dec671ecf96dcd989449f16ae3": {"name": "Marker", "id": "293959dec671ecf96dcd989449f16ae3", "children": {"custom_icon_852e51915e575113ffd1d76408b1b236": {"name": "CustomIcon", "id": "852e51915e575113ffd1d76408b1b236", "children": {}}, "popup_e99dc83b03f5b1d297e4f449c6b88b69": {"name": "Popup", "id": "e99dc83b03f5b1d297e4f449c6b88b69", "children": {}}}}, "marker_a4d43edd5723b77892df33ccd0b9ec53": {"name": "Marker", "id": "a4d43edd5723b77892df33ccd0b9ec53", "children": {"custom_icon_d1931712110c94d33f7348ca797e0271": {"name": "CustomIcon", "id": "d1931712110c94d33f7348ca797e0271", "children": {}}, "popup_05130e69a30dd8ec32bc1e326838d24a": {"name": "Popup", "id": "05130e69a30dd8ec32bc1e326838d24a", "children": {}}}}, "marker_0f4cc893761efc4805f54d3054e12283": {"name": "Marker", "id": "0f4cc893761efc4805f54d3054e12283", "children": {"custom_icon_512b366858ea08df6aa4b71faef90005": {"name": "CustomIcon", "id": "512b366858ea08df6aa4b71faef90005", "children": {}}, "popup_3817913537cc3da73888a6895e4c23d2": {"name": "Popup", "id": "3817913537cc3da73888a6895e4c23d2", "children": {}}}}, "marker_55c54a16e740b7bf06f7649ac89b9377": {"name": "Marker", "id": "55c54a16e740b7bf06f7649ac89b9377", "children": {"custom_icon_6cb1e4d3b6416286c7ddef6fe327e163": {"name": "CustomIcon", "id": "6cb1e4d3b6416286c7ddef6fe327e163", "children": {}}, "popup_8641a35dbb830ae7eeee2e91a2405c8b": {"name": "Popup", "id": "8641a35dbb830ae7eeee2e91a2405c8b", "children": {}}}}, "marker_511dedf898910cad522d08f29b036d32": {"name": "Marker", "id": "511dedf898910cad522d08f29b036d32", "children": {"custom_icon_1d086c92a2ae4509f2d9725d07579ae8": {"name": "CustomIcon", "id": "1d086c92a2ae4509f2d9725d07579ae8", "children": {}}, "popup_79789ee6b7c6b3beb089ac2044ad3c10": {"name": "Popup", "id": "79789ee6b7c6b3beb089ac2044ad3c10", "children": {}}}}, "marker_1ce156be6d32d27dd9d63794b77fed06": {"name": "Marker", "id": "1ce156be6d32d27dd9d63794b77fed06", "children": {"custom_icon_db33a35e19cb493d1ec3273d319cd805": {"name": "CustomIcon", "id": "db33a35e19cb493d1ec3273d319cd805", "children": {}}, "popup_40975b65de4878fceaece12f50092b7e": {"name": "Popup", "id": "40975b65de4878fceaece12f50092b7e", "children": {}}}}}}
+{"name": "MarkerCluster", "id": "ff342115f20ec20bf718adfd99939872", "children": {}}
+{"name": "MarkerCluster", "id": "e4789b73612a52af3e20241d64cdd848", "children": {"marker_a06c1fdee918ba05f4cf5166fbb82652": {"name": "Marker", "id": "a06c1fdee918ba05f4cf5166fbb82652", "children": {"custom_icon_97ddf576556a4bda0e6aa3f019140e64": {"name": "CustomIcon", "id": "97ddf576556a4bda0e6aa3f019140e64", "children": {}}, "popup_ceb0421d9cf1c13dc0924526f28f5760": {"name": "Popup", "id": "ceb0421d9cf1c13dc0924526f28f5760", "children": {}}}}, "marker_3f54150182be8ae919862af9396241e1": {"name": "Marker", "id": "3f54150182be8ae919862af9396241e1", "children": {"custom_icon_3617bec412725aee463c2b3ed8f2934b": {"name": "CustomIcon", "id": "3617bec412725aee463c2b3ed8f2934b", "children": {}}, "popup_1655d8e009123ae6dae15601d2b6e433": {"name": "Popup", "id": "1655d8e009123ae6dae15601d2b6e433", "children": {}}}}, "marker_f9bd697294df0ddfa66124da1f01f149": {"name": "Marker", "id": "f9bd697294df0ddfa66124da1f01f149", "children": {"custom_icon_95cdf50fbe2a9c95ca947b7623247e56": {"name": "CustomIcon", "id": "95cdf50fbe2a9c95ca947b7623247e56", "children": {}}, "popup_fb4a89dc8b58ae06bfce92d15bd89e80": {"name": "Popup", "id": "fb4a89dc8b58ae06bfce92d15bd89e80", "children": {}}}}, "marker_34e005ec8234ce1338a04e38461f726d": {"name": "Marker", "id": "34e005ec8234ce1338a04e38461f726d", "children": {"custom_icon_923d2bdbb5dd36cd1dc399e033563e63": {"name": "CustomIcon", "id": "923d2bdbb5dd36cd1dc399e033563e63", "children": {}}, "popup_5a269a0d6300fda81424f4e86c3b9573": {"name": "Popup", "id": "5a269a0d6300fda81424f4e86c3b9573", "children": {}}}}, "marker_19dca757db907cc7fa4afd43082c6111": {"name": "Marker", "id": "19dca757db907cc7fa4afd43082c6111", "children": {"custom_icon_03df3b3f588d048e8a8d2ad34e1ec7bc": {"name": "CustomIcon", "id": "03df3b3f588d048e8a8d2ad34e1ec7bc", "children": {}}, "popup_b5cb77e881d391b6e6acc08800bf32ae": {"name": "Popup", "id": "b5cb77e881d391b6e6acc08800bf32ae", "children": {}}}}, "marker_0bec1f216a39ed019608a83780b721bc": {"name": "Marker", "id": "0bec1f216a39ed019608a83780b721bc", "children": {"custom_icon_d6dd96720efee23cc21e9426765fb118": {"name": "CustomIcon", "id": "d6dd96720efee23cc21e9426765fb118", "children": {}}, "popup_e24cb0892389682a5c750709a803816b": {"name": "Popup", "id": "e24cb0892389682a5c750709a803816b", "children": {}}}}, "marker_4c8287d647ccf4dbd3e7298e14bcbed2": {"name": "Marker", "id": "4c8287d647ccf4dbd3e7298e14bcbed2", "children": {"custom_icon_b0dc55cde9d34149917cf6313d71b503": {"name": "CustomIcon", "id": "b0dc55cde9d34149917cf6313d71b503", "children": {}}, "popup_bfd861bfdf0ae626a0361ab1ab3f2169": {"name": "Popup", "id": "bfd861bfdf0ae626a0361ab1ab3f2169", "children": {}}}}, "marker_21917b849e55af4322397b91f8215ba5": {"name": "Marker", "id": "21917b849e55af4322397b91f8215ba5", "children": {"custom_icon_78aaa28c46df1c10af0dc08349023754": {"name": "CustomIcon", "id": "78aaa28c46df1c10af0dc08349023754", "children": {}}, "popup_2c6160378e1ebca39f39d7e967f0bf8b": {"name": "Popup", "id": "2c6160378e1ebca39f39d7e967f0bf8b", "children": {}}}}, "marker_907731a638276622fef653785ec6e1e2": {"name": "Marker", "id": "907731a638276622fef653785ec6e1e2", "children": {"custom_icon_505209f253505c5599bc842849ea28f6": {"name": "CustomIcon", "id": "505209f253505c5599bc842849ea28f6", "children": {}}, "popup_009e0e38c02c4ff67b44e90d7fd4aa40": {"name": "Popup", "id": "009e0e38c02c4ff67b44e90d7fd4aa40", "children": {}}}}, "marker_a3cc80d10501643f6955bb7d98da07e0": {"name": "Marker", "id": "a3cc80d10501643f6955bb7d98da07e0", "children": {"custom_icon_f10f976eaa9ca243851e163fecec092e": {"name": "CustomIcon", "id": "f10f976eaa9ca243851e163fecec092e", "children": {}}, "popup_695174f188a3d334a0a8bd99fdd1f694": {"name": "Popup", "id": "695174f188a3d334a0a8bd99fdd1f694", "children": {}}}}, "marker_ac0499fdd7c4ec3088338a76d64479b5": {"name": "Marker", "id": "ac0499fdd7c4ec3088338a76d64479b5", "children": {"custom_icon_927e09db1e171f108880d4c1fa1a548a": {"name": "CustomIcon", "id": "927e09db1e171f108880d4c1fa1a548a", "children": {}}, "popup_8173bec1e9560388e716024ca9c46c78": {"name": "Popup", "id": "8173bec1e9560388e716024ca9c46c78", "children": {}}}}, "marker_f43007ed9febc5f50f2b8bded50cac8d": {"name": "Marker", "id": "f43007ed9febc5f50f2b8bded50cac8d", "children": {"custom_icon_01f5c615317ae84c2c092ff2ae4bba56": {"name": "CustomIcon", "id": "01f5c615317ae84c2c092ff2ae4bba56", "children": {}}, "popup_555fbc5bd5584a4ee4863f712ea80b3a": {"name": "Popup", "id": "555fbc5bd5584a4ee4863f712ea80b3a", "children": {}}}}, "marker_168f044fe8fee452b785e9ac7d561529": {"name": "Marker", "id": "168f044fe8fee452b785e9ac7d561529", "children": {"custom_icon_fba46730b63f41a289dcea4db93e4a00": {"name": "CustomIcon", "id": "fba46730b63f41a289dcea4db93e4a00", "children": {}}, "popup_3c3e8faa7f514f470c6a81f0e831cbea": {"name": "Popup", "id": "3c3e8faa7f514f470c6a81f0e831cbea", "children": {}}}}, "marker_44c4bef40b407b727969d419376870a5": {"name": "Marker", "id": "44c4bef40b407b727969d419376870a5", "children": {"custom_icon_1a8a1e9007d6fb340d30b2ba7c7e78ad": {"name": "CustomIcon", "id": "1a8a1e9007d6fb340d30b2ba7c7e78ad", "children": {}}, "popup_308e10d1a86f495fd96c676fff7f746e": {"name": "Popup", "id": "308e10d1a86f495fd96c676fff7f746e", "children": {}}}}, "marker_595dc4bd69fab899261a19af73ebc433": {"name": "Marker", "id": "595dc4bd69fab899261a19af73ebc433", "children": {"custom_icon_2ed86edbbe6dd6f35a66347d94778070": {"name": "CustomIcon", "id": "2ed86edbbe6dd6f35a66347d94778070", "children": {}}, "popup_e99dc83b03f5b1d297e4f449c6b88b69": {"name": "Popup", "id": "e99dc83b03f5b1d297e4f449c6b88b69", "children": {}}}}, "marker_dbd057b075949139942050ffd730da06": {"name": "Marker", "id": "dbd057b075949139942050ffd730da06", "children": {"custom_icon_c6ee6a7f8eeb3f37d73cc21e97a7d265": {"name": "CustomIcon", "id": "c6ee6a7f8eeb3f37d73cc21e97a7d265", "children": {}}, "popup_05130e69a30dd8ec32bc1e326838d24a": {"name": "Popup", "id": "05130e69a30dd8ec32bc1e326838d24a", "children": {}}}}, "marker_898334253760d01c01559a0e5d25c2c1": {"name": "Marker", "id": "898334253760d01c01559a0e5d25c2c1", "children": {"custom_icon_1af24a7e236472d9db9bc982d90ebddf": {"name": "CustomIcon", "id": "1af24a7e236472d9db9bc982d90ebddf", "children": {}}, "popup_3817913537cc3da73888a6895e4c23d2": {"name": "Popup", "id": "3817913537cc3da73888a6895e4c23d2", "children": {}}}}}}
+ultimate boss {"name": "Map", "id": "330184a2f700d3b4ac960e28bb0b9fdc", "children": {"openstreetmap": {"name": "TileLayer", "id": "707369fd5ac534a0583f5d3e375e15d4", "children": {}}, "feature_group_496de1412e44f5236b12c837a0437bb0": {"name": "FeatureGroup", "id": "496de1412e44f5236b12c837a0437bb0", "children": {"marker_cluster_e4789b73612a52af3e20241d64cdd848": {"name": "MarkerCluster", "id": "e4789b73612a52af3e20241d64cdd848", "children": {"marker_a06c1fdee918ba05f4cf5166fbb82652": {"name": "Marker", "id": "a06c1fdee918ba05f4cf5166fbb82652", "children": {"custom_icon_97ddf576556a4bda0e6aa3f019140e64": {"name": "CustomIcon", "id": "97ddf576556a4bda0e6aa3f019140e64", "children": {}}, "popup_ceb0421d9cf1c13dc0924526f28f5760": {"name": "Popup", "id": "ceb0421d9cf1c13dc0924526f28f5760", "children": {}}}}, "marker_3f54150182be8ae919862af9396241e1": {"name": "Marker", "id": "3f54150182be8ae919862af9396241e1", "children": {"custom_icon_3617bec412725aee463c2b3ed8f2934b": {"name": "CustomIcon", "id": "3617bec412725aee463c2b3ed8f2934b", "children": {}}, "popup_1655d8e009123ae6dae15601d2b6e433": {"name": "Popup", "id": "1655d8e009123ae6dae15601d2b6e433", "children": {}}}}, "marker_f9bd697294df0ddfa66124da1f01f149": {"name": "Marker", "id": "f9bd697294df0ddfa66124da1f01f149", "children": {"custom_icon_95cdf50fbe2a9c95ca947b7623247e56": {"name": "CustomIcon", "id": "95cdf50fbe2a9c95ca947b7623247e56", "children": {}}, "popup_fb4a89dc8b58ae06bfce92d15bd89e80": {"name": "Popup", "id": "fb4a89dc8b58ae06bfce92d15bd89e80", "children": {}}}}, "marker_34e005ec8234ce1338a04e38461f726d": {"name": "Marker", "id": "34e005ec8234ce1338a04e38461f726d", "children": {"custom_icon_923d2bdbb5dd36cd1dc399e033563e63": {"name": "CustomIcon", "id": "923d2bdbb5dd36cd1dc399e033563e63", "children": {}}, "popup_5a269a0d6300fda81424f4e86c3b9573": {"name": "Popup", "id": "5a269a0d6300fda81424f4e86c3b9573", "children": {}}}}, "marker_19dca757db907cc7fa4afd43082c6111": {"name": "Marker", "id": "19dca757db907cc7fa4afd43082c6111", "children": {"custom_icon_03df3b3f588d048e8a8d2ad34e1ec7bc": {"name": "CustomIcon", "id": "03df3b3f588d048e8a8d2ad34e1ec7bc", "children": {}}, "popup_b5cb77e881d391b6e6acc08800bf32ae": {"name": "Popup", "id": "b5cb77e881d391b6e6acc08800bf32ae", "children": {}}}}, "marker_0bec1f216a39ed019608a83780b721bc": {"name": "Marker", "id": "0bec1f216a39ed019608a83780b721bc", "children": {"custom_icon_d6dd96720efee23cc21e9426765fb118": {"name": "CustomIcon", "id": "d6dd96720efee23cc21e9426765fb118", "children": {}}, "popup_e24cb0892389682a5c750709a803816b": {"name": "Popup", "id": "e24cb0892389682a5c750709a803816b", "children": {}}}}, "marker_4c8287d647ccf4dbd3e7298e14bcbed2": {"name": "Marker", "id": "4c8287d647ccf4dbd3e7298e14bcbed2", "children": {"custom_icon_b0dc55cde9d34149917cf6313d71b503": {"name": "CustomIcon", "id": "b0dc55cde9d34149917cf6313d71b503", "children": {}}, "popup_bfd861bfdf0ae626a0361ab1ab3f2169": {"name": "Popup", "id": "bfd861bfdf0ae626a0361ab1ab3f2169", "children": {}}}}, "marker_21917b849e55af4322397b91f8215ba5": {"name": "Marker", "id": "21917b849e55af4322397b91f8215ba5", "children": {"custom_icon_78aaa28c46df1c10af0dc08349023754": {"name": "CustomIcon", "id": "78aaa28c46df1c10af0dc08349023754", "children": {}}, "popup_2c6160378e1ebca39f39d7e967f0bf8b": {"name": "Popup", "id": "2c6160378e1ebca39f39d7e967f0bf8b", "children": {}}}}, "marker_907731a638276622fef653785ec6e1e2": {"name": "Marker", "id": "907731a638276622fef653785ec6e1e2", "children": {"custom_icon_505209f253505c5599bc842849ea28f6": {"name": "CustomIcon", "id": "505209f253505c5599bc842849ea28f6", "children": {}}, "popup_009e0e38c02c4ff67b44e90d7fd4aa40": {"name": "Popup", "id": "009e0e38c02c4ff67b44e90d7fd4aa40", "children": {}}}}, "marker_a3cc80d10501643f6955bb7d98da07e0": {"name": "Marker", "id": "a3cc80d10501643f6955bb7d98da07e0", "children": {"custom_icon_f10f976eaa9ca243851e163fecec092e": {"name": "CustomIcon", "id": "f10f976eaa9ca243851e163fecec092e", "children": {}}, "popup_695174f188a3d334a0a8bd99fdd1f694": {"name": "Popup", "id": "695174f188a3d334a0a8bd99fdd1f694", "children": {}}}}, "marker_ac0499fdd7c4ec3088338a76d64479b5": {"name": "Marker", "id": "ac0499fdd7c4ec3088338a76d64479b5", "children": {"custom_icon_927e09db1e171f108880d4c1fa1a548a": {"name": "CustomIcon", "id": "927e09db1e171f108880d4c1fa1a548a", "children": {}}, "popup_8173bec1e9560388e716024ca9c46c78": {"name": "Popup", "id": "8173bec1e9560388e716024ca9c46c78", "children": {}}}}, "marker_f43007ed9febc5f50f2b8bded50cac8d": {"name": "Marker", "id": "f43007ed9febc5f50f2b8bded50cac8d", "children": {"custom_icon_01f5c615317ae84c2c092ff2ae4bba56": {"name": "CustomIcon", "id": "01f5c615317ae84c2c092ff2ae4bba56", "children": {}}, "popup_555fbc5bd5584a4ee4863f712ea80b3a": {"name": "Popup", "id": "555fbc5bd5584a4ee4863f712ea80b3a", "children": {}}}}, "marker_168f044fe8fee452b785e9ac7d561529": {"name": "Marker", "id": "168f044fe8fee452b785e9ac7d561529", "children": {"custom_icon_fba46730b63f41a289dcea4db93e4a00": {"name": "CustomIcon", "id": "fba46730b63f41a289dcea4db93e4a00", "children": {}}, "popup_3c3e8faa7f514f470c6a81f0e831cbea": {"name": "Popup", "id": "3c3e8faa7f514f470c6a81f0e831cbea", "children": {}}}}, "marker_44c4bef40b407b727969d419376870a5": {"name": "Marker", "id": "44c4bef40b407b727969d419376870a5", "children": {"custom_icon_1a8a1e9007d6fb340d30b2ba7c7e78ad": {"name": "CustomIcon", "id": "1a8a1e9007d6fb340d30b2ba7c7e78ad", "children": {}}, "popup_308e10d1a86f495fd96c676fff7f746e": {"name": "Popup", "id": "308e10d1a86f495fd96c676fff7f746e", "children": {}}}}, "marker_595dc4bd69fab899261a19af73ebc433": {"name": "Marker", "id": "595dc4bd69fab899261a19af73ebc433", "children": {"custom_icon_2ed86edbbe6dd6f35a66347d94778070": {"name": "CustomIcon", "id": "2ed86edbbe6dd6f35a66347d94778070", "children": {}}, "popup_e99dc83b03f5b1d297e4f449c6b88b69": {"name": "Popup", "id": "e99dc83b03f5b1d297e4f449c6b88b69", "children": {}}}}, "marker_dbd057b075949139942050ffd730da06": {"name": "Marker", "id": "dbd057b075949139942050ffd730da06", "children": {"custom_icon_c6ee6a7f8eeb3f37d73cc21e97a7d265": {"name": "CustomIcon", "id": "c6ee6a7f8eeb3f37d73cc21e97a7d265", "children": {}}, "popup_05130e69a30dd8ec32bc1e326838d24a": {"name": "Popup", "id": "05130e69a30dd8ec32bc1e326838d24a", "children": {}}}}, "marker_898334253760d01c01559a0e5d25c2c1": {"name": "Marker", "id": "898334253760d01c01559a0e5d25c2c1", "children": {"custom_icon_1af24a7e236472d9db9bc982d90ebddf": {"name": "CustomIcon", "id": "1af24a7e236472d9db9bc982d90ebddf", "children": {}}, "popup_3817913537cc3da73888a6895e4c23d2": {"name": "Popup", "id": "3817913537cc3da73888a6895e4c23d2", "children": {}}}}}}}}, "feature_group_9f392c763899f0250f40d10bcd7d797a": {"name": "FeatureGroup", "id": "9f392c763899f0250f40d10bcd7d797a", "children": {"marker_cluster_78d2e03d80908bfdc51fc798451f240f": {"name": "MarkerCluster", "id": "78d2e03d80908bfdc51fc798451f240f", "children": {"marker_05d3a3e8cd14682a91fd93b9de07c802": {"name": "Marker", "id": "05d3a3e8cd14682a91fd93b9de07c802", "children": {"custom_icon_7c4618932a4fea098f1244bebc6d8eda": {"name": "CustomIcon", "id": "7c4618932a4fea098f1244bebc6d8eda", "children": {}}, "popup_ceb0421d9cf1c13dc0924526f28f5760": {"name": "Popup", "id": "ceb0421d9cf1c13dc0924526f28f5760", "children": {}}}}, "marker_14dae9c6ee04e46c2612e2f3175d5c1f": {"name": "Marker", "id": "14dae9c6ee04e46c2612e2f3175d5c1f", "children": {"custom_icon_11adb2b22321d7afcd322f80dba44c39": {"name": "CustomIcon", "id": "11adb2b22321d7afcd322f80dba44c39", "children": {}}, "popup_51d00f46ff7d9e2fb745dabbb52ce716": {"name": "Popup", "id": "51d00f46ff7d9e2fb745dabbb52ce716", "children": {}}}}, "marker_e4931ae861c0e323de3f9308dc61b4b0": {"name": "Marker", "id": "e4931ae861c0e323de3f9308dc61b4b0", "children": {"custom_icon_5c128b841162304af11dc67ca32f357f": {"name": "CustomIcon", "id": "5c128b841162304af11dc67ca32f357f", "children": {}}, "popup_1655d8e009123ae6dae15601d2b6e433": {"name": "Popup", "id": "1655d8e009123ae6dae15601d2b6e433", "children": {}}}}, "marker_aff88241c5c845183a63a76ecc5df522": {"name": "Marker", "id": "aff88241c5c845183a63a76ecc5df522", "children": {"custom_icon_c77e07c4cbb6a53394996cf90763c360": {"name": "CustomIcon", "id": "c77e07c4cbb6a53394996cf90763c360", "children": {}}, "popup_fb4a89dc8b58ae06bfce92d15bd89e80": {"name": "Popup", "id": "fb4a89dc8b58ae06bfce92d15bd89e80", "children": {}}}}, "marker_59128fb05684c14498905d176de852a0": {"name": "Marker", "id": "59128fb05684c14498905d176de852a0", "children": {"custom_icon_97b472463561433b159b3bc85d1b954a": {"name": "CustomIcon", "id": "97b472463561433b159b3bc85d1b954a", "children": {}}, "popup_5a269a0d6300fda81424f4e86c3b9573": {"name": "Popup", "id": "5a269a0d6300fda81424f4e86c3b9573", "children": {}}}}, "marker_9c377067cd81a3513bf70bfb84950c40": {"name": "Marker", "id": "9c377067cd81a3513bf70bfb84950c40", "children": {"custom_icon_5e0cb7e2323e91586e161a7e6735b813": {"name": "CustomIcon", "id": "5e0cb7e2323e91586e161a7e6735b813", "children": {}}, "popup_b5cb77e881d391b6e6acc08800bf32ae": {"name": "Popup", "id": "b5cb77e881d391b6e6acc08800bf32ae", "children": {}}}}, "marker_32a5ce7e54f06c4e557de85eaad75eda": {"name": "Marker", "id": "32a5ce7e54f06c4e557de85eaad75eda", "children": {"custom_icon_4072424cec41e58c013d9aa5d49a3b83": {"name": "CustomIcon", "id": "4072424cec41e58c013d9aa5d49a3b83", "children": {}}, "popup_e24cb0892389682a5c750709a803816b": {"name": "Popup", "id": "e24cb0892389682a5c750709a803816b", "children": {}}}}, "marker_8b75b26c6c9df435fdc4e6d91cc08fcc": {"name": "Marker", "id": "8b75b26c6c9df435fdc4e6d91cc08fcc", "children": {"custom_icon_a1ec2a564077eccaaa5e698320ff8d2b": {"name": "CustomIcon", "id": "a1ec2a564077eccaaa5e698320ff8d2b", "children": {}}, "popup_bfd861bfdf0ae626a0361ab1ab3f2169": {"name": "Popup", "id": "bfd861bfdf0ae626a0361ab1ab3f2169", "children": {}}}}, "marker_9aa77a8da4c3c49f46b3586884415458": {"name": "Marker", "id": "9aa77a8da4c3c49f46b3586884415458", "children": {"custom_icon_b4deeadcf7ec35e6fb2c1c3faa310ea3": {"name": "CustomIcon", "id": "b4deeadcf7ec35e6fb2c1c3faa310ea3", "children": {}}, "popup_2c6160378e1ebca39f39d7e967f0bf8b": {"name": "Popup", "id": "2c6160378e1ebca39f39d7e967f0bf8b", "children": {}}}}, "marker_67442cbd0fda94e0479c1363e785d003": {"name": "Marker", "id": "67442cbd0fda94e0479c1363e785d003", "children": {"custom_icon_1f9b7b910a4eb34031f7d9de0e215b78": {"name": "CustomIcon", "id": "1f9b7b910a4eb34031f7d9de0e215b78", "children": {}}, "popup_fd26d549181f98b9d353b0d52984fb7d": {"name": "Popup", "id": "fd26d549181f98b9d353b0d52984fb7d", "children": {}}}}, "marker_c4d2b390fc90a8797d6a081a70d418b8": {"name": "Marker", "id": "c4d2b390fc90a8797d6a081a70d418b8", "children": {"custom_icon_0eae1fc6e564d84ddc99c715a2202518": {"name": "CustomIcon", "id": "0eae1fc6e564d84ddc99c715a2202518", "children": {}}, "popup_009e0e38c02c4ff67b44e90d7fd4aa40": {"name": "Popup", "id": "009e0e38c02c4ff67b44e90d7fd4aa40", "children": {}}}}, "marker_f00a3d51b4e698494abd623b3b48c221": {"name": "Marker", "id": "f00a3d51b4e698494abd623b3b48c221", "children": {"custom_icon_b2de00da7d19f38cb978a50e0b4c7345": {"name": "CustomIcon", "id": "b2de00da7d19f38cb978a50e0b4c7345", "children": {}}, "popup_695174f188a3d334a0a8bd99fdd1f694": {"name": "Popup", "id": "695174f188a3d334a0a8bd99fdd1f694", "children": {}}}}, "marker_3e678642e00ff02c31e17e959646b4e2": {"name": "Marker", "id": "3e678642e00ff02c31e17e959646b4e2", "children": {"custom_icon_7d59d50a835807fc1e7801078c16417d": {"name": "CustomIcon", "id": "7d59d50a835807fc1e7801078c16417d", "children": {}}, "popup_43dcba1ba482d47fdccf3b595d74de76": {"name": "Popup", "id": "43dcba1ba482d47fdccf3b595d74de76", "children": {}}}}, "marker_8ee930fc2a98419ec06856891a7d70db": {"name": "Marker", "id": "8ee930fc2a98419ec06856891a7d70db", "children": {"custom_icon_f18f527e0f911e116c753817f7fd70aa": {"name": "CustomIcon", "id": "f18f527e0f911e116c753817f7fd70aa", "children": {}}, "popup_8173bec1e9560388e716024ca9c46c78": {"name": "Popup", "id": "8173bec1e9560388e716024ca9c46c78", "children": {}}}}, "marker_0d88102550b18752a366bd87f8e83392": {"name": "Marker", "id": "0d88102550b18752a366bd87f8e83392", "children": {"custom_icon_b96d764deb64ef6ca2fc069dc63c6bc3": {"name": "CustomIcon", "id": "b96d764deb64ef6ca2fc069dc63c6bc3", "children": {}}, "popup_555fbc5bd5584a4ee4863f712ea80b3a": {"name": "Popup", "id": "555fbc5bd5584a4ee4863f712ea80b3a", "children": {}}}}, "marker_b7ec584112d7c2510ce3e83b3d9d71f5": {"name": "Marker", "id": "b7ec584112d7c2510ce3e83b3d9d71f5", "children": {"custom_icon_f34842aa690552c892f7118d36b26f0e": {"name": "CustomIcon", "id": "f34842aa690552c892f7118d36b26f0e", "children": {}}, "popup_3c3e8faa7f514f470c6a81f0e831cbea": {"name": "Popup", "id": "3c3e8faa7f514f470c6a81f0e831cbea", "children": {}}}}, "marker_36fe4fb4b042d9864b022a8f50553e61": {"name": "Marker", "id": "36fe4fb4b042d9864b022a8f50553e61", "children": {"custom_icon_d6f495dc4f22d8656aa83e46a585947d": {"name": "CustomIcon", "id": "d6f495dc4f22d8656aa83e46a585947d", "children": {}}, "popup_542d513b8a4fc9274d07cac2b2e84181": {"name": "Popup", "id": "542d513b8a4fc9274d07cac2b2e84181", "children": {}}}}, "marker_51dde2f1384d0d36cdaa68ece5bb78b1": {"name": "Marker", "id": "51dde2f1384d0d36cdaa68ece5bb78b1", "children": {"custom_icon_309b3f45706b766c2959811b6c7e275f": {"name": "CustomIcon", "id": "309b3f45706b766c2959811b6c7e275f", "children": {}}, "popup_308e10d1a86f495fd96c676fff7f746e": {"name": "Popup", "id": "308e10d1a86f495fd96c676fff7f746e", "children": {}}}}, "marker_293959dec671ecf96dcd989449f16ae3": {"name": "Marker", "id": "293959dec671ecf96dcd989449f16ae3", "children": {"custom_icon_852e51915e575113ffd1d76408b1b236": {"name": "CustomIcon", "id": "852e51915e575113ffd1d76408b1b236", "children": {}}, "popup_e99dc83b03f5b1d297e4f449c6b88b69": {"name": "Popup", "id": "e99dc83b03f5b1d297e4f449c6b88b69", "children": {}}}}, "marker_a4d43edd5723b77892df33ccd0b9ec53": {"name": "Marker", "id": "a4d43edd5723b77892df33ccd0b9ec53", "children": {"custom_icon_d1931712110c94d33f7348ca797e0271": {"name": "CustomIcon", "id": "d1931712110c94d33f7348ca797e0271", "children": {}}, "popup_05130e69a30dd8ec32bc1e326838d24a": {"name": "Popup", "id": "05130e69a30dd8ec32bc1e326838d24a", "children": {}}}}, "marker_0f4cc893761efc4805f54d3054e12283": {"name": "Marker", "id": "0f4cc893761efc4805f54d3054e12283", "children": {"custom_icon_512b366858ea08df6aa4b71faef90005": {"name": "CustomIcon", "id": "512b366858ea08df6aa4b71faef90005", "children": {}}, "popup_3817913537cc3da73888a6895e4c23d2": {"name": "Popup", "id": "3817913537cc3da73888a6895e4c23d2", "children": {}}}}, "marker_55c54a16e740b7bf06f7649ac89b9377": {"name": "Marker", "id": "55c54a16e740b7bf06f7649ac89b9377", "children": {"custom_icon_6cb1e4d3b6416286c7ddef6fe327e163": {"name": "CustomIcon", "id": "6cb1e4d3b6416286c7ddef6fe327e163", "children": {}}, "popup_8641a35dbb830ae7eeee2e91a2405c8b": {"name": "Popup", "id": "8641a35dbb830ae7eeee2e91a2405c8b", "children": {}}}}, "marker_511dedf898910cad522d08f29b036d32": {"name": "Marker", "id": "511dedf898910cad522d08f29b036d32", "children": {"custom_icon_1d086c92a2ae4509f2d9725d07579ae8": {"name": "CustomIcon", "id": "1d086c92a2ae4509f2d9725d07579ae8", "children": {}}, "popup_79789ee6b7c6b3beb089ac2044ad3c10": {"name": "Popup", "id": "79789ee6b7c6b3beb089ac2044ad3c10", "children": {}}}}, "marker_1ce156be6d32d27dd9d63794b77fed06": {"name": "Marker", "id": "1ce156be6d32d27dd9d63794b77fed06", "children": {"custom_icon_db33a35e19cb493d1ec3273d319cd805": {"name": "CustomIcon", "id": "db33a35e19cb493d1ec3273d319cd805", "children": {}}, "popup_40975b65de4878fceaece12f50092b7e": {"name": "Popup", "id": "40975b65de4878fceaece12f50092b7e", "children": {}}}}}}}}, "feature_group_b34a8558ebb7a6e7051dda7dde14af2b": {"name": "FeatureGroup", "id": "b34a8558ebb7a6e7051dda7dde14af2b", "children": {"marker_cluster_ff342115f20ec20bf718adfd99939872": {"name": "MarkerCluster", "id": "ff342115f20ec20bf718adfd99939872", "children": {}}}}, "feature_group_1ecc20c5bfffadf3d13884ee846bb59e": {"name": "FeatureGroup", "id": "1ecc20c5bfffadf3d13884ee846bb59e", "children": {"marker_cluster_2ee98ef6c51be91422c7b8112f110fa5": {"name": "MarkerCluster", "id": "2ee98ef6c51be91422c7b8112f110fa5", "children": {"marker_88ff5dfab90c5459f2c4d067a6d598c5": {"name": "Marker", "id": "88ff5dfab90c5459f2c4d067a6d598c5", "children": {"custom_icon_1b686cf619fa1ab07a852e9cbe145340": {"name": "CustomIcon", "id": "1b686cf619fa1ab07a852e9cbe145340", "children": {}}, "popup_ceb0421d9cf1c13dc0924526f28f5760": {"name": "Popup", "id": "ceb0421d9cf1c13dc0924526f28f5760", "children": {}}}}, "marker_221885f84f5e449a1ded6b986379c514": {"name": "Marker", "id": "221885f84f5e449a1ded6b986379c514", "children": {"custom_icon_ee82af698e9c342c6412bee06256b5fc": {"name": "CustomIcon", "id": "ee82af698e9c342c6412bee06256b5fc", "children": {}}, "popup_51d00f46ff7d9e2fb745dabbb52ce716": {"name": "Popup", "id": "51d00f46ff7d9e2fb745dabbb52ce716", "children": {}}}}, "marker_c89669fdf1a82538f7be8df3150cde53": {"name": "Marker", "id": "c89669fdf1a82538f7be8df3150cde53", "children": {"custom_icon_5ec1b79a1f44caca54f782435c151aaa": {"name": "CustomIcon", "id": "5ec1b79a1f44caca54f782435c151aaa", "children": {}}, "popup_1655d8e009123ae6dae15601d2b6e433": {"name": "Popup", "id": "1655d8e009123ae6dae15601d2b6e433", "children": {}}}}, "marker_c56acd949d3814876e2e8e3c49b2abaa": {"name": "Marker", "id": "c56acd949d3814876e2e8e3c49b2abaa", "children": {"custom_icon_95a40df99b700b118fe8ce37d358a16f": {"name": "CustomIcon", "id": "95a40df99b700b118fe8ce37d358a16f", "children": {}}, "popup_fb4a89dc8b58ae06bfce92d15bd89e80": {"name": "Popup", "id": "fb4a89dc8b58ae06bfce92d15bd89e80", "children": {}}}}, "marker_edf9eb53b4ae53c24c2f533b5a8bd35c": {"name": "Marker", "id": "edf9eb53b4ae53c24c2f533b5a8bd35c", "children": {"custom_icon_1bb531a527d0add35e3df7b8a51633e4": {"name": "CustomIcon", "id": "1bb531a527d0add35e3df7b8a51633e4", "children": {}}, "popup_5a269a0d6300fda81424f4e86c3b9573": {"name": "Popup", "id": "5a269a0d6300fda81424f4e86c3b9573", "children": {}}}}, "marker_31bce8a505f2739cb1683616ff2611aa": {"name": "Marker", "id": "31bce8a505f2739cb1683616ff2611aa", "children": {"custom_icon_415700007d8f40860447fddbaa30c0f2": {"name": "CustomIcon", "id": "415700007d8f40860447fddbaa30c0f2", "children": {}}, "popup_b5cb77e881d391b6e6acc08800bf32ae": {"name": "Popup", "id": "b5cb77e881d391b6e6acc08800bf32ae", "children": {}}}}, "marker_efeea2f2cc1082d8620b8604b588a738": {"name": "Marker", "id": "efeea2f2cc1082d8620b8604b588a738", "children": {"custom_icon_154a36f423f94f08f288ceae227e4941": {"name": "CustomIcon", "id": "154a36f423f94f08f288ceae227e4941", "children": {}}, "popup_e24cb0892389682a5c750709a803816b": {"name": "Popup", "id": "e24cb0892389682a5c750709a803816b", "children": {}}}}, "marker_fa1ec074b54256a6ae81dea59b0b093e": {"name": "Marker", "id": "fa1ec074b54256a6ae81dea59b0b093e", "children": {"custom_icon_91c5bfb5258276a3475228f271b504d9": {"name": "CustomIcon", "id": "91c5bfb5258276a3475228f271b504d9", "children": {}}, "popup_bfd861bfdf0ae626a0361ab1ab3f2169": {"name": "Popup", "id": "bfd861bfdf0ae626a0361ab1ab3f2169", "children": {}}}}, "marker_1be8e242f6f897bc6805442eafd6b17a": {"name": "Marker", "id": "1be8e242f6f897bc6805442eafd6b17a", "children": {"custom_icon_0deaf53d4c41b658e9463a8e69e0793a": {"name": "CustomIcon", "id": "0deaf53d4c41b658e9463a8e69e0793a", "children": {}}, "popup_2c6160378e1ebca39f39d7e967f0bf8b": {"name": "Popup", "id": "2c6160378e1ebca39f39d7e967f0bf8b", "children": {}}}}, "marker_d0a95b807f93f032c57ce72374088e80": {"name": "Marker", "id": "d0a95b807f93f032c57ce72374088e80", "children": {"custom_icon_d6c0b0ba4604bcbfd311324434f74deb": {"name": "CustomIcon", "id": "d6c0b0ba4604bcbfd311324434f74deb", "children": {}}, "popup_fd26d549181f98b9d353b0d52984fb7d": {"name": "Popup", "id": "fd26d549181f98b9d353b0d52984fb7d", "children": {}}}}, "marker_f3578fb6ade667c2afda11c33a81c532": {"name": "Marker", "id": "f3578fb6ade667c2afda11c33a81c532", "children": {"custom_icon_21f384168f347112908aa78cab227a33": {"name": "CustomIcon", "id": "21f384168f347112908aa78cab227a33", "children": {}}, "popup_009e0e38c02c4ff67b44e90d7fd4aa40": {"name": "Popup", "id": "009e0e38c02c4ff67b44e90d7fd4aa40", "children": {}}}}, "marker_d5ba68fb9a5607b7633ef66e793e5479": {"name": "Marker", "id": "d5ba68fb9a5607b7633ef66e793e5479", "children": {"custom_icon_38020bc1e62d701f3425f44ee8943a5b": {"name": "CustomIcon", "id": "38020bc1e62d701f3425f44ee8943a5b", "children": {}}, "popup_695174f188a3d334a0a8bd99fdd1f694": {"name": "Popup", "id": "695174f188a3d334a0a8bd99fdd1f694", "children": {}}}}, "marker_83b6e15771b415192d61ef31cfac52ff": {"name": "Marker", "id": "83b6e15771b415192d61ef31cfac52ff", "children": {"custom_icon_8a4827916d77384baca82d822ea969ac": {"name": "CustomIcon", "id": "8a4827916d77384baca82d822ea969ac", "children": {}}, "popup_43dcba1ba482d47fdccf3b595d74de76": {"name": "Popup", "id": "43dcba1ba482d47fdccf3b595d74de76", "children": {}}}}, "marker_c52eb7154d2924c092afdf92848648b2": {"name": "Marker", "id": "c52eb7154d2924c092afdf92848648b2", "children": {"custom_icon_ecd30c7685e424c2ec1b60af886d56d4": {"name": "CustomIcon", "id": "ecd30c7685e424c2ec1b60af886d56d4", "children": {}}, "popup_8173bec1e9560388e716024ca9c46c78": {"name": "Popup", "id": "8173bec1e9560388e716024ca9c46c78", "children": {}}}}, "marker_1faa27c1f522165ded5eab11e1b6c97d": {"name": "Marker", "id": "1faa27c1f522165ded5eab11e1b6c97d", "children": {"custom_icon_519350dd8c4f8941f4784f45e73566b0": {"name": "CustomIcon", "id": "519350dd8c4f8941f4784f45e73566b0", "children": {}}, "popup_555fbc5bd5584a4ee4863f712ea80b3a": {"name": "Popup", "id": "555fbc5bd5584a4ee4863f712ea80b3a", "children": {}}}}, "marker_bb3e2f8102d32c0ef7b0d89827f32cd4": {"name": "Marker", "id": "bb3e2f8102d32c0ef7b0d89827f32cd4", "children": {"custom_icon_3affcb6172a614f9189fa8d85d755e58": {"name": "CustomIcon", "id": "3affcb6172a614f9189fa8d85d755e58", "children": {}}, "popup_3c3e8faa7f514f470c6a81f0e831cbea": {"name": "Popup", "id": "3c3e8faa7f514f470c6a81f0e831cbea", "children": {}}}}, "marker_8c52abd01d16fe36b1bf816388f16947": {"name": "Marker", "id": "8c52abd01d16fe36b1bf816388f16947", "children": {"custom_icon_0802b5ad1806683407296fed5d878dc6": {"name": "CustomIcon", "id": "0802b5ad1806683407296fed5d878dc6", "children": {}}, "popup_542d513b8a4fc9274d07cac2b2e84181": {"name": "Popup", "id": "542d513b8a4fc9274d07cac2b2e84181", "children": {}}}}, "marker_130f037d7b6f5f284599cd3eee6e6420": {"name": "Marker", "id": "130f037d7b6f5f284599cd3eee6e6420", "children": {"custom_icon_4fd96da3662e1e53f5efdcfb776045e7": {"name": "CustomIcon", "id": "4fd96da3662e1e53f5efdcfb776045e7", "children": {}}, "popup_308e10d1a86f495fd96c676fff7f746e": {"name": "Popup", "id": "308e10d1a86f495fd96c676fff7f746e", "children": {}}}}, "marker_2d1fc96f09469a907043e0cb39c3d640": {"name": "Marker", "id": "2d1fc96f09469a907043e0cb39c3d640", "children": {"custom_icon_6b46e1e6be06dbd138deb613bbf0ff04": {"name": "CustomIcon", "id": "6b46e1e6be06dbd138deb613bbf0ff04", "children": {}}, "popup_e99dc83b03f5b1d297e4f449c6b88b69": {"name": "Popup", "id": "e99dc83b03f5b1d297e4f449c6b88b69", "children": {}}}}, "marker_df8d1b5f42942a42eb72af269163831b": {"name": "Marker", "id": "df8d1b5f42942a42eb72af269163831b", "children": {"custom_icon_48ce0978fad160620de92d4c2633d203": {"name": "CustomIcon", "id": "48ce0978fad160620de92d4c2633d203", "children": {}}, "popup_05130e69a30dd8ec32bc1e326838d24a": {"name": "Popup", "id": "05130e69a30dd8ec32bc1e326838d24a", "children": {}}}}, "marker_f92470caed94eeea9c38609dd981249c": {"name": "Marker", "id": "f92470caed94eeea9c38609dd981249c", "children": {"custom_icon_c6e2aa60401f6386bd6dcbeb6b96f364": {"name": "CustomIcon", "id": "c6e2aa60401f6386bd6dcbeb6b96f364", "children": {}}, "popup_3817913537cc3da73888a6895e4c23d2": {"name": "Popup", "id": "3817913537cc3da73888a6895e4c23d2", "children": {}}}}, "marker_97aa1fb3c72bc2a5c840be90bcb02c93": {"name": "Marker", "id": "97aa1fb3c72bc2a5c840be90bcb02c93", "children": {"custom_icon_03c7539d75daaa470319932cbc680a7e": {"name": "CustomIcon", "id": "03c7539d75daaa470319932cbc680a7e", "children": {}}, "popup_8641a35dbb830ae7eeee2e91a2405c8b": {"name": "Popup", "id": "8641a35dbb830ae7eeee2e91a2405c8b", "children": {}}}}, "marker_a43a780a328ac8be5cca1a2933c8529a": {"name": "Marker", "id": "a43a780a328ac8be5cca1a2933c8529a", "children": {"custom_icon_104bf55df77cf999c5e12838224eec32": {"name": "CustomIcon", "id": "104bf55df77cf999c5e12838224eec32", "children": {}}, "popup_79789ee6b7c6b3beb089ac2044ad3c10": {"name": "Popup", "id": "79789ee6b7c6b3beb089ac2044ad3c10", "children": {}}}}, "marker_5f2c4af22ed55da8ee68073cc049a72f": {"name": "Marker", "id": "5f2c4af22ed55da8ee68073cc049a72f", "children": {"custom_icon_2a39e9adf8882d20c90c38e04b05608d": {"name": "CustomIcon", "id": "2a39e9adf8882d20c90c38e04b05608d", "children": {}}, "popup_40975b65de4878fceaece12f50092b7e": {"name": "Popup", "id": "40975b65de4878fceaece12f50092b7e", "children": {}}}}}}}}, "layer_control_fe3ce1f37dc5888336c3ff4e73672f92": {"name": "LayerControl", "id": "fe3ce1f37dc5888336c3ff4e73672f92", "children": {}}}}
+{'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'AjYvHPDnbkUlP-dlOcK1no1'}}</msg>
+<msg timestamp="20230613 12:28:04.968" level="INFO">G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:826: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 826 of the file G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py. To get rid of this warning, pass the additional argument 'features="lxml"' to the BeautifulSoup constructor.
+
+  parsed_html = BeautifulSoup(body_text)</msg>
+<msg timestamp="20230613 12:28:04.969" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230613 12:27:38.199" endtime="20230613 12:28:04.969"/>
 </kw>
 <doc>Executes main flow</doc>
 <tag>flow</tag>
-<status status="PASS" starttime="20230613 12:20:39.871" endtime="20230613 12:20:39.952"/>
+<status status="PASS" starttime="20230613 12:27:38.198" endtime="20230613 12:28:04.970"/>
 </test>
 <doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
-<status status="PASS" starttime="20230613 12:20:36.355" endtime="20230613 12:20:39.954"/>
+<status status="PASS" starttime="20230613 12:27:34.342" endtime="20230613 12:28:04.971"/>
 </suite>
 <statistics>
 <total>
@@ -27,6 +510,6 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230613 12:20:36.867" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
+<msg timestamp="20230613 12:27:35.043" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
 </errors>
 </robot>
