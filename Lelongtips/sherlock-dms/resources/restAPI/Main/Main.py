@@ -34,7 +34,7 @@ icon_url_durian_runtuh_others = "https://image.shutterstock.com/image-vector/vec
 icon_size_s = (70, 35)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = False
+testing = True
 
 
 class Main(object):
@@ -735,7 +735,7 @@ class Main(object):
             # print("i've slept for seconds= " + str(k) +" "+ str(sleep_time))
             time.sleep(sleep_time)
             k = k + 1
-            if k > 1 and testing:
+            if k > 10 and testing:
                 break
             #     raise Exception("Test end")
         # print(str(draft_content))
