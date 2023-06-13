@@ -1,86 +1,86 @@
 ==============================================================================
-20230613 12:45:15.505 - INFO - + START SUITE: Main [ ]
+20230613 13:18:23.183 - INFO - + START SUITE: Main [ ]
 ==============================================================================
-20230613 12:45:15.510 - INFO - +- START TEST: 1 - Executes Main flow [ ]
+20230613 13:18:23.185 - INFO - +- START TEST: 1 - Executes Main flow [ ]
 ------------------------------------------------------------------------------
-20230613 12:45:15.636 - INFO - +-- START KEYWORD: Main.When user runs main flow [ ]
-20230613 12:45:15.652 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
-20230613 12:45:16.467 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&listing_status=upcoming&page=1 HTTP/1.1" 200 None
-20230613 12:45:16.472 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
-20230613 12:45:17.263 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&listing_status=upcoming&page=1 HTTP/1.1" 200 None
-20230613 12:45:21.446 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
-20230613 12:45:22.610 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&listing_status=upcoming&page=2 HTTP/1.1" 200 None
-20230613 12:45:26.816 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:26.817 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:26.820 - DEBUG - Starting new HTTPS connection (1): maps.googleapis.com:443
-20230613 12:45:27.031 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+SB+15%2C+Taman+Seri+Bertam%2C+75250+Tanjung+Minyak%2C+Melaka&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:27.035 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.035 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.117 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Semarak+Api+1%2C+Bandar+Baru+Air+Itam%2C+11500+Ayer+Itam%2C+Penang&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:27.119 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.120 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.220 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Pondok+Lama%2C+Kampung+Bechah+Peleting%2C+17500+Tanah+Merah%2C+Kelantan&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:27.227 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.227 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.315 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Taman+Seri+Batik+Teluk+Muruh%2C+32200%2C+Lumut%2C+Perak&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:27.316 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.317 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.452 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+RJ+2%2F18%2C+Taman+Rasah+Jaya%2C+70300+Seremban%2C+Negeri+Sembilan&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:27.453 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.455 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.512 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Mesra%2C+Taman+Mesra+Rakyat%2C+31900+Kampar%2C+Perak&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:27.516 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.516 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.608 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Laluan+Wawasan+6%2C+Taman+Wawasan+Tronoh%2C+31750+Tronoh%2C+Perak&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:27.610 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.611 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.681 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Tingkat+Kledang+17%2C+Taman+Kledang+Sentosa%2C+31450+Menglembu%2C+Perak&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:27.683 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.685 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.796 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Diawan+7%2C+Taman+Permai%2C+31950+Mambang+Diawan%2C+Perak&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:27.798 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.798 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.888 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Chemor+Mesra+4%2C+Taman+Chemor+Mesra%2C+31200+Chemor%2C+Perak&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:27.889 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.890 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.981 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Taman+SL+Permata%2C+Hutan+Pasir%2C+16450+Ketereh%2C+Kelantan&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:27.983 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:27.984 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.074 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Sm+3%2C+Taman+Seri+Manggis%2C+78000+Alor+Gajah%2C+Melaka&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:28.076 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.078 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.202 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Pangsapuri+Rosana+Villa%2C+Jalan+Putra+Perdana+9%2C+Taman+Putra+Perdana%2C+47130+Puchong%2C+Selangor&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:28.207 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.208 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.268 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Taman+Mas+Kg+Koh%2C+32000+Sitiawan%2C+Perak&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:28.270 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.271 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.337 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Dewi%2C+Taman+Mambang%2C+31950+Mambang+Di+Awan%2C+Perak&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:28.339 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.339 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.398 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Mutiara+5%2F6%2C+Taman+Mutiara+%281001-1500%29%2C+09700+Karangan%2C+Kedah&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:28.402 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.402 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.510 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+11%2C+No.+22%2C+Jalan+PJS+2S%2F1%2C+Desa+Mentari+3%2C+46000+Petaling+Jaya%2C+Selangor&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:28.511 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.512 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.565 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Penor+Aman+10%2C+26060+Kuantan%2C+Pahang&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:28.567 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.568 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.627 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Penor+Aman+7%2C+26060+Kuantan%2C+Pahang&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:28.629 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.630 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.698 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Penor+Aman+9%2C+26060+Kuantan%2C+Pahang&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:28.700 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.701 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.798 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Anggerik+7%2C+Taman+PD+Utama%2C+71000+Port+Dickson%2C+Negeri+Sembilan&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:28.799 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.799 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.903 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Taman+SL+Lemal%2C+Kampung+Kekabu%2C+17000+Pasir+Mas%2C+Kelantan&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:28.905 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.906 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.970 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Kampung+Besut%2C+24000+Cukai%2C+Terengganu&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:28.972 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:28.972 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-20230613 12:45:29.059 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Tun+Ismail+6%2C+Sri+Dagangan+Kuantan%2C+25000+Kuantan%2C+Pahang&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
-20230613 12:45:29.211 - DEBUG - Popen(['git', 'add', '--update'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=None)
+20230613 13:18:23.185 - INFO - +-- START KEYWORD: Main.When user runs main flow [ ]
+20230613 13:18:23.190 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+20230613 13:18:24.267 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&listing_status=upcoming&page=1 HTTP/1.1" 200 None
+20230613 13:18:24.272 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+20230613 13:18:25.059 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&listing_status=upcoming&page=1 HTTP/1.1" 200 None
+20230613 13:18:27.232 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+20230613 13:18:27.979 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&listing_status=upcoming&page=2 HTTP/1.1" 200 None
+20230613 13:18:32.132 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:32.132 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:32.135 - DEBUG - Starting new HTTPS connection (1): maps.googleapis.com:443
+20230613 13:18:32.361 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+SB+15%2C+Taman+Seri+Bertam%2C+75250+Tanjung+Minyak%2C+Melaka&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:32.362 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:32.363 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:32.507 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Semarak+Api+1%2C+Bandar+Baru+Air+Itam%2C+11500+Ayer+Itam%2C+Penang&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:32.508 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:32.509 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:32.604 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Pondok+Lama%2C+Kampung+Bechah+Peleting%2C+17500+Tanah+Merah%2C+Kelantan&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:32.607 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:32.607 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:32.709 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Taman+Seri+Batik+Teluk+Muruh%2C+32200%2C+Lumut%2C+Perak&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:32.711 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:32.711 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:32.822 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+RJ+2%2F18%2C+Taman+Rasah+Jaya%2C+70300+Seremban%2C+Negeri+Sembilan&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:32.824 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:32.824 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:32.906 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Mesra%2C+Taman+Mesra+Rakyat%2C+31900+Kampar%2C+Perak&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:32.912 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:32.913 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:33.021 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Laluan+Wawasan+6%2C+Taman+Wawasan+Tronoh%2C+31750+Tronoh%2C+Perak&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:33.024 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:33.024 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:33.130 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Tingkat+Kledang+17%2C+Taman+Kledang+Sentosa%2C+31450+Menglembu%2C+Perak&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:33.132 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:33.133 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:33.283 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Diawan+7%2C+Taman+Permai%2C+31950+Mambang+Diawan%2C+Perak&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:33.285 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:33.286 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:33.442 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Chemor+Mesra+4%2C+Taman+Chemor+Mesra%2C+31200+Chemor%2C+Perak&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:33.444 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:33.445 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:33.573 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Taman+SL+Permata%2C+Hutan+Pasir%2C+16450+Ketereh%2C+Kelantan&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:33.575 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:33.575 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:33.667 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Sm+3%2C+Taman+Seri+Manggis%2C+78000+Alor+Gajah%2C+Melaka&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:33.670 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:33.671 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:33.844 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Pangsapuri+Rosana+Villa%2C+Jalan+Putra+Perdana+9%2C+Taman+Putra+Perdana%2C+47130+Puchong%2C+Selangor&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:33.845 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:33.845 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:33.932 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Taman+Mas+Kg+Koh%2C+32000+Sitiawan%2C+Perak&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:33.935 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:33.936 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:34.060 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Dewi%2C+Taman+Mambang%2C+31950+Mambang+Di+Awan%2C+Perak&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:34.062 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:34.062 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:34.119 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Mutiara+5%2F6%2C+Taman+Mutiara+%281001-1500%29%2C+09700+Karangan%2C+Kedah&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:34.121 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:34.122 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:34.452 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+11%2C+No.+22%2C+Jalan+PJS+2S%2F1%2C+Desa+Mentari+3%2C+46000+Petaling+Jaya%2C+Selangor&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:34.454 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:34.454 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:34.541 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Penor+Aman+10%2C+26060+Kuantan%2C+Pahang&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:34.543 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:34.545 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:34.600 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Penor+Aman+7%2C+26060+Kuantan%2C+Pahang&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:34.602 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:34.602 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:34.696 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Penor+Aman+9%2C+26060+Kuantan%2C+Pahang&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:34.697 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:34.698 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:34.805 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Anggerik+7%2C+Taman+PD+Utama%2C+71000+Port+Dickson%2C+Negeri+Sembilan&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:34.811 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:34.812 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:34.923 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Taman+SL+Lemal%2C+Kampung+Kekabu%2C+17000+Pasir+Mas%2C+Kelantan&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:34.925 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:34.925 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:35.003 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Kampung+Besut%2C+24000+Cukai%2C+Terengganu&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:35.009 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:35.010 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+20230613 13:18:35.142 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Tun+Ismail+6%2C+Sri+Dagangan+Kuantan%2C+25000+Kuantan%2C+Pahang&key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None
+20230613 13:18:35.341 - DEBUG - Popen(['git', 'add', '--update'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=None)

@@ -26,7 +26,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_e8ed80ac5a9071d4b6601670e86d68da {
+                #map_3a8fdf1d1a84815704a9ae155d635540 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -44,14 +44,14 @@
     
     <script src="../Lelongtips/sherlock-dms/resources/components/leaflet-sidebar.js"></script>
     
-            <div class="folium-map" id="map_e8ed80ac5a9071d4b6601670e86d68da" ></div>
+            <div class="folium-map" id="map_3a8fdf1d1a84815704a9ae155d635540" ></div>
         
 </body>
 <script>
     
     
-            var map_e8ed80ac5a9071d4b6601670e86d68da = L.map(
-                "map_e8ed80ac5a9071d4b6601670e86d68da",
+            var map_3a8fdf1d1a84815704a9ae155d635540 = L.map(
+                "map_3a8fdf1d1a84815704a9ae155d635540",
                 {
                     center: [3.064119, 101.669488],
                     crs: L.CRS.EPSG3857,
@@ -60,1092 +60,1235 @@
                     preferCanvas: false,
                 }
             );
-            L.control.scale().addTo(map_e8ed80ac5a9071d4b6601670e86d68da);
+            L.control.scale().addTo(map_3a8fdf1d1a84815704a9ae155d635540);
 
             
 
         
     
-            var tile_layer_6c4f13f9b9869bd650c7322c177940a8 = L.tileLayer(
+            var tile_layer_2dc495e03c7646397e8f792e4d473576 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_e8ed80ac5a9071d4b6601670e86d68da);
+            ).addTo(map_3a8fdf1d1a84815704a9ae155d635540);
         
     
-            var feature_group_b4b020acc41006eb6dcb66bb00f22255 = L.featureGroup(
+            var feature_group_bf44caf9ea9ac7c326ff3d892e6fc0dd = L.featureGroup(
                 {}
-            ).addTo(map_e8ed80ac5a9071d4b6601670e86d68da);
+            ).addTo(map_3a8fdf1d1a84815704a9ae155d635540);
         
     
-            var marker_cluster_e0550ee0344582cb62c51e90d6c03c02 = L.markerClusterGroup(
+            var marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e = L.markerClusterGroup(
                 {}
             );
-            feature_group_b4b020acc41006eb6dcb66bb00f22255.addLayer(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            feature_group_bf44caf9ea9ac7c326ff3d892e6fc0dd.addLayer(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-            var marker_716fd02edee39b1cc52634e7323769eb = L.marker(
+            var marker_7ac59a18cfae2607f66570bbd59fa8c3 = L.marker(
                 [2.3010265, 102.1693937],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_6ad866cbfa68e6e78210a0527bda27c3 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_716fd02edee39b1cc52634e7323769eb.setIcon(custom_icon_6ad866cbfa68e6e78210a0527bda27c3);
+        var custom_icon_2cf57d63a4360b287b9043f424158159 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_7ac59a18cfae2607f66570bbd59fa8c3.setIcon(custom_icon_2cf57d63a4360b287b9043f424158159);
         
     
-        var popup_4a1efee5b801ef43909408c7191ea692 = L.popup({"maxWidth": 2650});
+        var popup_2ee74e9f202e795cd3eb691d2eb1b92b = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_accea5163b9a5ef79b0e51f9c275172b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTQgSnVuIDIwMjMgKFdlZCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gU2VyaSBCZXJ0YW0gKFRhbWFuIERlc2EgVGFuanVuZyBNaW55YWspLCBNZWxha2EgPC9oMT4KICAgICAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDEzMDI8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBUaXRsZSwgMXN0IEF1Y3Rpb24sIDEsMzAyIHNxLmZ0LCBMSCwgS09EIEEsIEludGVybWVkaWF0ZSwgIG9ubGluZSBiaWRkaW5nLCBSTTExNSBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIFNCIDE1LCA3NjQ1MCBBbG9yIEdhamFoLCBNZWxha2EsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L1dIZEdkSEpqZVRCTGJqSk5SVE0wUkU5dWVuUlFRVDA5L0xlbG9uZy1BdWN0aW9uLTEtU3RvcmV5LVRlcnJhY2UtSG91c2UtaW4tVGFtYW4tU2VyaS1CZXJ0YW0tTWVsYWthLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_4a1efee5b801ef43909408c7191ea692.setContent(i_frame_accea5163b9a5ef79b0e51f9c275172b);
+                var i_frame_8db32fbe271154cf796700c94166dc3a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTQgSnVuIDIwMjMgKFdlZCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gU2VyaSBCZXJ0YW0gKFRhbWFuIERlc2EgVGFuanVuZyBNaW55YWspLCBNZWxha2EgPC9oMT4KICAgICAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDEzMDI8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBUaXRsZSwgMXN0IEF1Y3Rpb24sIDEsMzAyIHNxLmZ0LCBMSCwgS09EIEEsIEludGVybWVkaWF0ZSwgIG9ubGluZSBiaWRkaW5nLCBSTTExNSBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIFNCIDE1LCA3NjQ1MCBBbG9yIEdhamFoLCBNZWxha2EsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L1dIZEdkSEpqZVRCTGJqSk5SVE0wUkU5dWVuUlFRVDA5L0xlbG9uZy1BdWN0aW9uLTEtU3RvcmV5LVRlcnJhY2UtSG91c2UtaW4tVGFtYW4tU2VyaS1CZXJ0YW0tTWVsYWthLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_2ee74e9f202e795cd3eb691d2eb1b92b.setContent(i_frame_8db32fbe271154cf796700c94166dc3a);
             
         
 
-        marker_ee23805df1736ba71105333184ad3c0d.bindPopup(popup_4a1efee5b801ef43909408c7191ea692)
+        marker_4ee7a6f3c177163bd7b006ebe36f617e.bindPopup(popup_2ee74e9f202e795cd3eb691d2eb1b92b)
         ;
 
         
     
     
-            var marker_ee99a782a5c0976895a8df95e09b04cc = L.marker(
+            var marker_8e7cd151d4bf082c1e1e3ba4c6e7fc06 = L.marker(
                 [5.8081253, 102.1403323],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_7e3a817a09ab56162ede970ac2257f52 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_ee99a782a5c0976895a8df95e09b04cc.setIcon(custom_icon_7e3a817a09ab56162ede970ac2257f52);
+        var custom_icon_b1b45d66436dbd229f6756a8908a01e0 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_8e7cd151d4bf082c1e1e3ba4c6e7fc06.setIcon(custom_icon_b1b45d66436dbd229f6756a8908a01e0);
         
     
-        var popup_a57d7ddb39875abd4b0aab4ad70b7559 = L.popup({"maxWidth": 2650});
+        var popup_ed04a745c87d7948b4579e8873639667 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_d26b6b9075b057519f0dfc630fd68503 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTUgSnVuIDIwMjMgKFRodSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gS2FtcHVuZyBCZWNoYWggUGVsZXRpbmcsIEtlbGFudGFuIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxNjc5PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gVGl0bGUsIDFzdCBBdWN0aW9uLCAxLDY3OSBzcS5mdCwgRkgsIEludGVybWVkaWF0ZSwgIG9ubGluZSBiaWRkaW5nLCBSTTg5IHBlciBzZiA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gSmFsYW4gUG9uZG9rIExhbWEsIFRhbmFoIE1lcmFoLCAxNzUwMCBUYW5haCBNZXJhaCwgS2VsYW50YW4sIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L1JFODFPV05wZURCVlUxUktMekp6ZFVWWVlXbFZRVDA5L0xlbG9uZy1BdWN0aW9uLTEtU3RvcmV5LVRlcnJhY2UtSG91c2UtaW4tS2FtcHVuZy1CZWNoYWgtUGVsZXRpbmctS2VsYW50YW4tZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_a57d7ddb39875abd4b0aab4ad70b7559.setContent(i_frame_d26b6b9075b057519f0dfc630fd68503);
+                var i_frame_0119ac5e43cabfd2fcbaee93a728bf4f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTUgSnVuIDIwMjMgKFRodSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gS2FtcHVuZyBCZWNoYWggUGVsZXRpbmcsIEtlbGFudGFuIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxNjc5PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gVGl0bGUsIDFzdCBBdWN0aW9uLCAxLDY3OSBzcS5mdCwgRkgsIEludGVybWVkaWF0ZSwgIG9ubGluZSBiaWRkaW5nLCBSTTg5IHBlciBzZiA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gSmFsYW4gUG9uZG9rIExhbWEsIFRhbmFoIE1lcmFoLCAxNzUwMCBUYW5haCBNZXJhaCwgS2VsYW50YW4sIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L1JFODFPV05wZURCVlUxUktMekp6ZFVWWVlXbFZRVDA5L0xlbG9uZy1BdWN0aW9uLTEtU3RvcmV5LVRlcnJhY2UtSG91c2UtaW4tS2FtcHVuZy1CZWNoYWgtUGVsZXRpbmctS2VsYW50YW4tZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_ed04a745c87d7948b4579e8873639667.setContent(i_frame_0119ac5e43cabfd2fcbaee93a728bf4f);
             
         
 
-        marker_427efd282d4427baf47088994655a8e9.bindPopup(popup_a57d7ddb39875abd4b0aab4ad70b7559)
+        marker_ac13af8794255a4d14a4c74cfd5f26bf.bindPopup(popup_ed04a745c87d7948b4579e8873639667)
         ;
 
         
     
     
-            var marker_50ca9b7dae08a6c3ef328cfa76ed7d10 = L.marker(
+            var marker_5fbf3f946b89d7c12f17484b82af5cf8 = L.marker(
                 [4.2089361, 100.6237371],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_be9c0888c5339f21c63761f05e6ec6a7 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_50ca9b7dae08a6c3ef328cfa76ed7d10.setIcon(custom_icon_be9c0888c5339f21c63761f05e6ec6a7);
+        var custom_icon_f065f0b0e1335aeab5ff111413cf3b99 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_5fbf3f946b89d7c12f17484b82af5cf8.setIcon(custom_icon_f065f0b0e1335aeab5ff111413cf3b99);
         
     
-        var popup_e20c8a8a7e6bc2c9803d507e14b566fa = L.popup({"maxWidth": 2650});
+        var popup_415049a27dc88f2e25c9dee4910a37e2 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_03314b8161157c7774d5141ee46a39b1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTMgSnVuIDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gU3JpIEJhdGlrLCBQZXJhayA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMTQ4NTwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IFRpdGxlLCAxc3QgQXVjdGlvbiwgMSw0ODUgc3EuZnQsIE1hbGF5IFJlc2VydmUsICBvbmxpbmUgYmlkZGluZywgUk0xMDEgcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSBKbG4gVGVsdWsgTXVydWgsIDMyMjAwIEx1bXV0LCBQZXJhaywgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvVUhOMllUa3hTa1JrTWs1cWNtbHVjMDVrUzAxMlVUMDkvTGVsb25nLUF1Y3Rpb24tMS1TdG9yZXktVGVycmFjZS1Ib3VzZS1pbi1UYW1hbi1TZXJpLUJhdGlrLVRlbHVrLU11cnVoLVBlcmFrLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_e20c8a8a7e6bc2c9803d507e14b566fa.setContent(i_frame_03314b8161157c7774d5141ee46a39b1);
+                var i_frame_bfc328565bd7d9b99d1c05022d46c526 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTMgSnVuIDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gU3JpIEJhdGlrLCBQZXJhayA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMTQ4NTwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IFRpdGxlLCAxc3QgQXVjdGlvbiwgMSw0ODUgc3EuZnQsIE1hbGF5IFJlc2VydmUsICBvbmxpbmUgYmlkZGluZywgUk0xMDEgcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSBKbG4gVGVsdWsgTXVydWgsIDMyMjAwIEx1bXV0LCBQZXJhaywgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvVUhOMllUa3hTa1JrTWs1cWNtbHVjMDVrUzAxMlVUMDkvTGVsb25nLUF1Y3Rpb24tMS1TdG9yZXktVGVycmFjZS1Ib3VzZS1pbi1UYW1hbi1TZXJpLUJhdGlrLVRlbHVrLU11cnVoLVBlcmFrLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_415049a27dc88f2e25c9dee4910a37e2.setContent(i_frame_bfc328565bd7d9b99d1c05022d46c526);
             
         
 
-        marker_7cd053f861dca5e71dad7cde51d21e4c.bindPopup(popup_e20c8a8a7e6bc2c9803d507e14b566fa)
+        marker_778c6714a4fda1e5784906627b7b8dd9.bindPopup(popup_415049a27dc88f2e25c9dee4910a37e2)
         ;
 
         
     
     
-            var marker_8af376cf56ec71680e377d851bd1b9ec = L.marker(
+            var marker_65bad847abdd532c416abef11b48120b = L.marker(
                 [2.6724673, 101.9466328],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_630e559392ed54d274a2e363dc14eb29 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_8af376cf56ec71680e377d851bd1b9ec.setIcon(custom_icon_630e559392ed54d274a2e363dc14eb29);
+        var custom_icon_5b9d9125ad52a07f43a95ca1e7d7d581 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_65bad847abdd532c416abef11b48120b.setIcon(custom_icon_5b9d9125ad52a07f43a95ca1e7d7d581);
         
     
-        var popup_a484ac8704a3ee9f7ed2e3f3240c094f = L.popup({"maxWidth": 2650});
+        var popup_e109dac413c5b034b491ce18d30e9a83 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_b4861aed248bd54e9277337a731ffc37 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTQgSnVuIDIwMjMgKFdlZCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMiBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gUmFzYWggSmF5YSwgTmVnZXJpIFNlbWJpbGFuIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMzk2PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gVGl0bGUsIDFzdCBBdWN0aW9uLCAxLDM5NiBzcS5mdCwgRkgsIEludGVybWVkaWF0ZSwgIG9ubGluZSBiaWRkaW5nLCBSTTEwNyBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIFJKIDIvMTgsIFRhbWFuIFJhc2FoIEpheWEsIDcwMzAwIFNlcmVtYmFuLCBOZWdlcmkgU2VtYmlsYW4sIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L05qWlVTRzlPYmpWSUwyNTVVbkYyTDBFclJESXpRVDA5L0xlbG9uZy1BdWN0aW9uLTItU3RvcmV5LVRlcnJhY2UtSG91c2UtaW4tVGFtYW4tUmFzYWgtSmF5YS1OZWdlcmktU2VtYmlsYW4tZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_a484ac8704a3ee9f7ed2e3f3240c094f.setContent(i_frame_b4861aed248bd54e9277337a731ffc37);
+                var i_frame_3a4a4b7190b01b0ed4ced5c65b0bca36 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTQgSnVuIDIwMjMgKFdlZCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMiBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gUmFzYWggSmF5YSwgTmVnZXJpIFNlbWJpbGFuIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMzk2PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gVGl0bGUsIDFzdCBBdWN0aW9uLCAxLDM5NiBzcS5mdCwgRkgsIEludGVybWVkaWF0ZSwgIG9ubGluZSBiaWRkaW5nLCBSTTEwNyBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIFJKIDIvMTgsIFRhbWFuIFJhc2FoIEpheWEsIDcwMzAwIFNlcmVtYmFuLCBOZWdlcmkgU2VtYmlsYW4sIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L05qWlVTRzlPYmpWSUwyNTVVbkYyTDBFclJESXpRVDA5L0xlbG9uZy1BdWN0aW9uLTItU3RvcmV5LVRlcnJhY2UtSG91c2UtaW4tVGFtYW4tUmFzYWgtSmF5YS1OZWdlcmktU2VtYmlsYW4tZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_e109dac413c5b034b491ce18d30e9a83.setContent(i_frame_3a4a4b7190b01b0ed4ced5c65b0bca36);
             
         
 
-        marker_7201422a075a8a96f721c10f1f4853e4.bindPopup(popup_a484ac8704a3ee9f7ed2e3f3240c094f)
+        marker_80ed6c2e8cab2c23296c7d21c5ce6362.bindPopup(popup_e109dac413c5b034b491ce18d30e9a83)
         ;
 
         
     
     
-            var marker_18c4c0fc118b2af521a365a2504bc920 = L.marker(
+            var marker_ae5b950c8a5774f21ad1277c35b9f66c = L.marker(
                 [4.2867317, 101.140718],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_135c0d4b6efa91e708eaaaa9a81822c8 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_18c4c0fc118b2af521a365a2504bc920.setIcon(custom_icon_135c0d4b6efa91e708eaaaa9a81822c8);
+        var custom_icon_6237fd64192334694c82eefbc3d8f7f2 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_ae5b950c8a5774f21ad1277c35b9f66c.setIcon(custom_icon_6237fd64192334694c82eefbc3d8f7f2);
         
     
-        var popup_b6b1ef791b8f32a425fcc55d4aef30f2 = L.popup({"maxWidth": 2650});
+        var popup_2a87e291fecd37e97f0488f9bda6325a = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_fb87284b180f4efb1a1ea0018c5e3715 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTkgSnVuIDIwMjMgKE1vbikgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgU2VtaSBEZXRhY2hlZCBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gTWVzcmEgUmFreWF0LCBQZXJhayA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMTcwMTwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IFRpdGxlLCAxc3QgQXVjdGlvbiwgMSw3MDEgc3EuZnQsIExILCAgb25saW5lIGJpZGRpbmcsIFJNODggcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSAyLCBKYWxhbiBNZXNyYSwgMzE5MTAgS2FtcGFyLCBQZXJhaywgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvU21kcldWUjJkRkZSTXpsa1NEQXpiRVE0UzJjd2R6MDkvTGVsb25nLUF1Y3Rpb24tMS1TdG9yZXktU2VtaS1EZXRhY2hlZC1Ib3VzZS1pbi1UYW1hbi1NZXNyYS1SYWt5YXQtUGVyYWstZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_b6b1ef791b8f32a425fcc55d4aef30f2.setContent(i_frame_fb87284b180f4efb1a1ea0018c5e3715);
+                var i_frame_b8d17e99c6e06a8fbf176f26dae063eb = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTkgSnVuIDIwMjMgKE1vbikgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgU2VtaSBEZXRhY2hlZCBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gTWVzcmEgUmFreWF0LCBQZXJhayA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMTcwMTwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IFRpdGxlLCAxc3QgQXVjdGlvbiwgMSw3MDEgc3EuZnQsIExILCAgb25saW5lIGJpZGRpbmcsIFJNODggcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSAyLCBKYWxhbiBNZXNyYSwgMzE5MTAgS2FtcGFyLCBQZXJhaywgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvU21kcldWUjJkRkZSTXpsa1NEQXpiRVE0UzJjd2R6MDkvTGVsb25nLUF1Y3Rpb24tMS1TdG9yZXktU2VtaS1EZXRhY2hlZC1Ib3VzZS1pbi1UYW1hbi1NZXNyYS1SYWt5YXQtUGVyYWstZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_2a87e291fecd37e97f0488f9bda6325a.setContent(i_frame_b8d17e99c6e06a8fbf176f26dae063eb);
             
         
 
-        marker_ee9aef301e9cbdad74841ce353cfdd2c.bindPopup(popup_b6b1ef791b8f32a425fcc55d4aef30f2)
+        marker_94ff1d7df79d8021508bbf6ca66e6d4c.bindPopup(popup_2a87e291fecd37e97f0488f9bda6325a)
         ;
 
         
     
     
-            var marker_b9c7807981910ddaef067ab3f10a0cb0 = L.marker(
+            var marker_588225dcc09dc626d93a7db073723123 = L.marker(
                 [4.4357927, 100.9969262],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_42ad154f532c0968f182e3a4a8993151 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_b9c7807981910ddaef067ab3f10a0cb0.setIcon(custom_icon_42ad154f532c0968f182e3a4a8993151);
+        var custom_icon_6bdadb44a326410b87db61c1ce7965f7 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_588225dcc09dc626d93a7db073723123.setIcon(custom_icon_6bdadb44a326410b87db61c1ce7965f7);
         
     
-        var popup_f3b9b9cd9495c71b14e7d910b4e8c1c0 = L.popup({"maxWidth": 2650});
+        var popup_fb94be1b810489a69552fb2ad80282a6 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_4649eb7294acc9fbc8fd906d556d53ba = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTQgSnVuIDIwMjMgKFdlZCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gVHJvbm9oIFdhd2FzYW4sIFBlcmFrIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxNzk4PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gVGl0bGUsIDFzdCBBdWN0aW9uLCAxLDc5OCBzcS5mdCwgTEgsIEludGVybWVkaWF0ZSwgIG9ubGluZSBiaWRkaW5nLCBSTTgzIHBlciBzZiA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gTGFsdWFuIFdhd2FzYW4gNiwgMzE3NTAgVGVyb25vaCwgUGVyYWssIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L1UwRnBTRzh6ZUUwd1NYTnRlbEZPV1ZkRVQydHJkejA5L0xlbG9uZy1BdWN0aW9uLTEtU3RvcmV5LVRlcnJhY2UtSG91c2UtaW4tVGFtYW4tV2F3YXNhbi1Ucm9ub2gtUGVyYWstZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_f3b9b9cd9495c71b14e7d910b4e8c1c0.setContent(i_frame_4649eb7294acc9fbc8fd906d556d53ba);
+                var i_frame_88338e9ea5b44a5f2b3c7aa05e0534a4 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTQgSnVuIDIwMjMgKFdlZCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gVHJvbm9oIFdhd2FzYW4sIFBlcmFrIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxNzk4PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gVGl0bGUsIDFzdCBBdWN0aW9uLCAxLDc5OCBzcS5mdCwgTEgsIEludGVybWVkaWF0ZSwgIG9ubGluZSBiaWRkaW5nLCBSTTgzIHBlciBzZiA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gTGFsdWFuIFdhd2FzYW4gNiwgMzE3NTAgVGVyb25vaCwgUGVyYWssIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L1UwRnBTRzh6ZUUwd1NYTnRlbEZPV1ZkRVQydHJkejA5L0xlbG9uZy1BdWN0aW9uLTEtU3RvcmV5LVRlcnJhY2UtSG91c2UtaW4tVGFtYW4tV2F3YXNhbi1Ucm9ub2gtUGVyYWstZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_fb94be1b810489a69552fb2ad80282a6.setContent(i_frame_88338e9ea5b44a5f2b3c7aa05e0534a4);
             
         
 
-        marker_9384d595f4364fc4bdae89eefb555daa.bindPopup(popup_f3b9b9cd9495c71b14e7d910b4e8c1c0)
+        marker_74ba33d91e29ad68f35f2d9649d580cc.bindPopup(popup_fb94be1b810489a69552fb2ad80282a6)
         ;
 
         
     
     
-            var marker_dd308c090d6d2d680addbe96963fc9d5 = L.marker(
+            var marker_d5e1f94d5c0f82d29a1c24d068021f12 = L.marker(
                 [4.5717863, 101.0390482],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_d82a46c390558a632c4e0523d784e416 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_dd308c090d6d2d680addbe96963fc9d5.setIcon(custom_icon_d82a46c390558a632c4e0523d784e416);
+        var custom_icon_75c64f3e8316f81d1f78bdaebdc63d65 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_d5e1f94d5c0f82d29a1c24d068021f12.setIcon(custom_icon_75c64f3e8316f81d1f78bdaebdc63d65);
         
     
-        var popup_674b82760d01a95dfcb3de548c7f68db = L.popup({"maxWidth": 2650});
+        var popup_131a76436a0d098294f204c22fc3a058 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_aace2b96e159cbd8b2ded398109a91b7 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTMgSnVuIDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gS2xlZGFuZyBTZW50b3NhLCBQZXJhayA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMTQ5NjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IFRpdGxlLCAxc3QgQXVjdGlvbiwgMSw0OTYgc3EuZnQsIEludGVybWVkaWF0ZSwgIG9ubGluZSBiaWRkaW5nLCBSTTEwMCBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IFRpbmdrYXQgS2xlZGFuZyAxNywgVGFtYW4gS2xlZGFuZyBTZW50b3NhLCAzMTQ1MCBNZW5nbGVtYnUsIFBlcmFrLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9XVkZFZFdkMFZuVnRRV3RoYzBoaVVVazJkblZRUVQwOS9MZWxvbmctQXVjdGlvbi0xLVN0b3JleS1UZXJyYWNlLUhvdXNlLWluLVRhbWFuLUtsZWRhbmctU2VudG9zYS1QZXJhay1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_674b82760d01a95dfcb3de548c7f68db.setContent(i_frame_aace2b96e159cbd8b2ded398109a91b7);
+                var i_frame_2840b20ebd66cdf6404cc594f2042081 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTMgSnVuIDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gS2xlZGFuZyBTZW50b3NhLCBQZXJhayA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMTQ5NjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IFRpdGxlLCAxc3QgQXVjdGlvbiwgMSw0OTYgc3EuZnQsIEludGVybWVkaWF0ZSwgIG9ubGluZSBiaWRkaW5nLCBSTTEwMCBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IFRpbmdrYXQgS2xlZGFuZyAxNywgVGFtYW4gS2xlZGFuZyBTZW50b3NhLCAzMTQ1MCBNZW5nbGVtYnUsIFBlcmFrLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9XVkZFZFdkMFZuVnRRV3RoYzBoaVVVazJkblZRUVQwOS9MZWxvbmctQXVjdGlvbi0xLVN0b3JleS1UZXJyYWNlLUhvdXNlLWluLVRhbWFuLUtsZWRhbmctU2VudG9zYS1QZXJhay1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_131a76436a0d098294f204c22fc3a058.setContent(i_frame_2840b20ebd66cdf6404cc594f2042081);
             
         
 
-        marker_d3b2e4e26d4aa5d63f3d59d8f52d3a44.bindPopup(popup_674b82760d01a95dfcb3de548c7f68db)
+        marker_0bebaa34fba46e16b4c37f67f69bdfad.bindPopup(popup_131a76436a0d098294f204c22fc3a058)
         ;
 
         
     
     
-            var marker_31b7f76347cf529179d811f588b1a74c = L.marker(
+            var marker_a779644ab650bcf54408d3b02ce71278 = L.marker(
                 [4.255268, 101.154793],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_fb4d297c176e83957636cd21bbd516f2 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_31b7f76347cf529179d811f588b1a74c.setIcon(custom_icon_fb4d297c176e83957636cd21bbd516f2);
+        var custom_icon_7eba434c2ce46c38c0d9faba3b350ade = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_a779644ab650bcf54408d3b02ce71278.setIcon(custom_icon_7eba434c2ce46c38c0d9faba3b350ade);
         
     
-        var popup_0767834d95e890fc5b42162e46951bad = L.popup({"maxWidth": 2650});
+        var popup_72d60aa741769579edafc2522dc59976 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_40ec849f31f07c3ee54c2be66a789585 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjAgSnVuIDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gRGlhd2FuIChUYW1hbiBQZXJtYWkgLyBUYW1hbiBEaSBBd2FuKSwgUGVyYWsgPC9oMT4KICAgICAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDEzOTk8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBUaXRsZSwgMXN0IEF1Y3Rpb24sIDEsMzk5IHNxLmZ0LCBMSCwgIG9ubGluZSBiaWRkaW5nLCBSTTEwNyBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIERpYXdhbiA3LCAzMTk1MCBNYW1iYW5nIERpIEF3YW4sIFBlcmFrLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9PRlV2VlU1TlJTOU1kMEZ3Y1VoTVduZEdURXd4UVQwOS9MZWxvbmctQXVjdGlvbi0xLVN0b3JleS1UZXJyYWNlLUhvdXNlLWluLVRhbWFuLVBlcm1haS1QZXJhay1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_0767834d95e890fc5b42162e46951bad.setContent(i_frame_40ec849f31f07c3ee54c2be66a789585);
+                var i_frame_79bf595b2e6d2a7c620e9f3c19ec309c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjAgSnVuIDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gRGlhd2FuIChUYW1hbiBQZXJtYWkgLyBUYW1hbiBEaSBBd2FuKSwgUGVyYWsgPC9oMT4KICAgICAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDEzOTk8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBUaXRsZSwgMXN0IEF1Y3Rpb24sIDEsMzk5IHNxLmZ0LCBMSCwgIG9ubGluZSBiaWRkaW5nLCBSTTEwNyBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIERpYXdhbiA3LCAzMTk1MCBNYW1iYW5nIERpIEF3YW4sIFBlcmFrLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9PRlV2VlU1TlJTOU1kMEZ3Y1VoTVduZEdURXd4UVQwOS9MZWxvbmctQXVjdGlvbi0xLVN0b3JleS1UZXJyYWNlLUhvdXNlLWluLVRhbWFuLVBlcm1haS1QZXJhay1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_72d60aa741769579edafc2522dc59976.setContent(i_frame_79bf595b2e6d2a7c620e9f3c19ec309c);
             
         
 
-        marker_8adbbd5a5fa098e012ac5f7a61ee31eb.bindPopup(popup_0767834d95e890fc5b42162e46951bad)
+        marker_bfd34c033b50c340a607503f1e83f3a0.bindPopup(popup_72d60aa741769579edafc2522dc59976)
         ;
 
         
     
     
-            var marker_03d989efaffb60da3deeca20c0e0d569 = L.marker(
+            var marker_ca9fe81080d95803fd9083d16dab96de = L.marker(
                 [5.8379369, 102.1561499],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_77822fb500c0f6cc305dc81f7f1a41c2 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_03d989efaffb60da3deeca20c0e0d569.setIcon(custom_icon_77822fb500c0f6cc305dc81f7f1a41c2);
+        var custom_icon_cdfb6355a054fb14e07aabeba7d307ca = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_ca9fe81080d95803fd9083d16dab96de.setIcon(custom_icon_cdfb6355a054fb14e07aabeba7d307ca);
         
     
-        var popup_755e376e498ec6653c7c5a96ed72cda4 = L.popup({"maxWidth": 2650});
+        var popup_81ee87da68382fdfb36dcd1dd4694d71 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_a91f8e7f0e793479c59d851bd4b388c3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTAgSnVsIDIwMjMgKE1vbikgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gU0wgUGVybWF0YSwgS2VsYW50YW4gPC9oMT4KICAgICAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDEwOTg8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBUaXRsZSwgMXN0IEF1Y3Rpb24sIDEsMDk4IHNxLmZ0LCBGSCwgIG9ubGluZSBiaWRkaW5nLCBSTTEzNyBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IFRhbWFuIFNMIFBlcm1hdGEsIDc3MywgSmFsYW4gWmFtcnVkLCBLYW1wdW5nIEplbGF0b2ssIDE3NTAwIFRhbmFoIE1lcmFoLCBLZWxhbnRhbiwgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvYldoa1FuWkVkVkYzWlVremRHeGlSV2RQTWtkSlVUMDkvTGVsb25nLUF1Y3Rpb24tMS1TdG9yZXktVGVycmFjZS1Ib3VzZS1pbi1UYW1hbi1TTC1QZXJtYXRhLUtlbGFudGFuLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_755e376e498ec6653c7c5a96ed72cda4.setContent(i_frame_a91f8e7f0e793479c59d851bd4b388c3);
+                var i_frame_1ab40300f1bbbb642551dbd0db10e0aa = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTAgSnVsIDIwMjMgKE1vbikgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gU0wgUGVybWF0YSwgS2VsYW50YW4gPC9oMT4KICAgICAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDEwOTg8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBUaXRsZSwgMXN0IEF1Y3Rpb24sIDEsMDk4IHNxLmZ0LCBGSCwgIG9ubGluZSBiaWRkaW5nLCBSTTEzNyBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IFRhbWFuIFNMIFBlcm1hdGEsIDc3MywgSmFsYW4gWmFtcnVkLCBLYW1wdW5nIEplbGF0b2ssIDE3NTAwIFRhbmFoIE1lcmFoLCBLZWxhbnRhbiwgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvYldoa1FuWkVkVkYzWlVremRHeGlSV2RQTWtkSlVUMDkvTGVsb25nLUF1Y3Rpb24tMS1TdG9yZXktVGVycmFjZS1Ib3VzZS1pbi1UYW1hbi1TTC1QZXJtYXRhLUtlbGFudGFuLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_81ee87da68382fdfb36dcd1dd4694d71.setContent(i_frame_1ab40300f1bbbb642551dbd0db10e0aa);
             
         
 
-        marker_26bbb2e173e01492fa72ecab41dc831a.bindPopup(popup_755e376e498ec6653c7c5a96ed72cda4)
+        marker_194487f522b0051bd1bdc0c8c6cecced.bindPopup(popup_81ee87da68382fdfb36dcd1dd4694d71)
         ;
 
         
     
     
-            var marker_01eb2455527af5f0835394a08d27dd95 = L.marker(
+            var marker_01d48a04f9d851e639ac4c9497054f8d = L.marker(
                 [2.3887374, 102.3752995],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_d4a01c05cacb34cbc8114d1d73631835 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_01eb2455527af5f0835394a08d27dd95.setIcon(custom_icon_d4a01c05cacb34cbc8114d1d73631835);
+        var custom_icon_9e24f9664ce948229bf3b43325c28e74 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_01d48a04f9d851e639ac4c9497054f8d.setIcon(custom_icon_9e24f9664ce948229bf3b43325c28e74);
         
     
-        var popup_863c9da58cd698417ca6d51e96e22a1d = L.popup({"maxWidth": 2650});
+        var popup_cb41b9883f4586ef0f6e66f87cf74e93 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_fe9e28085b92a9dd0fd66e2d59e26dd8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTIgSnVsIDIwMjMgKFdlZCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gU2VyaSBNYW5nZ2lzIChUYW1hbiBHYWRlayBQZXJkYW5hKSwgTWVsYWthIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMzEzPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gVGl0bGUsIDFzdCBBdWN0aW9uLCAxLDMxMyBzcS5mdCwgTEgsIEtPRCBCLCBJbnRlcm1lZGlhdGUsICBvbmxpbmUgYmlkZGluZywgUk0xMTQgcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSBKYWxhbiBTbSwgUGVrYW4gU2VsYW5kYXIsIDc3NTAwIFNlbGFuZGFyLCBNZWxha2EsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L1duWkNaSGg2UnpGM1pqZFVTUzlFUXpsTlpuTTRaejA5L0xlbG9uZy1BdWN0aW9uLTEtU3RvcmV5LVRlcnJhY2UtSG91c2UtaW4tVGFtYW4tU2VyaS1NYW5nZ2lzLU1lbGFrYS1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_863c9da58cd698417ca6d51e96e22a1d.setContent(i_frame_fe9e28085b92a9dd0fd66e2d59e26dd8);
+                var i_frame_d5adb767a6e929c81e6b38845bf1101b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTIgSnVsIDIwMjMgKFdlZCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gU2VyaSBNYW5nZ2lzIChUYW1hbiBHYWRlayBQZXJkYW5hKSwgTWVsYWthIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMzEzPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gVGl0bGUsIDFzdCBBdWN0aW9uLCAxLDMxMyBzcS5mdCwgTEgsIEtPRCBCLCBJbnRlcm1lZGlhdGUsICBvbmxpbmUgYmlkZGluZywgUk0xMTQgcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSBKYWxhbiBTbSwgUGVrYW4gU2VsYW5kYXIsIDc3NTAwIFNlbGFuZGFyLCBNZWxha2EsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L1duWkNaSGg2UnpGM1pqZFVTUzlFUXpsTlpuTTRaejA5L0xlbG9uZy1BdWN0aW9uLTEtU3RvcmV5LVRlcnJhY2UtSG91c2UtaW4tVGFtYW4tU2VyaS1NYW5nZ2lzLU1lbGFrYS1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_cb41b9883f4586ef0f6e66f87cf74e93.setContent(i_frame_d5adb767a6e929c81e6b38845bf1101b);
             
         
 
-        marker_25174a4e93bd6086e9d582d6333fef80.bindPopup(popup_863c9da58cd698417ca6d51e96e22a1d)
+        marker_ad51e62cf6971d078e23a7bf22902687.bindPopup(popup_cb41b9883f4586ef0f6e66f87cf74e93)
         ;
 
         
     
     
-            var marker_db55cc762854246b4a3fc950c990329a = L.marker(
+            var marker_874c1e19b7d32f02c96686f4bbe5b7d7 = L.marker(
                 [4.195817, 100.7012182],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_82287bed42d38af11e014f9ac7ecc75d = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_db55cc762854246b4a3fc950c990329a.setIcon(custom_icon_82287bed42d38af11e014f9ac7ecc75d);
+        var custom_icon_9cb2be910aa06ca645d53e3921b7d0bd = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_874c1e19b7d32f02c96686f4bbe5b7d7.setIcon(custom_icon_9cb2be910aa06ca645d53e3921b7d0bd);
         
     
-        var popup_1862a87d6e217eaf4b9738242eee71f7 = L.popup({"maxWidth": 2650});
+        var popup_9f9b2ff116a1fe0cf35bc32eb5543fdc = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_6e786ed8b3e71b47e071f3ced189fc5b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTAgSnVsIDIwMjMgKE1vbikgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gTWFzLCBQZXJhayA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMTM5OTwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IFRpdGxlLCAxc3QgQXVjdGlvbiwgMSwzOTkgc3EuZnQsICBvbmxpbmUgYmlkZGluZywgUk0xMDcgcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSBLYW1wdW5nIEtvaCwgMzIwMDAgU2l0aWF3YW4sIFBlcmFrLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9Za1pXT1dkbGNrOVNiR3N3UmtRNFFUTlFVWGxMZHowOS9MZWxvbmctQXVjdGlvbi0xLVN0b3JleS1UZXJyYWNlLUhvdXNlLWluLVRhbWFuLU1hcy1LZy1Lb2gtUGVyYWstZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_1862a87d6e217eaf4b9738242eee71f7.setContent(i_frame_6e786ed8b3e71b47e071f3ced189fc5b);
+                var i_frame_9521193f20a643d1693fb2fa8afd8459 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTAgSnVsIDIwMjMgKE1vbikgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gTWFzLCBQZXJhayA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMTM5OTwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IFRpdGxlLCAxc3QgQXVjdGlvbiwgMSwzOTkgc3EuZnQsICBvbmxpbmUgYmlkZGluZywgUk0xMDcgcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSBLYW1wdW5nIEtvaCwgMzIwMDAgU2l0aWF3YW4sIFBlcmFrLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9Za1pXT1dkbGNrOVNiR3N3UmtRNFFUTlFVWGxMZHowOS9MZWxvbmctQXVjdGlvbi0xLVN0b3JleS1UZXJyYWNlLUhvdXNlLWluLVRhbWFuLU1hcy1LZy1Lb2gtUGVyYWstZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_9f9b2ff116a1fe0cf35bc32eb5543fdc.setContent(i_frame_9521193f20a643d1693fb2fa8afd8459);
             
         
 
-        marker_8ec129e196bde0d0e74115051f5da6b8.bindPopup(popup_1862a87d6e217eaf4b9738242eee71f7)
+        marker_7ccad96ea2adb786e77d814ff007ff91.bindPopup(popup_9f9b2ff116a1fe0cf35bc32eb5543fdc)
         ;
 
         
     
     
-            var marker_42a0a5bbf75c5c16cfd3d7c73a2dc641 = L.marker(
+            var marker_a8d63b1101817e8a7d0345ae79c33225 = L.marker(
                 [4.2811578, 101.1485547],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_c816afb5a50853dbbd608af2636d61ae = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_42a0a5bbf75c5c16cfd3d7c73a2dc641.setIcon(custom_icon_c816afb5a50853dbbd608af2636d61ae);
+        var custom_icon_607dd90f46b5d5cb4a396c58e0e244f8 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_a8d63b1101817e8a7d0345ae79c33225.setIcon(custom_icon_607dd90f46b5d5cb4a396c58e0e244f8);
         
     
-        var popup_657a5a97d8b82c8a2d07ea5c0ae34818 = L.popup({"maxWidth": 2650});
+        var popup_df189350d51e35b749e5bb82587f21e2 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_209b4cd71e973373292cb1624ca57ac4 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gNiBKdWwgMjAyMyAoVGh1KSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+IFJNIDE1MDAwMCA8L3A+CiAgICAgICAgICAgICAgICAgICAgPGgyPiAxIFN0b3JleSBTZW1pIERldGFjaGVkIEhvdXNlIDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBUYW1hbiBNYW1iYW5nLCBQZXJhayA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMTc5ODwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IFRpdGxlLCAxc3QgQXVjdGlvbiwgMSw3OTggc3EuZnQsIExILCAgb25saW5lIGJpZGRpbmcsIFJNODMgcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSBUYW1hbiBTZWphaHRlcmEgVXRhbWEsIDMxOTUwIEthbXBhciwgUGVyYWssIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L1VWRlhkRmxxZDBoeVVYTlRVaTl0WkVGbVpGUmpkejA5L0xlbG9uZy1BdWN0aW9uLTEtU3RvcmV5LVNlbWktRGV0YWNoZWQtSG91c2UtaW4tVGFtYW4tTWFtYmFuZy1QZXJhay1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_657a5a97d8b82c8a2d07ea5c0ae34818.setContent(i_frame_209b4cd71e973373292cb1624ca57ac4);
+                var i_frame_87cdcfe7251a1985eb785f0beb6fe1ad = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gNiBKdWwgMjAyMyAoVGh1KSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+IFJNIDE1MDAwMCA8L3A+CiAgICAgICAgICAgICAgICAgICAgPGgyPiAxIFN0b3JleSBTZW1pIERldGFjaGVkIEhvdXNlIDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBUYW1hbiBNYW1iYW5nLCBQZXJhayA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMTc5ODwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IFRpdGxlLCAxc3QgQXVjdGlvbiwgMSw3OTggc3EuZnQsIExILCAgb25saW5lIGJpZGRpbmcsIFJNODMgcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSBUYW1hbiBTZWphaHRlcmEgVXRhbWEsIDMxOTUwIEthbXBhciwgUGVyYWssIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L1VWRlhkRmxxZDBoeVVYTlRVaTl0WkVGbVpGUmpkejA5L0xlbG9uZy1BdWN0aW9uLTEtU3RvcmV5LVNlbWktRGV0YWNoZWQtSG91c2UtaW4tVGFtYW4tTWFtYmFuZy1QZXJhay1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_df189350d51e35b749e5bb82587f21e2.setContent(i_frame_87cdcfe7251a1985eb785f0beb6fe1ad);
             
         
 
-        marker_901b6df9454f3dbc52f9f5be8a75c855.bindPopup(popup_657a5a97d8b82c8a2d07ea5c0ae34818)
+        marker_3abc086eec033cf95b2ccca34b9d325f.bindPopup(popup_df189350d51e35b749e5bb82587f21e2)
         ;
 
         
     
     
-            var marker_80e712336a830cc3953f1a54c6efbc1f = L.marker(
+            var marker_6d85b02fa6acd24ba69bf1eef4dde4e9 = L.marker(
                 [5.4365007, 100.6358615],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_318718be20c4879e8efe6b5703166c96 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_80e712336a830cc3953f1a54c6efbc1f.setIcon(custom_icon_318718be20c4879e8efe6b5703166c96);
+        var custom_icon_0ca43d0c8cb4dcb100646117698af0f4 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_6d85b02fa6acd24ba69bf1eef4dde4e9.setIcon(custom_icon_0ca43d0c8cb4dcb100646117698af0f4);
         
     
-        var popup_7bbead9169518e308ff7a4de7dd8110f = L.popup({"maxWidth": 2650});
+        var popup_587b5bdff23f3529b5359a8cbbc4a005 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_cd5aa31e4b74c5b8409909893db56f47 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTggSnVsIDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gTXV0aWFyYSwgS2VkYWggPC9oMT4KICAgICAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDExOTU8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBUaXRsZSwgMXN0IEF1Y3Rpb24sIDEsMTk1IHNxLmZ0LCBGSCwgIG9ubGluZSBiaWRkaW5nLCBSTTEyNiBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIE11dGlhcmEgNSwgS2FtcHVuZyBKYW5na2FuZywgMDk2MDAgS2FyYW5nYW4sIEtlZGFoLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9URGRHV1ZoU1owUnNUR1ZQU1VscFRUbEtNMHN5VVQwOS9MZWxvbmctQXVjdGlvbi0xLVN0b3JleS1UZXJyYWNlLUhvdXNlLWluLVRhbWFuLU11dGlhcmEtMTAwMS0xNTAwLUtlZGFoLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_7bbead9169518e308ff7a4de7dd8110f.setContent(i_frame_cd5aa31e4b74c5b8409909893db56f47);
+                var i_frame_28294b3db2aaf8d47fe272527e9be6de = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTggSnVsIDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gTXV0aWFyYSwgS2VkYWggPC9oMT4KICAgICAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDExOTU8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBUaXRsZSwgMXN0IEF1Y3Rpb24sIDEsMTk1IHNxLmZ0LCBGSCwgIG9ubGluZSBiaWRkaW5nLCBSTTEyNiBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIE11dGlhcmEgNSwgS2FtcHVuZyBKYW5na2FuZywgMDk2MDAgS2FyYW5nYW4sIEtlZGFoLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9URGRHV1ZoU1owUnNUR1ZQU1VscFRUbEtNMHN5VVQwOS9MZWxvbmctQXVjdGlvbi0xLVN0b3JleS1UZXJyYWNlLUhvdXNlLWluLVRhbWFuLU11dGlhcmEtMTAwMS0xNTAwLUtlZGFoLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_587b5bdff23f3529b5359a8cbbc4a005.setContent(i_frame_28294b3db2aaf8d47fe272527e9be6de);
             
         
 
-        marker_24d8526bf599182177020b596a3c214c.bindPopup(popup_7bbead9169518e308ff7a4de7dd8110f)
+        marker_829b46fabe6e2e92b6947dccbd5d0945.bindPopup(popup_587b5bdff23f3529b5359a8cbbc4a005)
         ;
 
         
     
     
-            var marker_562088716bca3a2f57db21fb2a40b673 = L.marker(
+            var marker_173087b0017f1e7179c426e1035aebdf = L.marker(
                 [3.750487299999999, 103.3009103],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_36876d1be328f7d08dc00843df7c6817 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_562088716bca3a2f57db21fb2a40b673.setIcon(custom_icon_36876d1be328f7d08dc00843df7c6817);
+        var custom_icon_820ad0122aa49fd81636106a2c88dfc1 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_173087b0017f1e7179c426e1035aebdf.setIcon(custom_icon_820ad0122aa49fd81636106a2c88dfc1);
         
     
-        var popup_e9e2056a95add2e300bb851087be1993 = L.popup({"maxWidth": 2650});
+        var popup_85aece8bd946f2853babc6a6b994002d = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_92b8058241ec432a836506d4e02fedde = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjQgSnVuIDIwMjMgKFNhdCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gS3VhbnRhbiwgUGFoYW5nIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMTk1PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gTEFDQSwgMXN0IEF1Y3Rpb24sIDEsMTk1IHNxLmZ0LCBJbnRlcm1lZGlhdGUsICBvbmxpbmUgYmlkZGluZywgUk0xMjYgcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSAzNCwgSmxuIEsuUyAyLzQsIDI2MDYwIEt1YW50YW4sIFBhaGFuZywgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvWVRCbFZqVk1kbmxIYUhkelEyRk5UeTh5VEdOTVp6MDkvTGVsb25nLUF1Y3Rpb24tMS1TdG9yZXktVGVycmFjZS1Ib3VzZS1pbi1LdWFudGFuLVBhaGFuZy1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_e9e2056a95add2e300bb851087be1993.setContent(i_frame_92b8058241ec432a836506d4e02fedde);
+                var i_frame_a3256a006198525f10f65d753ab43c2b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjQgSnVuIDIwMjMgKFNhdCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gS3VhbnRhbiwgUGFoYW5nIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMTk1PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gTEFDQSwgMXN0IEF1Y3Rpb24sIDEsMTk1IHNxLmZ0LCBJbnRlcm1lZGlhdGUsICBvbmxpbmUgYmlkZGluZywgUk0xMjYgcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSAzNCwgSmxuIEsuUyAyLzQsIDI2MDYwIEt1YW50YW4sIFBhaGFuZywgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvWVRCbFZqVk1kbmxIYUhkelEyRk5UeTh5VEdOTVp6MDkvTGVsb25nLUF1Y3Rpb24tMS1TdG9yZXktVGVycmFjZS1Ib3VzZS1pbi1LdWFudGFuLVBhaGFuZy1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_85aece8bd946f2853babc6a6b994002d.setContent(i_frame_a3256a006198525f10f65d753ab43c2b);
             
         
 
-        marker_435c98e94f3408617d4190fbd439a0ab.bindPopup(popup_e9e2056a95add2e300bb851087be1993)
+        marker_b49bd3842f8641056b5dced49e19050e.bindPopup(popup_85aece8bd946f2853babc6a6b994002d)
         ;
 
         
     
     
-            var marker_1b7bd347cbd7c22cbd660bd622c19f9d = L.marker(
+            var marker_b88f1d197a917fe1812003acbfc4adbb = L.marker(
                 [3.750487299999999, 103.3009103],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_184c7f1dac3bae85b96026ab83edd7f3 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_1b7bd347cbd7c22cbd660bd622c19f9d.setIcon(custom_icon_184c7f1dac3bae85b96026ab83edd7f3);
+        var custom_icon_c2e93d71c5190c08d9f7d7aab9396e1b = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_b88f1d197a917fe1812003acbfc4adbb.setIcon(custom_icon_c2e93d71c5190c08d9f7d7aab9396e1b);
         
     
-        var popup_96912ed87ae940204500c172615d2ea0 = L.popup({"maxWidth": 2650});
+        var popup_3d54800741c77a973bc561fe2d72ea7c = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_edf7b8ba535de577e6d90ea36590a6a6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjQgSnVuIDIwMjMgKFNhdCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gS3VhbnRhbiwgUGFoYW5nIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMTk1PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gTEFDQSwgMXN0IEF1Y3Rpb24sIDEsMTk1IHNxLmZ0LCBJbnRlcm1lZGlhdGUsICBvbmxpbmUgYmlkZGluZywgUk0xMjYgcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSAzNCwgSmxuIEsuUyAyLzQsIDI2MDYwIEt1YW50YW4sIFBhaGFuZywgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvZURnck9YRnVNMnRhTVRoaVlrTmpWVU5WVEN0S2R6MDkvTGVsb25nLUF1Y3Rpb24tMS1TdG9yZXktVGVycmFjZS1Ib3VzZS1pbi1LdWFudGFuLVBhaGFuZy1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_96912ed87ae940204500c172615d2ea0.setContent(i_frame_edf7b8ba535de577e6d90ea36590a6a6);
+                var i_frame_db43d45929e3d68a68744c64cffed190 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjQgSnVuIDIwMjMgKFNhdCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gS3VhbnRhbiwgUGFoYW5nIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMTk1PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gTEFDQSwgMXN0IEF1Y3Rpb24sIDEsMTk1IHNxLmZ0LCBJbnRlcm1lZGlhdGUsICBvbmxpbmUgYmlkZGluZywgUk0xMjYgcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSAzNCwgSmxuIEsuUyAyLzQsIDI2MDYwIEt1YW50YW4sIFBhaGFuZywgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvZURnck9YRnVNMnRhTVRoaVlrTmpWVU5WVEN0S2R6MDkvTGVsb25nLUF1Y3Rpb24tMS1TdG9yZXktVGVycmFjZS1Ib3VzZS1pbi1LdWFudGFuLVBhaGFuZy1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_3d54800741c77a973bc561fe2d72ea7c.setContent(i_frame_db43d45929e3d68a68744c64cffed190);
             
         
 
-        marker_c22ba08ee754a16aab3ea40b72f23b5a.bindPopup(popup_96912ed87ae940204500c172615d2ea0)
+        marker_ed33d30d0cb95f9b48424f2c68829b05.bindPopup(popup_3d54800741c77a973bc561fe2d72ea7c)
         ;
 
         
     
     
-            var marker_6d7e4a8391e2e20bfb2462c562252f47 = L.marker(
+            var marker_b38c58781178445de0adfc285bf95587 = L.marker(
                 [3.750487299999999, 103.3009103],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_7979aa785693366e240569f754bcc0d5 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_6d7e4a8391e2e20bfb2462c562252f47.setIcon(custom_icon_7979aa785693366e240569f754bcc0d5);
+        var custom_icon_f842295a036aeb86c8f88e2e17de0554 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_b38c58781178445de0adfc285bf95587.setIcon(custom_icon_f842295a036aeb86c8f88e2e17de0554);
         
     
-        var popup_74cf111ca23a01ea3cf65f5655f72256 = L.popup({"maxWidth": 2650});
+        var popup_12a565eabee5184c07e2d855b45b6c03 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_8ead2a98a9e7107fd70f9fb89c734a71 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjQgSnVuIDIwMjMgKFNhdCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gS3VhbnRhbiwgUGFoYW5nIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMTk1PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gTEFDQSwgMXN0IEF1Y3Rpb24sIDEsMTk1IHNxLmZ0LCBJbnRlcm1lZGlhdGUsICBvbmxpbmUgYmlkZGluZywgUk0xMjYgcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSAzNCwgSmxuIEsuUyAyLzQsIDI2MDYwIEt1YW50YW4sIFBhaGFuZywgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvZWxkcmFuRmxjM0ZYUkROUFRXSlFUMmw2SzJOb1FUMDkvTGVsb25nLUF1Y3Rpb24tMS1TdG9yZXktVGVycmFjZS1Ib3VzZS1pbi1LdWFudGFuLVBhaGFuZy1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_74cf111ca23a01ea3cf65f5655f72256.setContent(i_frame_8ead2a98a9e7107fd70f9fb89c734a71);
+                var i_frame_3f21dd48e0d71b3a344a0656e058d626 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjQgSnVuIDIwMjMgKFNhdCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gS3VhbnRhbiwgUGFoYW5nIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMTk1PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gTEFDQSwgMXN0IEF1Y3Rpb24sIDEsMTk1IHNxLmZ0LCBJbnRlcm1lZGlhdGUsICBvbmxpbmUgYmlkZGluZywgUk0xMjYgcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSAzNCwgSmxuIEsuUyAyLzQsIDI2MDYwIEt1YW50YW4sIFBhaGFuZywgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvZWxkcmFuRmxjM0ZYUkROUFRXSlFUMmw2SzJOb1FUMDkvTGVsb25nLUF1Y3Rpb24tMS1TdG9yZXktVGVycmFjZS1Ib3VzZS1pbi1LdWFudGFuLVBhaGFuZy1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_12a565eabee5184c07e2d855b45b6c03.setContent(i_frame_3f21dd48e0d71b3a344a0656e058d626);
             
         
 
-        marker_f00ad573e93dda8a132370e9e0ebd72b.bindPopup(popup_74cf111ca23a01ea3cf65f5655f72256)
+        marker_3ce817559863501c55ce35a8876a9a4f.bindPopup(popup_12a565eabee5184c07e2d855b45b6c03)
         ;
 
         
     
     
-            var marker_2e71261c67dea17c5bce5c01b5e7248c = L.marker(
+            var marker_a8039fc6ab444678520d7ff0c1e25474 = L.marker(
                 [2.5151473, 101.8289162],
                 {}
-            ).addTo(marker_cluster_e0550ee0344582cb62c51e90d6c03c02);
+            ).addTo(marker_cluster_b3f079de1b36f560c99dd54eb0e4a98e);
         
     
-        var custom_icon_1d42e496b63a574fcf2a6e5274520f51 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
-        marker_2e71261c67dea17c5bce5c01b5e7248c.setIcon(custom_icon_1d42e496b63a574fcf2a6e5274520f51);
+        var custom_icon_c3a85e2c4923f5d5aea5becdff8c9776 = L.icon({"iconSize": [35, 35], "iconUrl": "https://cdn.dribbble.com/users/1370570/screenshots/6180828/media/3de2eda53bad9fc0e604b1e328e44716.png"});
+        marker_a8039fc6ab444678520d7ff0c1e25474.setIcon(custom_icon_c3a85e2c4923f5d5aea5becdff8c9776);
         
     
-        var popup_a035a72adc078b6d1a3e037145a29c20 = L.popup({"maxWidth": 2650});
+        var popup_f5ebafe861d94efc6cc67c69a056aa14 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_e625b6817eb18b206aaf4daa07f0f797 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTEgSnVsIDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gUEQgVXRhbWEgKFRhbWFuIFBvcnQgRGlja3NvbiBVdGFtYSksIE5lZ2VyaSBTZW1iaWxhbiA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gODQyPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gVGl0bGUsIDg0MiBzcS5mdCwgRkgsIEludGVybWVkaWF0ZSwgIG9ubGluZSBiaWRkaW5nLCBSTTE3OCBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIEFuZ2dlcmlrIDcsIFRhbWFuIFBvcnQgRGlja3NvbiBVdGFtYSwgNzEwMDAgUG9ydCBEaWNrc29uLCBOZWdlcmkgU2VtYmlsYW4sIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L09FTk9VbUU1V2tGMmNIaDZTVkZyVnpRelZHWllkejA5L0xlbG9uZy1BdWN0aW9uLTEtU3RvcmV5LVRlcnJhY2UtSG91c2UtaW4tVGFtYW4tUEQtVXRhbWEtTmVnZXJpLVNlbWJpbGFuLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_a035a72adc078b6d1a3e037145a29c20.setContent(i_frame_e625b6817eb18b206aaf4daa07f0f797);
+                var i_frame_fb2e1515da8c24494efecaba59272ee1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTEgSnVsIDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gMSBTdG9yZXkgVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gUEQgVXRhbWEgKFRhbWFuIFBvcnQgRGlja3NvbiBVdGFtYSksIE5lZ2VyaSBTZW1iaWxhbiA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gODQyPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gVGl0bGUsIDg0MiBzcS5mdCwgRkgsIEludGVybWVkaWF0ZSwgIG9ubGluZSBiaWRkaW5nLCBSTTE3OCBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIEFuZ2dlcmlrIDcsIFRhbWFuIFBvcnQgRGlja3NvbiBVdGFtYSwgNzEwMDAgUG9ydCBEaWNrc29uLCBOZWdlcmkgU2VtYmlsYW4sIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxlbG9uZ3RpcHMuY29tLm15L3Byb3BlcnR5L09FTk9VbUU1V2tGMmNIaDZTVkZyVnpRelZHWllkejA5L0xlbG9uZy1BdWN0aW9uLTEtU3RvcmV5LVRlcnJhY2UtSG91c2UtaW4tVGFtYW4tUEQtVXRhbWEtTmVnZXJpLVNlbWJpbGFuLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_f5ebafe861d94efc6cc67c69a056aa14.setContent(i_frame_fb2e1515da8c24494efecaba59272ee1);
             
         
 
-        marker_41768483e3db53668f291e68ecb2501d.bindPopup(popup_a035a72adc078b6d1a3e037145a29c20)
+        marker_68f5228cef05457b56c197036e059903.bindPopup(popup_f5ebafe861d94efc6cc67c69a056aa14)
         ;
 
         
     
     
-            var feature_group_fa5ba028e2b6126f9d81a30a4667faee = L.featureGroup(
+            var feature_group_b5fe23c09628a8dc313491d4fcfba9d4 = L.featureGroup(
                 {}
-            ).addTo(map_e8ed80ac5a9071d4b6601670e86d68da);
+            ).addTo(map_3a8fdf1d1a84815704a9ae155d635540);
         
     
-            var marker_cluster_76f612f422cb256214f77a44f74c9e7a = L.markerClusterGroup(
+            var marker_cluster_bc0a2c84df3fe3a1a23519073abab84e = L.markerClusterGroup(
                 {}
             );
-            feature_group_fa5ba028e2b6126f9d81a30a4667faee.addLayer(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
+            feature_group_b5fe23c09628a8dc313491d4fcfba9d4.addLayer(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-            var marker_d80a579b22b25ef1ea83b59befe891d1 = L.marker(
+            var marker_97a720f140ad2de5b1cba9ca551a9dd7 = L.marker(
                 [2.3010265, 102.1693937],
                 {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_44ad81a0762fa8b874a02fe4494e962a = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_d80a579b22b25ef1ea83b59befe891d1.setIcon(custom_icon_44ad81a0762fa8b874a02fe4494e962a);
+            var marker_3fd91532f3813cd5323851fb735a69eb = L.marker(
+                [2.3010265, 102.1693937],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-            var marker_0a1b7490e3d626172ae0cfb3bfd2bf76 = L.marker(
+        var custom_icon_4d5bd510dd9fd723600a9bcb59522c35 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_3fd91532f3813cd5323851fb735a69eb.setIcon(custom_icon_4d5bd510dd9fd723600a9bcb59522c35);
+        
+    
+            var marker_efd888d129caa8be7a59148c5dcfd16f = L.marker(
                 [5.3854958, 100.2832448],
                 {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_37024ad89040682f1fd7363ec9074112 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_0a1b7490e3d626172ae0cfb3bfd2bf76.setIcon(custom_icon_37024ad89040682f1fd7363ec9074112);
-        
-    
-        var popup_2cee04892a29e5d7d704f7211639c2bc = L.popup({"maxWidth": 2650});
+        var popup_c69349a17f8bf188edfac60c4fca546f = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_a35ad19df9c6ac3e8974fa253017e5f7 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTMgSnVsIDIwMjMgKFRodSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBBc2lhIEhlaWdodHMgKFNlcmkgU2VtYXJhayksIFBlbmFuZyA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gNjExPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gVGl0bGUsIDFzdCBBdWN0aW9uLCA2MTEgc3EuZnQsIEZILCAzICBiZWRyb29tLCAgb25saW5lIGJpZGRpbmcsIFJNMjQ2IHBlciBzZiA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gTG9yb25nIFNlbWFyYWsgQXBpIDEsIEJhbmRhciBCYXJ1IEFpciBJdGFtLCAxMTUwMCBBeWVyIEl0YW0sIFB1bGF1IFBpbmFuZywgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvSzFkSVpISkVZbFpMYzBjd1ZWWlRibmhsVEZkUFVUMDkvTGVsb25nLUF1Y3Rpb24tQXBhcnRtZW50LWluLUF5ZXItSXRhbS1QZW5hbmctZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_2cee04892a29e5d7d704f7211639c2bc.setContent(i_frame_a35ad19df9c6ac3e8974fa253017e5f7);
+                var i_frame_caf2e3d42acb56dc521ba8098ca26c06 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMTMgSnVsIDIwMjMgKFRodSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBBc2lhIEhlaWdodHMgKFNlcmkgU2VtYXJhayksIFBlbmFuZyA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gNjExPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gVGl0bGUsIDFzdCBBdWN0aW9uLCA2MTEgc3EuZnQsIEZILCAzICBiZWRyb29tLCAgb25saW5lIGJpZGRpbmcsIFJNMjQ2IHBlciBzZiA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gTG9yb25nIFNlbWFyYWsgQXBpIDEsIEJhbmRhciBCYXJ1IEFpciBJdGFtLCAxMTUwMCBBeWVyIEl0YW0sIFB1bGF1IFBpbmFuZywgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvSzFkSVpISkVZbFpMYzBjd1ZWWlRibmhsVEZkUFVUMDkvTGVsb25nLUF1Y3Rpb24tQXBhcnRtZW50LWluLUF5ZXItSXRhbS1QZW5hbmctZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_c69349a17f8bf188edfac60c4fca546f.setContent(i_frame_caf2e3d42acb56dc521ba8098ca26c06);
             
         
 
-        marker_d4b9938633989c77302b5e48576f4d2e.bindPopup(popup_2cee04892a29e5d7d704f7211639c2bc)
+        marker_9ade4212b757acff1f65a6388585ab20.bindPopup(popup_c69349a17f8bf188edfac60c4fca546f)
         ;
 
         
     
     
-            var marker_2191b4d4e7a43a3627a0ab78bbf6a2ef = L.marker(
-                [5.8081253, 102.1403323],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_9eaefda2f4671911d9174720b0452798 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_2191b4d4e7a43a3627a0ab78bbf6a2ef.setIcon(custom_icon_9eaefda2f4671911d9174720b0452798);
-        
-    
-            var marker_56c64e94b12a4775144073cf729df000 = L.marker(
-                [4.2089361, 100.6237371],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_7deefdcd95e078fd5e06be8e595b8793 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_56c64e94b12a4775144073cf729df000.setIcon(custom_icon_7deefdcd95e078fd5e06be8e595b8793);
-        
-    
-            var marker_70b8f05185c31de6f5e631132a3beb52 = L.marker(
-                [2.6724673, 101.9466328],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_e07144a76177eb5f4e38137d5aca0982 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_70b8f05185c31de6f5e631132a3beb52.setIcon(custom_icon_e07144a76177eb5f4e38137d5aca0982);
-        
-    
-            var marker_3d202b4174630877630116ffe9a82e6c = L.marker(
-                [4.2867317, 101.140718],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_8e62306a504a7c0dbbe021b95beb2f1c = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_3d202b4174630877630116ffe9a82e6c.setIcon(custom_icon_8e62306a504a7c0dbbe021b95beb2f1c);
-        
-    
-            var marker_09ade7caa53ff8fe5a0f000967052006 = L.marker(
-                [4.4357927, 100.9969262],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_a0455f3040b653b22c1901aac103aca0 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_09ade7caa53ff8fe5a0f000967052006.setIcon(custom_icon_a0455f3040b653b22c1901aac103aca0);
-        
-    
-            var marker_40a30760f33d43ae892b8fc567a9991e = L.marker(
-                [4.5717863, 101.0390482],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_6444299dc1e311182fbf6188de046d3b = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_40a30760f33d43ae892b8fc567a9991e.setIcon(custom_icon_6444299dc1e311182fbf6188de046d3b);
-        
-    
-            var marker_0cd8fe5a3bb678a6927d3e76db99bb2b = L.marker(
-                [4.255268, 101.154793],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_f11024fcb5b49dc572e4014cc4b54d4d = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_0cd8fe5a3bb678a6927d3e76db99bb2b.setIcon(custom_icon_f11024fcb5b49dc572e4014cc4b54d4d);
-        
-    
-            var marker_a542ac8b6284266d19521621cbbda264 = L.marker(
-                [4.7327704, 101.1443588],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_a6b0be5cfb38d7c24346383373891b07 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_a542ac8b6284266d19521621cbbda264.setIcon(custom_icon_a6b0be5cfb38d7c24346383373891b07);
-        
-    
-        var popup_794ed8da871bdb42bd6fdb6e302b6a3e = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_d3119ae6842d3a63b17ffd34b586308c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gNSBKdWwgMjAyMyAoV2VkKSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+IFJNIDE1MDAwMCA8L3A+CiAgICAgICAgICAgICAgICAgICAgPGgyPiBUZXJyYWNlIEhvdXNlIDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBUYW1hbiBDaGVtb3IgTWVzcmEsIFBlcmFrIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMzI0PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gVGl0bGUsIDFzdCBBdWN0aW9uLCAxLDMyNCBzcS5mdCwgTEgsIEludGVybWVkaWF0ZSwgIG9ubGluZSBiaWRkaW5nLCBSTTExMyBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIENoZW1vciBNZXNyYSA0LCAzMTIwMCBDaGVtb3IsIFBlcmFrLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9SRGwwV0dSalZHcG1RVmx1VTNZMU9YUXJWazVKUVQwOS9MZWxvbmctQXVjdGlvbi1UZXJyYWNlLUhvdXNlLWluLVRhbWFuLUNoZW1vci1NZXNyYS1QZXJhay1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_794ed8da871bdb42bd6fdb6e302b6a3e.setContent(i_frame_d3119ae6842d3a63b17ffd34b586308c);
-            
-        
-
-        marker_169adaac529a8a53ba0c8be54ffe6bd6.bindPopup(popup_794ed8da871bdb42bd6fdb6e302b6a3e)
-        ;
-
-        
-    
-    
-            var marker_e19b36710daba3ace9a28ae2d98a25c5 = L.marker(
-                [5.8379369, 102.1561499],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_25403359f48649a72c41dfab4cd08530 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_e19b36710daba3ace9a28ae2d98a25c5.setIcon(custom_icon_25403359f48649a72c41dfab4cd08530);
-        
-    
-            var marker_0b40f950941334dbb6730009b173a50c = L.marker(
-                [2.3887374, 102.3752995],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_4226aad4d4753704e7318e36f3856994 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_0b40f950941334dbb6730009b173a50c.setIcon(custom_icon_4226aad4d4753704e7318e36f3856994);
-        
-    
-            var marker_fae54e3022a4321cca03ffa53d3ae475 = L.marker(
-                [2.9342521, 101.6068532],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_2e5ca205bd0022e5fc201ab3d93e8747 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_fae54e3022a4321cca03ffa53d3ae475.setIcon(custom_icon_2e5ca205bd0022e5fc201ab3d93e8747);
-        
-    
-        var popup_fb1d8cff502e3c5d10c636e881a9bb86 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_c9a1dbcbc1407fff4bf448f2588869c6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjYgSnVsIDIwMjMgKFdlZCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gUm9zYW5hIFZpbGxhIEFwYXJ0bWVudCA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gUm9zYW5hIFZpbGxhIEFwYXJ0bWVudCwgU2VsYW5nb3IgPC9oMT4KICAgICAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDcwMzwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IExBQ0EsIDFzdCBBdWN0aW9uLCA3MDMgc3EuZnQsIExILCBDb3JuZXIgTG90LCAgb25saW5lIGJpZGRpbmcsIFJNMjEzIHBlciBzZiA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gUm9zYW5hIFZpbGxhIDJBIEJsb2sgMTAsIDExLCAxMiwgSmFsYW4gUHV0cmEgUGVyZGFuYSA5LCBUYW1hbiBQdXRyYSBQZXJkYW5hLCA0NzEwMCBQdWNob25nLCBTZWxhbmdvciwgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvVFhwVE0yODNiVUZtUWprNE1uWm1aVlJCZEZnelp6MDkvTGVsb25nLUF1Y3Rpb24tUm9zYW5hLVZpbGxhLUFwYXJ0bWVudC1pbi1UYW1hbi1QdXRyYS1QZXJkYW5hLVNlbGFuZ29yLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_fb1d8cff502e3c5d10c636e881a9bb86.setContent(i_frame_c9a1dbcbc1407fff4bf448f2588869c6);
-            
-        
-
-        marker_f6c4648b11decb4ecc5b45032ad541ad.bindPopup(popup_fb1d8cff502e3c5d10c636e881a9bb86)
-        ;
-
-        
-    
-    
-            var marker_97ba0af44df67c94764ed6bb74e9c5df = L.marker(
-                [4.195817, 100.7012182],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_583697a3d797381b301ceb27b965b7db = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_97ba0af44df67c94764ed6bb74e9c5df.setIcon(custom_icon_583697a3d797381b301ceb27b965b7db);
-        
-    
-            var marker_d9751832a35f69469fc1b56ccd068259 = L.marker(
-                [4.2811578, 101.1485547],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_ca4dc65ce72a49b40912f45ad31c4ea6 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_d9751832a35f69469fc1b56ccd068259.setIcon(custom_icon_ca4dc65ce72a49b40912f45ad31c4ea6);
-        
-    
-            var marker_05cd9a91335baaa8d37cdecdb53df9c5 = L.marker(
-                [5.4365007, 100.6358615],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_629d13cf0441836727a7ce9306c84368 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_05cd9a91335baaa8d37cdecdb53df9c5.setIcon(custom_icon_629d13cf0441836727a7ce9306c84368);
-        
-    
-            var marker_7657ac355e4db644980caed2a6e29e0d = L.marker(
-                [3.0760697, 101.633289],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_238b04d7e8740694eba4ba3626e0707a = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_7657ac355e4db644980caed2a6e29e0d.setIcon(custom_icon_238b04d7e8740694eba4ba3626e0707a);
-        
-    
-        var popup_0a98b4a07b635c2a598ed8e480234ad6 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_ce4cc08edee7cc4622644931108751c9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjcgSnVuIDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBEZXNhIE1lbnRhcmkgMywgU2VsYW5nb3IgPC9oMT4KICAgICAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDY1NzwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IFRpdGxlLCAxc3QgQXVjdGlvbiwgNjU3IHNxLmZ0LCBMSCwgMyAgYmVkcm9vbSwgIG9ubGluZSBiaWRkaW5nLCBSTTIyOCBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEpsbiBQSlMgMmQvMSwgRGVzYSBNZW50YXJpIDMsIDQ2MDAwIFBldGFsaW5nIEpheWEsIFNlbGFuZ29yLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9iRXREUkVwR2JUVk1helZSYUhKblJFTm1TVFozZHowOS9MZWxvbmctQXVjdGlvbi1BcGFydG1lbnQtaW4tRGVzYS1NZW50YXJpLTMtU2VsYW5nb3ItZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_0a98b4a07b635c2a598ed8e480234ad6.setContent(i_frame_ce4cc08edee7cc4622644931108751c9);
-            
-        
-
-        marker_4ccb11b01f846073cdb57ac1a3f3728f.bindPopup(popup_0a98b4a07b635c2a598ed8e480234ad6)
-        ;
-
-        
-    
-    
-            var marker_e060b649c2431b1de98e0b18063b2320 = L.marker(
-                [3.750487299999999, 103.3009103],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_e2353559e73a9ae1405c396c27215682 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_e060b649c2431b1de98e0b18063b2320.setIcon(custom_icon_e2353559e73a9ae1405c396c27215682);
-        
-    
-            var marker_1624adda04ca8e175e89881849320970 = L.marker(
-                [3.750487299999999, 103.3009103],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_e18b494f0a36de8f6863c81590c64715 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_1624adda04ca8e175e89881849320970.setIcon(custom_icon_e18b494f0a36de8f6863c81590c64715);
-        
-    
-            var marker_64a3b296725891212498a3d1e4f019ab = L.marker(
-                [3.750487299999999, 103.3009103],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_74a57d9e7367d1b9e073c6b0cd68238b = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_64a3b296725891212498a3d1e4f019ab.setIcon(custom_icon_74a57d9e7367d1b9e073c6b0cd68238b);
-        
-    
-            var marker_4bb270284ed0423ec2f6a7e93b27a5e1 = L.marker(
-                [2.5151473, 101.8289162],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_a4c266c011b2f4e93dcde1cf8764b7f4 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_4bb270284ed0423ec2f6a7e93b27a5e1.setIcon(custom_icon_a4c266c011b2f4e93dcde1cf8764b7f4);
-        
-    
-            var marker_0d793a23ac26d89bb83279ade614f694 = L.marker(
-                [6.0195516, 102.1500002],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_65f6edf249e66683bd36563491373172 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_0d793a23ac26d89bb83279ade614f694.setIcon(custom_icon_65f6edf249e66683bd36563491373172);
-        
-    
-        var popup_0db06b589f3ae75c434247c6340a8251 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_781a2a884654476a6e5a6d138bbbefaa = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjUgSnVsIDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gU0wgTGVtYWwsIEtlbGFudGFuIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSA4MjA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBUaXRsZSwgMXN0IEF1Y3Rpb24sIDgyMCBzcS5mdCwgTWFsYXkgUmVzZXJ2ZSwgIG9ubGluZSBiaWRkaW5nLCBSTTE4MyBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIEtnIEtla2FidSwgMTcwMDAgUGFzaXIgTWFzLCBLZWxhbnRhbiwgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvUVhocUswWkhaWFZYTW13MU1YUlpaakV2UXpsSVFUMDkvTGVsb25nLUF1Y3Rpb24tVGVycmFjZS1Ib3VzZS1pbi1UYW1hbi1TTC1MZW1hbC1LZWxhbnRhbi1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_0db06b589f3ae75c434247c6340a8251.setContent(i_frame_781a2a884654476a6e5a6d138bbbefaa);
-            
-        
-
-        marker_eba9fbff6b6f6f09e7663932ce561b8d.bindPopup(popup_0db06b589f3ae75c434247c6340a8251)
-        ;
-
-        
-    
-    
-            var marker_8b2235ba3101983146bfd2b69bb00302 = L.marker(
-                [4.2434907, 103.4236978],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_442978688eae90f32b466296f320d774 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_8b2235ba3101983146bfd2b69bb00302.setIcon(custom_icon_442978688eae90f32b466296f320d774);
-        
-    
-        var popup_e22e9b8b4ca975d1627c734d8a499581 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_87270d22c41016dabd631ab747171598 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gNSBKdWwgMjAyMyAoV2VkKSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+IFJNIDE1MDAwMCA8L3A+CiAgICAgICAgICAgICAgICAgICAgPGgyPiBTZW1pIERldGFjaGVkIEhvdXNlIDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBDdWthaSwgVGVyZW5nZ2FudSA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMjI4MDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IFRpdGxlLCAxc3QgQXVjdGlvbiwgMiwyODAgc3EuZnQsIExILCBNYWxheSBSZXNlcnZlLCAgb25saW5lIGJpZGRpbmcsIFJNNjYgcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSBMb3JvbmcgS2FtcHVuZyBCZXN1dCAxMiwgS2FtcHVuZyBCZXN1dCwgMjQwMDAgQ2h1a2FpLCBUZXJlbmdnYW51LCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9ZMHBhUTBKSmNUY3ZNekpTZUZkd2JqRlNaMDA1VVQwOS9MZWxvbmctQXVjdGlvbi1TZW1pLURldGFjaGVkLUhvdXNlLWluLUN1a2FpLVRlcmVuZ2dhbnUtZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_e22e9b8b4ca975d1627c734d8a499581.setContent(i_frame_87270d22c41016dabd631ab747171598);
-            
-        
-
-        marker_4bd9501fa53769392531bd51e0550953.bindPopup(popup_e22e9b8b4ca975d1627c734d8a499581)
-        ;
-
-        
-    
-    
-            var marker_7e0ecb456f25af3386c318429a581dab = L.marker(
-                [3.813243, 103.327714],
-                {}
-            ).addTo(marker_cluster_76f612f422cb256214f77a44f74c9e7a);
-        
-    
-        var custom_icon_8c851d9fb9ac2d50798ceb3c35fbc0ef = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
-        marker_7e0ecb456f25af3386c318429a581dab.setIcon(custom_icon_8c851d9fb9ac2d50798ceb3c35fbc0ef);
-        
-    
-        var popup_c5cc9d856dc81f61d54352df56e28c9f = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_d5b5f1873af7a335b7f80643748c6788 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjQgSnVuIDIwMjMgKFNhdCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBLdWFudGFuLCBQYWhhbmcgPC9oMT4KICAgICAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDY3MDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IExBQ0EsIDFzdCBBdWN0aW9uLCA2NzAgc3EuZnQsIEZILCAgb25saW5lIGJpZGRpbmcsIFJNMjI0IHBlciBzZiA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gTG9yb25nIFR1biBJc21haWwgNiwgMjUwMDAgS3VhbnRhbiwgUGFoYW5nLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9SbUpZUm5KNVZHcGtZVkpqWlhSbGFqSmthbXBEUVQwOS9MZWxvbmctQXVjdGlvbi1BcGFydG1lbnQtaW4tS3VhbnRhbi1QYWhhbmctZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_c5cc9d856dc81f61d54352df56e28c9f.setContent(i_frame_d5b5f1873af7a335b7f80643748c6788);
-            
-        
-
-        marker_f34f362ae17058b95b132759f21299c1.bindPopup(popup_c5cc9d856dc81f61d54352df56e28c9f)
-        ;
-
-        
-    
-    
-            var feature_group_28dfa69457f3a8c19771170c8c714370 = L.featureGroup(
-                {}
-            ).addTo(map_e8ed80ac5a9071d4b6601670e86d68da);
-        
-    
-            var marker_cluster_4357fda3838c6ec4f1a15ef72dca6a1f = L.markerClusterGroup(
-                {}
-            );
-            feature_group_28dfa69457f3a8c19771170c8c714370.addLayer(marker_cluster_4357fda3838c6ec4f1a15ef72dca6a1f);
-        
-    
-            var feature_group_c368ff3c7f65f8c6582af35b50ab1250 = L.featureGroup(
-                {}
-            ).addTo(map_e8ed80ac5a9071d4b6601670e86d68da);
-        
-    
-            var marker_cluster_16b13c6a34831ed12c5751751d539d0f = L.markerClusterGroup(
-                {}
-            );
-            feature_group_c368ff3c7f65f8c6582af35b50ab1250.addLayer(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
-        
-    
-            var marker_ee23805df1736ba71105333184ad3c0d = L.marker(
-                [2.3010265, 102.1693937],
-                {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
-        
-    
-        var custom_icon_9aa1387d96ae22d00f76bc0f7e37b9bc = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_ee23805df1736ba71105333184ad3c0d.setIcon(custom_icon_9aa1387d96ae22d00f76bc0f7e37b9bc);
-        
-    
-            var marker_d4b9938633989c77302b5e48576f4d2e = L.marker(
+            var marker_fee4dea5a455ad71a0e15cf955937a8a = L.marker(
                 [5.3854958, 100.2832448],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_3beb7652921ab9026ccf21790f233e5c = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_d4b9938633989c77302b5e48576f4d2e.setIcon(custom_icon_3beb7652921ab9026ccf21790f233e5c);
+        var custom_icon_9b26025869165327fcafc2b80d5b7f6d = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_fee4dea5a455ad71a0e15cf955937a8a.setIcon(custom_icon_9b26025869165327fcafc2b80d5b7f6d);
         
     
-            var marker_427efd282d4427baf47088994655a8e9 = L.marker(
+            var marker_c8d29f0604d959ac73a7254478e10cd6 = L.marker(
                 [5.8081253, 102.1403323],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_21ddd0a7039f39478872c55112123b37 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_427efd282d4427baf47088994655a8e9.setIcon(custom_icon_21ddd0a7039f39478872c55112123b37);
+            var marker_b61528bf7dbb0bf301733e4556ba1d00 = L.marker(
+                [5.8081253, 102.1403323],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-            var marker_7cd053f861dca5e71dad7cde51d21e4c = L.marker(
+        var custom_icon_d512e06ad53216ff90a4ea89a08d3dc2 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_b61528bf7dbb0bf301733e4556ba1d00.setIcon(custom_icon_d512e06ad53216ff90a4ea89a08d3dc2);
+        
+    
+            var marker_788bb0dcb29ac759db63714f4fdb3f6c = L.marker(
                 [4.2089361, 100.6237371],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_07d1d5180ec9e7e482bfa1ee84737b98 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_7cd053f861dca5e71dad7cde51d21e4c.setIcon(custom_icon_07d1d5180ec9e7e482bfa1ee84737b98);
+            var marker_c39cf79a4731f19a1fd36aa0e7b68c52 = L.marker(
+                [4.2089361, 100.6237371],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-            var marker_7201422a075a8a96f721c10f1f4853e4 = L.marker(
+        var custom_icon_3cc0d404844b745956fef04f845dcb0c = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_c39cf79a4731f19a1fd36aa0e7b68c52.setIcon(custom_icon_3cc0d404844b745956fef04f845dcb0c);
+        
+    
+            var marker_71aed8f92fb201cc6b9dcebfd93c8c18 = L.marker(
                 [2.6724673, 101.9466328],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_149c375b13de221e92ce7db7fa0bd1ed = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_7201422a075a8a96f721c10f1f4853e4.setIcon(custom_icon_149c375b13de221e92ce7db7fa0bd1ed);
+            var marker_e239125b025799abec24020ca1014cf0 = L.marker(
+                [2.6724673, 101.9466328],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-            var marker_ee9aef301e9cbdad74841ce353cfdd2c = L.marker(
+        var custom_icon_ec8b4a3086ed830d2010339c3d167c04 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_e239125b025799abec24020ca1014cf0.setIcon(custom_icon_ec8b4a3086ed830d2010339c3d167c04);
+        
+    
+            var marker_7f877053b3165bfe7d616789d71d3523 = L.marker(
                 [4.2867317, 101.140718],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_b1eddef951aa018b16fca958194957c6 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_ee9aef301e9cbdad74841ce353cfdd2c.setIcon(custom_icon_b1eddef951aa018b16fca958194957c6);
+            var marker_ae76f90ca1577de0106392c0e264131c = L.marker(
+                [4.2867317, 101.140718],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-            var marker_9384d595f4364fc4bdae89eefb555daa = L.marker(
+        var custom_icon_35340b89f66a7ea91931cdfe0d1ccbf6 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_ae76f90ca1577de0106392c0e264131c.setIcon(custom_icon_35340b89f66a7ea91931cdfe0d1ccbf6);
+        
+    
+            var marker_2f86e0a6369e51d5974aa3f3dec677d6 = L.marker(
                 [4.4357927, 100.9969262],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_76f756ff3863356980c60f00ce06e931 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_9384d595f4364fc4bdae89eefb555daa.setIcon(custom_icon_76f756ff3863356980c60f00ce06e931);
+            var marker_4e2112c38f4e078a7f99e5643aff71ff = L.marker(
+                [4.4357927, 100.9969262],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-            var marker_d3b2e4e26d4aa5d63f3d59d8f52d3a44 = L.marker(
+        var custom_icon_9fd395e6379e0fc86cb5b8eb07c3c8b1 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_4e2112c38f4e078a7f99e5643aff71ff.setIcon(custom_icon_9fd395e6379e0fc86cb5b8eb07c3c8b1);
+        
+    
+            var marker_609047d74d548475752f43d50e4c7187 = L.marker(
                 [4.5717863, 101.0390482],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_2df41c207c2c84d5afa738d7ddd40b69 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_d3b2e4e26d4aa5d63f3d59d8f52d3a44.setIcon(custom_icon_2df41c207c2c84d5afa738d7ddd40b69);
+            var marker_3ac9abf645067fab65121d1d1b44ad8b = L.marker(
+                [4.5717863, 101.0390482],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-            var marker_8adbbd5a5fa098e012ac5f7a61ee31eb = L.marker(
+        var custom_icon_aaf9343500bc1a11b63321fe7681c4bf = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_3ac9abf645067fab65121d1d1b44ad8b.setIcon(custom_icon_aaf9343500bc1a11b63321fe7681c4bf);
+        
+    
+            var marker_98f12de4a23cc5fe1b88d27f85dfdf99 = L.marker(
                 [4.255268, 101.154793],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_1a79449cdf82674dd6b2aadc6443f3db = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_8adbbd5a5fa098e012ac5f7a61ee31eb.setIcon(custom_icon_1a79449cdf82674dd6b2aadc6443f3db);
+            var marker_5fda7b7aff5a35a0a90c8a0e5af170b0 = L.marker(
+                [4.255268, 101.154793],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-            var marker_169adaac529a8a53ba0c8be54ffe6bd6 = L.marker(
+        var custom_icon_84029398c0bbaf810a2315e27ed5cf3e = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_5fda7b7aff5a35a0a90c8a0e5af170b0.setIcon(custom_icon_84029398c0bbaf810a2315e27ed5cf3e);
+        
+    
+            var marker_1edbd73cab1ee6d2fb9a453a019da594 = L.marker(
                 [4.7327704, 101.1443588],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_5bd0b4f93cf3abffdcec39cdb82abccc = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_169adaac529a8a53ba0c8be54ffe6bd6.setIcon(custom_icon_5bd0b4f93cf3abffdcec39cdb82abccc);
+        var popup_58ed495c50625992f143533242924bbb = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_188fdb04755d853af4d7385e0af112cd = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gNSBKdWwgMjAyMyAoV2VkKSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+IFJNIDE1MDAwMCA8L3A+CiAgICAgICAgICAgICAgICAgICAgPGgyPiBUZXJyYWNlIEhvdXNlIDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBUYW1hbiBDaGVtb3IgTWVzcmEsIFBlcmFrIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMzI0PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gVGl0bGUsIDFzdCBBdWN0aW9uLCAxLDMyNCBzcS5mdCwgTEgsIEludGVybWVkaWF0ZSwgIG9ubGluZSBiaWRkaW5nLCBSTTExMyBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIENoZW1vciBNZXNyYSA0LCAzMTIwMCBDaGVtb3IsIFBlcmFrLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9SRGwwV0dSalZHcG1RVmx1VTNZMU9YUXJWazVKUVQwOS9MZWxvbmctQXVjdGlvbi1UZXJyYWNlLUhvdXNlLWluLVRhbWFuLUNoZW1vci1NZXNyYS1QZXJhay1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_58ed495c50625992f143533242924bbb.setContent(i_frame_188fdb04755d853af4d7385e0af112cd);
+            
+        
+
+        marker_075f507bad6d756ef8fca97d830f22cf.bindPopup(popup_58ed495c50625992f143533242924bbb)
+        ;
+
         
     
-            var marker_26bbb2e173e01492fa72ecab41dc831a = L.marker(
+    
+            var marker_0bf3d24a0cf1f659d9b76094012a33dd = L.marker(
+                [4.7327704, 101.1443588],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
+        
+    
+        var custom_icon_cf7df4dbbc0638a264ad2b22e0c8d332 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_0bf3d24a0cf1f659d9b76094012a33dd.setIcon(custom_icon_cf7df4dbbc0638a264ad2b22e0c8d332);
+        
+    
+            var marker_ae9497312e0786a7e0732c65ada8605e = L.marker(
                 [5.8379369, 102.1561499],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_ebc9d9fea9b47aadd3cced115032f69d = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_26bbb2e173e01492fa72ecab41dc831a.setIcon(custom_icon_ebc9d9fea9b47aadd3cced115032f69d);
+            var marker_2e65def5add3612148f7d69819ad09cb = L.marker(
+                [5.8379369, 102.1561499],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-            var marker_25174a4e93bd6086e9d582d6333fef80 = L.marker(
+        var custom_icon_0b303c43ae55e2d0efb7160bce42b823 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_2e65def5add3612148f7d69819ad09cb.setIcon(custom_icon_0b303c43ae55e2d0efb7160bce42b823);
+        
+    
+            var marker_5c066c75c6e05ee7c406619e73b3d5ab = L.marker(
                 [2.3887374, 102.3752995],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_8e4d438dce20222522b8744b37f5f2b9 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_25174a4e93bd6086e9d582d6333fef80.setIcon(custom_icon_8e4d438dce20222522b8744b37f5f2b9);
+            var marker_776d2827c3462216d3241a0fba717268 = L.marker(
+                [2.3887374, 102.3752995],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-            var marker_f6c4648b11decb4ecc5b45032ad541ad = L.marker(
+        var custom_icon_2d17dd6645a5f61bcb47d84a895f370e = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_776d2827c3462216d3241a0fba717268.setIcon(custom_icon_2d17dd6645a5f61bcb47d84a895f370e);
+        
+    
+            var marker_1ce85b46ca05c40713e08ed04c354fa1 = L.marker(
                 [2.9342521, 101.6068532],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_2a10121f5f75433094c34c3d0374ff9f = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_f6c4648b11decb4ecc5b45032ad541ad.setIcon(custom_icon_2a10121f5f75433094c34c3d0374ff9f);
+        var popup_3797e148b0e3933490676edfa8c99f3f = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_151c160af659d607908cfc5a540fcacf = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjYgSnVsIDIwMjMgKFdlZCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gUm9zYW5hIFZpbGxhIEFwYXJ0bWVudCA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gUm9zYW5hIFZpbGxhIEFwYXJ0bWVudCwgU2VsYW5nb3IgPC9oMT4KICAgICAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDcwMzwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IExBQ0EsIDFzdCBBdWN0aW9uLCA3MDMgc3EuZnQsIExILCBDb3JuZXIgTG90LCAgb25saW5lIGJpZGRpbmcsIFJNMjEzIHBlciBzZiA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gUm9zYW5hIFZpbGxhIDJBIEJsb2sgMTAsIDExLCAxMiwgSmFsYW4gUHV0cmEgUGVyZGFuYSA5LCBUYW1hbiBQdXRyYSBQZXJkYW5hLCA0NzEwMCBQdWNob25nLCBTZWxhbmdvciwgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvVFhwVE0yODNiVUZtUWprNE1uWm1aVlJCZEZnelp6MDkvTGVsb25nLUF1Y3Rpb24tUm9zYW5hLVZpbGxhLUFwYXJ0bWVudC1pbi1UYW1hbi1QdXRyYS1QZXJkYW5hLVNlbGFuZ29yLWZvci1STTE1MDAwMCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_3797e148b0e3933490676edfa8c99f3f.setContent(i_frame_151c160af659d607908cfc5a540fcacf);
+            
+        
+
+        marker_68893274f6e38070a79d0b3e002c45b8.bindPopup(popup_3797e148b0e3933490676edfa8c99f3f)
+        ;
+
         
     
-            var marker_8ec129e196bde0d0e74115051f5da6b8 = L.marker(
+    
+            var marker_3d490d58e2089e319b25349f622e1ae1 = L.marker(
+                [2.9342521, 101.6068532],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
+        
+    
+        var custom_icon_31ff7b89b6bb7c5add986a58105be0de = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_3d490d58e2089e319b25349f622e1ae1.setIcon(custom_icon_31ff7b89b6bb7c5add986a58105be0de);
+        
+    
+            var marker_faf63b3b277f31498c229be43531ba34 = L.marker(
                 [4.195817, 100.7012182],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_b0c3ba288094a4a0a55c2bbb839f474c = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_8ec129e196bde0d0e74115051f5da6b8.setIcon(custom_icon_b0c3ba288094a4a0a55c2bbb839f474c);
+            var marker_0e04f6f79104b613013431d057654d54 = L.marker(
+                [4.195817, 100.7012182],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-            var marker_901b6df9454f3dbc52f9f5be8a75c855 = L.marker(
+        var custom_icon_310ef3bac315ef454669b8a78ee96fe9 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_0e04f6f79104b613013431d057654d54.setIcon(custom_icon_310ef3bac315ef454669b8a78ee96fe9);
+        
+    
+            var marker_9fca2eccb11f909d3696b6395e0095a4 = L.marker(
                 [4.2811578, 101.1485547],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_b558bb8df5984fb43a0218ed9e4f73af = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_901b6df9454f3dbc52f9f5be8a75c855.setIcon(custom_icon_b558bb8df5984fb43a0218ed9e4f73af);
+            var marker_15df28a66571061ef3a8a4a92ff74993 = L.marker(
+                [4.2811578, 101.1485547],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-            var marker_24d8526bf599182177020b596a3c214c = L.marker(
+        var custom_icon_f9e55a54685af05edc2883c87da8aa2f = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_15df28a66571061ef3a8a4a92ff74993.setIcon(custom_icon_f9e55a54685af05edc2883c87da8aa2f);
+        
+    
+            var marker_ee2fa731c52869352b7bc3118f487355 = L.marker(
                 [5.4365007, 100.6358615],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_a91c29e542f30e6548660cc70313f2c3 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_24d8526bf599182177020b596a3c214c.setIcon(custom_icon_a91c29e542f30e6548660cc70313f2c3);
+            var marker_a0ba8380b96783f84096f2c2f8f43c05 = L.marker(
+                [5.4365007, 100.6358615],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-            var marker_4ccb11b01f846073cdb57ac1a3f3728f = L.marker(
+        var custom_icon_43761d58f355b8b8c6e29474996e86a6 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_a0ba8380b96783f84096f2c2f8f43c05.setIcon(custom_icon_43761d58f355b8b8c6e29474996e86a6);
+        
+    
+            var marker_c7ffa6450fdc84d1694e5f57edd4c2c6 = L.marker(
                 [3.0760697, 101.633289],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_9310529aca75f98bc0ecd35854b5c3ac = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_4ccb11b01f846073cdb57ac1a3f3728f.setIcon(custom_icon_9310529aca75f98bc0ecd35854b5c3ac);
+        var popup_8a28825594a64cce763731e9cd1bbe20 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_76f32efbbce9af64a6505b45cdf886e9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjcgSnVuIDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBEZXNhIE1lbnRhcmkgMywgU2VsYW5nb3IgPC9oMT4KICAgICAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDY1NzwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IFRpdGxlLCAxc3QgQXVjdGlvbiwgNjU3IHNxLmZ0LCBMSCwgMyAgYmVkcm9vbSwgIG9ubGluZSBiaWRkaW5nLCBSTTIyOCBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEpsbiBQSlMgMmQvMSwgRGVzYSBNZW50YXJpIDMsIDQ2MDAwIFBldGFsaW5nIEpheWEsIFNlbGFuZ29yLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9iRXREUkVwR2JUVk1helZSYUhKblJFTm1TVFozZHowOS9MZWxvbmctQXVjdGlvbi1BcGFydG1lbnQtaW4tRGVzYS1NZW50YXJpLTMtU2VsYW5nb3ItZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_8a28825594a64cce763731e9cd1bbe20.setContent(i_frame_76f32efbbce9af64a6505b45cdf886e9);
+            
+        
+
+        marker_76ced12db29fb4589ba14d4beed5c607.bindPopup(popup_8a28825594a64cce763731e9cd1bbe20)
+        ;
+
         
     
-            var marker_435c98e94f3408617d4190fbd439a0ab = L.marker(
+    
+            var marker_496c1c019b430c6c99845ae0ac352913 = L.marker(
+                [3.0760697, 101.633289],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
+        
+    
+        var custom_icon_0285f3d293fa3aa50bf1fbdb21b60eff = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_496c1c019b430c6c99845ae0ac352913.setIcon(custom_icon_0285f3d293fa3aa50bf1fbdb21b60eff);
+        
+    
+            var marker_e0055d62302ab3390292443abf563912 = L.marker(
                 [3.750487299999999, 103.3009103],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_c996327dd14b5df8cba64d9fee44419c = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_435c98e94f3408617d4190fbd439a0ab.setIcon(custom_icon_c996327dd14b5df8cba64d9fee44419c);
-        
-    
-            var marker_c22ba08ee754a16aab3ea40b72f23b5a = L.marker(
+            var marker_203b41d9df0287e87107d01a26b0721c = L.marker(
                 [3.750487299999999, 103.3009103],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_82138121d7f0c1280c205015e45bab70 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_c22ba08ee754a16aab3ea40b72f23b5a.setIcon(custom_icon_82138121d7f0c1280c205015e45bab70);
+        var custom_icon_cbd6b0a286bf62dcb5e8447f8334ac4b = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_203b41d9df0287e87107d01a26b0721c.setIcon(custom_icon_cbd6b0a286bf62dcb5e8447f8334ac4b);
         
     
-            var marker_f00ad573e93dda8a132370e9e0ebd72b = L.marker(
+            var marker_319d8e8b47dc14ce2260406033d93353 = L.marker(
                 [3.750487299999999, 103.3009103],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_576ef185e57e46b60d6d0efd75c94e1c = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_f00ad573e93dda8a132370e9e0ebd72b.setIcon(custom_icon_576ef185e57e46b60d6d0efd75c94e1c);
+            var marker_e25dc57e305a257aebacc454f55232d4 = L.marker(
+                [3.750487299999999, 103.3009103],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-            var marker_41768483e3db53668f291e68ecb2501d = L.marker(
+        var custom_icon_22e9100c58a2c1d85c6eb47723cc7348 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_e25dc57e305a257aebacc454f55232d4.setIcon(custom_icon_22e9100c58a2c1d85c6eb47723cc7348);
+        
+    
+            var marker_411034b0eafa2bc870b5ef712e1e8bc1 = L.marker(
+                [3.750487299999999, 103.3009103],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
+        
+    
+            var marker_9f89004cb61b0907a854d09dd0ec3bef = L.marker(
+                [3.750487299999999, 103.3009103],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
+        
+    
+        var custom_icon_2f418c3fcded4d5b7d95cc39826e224d = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_9f89004cb61b0907a854d09dd0ec3bef.setIcon(custom_icon_2f418c3fcded4d5b7d95cc39826e224d);
+        
+    
+            var marker_14de57fd9c875275e789c7430a492a08 = L.marker(
                 [2.5151473, 101.8289162],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_a2e0e78033059a661ea31be108e962c8 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_41768483e3db53668f291e68ecb2501d.setIcon(custom_icon_a2e0e78033059a661ea31be108e962c8);
+            var marker_e2be631823aacf9592b57ecf134af0a2 = L.marker(
+                [2.5151473, 101.8289162],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-            var marker_eba9fbff6b6f6f09e7663932ce561b8d = L.marker(
+        var custom_icon_71bc1f0fd1fd381630172a9db7d77d50 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_e2be631823aacf9592b57ecf134af0a2.setIcon(custom_icon_71bc1f0fd1fd381630172a9db7d77d50);
+        
+    
+            var marker_abc4f274ce2e3523f019b41fe628cd04 = L.marker(
                 [6.0195516, 102.1500002],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_fcd64dd4f822bef5898287ea826663c6 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_eba9fbff6b6f6f09e7663932ce561b8d.setIcon(custom_icon_fcd64dd4f822bef5898287ea826663c6);
+        var popup_bd9bd2f244543287bf334810f1255aad = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_f0630e5109111dba1e570ffe28af15c6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjUgSnVsIDIwMjMgKFR1ZSkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gVGVycmFjZSBIb3VzZSA8L2gyPgogICAgICAgICAgICAgICAgICAgIDxoMT4gVGFtYW4gU0wgTGVtYWwsIEtlbGFudGFuIDwvaDE+CiAgICAgICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSA4MjA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBUaXRsZSwgMXN0IEF1Y3Rpb24sIDgyMCBzcS5mdCwgTWFsYXkgUmVzZXJ2ZSwgIG9ubGluZSBiaWRkaW5nLCBSTTE4MyBwZXIgc2YgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IE5vbmUgPC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIEtnIEtla2FidSwgMTcwMDAgUGFzaXIgTWFzLCBLZWxhbnRhbiwgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGVsb25ndGlwcy5jb20ubXkvcHJvcGVydHkvUVhocUswWkhaWFZYTW13MU1YUlpaakV2UXpsSVFUMDkvTGVsb25nLUF1Y3Rpb24tVGVycmFjZS1Ib3VzZS1pbi1UYW1hbi1TTC1MZW1hbC1LZWxhbnRhbi1mb3ItUk0xNTAwMDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_bd9bd2f244543287bf334810f1255aad.setContent(i_frame_f0630e5109111dba1e570ffe28af15c6);
+            
+        
+
+        marker_1e675767bfa2559c37f626d3c2986a21.bindPopup(popup_bd9bd2f244543287bf334810f1255aad)
+        ;
+
         
     
-            var marker_4bd9501fa53769392531bd51e0550953 = L.marker(
+    
+            var marker_7882764be418bef3f297b7cdeb96f4a3 = L.marker(
+                [6.0195516, 102.1500002],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
+        
+    
+        var custom_icon_2c1693f20f4733f034cd60383c6afac7 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_7882764be418bef3f297b7cdeb96f4a3.setIcon(custom_icon_2c1693f20f4733f034cd60383c6afac7);
+        
+    
+            var marker_81047ae01604e57ad957c0bf69e7e97b = L.marker(
                 [4.2434907, 103.4236978],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_e8215d3e045c2eef3c3ff2bca7b8f2b6 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_4bd9501fa53769392531bd51e0550953.setIcon(custom_icon_e8215d3e045c2eef3c3ff2bca7b8f2b6);
+        var popup_8e00513d7dccdfca9cba94e4439e6ea3 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_a0047d7e03eac6ea1cb561392161e9d5 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gNSBKdWwgMjAyMyAoV2VkKSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+IFJNIDE1MDAwMCA8L3A+CiAgICAgICAgICAgICAgICAgICAgPGgyPiBTZW1pIERldGFjaGVkIEhvdXNlIDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBDdWthaSwgVGVyZW5nZ2FudSA8L2gxPgogICAgICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMjI4MDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IFRpdGxlLCAxc3QgQXVjdGlvbiwgMiwyODAgc3EuZnQsIExILCBNYWxheSBSZXNlcnZlLCAgb25saW5lIGJpZGRpbmcsIFJNNjYgcGVyIHNmIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBOb25lIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSBMb3JvbmcgS2FtcHVuZyBCZXN1dCAxMiwgS2FtcHVuZyBCZXN1dCwgMjQwMDAgQ2h1a2FpLCBUZXJlbmdnYW51LCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9ZMHBhUTBKSmNUY3ZNekpTZUZkd2JqRlNaMDA1VVQwOS9MZWxvbmctQXVjdGlvbi1TZW1pLURldGFjaGVkLUhvdXNlLWluLUN1a2FpLVRlcmVuZ2dhbnUtZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_8e00513d7dccdfca9cba94e4439e6ea3.setContent(i_frame_a0047d7e03eac6ea1cb561392161e9d5);
+            
+        
+
+        marker_c76fff963a03300b757fddf3fb70a1a0.bindPopup(popup_8e00513d7dccdfca9cba94e4439e6ea3)
+        ;
+
         
     
-            var marker_f34f362ae17058b95b132759f21299c1 = L.marker(
+    
+            var marker_b721ccbdd6570022129a0c60df0cc5c7 = L.marker(
+                [4.2434907, 103.4236978],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
+        
+    
+        var custom_icon_f7d5a5f78cd4540664293b3cde1d3564 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_b721ccbdd6570022129a0c60df0cc5c7.setIcon(custom_icon_f7d5a5f78cd4540664293b3cde1d3564);
+        
+    
+            var marker_83f605e2a28a80e2bb31d266b483ee47 = L.marker(
                 [3.813243, 103.327714],
                 {}
-            ).addTo(marker_cluster_16b13c6a34831ed12c5751751d539d0f);
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
         
     
-        var custom_icon_30f1e424c7f5fe1e5a62bf9d3ed831ad = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
-        marker_f34f362ae17058b95b132759f21299c1.setIcon(custom_icon_30f1e424c7f5fe1e5a62bf9d3ed831ad);
+        var popup_ff7ff1a4a0e17b25b10e84e03eaa0d8b = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_110e3ba6daac4eaa094b538890aec91f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgICAgICA8cD4gMjQgSnVuIDIwMjMgKFNhdCkgPC9wPgogICAgICAgICAgICAgICAgICAgIDxwPiBSTSAxNTAwMDAgPC9wPgogICAgICAgICAgICAgICAgICAgIDxoMj4gQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICAgICAgPGgxPiBLdWFudGFuLCBQYWhhbmcgPC9oMT4KICAgICAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDY3MDwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IExBQ0EsIDFzdCBBdWN0aW9uLCA2NzAgc3EuZnQsIEZILCAgb25saW5lIGJpZGRpbmcsIFJNMjI0IHBlciBzZiA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gTm9uZSA8L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gTG9yb25nIFR1biBJc21haWwgNiwgMjUwMDAgS3VhbnRhbiwgUGFoYW5nLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5sZWxvbmd0aXBzLmNvbS5teS9wcm9wZXJ0eS9SbUpZUm5KNVZHcGtZVkpqWlhSbGFqSmthbXBEUVQwOS9MZWxvbmctQXVjdGlvbi1BcGFydG1lbnQtaW4tS3VhbnRhbi1QYWhhbmctZm9yLVJNMTUwMDAwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_ff7ff1a4a0e17b25b10e84e03eaa0d8b.setContent(i_frame_110e3ba6daac4eaa094b538890aec91f);
+            
+        
+
+        marker_6b3f12ae8d6abda2848cc631d6de5a89.bindPopup(popup_ff7ff1a4a0e17b25b10e84e03eaa0d8b)
+        ;
+
         
     
-            var layer_control_a1805fd38f7bde7b8c337e9cc3fdab8b = {
+    
+            var marker_63e1fc59cc611ffd09cce076bf46b1b5 = L.marker(
+                [3.813243, 103.327714],
+                {}
+            ).addTo(marker_cluster_bc0a2c84df3fe3a1a23519073abab84e);
+        
+    
+        var custom_icon_5a004ae6dad32ab223b6497369bfa052 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"});
+        marker_63e1fc59cc611ffd09cce076bf46b1b5.setIcon(custom_icon_5a004ae6dad32ab223b6497369bfa052);
+        
+    
+            var feature_group_89e09427d1f95bf288be5579af32c687 = L.featureGroup(
+                {}
+            ).addTo(map_3a8fdf1d1a84815704a9ae155d635540);
+        
+    
+            var marker_cluster_1458ba522f2830106fee08ffc386c8ba = L.markerClusterGroup(
+                {}
+            );
+            feature_group_89e09427d1f95bf288be5579af32c687.addLayer(marker_cluster_1458ba522f2830106fee08ffc386c8ba);
+        
+    
+            var feature_group_1ffb26aa659f08ec3f54c0ab7b7cfb0a = L.featureGroup(
+                {}
+            ).addTo(map_3a8fdf1d1a84815704a9ae155d635540);
+        
+    
+            var marker_cluster_216734300050bb637b217c1dd99d6e7f = L.markerClusterGroup(
+                {}
+            );
+            feature_group_1ffb26aa659f08ec3f54c0ab7b7cfb0a.addLayer(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+            var marker_4ee7a6f3c177163bd7b006ebe36f617e = L.marker(
+                [2.3010265, 102.1693937],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_bbce27d0b4477a36032698d76aa9c718 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_4ee7a6f3c177163bd7b006ebe36f617e.setIcon(custom_icon_bbce27d0b4477a36032698d76aa9c718);
+        
+    
+            var marker_9ade4212b757acff1f65a6388585ab20 = L.marker(
+                [5.3854958, 100.2832448],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_0ad929e9b81b1b0b210b39169f2324e0 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_9ade4212b757acff1f65a6388585ab20.setIcon(custom_icon_0ad929e9b81b1b0b210b39169f2324e0);
+        
+    
+            var marker_ac13af8794255a4d14a4c74cfd5f26bf = L.marker(
+                [5.8081253, 102.1403323],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_7a1ff833e0aa2a2d46e8876bd4fef727 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_ac13af8794255a4d14a4c74cfd5f26bf.setIcon(custom_icon_7a1ff833e0aa2a2d46e8876bd4fef727);
+        
+    
+            var marker_778c6714a4fda1e5784906627b7b8dd9 = L.marker(
+                [4.2089361, 100.6237371],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_90f980a666b204d57d4da4c70faea7e8 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_778c6714a4fda1e5784906627b7b8dd9.setIcon(custom_icon_90f980a666b204d57d4da4c70faea7e8);
+        
+    
+            var marker_80ed6c2e8cab2c23296c7d21c5ce6362 = L.marker(
+                [2.6724673, 101.9466328],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_3e277694f98d5611501ee2661a1d13af = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_80ed6c2e8cab2c23296c7d21c5ce6362.setIcon(custom_icon_3e277694f98d5611501ee2661a1d13af);
+        
+    
+            var marker_94ff1d7df79d8021508bbf6ca66e6d4c = L.marker(
+                [4.2867317, 101.140718],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_a8bdb68766846d8f337ae4fcb2719f99 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_94ff1d7df79d8021508bbf6ca66e6d4c.setIcon(custom_icon_a8bdb68766846d8f337ae4fcb2719f99);
+        
+    
+            var marker_74ba33d91e29ad68f35f2d9649d580cc = L.marker(
+                [4.4357927, 100.9969262],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_980044320e13b623aa8c360d20ba91c6 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_74ba33d91e29ad68f35f2d9649d580cc.setIcon(custom_icon_980044320e13b623aa8c360d20ba91c6);
+        
+    
+            var marker_0bebaa34fba46e16b4c37f67f69bdfad = L.marker(
+                [4.5717863, 101.0390482],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_fe83587136fbf664854150bbe7ef729e = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_0bebaa34fba46e16b4c37f67f69bdfad.setIcon(custom_icon_fe83587136fbf664854150bbe7ef729e);
+        
+    
+            var marker_bfd34c033b50c340a607503f1e83f3a0 = L.marker(
+                [4.255268, 101.154793],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_0733bae532724ec9872394d8e3f8320c = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_bfd34c033b50c340a607503f1e83f3a0.setIcon(custom_icon_0733bae532724ec9872394d8e3f8320c);
+        
+    
+            var marker_075f507bad6d756ef8fca97d830f22cf = L.marker(
+                [4.7327704, 101.1443588],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_30b7c19b6c2e8657cb096b47cb2daa32 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_075f507bad6d756ef8fca97d830f22cf.setIcon(custom_icon_30b7c19b6c2e8657cb096b47cb2daa32);
+        
+    
+            var marker_194487f522b0051bd1bdc0c8c6cecced = L.marker(
+                [5.8379369, 102.1561499],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_de20a536c4656fcc28cf9ae6ae19fc93 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_194487f522b0051bd1bdc0c8c6cecced.setIcon(custom_icon_de20a536c4656fcc28cf9ae6ae19fc93);
+        
+    
+            var marker_ad51e62cf6971d078e23a7bf22902687 = L.marker(
+                [2.3887374, 102.3752995],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_f9301da190f65dd9e79881b1ef6f86ee = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_ad51e62cf6971d078e23a7bf22902687.setIcon(custom_icon_f9301da190f65dd9e79881b1ef6f86ee);
+        
+    
+            var marker_68893274f6e38070a79d0b3e002c45b8 = L.marker(
+                [2.9342521, 101.6068532],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_8e04e3d8a19786bac61f483235f9dd66 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_68893274f6e38070a79d0b3e002c45b8.setIcon(custom_icon_8e04e3d8a19786bac61f483235f9dd66);
+        
+    
+            var marker_7ccad96ea2adb786e77d814ff007ff91 = L.marker(
+                [4.195817, 100.7012182],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_686aeb9da730719e3927be717c4a1b37 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_7ccad96ea2adb786e77d814ff007ff91.setIcon(custom_icon_686aeb9da730719e3927be717c4a1b37);
+        
+    
+            var marker_3abc086eec033cf95b2ccca34b9d325f = L.marker(
+                [4.2811578, 101.1485547],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_61856df85730ae054d34361e634b7d1a = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_3abc086eec033cf95b2ccca34b9d325f.setIcon(custom_icon_61856df85730ae054d34361e634b7d1a);
+        
+    
+            var marker_829b46fabe6e2e92b6947dccbd5d0945 = L.marker(
+                [5.4365007, 100.6358615],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_405607a2467a199c1e95755b1a89db73 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_829b46fabe6e2e92b6947dccbd5d0945.setIcon(custom_icon_405607a2467a199c1e95755b1a89db73);
+        
+    
+            var marker_76ced12db29fb4589ba14d4beed5c607 = L.marker(
+                [3.0760697, 101.633289],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_8b0c8ff39bdad7646fbc3beba8d2e39b = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_76ced12db29fb4589ba14d4beed5c607.setIcon(custom_icon_8b0c8ff39bdad7646fbc3beba8d2e39b);
+        
+    
+            var marker_b49bd3842f8641056b5dced49e19050e = L.marker(
+                [3.750487299999999, 103.3009103],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_de74a6021559a975f29ef98c7bdc3521 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_b49bd3842f8641056b5dced49e19050e.setIcon(custom_icon_de74a6021559a975f29ef98c7bdc3521);
+        
+    
+            var marker_ed33d30d0cb95f9b48424f2c68829b05 = L.marker(
+                [3.750487299999999, 103.3009103],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_05a0eae893cd068ec6f30db41551bcc4 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_ed33d30d0cb95f9b48424f2c68829b05.setIcon(custom_icon_05a0eae893cd068ec6f30db41551bcc4);
+        
+    
+            var marker_3ce817559863501c55ce35a8876a9a4f = L.marker(
+                [3.750487299999999, 103.3009103],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_21e9bd8e53c215af4b0cc651c20d1aa8 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_3ce817559863501c55ce35a8876a9a4f.setIcon(custom_icon_21e9bd8e53c215af4b0cc651c20d1aa8);
+        
+    
+            var marker_68f5228cef05457b56c197036e059903 = L.marker(
+                [2.5151473, 101.8289162],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_57eb47b0635cb736352244aa781d5fa5 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_68f5228cef05457b56c197036e059903.setIcon(custom_icon_57eb47b0635cb736352244aa781d5fa5);
+        
+    
+            var marker_1e675767bfa2559c37f626d3c2986a21 = L.marker(
+                [6.0195516, 102.1500002],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_f23fc2d63d97b8060a74b71244fa21c2 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_1e675767bfa2559c37f626d3c2986a21.setIcon(custom_icon_f23fc2d63d97b8060a74b71244fa21c2);
+        
+    
+            var marker_c76fff963a03300b757fddf3fb70a1a0 = L.marker(
+                [4.2434907, 103.4236978],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_73e6125a58b06115477a7b8f21d52f12 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_c76fff963a03300b757fddf3fb70a1a0.setIcon(custom_icon_73e6125a58b06115477a7b8f21d52f12);
+        
+    
+            var marker_6b3f12ae8d6abda2848cc631d6de5a89 = L.marker(
+                [3.813243, 103.327714],
+                {}
+            ).addTo(marker_cluster_216734300050bb637b217c1dd99d6e7f);
+        
+    
+        var custom_icon_dba909b5dc32baa8e69fd4948973d971 = L.icon({"iconSize": [35, 35], "iconUrl": "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"});
+        marker_6b3f12ae8d6abda2848cc631d6de5a89.setIcon(custom_icon_dba909b5dc32baa8e69fd4948973d971);
+        
+    
+            var layer_control_1520de590aeacfdae323dff734ee6695 = {
                 base_layers : {
-                    "openstreetmap" : tile_layer_6c4f13f9b9869bd650c7322c177940a8,
+                    "openstreetmap" : tile_layer_2dc495e03c7646397e8f792e4d473576,
                 },
                 overlays :  {
-                    "Landed" : feature_group_b4b020acc41006eb6dcb66bb00f22255,
-                    "Low Risk Deals" : feature_group_fa5ba028e2b6126f9d81a30a4667faee,
-                    "Attention" : feature_group_28dfa69457f3a8c19771170c8c714370,
-                    "ALL" : feature_group_c368ff3c7f65f8c6582af35b50ab1250,
+                    "Landed" : feature_group_bf44caf9ea9ac7c326ff3d892e6fc0dd,
+                    "Low Risk Deals" : feature_group_b5fe23c09628a8dc313491d4fcfba9d4,
+                    "Attention" : feature_group_89e09427d1f95bf288be5579af32c687,
+                    "ALL" : feature_group_1ffb26aa659f08ec3f54c0ab7b7cfb0a,
                 },
             };
             L.control.layers(
-                layer_control_a1805fd38f7bde7b8c337e9cc3fdab8b.base_layers,
-                layer_control_a1805fd38f7bde7b8c337e9cc3fdab8b.overlays,
+                layer_control_1520de590aeacfdae323dff734ee6695.base_layers,
+                layer_control_1520de590aeacfdae323dff734ee6695.overlays,
                 {"autoZIndex": true, "collapsed": true, "position": "topright"}
-            ).addTo(map_e8ed80ac5a9071d4b6601670e86d68da);
-            feature_group_b4b020acc41006eb6dcb66bb00f22255.remove();
-            feature_group_fa5ba028e2b6126f9d81a30a4667faee.remove();
-            feature_group_28dfa69457f3a8c19771170c8c714370.remove();
-            feature_group_c368ff3c7f65f8c6582af35b50ab1250.remove();
+            ).addTo(map_3a8fdf1d1a84815704a9ae155d635540);
+            feature_group_bf44caf9ea9ac7c326ff3d892e6fc0dd.remove();
+            feature_group_b5fe23c09628a8dc313491d4fcfba9d4.remove();
+            feature_group_1ffb26aa659f08ec3f54c0ab7b7cfb0a.remove();
         
 </script>
 </html>
