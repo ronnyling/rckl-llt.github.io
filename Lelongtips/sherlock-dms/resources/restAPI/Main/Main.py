@@ -143,7 +143,7 @@ class Main(object):
         map.add_child(fg2)
         marker_cluster2 = MarkerCluster()
         fg2.add_child(marker_cluster2)
-        marker2 = folium.Marker(location=(long + x*2, lat + x*2), popup=info, icon=div_icon)
+        marker2 = folium.Marker(location=(long + x, lat + x), popup=info, icon=div_icon)
         marker_cluster2.add_child(marker2)
         # print("huehue " + map.to_json())
         folium.LayerControl().add_to(map)
@@ -539,13 +539,13 @@ class Main(object):
 
 
 
-                    div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_others, icon_size=icon_size)
-                    add_marker = folium.Marker(
-                            location=(location['latitude'], location['longitude']),
-                            popup=popup,
-                            icon=div_icon
-                        )
-                    marker_cluster_o.add_child(add_marker)
+                    # div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_others, icon_size=icon_size)
+                    # add_marker = folium.Marker(
+                    #         location=(location['latitude'], location['longitude']),
+                    #         popup=popup,
+                    #         icon=div_icon
+                    #     )
+                    # marker_cluster_o.add_child(add_marker)
                         # .add_to(marker_cluster_o)
 
 

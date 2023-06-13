@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230613 13:17:35.001" rpa="false" schemaversion="3">
+<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230613 13:21:09.724" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\tests\restAPI\Main\Main.robot">
 <test id="s1-t1" name="1 - Executes Main flow" line="6">
 <kw name="When user runs main flow" library="Main">
-<msg timestamp="20230613 13:17:34.492" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20230613 13:17:34.595" level="INFO">huehue {"name": "Map", "id": "12ac92401be05a343411564fa6292cae", "children": {"openstreetmap": {"name": "TileLayer", "id": "7f899ffd399ba0f9d46b7c9cd05318cf", "children": {}}, "feature_group_29a4109ebe337e789fd49cbb9ebd4ccf": {"name": "FeatureGroup", "id": "29a4109ebe337e789fd49cbb9ebd4ccf", "children": {"marker_cluster_acd85e660308f34a7a4abf5a18517f92": {"name": "MarkerCluster", "id": "acd85e660308f34a7a4abf5a18517f92", "children": {"marker_32a1b7aae27edee5652e9193b18f9c86": {"name": "Marker", "id": "32a1b7aae27edee5652e9193b18f9c86", "children": {"popup_56b91d9c41012eb69c8d828379f8fcf6": {"name": "Popup", "id": "56b91d9c41012eb69c8d828379f8fcf6", "children": {}}}}}}}}, "feature_group_db1a28771b930741b484c021945cf78d": {"name": "FeatureGroup", "id": "db1a28771b930741b484c021945cf78d", "children": {"marker_cluster_eb4085637249a6b04174474b09aa907d": {"name": "MarkerCluster", "id": "eb4085637249a6b04174474b09aa907d", "children": {"marker_f740edb4b2eea88e4e1351301389187d": {"name": "Marker", "id": "f740edb4b2eea88e4e1351301389187d", "children": {"popup_497fb0493d79f341f395fecab1227b61": {"name": "Popup", "id": "497fb0493d79f341f395fecab1227b61", "children": {}}}}}}}}, "tile_layer_7e854df76093b8532b18e1a63e675a4f": {"name": "TileLayer", "id": "7e854df76093b8532b18e1a63e675a4f", "children": {}}, "tile_layer_45c552a8dca302e6dd515133b7e0e3e6": {"name": "TileLayer", "id": "45c552a8dca302e6dd515133b7e0e3e6", "children": {}}, "feature_group_194ce1d5d35f6547c72accbf8c1e3eca": {"name": "FeatureGroup", "id": "194ce1d5d35f6547c72accbf8c1e3eca", "children": {"marker_cluster_745398b5d227378418e0dedfddda0456": {"name": "MarkerCluster", "id": "745398b5d227378418e0dedfddda0456", "children": {"marker_40b9605ca19fd35e51300d30ae080a72": {"name": "Marker", "id": "40b9605ca19fd35e51300d30ae080a72", "children": {"custom_icon_08f2321706ae091dd9f5f24b31153308": {"name": "CustomIcon", "id": "08f2321706ae091dd9f5f24b31153308", "children": {}}, "popup_0bcf72290e4e54ce422e7f9422f3357f": {"name": "Popup", "id": "0bcf72290e4e54ce422e7f9422f3357f", "children": {}}}}}}}}, "layer_control_e2d7adbf372f32875e105e770838132a": {"name": "LayerControl", "id": "e2d7adbf372f32875e105e770838132a", "children": {}}}}</msg>
-<msg timestamp="20230613 13:17:34.596" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20230613 13:17:34.491" endtime="20230613 13:17:34.596"/>
+<msg timestamp="20230613 13:21:09.172" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230613 13:21:09.253" level="INFO">huehue {"name": "Map", "id": "5d657fc672485cacf65f33b640e8da8f", "children": {"openstreetmap": {"name": "TileLayer", "id": "f7f1ab4026aa9627c8dca9ca57ea4c8c", "children": {}}, "feature_group_5703a87d0f78b7696c63add5fc727b59": {"name": "FeatureGroup", "id": "5703a87d0f78b7696c63add5fc727b59", "children": {"marker_cluster_8269ddd27c920dc0c1116e1ecf924252": {"name": "MarkerCluster", "id": "8269ddd27c920dc0c1116e1ecf924252", "children": {"marker_a560794814d2812199f0b2662ab1868d": {"name": "Marker", "id": "a560794814d2812199f0b2662ab1868d", "children": {"popup_78fd9f3c9e8d2bef33322fb10f7606ab": {"name": "Popup", "id": "78fd9f3c9e8d2bef33322fb10f7606ab", "children": {}}}}}}}}, "feature_group_b4c39ec49fc178b381171205d98c1181": {"name": "FeatureGroup", "id": "b4c39ec49fc178b381171205d98c1181", "children": {"marker_cluster_0e6c9a8936da44f3fa0bc69d34339bfe": {"name": "MarkerCluster", "id": "0e6c9a8936da44f3fa0bc69d34339bfe", "children": {"marker_c2c53123cecacbc57bc64a5bf20d74f8": {"name": "Marker", "id": "c2c53123cecacbc57bc64a5bf20d74f8", "children": {"popup_3f467b2d7420bd9b07070a5c5bdd04a4": {"name": "Popup", "id": "3f467b2d7420bd9b07070a5c5bdd04a4", "children": {}}}}}}}}, "tile_layer_0493b3eff296f1e8adb726cd7716c721": {"name": "TileLayer", "id": "0493b3eff296f1e8adb726cd7716c721", "children": {}}, "tile_layer_97c1987275f859457644ef4c2272c0c0": {"name": "TileLayer", "id": "97c1987275f859457644ef4c2272c0c0", "children": {}}, "feature_group_601f2262fb729e88df930c3c1d56398f": {"name": "FeatureGroup", "id": "601f2262fb729e88df930c3c1d56398f", "children": {"marker_cluster_e2c325f176b6175f4657bd71639780b4": {"name": "MarkerCluster", "id": "e2c325f176b6175f4657bd71639780b4", "children": {"marker_b2f48205fdde0a081e1834e9b6e1f3fb": {"name": "Marker", "id": "b2f48205fdde0a081e1834e9b6e1f3fb", "children": {"custom_icon_42f444730f9b96083d7b023f43c3b13d": {"name": "CustomIcon", "id": "42f444730f9b96083d7b023f43c3b13d", "children": {}}, "popup_f8d2b6ae048206ca197270d51fc765fd": {"name": "Popup", "id": "f8d2b6ae048206ca197270d51fc765fd", "children": {}}}}}}}}, "layer_control_3e8b35263702f8bb916d2a3616f6fd7b": {"name": "LayerControl", "id": "3e8b35263702f8bb916d2a3616f6fd7b", "children": {}}}}</msg>
+<msg timestamp="20230613 13:21:09.253" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230613 13:21:09.170" endtime="20230613 13:21:09.253"/>
 </kw>
 <doc>Executes main flow</doc>
 <tag>flow</tag>
-<status status="PASS" starttime="20230613 13:17:34.490" endtime="20230613 13:17:34.596"/>
+<status status="PASS" starttime="20230613 13:21:09.170" endtime="20230613 13:21:09.254"/>
 </test>
 <doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
-<status status="PASS" starttime="20230613 13:17:30.735" endtime="20230613 13:17:34.599"/>
+<status status="PASS" starttime="20230613 13:21:04.886" endtime="20230613 13:21:09.255"/>
 </suite>
 <statistics>
 <total>
@@ -27,6 +27,6 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230613 13:17:31.399" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
+<msg timestamp="20230613 13:21:05.407" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
 </errors>
 </robot>
