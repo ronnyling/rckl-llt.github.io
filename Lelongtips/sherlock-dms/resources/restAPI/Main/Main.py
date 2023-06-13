@@ -455,7 +455,7 @@ class Main(object):
                 popup = folium.Popup(iframe, max_width=2650)
 
                 if not price or not build_up:
-                    print("i am in not price " + html)
+                    # print("i am in not price " + html)
                     icon_file = f"""
                                     <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
@@ -470,17 +470,17 @@ class Main(object):
                     # ).add_to(marker_cluster_o)
                     # )
                 else:
-                    print("i am in okay price " + html)
+                    # print("i am in okay price " + html)
                     price = float(price)
                     build_up = float(build_up)
                     if price < 300000 and not i['tags'] == 'attention':
                         i['tags'] = "lrd"
-                        add_marker = folium.Marker(
-                                        location=(location['latitude'], location['longitude']),
-                                        popup=popup,
-                                        icon=div_icon
-                                    )
-                        marker_cluster_lrd.add_child(add_marker)
+                        # add_marker = folium.Marker(
+                        #                 location=(location['latitude'], location['longitude']),
+                        #                 popup=popup,
+                        #                 icon=div_icon
+                        #             )
+                        # marker_cluster_lrd.add_child(add_marker)
 
                     if i['tags'] == "attention":
                         if i['listing_status']:

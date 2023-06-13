@@ -1,19 +1,498 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230613 13:21:09.724" rpa="false" schemaversion="3">
+<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230613 13:49:59.929" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\tests\restAPI\Main\Main.robot">
 <test id="s1-t1" name="1 - Executes Main flow" line="6">
 <kw name="When user runs main flow" library="Main">
-<msg timestamp="20230613 13:21:09.172" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20230613 13:21:09.253" level="INFO">huehue {"name": "Map", "id": "5d657fc672485cacf65f33b640e8da8f", "children": {"openstreetmap": {"name": "TileLayer", "id": "f7f1ab4026aa9627c8dca9ca57ea4c8c", "children": {}}, "feature_group_5703a87d0f78b7696c63add5fc727b59": {"name": "FeatureGroup", "id": "5703a87d0f78b7696c63add5fc727b59", "children": {"marker_cluster_8269ddd27c920dc0c1116e1ecf924252": {"name": "MarkerCluster", "id": "8269ddd27c920dc0c1116e1ecf924252", "children": {"marker_a560794814d2812199f0b2662ab1868d": {"name": "Marker", "id": "a560794814d2812199f0b2662ab1868d", "children": {"popup_78fd9f3c9e8d2bef33322fb10f7606ab": {"name": "Popup", "id": "78fd9f3c9e8d2bef33322fb10f7606ab", "children": {}}}}}}}}, "feature_group_b4c39ec49fc178b381171205d98c1181": {"name": "FeatureGroup", "id": "b4c39ec49fc178b381171205d98c1181", "children": {"marker_cluster_0e6c9a8936da44f3fa0bc69d34339bfe": {"name": "MarkerCluster", "id": "0e6c9a8936da44f3fa0bc69d34339bfe", "children": {"marker_c2c53123cecacbc57bc64a5bf20d74f8": {"name": "Marker", "id": "c2c53123cecacbc57bc64a5bf20d74f8", "children": {"popup_3f467b2d7420bd9b07070a5c5bdd04a4": {"name": "Popup", "id": "3f467b2d7420bd9b07070a5c5bdd04a4", "children": {}}}}}}}}, "tile_layer_0493b3eff296f1e8adb726cd7716c721": {"name": "TileLayer", "id": "0493b3eff296f1e8adb726cd7716c721", "children": {}}, "tile_layer_97c1987275f859457644ef4c2272c0c0": {"name": "TileLayer", "id": "97c1987275f859457644ef4c2272c0c0", "children": {}}, "feature_group_601f2262fb729e88df930c3c1d56398f": {"name": "FeatureGroup", "id": "601f2262fb729e88df930c3c1d56398f", "children": {"marker_cluster_e2c325f176b6175f4657bd71639780b4": {"name": "MarkerCluster", "id": "e2c325f176b6175f4657bd71639780b4", "children": {"marker_b2f48205fdde0a081e1834e9b6e1f3fb": {"name": "Marker", "id": "b2f48205fdde0a081e1834e9b6e1f3fb", "children": {"custom_icon_42f444730f9b96083d7b023f43c3b13d": {"name": "CustomIcon", "id": "42f444730f9b96083d7b023f43c3b13d", "children": {}}, "popup_f8d2b6ae048206ca197270d51fc765fd": {"name": "Popup", "id": "f8d2b6ae048206ca197270d51fc765fd", "children": {}}}}}}}}, "layer_control_3e8b35263702f8bb916d2a3616f6fd7b": {"name": "LayerControl", "id": "3e8b35263702f8bb916d2a3616f6fd7b", "children": {}}}}</msg>
-<msg timestamp="20230613 13:21:09.253" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20230613 13:21:09.170" endtime="20230613 13:21:09.253"/>
+<msg timestamp="20230613 13:49:33.301" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230613 13:49:33.306" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230613 13:49:34.588" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:34.598" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230613 13:49:35.363" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:38.532" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230613 13:49:39.472" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=2 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:42.659" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:42.660" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:42.663" level="DEBUG">Starting new HTTPS connection (1): maps.googleapis.com:443</msg>
+<msg timestamp="20230613 13:49:42.919" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+SB+15%2C+Taman+Seri+Bertam%2C+75250+Tanjung+Minyak%2C+Melaka&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:42.921" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:42.922" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:43.042" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Semarak+Api+1%2C+Bandar+Baru+Air+Itam%2C+11500+Ayer+Itam%2C+Penang&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:43.044" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:43.045" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:43.200" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Pondok+Lama%2C+Kampung+Bechah+Peleting%2C+17500+Tanah+Merah%2C+Kelantan&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:43.204" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:43.204" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:43.318" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Taman+Seri+Batik+Teluk+Muruh%2C+32200%2C+Lumut%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:43.321" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:43.322" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:43.464" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+RJ+2%2F18%2C+Taman+Rasah+Jaya%2C+70300+Seremban%2C+Negeri+Sembilan&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:43.468" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:43.468" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:43.569" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Mesra%2C+Taman+Mesra+Rakyat%2C+31900+Kampar%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:43.574" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:43.575" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:43.691" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Laluan+Wawasan+6%2C+Taman+Wawasan+Tronoh%2C+31750+Tronoh%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:43.694" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:43.695" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:43.806" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Tingkat+Kledang+17%2C+Taman+Kledang+Sentosa%2C+31450+Menglembu%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:43.810" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:43.811" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:43.935" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Diawan+7%2C+Taman+Permai%2C+31950+Mambang+Diawan%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:43.937" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:43.938" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:44.050" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Chemor+Mesra+4%2C+Taman+Chemor+Mesra%2C+31200+Chemor%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:44.052" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:44.053" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:44.156" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Taman+SL+Permata%2C+Hutan+Pasir%2C+16450+Ketereh%2C+Kelantan&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:44.158" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:44.158" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:44.279" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Sm+3%2C+Taman+Seri+Manggis%2C+78000+Alor+Gajah%2C+Melaka&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:44.281" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:44.282" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:44.420" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Pangsapuri+Rosana+Villa%2C+Jalan+Putra+Perdana+9%2C+Taman+Putra+Perdana%2C+47130+Puchong%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:44.428" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:44.429" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:44.521" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Taman+Mas+Kg+Koh%2C+32000+Sitiawan%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:44.523" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:44.524" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:44.674" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Dewi%2C+Taman+Mambang%2C+31950+Mambang+Di+Awan%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:44.676" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:44.676" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:44.790" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Mutiara+5%2F6%2C+Taman+Mutiara+%281001-1500%29%2C+09700+Karangan%2C+Kedah&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:44.792" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:44.792" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:44.962" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Block+11%2C+No.+22%2C+Jalan+PJS+2S%2F1%2C+Desa+Mentari+3%2C+46000+Petaling+Jaya%2C+Selangor&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:44.965" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:44.966" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:45.039" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Penor+Aman+10%2C+26060+Kuantan%2C+Pahang&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:45.042" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:45.043" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:45.102" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Penor+Aman+7%2C+26060+Kuantan%2C+Pahang&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:45.104" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:45.105" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:45.169" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Penor+Aman+9%2C+26060+Kuantan%2C+Pahang&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:45.174" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:45.175" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:45.299" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Anggerik+7%2C+Taman+PD+Utama%2C+71000+Port+Dickson%2C+Negeri+Sembilan&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:45.305" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:45.306" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:45.458" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Taman+SL+Lemal%2C+Kampung+Kekabu%2C+17000+Pasir+Mas%2C+Kelantan&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:45.460" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:45.460" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:45.530" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Kampung+Besut%2C+24000+Cukai%2C+Terengganu&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:45.532" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:45.532" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230613 13:49:45.623" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Tun+Ismail+6%2C+Sri+Dagangan+Kuantan%2C+25000+Kuantan%2C+Pahang&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230613 13:49:45.763" level="DEBUG">Popen(['git', 'add', '--update'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=None)</msg>
+<msg timestamp="20230613 13:49:48.146" level="DEBUG">Popen(['git', 'cat-file', '--batch-check'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
+<msg timestamp="20230613 13:49:48.666" level="DEBUG">Popen(['git', 'cat-file', '--batch'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=&lt;valid stream&gt;)</msg>
+<msg timestamp="20230613 13:49:49.206" level="DEBUG">Popen(['git', 'push', '--porcelain', '--', 'origin'], cwd=G:\My Drive\Python\Scraper, universal_newlines=True, shell=None, istream=None)</msg>
+<msg timestamp="20230613 13:49:59.188" level="DEBUG">Starting new HTTPS connection (1): graph.facebook.com:443</msg>
+<msg timestamp="20230613 13:49:59.500" level="DEBUG">https://graph.facebook.com:443 "POST /v13.0/%3Cwhatsapp-phone-id%3E/messages HTTP/1.1" 401 152</msg>
+<msg timestamp="20230613 13:49:59.506" level="INFO">now i am at page 1
+now i am at page 2
+draft_content= 2
+draft_content[0]= 12
+prior to storm 150000 1302
+i am in okay price 
+                    &lt;p&gt; 14 Jun 2023 (Wed) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Seri Bertam (Taman Desa Tanjung Minyak), Melaka &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1302&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,302 sq.ft, LH, KOD A, Intermediate,  online bidding, RM115 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan SB 15, 76450 Alor Gajah, Melaka, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/WHdGdHJjeTBLbjJNRTM0RE9uenRQQT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Seri-Bertam-Melaka-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 611
+i am in okay price 
+                    &lt;p&gt; 13 Jul 2023 (Thu) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; Apartment &lt;/h2&gt;
+                    &lt;h1&gt; Asia Heights (Seri Semarak), Penang &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 611&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 611 sq.ft, FH, 3  bedroom,  online bidding, RM246 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Lorong Semarak Api 1, Bandar Baru Air Itam, 11500 Ayer Itam, Pulau Pinang, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/K1dIZHJEYlZLc0cwVVZTbnhlTFdPUT09/Lelong-Auction-Apartment-in-Ayer-Itam-Penang-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1679
+i am in okay price 
+                    &lt;p&gt; 15 Jun 2023 (Thu) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Kampung Bechah Peleting, Kelantan &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1679&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,679 sq.ft, FH, Intermediate,  online bidding, RM89 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan Pondok Lama, Tanah Merah, 17500 Tanah Merah, Kelantan, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/RE81OWNpeDBVU1RKLzJzdUVYYWlVQT09/Lelong-Auction-1-Storey-Terrace-House-in-Kampung-Bechah-Peleting-Kelantan-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1485
+i am in okay price 
+                    &lt;p&gt; 13 Jun 2023 (Tue) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Sri Batik, Perak &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1485&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,485 sq.ft, Malay Reserve,  online bidding, RM101 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jln Teluk Muruh, 32200 Lumut, Perak, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/UHN2YTkxSkRkMk5qcmluc05kS012UT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Seri-Batik-Teluk-Muruh-Perak-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1396
+i am in okay price 
+                    &lt;p&gt; 14 Jun 2023 (Wed) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 2 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Rasah Jaya, Negeri Sembilan &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1396&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,396 sq.ft, FH, Intermediate,  online bidding, RM107 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan RJ 2/18, Taman Rasah Jaya, 70300 Seremban, Negeri Sembilan, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/NjZUSG9ObjVIL255UnF2L0ErRDIzQT09/Lelong-Auction-2-Storey-Terrace-House-in-Taman-Rasah-Jaya-Negeri-Sembilan-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1701
+i am in okay price 
+                    &lt;p&gt; 19 Jun 2023 (Mon) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Semi Detached House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Mesra Rakyat, Perak &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1701&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,701 sq.ft, LH,  online bidding, RM88 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= 2, Jalan Mesra, 31910 Kampar, Perak, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/SmdrWVR2dFFRMzlkSDAzbEQ4S2cwdz09/Lelong-Auction-1-Storey-Semi-Detached-House-in-Taman-Mesra-Rakyat-Perak-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1798
+i am in okay price 
+                    &lt;p&gt; 14 Jun 2023 (Wed) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Tronoh Wawasan, Perak &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1798&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,798 sq.ft, LH, Intermediate,  online bidding, RM83 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Laluan Wawasan 6, 31750 Teronoh, Perak, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/U0FpSG8zeE0wSXNtelFOWVdET2trdz09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Wawasan-Tronoh-Perak-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1496
+i am in okay price 
+                    &lt;p&gt; 13 Jun 2023 (Tue) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Kledang Sentosa, Perak &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1496&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,496 sq.ft, Intermediate,  online bidding, RM100 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Tingkat Kledang 17, Taman Kledang Sentosa, 31450 Menglembu, Perak, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/WVFEdWd0VnVtQWthc0hiUUk2dnVQQT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Kledang-Sentosa-Perak-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1399
+i am in okay price 
+                    &lt;p&gt; 20 Jun 2023 (Tue) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Diawan (Taman Permai / Taman Di Awan), Perak &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1399&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,399 sq.ft, LH,  online bidding, RM107 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan Diawan 7, 31950 Mambang Di Awan, Perak, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/OFUvVU5NRS9Md0FwcUhMWndGTEwxQT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Permai-Perak-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1324
+i am in okay price 
+                    &lt;p&gt; 5 Jul 2023 (Wed) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Chemor Mesra, Perak &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1324&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,324 sq.ft, LH, Intermediate,  online bidding, RM113 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan Chemor Mesra 4, 31200 Chemor, Perak, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/RDl0WGRjVGpmQVluU3Y1OXQrVk5JQT09/Lelong-Auction-Terrace-House-in-Taman-Chemor-Mesra-Perak-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1098
+i am in okay price 
+                    &lt;p&gt; 10 Jul 2023 (Mon) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman SL Permata, Kelantan &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1098&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,098 sq.ft, FH,  online bidding, RM137 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Taman SL Permata, 773, Jalan Zamrud, Kampung Jelatok, 17500 Tanah Merah, Kelantan, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/bWhkQnZEdVF3ZUkzdGxiRWdPMkdJUT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-SL-Permata-Kelantan-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1313
+i am in okay price 
+                    &lt;p&gt; 12 Jul 2023 (Wed) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Seri Manggis (Taman Gadek Perdana), Melaka &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1313&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,313 sq.ft, LH, KOD B, Intermediate,  online bidding, RM114 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan Sm, Pekan Selandar, 77500 Selandar, Melaka, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/WnZCZHh6RzF3ZjdUSS9EQzlNZnM4Zz09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Seri-Manggis-Melaka-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 703
+i am in okay price 
+                    &lt;p&gt; 26 Jul 2023 (Wed) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; Rosana Villa Apartment &lt;/h2&gt;
+                    &lt;h1&gt; Rosana Villa Apartment, Selangor &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 703&lt;/li&gt;
+                        &lt;li&gt;others= LACA, 1st Auction, 703 sq.ft, LH, Corner Lot,  online bidding, RM213 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Rosana Villa 2A Blok 10, 11, 12, Jalan Putra Perdana 9, Taman Putra Perdana, 47100 Puchong, Selangor, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/TXpTM283bUFmQjk4MnZmZVRBdFgzZz09/Lelong-Auction-Rosana-Villa-Apartment-in-Taman-Putra-Perdana-Selangor-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1399
+i am in okay price 
+                    &lt;p&gt; 10 Jul 2023 (Mon) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Mas, Perak &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1399&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,399 sq.ft,  online bidding, RM107 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Kampung Koh, 32000 Sitiawan, Perak, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/YkZWOWdlck9SbGswRkQ4QTNQUXlLdz09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Mas-Kg-Koh-Perak-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1798
+i am in okay price 
+                    &lt;p&gt; 6 Jul 2023 (Thu) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Semi Detached House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Mambang, Perak &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1798&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,798 sq.ft, LH,  online bidding, RM83 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Taman Sejahtera Utama, 31950 Kampar, Perak, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/UVFXdFlqd0hyUXNTUi9tZEFmZFRjdz09/Lelong-Auction-1-Storey-Semi-Detached-House-in-Taman-Mambang-Perak-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1195
+i am in okay price 
+                    &lt;p&gt; 18 Jul 2023 (Tue) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman Mutiara, Kedah &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1195&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 1,195 sq.ft, FH,  online bidding, RM126 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan Mutiara 5, Kampung Jangkang, 09600 Karangan, Kedah, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/TDdGWVhSZ0RsTGVPSUlpTTlKM0syUT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Mutiara-1001-1500-Kedah-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 657
+i am in okay price 
+                    &lt;p&gt; 27 Jun 2023 (Tue) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; Apartment &lt;/h2&gt;
+                    &lt;h1&gt; Desa Mentari 3, Selangor &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 657&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 657 sq.ft, LH, 3  bedroom,  online bidding, RM228 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jln PJS 2d/1, Desa Mentari 3, 46000 Petaling Jaya, Selangor, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/bEtDREpGbTVMazVRaHJnRENmSTZ3dz09/Lelong-Auction-Apartment-in-Desa-Mentari-3-Selangor-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1195
+i am in okay price 
+                    &lt;p&gt; 24 Jun 2023 (Sat) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Kuantan, Pahang &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1195&lt;/li&gt;
+                        &lt;li&gt;others= LACA, 1st Auction, 1,195 sq.ft, Intermediate,  online bidding, RM126 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= 34, Jln K.S 2/4, 26060 Kuantan, Pahang, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/YTBlVjVMdnlHaHdzQ2FNTy8yTGNMZz09/Lelong-Auction-1-Storey-Terrace-House-in-Kuantan-Pahang-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1195
+i am in okay price 
+                    &lt;p&gt; 24 Jun 2023 (Sat) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Kuantan, Pahang &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1195&lt;/li&gt;
+                        &lt;li&gt;others= LACA, 1st Auction, 1,195 sq.ft, Intermediate,  online bidding, RM126 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= 34, Jln K.S 2/4, 26060 Kuantan, Pahang, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/eDgrOXFuM2taMThiYkNjVUNVTCtKdz09/Lelong-Auction-1-Storey-Terrace-House-in-Kuantan-Pahang-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 1195
+i am in okay price 
+                    &lt;p&gt; 24 Jun 2023 (Sat) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Kuantan, Pahang &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 1195&lt;/li&gt;
+                        &lt;li&gt;others= LACA, 1st Auction, 1,195 sq.ft, Intermediate,  online bidding, RM126 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= 34, Jln K.S 2/4, 26060 Kuantan, Pahang, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/eldranFlc3FXRDNPTWJQT2l6K2NoQT09/Lelong-Auction-1-Storey-Terrace-House-in-Kuantan-Pahang-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 842
+i am in okay price 
+                    &lt;p&gt; 11 Jul 2023 (Tue) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; 1 Storey Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman PD Utama (Taman Port Dickson Utama), Negeri Sembilan &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 842&lt;/li&gt;
+                        &lt;li&gt;others= Title, 842 sq.ft, FH, Intermediate,  online bidding, RM178 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan Anggerik 7, Taman Port Dickson Utama, 71000 Port Dickson, Negeri Sembilan, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/OENOUmE5WkF2cHh6SVFrVzQzVGZYdz09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-PD-Utama-Negeri-Sembilan-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 820
+i am in okay price 
+                    &lt;p&gt; 25 Jul 2023 (Tue) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; Terrace House &lt;/h2&gt;
+                    &lt;h1&gt; Taman SL Lemal, Kelantan &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 820&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 820 sq.ft, Malay Reserve,  online bidding, RM183 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Jalan Kg Kekabu, 17000 Pasir Mas, Kelantan, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/QXhqK0ZHZXVXMmw1MXRZZjEvQzlIQT09/Lelong-Auction-Terrace-House-in-Taman-SL-Lemal-Kelantan-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 2280
+i am in okay price 
+                    &lt;p&gt; 5 Jul 2023 (Wed) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; Semi Detached House &lt;/h2&gt;
+                    &lt;h1&gt; Cukai, Terengganu &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 2280&lt;/li&gt;
+                        &lt;li&gt;others= Title, 1st Auction, 2,280 sq.ft, LH, Malay Reserve,  online bidding, RM66 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Lorong Kampung Besut 12, Kampung Besut, 24000 Chukai, Terengganu, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/Y0paQ0JJcTcvMzJSeFdwbjFSZ005UT09/Lelong-Auction-Semi-Detached-House-in-Cukai-Terengganu-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+prior to storm 150000 670
+i am in okay price 
+                    &lt;p&gt; 24 Jun 2023 (Sat) &lt;/p&gt;
+                    &lt;p&gt; RM 150000 &lt;/p&gt;
+                    &lt;h2&gt; Apartment &lt;/h2&gt;
+                    &lt;h1&gt; Kuantan, Pahang &lt;/h1&gt;
+                    &lt;p&gt;Details:- &lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;buildup= 670&lt;/li&gt;
+                        &lt;li&gt;others= LACA, 1st Auction, 670 sq.ft, FH,  online bidding, RM224 per sf &lt;/li&gt;
+                        &lt;li&gt; status= None &lt;/li&gt;
+                        &lt;li&gt;FormattedAddress= Lorong Tun Ismail 6, 25000 Kuantan, Pahang, Malaysia &lt;/li&gt;                    
+                    &lt;/ul&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;More details  &lt;a href="https://www.lelongtips.com.my/property/RmJYRnJ5VGpkYVJjZXRlajJkampDQT09/Lelong-Auction-Apartment-in-Kuantan-Pahang-for-RM150000" target=window.name&gt; click here &lt;/a&gt;&lt;/p&gt;
+                    
+ultimate boss {"name": "Map", "id": "ae6bd7b33b8918fb0a06c904689c8dbd", "children": {"openstreetmap": {"name": "TileLayer", "id": "6aad9b819c1eb10daa8fd51c608eb454", "children": {}}, "feature_group_274d656042b93b3b6388a878e6d327df": {"name": "FeatureGroup", "id": "274d656042b93b3b6388a878e6d327df", "children": {"marker_cluster_5c7544e52542c4ea66484db81b2bfaec": {"name": "MarkerCluster", "id": "5c7544e52542c4ea66484db81b2bfaec", "children": {"marker_a45538a7d2a6c151a5356b968f46f995": {"name": "Marker", "id": "a45538a7d2a6c151a5356b968f46f995", "children": {"custom_icon_bb801abd34ea57770a28274854d0f320": {"name": "CustomIcon", "id": "bb801abd34ea57770a28274854d0f320", "children": {}}, "popup_cc8ca87661216fc940b7c4d6d3a356fe": {"name": "Popup", "id": "cc8ca87661216fc940b7c4d6d3a356fe", "children": {}}}}, "marker_4306923499f5e8ff3e37b161e4a3d5ca": {"name": "Marker", "id": "4306923499f5e8ff3e37b161e4a3d5ca", "children": {"custom_icon_7818bef0503af7bb2f0fab5010f92035": {"name": "CustomIcon", "id": "7818bef0503af7bb2f0fab5010f92035", "children": {}}, "popup_a4aea9f704ecf7d27383bdd9515d8ca7": {"name": "Popup", "id": "a4aea9f704ecf7d27383bdd9515d8ca7", "children": {}}}}, "marker_9b65aeb0947cd6341fcb77f991a55e95": {"name": "Marker", "id": "9b65aeb0947cd6341fcb77f991a55e95", "children": {"custom_icon_752bd14855fbefe2c5630b5f76ab0993": {"name": "CustomIcon", "id": "752bd14855fbefe2c5630b5f76ab0993", "children": {}}, "popup_07e259842c57f3f39e02064cdec9fcda": {"name": "Popup", "id": "07e259842c57f3f39e02064cdec9fcda", "children": {}}}}, "marker_d1cd387156a83b1f97277e1e774ad945": {"name": "Marker", "id": "d1cd387156a83b1f97277e1e774ad945", "children": {"custom_icon_52bae48519fd75567fcf19238084f378": {"name": "CustomIcon", "id": "52bae48519fd75567fcf19238084f378", "children": {}}, "popup_4ad47cfa3298ed7da67f1ceb75c55491": {"name": "Popup", "id": "4ad47cfa3298ed7da67f1ceb75c55491", "children": {}}}}, "marker_53605f4ef300a7e00432ca198af4ac39": {"name": "Marker", "id": "53605f4ef300a7e00432ca198af4ac39", "children": {"custom_icon_32170c35f7106ffbc240696cdfb27f29": {"name": "CustomIcon", "id": "32170c35f7106ffbc240696cdfb27f29", "children": {}}, "popup_044c58b33b758674d34c8d1720b1aaea": {"name": "Popup", "id": "044c58b33b758674d34c8d1720b1aaea", "children": {}}}}, "marker_05925ef6370904ee8fd20a10d262e4d2": {"name": "Marker", "id": "05925ef6370904ee8fd20a10d262e4d2", "children": {"custom_icon_145068c642fc449d3d2149fc7aa45b99": {"name": "CustomIcon", "id": "145068c642fc449d3d2149fc7aa45b99", "children": {}}, "popup_9508efa0ecf461108d7a4749f614bdf8": {"name": "Popup", "id": "9508efa0ecf461108d7a4749f614bdf8", "children": {}}}}, "marker_3e7c40c3f2222297f09b7c60afe1bdfb": {"name": "Marker", "id": "3e7c40c3f2222297f09b7c60afe1bdfb", "children": {"custom_icon_2a3267bc24e0a0eba72b14aa5d7d3f1f": {"name": "CustomIcon", "id": "2a3267bc24e0a0eba72b14aa5d7d3f1f", "children": {}}, "popup_51b2cf3b21226504d45ad00b08d367e6": {"name": "Popup", "id": "51b2cf3b21226504d45ad00b08d367e6", "children": {}}}}, "marker_be579c675cca4456ea5cfdb715aad06d": {"name": "Marker", "id": "be579c675cca4456ea5cfdb715aad06d", "children": {"custom_icon_82436429e14ded4b38fe2bccdfda0ceb": {"name": "CustomIcon", "id": "82436429e14ded4b38fe2bccdfda0ceb", "children": {}}, "popup_620d18f3a83784b8bb5df66dca309b4b": {"name": "Popup", "id": "620d18f3a83784b8bb5df66dca309b4b", "children": {}}}}, "marker_2f0db4814653516270afc669e66cdb2f": {"name": "Marker", "id": "2f0db4814653516270afc669e66cdb2f", "children": {"custom_icon_a3b29520b419df398b5e38205cfec23f": {"name": "CustomIcon", "id": "a3b29520b419df398b5e38205cfec23f", "children": {}}, "popup_9a800d0de0f1aec3e1bd3e414c484b52": {"name": "Popup", "id": "9a800d0de0f1aec3e1bd3e414c484b52", "children": {}}}}, "marker_319a58433d4994096706e10bb94738de": {"name": "Marker", "id": "319a58433d4994096706e10bb94738de", "children": {"custom_icon_a117febfd2cd115d17f9b38de542b79c": {"name": "CustomIcon", "id": "a117febfd2cd115d17f9b38de542b79c", "children": {}}, "popup_a0ca7bc7a4fc2ef6d881fdf54c926d20": {"name": "Popup", "id": "a0ca7bc7a4fc2ef6d881fdf54c926d20", "children": {}}}}, "marker_18717abfec9cb92d8b50acd71cc1f3d1": {"name": "Marker", "id": "18717abfec9cb92d8b50acd71cc1f3d1", "children": {"custom_icon_61460a968e8380c6f65878af1ee3cf3c": {"name": "CustomIcon", "id": "61460a968e8380c6f65878af1ee3cf3c", "children": {}}, "popup_102f5c6b3d0fc5d48536a02d6f220e40": {"name": "Popup", "id": "102f5c6b3d0fc5d48536a02d6f220e40", "children": {}}}}, "marker_2b30263f610f6f360be45d4b16343b6d": {"name": "Marker", "id": "2b30263f610f6f360be45d4b16343b6d", "children": {"custom_icon_4c0f06eb6d474951f4fe23863de6d90a": {"name": "CustomIcon", "id": "4c0f06eb6d474951f4fe23863de6d90a", "children": {}}, "popup_5c15af018f93fa72811cc7eaf6cb1b0d": {"name": "Popup", "id": "5c15af018f93fa72811cc7eaf6cb1b0d", "children": {}}}}, "marker_55e4d92541783013525ab21346b9f4f5": {"name": "Marker", "id": "55e4d92541783013525ab21346b9f4f5", "children": {"custom_icon_87fef08edcdc4f37ff8b738b9a3bfd36": {"name": "CustomIcon", "id": "87fef08edcdc4f37ff8b738b9a3bfd36", "children": {}}, "popup_4578b6c6733e6267ffc4856b18061605": {"name": "Popup", "id": "4578b6c6733e6267ffc4856b18061605", "children": {}}}}, "marker_749ced0c9da4b631ced92f3de2d84305": {"name": "Marker", "id": "749ced0c9da4b631ced92f3de2d84305", "children": {"custom_icon_a8df1f493378b57a80eed724a1d67ab6": {"name": "CustomIcon", "id": "a8df1f493378b57a80eed724a1d67ab6", "children": {}}, "popup_3c6f8de33f88872946289a15a2bcbe79": {"name": "Popup", "id": "3c6f8de33f88872946289a15a2bcbe79", "children": {}}}}, "marker_aff64c19b5f81f15bf1146466dc7ae14": {"name": "Marker", "id": "aff64c19b5f81f15bf1146466dc7ae14", "children": {"custom_icon_d5fdbc0a0774a3ab5c1abb1ea2e54109": {"name": "CustomIcon", "id": "d5fdbc0a0774a3ab5c1abb1ea2e54109", "children": {}}, "popup_84b51436f88cbab432d0be868a35d285": {"name": "Popup", "id": "84b51436f88cbab432d0be868a35d285", "children": {}}}}, "marker_397eb8c2f0f8e2d428e3f5dadcdd9863": {"name": "Marker", "id": "397eb8c2f0f8e2d428e3f5dadcdd9863", "children": {"custom_icon_00a8485ef4537b81b47f628da6ca2088": {"name": "CustomIcon", "id": "00a8485ef4537b81b47f628da6ca2088", "children": {}}, "popup_d9ff9e61cb37f983961646f4f78d5925": {"name": "Popup", "id": "d9ff9e61cb37f983961646f4f78d5925", "children": {}}}}, "marker_147c4ae9b3a461df2047d9bd208b7bba": {"name": "Marker", "id": "147c4ae9b3a461df2047d9bd208b7bba", "children": {"custom_icon_dfdcfa1c460f13ce45830278dd01b928": {"name": "CustomIcon", "id": "dfdcfa1c460f13ce45830278dd01b928", "children": {}}, "popup_fef8fd17b233cf4fa587a6f86739792b": {"name": "Popup", "id": "fef8fd17b233cf4fa587a6f86739792b", "children": {}}}}}}}}, "feature_group_d551429b8c6cf675bddc2076ab2d235a": {"name": "FeatureGroup", "id": "d551429b8c6cf675bddc2076ab2d235a", "children": {"marker_cluster_7aba8cd7baca04968dde3759697988c2": {"name": "MarkerCluster", "id": "7aba8cd7baca04968dde3759697988c2", "children": {"marker_af69e053dd91739cc83d1aa62afd0604": {"name": "Marker", "id": "af69e053dd91739cc83d1aa62afd0604", "children": {"popup_cc8ca87661216fc940b7c4d6d3a356fe": {"name": "Popup", "id": "cc8ca87661216fc940b7c4d6d3a356fe", "children": {}}}}, "marker_f566e257eadbb30edcdcc8ce2c124ce2": {"name": "Marker", "id": "f566e257eadbb30edcdcc8ce2c124ce2", "children": {"custom_icon_6f6d139edca5ff7a017e72496656ddcf": {"name": "CustomIcon", "id": "6f6d139edca5ff7a017e72496656ddcf", "children": {}}, "popup_cc8ca87661216fc940b7c4d6d3a356fe": {"name": "Popup", "id": "cc8ca87661216fc940b7c4d6d3a356fe", "children": {}}}}, "marker_b7ffa461766660b584254447b5b0e48c": {"name": "Marker", "id": "b7ffa461766660b584254447b5b0e48c", "children": {"popup_d6add5622e90f3fee211fc2ac33d0f8e": {"name": "Popup", "id": "d6add5622e90f3fee211fc2ac33d0f8e", "children": {}}}}, "marker_533db469b8db59132bf5bd407978bba0": {"name": "Marker", "id": "533db469b8db59132bf5bd407978bba0", "children": {"custom_icon_975f6c22bf8293011307253314236685": {"name": "CustomIcon", "id": "975f6c22bf8293011307253314236685", "children": {}}, "popup_d6add5622e90f3fee211fc2ac33d0f8e": {"name": "Popup", "id": "d6add5622e90f3fee211fc2ac33d0f8e", "children": {}}}}, "marker_15ed48909cde60d3d100095fc521e74b": {"name": "Marker", "id": "15ed48909cde60d3d100095fc521e74b", "children": {"popup_a4aea9f704ecf7d27383bdd9515d8ca7": {"name": "Popup", "id": "a4aea9f704ecf7d27383bdd9515d8ca7", "children": {}}}}, "marker_a91966cb96b190737368543a850a5199": {"name": "Marker", "id": "a91966cb96b190737368543a850a5199", "children": {"custom_icon_3343baa528619be46b1ee8874891965f": {"name": "CustomIcon", "id": "3343baa528619be46b1ee8874891965f", "children": {}}, "popup_a4aea9f704ecf7d27383bdd9515d8ca7": {"name": "Popup", "id": "a4aea9f704ecf7d27383bdd9515d8ca7", "children": {}}}}, "marker_50bdacd60e3687b083d5a3d5be1e7890": {"name": "Marker", "id": "50bdacd60e3687b083d5a3d5be1e7890", "children": {"popup_07e259842c57f3f39e02064cdec9fcda": {"name": "Popup", "id": "07e259842c57f3f39e02064cdec9fcda", "children": {}}}}, "marker_78bb102afb05105e80e7fc880dd7a73e": {"name": "Marker", "id": "78bb102afb05105e80e7fc880dd7a73e", "children": {"custom_icon_116e472340187ed8e87a8a7728d77b98": {"name": "CustomIcon", "id": "116e472340187ed8e87a8a7728d77b98", "children": {}}, "popup_07e259842c57f3f39e02064cdec9fcda": {"name": "Popup", "id": "07e259842c57f3f39e02064cdec9fcda", "children": {}}}}, "marker_dadd99e1f507ea121ef683d29f1f7e4a": {"name": "Marker", "id": "dadd99e1f507ea121ef683d29f1f7e4a", "children": {"popup_4ad47cfa3298ed7da67f1ceb75c55491": {"name": "Popup", "id": "4ad47cfa3298ed7da67f1ceb75c55491", "children": {}}}}, "marker_f7f3b0aadf6445d70408c3942658cb68": {"name": "Marker", "id": "f7f3b0aadf6445d70408c3942658cb68", "children": {"custom_icon_ade2b524db886ecad6a82b1d3f0738d4": {"name": "CustomIcon", "id": "ade2b524db886ecad6a82b1d3f0738d4", "children": {}}, "popup_4ad47cfa3298ed7da67f1ceb75c55491": {"name": "Popup", "id": "4ad47cfa3298ed7da67f1ceb75c55491", "children": {}}}}, "marker_bad5659a0916070d6231b9667fd83302": {"name": "Marker", "id": "bad5659a0916070d6231b9667fd83302", "children": {"popup_044c58b33b758674d34c8d1720b1aaea": {"name": "Popup", "id": "044c58b33b758674d34c8d1720b1aaea", "children": {}}}}, "marker_811cc01b408001993e451bb7bc240494": {"name": "Marker", "id": "811cc01b408001993e451bb7bc240494", "children": {"custom_icon_beb66559d5c127fb58f7ffd06dfb5e65": {"name": "CustomIcon", "id": "beb66559d5c127fb58f7ffd06dfb5e65", "children": {}}, "popup_044c58b33b758674d34c8d1720b1aaea": {"name": "Popup", "id": "044c58b33b758674d34c8d1720b1aaea", "children": {}}}}, "marker_abfc957abc584bc477c31ff0debebb17": {"name": "Marker", "id": "abfc957abc584bc477c31ff0debebb17", "children": {"popup_9508efa0ecf461108d7a4749f614bdf8": {"name": "Popup", "id": "9508efa0ecf461108d7a4749f614bdf8", "children": {}}}}, "marker_2f286292934d0464857e24574558facd": {"name": "Marker", "id": "2f286292934d0464857e24574558facd", "children": {"custom_icon_7307913b0890817757e024c0c43ca3ae": {"name": "CustomIcon", "id": "7307913b0890817757e024c0c43ca3ae", "children": {}}, "popup_9508efa0ecf461108d7a4749f614bdf8": {"name": "Popup", "id": "9508efa0ecf461108d7a4749f614bdf8", "children": {}}}}, "marker_f779e6eac487d065a27d38780adddddf": {"name": "Marker", "id": "f779e6eac487d065a27d38780adddddf", "children": {"popup_51b2cf3b21226504d45ad00b08d367e6": {"name": "Popup", "id": "51b2cf3b21226504d45ad00b08d367e6", "children": {}}}}, "marker_f1afdfa2414a3dba043569ae26e2065d": {"name": "Marker", "id": "f1afdfa2414a3dba043569ae26e2065d", "children": {"custom_icon_447ceff9cbc841dc543c03a65be36c84": {"name": "CustomIcon", "id": "447ceff9cbc841dc543c03a65be36c84", "children": {}}, "popup_51b2cf3b21226504d45ad00b08d367e6": {"name": "Popup", "id": "51b2cf3b21226504d45ad00b08d367e6", "children": {}}}}, "marker_78232f71d63d30857466f768508e1c61": {"name": "Marker", "id": "78232f71d63d30857466f768508e1c61", "children": {"popup_620d18f3a83784b8bb5df66dca309b4b": {"name": "Popup", "id": "620d18f3a83784b8bb5df66dca309b4b", "children": {}}}}, "marker_d676380e7847c0cb8a432db4846fc40b": {"name": "Marker", "id": "d676380e7847c0cb8a432db4846fc40b", "children": {"custom_icon_09fd1c42cce59b893552c5ac9f46be6e": {"name": "CustomIcon", "id": "09fd1c42cce59b893552c5ac9f46be6e", "children": {}}, "popup_620d18f3a83784b8bb5df66dca309b4b": {"name": "Popup", "id": "620d18f3a83784b8bb5df66dca309b4b", "children": {}}}}, "marker_188d05b7e370f6c971ead113c8b5642b": {"name": "Marker", "id": "188d05b7e370f6c971ead113c8b5642b", "children": {"popup_baea2a8b9cf5a8cbb75cff08f87cec0b": {"name": "Popup", "id": "baea2a8b9cf5a8cbb75cff08f87cec0b", "children": {}}}}, "marker_599f0418048132ba61b337c4055b8b19": {"name": "Marker", "id": "599f0418048132ba61b337c4055b8b19", "children": {"custom_icon_7d073b37aaf10754ab16abcaf2b7e3a0": {"name": "CustomIcon", "id": "7d073b37aaf10754ab16abcaf2b7e3a0", "children": {}}, "popup_baea2a8b9cf5a8cbb75cff08f87cec0b": {"name": "Popup", "id": "baea2a8b9cf5a8cbb75cff08f87cec0b", "children": {}}}}, "marker_b851f0a69aae1c2cfac5610f0244f775": {"name": "Marker", "id": "b851f0a69aae1c2cfac5610f0244f775", "children": {"popup_9a800d0de0f1aec3e1bd3e414c484b52": {"name": "Popup", "id": "9a800d0de0f1aec3e1bd3e414c484b52", "children": {}}}}, "marker_c72bbe6efa55fe8b14ca66ca7b4e576d": {"name": "Marker", "id": "c72bbe6efa55fe8b14ca66ca7b4e576d", "children": {"custom_icon_c09c9bc777adc8c13ec3b3b570c25891": {"name": "CustomIcon", "id": "c09c9bc777adc8c13ec3b3b570c25891", "children": {}}, "popup_9a800d0de0f1aec3e1bd3e414c484b52": {"name": "Popup", "id": "9a800d0de0f1aec3e1bd3e414c484b52", "children": {}}}}, "marker_fccac6d62f4b3d127a7cd2c53683a3b2": {"name": "Marker", "id": "fccac6d62f4b3d127a7cd2c53683a3b2", "children": {"popup_a0ca7bc7a4fc2ef6d881fdf54c926d20": {"name": "Popup", "id": "a0ca7bc7a4fc2ef6d881fdf54c926d20", "children": {}}}}, "marker_d63b6ba50c423bd92dda25f4e4d59d79": {"name": "Marker", "id": "d63b6ba50c423bd92dda25f4e4d59d79", "children": {"custom_icon_e0c368b5caaa13cd6605497a47a53a92": {"name": "CustomIcon", "id": "e0c368b5caaa13cd6605497a47a53a92", "children": {}}, "popup_a0ca7bc7a4fc2ef6d881fdf54c926d20": {"name": "Popup", "id": "a0ca7bc7a4fc2ef6d881fdf54c926d20", "children": {}}}}, "marker_22b58a5bf8c9400b882f20e8af488caf": {"name": "Marker", "id": "22b58a5bf8c9400b882f20e8af488caf", "children": {"popup_fdf0b8b2ed9375c01bd9a076287b8bfc": {"name": "Popup", "id": "fdf0b8b2ed9375c01bd9a076287b8bfc", "children": {}}}}, "marker_9a65a020debcbbf5cf89413833542e8d": {"name": "Marker", "id": "9a65a020debcbbf5cf89413833542e8d", "children": {"custom_icon_492adfd496f09092d48b21ccdd259798": {"name": "CustomIcon", "id": "492adfd496f09092d48b21ccdd259798", "children": {}}, "popup_fdf0b8b2ed9375c01bd9a076287b8bfc": {"name": "Popup", "id": "fdf0b8b2ed9375c01bd9a076287b8bfc", "children": {}}}}, "marker_9d84bf604926ed8fdfae887679845cb9": {"name": "Marker", "id": "9d84bf604926ed8fdfae887679845cb9", "children": {"popup_102f5c6b3d0fc5d48536a02d6f220e40": {"name": "Popup", "id": "102f5c6b3d0fc5d48536a02d6f220e40", "children": {}}}}, "marker_2d85f2953b8aaf0eaeb6767ec91867e5": {"name": "Marker", "id": "2d85f2953b8aaf0eaeb6767ec91867e5", "children": {"custom_icon_a16d119268b5319ea8416f219e821371": {"name": "CustomIcon", "id": "a16d119268b5319ea8416f219e821371", "children": {}}, "popup_102f5c6b3d0fc5d48536a02d6f220e40": {"name": "Popup", "id": "102f5c6b3d0fc5d48536a02d6f220e40", "children": {}}}}, "marker_ae362fb34afcd26110df37a0aec58184": {"name": "Marker", "id": "ae362fb34afcd26110df37a0aec58184", "children": {"popup_5c15af018f93fa72811cc7eaf6cb1b0d": {"name": "Popup", "id": "5c15af018f93fa72811cc7eaf6cb1b0d", "children": {}}}}, "marker_986fe03463aa1aa3538ed880477152e7": {"name": "Marker", "id": "986fe03463aa1aa3538ed880477152e7", "children": {"custom_icon_4b7aa681551d09420fa4ccb09632fd40": {"name": "CustomIcon", "id": "4b7aa681551d09420fa4ccb09632fd40", "children": {}}, "popup_5c15af018f93fa72811cc7eaf6cb1b0d": {"name": "Popup", "id": "5c15af018f93fa72811cc7eaf6cb1b0d", "children": {}}}}, "marker_9f305ad9d094ae6fd756f740fcdf305c": {"name": "Marker", "id": "9f305ad9d094ae6fd756f740fcdf305c", "children": {"popup_4578b6c6733e6267ffc4856b18061605": {"name": "Popup", "id": "4578b6c6733e6267ffc4856b18061605", "children": {}}}}, "marker_053090ac3ebb3f0182526170449c17b5": {"name": "Marker", "id": "053090ac3ebb3f0182526170449c17b5", "children": {"custom_icon_ceca225c390dacbe32d100fa85c5aab1": {"name": "CustomIcon", "id": "ceca225c390dacbe32d100fa85c5aab1", "children": {}}, "popup_4578b6c6733e6267ffc4856b18061605": {"name": "Popup", "id": "4578b6c6733e6267ffc4856b18061605", "children": {}}}}, "marker_17372ca1bb364b7601b612c954d3cebd": {"name": "Marker", "id": "17372ca1bb364b7601b612c954d3cebd", "children": {"popup_f66724f1af2195fc04ad020c83ea6383": {"name": "Popup", "id": "f66724f1af2195fc04ad020c83ea6383", "children": {}}}}, "marker_97da9ab5b11074a7c06c3d50eb434a14": {"name": "Marker", "id": "97da9ab5b11074a7c06c3d50eb434a14", "children": {"custom_icon_c84cd572c68e9d8e56a0798478968192": {"name": "CustomIcon", "id": "c84cd572c68e9d8e56a0798478968192", "children": {}}, "popup_f66724f1af2195fc04ad020c83ea6383": {"name": "Popup", "id": "f66724f1af2195fc04ad020c83ea6383", "children": {}}}}, "marker_d3b495eba35d858feee01f6db0498cba": {"name": "Marker", "id": "d3b495eba35d858feee01f6db0498cba", "children": {"popup_3c6f8de33f88872946289a15a2bcbe79": {"name": "Popup", "id": "3c6f8de33f88872946289a15a2bcbe79", "children": {}}}}, "marker_a16e0d45576f2b1f28b616a7c5ce780c": {"name": "Marker", "id": "a16e0d45576f2b1f28b616a7c5ce780c", "children": {"custom_icon_6354665858dba904b26ce7a5dd2d540c": {"name": "CustomIcon", "id": "6354665858dba904b26ce7a5dd2d540c", "children": {}}, "popup_3c6f8de33f88872946289a15a2bcbe79": {"name": "Popup", "id": "3c6f8de33f88872946289a15a2bcbe79", "children": {}}}}, "marker_9c5ce6cd6f87a5be61815c27bc5fcba9": {"name": "Marker", "id": "9c5ce6cd6f87a5be61815c27bc5fcba9", "children": {"popup_84b51436f88cbab432d0be868a35d285": {"name": "Popup", "id": "84b51436f88cbab432d0be868a35d285", "children": {}}}}, "marker_7e0923ab9d4e4e3bcbef9f6d2d5842be": {"name": "Marker", "id": "7e0923ab9d4e4e3bcbef9f6d2d5842be", "children": {"custom_icon_cf10c8a9689a2ad3c43bdf9c3447f362": {"name": "CustomIcon", "id": "cf10c8a9689a2ad3c43bdf9c3447f362", "children": {}}, "popup_84b51436f88cbab432d0be868a35d285": {"name": "Popup", "id": "84b51436f88cbab432d0be868a35d285", "children": {}}}}, "marker_907265cc11a110ea76aaa14e752ba888": {"name": "Marker", "id": "907265cc11a110ea76aaa14e752ba888", "children": {"popup_d9ff9e61cb37f983961646f4f78d5925": {"name": "Popup", "id": "d9ff9e61cb37f983961646f4f78d5925", "children": {}}}}, "marker_cca732caaa7278575ec140012b56a8dd": {"name": "Marker", "id": "cca732caaa7278575ec140012b56a8dd", "children": {"custom_icon_82a049459cbbbd3615501a29bcc00791": {"name": "CustomIcon", "id": "82a049459cbbbd3615501a29bcc00791", "children": {}}, "popup_d9ff9e61cb37f983961646f4f78d5925": {"name": "Popup", "id": "d9ff9e61cb37f983961646f4f78d5925", "children": {}}}}, "marker_ade14c8df1f56e2c58f80caa3084ef6e": {"name": "Marker", "id": "ade14c8df1f56e2c58f80caa3084ef6e", "children": {"popup_fef8fd17b233cf4fa587a6f86739792b": {"name": "Popup", "id": "fef8fd17b233cf4fa587a6f86739792b", "children": {}}}}, "marker_9701a1fdd93be5d14418f2a8c04f4f9e": {"name": "Marker", "id": "9701a1fdd93be5d14418f2a8c04f4f9e", "children": {"custom_icon_475f148c348b11123aeee4811b7da151": {"name": "CustomIcon", "id": "475f148c348b11123aeee4811b7da151", "children": {}}, "popup_fef8fd17b233cf4fa587a6f86739792b": {"name": "Popup", "id": "fef8fd17b233cf4fa587a6f86739792b", "children": {}}}}, "marker_91ed5dffa4a71f8d545f98be07b17d70": {"name": "Marker", "id": "91ed5dffa4a71f8d545f98be07b17d70", "children": {"popup_2710ff1fc21a222a4fc240d5111e96a7": {"name": "Popup", "id": "2710ff1fc21a222a4fc240d5111e96a7", "children": {}}}}, "marker_f713a09c992a1b6426c65176b164478d": {"name": "Marker", "id": "f713a09c992a1b6426c65176b164478d", "children": {"custom_icon_52944968b798f1cda19953ee8c8953fe": {"name": "CustomIcon", "id": "52944968b798f1cda19953ee8c8953fe", "children": {}}, "popup_2710ff1fc21a222a4fc240d5111e96a7": {"name": "Popup", "id": "2710ff1fc21a222a4fc240d5111e96a7", "children": {}}}}, "marker_e4be1376f24a85fd699ebdb835513fd4": {"name": "Marker", "id": "e4be1376f24a85fd699ebdb835513fd4", "children": {"popup_aebe39309af9b68b0df8e348ff66e6ee": {"name": "Popup", "id": "aebe39309af9b68b0df8e348ff66e6ee", "children": {}}}}, "marker_af91921ed86a9773cfe5b44cddb85846": {"name": "Marker", "id": "af91921ed86a9773cfe5b44cddb85846", "children": {"custom_icon_0858d27fd20f063bc5f7426b01687071": {"name": "CustomIcon", "id": "0858d27fd20f063bc5f7426b01687071", "children": {}}, "popup_aebe39309af9b68b0df8e348ff66e6ee": {"name": "Popup", "id": "aebe39309af9b68b0df8e348ff66e6ee", "children": {}}}}, "marker_23db10fc7523a2dbacecb05a883c062b": {"name": "Marker", "id": "23db10fc7523a2dbacecb05a883c062b", "children": {"popup_611b63c8d36552c2067e1e4c160db2f5": {"name": "Popup", "id": "611b63c8d36552c2067e1e4c160db2f5", "children": {}}}}, "marker_a5425709403104db578c8f27fb0f1eed": {"name": "Marker", "id": "a5425709403104db578c8f27fb0f1eed", "children": {"custom_icon_cc3e4c2fcdef07c39ea1c00982bc557f": {"name": "CustomIcon", "id": "cc3e4c2fcdef07c39ea1c00982bc557f", "children": {}}, "popup_611b63c8d36552c2067e1e4c160db2f5": {"name": "Popup", "id": "611b63c8d36552c2067e1e4c160db2f5", "children": {}}}}}}}}, "feature_group_521f50120e937b5931d3ed3d5b3a3f99": {"name": "FeatureGroup", "id": "521f50120e937b5931d3ed3d5b3a3f99", "children": {"marker_cluster_2bd69d0f7b6b45647696b9a06aa194d4": {"name": "MarkerCluster", "id": "2bd69d0f7b6b45647696b9a06aa194d4", "children": {}}}}, "feature_group_60e1a4683f9629f6e62eff5bd2aa3474": {"name": "FeatureGroup", "id": "60e1a4683f9629f6e62eff5bd2aa3474", "children": {"marker_cluster_3601f3c3e8e57b8d5a397105b60c6f49": {"name": "MarkerCluster", "id": "3601f3c3e8e57b8d5a397105b60c6f49", "children": {}}}}, "layer_control_581fce0e446d9e7618291e0928f1701f": {"name": "LayerControl", "id": "581fce0e446d9e7618291e0928f1701f", "children": {}}}}
+{'error': {'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'A28osRKJXCTnC88EC7ATBby'}}</msg>
+<msg timestamp="20230613 13:49:59.509" level="INFO">G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:830: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 830 of the file G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py. To get rid of this warning, pass the additional argument 'features="lxml"' to the BeautifulSoup constructor.
+
+  parsed_html = BeautifulSoup(body_text)</msg>
+<msg timestamp="20230613 13:49:59.510" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20230613 13:49:33.299" endtime="20230613 13:49:59.510"/>
 </kw>
 <doc>Executes main flow</doc>
 <tag>flow</tag>
-<status status="PASS" starttime="20230613 13:21:09.170" endtime="20230613 13:21:09.254"/>
+<status status="PASS" starttime="20230613 13:49:33.298" endtime="20230613 13:49:59.511"/>
 </test>
 <doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
-<status status="PASS" starttime="20230613 13:21:04.886" endtime="20230613 13:21:09.255"/>
+<status status="PASS" starttime="20230613 13:49:28.836" endtime="20230613 13:49:59.513"/>
 </suite>
 <statistics>
 <total>
@@ -27,6 +506,6 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230613 13:21:05.407" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
+<msg timestamp="20230613 13:49:29.577" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
 </errors>
 </robot>
