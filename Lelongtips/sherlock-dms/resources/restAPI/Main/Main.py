@@ -42,6 +42,7 @@ class Main(object):
     @keyword("user runs main flow")
     def user_runs_main_flow(self):
         # self.iprop_scrape()
+        # self.lelongtips_scrape_demo()
         self.lelongtips_scrape()
         # self.
 
@@ -85,6 +86,74 @@ class Main(object):
             raise Exception("Initial load failed")
         # if draft_content:
         #     self.save_draft(draft_content)
+
+    def lelongtips_scrape_demo(self):
+        long = 3.064119
+        lat = 101.669488
+        x = 0.05
+        m = folium.Map(location=(long, lat), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
+        fg_l = folium.FeatureGroup(name='Landed', show=False)
+        fg_lrd = folium.FeatureGroup(name='Low Risk Deals', show=False)
+        # m.add_child(fg_l)
+        fg_l.add_to(m)
+        fg_lrd.add_to(m)
+        # m.add_child(fg_lrd)
+        marker_cluster_l = folium.plugins.MarkerCluster().add_to(fg_l)
+        marker_cluster_lrd = folium.plugins.MarkerCluster().add_to(fg_lrd)
+        html = f"""
+            <p> Sample </p>
+            """
+        iframe = folium.IFrame(html=html, width=300, height=200)
+        popup = folium.Popup(iframe, max_width=2650)
+
+        icon_file = f"""
+                        <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                        </div>"""
+        div_icon = folium.DivIcon(html=icon_file, icon_size=icon_size)
+    # marker_cluster_o.add_child(
+        marker_cluster_l.add_child(folium.Marker(
+            location=(long + x, lat + x),
+            popup=popup,
+            icon=div_icon
+        ))
+
+        div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_lrd, icon_size=icon_size)
+        (folium.Marker(
+            location=(long + x*2, lat + x*2),
+            popup=popup,
+            icon=div_icon
+        )).add_to(marker_cluster_lrd)
+        folium.LayerControl().add_to(m)
+        m.save(f"../../docs/fixit.html")
+
+        map = folium.Map(location=[0, 0], zoom_start=4)
+        fg = folium.FeatureGroup(name='My Points', show=False)
+        fg1 = folium.FeatureGroup(name='My Points1', show=False)
+        map.add_child(fg)
+        map.add_child(fg1)
+        marker_cluster = MarkerCluster().add_to(fg)
+        marker_cluster1 = MarkerCluster().add_to(fg1)
+        folium.TileLayer('openstreetmap').add_to(map)
+        folium.TileLayer('Stamen Terrain').add_to(map)
+        info = 'test'
+        folium.Marker(location=[long, lat], popup=info).add_to(marker_cluster)
+        folium.Marker(location=(long + x, lat + x), popup=info).add_to(marker_cluster1)
+
+        fg2 = folium.FeatureGroup(name='My Points2', show=False)
+        map.add_child(fg2)
+        marker_cluster2 = MarkerCluster()
+        fg2.add_child(marker_cluster2)
+        marker2 = folium.Marker(location=(long + x*2, lat + x*2), popup=info)
+
+        marker_cluster2.add_child(marker2)
+        # print("huehue " + map.to_json())
+        folium.LayerControl().add_to(map)
+        print("huehue " + map.to_json())
+
+        map.save(f"../../docs/fixit.html")
+
+
 
     def map_gen(self, draft_content):
         m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
@@ -310,10 +379,10 @@ class Main(object):
         # marker_cluster_o = folium.plugins.MarkerCluster()
 
 
-        marker_cluster_l.add_to(fg_l)
-        marker_cluster_lrd.add_to(fg_lrd)
-        marker_cluster_attention.add_to(fg_att)
-        marker_cluster_o.add_to(fg_o)
+        # marker_cluster_l.add_to(fg_l)
+        # marker_cluster_lrd.add_to(fg_lrd)
+        # marker_cluster_attention.add_to(fg_att)
+        # marker_cluster_o.add_to(fg_o)
 
         # flag_l = False
         # flag_lrd = False
