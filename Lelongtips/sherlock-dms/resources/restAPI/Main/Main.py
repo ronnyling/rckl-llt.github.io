@@ -34,7 +34,7 @@ icon_url_durian_runtuh_others = "https://image.shutterstock.com/image-vector/vec
 icon_size_s = (70, 35)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = True
+testing = False
 
 
 class Main(object):
