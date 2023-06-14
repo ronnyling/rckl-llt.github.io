@@ -158,6 +158,8 @@ class Main(object):
 
     def map_gen(self, draft_content):
         m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
+        folium.TileLayer('openstreetmap').add_to(m)
+        folium.TileLayer('Stamen Terrain').add_to(m)
         # m = self.add_sidebar(m)
         # map = folium.Map(location=[0, 0], zoom_start=4)
         fg_l = folium.FeatureGroup(name='Landed', show=False)
