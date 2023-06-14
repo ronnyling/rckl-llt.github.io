@@ -31,6 +31,9 @@ icon_url_durian_runtuh_landed = 'https://cdn.dribbble.com/users/1370570/screensh
 icon_url_durian_runtuh_expired_nobidder = "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237017.jpg"
 icon_url_durian_runtuh_lrd = "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237019.jpg"
 icon_url_durian_runtuh_others = "https://image.shutterstock.com/image-vector/vector-cute-durian-cartoon-style-260nw-2305237021.jpg"
+icon_0_1 = "https://github.com/ronnyling/rckl-llt.github.io/blob/main/Lelongtips/docs/0_1.jpg"
+icon_0_2 = "https://github.com/ronnyling/rckl-llt.github.io/blob/main/Lelongtips/docs/0_2.jpg"
+icon_0_3 = "https://github.com/ronnyling/rckl-llt.github.io/blob/main/Lelongtips/docs/0_3.jpg"
 icon_size_s = (70, 35)
 icon_size = (35, 35)
 today_date = datetime.today().date()
@@ -483,7 +486,7 @@ class Main(object):
                         # marker_cluster_lrd.add_child(add_marker)
 
                     if i['tags'] == "attention":
-                        div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_attention,
+                        div_icon = folium.features.CustomIcon(icon_0_1,
                                                               icon_size=icon_size_s)
                         if i['listing_status']:
                             div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_expired_nobidder,
@@ -504,7 +507,7 @@ class Main(object):
                         continue
 
                     if (price / build_up <= 300 and price <= 800000) or (i['tags'] == "lrd"):
-                        div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_lrd, icon_size=icon_size)
+                        div_icon = folium.features.CustomIcon(icon_0_2, icon_size=icon_size_s)
                         add_marker = folium.Marker(
                                 location=(location['latitude'], location['longitude']),
                                 popup=popup,
@@ -520,7 +523,7 @@ class Main(object):
                         #                 </div>"""
                     if i['prop_type'] and (
                             re.findall(".*(torey).*", i['prop_type']) or re.findall(".*(tory).*", i['prop_type'])):
-                        div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_landed, icon_size=icon_size)
+                        div_icon = folium.features.CustomIcon(icon_0_3, icon_size=icon_size_s)
 
                         # div_icon = f"""
                         #             <div>
