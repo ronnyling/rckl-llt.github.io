@@ -34,10 +34,10 @@ icon_url_durian_runtuh_others = "https://image.shutterstock.com/image-vector/vec
 icon_0_1 = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/0_1.png"
 icon_0_2 = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/0_2.png"
 icon_0_3 = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/0_3.png"
-icon_size_s = (70, 35)
+icon_size_s = (100, 65)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = True
+testing = False
 
 
 class Main(object):
