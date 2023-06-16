@@ -34,10 +34,11 @@ icon_url_durian_runtuh_others = "https://image.shutterstock.com/image-vector/vec
 icon_0_1 = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/0_1.png"
 icon_0_2 = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/0_2.png"
 icon_0_3 = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/0_3.png"
+icon_secret = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"
 icon_size_s = (100, 65)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = False
+testing = True
 
 
 class Main(object):
@@ -158,6 +159,7 @@ class Main(object):
 
     def map_gen(self, draft_content):
         m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
+        m_secret = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
         folium.TileLayer('openstreetmap').add_to(m)
         folium.TileLayer('Stamen Terrain').add_to(m)
         # m = self.add_sidebar(m)
@@ -407,6 +409,12 @@ class Main(object):
 
         print("draft_content= " + str(len(draft_content)))
         print("draft_content[0]= " + str(len(draft_content[0])))
+        geocode_data = {}
+        try:
+            geocode_data = json.load(open(f"../../docs/geocode_data.json"))
+        except Exception:
+            print("Not able to open geocode data file, check if it exists")
+
         for j in draft_content:
             for i in j:
                 # hi = hi + 1
@@ -415,7 +423,12 @@ class Main(object):
                 formatted_address_name = None
                 geolocator = Nominatim(user_agent="my_request")
                 # location = geolocator.geocode(loc)
-                geocode_result = gmaps.geocode(loc)
+                geocode_result = {}
+                if geocode_data.get(loc, None):
+                    geocode_result = geocode_data[loc]
+                else:
+                    geocode_result = gmaps.geocode(loc)
+                    geocode_data.update({loc: geocode_result})
                 # print(str(geocode_result))
                 # if len(geocode_result[0]['address_components']) > 1 or geocode_result['status'] is not "OK":
                 #     print("Please inspect and fix geocode= " + str(geocode_result))
@@ -456,9 +469,10 @@ class Main(object):
                                formatted_address_name,
                                i['h_ref'],
                                iframe_target)
-                iframe = folium.IFrame(html=html, width=300, height=200)
-                popup = folium.Popup(iframe, max_width=2650)
-
+                # iframe = folium.IFrame(html=html, width=300, height=200)
+                # popup = folium.Popup(iframe, max_width=2650)
+                popup = self.get_popup_element(html)
+                # m_secret
                 if not price or not build_up:
                     # print("i am in not price " + html)
                     icon_file = f"""
@@ -466,6 +480,7 @@ class Main(object):
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                                     </div>"""
                     div_icon = folium.DivIcon(html=icon_file, icon_size=icon_size)
+                    popup = self.get_popup_element(html)
                     add_marker = folium.Marker(
                                     location=(location['latitude'], location['longitude']),
                                     popup=popup,
@@ -497,6 +512,7 @@ class Main(object):
                             #             <div>
                             #             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-25 -25 550.00 550.00" xml:space="preserve" width="32px" height="32px" fill="#000000" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="100"> <style type="text/css"> .st0{{fill:#0d0d0d;stroke:#0d0d0d;stroke-width:50;stroke-miterlimit:10;}} .st1{{fill:#FFED1F;}} .st2{{fill:#E32B43;}} </style> <g id="border"> <path class="st0" d="M454.7,403.9L266.2,77.4c-7.2-12.4-25.1-12.4-32.3,0L45.3,403.9c-7.2,12.4,1.8,28,16.2,28h377.1 C452.9,431.9,461.9,416.4,454.7,403.9z"></path> </g> <g id="object" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"> <g> <path class="st1" d="M232,80.6L47.2,400.7c-8,13.9,2,31.2,18,31.2h369.6c16,0,26-17.3,18-31.2L268,80.6 C260,66.7,240,66.7,232,80.6z"></path> <path class="st2" d="M250,152.2c-21.2,0-38.4,19.6-38.4,43.8c0,73.8,17.2,133.6,38.4,133.6s38.4-59.8,38.4-133.6 C288.4,171.8,271.2,152.2,250,152.2z"></path> <circle class="st2" cx="250" cy="379.9" r="26.9"></circle> </g> </g> </g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{{fill:#0d0d0d;stroke:#0d0d0d;stroke-width:50;stroke-miterlimit:10;}} .st1{{fill:#FFED1F;}} .st2{{fill:#E32B43;}} </style> <g id="border"> <path class="st0" d="M454.7,403.9L266.2,77.4c-7.2-12.4-25.1-12.4-32.3,0L45.3,403.9c-7.2,12.4,1.8,28,16.2,28h377.1 C452.9,431.9,461.9,416.4,454.7,403.9z"></path> </g> <g id="object" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"> <g> <path class="st1" d="M232,80.6L47.2,400.7c-8,13.9,2,31.2,18,31.2h369.6c16,0,26-17.3,18-31.2L268,80.6 C260,66.7,240,66.7,232,80.6z"></path> <path class="st2" d="M250,152.2c-21.2,0-38.4,19.6-38.4,43.8c0,73.8,17.2,133.6,38.4,133.6s38.4-59.8,38.4-133.6 C288.4,171.8,271.2,152.2,250,152.2z"></path> <circle class="st2" cx="250" cy="379.9" r="26.9"></circle> </g> </g> </g></svg>
                             #             </div>"""
+                        popup = self.get_popup_element(html)
                         add_marker = folium.Marker(
                                         location=(location['latitude'], location['longitude']),
                                         popup=popup,
@@ -510,6 +526,7 @@ class Main(object):
 
                     if (price / build_up <= 300 and price <= 800000) or (i['tags'] == "lrd"):
                         div_icon = folium.features.CustomIcon(icon_0_2, icon_size=icon_size_s)
+                        popup = self.get_popup_element(html)
                         add_marker = folium.Marker(
                                 location=(location['latitude'], location['longitude']),
                                 popup=popup,
@@ -527,11 +544,26 @@ class Main(object):
                             re.findall(".*(torey).*", i['prop_type']) or re.findall(".*(tory).*", i['prop_type'])):
                         div_icon = folium.features.CustomIcon(icon_0_3, icon_size=icon_size_s)
 
+
+                        # secret criteria
+                        ok_size = False
+                        if (re.findall(".*(corner).*", i['others']) or re.findall(".*(end).*", i['others'])):
+                            ok_size = True
+                        if build_up >= 1700 or ok_size:
+                            popup = self.get_popup_element(html)
+                            add_marker = folium.Marker(
+                                location=(location['latitude'], location['longitude']),
+                                popup=popup,
+                                icon=div_icon
+                            )
+                            m_secret.add_child(add_marker)
+
                         # div_icon = f"""
                         #             <div>
                         #             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"/></svg>
                         #             </div>"""
                         # i['tags'] = "l"
+                        popup = self.get_popup_element(html)
                         add_marker = folium.Marker(
                                 location=(location['latitude'], location['longitude']),
                                 popup=popup,
@@ -540,6 +572,11 @@ class Main(object):
                         marker_cluster_l.add_child(add_marker)
                             # .add_to(marker_cluster_l)
 
+        try:
+            json.dump(geocode_data, open(f"../../docs/geocode_data.json", 'w'))
+            # geocode_data = json.load(open(f"../../docs/geocode_data.json"))
+        except Exception:
+            print("Not able to save geocode data file, please check")
 
 
                 # div_icon = folium.features.CustomIcon(icon_url_durian_runtuh_others, icon_size=icon_size)
@@ -592,8 +629,13 @@ class Main(object):
         if testing:
             m.save(f"../../docs/testing.html")
         else:
+            m_secret.save(f"../../docs/secret.html")
             m.save(f"../../docs/index.html")
         # m.save(f"../../docs/LLT_" + date_file + ".html")
+
+    def get_popup_element(self, html):
+        iframe = folium.IFrame(html=html, width=300, height=200)
+        return folium.Popup(iframe, max_width=2650)
 
     def add_sidebar(self, m):
         # Create the sidebar HTML structure

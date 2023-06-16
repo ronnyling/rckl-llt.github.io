@@ -1,40 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230614 11:31:56.299" rpa="false" schemaversion="3">
+<robot generator="Rebot 6.0.1 (Python 3.10.4 on win32)" generated="20230616 17:51:42.519" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\tests\restAPI\Main\Main.robot">
 <test id="s1-t1" name="1 - Executes Main flow" line="6">
 <kw name="When user runs main flow" library="Main">
-<msg timestamp="20230614 11:30:58.114" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20230614 11:30:58.117" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230614 11:30:59.579" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230614 11:30:59.583" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230614 11:31:01.226" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230614 11:31:05.396" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230614 11:31:06.825" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=2 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230614 11:31:10.972" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230614 11:31:11.573" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=3 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230614 11:31:14.746" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230614 11:31:16.604" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=4 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230614 11:31:19.776" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230614 11:31:20.948" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=5 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230614 11:31:23.135" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230614 11:31:23.853" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=6 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230614 11:31:27.009" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230614 11:31:28.024" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=7 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230614 11:31:31.148" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230614 11:31:32.507" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=8 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230614 11:31:34.648" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230614 11:31:35.491" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=9 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230614 11:31:37.631" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230614 11:31:39.022" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=10 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230614 11:31:42.256" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230614 11:31:43.068" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=11 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230614 11:31:45.314" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230614 11:31:45.845" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=12 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230614 11:31:49.094" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230614 11:31:50.016" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=13 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230614 11:31:53.450" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230614 11:31:54.595" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=14 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230614 11:31:55.839" level="INFO">now i am at page 1
+<msg timestamp="20230616 17:50:47.162" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230616 17:50:47.167" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230616 17:50:48.265" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230616 17:50:48.299" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230616 17:50:50.088" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230616 17:50:54.372" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230616 17:50:55.099" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=2 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230616 17:50:59.273" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230616 17:51:00.409" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=3 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230616 17:51:04.574" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230616 17:51:05.218" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=4 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230616 17:51:08.394" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230616 17:51:09.917" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=5 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230616 17:51:13.191" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230616 17:51:14.012" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=6 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230616 17:51:18.225" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230616 17:51:18.835" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=7 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230616 17:51:20.988" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230616 17:51:21.829" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=8 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230616 17:51:26.019" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230616 17:51:27.776" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=9 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230616 17:51:31.970" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230616 17:51:32.867" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=10 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230616 17:51:36.115" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230616 17:51:37.388" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=11 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230616 17:51:41.632" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230616 17:51:41.632" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230616 17:51:41.633" level="DEBUG">Starting new HTTPS connection (1): maps.googleapis.com:443</msg>
+<msg timestamp="20230616 17:51:41.876" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Lorong+Semarak+Api+1%2C+Bandar+Baru+Air+Itam%2C+11500+Ayer+Itam%2C+Penang&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
+<msg timestamp="20230616 17:51:41.880" level="INFO">now i am at page 1
 now i am at page 2
 now i am at page 3
 now i am at page 4
@@ -45,22 +43,31 @@ now i am at page 8
 now i am at page 9
 now i am at page 10
 now i am at page 11
-now i am at page 12
-now i am at page 13
-now i am at page 14</msg>
-<msg timestamp="20230614 11:31:55.839" level="INFO">G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:836: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+draft_content= 11
+draft_content[0]= 12
+Not able to open geocode data file, check if it exists</msg>
+<msg timestamp="20230616 17:51:41.881" level="INFO">G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:878: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
 
-The code that caused this warning is on line 836 of the file G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py. To get rid of this warning, pass the additional argument 'features="lxml"' to the BeautifulSoup constructor.
+The code that caused this warning is on line 878 of the file G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py. To get rid of this warning, pass the additional argument 'features="lxml"' to the BeautifulSoup constructor.
 
   parsed_html = BeautifulSoup(body_text)</msg>
-<status status="FAIL" starttime="20230614 11:30:58.112" endtime="20230614 11:31:55.839"/>
+<msg timestamp="20230616 17:51:41.882" level="FAIL">AttributeError: 'list' object has no attribute 'update'</msg>
+<msg timestamp="20230616 17:51:41.887" level="DEBUG">Traceback (most recent call last):
+  File "G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py", line 50, in user_runs_main_flow
+    self.lelongtips_scrape()
+  File "G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py", line 83, in lelongtips_scrape
+    self.map_gen(draft_content)
+  File "G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py", line 440, in map_gen
+    location.update({'latitude': location_raw['lat']})
+AttributeError: 'list' object has no attribute 'update'</msg>
+<status status="FAIL" starttime="20230616 17:50:47.161" endtime="20230616 17:51:41.888"/>
 </kw>
 <doc>Executes main flow</doc>
 <tag>flow</tag>
-<status status="FAIL" starttime="20230614 11:30:58.111" endtime="20230614 11:31:55.839">Execution terminated by signal</status>
+<status status="FAIL" starttime="20230616 17:50:47.160" endtime="20230616 17:51:41.890">AttributeError: 'list' object has no attribute 'update'</status>
 </test>
 <doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
-<status status="FAIL" starttime="20230614 11:30:54.625" endtime="20230614 11:31:55.839"/>
+<status status="FAIL" starttime="20230616 17:50:40.863" endtime="20230616 17:51:41.895"/>
 </suite>
 <statistics>
 <total>
@@ -74,6 +81,6 @@ The code that caused this warning is on line 836 of the file G:\My Drive\Python\
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230614 11:30:55.230" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
+<msg timestamp="20230616 17:50:41.689" level="WARN">Imported library 'G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.</msg>
 </errors>
 </robot>
