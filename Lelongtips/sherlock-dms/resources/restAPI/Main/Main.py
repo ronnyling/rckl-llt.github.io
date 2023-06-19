@@ -415,6 +415,8 @@ class Main(object):
         except Exception:
             print("Not able to open geocode data file, check if it exists")
 
+        decode_new = 0
+        decode_old = 0
         for j in draft_content:
             for i in j:
                 # hi = hi + 1
@@ -426,9 +428,11 @@ class Main(object):
                 geocode_result = {}
                 if geocode_data.get(loc, None):
                     geocode_result = geocode_data[loc]
+                    decode_old = decode_old + 1
                 else:
                     geocode_result = gmaps.geocode(loc)
                     geocode_data.update({loc: geocode_result})
+                    decode_new = decode_new + 1
                 # print(str(geocode_result))
                 # if len(geocode_result[0]['address_components']) > 1 or geocode_result['status'] is not "OK":
                 #     print("Please inspect and fix geocode= " + str(geocode_result))
@@ -571,7 +575,8 @@ class Main(object):
                             )
                         marker_cluster_l.add_child(add_marker)
                             # .add_to(marker_cluster_l)
-
+        print("total old =" + str(decode_old))
+        print("total new =" + str(decode_new))
         try:
             json.dump(geocode_data, open(f"../../docs/geocode_data.json", 'w'))
             # geocode_data = json.load(open(f"../../docs/geocode_data.json"))
