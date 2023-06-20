@@ -555,6 +555,7 @@ class Main(object):
                             ok_size = True
                         if build_up >= 1700 or ok_size:
                             popup = self.get_popup_element(html)
+                            div_icon = folium.features.CustomIcon(icon_secret, icon_size=icon_size_s)
                             add_marker = folium.Marker(
                                 location=(location['latitude'], location['longitude']),
                                 popup=popup,
