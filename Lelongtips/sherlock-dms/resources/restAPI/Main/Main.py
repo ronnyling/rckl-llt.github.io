@@ -82,7 +82,7 @@ class Main(object):
             draft_content = self.get_pages(page_no_upper, operating_url)
             self.map_gen(draft_content)
             self.git_controls()
-            self.notify_me()
+            # self.notify_me()
             # print("Total number of records retrieved are ", len(body_result))
             # print("Response body= ", str(body_result))
         else:
