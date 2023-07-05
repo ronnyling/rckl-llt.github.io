@@ -38,7 +38,7 @@ icon_secret = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/ma
 icon_size_s = (100, 65)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = True
+testing = False
 
 
 class Main(object):
@@ -80,8 +80,8 @@ class Main(object):
             body_result = response.text
             page_no_upper = self.set_pages(body_result)
             draft_content = self.get_pages(page_no_upper, operating_url)
-            m = self.map_gen(draft_content)
-            m.save(f"../../docs/index.html")
+            markers_secret = self.map_gen(draft_content)
+            self.map_gen_secret(markers_secret)
             self.git_controls()
             # self.notify_me()
             # print("Total number of records retrieved are ", len(body_result))
@@ -157,10 +157,15 @@ class Main(object):
         map.save(f"../../docs/fixit.html")
 
 
+    def map_gen_secret(self, markers_secret):
+        m_secret = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
+        for i in markers_secret:
+            m_secret.add_child(i)
+        m_secret.save(f"../../docs/secret.html")
 
     def map_gen(self, draft_content):
+        markers_secret = []
         m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
-        m_secret = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
         folium.TileLayer('openstreetmap').add_to(m)
         folium.TileLayer('Stamen Terrain').add_to(m)
         # m = self.add_sidebar(m)
@@ -562,7 +567,7 @@ class Main(object):
                                 popup=popup,
                                 icon=div_icon
                             )
-                            m_secret.add_child(add_marker)
+                            markers_secret.append(add_marker)
 
                         # div_icon = f"""
                         #             <div>
@@ -636,9 +641,9 @@ class Main(object):
         if testing:
             m.save(f"../../docs/testing.html")
         else:
-            m_secret.save(f"../../docs/secret.html")
+            m.save(f"../../docs/index.html")
         # m.save(f"../../docs/LLT_" + date_file + ".html")
-        return m
+        return markers_secret
 
     def get_popup_element(self, html):
         iframe = folium.IFrame(html=html, width=300, height=200)
