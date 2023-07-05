@@ -80,7 +80,8 @@ class Main(object):
             body_result = response.text
             page_no_upper = self.set_pages(body_result)
             draft_content = self.get_pages(page_no_upper, operating_url)
-            self.map_gen(draft_content)
+            m = self.map_gen(draft_content)
+            m.save(f"../../docs/index.html")
             self.git_controls()
             # self.notify_me()
             # print("Total number of records retrieved are ", len(body_result))
@@ -636,8 +637,8 @@ class Main(object):
             m.save(f"../../docs/testing.html")
         else:
             m_secret.save(f"../../docs/secret.html")
-            m.save(f"../../docs/index.html")
         # m.save(f"../../docs/LLT_" + date_file + ".html")
+        return m
 
     def get_popup_element(self, html):
         iframe = folium.IFrame(html=html, width=300, height=200)
