@@ -7,7 +7,7 @@ import time
 from datetime import datetime
 
 import googlemaps
-from folium.plugins import MarkerCluster
+from folium.plugins import MarkerCluster, LocateControl
 from geopy.geocoders import Nominatim
 import git
 import gmaps
@@ -38,7 +38,7 @@ icon_secret = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/ma
 icon_size_s = (100, 65)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = False
+testing = True
 
 
 class Main(object):
@@ -159,6 +159,7 @@ class Main(object):
 
     def map_gen_secret(self, markers_secret):
         m_secret = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
+        LocateControl().add_to(m_secret)
         for i in markers_secret:
             m_secret.add_child(i)
         m_secret.save(f"../../docs/secret.html")
@@ -166,6 +167,7 @@ class Main(object):
     def map_gen(self, draft_content):
         markers_secret = []
         m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
+        LocateControl().add_to(m)
         folium.TileLayer('openstreetmap').add_to(m)
         folium.TileLayer('Stamen Terrain').add_to(m)
         # m = self.add_sidebar(m)
