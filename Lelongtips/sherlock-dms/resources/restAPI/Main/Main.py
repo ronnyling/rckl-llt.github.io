@@ -453,6 +453,7 @@ class Main(object):
                 location.update({'longitude': location_raw['lng']})
                 div_icon = None
                 latlong = str(location_raw['lat'])+','+str(location_raw['lng'])
+                print("lookie here!! " + latlong)
                 price = i['price']
                 build_up = i['build_up']
                 print("prior to storm " + str(price) + " " + str(build_up))

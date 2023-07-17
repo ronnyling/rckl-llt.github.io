@@ -1,244 +1,244 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.10.4 on win32)" generated="20230717 13:14:52.359" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.10.4 on win32)" generated="20230717 13:20:43.299" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\tests\restAPI\Main\Main.robot">
 <test id="s1-t1" name="1 - Executes Main flow" line="6">
 <kw name="When user runs main flow" library="Main">
-<msg timestamp="20230717 13:14:58.695" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20230717 13:14:58.704" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230717 13:14:59.663" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230717 13:15:00.142" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230717 13:15:01.621" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230717 13:15:05.151" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230717 13:15:07.977" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=2 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230717 13:15:10.509" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230717 13:15:11.556" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=3 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230717 13:15:15.983" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230717 13:15:16.724" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=4 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230717 13:15:20.074" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230717 13:15:21.163" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=5 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230717 13:15:25.482" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230717 13:15:26.196" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=6 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230717 13:15:29.686" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230717 13:15:30.189" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=7 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230717 13:15:34.349" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230717 13:15:35.210" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=8 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230717 13:15:38.476" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230717 13:15:39.293" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=9 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230717 13:15:42.519" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230717 13:15:44.354" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=10 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230717 13:15:48.583" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20230717 13:15:49.341" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=11 HTTP/1.1" 200 None</msg>
-<msg timestamp="20230717 13:15:52.748" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.748" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.753" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.753" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.756" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.756" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.759" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.759" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.763" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.763" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.764" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.767" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.770" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.770" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.773" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.774" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.776" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.777" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.779" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.779" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.781" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.781" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.783" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.784" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.786" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.786" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.788" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.788" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.790" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.791" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.792" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.793" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.794" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.795" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.796" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.797" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.799" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.799" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.801" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.802" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.803" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.804" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.805" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.806" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.807" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.808" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.809" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.810" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.812" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.812" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.814" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.814" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.816" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.816" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.818" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.819" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.821" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.821" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.822" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.823" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.824" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.825" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.827" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.830" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.832" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.833" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.835" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.835" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.837" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.837" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.840" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.840" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.841" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.842" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.844" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.845" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.847" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.848" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.850" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.851" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.852" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.853" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.855" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.856" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.857" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.859" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:52.861" level="DEBUG">Starting new HTTPS connection (1): maps.googleapis.com:443</msg>
-<msg timestamp="20230717 13:15:53.114" level="DEBUG">https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=Jalan+Baru+2%2C+Taman+Tronoh+Baru%2C+31750+Tronoh%2C+Perak&amp;key=AIzaSyCFnR_9wkfFiy0Xui-qf4tXXe3T5aQ0yZk HTTP/1.1" 200 None</msg>
-<msg timestamp="20230717 13:15:53.121" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.125" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.134" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.135" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.144" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.144" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.151" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.153" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.155" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.160" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.164" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.168" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.173" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.174" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.177" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.180" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.183" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.185" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.187" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.190" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.193" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.196" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.201" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.201" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.203" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.206" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.211" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.212" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.214" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.215" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.217" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.219" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.221" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.222" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.224" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.224" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.226" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.228" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.230" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.231" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.233" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.233" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.235" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.236" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.238" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.238" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.239" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.240" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.241" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.242" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.244" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.245" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.246" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.248" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.250" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.250" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.252" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.253" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.255" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.255" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.257" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.257" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.258" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.259" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.261" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.261" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.263" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.263" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.265" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.266" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.267" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.268" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.269" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.270" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.271" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.274" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.276" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.277" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.281" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.281" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.283" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.285" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.287" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.287" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.290" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.291" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.292" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.292" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.294" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.294" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.295" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.296" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.298" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.299" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.301" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.301" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.303" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.304" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.305" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.306" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.307" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.307" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.309" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.309" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.311" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.311" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.314" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.314" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.315" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.316" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.317" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.318" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.319" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.320" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.321" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.321" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.322" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.323" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.324" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.326" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.327" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.327" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.328" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.329" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.331" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20230717 13:15:53.331" level="DEBUG">
+<msg timestamp="20230717 13:20:51.237" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20230717 13:20:51.241" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230717 13:20:52.016" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230717 13:20:52.025" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230717 13:20:52.752" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230717 13:20:56.936" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230717 13:20:58.077" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=2 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230717 13:21:00.263" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230717 13:21:01.658" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=3 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230717 13:21:05.819" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230717 13:21:07.605" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=4 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230717 13:21:09.776" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230717 13:21:10.571" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=5 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230717 13:21:14.847" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230717 13:21:15.583" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=6 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230717 13:21:19.748" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230717 13:21:20.610" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=7 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230717 13:21:22.789" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230717 13:21:23.800" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=8 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230717 13:21:25.967" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230717 13:21:26.608" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=9 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230717 13:21:29.750" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230717 13:21:30.335" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=10 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230717 13:21:34.578" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20230717 13:21:35.198" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=11 HTTP/1.1" 200 None</msg>
+<msg timestamp="20230717 13:21:38.553" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.554" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.556" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.558" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.559" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.561" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.563" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.563" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.565" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.567" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.569" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.570" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.572" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.573" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.575" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.577" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.579" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.581" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.584" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.584" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.587" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.587" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.589" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.589" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.590" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.592" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.593" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.596" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.598" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.600" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.603" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.604" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.605" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.606" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.608" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.609" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.611" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.613" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.614" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.616" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.618" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.618" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.621" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.623" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.627" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.627" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.630" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.631" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.634" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.635" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.638" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.639" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.640" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.642" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.643" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.645" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.647" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.647" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.650" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.650" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.653" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.654" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.656" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.659" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.661" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.661" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.663" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.663" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.665" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.666" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.668" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.670" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.673" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.673" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.676" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.676" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.678" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.679" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.681" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.681" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.684" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.684" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.687" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.687" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.690" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.690" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.692" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.692" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.694" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.695" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.697" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.697" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.699" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.700" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.702" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.702" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.703" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.706" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.708" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.708" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.710" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.711" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.712" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.713" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.714" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.714" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.716" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.717" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.718" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.719" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.721" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.721" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.723" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.724" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.725" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.726" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.728" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.729" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.731" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.732" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.734" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.734" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.736" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.736" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.737" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.738" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.739" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.741" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.742" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.743" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.745" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.745" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.746" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.747" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.748" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.749" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.751" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.752" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.754" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.754" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.755" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.756" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.757" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.758" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.760" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.760" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.762" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.763" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.764" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.765" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.767" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.767" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.768" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.769" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.771" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.772" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.774" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.774" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.775" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.776" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.778" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.779" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.780" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.781" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.784" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.785" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.786" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.788" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.791" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.791" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.793" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.794" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.795" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.796" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.797" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.798" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.799" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.799" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.801" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.802" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.804" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.804" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.805" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.806" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.807" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.807" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.809" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.809" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.810" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.811" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.812" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.813" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.814" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.816" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.817" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.817" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.819" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.820" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.822" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.822" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.824" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.824" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.826" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.826" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.828" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.829" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.830" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.830" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.831" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.832" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.833" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.834" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.835" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20230717 13:21:38.836" level="DEBUG">
