@@ -38,7 +38,7 @@ icon_secret = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/ma
 icon_size_s = (100, 65)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = False
+testing = True
 
 
 class Main(object):
@@ -452,6 +452,7 @@ class Main(object):
                 location.update({'latitude': location_raw['lat']})
                 location.update({'longitude': location_raw['lng']})
                 div_icon = None
+                latlong = str(location_raw['lat'])+','+str(location_raw['lng'])
                 price = i['price']
                 build_up = i['build_up']
                 print("prior to storm " + str(price) + " " + str(build_up))
@@ -471,6 +472,7 @@ class Main(object):
                     </ul>
                     </p>
                     <p>More details  <a href="{{8}}" target=window.name> click here </a></p>
+                    <p> Directions <a href="https://www.google.com/maps/dir//{{9}}"> GO </a></p>
                     """.format(i['prop_name'],
                                '<h2> ' + i['prop_type'] + ' </h2>' if i['prop_type'] else '',
                                build_up,
@@ -480,7 +482,8 @@ class Main(object):
                                i['others'],
                                formatted_address_name,
                                i['h_ref'],
-                               iframe_target)
+                               iframe_target,
+                               latlong)
                 # iframe = folium.IFrame(html=html, width=300, height=200)
                 # popup = folium.Popup(iframe, max_width=2650)
                 popup = self.get_popup_element(html)
