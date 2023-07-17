@@ -473,7 +473,7 @@ class Main(object):
                     </ul>
                     </p>
                     <p>More details  <a href="{{8}}" target=window.name> click here </a></p>
-                    <p> Directions <a href="https://www.google.com/maps/dir//{{9}}"> GO </a></p>
+                    <p> Directions <a href="https://www.google.com/maps/dir//{{10}}"> GO </a></p>
                     """.format(i['prop_name'],
                                '<h2> ' + i['prop_type'] + ' </h2>' if i['prop_type'] else '',
                                build_up,
