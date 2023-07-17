@@ -38,7 +38,7 @@ icon_secret = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/ma
 icon_size_s = (100, 65)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = True
+testing = False
 
 
 class Main(object):
@@ -565,7 +565,7 @@ class Main(object):
                         ok_size = False
                         if (re.findall(".*(corner).*", i['others']) or re.findall(".*(end).*", i['others'])):
                             ok_size = True
-                        if build_up >= 1700 or ok_size:
+                        if build_up >= 1700 and ok_size and price <= 800000:
                             popup = self.get_popup_element(html)
                             div_icon = folium.features.CustomIcon(icon_secret, icon_size=icon_size_s)
                             add_marker = folium.Marker(
