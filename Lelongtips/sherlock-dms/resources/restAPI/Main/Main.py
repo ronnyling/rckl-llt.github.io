@@ -38,7 +38,7 @@ icon_secret = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/ma
 icon_size_s = (100, 65)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = False
+testing = True
 
 
 class Main(object):
@@ -473,7 +473,7 @@ class Main(object):
                     </ul>
                     </p>
                     <p>More details  <a href="{{8}}" target=window.name> click here </a></p>
-                    <p> Directions <a href="https://www.google.com/maps/dir//{{10}}"> GO </a></p>
+                    <p> Directions <a href="https://www.google.com/maps/dir//{{10}}" target=window.name> GO </a></p>
                     """.format(i['prop_name'],
                                '<h2> ' + i['prop_type'] + ' </h2>' if i['prop_type'] else '',
                                build_up,
