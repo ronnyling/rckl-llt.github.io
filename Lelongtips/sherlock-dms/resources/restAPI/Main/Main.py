@@ -565,7 +565,7 @@ class Main(object):
                         ok_size = False
                         if (re.findall(".*(corner).*", i['others']) or re.findall(".*(end).*", i['others'])):
                             ok_size = True
-                        if build_up >= 1700 and ok_size and price <= 800000:
+                        if (build_up >= 1700 and price <= 800000) or ok_size:
                             popup = self.get_popup_element(html)
                             div_icon = folium.features.CustomIcon(icon_secret, icon_size=icon_size_s)
                             add_marker = folium.Marker(
