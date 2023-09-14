@@ -4,6 +4,7 @@ import os
 import secrets
 import re
 import time
+import ujson
 from datetime import datetime
 
 import googlemaps
@@ -419,7 +420,8 @@ class Main(object):
         print("draft_content[0]= " + str(len(draft_content[0])))
         geocode_data = {}
         try:
-            geocode_data = json.load(open(f"../../docs/geocode_data.json"))
+            geocode_data = ujson.load(open(f"../../docs/geocode_data.json"))
+            # geocode_data = json.load(open(f"../../docs/geocode_data.json"))
         except Exception:
             print("Not able to open geocode data file, check if it exists")
 
@@ -591,7 +593,8 @@ class Main(object):
         print("total old =" + str(decode_old))
         print("total new =" + str(decode_new))
         try:
-            json.dump(geocode_data, open(f"../../docs/geocode_data.json", 'w'))
+            ujson.dump(geocode_data, open(f"../../docs/geocode_data.json", 'w'))
+            # json.dump(geocode_data, open(f"../../docs/geocode_data.json", 'w'))
             # geocode_data = json.load(open(f"../../docs/geocode_data.json"))
         except Exception:
             print("Not able to save geocode data file, please check")
