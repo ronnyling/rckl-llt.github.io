@@ -455,10 +455,10 @@ class Main(object):
                 location.update({'longitude': location_raw['lng']})
                 div_icon = None
                 latlong = str(location_raw['lat'])+','+str(location_raw['lng'])
-                print("lookie here!! " + latlong)
+                # print("lookie here!! " + latlong)
                 price = i['price']
                 build_up = i['build_up']
-                print("prior to storm " + str(price) + " " + str(build_up))
+                # print("prior to storm " + str(price) + " " + str(build_up))
 
                 iframe_target = str(i['prop_name'])
                 html = f"""
@@ -639,7 +639,7 @@ class Main(object):
         # fg_att.add_child(marker_cluster_attention)
 
         # print("ultimate boss1 " + str(m.to_dict()))
-        print("ultimate boss " + str(m.to_json()))
+        # print("ultimate boss " + str(m.to_json()))
         # print("ultimate boss3 " + str(m.__dict__()))
         # print("ultimate boss4 " + str(m.__str__()))
 
@@ -790,7 +790,7 @@ class Main(object):
         k = 0
         draft_content = []
         for i in range(1, int(page_no_upper) + 1):
-            print("now i am at page " + str(i))
+            # print("now i am at page " + str(i))
             response = requests.get(
                 url=operating_url + str(i)
             )
@@ -821,14 +821,14 @@ class Main(object):
         # print("iii= " + str(border_info))
 
         for i in contents_raw:
-            print("xx= " + str(i))
+            # print("xx= " + str(i))
 
             markup_i = BeautifulSoup(str(i), "xml")
             # parsed_border_info = BeautifulSoup(str(i))
 
             # border_info = markup_i.find_all('div', attrs={'class': 'd-flex flex-row pb-2'})
             for EachPart in markup_i.select('div[class*="fs-5 mb-1 me-2 me-md-1 me-lg-2"]'):
-                print("mytype2= " + str(EachPart.get_text()))
+                # print("mytype2= " + str(EachPart.get_text()))
                 if EachPart.select('i[class*="fas fa-bed"]'):
                     print("this is bed== ")
                 elif EachPart.select('i[class*="fas fa-fw fa-wifi"]'):
