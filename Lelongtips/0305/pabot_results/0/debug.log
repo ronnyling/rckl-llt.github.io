@@ -6841,3 +6841,21 @@
 20230919 12:57:41.959 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
 20230919 12:57:41.959 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
 20230919 12:57:48.122 - DEBUG - Popen(['git', 'add', '--update'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=None)
+20230919 12:57:50.168 - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=<valid stream>)
+20230919 12:57:50.771 - DEBUG - Popen(['git', 'cat-file', '--batch'], cwd=G:\My Drive\Python\Scraper, universal_newlines=False, shell=None, istream=<valid stream>)
+20230919 12:57:51.318 - DEBUG - Popen(['git', 'push', '--porcelain', '--', 'origin'], cwd=G:\My Drive\Python\Scraper, universal_newlines=True, shell=None, istream=None)
+20230919 12:58:05.311 - INFO - draft_content= 890
+draft_content[0]= 12
+total old =2456
+total new =47
+20230919 12:58:05.311 - INFO - G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:899: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 899 of the file G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py. To get rid of this warning, pass the additional argument 'features="lxml"' to the BeautifulSoup constructor.
+
+  parsed_html = BeautifulSoup(body_text)
+20230919 12:58:05.311 - INFO - +-- END KEYWORD: Main.When user runs main flow (3788621)
+------------------------------------------------------------------------------
+20230919 12:58:05.311 - INFO - +- END TEST: 1 - Executes Main flow (3788622)
+------------------------------------------------------------------------------
+20230919 12:58:05.311 - INFO - + END SUITE: Main (3795525)
+==============================================================================
