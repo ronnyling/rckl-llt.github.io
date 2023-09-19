@@ -807,7 +807,7 @@ class Main(object):
             if k > 10 and testing:
                 break
             #     raise Exception("Test end")
-        # print(str(draft_content))
+        print(str(draft_content))
         return draft_content
 
     def get_contents_2(self, body_text):
