@@ -907,8 +907,8 @@ class Main(object):
             url=url
         )
         body_result = response.text
+        print("text 2 : " + body_result)
         parsed_html = BeautifulSoup(body_result)
-        print("text 3 : " + parsed_html.text)
         contents_raw = parsed_html.body.find_all('div', attrs={'class': 'mt-1 mb-2 d-flex flex-row flex-wrap'})
 
         for i in contents_raw:
