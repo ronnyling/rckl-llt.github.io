@@ -935,11 +935,12 @@ class Main(object):
 
         for k in contents_raw:
             markup_i = BeautifulSoup(str(k), "xml")
-            print("text special : " + str(markup_i.get_text()))
+            area_text = str(markup_i.get_text().strip())
+            print("text special : " + area_text)
 
-            for EachPart in markup_i.select('span[class*="text-secondary border-bottom d-block pb-1 mb-2"]'):
-                info = str(EachPart.get_text())
-                in_depth['area'] = in_depth['area'] + ' ' + info
+            # for EachPart in markup_i.select('span[class*="text-secondary border-bottom d-block pb-1 mb-2"]'):
+            #     info = str(EachPart.get_text())
+            in_depth['area'] = area_text
 
         print("text 3 : " + in_depth.__str__())
         return in_depth
