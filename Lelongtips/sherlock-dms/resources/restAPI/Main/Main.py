@@ -468,6 +468,7 @@ class Main(object):
                     <h1> {{0}} </h1>
                     <p>Details:- </p>
                     <ul>
+                        <li>psf= {{11}}</li>
                         <li>buildup= {{2}}</li>
                         <li>others= {{6}} </li>
                         <li> status= {{5}} </li>
@@ -486,7 +487,8 @@ class Main(object):
                                formatted_address_name,
                                i['h_ref'],
                                iframe_target,
-                               latlong)
+                               latlong,
+                               i['in_depth']['str'])
                 # iframe = folium.IFrame(html=html, width=300, height=200)
                 # popup = folium.Popup(iframe, max_width=2650)
                 popup = self.get_popup_element(html)
@@ -565,8 +567,13 @@ class Main(object):
 
                         # secret criteria
                         ok_size = False
-                        if (re.findall(".*(corner).*", i['others']) or re.findall(".*(end).*", i['others'])) or \
-                                (re.findall(".*(corner).*", i['in_depth']['str']) or re.findall(".*(end).*", i['in_depth']['str']) or re.findall(".*(enovate).*", i['in_depth']['str'])):
+                        if re.findall("|".join([".*(corner).*", ".*(end).*"]), i['others']) or \
+                                re.findall("|".join([".*(corner).*", ".*(end).*", ".*(enovate).*"]), i['in_depth']['str']):
+                        # if (re.findall(".*(corner).*", i['others']) or re.findall(".*(end).*", i['others'])) or \
+                        #         (re.findall(".*(corner).*", i['in_depth']['str']) or re.findall(".*(end).*", i['in_depth']['str']) or re.findall(".*(enovate).*", i['in_depth']['str'])):
+                        #
+                        # if (re.findall(".*(corner).*", i['others']) or re.findall(".*(end).*", i['others'])) or \
+                        #         (re.findall(".*(corner).*", i['in_depth']['str']) or re.findall(".*(end).*", i['in_depth']['str']) or re.findall(".*(enovate).*", i['in_depth']['str'])):
                             ok_size = True
                             #check indepth
                         if (build_up >= 1700 and price <= 800000) or ok_size:
