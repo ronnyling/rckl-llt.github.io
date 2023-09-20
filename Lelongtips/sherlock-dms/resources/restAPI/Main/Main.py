@@ -562,9 +562,10 @@ class Main(object):
                             re.findall(".*(torey).*", i['prop_type']) or re.findall(".*(tory).*", i['prop_type'])):
                         div_icon = folium.features.CustomIcon(icon_0_3, icon_size=icon_size_s)
 
-
                         # secret criteria
                         ok_size = False
+                        in_depth = None
+                        print("text 1 : " + i['h_ref'])
                         in_depth = self.checking_indepth(i['h_ref'])
                         if re.findall("|".join([".*(corner).*", ".*(end).*"]), i['others']) or \
                                 re.findall("|".join([".*(corner).*", ".*(end).*", ".*(enovate).*"]), in_depth['tags']['str']):
