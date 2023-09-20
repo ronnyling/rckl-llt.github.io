@@ -578,7 +578,7 @@ class Main(object):
                         if (build_up >= 1700 and price <= 800000) or ok_size:
 
                             headline = f"""
-                                        <p> {{0}}{{1}} </p>
+                                        <p><small> {{0}}{{1}} </small></p>
                                         """.format(in_depth['tags']['str'],
                                                    in_depth['area'].strip())
                             print('text 4: ' + in_depth.__str__())
