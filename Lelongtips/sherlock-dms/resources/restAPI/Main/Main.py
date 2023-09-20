@@ -907,12 +907,9 @@ class Main(object):
             url=url
         )
         body_result = response.text
-        # print("text 2 : " + body_result)
+        print("text 2 : " + body_result)
         parsed_html = BeautifulSoup(body_result)
         contents_raw = parsed_html.body.find_all('div', attrs={'class': 'mt-1 mb-2 d-flex flex-row flex-wrap'})
-
-        teststring = parsed_html.find_all(lambda tag:tag.name=="text-nowrap pe-4" and "area" in tag.text)
-        print("text 2 : " + teststring.__str__())
 
         for i in contents_raw:
             markup_i = BeautifulSoup(str(i), "xml")
