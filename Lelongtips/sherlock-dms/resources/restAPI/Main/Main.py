@@ -906,15 +906,15 @@ class Main(object):
             markup_i = BeautifulSoup(str(i), "xml")
             in_depth = {}
             in_depth['str'] = ''
+            in_depth['psf'] = None
             for EachPart in markup_i.select('div[class*="fs-5 mb-1 me-2 me-md-1 me-lg-2"]'):
                 info = str(EachPart.get_text())
-                print("text 2 : " + info)
-
-                psf = re.search("(RM*? per sf)", info)
-                if psf:
-                    in_depth['psf'] = psf
                 in_depth['str'] = in_depth['str'] + ' ' + info
+            psf = re.search("(RM.* per sf)", in_depth['str'])
+            if psf:
+                in_depth['psf'] = psf[1]
             print("text 3 : " + in_depth.__str__())
+            return in_depth
 
     def get_contents(self, body_text):
         parsed_html = BeautifulSoup(body_text)
@@ -980,7 +980,7 @@ class Main(object):
             content_details['others'] = misc
             content_details['nth'] = nth
             content_details['h_ref'] = re.findall(".*<a class=\"stretched-link\" href=\"(.*)\" title=.*", str(i))[0]
-            self.checking_indepth(content_details['h_ref'])
+            content_details['in_depth'] = self.checking_indepth(content_details['h_ref'])
             content_details['restriction'] = self.handle_value(i, 'div', 'class',
                                                                'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none')
             content_details['tags'] = tag
