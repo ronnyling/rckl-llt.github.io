@@ -931,13 +931,12 @@ class Main(object):
         if psf:
             in_depth['tags']['psf'] = psf[1]
 
-        contents_raw = parsed_html.body.find_all('div', attrs={'class': 'd-flex flex-row py-2'})
-        # for i in contents_raw:
-        markup_i = BeautifulSoup(str(contents_raw[0]), "xml")
-        # markup_i = BeautifulSoup(str(i), "xml")
-        for EachPart in markup_i.select('div[class*="text-nowrap pe-4"]'):
-            info = str(EachPart.get_text())
-            in_depth['area'] = in_depth['area'] + ' ' + info
+        contents_raw = parsed_html.body.find_all('div', attrs={'class': 'row g-3 my-3 info-rows'})
+        for k in contents_raw:
+            markup_i = BeautifulSoup(str(k), "xml")
+            for EachPart in markup_i.select('span[class*="text-secondary border-bottom d-block pb-1 mb-2"]'):
+                info = str(EachPart.get_text())
+                in_depth['area'] = in_depth['area'] + ' ' + info
 
         print("text 3 : " + in_depth.__str__())
         return in_depth
