@@ -578,13 +578,12 @@ class Main(object):
                         if (build_up >= 1700 and price <= 800000) or ok_size:
 
                             headline = f"""
-                                        <p> {{0}} {{1}} {{2}} </p>
-                                        """.format(in_depth['tags']['psf'],
-                                                   in_depth['tags']['str'],
-                                                   in_depth['area'])
+                                        <p> {{0}}{{1}} </p>
+                                        """.format(in_depth['tags']['str'],
+                                                   in_depth['area'].strip())
                             print('text 4: ' + in_depth.__str__())
 
-                            refined_html = headline.join(html)
+                            refined_html = headline + html
                             popup = self.get_popup_element(refined_html)
                             div_icon = folium.features.CustomIcon(icon_secret, icon_size=icon_size_s)
                             add_marker = folium.Marker(
