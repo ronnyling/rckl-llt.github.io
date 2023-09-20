@@ -468,7 +468,6 @@ class Main(object):
                     <h1> {{0}} </h1>
                     <p>Details:- </p>
                     <ul>
-                        <li>psf= {{11}}</li>
                         <li>buildup= {{2}}</li>
                         <li>others= {{6}} </li>
                         <li> status= {{5}} </li>
@@ -487,8 +486,7 @@ class Main(object):
                                formatted_address_name,
                                i['h_ref'],
                                iframe_target,
-                               latlong,
-                               i['in_depth']['str'])
+                               latlong)
                 # iframe = folium.IFrame(html=html, width=300, height=200)
                 # popup = folium.Popup(iframe, max_width=2650)
                 popup = self.get_popup_element(html)
@@ -567,17 +565,27 @@ class Main(object):
 
                         # secret criteria
                         ok_size = False
+                        in_depth = self.checking_indepth(i['h_ref'])
                         if re.findall("|".join([".*(corner).*", ".*(end).*"]), i['others']) or \
-                                re.findall("|".join([".*(corner).*", ".*(end).*", ".*(enovate).*"]), i['in_depth']['str']):
+                                re.findall("|".join([".*(corner).*", ".*(end).*", ".*(enovate).*"]), in_depth['tags']['str']):
                         # if (re.findall(".*(corner).*", i['others']) or re.findall(".*(end).*", i['others'])) or \
                         #         (re.findall(".*(corner).*", i['in_depth']['str']) or re.findall(".*(end).*", i['in_depth']['str']) or re.findall(".*(enovate).*", i['in_depth']['str'])):
                         #
                         # if (re.findall(".*(corner).*", i['others']) or re.findall(".*(end).*", i['others'])) or \
                         #         (re.findall(".*(corner).*", i['in_depth']['str']) or re.findall(".*(end).*", i['in_depth']['str']) or re.findall(".*(enovate).*", i['in_depth']['str'])):
                             ok_size = True
-                            #check indepth
+
                         if (build_up >= 1700 and price <= 800000) or ok_size:
-                            popup = self.get_popup_element(html)
+
+                            headline = f"""
+                                        <p> {{0}} {{1}} {{2}} </p>
+                                        """.format(in_depth['tags']['psf'],
+                                                   in_depth['tags']['str'],
+                                                   in_depth['area'])
+                            print('text 4: ' + in_depth.__str__())
+
+                            refined_html = headline.join(html)
+                            popup = self.get_popup_element(refined_html)
                             div_icon = folium.features.CustomIcon(icon_secret, icon_size=icon_size_s)
                             add_marker = folium.Marker(
                                 location=(location['latitude'], location['longitude']),
@@ -909,21 +917,30 @@ class Main(object):
         body_result = response.text
         print("text 2 : " + body_result)
         parsed_html = BeautifulSoup(body_result)
+        in_depth = {}
+        in_depth['tags'] = {}
+        in_depth['area'] = ''
         contents_raw = parsed_html.body.find_all('div', attrs={'class': 'mt-1 mb-2 d-flex flex-row flex-wrap'})
+        markup_i = BeautifulSoup(str(contents_raw[0]), "xml")
+        in_depth['tags']['str'] = ''
+        in_depth['tags']['psf'] = None
+        for EachPart in markup_i.select('div[class*="fs-5 mb-1 me-2 me-md-1 me-lg-2"]'):
+            info = str(EachPart.get_text())
+            in_depth['tags']['str'] = in_depth['tags']['str'] + ' ' + info
+        psf = re.search("(RM.* per sf)", in_depth['tags']['str'])
+        if psf:
+            in_depth['tags']['psf'] = psf[1]
 
-        for i in contents_raw:
-            markup_i = BeautifulSoup(str(i), "xml")
-            in_depth = {}
-            in_depth['str'] = ''
-            in_depth['psf'] = None
-            for EachPart in markup_i.select('div[class*="fs-5 mb-1 me-2 me-md-1 me-lg-2"]'):
-                info = str(EachPart.get_text())
-                in_depth['str'] = in_depth['str'] + ' ' + info
-            psf = re.search("(RM.* per sf)", in_depth['str'])
-            if psf:
-                in_depth['psf'] = psf[1]
-            print("text 3 : " + in_depth.__str__())
-            return in_depth
+        contents_raw = parsed_html.body.find_all('div', attrs={'class': 'd-flex flex-row py-2'})
+        # for i in contents_raw:
+        markup_i = BeautifulSoup(str(contents_raw[0]), "xml")
+        # markup_i = BeautifulSoup(str(i), "xml")
+        for EachPart in markup_i.select('div[class*="text-nowrap pe-4"]'):
+            info = str(EachPart.get_text())
+            in_depth['area'] = in_depth['area'] + ' ' + info
+
+        print("text 3 : " + in_depth.__str__())
+        return in_depth
 
     def get_contents(self, body_text):
         parsed_html = BeautifulSoup(body_text)
@@ -989,7 +1006,7 @@ class Main(object):
             content_details['others'] = misc
             content_details['nth'] = nth
             content_details['h_ref'] = re.findall(".*<a class=\"stretched-link\" href=\"(.*)\" title=.*", str(i))[0]
-            content_details['in_depth'] = self.checking_indepth(content_details['h_ref'])
+            # content_details['in_depth'] = self.checking_indepth(content_details['h_ref'])
             content_details['restriction'] = self.handle_value(i, 'div', 'class',
                                                                'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none')
             content_details['tags'] = tag
