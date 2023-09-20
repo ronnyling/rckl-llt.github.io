@@ -567,6 +567,7 @@ class Main(object):
                         ok_size = False
                         if (re.findall(".*(corner).*", i['others']) or re.findall(".*(end).*", i['others'])):
                             ok_size = True
+                            #check indepth
                         if (build_up >= 1700 and price <= 800000) or ok_size:
                             popup = self.get_popup_element(html)
                             div_icon = folium.features.CustomIcon(icon_secret, icon_size=icon_size_s)
@@ -893,15 +894,23 @@ class Main(object):
             # print("testitem " + str(content_list))
         return content_list
 
-    def get_contents(self, body_text):
-        print("\n***\n text 1 " + body_text)
+    def checking_indepth(self, url):
+        response = requests.get(
+            url=url
+        )
+        body_result = response.text
+        # parsed_html = BeautifulSoup(body_result)
+        print("\n***\n text 1 " + body_result)
 
+
+
+    def get_contents(self, body_text):
         parsed_html = BeautifulSoup(body_text)
         content_list = []
         contents_raw = parsed_html.body.find_all('div', attrs={'class': 'col details-col flex-grow-1'})
 
         for i in contents_raw:
-            print("\n***\n text 2 " + str(i))
+            # print("\n***\n text 2 " + str(i))
             markup_i = BeautifulSoup(str(i), "xml")
             misc = ''
             tag = ''
@@ -959,6 +968,7 @@ class Main(object):
             content_details['others'] = misc
             content_details['nth'] = nth
             content_details['h_ref'] = re.findall(".*<a class=\"stretched-link\" href=\"(.*)\" title=.*", str(i))[0]
+            self.checking_indepth(content_details['h_ref'])
             content_details['restriction'] = self.handle_value(i, 'div', 'class',
                                                                'fs-5 mb-1 me-2 me-md-1 me-lg-2 grid-none list-none')
             content_details['tags'] = tag
