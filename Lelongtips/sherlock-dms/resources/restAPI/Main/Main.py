@@ -153,7 +153,7 @@ class Main(object):
         marker_cluster2.add_child(marker2)
         # print("huehue " + map.to_json())
         folium.LayerControl().add_to(map)
-        print("huehue " + map.to_json())
+        # print("huehue " + map.to_json())
 
         map.save(f"../../docs/fixit.html")
 
@@ -899,10 +899,20 @@ class Main(object):
             url=url
         )
         body_result = response.text
-        # parsed_html = BeautifulSoup(body_result)
-        print("\n***\n text 1 " + body_result)
-
-
+        parsed_html = BeautifulSoup(body_result)
+        content_list = []
+        contents_raw = parsed_html.body.find_all('div', attrs={'class': 'mt-1 mb-2 d-flex flex-row flex-wrap'})
+        for i in contents_raw:
+            markup_i = BeautifulSoup(str(i), "xml")
+            in_depth = {}
+            in_depth['str'] = ''
+            for EachPart in markup_i.select('div[class*="fs-5 mb-1 me-2 me-md-1 me-lg-2"]'):
+                info = str(EachPart.get_text())
+                psf = re.search("(RM*? per sf)", info)
+                if psf:
+                    in_depth['psf'] = psf
+                in_depth['str'] = in_depth['str'] + ' ' + info
+            print("text 3 : " + in_depth.__str__())
 
     def get_contents(self, body_text):
         parsed_html = BeautifulSoup(body_text)
