@@ -565,7 +565,8 @@ class Main(object):
 
                         # secret criteria
                         ok_size = False
-                        if (re.findall(".*(corner).*", i['others']) or re.findall(".*(end).*", i['others'])):
+                        if (re.findall(".*(corner).*", i['others']) or re.findall(".*(end).*", i['others'])) or \
+                                (re.findall(".*(corner).*", i['in_depth']['str']) or re.findall(".*(end).*", i['in_depth']['str']) or re.findall(".*(enovate).*", i['in_depth']['str'])):
                             ok_size = True
                             #check indepth
                         if (build_up >= 1700 and price <= 800000) or ok_size:
