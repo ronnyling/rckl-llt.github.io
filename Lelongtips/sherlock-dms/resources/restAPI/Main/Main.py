@@ -908,8 +908,9 @@ class Main(object):
         )
         body_result = response.text
         parsed_html = BeautifulSoup(body_result)
-        content_list = []
+        print("text 3 : " + parsed_html.text)
         contents_raw = parsed_html.body.find_all('div', attrs={'class': 'mt-1 mb-2 d-flex flex-row flex-wrap'})
+
         for i in contents_raw:
             markup_i = BeautifulSoup(str(i), "xml")
             in_depth = {}
