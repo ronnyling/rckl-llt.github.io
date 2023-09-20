@@ -931,7 +931,8 @@ class Main(object):
         if psf:
             in_depth['tags']['psf'] = psf[1]
 
-        contents_raw = parsed_html.body.find_all('div', attrs={'class': 'row g-3 my-3 info-rows'})
+        contents_raw = parsed_html.body.find_all('div', attrs={'class': 'row g-3 my-3 info-rows'}, text=True)
+        print("text special : " + str(contents_raw))
         for k in contents_raw:
             markup_i = BeautifulSoup(str(k), "xml")
             for EachPart in markup_i.select('span[class*="text-secondary border-bottom d-block pb-1 mb-2"]'):
