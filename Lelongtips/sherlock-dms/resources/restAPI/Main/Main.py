@@ -805,7 +805,7 @@ class Main(object):
             # print("i've slept for seconds= " + str(k) +" "+ str(sleep_time))
             time.sleep(sleep_time)
             k = k + 1
-            if k > 10 and testing:
+            if k > 2 and testing:
                 break
             #     raise Exception("Test end")
         # print(str(draft_content))
@@ -908,6 +908,8 @@ class Main(object):
             in_depth['str'] = ''
             for EachPart in markup_i.select('div[class*="fs-5 mb-1 me-2 me-md-1 me-lg-2"]'):
                 info = str(EachPart.get_text())
+                print("text 2 : " + info)
+
                 psf = re.search("(RM*? per sf)", info)
                 if psf:
                     in_depth['psf'] = psf
