@@ -807,7 +807,7 @@ class Main(object):
             if k > 10 and testing:
                 break
             #     raise Exception("Test end")
-        print(str(draft_content))
+        # print(str(draft_content))
         return draft_content
 
     def get_contents_2(self, body_text):
@@ -894,12 +894,14 @@ class Main(object):
         return content_list
 
     def get_contents(self, body_text):
-        # print("\n***\n" + body_text)
+        print("\n***\n text 1 " + body_text)
 
         parsed_html = BeautifulSoup(body_text)
         content_list = []
         contents_raw = parsed_html.body.find_all('div', attrs={'class': 'col details-col flex-grow-1'})
+
         for i in contents_raw:
+            print("\n***\n text 2 " + str(i))
             markup_i = BeautifulSoup(str(i), "xml")
             misc = ''
             tag = ''
@@ -935,7 +937,7 @@ class Main(object):
                 build_up_raw = ''.join(raw_str)
             else:
                 build_up_raw = None
-            # print("builup raw= " + build_up_raw)
+            # print("raw strength = " + raw_str)
             content_details['build_up'] = build_up_raw
             if markup_i.select('div[class*="list-none status-label bg-cyan"]'):
                 listing_status = "No Bidder"
