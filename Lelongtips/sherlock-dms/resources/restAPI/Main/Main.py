@@ -39,7 +39,7 @@ icon_secret = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/ma
 icon_size_s = (100, 65)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = True
+testing = False
 
 
 class Main(object):
@@ -578,7 +578,7 @@ class Main(object):
 
                         if (build_up >= 1700 and price <= 800000) or ok_size:
                             matches = re.findall(r'\S+', in_depth['area'])
-                            result_string = in_depth['tags']['str'] + ' '.join(matches)
+                            result_string = in_depth['tags']['str'] + ' ' +' '.join(matches)
                             headline = f"""
                                         <p><small> {{0}} </small></p>
                                         """.format(result_string)
