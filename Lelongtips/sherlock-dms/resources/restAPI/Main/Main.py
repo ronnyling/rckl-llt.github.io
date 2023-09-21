@@ -39,7 +39,7 @@ icon_secret = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/ma
 icon_size_s = (100, 65)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = True
+testing = False
 
 
 class Main(object):
@@ -565,7 +565,7 @@ class Main(object):
                         # secret criteria
                         ok_size = False
                         in_depth = None
-                        print("text 1 : " + i['h_ref'])
+                        # print("text 1 : " + i['h_ref'])
                         in_depth = self.checking_indepth(i['h_ref'])
                         if re.findall("|".join([".*(corner).*", ".*(end).*"]), i['others']) or \
                                 re.findall("|".join([".*(corner).*", ".*(end).*", ".*(enovate).*"]), in_depth['tags']['str']):
@@ -915,7 +915,7 @@ class Main(object):
             url=url
         )
         body_result = response.text
-        print("text 2 : " + body_result)
+        # print("text 2 : " + body_result)
         parsed_html = BeautifulSoup(body_result)
         in_depth = {}
         in_depth['tags'] = {}
@@ -942,7 +942,7 @@ class Main(object):
             #     info = str(EachPart.get_text())
             in_depth['area'] = area_text
 
-        print("text 3 : " + in_depth.__str__())
+        # print("text 3 : " + in_depth.__str__())
         return in_depth
 
     def get_contents(self, body_text):
