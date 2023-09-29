@@ -583,7 +583,7 @@ class Main(object):
                                         <p><small> {{0}} </small></p>
                                         """.format(result_string)
 
-                            print('text 4: ' + headline)
+                            # print('text 4: ' + headline)
 
                             refined_html = headline + html
                             popup = self.get_popup_element(refined_html)
