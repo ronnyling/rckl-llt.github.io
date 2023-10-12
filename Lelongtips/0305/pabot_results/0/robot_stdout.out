@@ -1,10 +1,4 @@
 ==============================================================================
 Main                                                                          
 ==============================================================================
-1 - Executes Main flow :: Executes main flow                          | PASS |
-------------------------------------------------------------------------------
-Main                                                                  | PASS |
-1 test, 1 passed, 0 failed
-==============================================================================
-Debug:   G:\My Drive\Python\Scraper\Lelongtips\0305\pabot_results\0\debug.log
-Output:  G:\My Drive\Python\Scraper\Lelongtips\0305\pabot_results\0\output.xml
+1 - Executes Main flow :: Executes main flow                          

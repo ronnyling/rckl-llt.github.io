@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dc444f5-9e5d-4f07-a3e9-09e3d17a201d" name="Changes" comment="tokenaccess nodejs18 upgrade impact fix">
-      <change beforePath="$PROJECT_DIR$/../0305/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/../0305/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0305/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../0305/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0305/pabot_results/0/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../0305/pabot_results/0/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0305/pabot_results/0/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../0305/pabot_results/0/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0305/pabot_results/0/robot_stderr.out" beforeDir="false" afterPath="$PROJECT_DIR$/../0305/pabot_results/0/robot_stderr.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0305/pabot_results/0/robot_stdout.out" beforeDir="false" afterPath="$PROJECT_DIR$/../0305/pabot_results/0/robot_stdout.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0305/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../0305/report.html" afterDir="false" />
-    </list>
+    <list default="true" id="8dc444f5-9e5d-4f07-a3e9-09e3d17a201d" name="Changes" comment="tokenaccess nodejs18 upgrade impact fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
