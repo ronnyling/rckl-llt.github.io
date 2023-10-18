@@ -476,6 +476,8 @@ class Main(object):
                     </p>
                     <p>More details  <a href="{{8}}" target=window.name> click here </a></p>
                     <p> Directions <a href="https://www.google.com/maps/dir//{{10}}" target=window.name> GO </a></p>
+                    <img src="pic_trulli.jpg" alt="Italian Trulli">
+
                     """.format(i['prop_name'],
                                '<h2> ' + i['prop_type'] + ' </h2>' if i['prop_type'] else '',
                                build_up,
@@ -829,7 +831,7 @@ class Main(object):
         return draft_content
 
     def get_contents_2(self, body_text):
-        print("\n***\n" + body_text)
+        # print("\n***\n" + body_text)
 
         parsed_html = BeautifulSoup(body_text)
         content_list = []
@@ -916,7 +918,7 @@ class Main(object):
             url=url
         )
         body_result = response.text
-        # print("text 2 : " + body_result)
+        print("text 2 : " + body_result)
         parsed_html = BeautifulSoup(body_result)
         in_depth = {}
         in_depth['tags'] = {}
