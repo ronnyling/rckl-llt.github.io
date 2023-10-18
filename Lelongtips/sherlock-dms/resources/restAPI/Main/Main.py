@@ -586,7 +586,7 @@ class Main(object):
 
                             # print('text 4: ' + headline)
                             footer_img = f"""
-                                        <img src="{{0}}" width="300" height="200">
+                                        <img src="{{0}}" width="270" height="180">
                                         """.format(in_depth['img'])
 
                             refined_html = headline + html + footer_img

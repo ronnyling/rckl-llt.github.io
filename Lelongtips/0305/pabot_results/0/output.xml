@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.10.4 on win32)" generated="20231018 10:59:42.779" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.10.4 on win32)" generated="20231018 11:02:52.034" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="G:\My Drive\Python\Scraper\Lelongtips\sherlock-dms\tests\restAPI\Main\Main.robot">
 <test id="s1-t1" name="1 - Executes Main flow" line="6">
 <kw name="When user runs main flow" library="Main">
-<msg timestamp="20231018 10:59:50.151" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20231018 10:59:50.155" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20231018 10:59:51.149" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
-<msg timestamp="20231018 10:59:51.154" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20231018 10:59:52.747" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
-<msg timestamp="20231018 10:59:57.168" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20231018 10:59:58.391" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=2 HTTP/1.1" 200 None</msg>
-<msg timestamp="20231018 11:00:01.560" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20231018 11:00:03.027" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=3 HTTP/1.1" 200 None</msg>
-<msg timestamp="20231018 11:00:05.717" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:05.718" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:05.721" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20231018 11:00:06.319" level="DEBUG">https://www.lelongtips.com.my:443 "GET /property/eW13aUJ5a0tMTUtCc3kyVGRrMWJRQT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Bukit-Perdana-Negeri-Sembilan-for-RM150000 HTTP/1.1" 200 None</msg>
-<msg timestamp="20231018 11:00:06.382" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:06.382" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:06.382" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20231018 11:00:07.113" level="DEBUG">https://www.lelongtips.com.my:443 "GET /property/MXVsWXpPWmJDdGc1VHl4M1lUaHZnUT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Suluh-Budiman-Selangor-for-RM150000 HTTP/1.1" 200 None</msg>
-<msg timestamp="20231018 11:00:07.164" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:07.164" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:07.166" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:07.166" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:07.168" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:07.168" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:07.170" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20231018 11:00:07.793" level="DEBUG">https://www.lelongtips.com.my:443 "GET /property/L1REQmkwWkVaeGRnUGlMOFVCMGtRZz09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Dato-Haji-Abdul-Samad-Negeri-Sembilan-for-RM150000 HTTP/1.1" 200 None</msg>
-<msg timestamp="20231018 11:00:07.879" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:07.879" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:07.883" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20231018 11:00:08.482" level="DEBUG">https://www.lelongtips.com.my:443 "GET /property/dFROeU1HOXlwZGVIOXdndGw4T0JPQT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Mas-Falim-Perak-for-RM150000 HTTP/1.1" 200 None</msg>
-<msg timestamp="20231018 11:00:08.671" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:08.672" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:08.674" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20231018 11:00:09.248" level="DEBUG">https://www.lelongtips.com.my:443 "GET /property/b0s1bzFSL0VVaHF4VDdvRjdZTndaUT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Lembah-Bujang-Indah-Kedah-for-RM150000 HTTP/1.1" 200 None</msg>
-<msg timestamp="20231018 11:00:09.317" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:09.317" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:09.319" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:09.320" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:09.322" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20231018 11:00:09.990" level="DEBUG">https://www.lelongtips.com.my:443 "GET /property/eG5tZ1RWU2p1M0ZPeGI3SHdnUWZVUT09/Lelong-Auction-Freehold-1-Storey-Terrace-House-Intermediate-Low-Cost-6-min-to-Mydin-Taman-Batik-9-min-to-Lotus-s-Bandar-Puteri-Jaya-in-Taman-Kelisa-Ria-Kedah-for-RM150000 HTTP/1.1" 200 None</msg>
-<msg timestamp="20231018 11:00:10.071" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:10.071" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
-<msg timestamp="20231018 11:00:10.078" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
-<msg timestamp="20231018 11:00:10.836" level="DEBUG">
+<msg timestamp="20231018 11:02:59.178" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20231018 11:02:59.186" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20231018 11:03:00.487" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20231018 11:03:00.499" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20231018 11:03:01.361" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20231018 11:03:03.669" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20231018 11:03:04.591" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=2 HTTP/1.1" 200 None</msg>
+<msg timestamp="20231018 11:03:06.733" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20231018 11:03:07.522" level="DEBUG">https://www.lelongtips.com.my:443 "GET /search?keyword=&amp;property_type%5B%5D=1&amp;property_type%5B%5D=4&amp;property_type%5B%5D=5&amp;property_type%5B%5D=3&amp;min_price=150000&amp;max_price=1000000&amp;min_size=&amp;max_size=&amp;sort=price-asc&amp;listing_status=upcoming&amp;page=3 HTTP/1.1" 200 None</msg>
+<msg timestamp="20231018 11:03:10.086" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:10.087" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:10.089" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20231018 11:03:10.763" level="DEBUG">https://www.lelongtips.com.my:443 "GET /property/eW13aUJ5a0tMTUtCc3kyVGRrMWJRQT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Bukit-Perdana-Negeri-Sembilan-for-RM150000 HTTP/1.1" 200 None</msg>
+<msg timestamp="20231018 11:03:10.825" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:10.825" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:10.841" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20231018 11:03:11.329" level="DEBUG">https://www.lelongtips.com.my:443 "GET /property/MXVsWXpPWmJDdGc1VHl4M1lUaHZnUT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Suluh-Budiman-Selangor-for-RM150000 HTTP/1.1" 200 None</msg>
+<msg timestamp="20231018 11:03:11.407" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:11.407" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:11.407" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:11.407" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:11.407" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:11.407" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:11.407" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20231018 11:03:11.832" level="DEBUG">https://www.lelongtips.com.my:443 "GET /property/L1REQmkwWkVaeGRnUGlMOFVCMGtRZz09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Dato-Haji-Abdul-Samad-Negeri-Sembilan-for-RM150000 HTTP/1.1" 200 None</msg>
+<msg timestamp="20231018 11:03:11.927" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:11.927" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:11.927" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20231018 11:03:12.371" level="DEBUG">https://www.lelongtips.com.my:443 "GET /property/dFROeU1HOXlwZGVIOXdndGw4T0JPQT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Mas-Falim-Perak-for-RM150000 HTTP/1.1" 200 None</msg>
+<msg timestamp="20231018 11:03:12.549" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:12.549" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:12.549" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20231018 11:03:12.990" level="DEBUG">https://www.lelongtips.com.my:443 "GET /property/b0s1bzFSL0VVaHF4VDdvRjdZTndaUT09/Lelong-Auction-1-Storey-Terrace-House-in-Taman-Lembah-Bujang-Indah-Kedah-for-RM150000 HTTP/1.1" 200 None</msg>
+<msg timestamp="20231018 11:03:13.069" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:13.069" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:13.069" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:13.069" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:13.069" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20231018 11:03:13.495" level="DEBUG">https://www.lelongtips.com.my:443 "GET /property/eG5tZ1RWU2p1M0ZPeGI3SHdnUWZVUT09/Lelong-Auction-Freehold-1-Storey-Terrace-House-Intermediate-Low-Cost-6-min-to-Mydin-Taman-Batik-9-min-to-Lotus-s-Bandar-Puteri-Jaya-in-Taman-Kelisa-Ria-Kedah-for-RM150000 HTTP/1.1" 200 None</msg>
+<msg timestamp="20231018 11:03:13.558" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:13.558" level="DEBUG">Converted retries value: 2 -&gt; Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20231018 11:03:13.558" level="DEBUG">Starting new HTTPS connection (1): www.lelongtips.com.my:443</msg>
+<msg timestamp="20231018 11:03:14.376" level="DEBUG">
