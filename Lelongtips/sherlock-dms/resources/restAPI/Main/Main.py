@@ -923,6 +923,14 @@ class Main(object):
         in_depth = {}
         in_depth['tags'] = {}
         in_depth['area'] = ''
+        in_depth['img'] = ''
+        image_raw = parsed_html.body.find_all('div', attrs={'class': 'position-relative img-section bg-gray-400'})
+        # image_raw.find(name_div, attrs={name_class: re.compile(name_subclass)}).text.strip()
+        markup_img = BeautifulSoup(str(image_raw[0]), "xml")
+        # img_part = markup_img['src']
+        print("image here xx :" + str(image_raw))
+        # in_depth['img'] = str(img_part.get_text())
+
         contents_raw = parsed_html.body.find_all('div', attrs={'class': 'mt-1 mb-2 d-flex flex-row flex-wrap'})
         markup_i = BeautifulSoup(str(contents_raw[0]), "xml")
         in_depth['tags']['str'] = ''
