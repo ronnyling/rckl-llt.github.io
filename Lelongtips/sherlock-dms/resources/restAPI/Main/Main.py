@@ -927,8 +927,8 @@ class Main(object):
         image_raw = parsed_html.body.find_all('div', attrs={'class': 'position-relative img-section bg-gray-400'})
         # image_raw.find(name_div, attrs={name_class: re.compile(name_subclass)}).text.strip()
         markup_img = BeautifulSoup(str(image_raw[0]), "xml")
-        # img_part = markup_img['src']
-        print("image here xx :" + str(image_raw))
+        img_part = markup_img.find('img')
+        print("image here xx :" + str(img_part.get('src')))
         # in_depth['img'] = str(img_part.get_text())
 
         contents_raw = parsed_html.body.find_all('div', attrs={'class': 'mt-1 mb-2 d-flex flex-row flex-wrap'})
