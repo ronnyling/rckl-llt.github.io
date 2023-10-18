@@ -586,8 +586,11 @@ class Main(object):
                                         """.format(result_string)
 
                             # print('text 4: ' + headline)
+                            footer_img = f"""
+                                        <img src="{{0}}">
+                                        """.format(in_depth['img'])
 
-                            refined_html = headline + html
+                            refined_html = headline + html + footer_img
                             popup = self.get_popup_element(refined_html)
                             div_icon = folium.features.CustomIcon(icon_secret, icon_size=icon_size_s)
                             add_marker = folium.Marker(
@@ -928,8 +931,8 @@ class Main(object):
         # image_raw.find(name_div, attrs={name_class: re.compile(name_subclass)}).text.strip()
         markup_img = BeautifulSoup(str(image_raw[0]), "xml")
         img_part = markup_img.find('img')
-        print("image here xx :" + str(img_part.get('src')))
-        # in_depth['img'] = str(img_part.get_text())
+        # print("image here xx :" + str(img_part.get('src')))
+        in_depth['img'] = str(img_part.get('src'))
 
         contents_raw = parsed_html.body.find_all('div', attrs={'class': 'mt-1 mb-2 d-flex flex-row flex-wrap'})
         markup_i = BeautifulSoup(str(contents_raw[0]), "xml")
