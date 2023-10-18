@@ -39,7 +39,7 @@ icon_secret = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/ma
 icon_size_s = (100, 65)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = False
+testing = True
 
 
 class Main(object):
@@ -829,7 +829,7 @@ class Main(object):
         return draft_content
 
     def get_contents_2(self, body_text):
-        # print("\n***\n" + body_text)
+        print("\n***\n" + body_text)
 
         parsed_html = BeautifulSoup(body_text)
         content_list = []
