@@ -476,7 +476,6 @@ class Main(object):
                     </p>
                     <p>More details  <a href="{{8}}" target=window.name> click here </a></p>
                     <p> Directions <a href="https://www.google.com/maps/dir//{{10}}" target=window.name> GO </a></p>
-                    <img src="pic_trulli.jpg" alt="Italian Trulli">
 
                     """.format(i['prop_name'],
                                '<h2> ' + i['prop_type'] + ' </h2>' if i['prop_type'] else '',
@@ -587,7 +586,7 @@ class Main(object):
 
                             # print('text 4: ' + headline)
                             footer_img = f"""
-                                        <img src="{{0}}">
+                                        <img src="{{0}}" width="300" height="200">
                                         """.format(in_depth['img'])
 
                             refined_html = headline + html + footer_img
