@@ -170,9 +170,15 @@ class Main(object):
         m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
         LocateControl().add_to(m)
         folium.TileLayer('openstreetmap').add_to(m)
-        folium.TileLayer('Stamen Terrain').add_to(m)
+        # folium.TileLayer('Stamen Terrain').add_to(m)
         # m = self.add_sidebar(m)
         # map = folium.Map(location=[0, 0], zoom_start=4)
+        fg_main = folium.FeatureGroup(name='Main', show=False)
+        fg_secret = folium.FeatureGroup(name='Secret', show=False)
+        fg_next = folium.FeatureGroup(name='Next', show=False)
+
+        # fg_o = folium.FeatureGroup(name='ALL', show=False)
+        
         fg_l = folium.FeatureGroup(name='Landed', show=False)
         fg_lrd = folium.FeatureGroup(name='Low Risk Deals', show=False)
         fg_att = folium.FeatureGroup(name='Attention', show=False)
