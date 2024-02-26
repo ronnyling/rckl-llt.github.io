@@ -1,0 +1,13 @@
+==============================================================================
+2024-02-26 11:30:52.092119 - INFO - + START SUITE: Main
+==============================================================================
+2024-02-26 11:30:55.360585 - INFO - +- START TEST: 1 - Executes Main flow
+------------------------------------------------------------------------------
+2024-02-26 11:30:55.361721 - INFO - +-- START KEYWORD: Main.When user runs main flow [ ]
+2024-02-26 11:30:55.364042 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+2024-02-26 11:30:56.388212 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&state=kl_sel&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&page=11 HTTP/1.1" 200 None
+2024-02-26 11:30:56.397387 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+2024-02-26 11:30:57.770898 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&state=kl_sel&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&page=11 HTTP/1.1" 200 None
+2024-02-26 11:30:59.875102 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+2024-02-26 11:31:02.353290 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&state=kl_sel&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&page=12 HTTP/1.1" 200 None
+2024-02-26 11:31:05.414265 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
