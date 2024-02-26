@@ -1,13 +1,95 @@
 ==============================================================================
-2024-02-26 11:30:52.092119 - INFO - + START SUITE: Main
+2024-02-26 11:38:04.666982 - INFO - + START SUITE: Main
 ==============================================================================
-2024-02-26 11:30:55.360585 - INFO - +- START TEST: 1 - Executes Main flow
+2024-02-26 11:38:07.994700 - INFO - +- START TEST: 1 - Executes Main flow
 ------------------------------------------------------------------------------
-2024-02-26 11:30:55.361721 - INFO - +-- START KEYWORD: Main.When user runs main flow [ ]
-2024-02-26 11:30:55.364042 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
-2024-02-26 11:30:56.388212 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&state=kl_sel&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&page=11 HTTP/1.1" 200 None
-2024-02-26 11:30:56.397387 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
-2024-02-26 11:30:57.770898 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&state=kl_sel&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&page=11 HTTP/1.1" 200 None
-2024-02-26 11:30:59.875102 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
-2024-02-26 11:31:02.353290 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&state=kl_sel&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&page=12 HTTP/1.1" 200 None
-2024-02-26 11:31:05.414265 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+2024-02-26 11:38:07.994700 - INFO - +-- START KEYWORD: Main.When user runs main flow [ ]
+2024-02-26 11:38:07.997100 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+2024-02-26 11:38:10.461009 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&state=kl_sel&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&page=11 HTTP/1.1" 200 None
+2024-02-26 11:38:10.470993 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+2024-02-26 11:38:12.023672 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&state=kl_sel&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&page=11 HTTP/1.1" 200 None
+2024-02-26 11:38:16.130841 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+2024-02-26 11:38:17.454962 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&state=kl_sel&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&page=12 HTTP/1.1" 200 None
+2024-02-26 11:38:19.516820 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+2024-02-26 11:38:22.109813 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&state=kl_sel&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&page=13 HTTP/1.1" 200 None
+2024-02-26 11:38:24.199667 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:24.199667 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:24.212770 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:24.212770 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:24.235184 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:24.235184 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:24.250478 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:24.250478 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:24.264740 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:24.264740 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:24.278251 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:24.278251 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:24.291768 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:24.291768 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:24.292773 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+2024-02-26 11:38:24.996668 - DEBUG - https://www.lelongtips.com.my:443 "GET /property/NXJpSXNFTjBVTVQ3bzFtQWVQS3A2UT09/Lelong-Auction-2-Storey-Terrace-House-in-Taman-Jelok-Ria-Selangor-for-RM240000 HTTP/1.1" 200 None
+2024-02-26 11:38:25.035059 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:25.035059 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:25.047925 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:25.047925 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:25.062178 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:25.062178 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:25.064185 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+2024-02-26 11:38:26.944390 - DEBUG - https://www.lelongtips.com.my:443 "GET /property/VkpzMG9wSkdVa2VYelg3NVNnd2Rxdz09/Lelong-Auction-2-Storey-Terrace-House-in-Beranang-Selangor-for-RM242000 HTTP/1.1" 200 None
+2024-02-26 11:38:27.044446 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:27.044446 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:27.073112 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:27.073112 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:27.078182 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+2024-02-26 11:38:28.059485 - DEBUG - https://www.lelongtips.com.my:443 "GET /property/SWw2d1Q5Mmg3UGJFcGtwampPd3ZEZz09/Lelong-Auction-2-Storey-Terrace-House-in-Taman-Serendah-Makmur-Selangor-for-RM243000 HTTP/1.1" 200 None
+2024-02-26 11:38:28.214975 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:28.214975 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:28.218975 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+2024-02-26 11:38:29.167481 - DEBUG - https://www.lelongtips.com.my:443 "GET /property/V2NaUnNJNWpuQUlGdk9YYVNob1VpQT09/Lelong-Auction-2-Storey-Terrace-House-in-Rawang-Selangor-for-RM243000 HTTP/1.1" 200 None
+2024-02-26 11:38:29.249450 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.249450 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.285740 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.286723 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.324148 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.324148 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.358603 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.358603 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.387335 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.387335 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.419738 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.420747 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.447233 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.447233 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.473489 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.473804 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.499959 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.499959 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.525170 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.525170 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.549202 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.549202 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.576875 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.576875 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.601147 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.602137 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.626867 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.626867 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.650746 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.650746 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.676050 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.676050 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.706493 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.706493 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.733319 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.734319 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.759893 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.759893 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.785203 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.785203 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.809442 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.809442 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.833909 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.833909 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.858546 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.858546 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-02-26 11:38:29.945144 - DEBUG - Popen(['git', 'add', '--update'], cwd=C:\Users\r.a.ling\Documents\rckl-llt.github.io, stdin=None, shell=False, universal_newlines=False)
