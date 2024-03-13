@@ -21,9 +21,10 @@ from robot.libraries.BuiltIn import BuiltIn
 # from resources.restAPI import PROTOCOL, APP_URL, COMMON_KEY, LLT_URL, LLT_TOKEN, GMAPS_TOKEN, PHONE_ID, TOKEN, NUMBER, \
 #     MESSAGE, TEST_URL
 # from resources.restAPI.Common import APIMethod
-from resources.restAPI.Main import PROTOCOL, LLT_URL, LLT_TOKEN, GMAPS_TOKEN, TEST_URL
+from resources.restAPI.Main import PROTOCOL, LLT_URL, LLT_TOKEN, GMAPS_TOKEN, TEST_URL, BIDNOW_URL
 
 MAIN_URL_LLT = PROTOCOL + LLT_URL
+MAIN_URL_LLT_BIDNOW = PROTOCOL + BIDNOW_URL
 # TEST_URL_LLT = PROTOCOL + TEST_URL
 # MAIN_URL_IP = PROTOCOL + IP_URL
 gmaps = googlemaps.Client(key=GMAPS_TOKEN)
@@ -39,7 +40,7 @@ icon_secret = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/ma
 icon_size_s = (100, 65)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = False
+testing = True
 
 
 class Main(object):
@@ -49,6 +50,7 @@ class Main(object):
         # self.iprop_scrape()
         # self.lelongtips_scrape_demo()
         self.lelongtips_scrape()
+        self.bidnow_scrape()
 
     def notify_me(self):
 
@@ -67,6 +69,30 @@ class Main(object):
         response_json = response.json()
         print(response_json)
 
+    def bidnow_scrape(self):
+        operating_url = MAIN_URL_LLT_BIDNOW
+        if testing and BIDNOW_TEST_URL:
+            operating_url = PROTOCOL + BIDNOW_TEST_URL
+
+        # print("url = xx" + str(operating_url) + " xx " + str(MAIN_URL_LLT) + " xx " + str(TEST_URL_LLT))
+        response = requests.get(
+            url=operating_url + str(1)
+        )
+        draft_content = []
+        if response.status_code == 200:
+            body_result = response.text
+            print(str(body_result))
+            page_no_upper = self.set_pages(body_result)
+            draft_content = self.get_pages(page_no_upper, operating_url)
+            markers_secret = self.map_gen(draft_content)
+            self.map_gen_secret(markers_secret)
+            # self.map_gen_nocomm(markers_nocomm)
+            self.git_controls()
+            # self.notify_me()
+            # print("Total number of records retrieved are ", len(body_result))
+            # print("Response body= ", str(body_result))
+        else:
+            raise Exception("Initial load failed")
     def lelongtips_scrape(self):
         operating_url = MAIN_URL_LLT
         if testing and TEST_URL:
@@ -83,6 +109,7 @@ class Main(object):
             draft_content = self.get_pages(page_no_upper, operating_url)
             markers_secret = self.map_gen(draft_content)
             self.map_gen_secret(markers_secret)
+            # self.map_gen_nocomm(markers_nocomm)
             self.git_controls()
             # self.notify_me()
             # print("Total number of records retrieved are ", len(body_result))
