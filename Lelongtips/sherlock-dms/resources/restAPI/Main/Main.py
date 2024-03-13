@@ -21,7 +21,7 @@ from robot.libraries.BuiltIn import BuiltIn
 # from resources.restAPI import PROTOCOL, APP_URL, COMMON_KEY, LLT_URL, LLT_TOKEN, GMAPS_TOKEN, PHONE_ID, TOKEN, NUMBER, \
 #     MESSAGE, TEST_URL
 # from resources.restAPI.Common import APIMethod
-from resources.restAPI.Main import PROTOCOL, LLT_URL, LLT_TOKEN, GMAPS_TOKEN, TEST_URL, BIDNOW_URL
+from resources.restAPI.Main import PROTOCOL, LLT_URL, LLT_TOKEN, GMAPS_TOKEN, TEST_URL, BIDNOW_URL, BIDNOW_TEST_URL
 
 MAIN_URL_LLT = PROTOCOL + LLT_URL
 MAIN_URL_LLT_BIDNOW = PROTOCOL + BIDNOW_URL
@@ -49,7 +49,7 @@ class Main(object):
     def user_runs_main_flow(self):
         # self.iprop_scrape()
         # self.lelongtips_scrape_demo()
-        self.lelongtips_scrape()
+        # self.lelongtips_scrape()
         self.bidnow_scrape()
 
     def notify_me(self):
