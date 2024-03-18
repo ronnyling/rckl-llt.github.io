@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_311c72b65cb917aff7efbb02a8924404 {
+                #map_0fff26b701cabff2adbea90b7213847f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -41,14 +41,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_311c72b65cb917aff7efbb02a8924404" ></div>
+            <div class="folium-map" id="map_0fff26b701cabff2adbea90b7213847f" ></div>
         
 </body>
 <script>
     
     
-            var map_311c72b65cb917aff7efbb02a8924404 = L.map(
-                "map_311c72b65cb917aff7efbb02a8924404",
+            var map_0fff26b701cabff2adbea90b7213847f = L.map(
+                "map_0fff26b701cabff2adbea90b7213847f",
                 {
                     center: [3.064119, 101.669488],
                     crs: L.CRS.EPSG3857,
@@ -57,922 +57,122 @@
                     preferCanvas: false,
                 }
             );
-            L.control.scale().addTo(map_311c72b65cb917aff7efbb02a8924404);
+            L.control.scale().addTo(map_0fff26b701cabff2adbea90b7213847f);
 
             
 
         
     
-            var tile_layer_abc9badf7eea5b4240e3fb248189f6be = L.tileLayer(
+            var tile_layer_4b507ce52823602b1cf6ef1d1b791f1f = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_abc9badf7eea5b4240e3fb248189f6be.addTo(map_311c72b65cb917aff7efbb02a8924404);
+            tile_layer_4b507ce52823602b1cf6ef1d1b791f1f.addTo(map_0fff26b701cabff2adbea90b7213847f);
         
     
-            var locate_control_793a9eba2ded172365bbe53a686c764b = L.control.locate(
+            var locate_control_72481f311a9711406992d5b96756b765 = L.control.locate(
                 {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
+            ).addTo(map_0fff26b701cabff2adbea90b7213847f);
             
         
     
-            var marker_eb9f6aa34256d8ce985f11ff52b30ea7 = L.marker(
-                [4.9874231, 100.6656664],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_b72e376a68e1265fb6458774369b3064 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_eb9f6aa34256d8ce985f11ff52b30ea7.setIcon(custom_icon_b72e376a68e1265fb6458774369b3064);
-        
-    
-        var popup_cc9782d89bb80c623b1847dc53cc89c9 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_78422fa3ddbf848bdc609d774ca61fc9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTIyIDAyOjMwIFBNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA1MTg0MC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IEFwYXJ0bWVudCBVbml0IDwvaDI+CiAgICAgICAgICAgICAgICA8aDE+IE5vIDEtNS0xMiBCbG9rIDEgVHJvcGljYW5hIEFwYXJ0bWVudCwgQnVraXQgTWVyYWggTGFrZXRvd24sIDM0NDAwIFNpbXBhbmcgQW1wYXQsIFNlbWFuZ2dvbCwgUGVyYWsgPC9oMT4KICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDgwMzwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gTGVhc2Vob2xkLCBOL0EsIE4vQSwgTEFDQSA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBsaXN0aW5nX3N0YXR1cyA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSBKYWxhbiBCdWtpdCBNZXJhaCwgMzQ0MDAgU2ltcGFuZyBFbXBhdCBTZW1hbmdnb2wsIFBlcmFrLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5iaWRub3cubXkvYXVjdGlvbi1wcm9wZXJ0eS90cm9waWNhbmEtYXBhcnRtZW50LWJ1a2l0LW1lcmFoLWxha2V0b3duLTM0NDAwLXNpbXBhbmctYW1wYXQtc2VtYW5nZ29sLXBlcmFrLzE0NDczNSIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICA8cD4gRGlyZWN0aW9ucyA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL21hcHMvZGlyLy80Ljk4NzQyMzEsMTAwLjY2NTY2NjQiIHRhcmdldD13aW5kb3cubmFtZT4gR08gPC9hPjwvcD4KCiAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_cc9782d89bb80c623b1847dc53cc89c9.setContent(i_frame_78422fa3ddbf848bdc609d774ca61fc9);
-            
-        
-
-        marker_eb9f6aa34256d8ce985f11ff52b30ea7.bindPopup(popup_cc9782d89bb80c623b1847dc53cc89c9)
-        ;
-
-        
-    
-    
-            var marker_96e08c28ebe971bd76e30f2ec37644bb = L.marker(
-                [4.2136593, 100.7762498],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_6e1a6ad1ba142163eab5853ccdb73630 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_96e08c28ebe971bd76e30f2ec37644bb.setIcon(custom_icon_6e1a6ad1ba142163eab5853ccdb73630);
-        
-    
-        var popup_fb31cc13a85ee1a11457ba77f882d1ea = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_e623b5f72915ccc8d45157a274f03db2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTI2IDEwOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA4ODAwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IFNpbmdsZSBTdG9yZXkgVGVycmFjZWQgSG91c2UgPC9oMj4KICAgICAgICAgICAgICAgIDxoMT4gTm8uIDc1NCwgSmFsYW4gUmVzaWRlbiA0LzEzLCBSZXNpZGVuIDQsIEJhbmRhciBCYXJ1IFNldGlhIEF3YW4gUGVyZGFuYSwgMzIwMDAgU2l0aWF3YW4sIFBlcmFrIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMzAyPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBGcmVlaG9sZCwgNTMlIEJNViwgTi9BLCBMQUNBIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IGxpc3Rpbmdfc3RhdHVzIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIFJlc2lkZW4gNC8xMywgMzIwMDAsIFBlcmFrLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5iaWRub3cubXkvYXVjdGlvbi1wcm9wZXJ0eS9qYWxhbi1yZXNpZGVuLTQtMTMtcmVzaWRlbi00LWJhbmRhci1iYXJ1LXNldGlhLWF3YW4tcGVyZGFuYS0zMjAwMC1zaXRpYXdhbi1wZXJhay8xNDU5MTEiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgPHA+IERpcmVjdGlvbnMgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8vNC4yMTM2NTkzLDEwMC43NzYyNDk4IiB0YXJnZXQ9d2luZG93Lm5hbWU+IEdPIDwvYT48L3A+CgogICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_fb31cc13a85ee1a11457ba77f882d1ea.setContent(i_frame_e623b5f72915ccc8d45157a274f03db2);
-            
-        
-
-        marker_96e08c28ebe971bd76e30f2ec37644bb.bindPopup(popup_fb31cc13a85ee1a11457ba77f882d1ea)
-        ;
-
-        
-    
-    
-            var marker_e6efcd9f0b19952300c2dd831bb25470 = L.marker(
-                [4.231911, 100.630574],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_30861925828fc84f764cfd32c15c8db7 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_e6efcd9f0b19952300c2dd831bb25470.setIcon(custom_icon_30861925828fc84f764cfd32c15c8db7);
-        
-    
-        var popup_27d7743a4ab7c6e729e702a50e076c3d = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_485303614bf0714c211009fdb93b4403 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTI2IDEwOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA5OTAwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IENvbmRvbWluaXVtIDwvaDI+CiAgICAgICAgICAgICAgICA8aDE+IE5vLiBBQS0xMi02LCBCbG9jayBBLCBMdW11dCBWYWxsZXkgQ29uZG9taW5pdW0sIDMyMjAwIEx1bXV0LCBQZXJhayA8L2gxPgogICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMTI0MDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gRnJlZWhvbGQsIDE2JSBCTVYsIE4vQSwgTEFDQSA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBsaXN0aW5nX3N0YXR1cyA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSBQVCA0MTg5LCBKYWxhbiBTdWx0YW4gSWRyaXMgU2hhaCwgMzIyMDAgTHVtdXQsIFBlcmFrLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5iaWRub3cubXkvYXVjdGlvbi1wcm9wZXJ0eS9ibG9jay1hLWx1bXV0LXZhbGxleS1jb25kb21pbml1bS0zMjIwMC1sdW11dC1wZXJhay8xNDU5MTAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgPHA+IERpcmVjdGlvbnMgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8vNC4yMzE5MTEsMTAwLjYzMDU3NCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBHTyA8L2E+PC9wPgoKICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_27d7743a4ab7c6e729e702a50e076c3d.setContent(i_frame_485303614bf0714c211009fdb93b4403);
-            
-        
-
-        marker_e6efcd9f0b19952300c2dd831bb25470.bindPopup(popup_27d7743a4ab7c6e729e702a50e076c3d)
-        ;
-
-        
-    
-    
-            var marker_a8395abe9efc8253edc599b9e08774f0 = L.marker(
-                [3.748291, 103.1930195],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_df8bbd61b9d0406aff854a2f69967a46 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_a8395abe9efc8253edc599b9e08774f0.setIcon(custom_icon_df8bbd61b9d0406aff854a2f69967a46);
-        
-    
-        var popup_72a71f5d08e18c96deca338d6137ded8 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_6319fe8d49d7dacb72b93c9c3282f7e3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTA0LTI0IDA5OjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSAxMDAwMDAuMDAgPC9wPgogICAgICAgICAgICAgICAgPGgyPiBUZXJyYWNlIEhvdXNlIDwvaDI+CiAgICAgICAgICAgICAgICA8aDE+IE5vLiAyMywgTG9yb25nIFNlcmkgTWFoa290YSBKYXlhIDIsIFRhbWFuIFdpcmEgSmF5YSwgMjUxNTAsIEt1YW50YW4sIFBhaGFuZyA8L2gxPgogICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gODE0PC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBGcmVlaG9sZCwgTi9BLCA3MDAgc3FmdCBsYW5kLCBOb24tTEFDQSA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBsaXN0aW5nX3N0YXR1cyA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSAyMywgTG9yb25nIFNlcmkgTWFoa290YSBKYXlhIDIsIFRhbWFuIFNlcmkgTWFoa290YSBKYXlhLCAyNTE1MCBLdWFudGFuLCBQYWhhbmcsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJpZG5vdy5teS9hdWN0aW9uLXByb3BlcnR5L2xvcm9uZy1zZXJpLW1haGtvdGEtamF5YS0yLXRhbWFuLXdpcmEtamF5YS0yNTE1MC1rdWFudGFuLXBhaGFuZy8xNDU4NDIiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgPHA+IERpcmVjdGlvbnMgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8vMy43NDgyOTEsMTAzLjE5MzAxOTUiIHRhcmdldD13aW5kb3cubmFtZT4gR08gPC9hPjwvcD4KCiAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_72a71f5d08e18c96deca338d6137ded8.setContent(i_frame_6319fe8d49d7dacb72b93c9c3282f7e3);
-            
-        
-
-        marker_a8395abe9efc8253edc599b9e08774f0.bindPopup(popup_72a71f5d08e18c96deca338d6137ded8)
-        ;
-
-        
-    
-    
-            var marker_3836b2cf94acd90d004127a217186a8a = L.marker(
-                [2.9991618, 101.4710307],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_23461991b60cb2e26e68b9d7654a1fbe = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_3836b2cf94acd90d004127a217186a8a.setIcon(custom_icon_23461991b60cb2e26e68b9d7654a1fbe);
-        
-    
-        var popup_c64375c6711017a04308250a954c0371 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_3592c47a8a8d16e5e4aab1afdf3179e1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTI2IDEwOjMwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA0NzAwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IEFwYXJ0bWVudCBVbml0IDwvaDI+CiAgICAgICAgICAgICAgICA8aDE+IE5vLiA0OUYsIDNyZCBGbG9vciwgSmFsYW4gRGF0byBEYWdhbmcgMjMsIERlc2EgSWRhbWFuIDIsIFRhbWFuIFNlbnRvc2EsIDQxMjAwIEtsYW5nLCBTZWxhbmdvciA8L2gxPgogICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gODgwPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBGcmVlaG9sZCwgMzIlIEJNViwgTi9BLCBMQUNBIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IGxpc3Rpbmdfc3RhdHVzIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIERhdG8gRGFnYW5nIDIzLCBUYW1hbiBTZW50b3NhLCBLbGFuZywgU2VsYW5nb3IsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJpZG5vdy5teS9hdWN0aW9uLXByb3BlcnR5LzNyZC1mbG9vci1qYWxhbi1kYXRvLWRhZ2FuZy0yMy1kZXNhLWlkYW1hbi0yLXRhbWFuLXNlbnRvc2EtNDEyMDAta2xhbmctc2VsYW5nb3IvMTQ1ODA0IiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgIDxwPiBEaXJlY3Rpb25zIDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vbWFwcy9kaXIvLzIuOTk5MTYxOCwxMDEuNDcxMDMwNyIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBHTyA8L2E+PC9wPgoKICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_c64375c6711017a04308250a954c0371.setContent(i_frame_3592c47a8a8d16e5e4aab1afdf3179e1);
-            
-        
-
-        marker_3836b2cf94acd90d004127a217186a8a.bindPopup(popup_c64375c6711017a04308250a954c0371)
-        ;
-
-        
-    
-    
-            var marker_9fa28ac9aa9d5f961a7049d9e88cc551 = L.marker(
-                [2.8143663, 101.6401149],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_2ba94d9045155b5cf203ecfc7affee9c = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_9fa28ac9aa9d5f961a7049d9e88cc551.setIcon(custom_icon_2ba94d9045155b5cf203ecfc7affee9c);
-        
-    
-        var popup_1c29603c6b76394eb733d53898ce5b1d = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_f41a34cb9ed3dc55d172018a279d25a9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTI2IDEwOjMwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA4MTAwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IEFuIGFwYXJ0bWVudCB1bml0IDwvaDI+CiAgICAgICAgICAgICAgICA8aDE+IE5vLiA5LUctVDEsIEphbGFuIE1lbmFyYSBVdGFtYSwgVGFtYW4gRCdNZW5hcmEsIDQyNzAwIEJhbnRpbmcsIFNlbGFuZ29yIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSA3OTg8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IExlYXNlaG9sZCwgTi9BLCBOL0EsIExBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gOSwgSmFsYW4gTWVuYXJhIFV0YW1hLCBUYW1hbiBEJ21lbmFyYSwgNDI3MDAgQmFudGluZywgU2VsYW5nb3IsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJpZG5vdy5teS9hdWN0aW9uLXByb3BlcnR5L2phbGFuLW1lbmFyYS11dGFtYS10YW1hbi1kLW1lbmFyYS00MjcwMC1iYW50aW5nLXNlbGFuZ29yLzE0NTgwMiIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICA8cD4gRGlyZWN0aW9ucyA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL21hcHMvZGlyLy8yLjgxNDM2NjMsMTAxLjY0MDExNDkiIHRhcmdldD13aW5kb3cubmFtZT4gR08gPC9hPjwvcD4KCiAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_1c29603c6b76394eb733d53898ce5b1d.setContent(i_frame_f41a34cb9ed3dc55d172018a279d25a9);
-            
-        
-
-        marker_9fa28ac9aa9d5f961a7049d9e88cc551.bindPopup(popup_1c29603c6b76394eb733d53898ce5b1d)
-        ;
-
-        
-    
-    
-            var marker_ef98a2e8c9bc0c2b57aa3b263ebf3f29 = L.marker(
-                [3.2871239, 101.4700407],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_ae38d814ff5901edd5d87ecedc9eaa17 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_ef98a2e8c9bc0c2b57aa3b263ebf3f29.setIcon(custom_icon_ae38d814ff5901edd5d87ecedc9eaa17);
-        
-    
-        var popup_3369ce015595342858a5e3177d615b40 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_a50e016b43bca1f9a8c4b3b93bb4f56d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTI1IDExOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA2NjAwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IEFwYXJ0bWVudCA8L2gyPgogICAgICAgICAgICAgICAgPGgxPiBOby4gMi0zLTAxLCBCbG9jayBQMiwgUGFuZ3NhcHVyaSBQaW5ld29vZCBDb3VydCwgUGluZ2dpcmFuIExlbWJhaCBIaWphdSA4LCBCYW5kYXIgVGFzaWsgUHV0ZXJpLCA0ODAyMCBSYXdhbmcsIFNlbGFuZ29yIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSA3MjA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IE4vQSwgTi9BLCBOL0EsIExBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gOCwgSmFsYW4gTGVtYmFoIEhpamF1LCBCYW5kYXIgVGFzaWsgUHV0ZXJpLCA0ODAwMCBSYXdhbmcsIFNlbGFuZ29yLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5iaWRub3cubXkvYXVjdGlvbi1wcm9wZXJ0eS9ibG9jay1wMi1wYW5nc2FwdXJpLXBpbmV3b29kLWNvdXJ0LXBpbmdnaXJhbi1sZW1iYWgtaGlqYXUtOC1iYW5kYXItdGFzaWstcHV0ZXJpLTQ4MDIwLXJhd2FuZy1zZWxhbmdvci8xNDQ4MDAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgPHA+IERpcmVjdGlvbnMgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8vMy4yODcxMjM5LDEwMS40NzAwNDA3IiB0YXJnZXQ9d2luZG93Lm5hbWU+IEdPIDwvYT48L3A+CgogICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_3369ce015595342858a5e3177d615b40.setContent(i_frame_a50e016b43bca1f9a8c4b3b93bb4f56d);
-            
-        
-
-        marker_ef98a2e8c9bc0c2b57aa3b263ebf3f29.bindPopup(popup_3369ce015595342858a5e3177d615b40)
-        ;
-
-        
-    
-    
-            var marker_9752f1e2ad7d7eff039b8593a6e61173 = L.marker(
-                [2.9553322, 101.8093078],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_f05b3ff7fe81083ba717020c0888bd08 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_9752f1e2ad7d7eff039b8593a6e61173.setIcon(custom_icon_f05b3ff7fe81083ba717020c0888bd08);
-        
-    
-        var popup_a358acc0a4dda38c05f87531836feca8 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_50f493a965c211f0c4861732ef59cc4d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTA0LTIwIDEyOjAwIFBNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSAxMDAwMDAuMDAgPC9wPgogICAgICAgICAgICAgICAgPGgyPiBGbGF0IDwvaDI+CiAgICAgICAgICAgICAgICA8aDE+IEJsb2sgQi8zLzEyLCBKYWxhbiBIYXJtb25pIDE0LCBUYW1hbiBIYXJtb25pIChSL1ApLCA0MzUwMCBTZW1lbnlpaCwgU2VsYW5nb3IgPC9oMT4KICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDcwMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gTi9BLCBOL0EsIE4vQSwgTEFDQSA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBsaXN0aW5nX3N0YXR1cyA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSAxMiwgSmFsYW4gSGFybW9uaSAxNCwgVGFtYW4gSGFybW9uaSwgNDM1MDAgU2VtZW55aWgsIFNlbGFuZ29yLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5iaWRub3cubXkvYXVjdGlvbi1wcm9wZXJ0eS9qYWxhbi1oYXJtb25pLTE0LXRhbWFuLWhhcm1vbmktci1wLTQzNTAwLXNlbWVueWloLXNlbGFuZ29yLzE0NTc4NiIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICA8cD4gRGlyZWN0aW9ucyA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL21hcHMvZGlyLy8yLjk1NTMzMjIsMTAxLjgwOTMwNzgiIHRhcmdldD13aW5kb3cubmFtZT4gR08gPC9hPjwvcD4KCiAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_a358acc0a4dda38c05f87531836feca8.setContent(i_frame_50f493a965c211f0c4861732ef59cc4d);
-            
-        
-
-        marker_9752f1e2ad7d7eff039b8593a6e61173.bindPopup(popup_a358acc0a4dda38c05f87531836feca8)
-        ;
-
-        
-    
-    
-            var marker_0c280939e5bfe5d0873289152412be65 = L.marker(
-                [3.3962912, 101.5721682],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_17be382cb4c766131d785f190e5999b4 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_0c280939e5bfe5d0873289152412be65.setIcon(custom_icon_17be382cb4c766131d785f190e5999b4);
-        
-    
-        var popup_aa9cbcef09c6bd98d6d6d84fb68d02a0 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_1483dbdd4ae421de09779ce19d35de2b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTI3IDExOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA4MDIwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IEFwYXJ0bWVudCA8L2gyPgogICAgICAgICAgICAgICAgPGgxPiBOby4gQTItMTAsIDJuZCBGbG9vciwgQmxvY2sgQSwgUGFuZ3NhcHVyaSBTZXJpIFRlbHVraSwgSmFsYW4gQlMgM0EsIFNlY3Rpb24gQlMgMiwgQnVraXQgU2VudG9zYSwgNDgzMDAgUmF3YW5nLCBTZWxhbmdvciA8L2gxPgogICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gNzg2PC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBGcmVlaG9sZCwgTi9BLCBOL0EsIExBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gSmFsYW4gQnVraXQgU2VudG9zYSAzYSwgU2Vrc3llbiBCcyAzIEJ1a2l0IFNlbnRvc2EsIDQ4MzAwIFJhd2FuZywgU2VsYW5nb3IsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJpZG5vdy5teS9hdWN0aW9uLXByb3BlcnR5LzJuZC1mbG9vci1ibG9jay1hLXBhbmdzYXB1cmktc2VyaS10ZWx1a2ktamFsYW4tYnMtM2Etc2VjdGlvbi1icy0yLWJ1a2l0LXNlbnRvc2EtNDgzMDAtcmF3YW5nLXNlbGFuZ29yLzE0NTc4MCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICA8cD4gRGlyZWN0aW9ucyA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL21hcHMvZGlyLy8zLjM5NjI5MTIsMTAxLjU3MjE2ODIiIHRhcmdldD13aW5kb3cubmFtZT4gR08gPC9hPjwvcD4KCiAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_aa9cbcef09c6bd98d6d6d84fb68d02a0.setContent(i_frame_1483dbdd4ae421de09779ce19d35de2b);
-            
-        
-
-        marker_0c280939e5bfe5d0873289152412be65.bindPopup(popup_aa9cbcef09c6bd98d6d6d84fb68d02a0)
-        ;
-
-        
-    
-    
-            var marker_871366372c5620125b5bbf6d0ac8722f = L.marker(
-                [6.662622, 100.3216651],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_cc74f0dc0fbbde9b8d090866293cef25 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_871366372c5620125b5bbf6d0ac8722f.setIcon(custom_icon_cc74f0dc0fbbde9b8d090866293cef25);
-        
-    
-        var popup_2c8267e76e03d4db97e428085bea1531 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_fdaee1e582dc660656adad6f497054ab = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTIxIDExOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA0NzAwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IEFwYXJ0bWVudCA8L2gyPgogICAgICAgICAgICAgICAgPGgxPiBOby4gQTItTDItMTksIFVuaWNpdGkgQWxhbSwgU3VuZ2FpIENodWNodWgsIDAyMTAwIFBhZGFuZyBCZXNhciwgUGVybGlzIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSA4NzA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IExlYXNlaG9sZCwgTi9BLCBOL0EsIExBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gUGFkYW5nIEJlc2FyLCBQZXJsaXMsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJpZG5vdy5teS9hdWN0aW9uLXByb3BlcnR5L3VuaWNpdGktYWxhbS1zdW5nYWktY2h1Y2h1aC0wMjEwMC1wYWRhbmctYmVzYXItcGVybGlzLzE0NTY3MiIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICA8cD4gRGlyZWN0aW9ucyA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL21hcHMvZGlyLy82LjY2MjYyMiwxMDAuMzIxNjY1MSIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBHTyA8L2E+PC9wPgoKICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_2c8267e76e03d4db97e428085bea1531.setContent(i_frame_fdaee1e582dc660656adad6f497054ab);
-            
-        
-
-        marker_871366372c5620125b5bbf6d0ac8722f.bindPopup(popup_2c8267e76e03d4db97e428085bea1531)
-        ;
-
-        
-    
-    
-            var marker_c595c8e526bd39030694eb10532b6eb3 = L.marker(
-                [6.662622, 100.3216651],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_0d9faff052bcab318a53e45bc55c515d = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_c595c8e526bd39030694eb10532b6eb3.setIcon(custom_icon_0d9faff052bcab318a53e45bc55c515d);
-        
-    
-        var popup_9dbc67a1abef959891ab286ed7f1340b = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_78cfb18a2d62d159f7ac13ef19834ada = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTIxIDExOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA0NzAwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IEFwYXJ0bWVudCA8L2gyPgogICAgICAgICAgICAgICAgPGgxPiBOby4gQTItTDItMjMsIFVuaWNpdGkgQWxhbSwgU3VuZ2FpIENodWNodWgsIDAyMTAwIFBhZGFuZyBCZXNhciwgUGVybGlzIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSA4NzA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IExlYXNlaG9sZCwgTi9BLCBOL0EsIExBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gUGFkYW5nIEJlc2FyLCBQZXJsaXMsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJpZG5vdy5teS9hdWN0aW9uLXByb3BlcnR5L3VuaWNpdGktYWxhbS1zdW5nYWktY2h1Y2h1aC0wMjEwMC1wYWRhbmctYmVzYXItcGVybGlzLzE0NTY2OCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICA8cD4gRGlyZWN0aW9ucyA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL21hcHMvZGlyLy82LjY2MjYyMiwxMDAuMzIxNjY1MSIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBHTyA8L2E+PC9wPgoKICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_9dbc67a1abef959891ab286ed7f1340b.setContent(i_frame_78cfb18a2d62d159f7ac13ef19834ada);
-            
-        
-
-        marker_c595c8e526bd39030694eb10532b6eb3.bindPopup(popup_9dbc67a1abef959891ab286ed7f1340b)
-        ;
-
-        
-    
-    
-            var marker_3a888edcd4872aa05455a5741ec8913a = L.marker(
-                [3.835505, 103.3291391],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_3db8f48619ec2b5f7ee51ab4f4f95204 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_3a888edcd4872aa05455a5741ec8913a.setIcon(custom_icon_3db8f48619ec2b5f7ee51ab4f4f95204);
-        
-    
-        var popup_3e8aaa18d52aacc091725ecbbfb05395 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_a2ce62f89332283e4ac7cfcf0eb98621 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTI2IDAzOjAwIFBNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSAxMDAwMDAuMDAgPC9wPgogICAgICAgICAgICAgICAgPGgyPiBBcGFydG1lbnQgPC9oMj4KICAgICAgICAgICAgICAgIDxoMT4gTm8uIDIwOCwgRmlyc3QgRmxvb3IsIFBlbmluc3VsYXIgQ291cnQsIEphbGFuIEdhbGluZyAyLCAyNTMwMCBLdWFudGFuLCBQYWhhbmcgPC9oMT4KICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDk1MDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gRnJlZWhvbGQsIE4vQSwgTi9BLCBMQUNBIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IGxpc3Rpbmdfc3RhdHVzIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEdhbGluZywgMjUzMDAgS3VhbnRhbiwgUGFoYW5nLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5iaWRub3cubXkvYXVjdGlvbi1wcm9wZXJ0eS9maXJzdC1mbG9vci1wZW5pbnN1bGFyLWNvdXJ0LWphbGFuLWdhbGluZy0yLTI1MzAwLWt1YW50YW4tcGFoYW5nLzE0NTYzNyIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICA8cD4gRGlyZWN0aW9ucyA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL21hcHMvZGlyLy8zLjgzNTUwNSwxMDMuMzI5MTM5MSIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBHTyA8L2E+PC9wPgoKICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_3e8aaa18d52aacc091725ecbbfb05395.setContent(i_frame_a2ce62f89332283e4ac7cfcf0eb98621);
-            
-        
-
-        marker_3a888edcd4872aa05455a5741ec8913a.bindPopup(popup_3e8aaa18d52aacc091725ecbbfb05395)
-        ;
-
-        
-    
-    
-            var marker_8323024cfdbf699c17851ea95bf7cfd4 = L.marker(
-                [5.3308991, 100.4914434],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_e89acc5f8614e7cbb1e079242fb6066d = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_8323024cfdbf699c17851ea95bf7cfd4.setIcon(custom_icon_e89acc5f8614e7cbb1e079242fb6066d);
-        
-    
-        var popup_d7b2f46a4164dc10ffa9a600ff264b0e = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_038ee23b091d207a96a760cfe5e22ea3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTA0LTI1IDExOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA5MDAwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IFdhbGsgVXAgRmxhdCA8L2gyPgogICAgICAgICAgICAgICAgPGgxPiBOby4gNC0wOSBCbG9jayBCMSwgSmFsYW4gU2VyaSBKYW5nZ3VzLCBUYW1hbiBTcmkgSmFuZ2d1cywgMTQwMDAgQnVraXQgTWVydGFqYW0gUGVuYW5nIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSA3NTM8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IEZyZWVob2xkLCAyNSUgQk1WLCBOL0EsIE5vbi1MQUNBIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IGxpc3Rpbmdfc3RhdHVzIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEJsb2NrIEIxLCA0LCBKYWxhbiBTZXJpIEphbmdndXMsIFRhbWFuIFNlamFodGVyYSwgMTQwMDAgQnVraXQgTWVydGFqYW0sIFB1bGF1IFBpbmFuZywgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cuYmlkbm93Lm15L2F1Y3Rpb24tcHJvcGVydHkvYmxvY2stYjEtamFsYW4tc2VyaS1qYW5nZ3VzLXRhbWFuLXNyaS1qYW5nZ3VzLTE0MDAwLWJ1a2l0LW1lcnRhamFtLXBlbmFuZy8xNDU1MjgiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgPHA+IERpcmVjdGlvbnMgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8vNS4zMzA4OTkxLDEwMC40OTE0NDM0IiB0YXJnZXQ9d2luZG93Lm5hbWU+IEdPIDwvYT48L3A+CgogICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_d7b2f46a4164dc10ffa9a600ff264b0e.setContent(i_frame_038ee23b091d207a96a760cfe5e22ea3);
-            
-        
-
-        marker_8323024cfdbf699c17851ea95bf7cfd4.bindPopup(popup_d7b2f46a4164dc10ffa9a600ff264b0e)
-        ;
-
-        
-    
-    
-            var marker_ebb230cc189c26e0d0da338ee97e479c = L.marker(
-                [2.4416124, 102.210832],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_57bd4a7f2c9af97548606e64c239e008 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_ebb230cc189c26e0d0da338ee97e479c.setIcon(custom_icon_57bd4a7f2c9af97548606e64c239e008);
-        
-    
-        var popup_ddb88e9514d50364e5fd327fc5cdd4f8 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_f634577e6000a00b207a81e652b724d2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTI2IDExOjMwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSAzMzAwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IENvbmRvbWluaXVtIDwvaDI+CiAgICAgICAgICAgICAgICA8aDE+IE5vLiBCMy0wMS0wOCwgQmxvayAzLCBWaWxsYSBEJ1Nhdm95IEEnRmFtb3NhIEdvbGYgUmVzb3J0LCBKYWxhbiBLZW11cywgU2ltcGFuZyBFbXBhdCwgNzgwMDAgQWxvciBHYWphaCwgTWVsYWthIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSA3ODU8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IExlYXNlaG9sZCwgNjElIEJNViwgTi9BLCBMQUNBIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IGxpc3Rpbmdfc3RhdHVzIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEEnRmFtb3NhIEdvbGYgUmVzb3J0LCBDbHViaG91c2UsIEphbGFuIEtlbXVzIC8gU2VtcGFuZyBBbXBhdCwgU2ltcGFuZyBBbXBhdCwgNzgwMDAgQWxvciBHYWphaCwgTWFsYWNjYSwgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cuYmlkbm93Lm15L2F1Y3Rpb24tcHJvcGVydHkvYmxvay0zLXZpbGxhLWQtc2F2b3ktYS1mYW1vc2EtZ29sZi1yZXNvcnQtamFsYW4ta2VtdXMtc2ltcGFuZy1lbXBhdC03ODAwMC1hbG9yLWdhamFoLW1lbGFrYS8xNDU1MTciIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgPHA+IERpcmVjdGlvbnMgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8vMi40NDE2MTI0LDEwMi4yMTA4MzIiIHRhcmdldD13aW5kb3cubmFtZT4gR08gPC9hPjwvcD4KCiAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_ddb88e9514d50364e5fd327fc5cdd4f8.setContent(i_frame_f634577e6000a00b207a81e652b724d2);
-            
-        
-
-        marker_ebb230cc189c26e0d0da338ee97e479c.bindPopup(popup_ddb88e9514d50364e5fd327fc5cdd4f8)
-        ;
-
-        
-    
-    
-            var marker_5f00e5ba040f796714a598f9d3896314 = L.marker(
-                [2.4416124, 102.210832],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_ca337ca54d9baef0d9f0fb7cfc37775f = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_5f00e5ba040f796714a598f9d3896314.setIcon(custom_icon_ca337ca54d9baef0d9f0fb7cfc37775f);
-        
-    
-        var popup_a7bbf205f4623bb9493d24062333731e = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_8eaa4af0910331c50ccde7f7af128a2b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTA0LTAyIDEwOjMwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA2MzAwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IEdhcmRlbiBWaWxsYSBBcGFydG1lbnQgPC9oMj4KICAgICAgICAgICAgICAgIDxoMT4gTm8uIEJCLUctOSwgQmxvY2sgQiwgR2FyZGVuIFZpbGxhIEFwYXJ0bWVudCwgSmFsYW4gS2VtdXMsIFNpbXBhbmcgRW1wYXQsIEEnIEZhbW9zYSwgR29sZiBSZXNvcnQsIDc4MDAwIEFsb3IgR2FqYWgsIE1lbGFrYSA8L2gxPgogICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMTIyMjwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gTGVhc2Vob2xkLCAyNSUgQk1WLCBOL0EsIExBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gQSdGYW1vc2EgR29sZiBSZXNvcnQsIENsdWJob3VzZSwgSmFsYW4gS2VtdXMgLyBTZW1wYW5nIEFtcGF0LCBTaW1wYW5nIEFtcGF0LCA3ODAwMCBBbG9yIEdhamFoLCBNYWxhY2NhLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5iaWRub3cubXkvYXVjdGlvbi1wcm9wZXJ0eS9ibG9jay1iLWdhcmRlbi12aWxsYS1hcGFydG1lbnQtamFsYW4ta2VtdXMtc2ltcGFuZy1lbXBhdC1hLWZhbW9zYS1nb2xmLXJlc29ydC03ODAwMC1hbG9yLWdhamFoLW1lbGFrYS8xNDU0MzYiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgPHA+IERpcmVjdGlvbnMgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8vMi40NDE2MTI0LDEwMi4yMTA4MzIiIHRhcmdldD13aW5kb3cubmFtZT4gR08gPC9hPjwvcD4KCiAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_a7bbf205f4623bb9493d24062333731e.setContent(i_frame_8eaa4af0910331c50ccde7f7af128a2b);
-            
-        
-
-        marker_5f00e5ba040f796714a598f9d3896314.bindPopup(popup_a7bbf205f4623bb9493d24062333731e)
-        ;
-
-        
-    
-    
-            var marker_551e69c1032989f36ae6f1a1abdcfbf2 = L.marker(
+            var marker_fa5ce50c4b7778a84f2c2668c9f19368 = L.marker(
                 [3.7930068, 103.3098028],
                 {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
+            ).addTo(map_0fff26b701cabff2adbea90b7213847f);
         
     
-        var custom_icon_0b06d0bf2bd4ccde72c5321bf5be6c6e = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_551e69c1032989f36ae6f1a1abdcfbf2.setIcon(custom_icon_0b06d0bf2bd4ccde72c5321bf5be6c6e);
+        var custom_icon_e6c922b1c220723b5498374f4586a313 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
+        marker_fa5ce50c4b7778a84f2c2668c9f19368.setIcon(custom_icon_e6c922b1c220723b5498374f4586a313);
         
     
-        var popup_725938c180d2419635e3300091eb700c = L.popup({"maxWidth": 2650});
+        var popup_2f52f42ed55b0c565f5c11e376ea9da7 = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_679dc24e85ca848db6087f78a31bf7e6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTI2IDExOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA4NzQ4MC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IEFwYXJ0bWVudCA8L2gyPgogICAgICAgICAgICAgICAgPGgxPiBOby4gMTE0LCAxc3QgRmxvb3IsIEJsb2NrIEQsIE1lZGFuIFdhcmlzYW4sIExvcm9uZyBTZXJpIFRlcnVudHVtIDEsIDI1MTAwIEt1YW50YW4sIFBhaGFuZyA8L2gxPgogICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMTAzMzwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gTGVhc2Vob2xkLCAyNyUgQk1WLCBOL0EsIExBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gTG9yb25nIFNlcmkgVGVydW50dW0gMSwgTWVkYW4gV2FyaXNhbiwgS3VhbnRhbiwgUGFoYW5nLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5iaWRub3cubXkvYXVjdGlvbi1wcm9wZXJ0eS8xc3QtZmxvb3ItYmxvY2stZC1tZWRhbi13YXJpc2FuLWxvcm9uZy1zZXJpLXRlcnVudHVtLTEtMjUxMDAta3VhbnRhbi1wYWhhbmcvMTQ1NDA1IiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgIDxwPiBEaXJlY3Rpb25zIDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vbWFwcy9kaXIvLzMuNzkzMDA2OCwxMDMuMzA5ODAyOCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBHTyA8L2E+PC9wPgoKICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_725938c180d2419635e3300091eb700c.setContent(i_frame_679dc24e85ca848db6087f78a31bf7e6);
+                var i_frame_861b3a324f1b0ce1bdf683857d7bf52e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTI2IDExOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA4NzQ4MC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IEFwYXJ0bWVudCA8L2gyPgogICAgICAgICAgICAgICAgPGgxPiBOby4gMTE0LCAxc3QgRmxvb3IsIEJsb2NrIEQsIE1lZGFuIFdhcmlzYW4sIExvcm9uZyBTZXJpIFRlcnVudHVtIDEsIDI1MTAwIEt1YW50YW4sIFBhaGFuZyA8L2gxPgogICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMTAzMzwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gTGVhc2Vob2xkLCAyNyUgQk1WLCBOL0EsIExBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gTG9yb25nIFNlcmkgVGVydW50dW0gMSwgTWVkYW4gV2FyaXNhbiwgS3VhbnRhbiwgUGFoYW5nLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5iaWRub3cubXkvYXVjdGlvbi1wcm9wZXJ0eS8xc3QtZmxvb3ItYmxvY2stZC1tZWRhbi13YXJpc2FuLWxvcm9uZy1zZXJpLXRlcnVudHVtLTEtMjUxMDAta3VhbnRhbi1wYWhhbmcvMTQ1NDA1IiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgIDxwPiBEaXJlY3Rpb25zIDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vbWFwcy9kaXIvLzMuNzkzMDA2OCwxMDMuMzA5ODAyOCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBHTyA8L2E+PC9wPgoKICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_2f52f42ed55b0c565f5c11e376ea9da7.setContent(i_frame_861b3a324f1b0ce1bdf683857d7bf52e);
             
         
 
-        marker_551e69c1032989f36ae6f1a1abdcfbf2.bindPopup(popup_725938c180d2419635e3300091eb700c)
+        marker_fa5ce50c4b7778a84f2c2668c9f19368.bindPopup(popup_2f52f42ed55b0c565f5c11e376ea9da7)
         ;
 
         
     
     
-            var marker_914cc8da5a67bd4cf5435929fba1f690 = L.marker(
-                [3.4397776, 101.5476193],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_06ae2d1fc7cc6ef15053e1a29cb0bed2 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_914cc8da5a67bd4cf5435929fba1f690.setIcon(custom_icon_06ae2d1fc7cc6ef15053e1a29cb0bed2);
-        
-    
-        var popup_b607547240e6c8bfb7d003f556a5c150 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_f02d2d57b273d442a26dbdc3812a47bb = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTI1IDAzOjMwIFBNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA4MTAwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IEFwYXJ0bWVudCA8L2gyPgogICAgICAgICAgICAgICAgPGgxPiBOby4gQS0yLTgsIFBlcnNpYXJhbiBCdW55YSBSYXlhLCBBcGFydG1lbnQgQnVnaW52aWxhLCBUYW1hbiBCdW5nYSBSYXlhLCA0ODMwMCBSYXdhbmcsIFNlbGFuZ29yIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSA3NTA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IExlYXNlaG9sZCwgTi9BLCBOL0EsIExBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gQnVnaW52aWxsYSBBcGFydG1lbnQgVGFtYW4gQnVuZ2EgUmF5YSBCYW5kYXIgQmFydSwgQnVraXQgQmVydW50dW5nLCA0ODMwMCBSYXdhbmcsIFNlbGFuZ29yLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5iaWRub3cubXkvYXVjdGlvbi1wcm9wZXJ0eS9wZXJzaWFyYW4tYnVueWEtcmF5YS1hcGFydG1lbnQtYnVnaW52aWxhLXRhbWFuLWJ1bmdhLXJheWEtNDgzMDAtcmF3YW5nLXNlbGFuZ29yLzE0NTM5OSIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICA8cD4gRGlyZWN0aW9ucyA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL21hcHMvZGlyLy8zLjQzOTc3NzYsMTAxLjU0NzYxOTMiIHRhcmdldD13aW5kb3cubmFtZT4gR08gPC9hPjwvcD4KCiAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_b607547240e6c8bfb7d003f556a5c150.setContent(i_frame_f02d2d57b273d442a26dbdc3812a47bb);
-            
-        
-
-        marker_914cc8da5a67bd4cf5435929fba1f690.bindPopup(popup_b607547240e6c8bfb7d003f556a5c150)
-        ;
-
-        
-    
-    
-            var marker_cf406f309bd6f6f493ef43aa78ba319c = L.marker(
-                [3.7089958, 103.0511309],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_51949b030a042c32cbbb23e1e7cf5d1c = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_cf406f309bd6f6f493ef43aa78ba319c.setIcon(custom_icon_51949b030a042c32cbbb23e1e7cf5d1c);
-        
-    
-        var popup_28c62ec8f64197d2db360b831ad1bdf9 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_c7941ef8d670073030e87497f5c7384d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTIyIDExOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA5NTAwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IEFwYXJ0bWVudCA8L2gyPgogICAgICAgICAgICAgICAgPGgxPiBOby4gTjItMDUtMDgsIEphbGFuIEdhbWJhbmcsIENhcmliYmVhbiBCYXkgUmVzb3J0LCBCdWtpdCBHYW1iYW5nIFJlc29ydCBDaXR5LCAyNjMwMCBLdWFudGFuLCBQYWhhbmcgPC9oMT4KICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDgxMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gTi9BLCBOL0EsIE4vQSwgTEFDQSA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBsaXN0aW5nX3N0YXR1cyA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSBCdWtpdCBHYW1iYW5nIFJlc29ydCBDaXR5LCAyNjMwMCBHYW1iYW5nLCBQYWhhbmcsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJpZG5vdy5teS9hdWN0aW9uLXByb3BlcnR5L2phbGFuLWdhbWJhbmctY2FyaWJiZWFuLWJheS1yZXNvcnQtYnVraXQtZ2FtYmFuZy1yZXNvcnQtY2l0eS0yNjMwMC1rdWFudGFuLXBhaGFuZy8xNDUzOTAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgPHA+IERpcmVjdGlvbnMgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8vMy43MDg5OTU4LDEwMy4wNTExMzA5IiB0YXJnZXQ9d2luZG93Lm5hbWU+IEdPIDwvYT48L3A+CgogICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_28c62ec8f64197d2db360b831ad1bdf9.setContent(i_frame_c7941ef8d670073030e87497f5c7384d);
-            
-        
-
-        marker_cf406f309bd6f6f493ef43aa78ba319c.bindPopup(popup_28c62ec8f64197d2db360b831ad1bdf9)
-        ;
-
-        
-    
-    
-            var marker_6773e50d9d75b70c6e57bd03e1678bb4 = L.marker(
+            var marker_43af827b0a818b6c7606db5b189b2842 = L.marker(
                 [1.5656511, 103.5988649],
                 {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
+            ).addTo(map_0fff26b701cabff2adbea90b7213847f);
         
     
-        var custom_icon_30f44011d27688c5d623418dc5093904 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_6773e50d9d75b70c6e57bd03e1678bb4.setIcon(custom_icon_30f44011d27688c5d623418dc5093904);
+        var custom_icon_2ad9129d79187b85f2c07fc31736c0fc = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
+        marker_43af827b0a818b6c7606db5b189b2842.setIcon(custom_icon_2ad9129d79187b85f2c07fc31736c0fc);
         
     
-        var popup_ff65af7b83359f50d3e772bba3eaa2b6 = L.popup({"maxWidth": 2650});
+        var popup_8f1548cf3ac8a9f3bc0f7ce9d95bcbaf = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_a6383220d3f59f5f761ba2f4cce1e4a4 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTIxIDExOjMwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA4NTI5My4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IFNlcnZpY2UgQXBhcnRtZW50ICA8L2gyPgogICAgICAgICAgICAgICAgPGgxPiBOby4gMDEtMDNBLCBCbG9jayBELCBKYWxhbiBQdWxhaSBKYXlhIDEvMywgQmFuZGFyIFB1bGFpIEpheWEsIDgxMTEwIEthbmdrYXIgUHVsYWksIEpvaG9yIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSA3MjE8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IEZyZWVob2xkLCAzNCUgQk1WLCBOL0EsIExBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gSmFsYW4gUHVsYWkgSmF5YSAxLzMsIEJhbmRhciBQdWxhaSBKYXlhLCBKb2hvciBCYWhydSwgSm9ob3IsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJpZG5vdy5teS9hdWN0aW9uLXByb3BlcnR5L2Jsb2NrLWQtamFsYW4tcHVsYWktamF5YS0xLTMtYmFuZGFyLXB1bGFpLWpheWEtODExMTAta2FuZ2thci1wdWxhaS1qb2hvci8xNDUzMjMiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgPHA+IERpcmVjdGlvbnMgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8vMS41NjU2NTExLDEwMy41OTg4NjQ5IiB0YXJnZXQ9d2luZG93Lm5hbWU+IEdPIDwvYT48L3A+CgogICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_ff65af7b83359f50d3e772bba3eaa2b6.setContent(i_frame_a6383220d3f59f5f761ba2f4cce1e4a4);
+                var i_frame_76dbd55dd5f8de45ef182e4420783edb = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTIxIDExOjMwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA4NTI5My4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IFNlcnZpY2UgQXBhcnRtZW50ICA8L2gyPgogICAgICAgICAgICAgICAgPGgxPiBOby4gMDEtMDNBLCBCbG9jayBELCBKYWxhbiBQdWxhaSBKYXlhIDEvMywgQmFuZGFyIFB1bGFpIEpheWEsIDgxMTEwIEthbmdrYXIgUHVsYWksIEpvaG9yIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSA3MjE8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IEZyZWVob2xkLCAzNCUgQk1WLCBOL0EsIExBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gSmFsYW4gUHVsYWkgSmF5YSAxLzMsIEJhbmRhciBQdWxhaSBKYXlhLCBKb2hvciBCYWhydSwgSm9ob3IsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJpZG5vdy5teS9hdWN0aW9uLXByb3BlcnR5L2Jsb2NrLWQtamFsYW4tcHVsYWktamF5YS0xLTMtYmFuZGFyLXB1bGFpLWpheWEtODExMTAta2FuZ2thci1wdWxhaS1qb2hvci8xNDUzMjMiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgPHA+IERpcmVjdGlvbnMgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8vMS41NjU2NTExLDEwMy41OTg4NjQ5IiB0YXJnZXQ9d2luZG93Lm5hbWU+IEdPIDwvYT48L3A+CgogICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_8f1548cf3ac8a9f3bc0f7ce9d95bcbaf.setContent(i_frame_76dbd55dd5f8de45ef182e4420783edb);
             
         
 
-        marker_6773e50d9d75b70c6e57bd03e1678bb4.bindPopup(popup_ff65af7b83359f50d3e772bba3eaa2b6)
+        marker_43af827b0a818b6c7606db5b189b2842.bindPopup(popup_8f1548cf3ac8a9f3bc0f7ce9d95bcbaf)
         ;
 
         
     
     
-            var marker_1d3f3c87d27b2cd9d65b38923d2603c6 = L.marker(
-                [2.4726694, 101.8560361],
+            var marker_43eaddfc0bd62b41226729121c00af38 = L.marker(
+                [2.246346, 102.228224],
                 {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
+            ).addTo(map_0fff26b701cabff2adbea90b7213847f);
         
     
-        var custom_icon_2af7bd374834e62b9988ec48515fb42f = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_1d3f3c87d27b2cd9d65b38923d2603c6.setIcon(custom_icon_2af7bd374834e62b9988ec48515fb42f);
+        var custom_icon_b666c8bcb8cd57230bd84206d869c02d = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
+        marker_43eaddfc0bd62b41226729121c00af38.setIcon(custom_icon_b666c8bcb8cd57230bd84206d869c02d);
         
     
-        var popup_56bde3a2f84185f2412d3e0558a6634c = L.popup({"maxWidth": 2650});
+        var popup_70a28ab928ce09e897431549b238f82d = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_6005fc20f529967e7ccd8029152dfdf9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTIxIDExOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA3MjkwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IENvbmRvbWluaXVtIDwvaDI+CiAgICAgICAgICAgICAgICA8aDE+IE5vLiBBLTEyLTUsIFN0cmFpdHMgVmlldyBWaWxsYXMgQ29uZG9taW5pdW0sIFBEIFdvcmxkIE1hcmluYSBJbnRlcm5hdGlvbmFsIFJlc29ydCwgQmF0dSA2LCBKYWxhbiBQYW50YWksIDcxMDUwIFBvcnQgRGlja3NvbiwgTmVnZXJpIFNlbWJpbGFuIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSA5NDc8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IExlYXNlaG9sZCwgTi9BLCBOL0EsIExBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gS2FtcHVuZyBCYWhhcnUsIDcxMDUwIFBvcnQgRGlja3NvbiwgTmVnZXJpIFNlbWJpbGFuLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5iaWRub3cubXkvYXVjdGlvbi1wcm9wZXJ0eS9zdHJhaXRzLXZpZXctdmlsbGFzLWNvbmRvbWluaXVtLXBkLXdvcmxkLW1hcmluYS1pbnRlcm5hdGlvbmFsLXJlc29ydC1iYXR1LTYtamFsYW4tcGFudGFpLTcxMDUwLXBvcnQtZGlja3Nvbi1uZWdlcmktc2VtYmlsYW4vMTQ1MzExIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgIDxwPiBEaXJlY3Rpb25zIDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vbWFwcy9kaXIvLzIuNDcyNjY5NCwxMDEuODU2MDM2MSIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBHTyA8L2E+PC9wPgoKICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_56bde3a2f84185f2412d3e0558a6634c.setContent(i_frame_6005fc20f529967e7ccd8029152dfdf9);
+                var i_frame_878d0e54ff6766f3cb60b45127354a04 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTA0LTAzIDExOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA4NzQ4MC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IEZsYXQgPC9oMj4KICAgICAgICAgICAgICAgIDxoMT4gTm8uIEEtNC0wMywgVGluZ2thdCA0LCBCbG9jayBBLCBSdW1haCBQYW5nc2EsIFRhbWFuIENoZW5nIFJpYSwgNzUyNTAgQ2hlbmcsIE1lbGFrYSA8L2gxPgogICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gODM5PC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBMZWFzZWhvbGQsIDI3JSBCTVYsIE4vQSwgTm9uLUxBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gVGFtYW4gQ2hlbmcgUmlhLCA3NTI2MCBDaGVuZywgTWVsYWthLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5iaWRub3cubXkvYXVjdGlvbi1wcm9wZXJ0eS90aW5na2F0LTQtYmxvY2stYS1ydW1haC1wYW5nc2EtdGFtYW4tY2hlbmctcmlhLTc1MjUwLWNoZW5nLW1lbGFrYS8xNDA0NzYiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgPHA+IERpcmVjdGlvbnMgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8vMi4yNDYzNDYsMTAyLjIyODIyNCIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBHTyA8L2E+PC9wPgoKICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_70a28ab928ce09e897431549b238f82d.setContent(i_frame_878d0e54ff6766f3cb60b45127354a04);
             
         
 
-        marker_1d3f3c87d27b2cd9d65b38923d2603c6.bindPopup(popup_56bde3a2f84185f2412d3e0558a6634c)
+        marker_43eaddfc0bd62b41226729121c00af38.bindPopup(popup_70a28ab928ce09e897431549b238f82d)
         ;
 
         
     
     
-            var marker_67b17cb07635899ebcae50ded10a96de = L.marker(
-                [2.458392, 101.8579142],
+            var marker_1759779cb0b67e7c58843b296bb76748 = L.marker(
+                [2.246346, 102.228224],
                 {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
+            ).addTo(map_0fff26b701cabff2adbea90b7213847f);
         
     
-        var custom_icon_6f3f2717154748e18b91e67c949a1ad0 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_67b17cb07635899ebcae50ded10a96de.setIcon(custom_icon_6f3f2717154748e18b91e67c949a1ad0);
+        var custom_icon_d8769660c6ffb341b54f5358b0744d35 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
+        marker_1759779cb0b67e7c58843b296bb76748.setIcon(custom_icon_d8769660c6ffb341b54f5358b0744d35);
         
     
-        var popup_2157ba490b671a8285aae7a43ae5d4fd = L.popup({"maxWidth": 2650});
+        var popup_4814b0115902f724d27bcec6bb1d34dd = L.popup({"maxWidth": 2650});
 
         
             
-                var i_frame_70b6918db64d8a1140ddd1eda9f1abe2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTIxIDExOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA0MjUxNS4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IENvbmRvbWluaXVtICA8L2gyPgogICAgICAgICAgICAgICAgPGgxPiBOby4gQy0xMC0zQSwgVGluZ2thdCAxMCwgQmxvayBDLCBNYXJpbmEgVmlldyBWaWxsYXMsIFBEIE1hcmluYSwgQmF0dSA3LCBKYWxhbiBQYW50YWksIFRlbHVrIEtlbWFuZywgNzEwNTAgUG9ydCBEaWNrc29uLCBOZWdlcmkgU2VtYmlsYW4gPC9oMT4KICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDgyOTwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gRnJlZWhvbGQsIE4vQSwgTi9BLCBMQUNBIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IGxpc3Rpbmdfc3RhdHVzIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IDcsIEpsbiBQYW50YWksIFRhbWFuIEJheXUsIDcxMDUwIFBvcnQgRGlja3NvbiwgTmVnZXJpIFNlbWJpbGFuLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5iaWRub3cubXkvYXVjdGlvbi1wcm9wZXJ0eS90aW5na2F0LTEwLWJsb2stYy1tYXJpbmEtdmlldy12aWxsYXMtcGQtbWFyaW5hLWJhdHUtNy1qYWxhbi1wYW50YWktdGVsdWsta2VtYW5nLTcxMDUwLXBvcnQtZGlja3Nvbi1uZWdlcmktc2VtYmlsYW4vMTQ1MzEwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgIDxwPiBEaXJlY3Rpb25zIDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vbWFwcy9kaXIvLzIuNDU4MzkyLDEwMS44NTc5MTQyIiB0YXJnZXQ9d2luZG93Lm5hbWU+IEdPIDwvYT48L3A+CgogICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_2157ba490b671a8285aae7a43ae5d4fd.setContent(i_frame_70b6918db64d8a1140ddd1eda9f1abe2);
+                var i_frame_af39a6a0acbac2757e402f33d509db08 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTIwIDExOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSAxMDAwMDAuMDAgPC9wPgogICAgICAgICAgICAgICAgPGgyPiBGbGF0IDwvaDI+CiAgICAgICAgICAgICAgICA8aDE+IE5vLiBBLTMtMDQsIDNyZCBGbG9vciwgQmxvY2sgQSwgUnVtYWggUGFuZ3NhIFRhbWFuIENoZW5nIFJpYSwgNzUyNTAgQ2hlbmcsIE1lbGFrYSA8L2gxPgogICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gODM5PC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBMZWFzZWhvbGQsIE4vQSwgTi9BLCBOb24tTEFDQSA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBsaXN0aW5nX3N0YXR1cyA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSBUYW1hbiBDaGVuZyBSaWEsIDc1MjYwIENoZW5nLCBNZWxha2EsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJpZG5vdy5teS9hdWN0aW9uLXByb3BlcnR5LzNyZC1mbG9vci1ibG9jay1hLXJ1bWFoLXBhbmdzYS10YW1hbi1jaGVuZy1yaWEtNzUyNTAtY2hlbmctbWVsYWthLzEzODY1MSIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICA8cD4gRGlyZWN0aW9ucyA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL21hcHMvZGlyLy8yLjI0NjM0NiwxMDIuMjI4MjI0IiB0YXJnZXQ9d2luZG93Lm5hbWU+IEdPIDwvYT48L3A+CgogICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_4814b0115902f724d27bcec6bb1d34dd.setContent(i_frame_af39a6a0acbac2757e402f33d509db08);
             
         
 
-        marker_67b17cb07635899ebcae50ded10a96de.bindPopup(popup_2157ba490b671a8285aae7a43ae5d4fd)
-        ;
-
-        
-    
-    
-            var marker_bc048dbe991107df6a5baf86be7cc00b = L.marker(
-                [5.8832185, 118.0351673],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_7f0c385f7a1572a14c3a237f7a89b0a9 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_bc048dbe991107df6a5baf86be7cc00b.setIcon(custom_icon_7f0c385f7a1572a14c3a237f7a89b0a9);
-        
-    
-        var popup_23eaf71b5016158be5f5cb918b3d7a3c = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_d01908121770bca33de58eb0c5cfeac6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTI2IE5vbmUgPC9wPgogICAgICAgICAgICAgICAgPHA+IFJNIDkwMDAwLjAwIDwvcD4KICAgICAgICAgICAgICAgIDxoMj4gMiBTdG9yZXkgVGVycmFjZSBMb3cgQ29zdCBUZXJyYWNlIEhvdXNlIDwvaDI+CiAgICAgICAgICAgICAgICA8aDE+IExvdCAyOTYsIEJsb2NrIDIzLCBUYW1hbiBLZW5hcmksIEphbGFuIExhYnVrIDkwMDAwIFNhbmRha2FuIFNhYmFoIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMTc2PC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBOL0EsIE4vQSwgTi9BLCBMQUNBIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IGxpc3Rpbmdfc3RhdHVzIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IDI5NiwgOTAwMDAsIEphbGFuIExhYnVrLCBTYW5kYWthbiwgOTAwMDAgU2FuZGFrYW4sIFNhYmFoLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5iaWRub3cubXkvYXVjdGlvbi1wcm9wZXJ0eS90YW1hbi1rZW5hcmktamFsYW4tbGFidWstOTAwMDAtc2FuZGFrYW4tc2FiYWgvMTQ1MjczIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgIDxwPiBEaXJlY3Rpb25zIDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vbWFwcy9kaXIvLzUuODgzMjE4NSwxMTguMDM1MTY3MyIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBHTyA8L2E+PC9wPgoKICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_23eaf71b5016158be5f5cb918b3d7a3c.setContent(i_frame_d01908121770bca33de58eb0c5cfeac6);
-            
-        
-
-        marker_bc048dbe991107df6a5baf86be7cc00b.bindPopup(popup_23eaf71b5016158be5f5cb918b3d7a3c)
-        ;
-
-        
-    
-    
-            var marker_13591ddb81b64979864add20f841ad84 = L.marker(
-                [3.285051, 101.511559],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_d277e66ecd6a4ca859afa3e21ef7754d = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_13591ddb81b64979864add20f841ad84.setIcon(custom_icon_d277e66ecd6a4ca859afa3e21ef7754d);
-        
-    
-        var popup_117218a80d3e2ba90820cf5e374db3b9 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_273f0d52920584a3e95548c596de7423 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTI1IDAzOjMwIFBNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA1NjAwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IEFwYXJ0bWVudCA8L2gyPgogICAgICAgICAgICAgICAgPGgxPiBOby4gRy1MMi0wOCwgQmxvY2sgRywgUGFuZ3NhcHVyaSBCQkssIEJhbmRhciBCYXJ1IEt1bmRhbmcsIDQ4MDIwIFJhd2FuZywgU2VsYW5nb3IgPC9oMT4KICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDcxMDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gTi9BLCBOL0EsIE4vQSwgTEFDQSA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBsaXN0aW5nX3N0YXR1cyA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSAxMSwgSmFsYW4gQmJrIDEvMTYsIEJhbmRhciBCYXJ1IEt1bmRhbmcsIDQ4MDIwIFJhd2FuZywgU2VsYW5nb3IsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJpZG5vdy5teS9hdWN0aW9uLXByb3BlcnR5L2Jsb2NrLWctcGFuZ3NhcHVyaS1iYmstYmFuZGFyLWJhcnUta3VuZGFuZy00ODAyMC1yYXdhbmctc2VsYW5nb3IvMTQ0OTc5IiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgIDxwPiBEaXJlY3Rpb25zIDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vbWFwcy9kaXIvLzMuMjg1MDUxLDEwMS41MTE1NTkiIHRhcmdldD13aW5kb3cubmFtZT4gR08gPC9hPjwvcD4KCiAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_117218a80d3e2ba90820cf5e374db3b9.setContent(i_frame_273f0d52920584a3e95548c596de7423);
-            
-        
-
-        marker_13591ddb81b64979864add20f841ad84.bindPopup(popup_117218a80d3e2ba90820cf5e374db3b9)
-        ;
-
-        
-    
-    
-            var marker_dff0aaa11da2083444b97d056afc337e = L.marker(
-                [2.7398731, 101.9320767],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_73192c5d967373a4616cd81e33fe8030 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_dff0aaa11da2083444b97d056afc337e.setIcon(custom_icon_73192c5d967373a4616cd81e33fe8030);
-        
-    
-        var popup_2e38848fb36f7718f6bc4e32f77122f7 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_28f5f6e383cf395bed54b3ddf9aa554f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTA0LTE3IDExOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA4MDE5MC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IENhc2EgUHJpbWEgQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICA8aDE+IE5vLiBBLTUtM0EsIEJsb2NrIEEsIENhc2EgUHJpbWEgQXBhcnRtZW50cywgVGFtYW4gQnVraXQgRGVsaW1hLCA3MDIwMCBTZXJlbWJhbiwgTmVnZXJpIFNlbWJpbGFuIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSA4MTg8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IEZyZWVob2xkLCBOL0EsIE4vQSwgTm9uLUxBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gQ2FzYSBQcmltYSwgMSwgSmFsYW4gQnVraXQgRGVsaW1hIDIsIFRhbWFuIEJ1a2l0IERlbGltYSwgNzAyMDAgU2VyZW1iYW4sIE5lZ2VyaSBTZW1iaWxhbiwgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cuYmlkbm93Lm15L2F1Y3Rpb24tcHJvcGVydHkvYmxvY2stYS1jYXNhLXByaW1hLWFwYXJ0bWVudHMtdGFtYW4tYnVraXQtZGVsaW1hLTcwMjAwLXNlcmVtYmFuLW5lZ2VyaS1zZW1iaWxhbi8xNDQ4ODAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgPHA+IERpcmVjdGlvbnMgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8vMi43Mzk4NzMxLDEwMS45MzIwNzY3IiB0YXJnZXQ9d2luZG93Lm5hbWU+IEdPIDwvYT48L3A+CgogICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_2e38848fb36f7718f6bc4e32f77122f7.setContent(i_frame_28f5f6e383cf395bed54b3ddf9aa554f);
-            
-        
-
-        marker_dff0aaa11da2083444b97d056afc337e.bindPopup(popup_2e38848fb36f7718f6bc4e32f77122f7)
-        ;
-
-        
-    
-    
-            var marker_5a841bc955f7e4096671283bd79cba32 = L.marker(
-                [5.231285, 100.6745879],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_c1fccae603c973b0c42f0856899078fa = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_5a841bc955f7e4096671283bd79cba32.setIcon(custom_icon_c1fccae603c973b0c42f0856899078fa);
-        
-    
-        var popup_a18b1f389d4afaa0a894e68462a1305e = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_14d38c12e8d79716205527102752364e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTA0LTI0IDA5OjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA2ODAwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IDEgU3RvcmV5IFRlcnJhY2UgSG91c2UKCiA8L2gyPgogICAgICAgICAgICAgICAgPGgxPiBOby4gMTIsIEphbGFuIENlbXBha2EgMiwgVGFtYW4gQ2VtcGFrYSwgMDk4MTAgU2VsYW1hLCBLZWRhaCA8L2gxPgogICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gMTA4MDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gRnJlZWhvbGQsIE4vQSwgMTQwMCBzcWZ0IGxhbmQsIE5vbi1MQUNBIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IGxpc3Rpbmdfc3RhdHVzIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IFNlbGFtYSwgMDk4MDAgU2VyZGFuZywgS2VkYWgsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJpZG5vdy5teS9hdWN0aW9uLXByb3BlcnR5L2phbGFuLWNlbXBha2EtMi10YW1hbi1jZW1wYWthLTA5ODEwLXNlbGFtYS1rZWRhaC8xNDQ4NjAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgPHA+IERpcmVjdGlvbnMgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8vNS4yMzEyODUsMTAwLjY3NDU4NzkiIHRhcmdldD13aW5kb3cubmFtZT4gR08gPC9hPjwvcD4KCiAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_a18b1f389d4afaa0a894e68462a1305e.setContent(i_frame_14d38c12e8d79716205527102752364e);
-            
-        
-
-        marker_5a841bc955f7e4096671283bd79cba32.bindPopup(popup_a18b1f389d4afaa0a894e68462a1305e)
-        ;
-
-        
-    
-    
-            var marker_032aafc3626196fd43beaf8ae857005e = L.marker(
-                [3.0009107, 101.4757223],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_b6b34e7fc15b8d4803834a88429b1420 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_032aafc3626196fd43beaf8ae857005e.setIcon(custom_icon_b6b34e7fc15b8d4803834a88429b1420);
-        
-    
-        var popup_2902d5bed214d396f48ca00012c67dff = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_55231bcd4a8d461c2fa02c562281af6e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTIyIDAzOjAwIFBNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSAzNTEwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IFNob3AgQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICA8aDE+IE5vLiAyMy0yQSwgSmFsYW4gSHVsdWJhbGFuZyAzN0EsIEphbGFuIFJhamEgTm9uZywgVGFtYW4gU2VudG9zYSwgNDEyMDAgS2xhbmcsIFNlbGFuZ29yIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSA3MDA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IEZyZWVob2xkLCAyMiUgQk1WLCBOL0EsIExBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gMjMsIEphbGFuIEh1bHViYWxhbmcgMzdhLCBUYW1hbiBTZW50b3NhLCA0MTIwMCBLbGFuZywgU2VsYW5nb3IsIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJpZG5vdy5teS9hdWN0aW9uLXByb3BlcnR5L2phbGFuLWh1bHViYWxhbmctMzdhLWphbGFuLXJhamEtbm9uZy10YW1hbi1zZW50b3NhLTQxMjAwLWtsYW5nLXNlbGFuZ29yLzE0NDg0NiIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICA8cD4gRGlyZWN0aW9ucyA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL21hcHMvZGlyLy8zLjAwMDkxMDcsMTAxLjQ3NTcyMjMiIHRhcmdldD13aW5kb3cubmFtZT4gR08gPC9hPjwvcD4KCiAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_2902d5bed214d396f48ca00012c67dff.setContent(i_frame_55231bcd4a8d461c2fa02c562281af6e);
-            
-        
-
-        marker_032aafc3626196fd43beaf8ae857005e.bindPopup(popup_2902d5bed214d396f48ca00012c67dff)
-        ;
-
-        
-    
-    
-            var marker_44384529d6a64cc7b61957a145786ec6 = L.marker(
-                [2.9087494, 103.4355857],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_06865c774d9c14c5c0a6fee485548355 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_44384529d6a64cc7b61957a145786ec6.setIcon(custom_icon_06865c774d9c14c5c0a6fee485548355);
-        
-    
-        var popup_3ff7c2e13f205e7761fc4f362a1757a6 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_adafd6fb0ee1e922ba4dc1ce54d16a40 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTIyIDEwOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSAxNDU4MC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IFN1bW1lcnNldCBSZXNvcnQgQXBhcnRtZW50IDwvaDI+CiAgICAgICAgICAgICAgICA8aDE+IFN1aXRlIE5vLiBDQi0wMS0yNSwgTm8uIFRpbmdrYXQgMDEsIEJhbmd1bmFuIENCLCBTdW1tZXJzZXQgUmVzb3J0LCAyNjgwMCBSb21waW4sIFBhaGFuZyA8L2gxPgogICAgICAgICAgICAgICAgPHA+RGV0YWlsczotIDwvcD4KICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICA8bGk+YnVpbGR1cD0gNzA2PC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBMZWFzZWhvbGQsIDI3JSBCTVYsIE4vQSwgTEFDQSA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBsaXN0aW5nX3N0YXR1cyA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSAyNjY4MCBLdWFsYSBSb21waW4sIFBhaGFuZywgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cuYmlkbm93Lm15L2F1Y3Rpb24tcHJvcGVydHkvbm8tdGluZ2thdC0wMS1iYW5ndW5hbi1jYi1zdW1tZXJzZXQtcmVzb3J0LTI2ODAwLXJvbXBpbi1wYWhhbmcvMTQ0MTk1IiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgIDxwPiBEaXJlY3Rpb25zIDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vbWFwcy9kaXIvLzIuOTA4NzQ5NCwxMDMuNDM1NTg1NyIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBHTyA8L2E+PC9wPgoKICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_3ff7c2e13f205e7761fc4f362a1757a6.setContent(i_frame_adafd6fb0ee1e922ba4dc1ce54d16a40);
-            
-        
-
-        marker_44384529d6a64cc7b61957a145786ec6.bindPopup(popup_3ff7c2e13f205e7761fc4f362a1757a6)
-        ;
-
-        
-    
-    
-            var marker_f16df156a007ceb6e59521ffde9be109 = L.marker(
-                [4.184005, 100.7071849],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_232cd56f58299e412836bfc1bcd26348 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_f16df156a007ceb6e59521ffde9be109.setIcon(custom_icon_232cd56f58299e412836bfc1bcd26348);
-        
-    
-        var popup_ddc245228693e9d97436641ff16d4c15 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_e1252cf79a2d6c673191e1b54fe1cb14 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTI3IDExOjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA5NzIwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IDIgU3RvcmV5IFRlcnJhY2UgSG91c2UgPC9oMj4KICAgICAgICAgICAgICAgIDxoMT4gTm8uIDMsIFRhbWFuIENlbXBha2EsIEthbXB1bmcgS29oLCAzMjIwMCBTaXRpYXdhbiwgUGVyYWsgPC9oMT4KICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDg4MzwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gTGVhc2Vob2xkLCAxOSUgQk1WLCBOL0EsIE5vbi1MQUNBIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IGxpc3Rpbmdfc3RhdHVzIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IFRhbWFuIENlbXBha2EsIEthbXB1bmcgS29oLCAzMjAwMCBTaXRpYXdhbiwgUGVyYWssIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJpZG5vdy5teS9hdWN0aW9uLXByb3BlcnR5L3RhbWFuLWNlbXBha2Eta2FtcHVuZy1rb2gtMzIyMDAtc2l0aWF3YW4tcGVyYWsvMTQ0MjUwIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgIDxwPiBEaXJlY3Rpb25zIDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vbWFwcy9kaXIvLzQuMTg0MDA1LDEwMC43MDcxODQ5IiB0YXJnZXQ9d2luZG93Lm5hbWU+IEdPIDwvYT48L3A+CgogICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_ddc245228693e9d97436641ff16d4c15.setContent(i_frame_e1252cf79a2d6c673191e1b54fe1cb14);
-            
-        
-
-        marker_f16df156a007ceb6e59521ffde9be109.bindPopup(popup_ddc245228693e9d97436641ff16d4c15)
-        ;
-
-        
-    
-    
-            var marker_1b1b160c57f53b6257c4e2e1c9b7e8cd = L.marker(
-                [5.808886999999999, 102.1470772],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_59f7a526e1402407f7d9d519b110dcff = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_1b1b160c57f53b6257c4e2e1c9b7e8cd.setIcon(custom_icon_59f7a526e1402407f7d9d519b110dcff);
-        
-    
-        var popup_04dad9a1f2d605560256b9844b0b8627 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_5e51293318bc41130b6dde2c1bf451ac = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTA0LTI1IDA5OjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA0NzQwMi4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IDEgU3RvcmV5IFNlbWkgRGV0YWNoZWQgSG91c2UgPC9oMj4KICAgICAgICAgICAgICAgIDxoMT4gUFQgOTUyNywgUGFzaXIgR2VuZGEsIEthbXB1bmcgQnVraXQgQmF0dSwgMTc1MDAgVGFuYWggTWVyYWgsIEtlbGFudGFuIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMDEwPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBGcmVlaG9sZCwgNDElIEJNViwgNTkyMCBzcWZ0IGxhbmQsIE5vbi1MQUNBIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IGxpc3Rpbmdfc3RhdHVzIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IFRhbmFoIE1lcmFoLCBLZWxhbnRhbiwgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cuYmlkbm93Lm15L2F1Y3Rpb24tcHJvcGVydHkvcGFzaXItZ2VuZGEta2FtcHVuZy1idWtpdC1iYXR1LTE3NTAwLXRhbmFoLW1lcmFoLWtlbGFudGFuLzE0MzgwMyIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICA8cD4gRGlyZWN0aW9ucyA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL21hcHMvZGlyLy81LjgwODg4Njk5OTk5OTk5OSwxMDIuMTQ3MDc3MiIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBHTyA8L2E+PC9wPgoKICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_04dad9a1f2d605560256b9844b0b8627.setContent(i_frame_5e51293318bc41130b6dde2c1bf451ac);
-            
-        
-
-        marker_1b1b160c57f53b6257c4e2e1c9b7e8cd.bindPopup(popup_04dad9a1f2d605560256b9844b0b8627)
-        ;
-
-        
-    
-    
-            var marker_27b4f09baee72e8aac6a5d253d4b8112 = L.marker(
-                [5.8148803, 102.0995268],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_3fd4d6b8c05aead84da6d638cf8ed173 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_27b4f09baee72e8aac6a5d253d4b8112.setIcon(custom_icon_3fd4d6b8c05aead84da6d638cf8ed173);
-        
-    
-        var popup_d2e6bd4a1f19bbfeecc3f97d434eccf5 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_2e23460623ec8ab35149bf46c11effad = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTA0LTI1IDA5OjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA4NzQ4MC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IFRlcnJhY2UgSG91c2UgPC9oMj4KICAgICAgICAgICAgICAgIDxoMT4gUFQgNDQ0MSwgVGFtYW4gRGVzYSBVdGFtYSwgMTc1MDAgVGFuYWggTWVyYWgsIEtlbGFudGFuIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMzUyPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBGcmVlaG9sZCwgMzIlIEJNViwgMTM5OSBzcWZ0IGxhbmQsIE5vbi1MQUNBIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IGxpc3Rpbmdfc3RhdHVzIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IFVubmFtZWQgUm9hZCwgVGFuYWggTWVyYWgsIDE3NTAwIFRhbmFoIE1lcmFoLCBLZWxhbnRhbiwgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cuYmlkbm93Lm15L2F1Y3Rpb24tcHJvcGVydHkvdGFtYW4tZGVzYS11dGFtYS0xNzUwMC10YW5haC1tZXJhaC1rZWxhbnRhbi8xNDM4MDIiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgPHA+IERpcmVjdGlvbnMgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8vNS44MTQ4ODAzLDEwMi4wOTk1MjY4IiB0YXJnZXQ9d2luZG93Lm5hbWU+IEdPIDwvYT48L3A+CgogICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_d2e6bd4a1f19bbfeecc3f97d434eccf5.setContent(i_frame_2e23460623ec8ab35149bf46c11effad);
-            
-        
-
-        marker_27b4f09baee72e8aac6a5d253d4b8112.bindPopup(popup_d2e6bd4a1f19bbfeecc3f97d434eccf5)
-        ;
-
-        
-    
-    
-            var marker_e678a619b79e63c881e386499ce31999 = L.marker(
-                [6.042412, 102.142782],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_9401dc5463d7e17b2ad3a57ab0988a57 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_e678a619b79e63c881e386499ce31999.setIcon(custom_icon_9401dc5463d7e17b2ad3a57ab0988a57);
-        
-    
-        var popup_cb4beaa5c7782813b935e1a6e6aa1782 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_f21ae0011c58936bc6bd613c2a11b884 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTA0LTI1IDA5OjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA4MDE5MC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IDEgU3RvcmV5IFRlcnJhY2UgSG91c2UgPC9oMj4KICAgICAgICAgICAgICAgIDxoMT4gUFQgMzk4OCwgVGFtYW4gRGVzYSBBc3lyYWYsIDE3MDcwIFBhc2lyIE1hcywgS2VsYW50YW4gPC9oMT4KICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDg4MDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPm90aGVycz0gRnJlZWhvbGQsIDI5JSBCTVYsIDEzMDIgc3FmdCBsYW5kLCBOb24tTEFDQSA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBsaXN0aW5nX3N0YXR1cyA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSBQYXNpciBNYXMsIEtlbGFudGFuLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5iaWRub3cubXkvYXVjdGlvbi1wcm9wZXJ0eS90YW1hbi1kZXNhLWFzeXJhZi0xNzA3MC1wYXNpci1tYXMta2VsYW50YW4vMTQzODAxIiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgIDxwPiBEaXJlY3Rpb25zIDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vbWFwcy9kaXIvLzYuMDQyNDEyLDEwMi4xNDI3ODIiIHRhcmdldD13aW5kb3cubmFtZT4gR08gPC9hPjwvcD4KCiAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_cb4beaa5c7782813b935e1a6e6aa1782.setContent(i_frame_f21ae0011c58936bc6bd613c2a11b884);
-            
-        
-
-        marker_e678a619b79e63c881e386499ce31999.bindPopup(popup_cb4beaa5c7782813b935e1a6e6aa1782)
-        ;
-
-        
-    
-    
-            var marker_071b29cc2fd099a321881962ed17d48f = L.marker(
-                [2.7487999, 103.5290538],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_781ebe14062670518d0e18309f65874f = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_071b29cc2fd099a321881962ed17d48f.setIcon(custom_icon_781ebe14062670518d0e18309f65874f);
-        
-    
-        var popup_402cf93c84b37a48ab4643bd8b587b31 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_a4b65b5bfc010f0bf5e0d432ae171484 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTI1IDA5OjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA4MTAwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IFRlcnJhY2UgSG91c2UgPC9oMj4KICAgICAgICAgICAgICAgIDxoMT4gTm8uIDk5LCBMb3JvbmcgUG9udGlhbiBKYXlhIDYsIFBQUk0gUGFyaXQgUmFqYSwgMjY4MDAsIEt1YWxhIFJvbXBpbiwgUGFoYW5nIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMDE1PC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBMZWFzZWhvbGQsIE4vQSwgTi9BLCBOb24tTEFDQSA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT4gc3RhdHVzPSBsaXN0aW5nX3N0YXR1cyA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5Gb3JtYXR0ZWRBZGRyZXNzPSA5OSwgTG9yb25nIFBvbnRpYW4gSmF5YSA2LCBLYW1wdW5nIE9yYW5nIEFzbGkgQmF0dSA4LCAyNjgwMCBLdWFsYSBSb21waW4sIFBhaGFuZywgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cuYmlkbm93Lm15L2F1Y3Rpb24tcHJvcGVydHkvbG9yb25nLXBvbnRpYW4tamF5YS02LXBwcm0tcGFyaXQtcmFqYS0yNjgwMC1rdWFsYS1yb21waW4tcGFoYW5nLzE0MzQ0NyIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICA8cD4gRGlyZWN0aW9ucyA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL21hcHMvZGlyLy8yLjc0ODc5OTksMTAzLjUyOTA1MzgiIHRhcmdldD13aW5kb3cubmFtZT4gR08gPC9hPjwvcD4KCiAgICAgICAgICAgICAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_402cf93c84b37a48ab4643bd8b587b31.setContent(i_frame_a4b65b5bfc010f0bf5e0d432ae171484);
-            
-        
-
-        marker_071b29cc2fd099a321881962ed17d48f.bindPopup(popup_402cf93c84b37a48ab4643bd8b587b31)
-        ;
-
-        
-    
-    
-            var marker_b9a1065d9d17c50f1e549143eb30e407 = L.marker(
-                [5.827913, 102.148173],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_366a3564c4c9e94203d87120e41088d3 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_b9a1065d9d17c50f1e549143eb30e407.setIcon(custom_icon_366a3564c4c9e94203d87120e41088d3);
-        
-    
-        var popup_d8f3723d5dc8f7ed42e9095e78e39f2c = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_6ed817a5176997a04e064e6e93fc9cad = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTA0LTI0IDA5OjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA0MjI4Mi4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IFNob3AgSG91c2UgPC9oMj4KICAgICAgICAgICAgICAgIDxoMT4gTG90IDI1MTYsIFRhbWFuIE1ha2EsIDE3NTAwLCBUYW5haCBNZXJhaCwgS2VsYW50YW4gPC9oMT4KICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDI5NjI8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IEZyZWVob2xkLCA0NCUgQk1WLCAxNjAzIHNxZnQgbGFuZCwgTm9uLUxBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gVGFtYW4gTWFrYSwgMTc1MDAgVGFuYWggTWVyYWgsIEtlbGFudGFuLCBNYWxheXNpYSA8L2xpPiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHA+TW9yZSBkZXRhaWxzICA8YSBocmVmPSJodHRwczovL3d3dy5iaWRub3cubXkvYXVjdGlvbi1wcm9wZXJ0eS90YW1hbi1tYWthLTE3NTAwLXRhbmFoLW1lcmFoLWtlbGFudGFuLzE0MzIzMyIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBjbGljayBoZXJlIDwvYT48L3A+CiAgICAgICAgICAgICAgICA8cD4gRGlyZWN0aW9ucyA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL21hcHMvZGlyLy81LjgyNzkxMywxMDIuMTQ4MTczIiB0YXJnZXQ9d2luZG93Lm5hbWU+IEdPIDwvYT48L3A+CgogICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_d8f3723d5dc8f7ed42e9095e78e39f2c.setContent(i_frame_6ed817a5176997a04e064e6e93fc9cad);
-            
-        
-
-        marker_b9a1065d9d17c50f1e549143eb30e407.bindPopup(popup_d8f3723d5dc8f7ed42e9095e78e39f2c)
-        ;
-
-        
-    
-    
-            var marker_03eac749c2f783c49ddf5fe2005bd4ca = L.marker(
-                [5.913658, 102.245072],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_fb5b5dc87bd8ef0eb98ecd668f5c82cd = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_03eac749c2f783c49ddf5fe2005bd4ca.setIcon(custom_icon_fb5b5dc87bd8ef0eb98ecd668f5c82cd);
-        
-    
-        var popup_9eaabc45bbdd2288ce4ec56a11c14980 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_01a592cc9df708768d3c432333204e93 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTA0LTAyIDA5OjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA5MDAwMC4wMCA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IDEgU3RvcmV5IFRlcnJhY2UgSG91c2UgPC9oMj4KICAgICAgICAgICAgICAgIDxoMT4gUFQuIDE0MDQsIFRhbWFuIFNyaSBLYWxvbmcsIEtvayBMYW5hcywgMTY0NTAgS290YSBCaGFydSwgS2VsYW50YW4gPC9oMT4KICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDEwNDA8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IEZyZWVob2xkLCBOL0EsIE4vQSwgTm9uLUxBQ0EgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+IHN0YXR1cz0gbGlzdGluZ19zdGF0dXMgPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+Rm9ybWF0dGVkQWRkcmVzcz0gS29rIExhbmFzLCBLZXRlcmVoLCBLZWxhbnRhbiwgTWFsYXlzaWEgPC9saT4gICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgIDxwPk1vcmUgZGV0YWlscyAgPGEgaHJlZj0iaHR0cHM6Ly93d3cuYmlkbm93Lm15L2F1Y3Rpb24tcHJvcGVydHkvdGFtYW4tc3JpLWthbG9uZy1rb2stbGFuYXMtMTY0NTAta290YS1iaGFydS1rZWxhbnRhbi8xNDE0ODEiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgPHA+IERpcmVjdGlvbnMgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8vNS45MTM2NTgsMTAyLjI0NTA3MiIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBHTyA8L2E+PC9wPgoKICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_9eaabc45bbdd2288ce4ec56a11c14980.setContent(i_frame_01a592cc9df708768d3c432333204e93);
-            
-        
-
-        marker_03eac749c2f783c49ddf5fe2005bd4ca.bindPopup(popup_9eaabc45bbdd2288ce4ec56a11c14980)
-        ;
-
-        
-    
-    
-            var marker_dbbf79966f7cc534847f6435fa87472e = L.marker(
-                [5.8018415, 102.1344349],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_d435a7d0126db1546ee36ac4dc63b1e5 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_dbbf79966f7cc534847f6435fa87472e.setIcon(custom_icon_d435a7d0126db1546ee36ac4dc63b1e5);
-        
-    
-        var popup_b884a0697bc0a5abc5c992572e61e615 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_a8d0b55fcd72ec847576f50f0917429b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTI3IDA5OjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSA3OTcxNi4xNSA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IDEgU3RvcmV5IERldGFjaGVkIEhvdXNlCgogPC9oMj4KICAgICAgICAgICAgICAgIDxoMT4gUFQgOTUyOCwgUGVydW1haGFuIEx1Ym9rIEFnb3IsIEthbXB1bmcgQnVraXQgQmF0dSwgMTc1MDAgVGFuYWggTWVyYWgsIEtlbGFudGFuIDwvaDE+CiAgICAgICAgICAgICAgICA8cD5EZXRhaWxzOi0gPC9wPgogICAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgICAgIDxsaT5idWlsZHVwPSAxMDEwPC9saT4KICAgICAgICAgICAgICAgICAgICA8bGk+b3RoZXJzPSBGcmVlaG9sZCwgMzQlIEJNViwgNTkyMCBzcWZ0IGxhbmQsIE5vbi1MQUNBIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IGxpc3Rpbmdfc3RhdHVzIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIEx1Ym9rLCAxNzUwMCBUYW5haCBNZXJhaCwgS2VsYW50YW4sIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJpZG5vdy5teS9hdWN0aW9uLXByb3BlcnR5L3BlcnVtYWhhbi1sdWJvay1hZ29yLWthbXB1bmctYnVraXQtYmF0dS0xNzUwMC10YW5haC1tZXJhaC1rZWxhbnRhbi8xNDA5OTAiIHRhcmdldD13aW5kb3cubmFtZT4gY2xpY2sgaGVyZSA8L2E+PC9wPgogICAgICAgICAgICAgICAgPHA+IERpcmVjdGlvbnMgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8vNS44MDE4NDE1LDEwMi4xMzQ0MzQ5IiB0YXJnZXQ9d2luZG93Lm5hbWU+IEdPIDwvYT48L3A+CgogICAgICAgICAgICAgICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_b884a0697bc0a5abc5c992572e61e615.setContent(i_frame_a8d0b55fcd72ec847576f50f0917429b);
-            
-        
-
-        marker_dbbf79966f7cc534847f6435fa87472e.bindPopup(popup_b884a0697bc0a5abc5c992572e61e615)
-        ;
-
-        
-    
-    
-            var marker_07aaa32a1853bd7d7cf4c984256dddf0 = L.marker(
-                [5.7114628, 102.1534795],
-                {}
-            ).addTo(map_311c72b65cb917aff7efbb02a8924404);
-        
-    
-        var custom_icon_14a547125339e6be9b20fddeb39961a1 = L.icon({"iconSize": [100, 65], "iconUrl": "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/main/Lelongtips/docs/secret.jpg"});
-        marker_07aaa32a1853bd7d7cf4c984256dddf0.setIcon(custom_icon_14a547125339e6be9b20fddeb39961a1);
-        
-    
-        var popup_2b45092a953d21abd25b7606a9bc3890 = L.popup({"maxWidth": 2650});
-
-        
-            
-                var i_frame_3dbeea24e756e9d35b8f102b81e54ebc = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgICAgIDxwPiAyMDI0LTAzLTIxIDA5OjAwIEFNIDwvcD4KICAgICAgICAgICAgICAgIDxwPiBSTSAyMTA5Mi45NiA8L3A+CiAgICAgICAgICAgICAgICA8aDI+IExhbmQgPC9oMj4KICAgICAgICAgICAgICAgIDxoMT4gTG90IDE0OTcsIEthbXB1bmcgUGVydG9rLCBNdWtpbSBLdWFsYSBLZXJhaywgMTg1MDAgTWFjaGFuZywgS2VsYW50YW4gPC9oMT4KICAgICAgICAgICAgICAgIDxwPkRldGFpbHM6LSA8L3A+CiAgICAgICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICAgICAgPGxpPmJ1aWxkdXA9IDQ0NDM8L2xpPgogICAgICAgICAgICAgICAgICAgIDxsaT5vdGhlcnM9IEZyZWVob2xkLCAzNCUgQk1WLCBOL0EsIE5vbi1MQUNBIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPiBzdGF0dXM9IGxpc3Rpbmdfc3RhdHVzIDwvbGk+CiAgICAgICAgICAgICAgICAgICAgPGxpPkZvcm1hdHRlZEFkZHJlc3M9IEphbGFuIGtlbXVuY2h1cCwgS2VtdW5jaHVwLCAxODQwMCBUZW1hbmdhbiwgS2VsYW50YW4sIE1hbGF5c2lhIDwvbGk+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8cD5Nb3JlIGRldGFpbHMgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJpZG5vdy5teS9hdWN0aW9uLXByb3BlcnR5L2thbXB1bmctcGVydG9rLW11a2ltLWt1YWxhLWtlcmFrLTE4NTAwLW1hY2hhbmcta2VsYW50YW4vMTQwOTQ0IiB0YXJnZXQ9d2luZG93Lm5hbWU+IGNsaWNrIGhlcmUgPC9hPjwvcD4KICAgICAgICAgICAgICAgIDxwPiBEaXJlY3Rpb25zIDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vbWFwcy9kaXIvLzUuNzExNDYyOCwxMDIuMTUzNDc5NSIgdGFyZ2V0PXdpbmRvdy5uYW1lPiBHTyA8L2E+PC9wPgoKICAgICAgICAgICAgICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
-                popup_2b45092a953d21abd25b7606a9bc3890.setContent(i_frame_3dbeea24e756e9d35b8f102b81e54ebc);
-            
-        
-
-        marker_07aaa32a1853bd7d7cf4c984256dddf0.bindPopup(popup_2b45092a953d21abd25b7606a9bc3890)
+        marker_1759779cb0b67e7c58843b296bb76748.bindPopup(popup_4814b0115902f724d27bcec6bb1d34dd)
         ;
 
         

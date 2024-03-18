@@ -5,6 +5,7 @@ import secrets
 import re
 import time
 import ujson
+import json5
 from datetime import datetime
 
 import googlemaps
@@ -40,7 +41,7 @@ icon_secret = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/ma
 icon_size_s = (100, 65)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = True
+testing = False
 
 
 class Main(object):
@@ -49,25 +50,27 @@ class Main(object):
     def user_runs_main_flow(self):
         # self.iprop_scrape()
         # self.lelongtips_scrape_demo()
-        # self.lelongtips_scrape()
+        self.lelongtips_scrape()
         self.bidnow_scrape()
+        self.git_controls()
 
-    def notify_me(self):
 
-        URL = "https://graph.facebook.com/v13.0/" + PHONE_ID + "/messages"
-        headers = {
-            "Authorization": "Bearer " + TOKEN,
-            "Content-Type": "application/json"
-        }
-        data = {
-            "messaging_product": "whatsapp",
-            "to": NUMBER,
-            "type": "text",
-            "text": json.dumps({"preview_url": False, "body": MESSAGE})
-        }
-        response = requests.post(URL, headers=headers, data=data)
-        response_json = response.json()
-        print(response_json)
+    # def notify_me(self):
+    #
+    #     URL = "https://graph.facebook.com/v13.0/" + PHONE_ID + "/messages"
+    #     headers = {
+    #         "Authorization": "Bearer " + TOKEN,
+    #         "Content-Type": "application/json"
+    #     }
+    #     data = {
+    #         "messaging_product": "whatsapp",
+    #         "to": NUMBER,
+    #         "type": "text",
+    #         "text": json.dumps({"preview_url": False, "body": MESSAGE})
+    #     }
+    #     response = requests.post(URL, headers=headers, data=data)
+    #     response_json = response.json()
+    #     print(response_json)
 
     def bidnow_scrape(self):
         operating_url = MAIN_URL_LLT_BIDNOW
@@ -81,18 +84,61 @@ class Main(object):
         draft_content = []
         if response.status_code == 200:
             body_result = response.text
-            print(str(body_result))
-            page_no_upper = self.set_pages(body_result)
-            draft_content = self.get_pages(page_no_upper, operating_url)
-            markers_secret = self.map_gen(draft_content)
-            self.map_gen_secret(markers_secret)
+            # parsed_html = BeautifulSoup(str(body_result))
+            # contents_raw = parsed_html.body.find_all('script', attrs={'type': 'e3a9f9b9bca13cf3f8671f8a-text/javascript'})
+            # print("body_result = " + str(body_result))
+            data_raw = re.findall("var aps = ({.*})", str(body_result))[0]
+            data_json = json5.loads(data_raw)
+            # data_refined = data_json['data']
+            page_no_upper = data_json['last_page']
+            draft_content = self.get_pages_bidnow(page_no_upper, operating_url)
+            # print("@@" + str(len(draft_content)))
+            # for key, value in draft_content.items():
+            #     print(str(key))
+            print("data_raw = " + str(draft_content))
+
+            # data_raw = re.findall("var aps = (.*)if ", str(body_result))[0]
+            # print(str(data_raw))
+            # page_no_upper = self.set_pages(body_result)
+
+            markers_easywin = self.map_gen_bidnow(draft_content)
+            self.map_gen_easywin(markers_easywin)
             # self.map_gen_nocomm(markers_nocomm)
-            self.git_controls()
+            ##self.git_controls()
             # self.notify_me()
             # print("Total number of records retrieved are ", len(body_result))
             # print("Response body= ", str(body_result))
         else:
             raise Exception("Initial load failed")
+
+    def get_pages_bidnow(self, page_no_upper, operating_url):
+        k = 0
+        draft_content = []
+        for i in range(1, int(page_no_upper) + 1):
+            # print("now i am at page " + str(i) + " with max page " + str(page_no_upper))
+            response = requests.get(
+                url=operating_url + str(i)
+            )
+
+            # response = common.trigger_api_request("GET", MAIN_URL + str(i), "")
+            body_result = response.text
+            # content_list = self.get_contents(body_result)
+            data_raw = re.findall("var aps = ({.*})", str(body_result))[0]
+            data_json = json5.loads(data_raw)
+            content_list = data_json['data']
+            # print(str(content_list))
+            draft_content = draft_content + content_list
+            sleep_time = secrets.choice(range(2, 5))
+            # print("i've slept for seconds= " + str(k) +" "+ str(sleep_time))
+            time.sleep(sleep_time)
+            k = k + 1
+            if k > 2 and testing:
+                break
+                # continue
+            #     raise Exception("Test end")
+        # print(str(draft_content))
+        return draft_content
+
     def lelongtips_scrape(self):
         operating_url = MAIN_URL_LLT
         if testing and TEST_URL:
@@ -110,7 +156,7 @@ class Main(object):
             markers_secret = self.map_gen(draft_content)
             self.map_gen_secret(markers_secret)
             # self.map_gen_nocomm(markers_nocomm)
-            self.git_controls()
+            # self.git_controls()
             # self.notify_me()
             # print("Total number of records retrieved are ", len(body_result))
             # print("Response body= ", str(body_result))
@@ -184,13 +230,128 @@ class Main(object):
 
         map.save(f"../../docs/fixit.html")
 
-
+    def map_gen_easywin(self, markers_easywin):
+        m_easywin = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
+        LocateControl().add_to(m_easywin)
+        for i in markers_easywin:
+            m_easywin.add_child(i)
+        m_easywin.save(f"../../docs/easywin.html")
     def map_gen_secret(self, markers_secret):
         m_secret = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
         LocateControl().add_to(m_secret)
         for i in markers_secret:
             m_secret.add_child(i)
         m_secret.save(f"../../docs/secret.html")
+
+    def map_gen_bidnow(self, draft_content):
+        markers_easywin = []
+        print("draft_content= " + str(len(draft_content)))
+        print("draft_content[0]= " + str(len(draft_content[0])))
+        geocode_data = {}
+        try:
+            geocode_data = ujson.load(open(f"../../docs/geocode_data.json"))
+        except Exception:
+            print("Not able to open geocode data file, check if it exists")
+        decode_new = 0
+        decode_old = 0
+        for i in draft_content:
+            print("objects of i = " + str(i))
+            location = {}
+            # loc = i['address']
+            loc = i['property']['full_address']
+            formatted_address_name = None
+            geolocator = Nominatim(user_agent="my_request")
+            geocode_result = {}
+            if geocode_data.get(loc, None):
+                geocode_result = geocode_data[loc]
+                decode_old = decode_old + 1
+            else:
+                geocode_result = gmaps.geocode(loc)
+                geocode_data.update({loc: geocode_result})
+                decode_new = decode_new + 1
+            try:
+                location_raw = geocode_result[0]['geometry']['location']
+            except:
+                continue
+            formatted_address_name = geocode_result[0]['formatted_address']
+            location.update({'latitude': location_raw['lat']})
+            location.update({'longitude': location_raw['lng']})
+            div_icon = None
+            latlong = str(location_raw['lat']) + ',' + str(location_raw['lng'])
+            # price = i['price']
+            price = i['reserved_price']
+            # build_up = i['build_up']
+            build_up = i['property']['built_up_size']
+            iframe_target = "DUD"
+            tenure = "N/A" if i['property']['ap_tenure_id'] == 3 else ("Leasehold" if i['property']['ap_tenure_id'] == 1 else "Freehold")
+            bmv = str(i['bmv_percent']) + "% BMV" if i['bmv_percent'] is not None else "N/A"
+            land_size = str(str(i['property']['land_area_size']) + " sqft land" if i['property']['land_area_size'] is not None else "N/A")
+            auction_type = str(i['auction_type']['name'] if i['auction_type']['name'] is not None else "N/A")
+            others = tenure + ', ' + bmv + ', ' + land_size + ', '+ auction_type
+            href = 'https://www.bidnow.my/auction-property/' + i['property']['slug_title'] + '/' + str(i['id'])
+            html = f"""
+                <p> {{3}} </p>
+                <p> RM {{4}} </p>
+                {{1}}
+                <h1> {{0}} </h1>
+                <p>Details:- </p>
+                <ul>
+                    <li>buildup= {{2}}</li>
+                    <li>others= {{6}} </li>
+                    <li> status= {{5}} </li>
+                    <li>FormattedAddress= {{7}} </li>                    
+                </ul>
+                </p>
+                <p>More details  <a href="{{8}}" target=window.name> click here </a></p>
+                <p> Directions <a href="https://www.google.com/maps/dir//{{10}}" target=window.name> GO </a></p>
+
+                """.format(i['property']['full_address'],
+                           # '<h2> ' + i['prop_type'] + ' </h2>' if i['prop_type'] else '',
+                           '<h2> ' + i['property']['description'] + ' </h2>' if i['property']['description'] else '',
+                           build_up,
+                           # i['date'],
+                           str(i['auction_date']) + ' ' + str(i['auction_time']),
+                           price,
+                           # i['listing_status'],
+                           'listing_status',
+                           others,
+                           formatted_address_name,
+                           # i['h_ref'],
+                           href,
+                           iframe_target,
+                           latlong)
+            popup = self.get_popup_element(html)
+            div_icon = folium.features.CustomIcon(icon_0_3, icon_size=icon_size_s)
+            # headline = f"""
+            #             <p><small> {{0}} </small></p>
+            #             """.format(result_string)
+            # footer_img = f"""
+            #             <img src="{{0}}" width="270" height="180">
+            #             """.format(in_depth['img'])
+
+            # refined_html = headline + html + footer_img
+            # popup = self.get_popup_element(refined_html)
+            div_icon = folium.features.CustomIcon(icon_secret, icon_size=icon_size_s)
+            add_marker = folium.Marker(
+                location=(location['latitude'], location['longitude']),
+                popup=popup,
+                icon=div_icon
+            )
+            markers_easywin.append(add_marker)
+        print("total old =" + str(decode_old))
+        print("total new =" + str(decode_new))
+        try:
+            ujson.dump(geocode_data, open(f"../../docs/geocode_data.json", 'w'))
+        except Exception:
+            print("Not able to save geocode data file for easywin, please check")
+        date_now = str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f"))
+        # date_file = re.sub(r'[^\w]', '', date_now)
+        # if testing:
+        #     m.save(f"../../docs/testing_easywin.html")
+        # else:
+        #     m.save(f"../../docs/easywin.html")
+        return markers_easywin
+
 
     def map_gen(self, draft_content):
         markers_secret = []
