@@ -1,0 +1,9 @@
+[ WARN ] Imported library 'C:\Users\r.a.ling\Documents\rckl-llt.github.io\Lelongtips\sherlock-dms\resources\TransactionFormula.py' contains no keywords.
+C:\Users\r.a.ling\Documents\rckl-llt.github.io\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:1174: SyntaxWarning: invalid escape sequence '\d'
+  if int(re.findall("(\d+)", info)[0]) > 2:
+C:\Users\r.a.ling\Documents\rckl-llt.github.io\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:1195: SyntaxWarning: invalid escape sequence '\d'
+  raw_str = re.findall("(\d+)",
+C:\Users\r.a.ling\Documents\rckl-llt.github.io\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:1215: SyntaxWarning: invalid escape sequence '\d'
+  content_details['price'] = ''.join(re.findall("\d+", self.handle_value(i, 'h4', 'class',
+C:\Users\r.a.ling\Documents\rckl-llt.github.io\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:1253: SyntaxWarning: invalid escape sequence '\d'
+  page_no_refined = re.findall("(\d)", page_no_raw)

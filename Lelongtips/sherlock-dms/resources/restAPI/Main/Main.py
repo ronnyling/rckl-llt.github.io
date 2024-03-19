@@ -41,7 +41,7 @@ icon_secret = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/ma
 icon_size_s = (100, 65)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = True
+testing = False
 
 
 class Main(object):
@@ -50,7 +50,7 @@ class Main(object):
     def user_runs_main_flow(self):
         # self.iprop_scrape()
         # self.lelongtips_scrape_demo()
-        self.lelongtips_scrape()
+        # self.lelongtips_scrape()
         self.bidnow_scrape()
         self.git_controls()
 
@@ -112,8 +112,8 @@ class Main(object):
             # self.notify_me()
             # print("Total number of records retrieved are ", len(body_result))
             # print("Response body= ", str(body_result))
-        else:
-            raise Exception("Initial load failed")
+        # else:
+        #     raise Exception("Initial load failed")
 
     def get_pages_bidnow(self, page_no_upper, operating_url):
         k = 0
