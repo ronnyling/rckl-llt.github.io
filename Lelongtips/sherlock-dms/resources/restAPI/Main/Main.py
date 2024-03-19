@@ -22,7 +22,7 @@ from robot.libraries.BuiltIn import BuiltIn
 # from resources.restAPI import PROTOCOL, APP_URL, COMMON_KEY, LLT_URL, LLT_TOKEN, GMAPS_TOKEN, PHONE_ID, TOKEN, NUMBER, \
 #     MESSAGE, TEST_URL
 # from resources.restAPI.Common import APIMethod
-from resources.restAPI.Main import PROTOCOL, LLT_URL, LLT_TOKEN, GMAPS_TOKEN, TEST_URL, BIDNOW_URL, BIDNOW_TEST_URL
+from resources.restAPI.Main import PROTOCOL, LLT_URL, LLT_TOKEN, GMAPS_TOKEN, TEST_URL, BIDNOW_URL, BIDNOW_TEST_URL, EASYWINS
 
 MAIN_URL_LLT = PROTOCOL + LLT_URL
 MAIN_URL_LLT_BIDNOW = PROTOCOL + BIDNOW_URL
@@ -73,25 +73,29 @@ class Main(object):
     #     print(response_json)
 
     def bidnow_scrape(self):
-        operating_url = MAIN_URL_LLT_BIDNOW
-        if testing and BIDNOW_TEST_URL:
-            operating_url = PROTOCOL + BIDNOW_TEST_URL
-
-        # print("url = xx" + str(operating_url) + " xx " + str(MAIN_URL_LLT) + " xx " + str(TEST_URL_LLT))
-        response = requests.get(
-            url=operating_url + str(1)
-        )
         draft_content = []
-        if response.status_code == 200:
-            body_result = response.text
-            # parsed_html = BeautifulSoup(str(body_result))
-            # contents_raw = parsed_html.body.find_all('script', attrs={'type': 'e3a9f9b9bca13cf3f8671f8a-text/javascript'})
-            # print("body_result = " + str(body_result))
-            data_raw = re.findall("var aps = ({.*})", str(body_result))[0]
-            data_json = json5.loads(data_raw)
-            # data_refined = data_json['data']
-            page_no_upper = data_json['last_page']
-            draft_content = self.get_pages_bidnow(page_no_upper, operating_url)
+        for plantiff in EASYWINS:
+            if testing and BIDNOW_TEST_URL:
+                operating_url = PROTOCOL + BIDNOW_TEST_URL
+            else:
+                operating_url = MAIN_URL_LLT_BIDNOW
+
+            # print("url = xx" + str(operating_url) + " xx " + str(MAIN_URL_LLT) + " xx " + str(TEST_URL_LLT))
+            response = requests.get(
+                url=(operating_url + str(1)).format(plantiff)
+            )
+            if response.status_code == 200:
+                body_result = response.text
+                # parsed_html = BeautifulSoup(str(body_result))
+                # contents_raw = parsed_html.body.find_all('script', attrs={'type': 'e3a9f9b9bca13cf3f8671f8a-text/javascript'})
+                # print("body_result = " + str(body_result))
+                data_raw = re.findall("var aps = ({.*})", str(body_result))[0]
+                data_json = json5.loads(data_raw)
+                # data_refined = data_json['data']
+                page_no_upper = data_json['last_page']
+                draft_content = draft_content + self.get_pages_bidnow(page_no_upper, operating_url)
+                if testing and BIDNOW_TEST_URL:
+                    break
             # print("@@" + str(len(draft_content)))
             # for key, value in draft_content.items():
             #     print(str(key))
