@@ -50,7 +50,7 @@ class Main(object):
     def user_runs_main_flow(self):
         # self.iprop_scrape()
         # self.lelongtips_scrape_demo()
-        # self.lelongtips_scrape()
+        self.lelongtips_scrape()
         self.bidnow_scrape()
         self.git_controls()
 
@@ -99,7 +99,7 @@ class Main(object):
             # print("@@" + str(len(draft_content)))
             # for key, value in draft_content.items():
             #     print(str(key))
-            print("data_raw = " + str(draft_content))
+            # print("data_raw = " + str(draft_content))
 
             # data_raw = re.findall("var aps = (.*)if ", str(body_result))[0]
             # print(str(data_raw))
