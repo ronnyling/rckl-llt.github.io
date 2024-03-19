@@ -41,7 +41,7 @@ icon_secret = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/ma
 icon_size_s = (100, 65)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = False
+testing = True
 
 
 class Main(object):
@@ -74,7 +74,7 @@ class Main(object):
 
     def bidnow_scrape(self):
         draft_content = []
-        for plantiff in EASYWINS:
+        for plaintiff in EASYWINS:
             if testing and BIDNOW_TEST_URL:
                 operating_url = PROTOCOL + BIDNOW_TEST_URL
             else:
@@ -82,7 +82,7 @@ class Main(object):
 
             # print("url = xx" + str(operating_url) + " xx " + str(MAIN_URL_LLT) + " xx " + str(TEST_URL_LLT))
             response = requests.get(
-                url=(operating_url + str(1)).format(plantiff)
+                url=(operating_url + str(1)).format(plaintiff)
             )
             if response.status_code == 200:
                 body_result = response.text
