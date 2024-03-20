@@ -249,8 +249,8 @@ class Main(object):
 
     def map_gen_bidnow(self, draft_content):
         markers_easywin = []
-        print("draft_content= " + str(len(draft_content)))
-        print("draft_content[0]= " + str(len(draft_content[0])))
+        # print("draft_content= " + str(len(draft_content)))
+        # print("draft_content[0]= " + str(len(draft_content[0])))
         geocode_data = {}
         try:
             geocode_data = ujson.load(open(f"../../docs/geocode_data.json"))
