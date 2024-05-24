@@ -7,3 +7,13 @@ C:\Users\r.a.ling\Documents\rckl-llt.github.io\Lelongtips\sherlock-dms\resources
   content_details['price'] = ''.join(re.findall("\d+", self.handle_value(i, 'h4', 'class',
 C:\Users\r.a.ling\Documents\rckl-llt.github.io\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:1278: SyntaxWarning: invalid escape sequence '\d'
   page_no_refined = re.findall("(\d)", page_no_raw)
+C:\Users\r.a.ling\Documents\rckl-llt.github.io\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:1185: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 1185 of the file C:\Users\r.a.ling\Documents\rckl-llt.github.io\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py. To get rid of this warning, pass the additional argument 'features="lxml"' to the BeautifulSoup constructor.
+
+  parsed_html = BeautifulSoup(body_text)
+C:\Users\r.a.ling\Documents\rckl-llt.github.io\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py:1147: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 1147 of the file C:\Users\r.a.ling\Documents\rckl-llt.github.io\Lelongtips\sherlock-dms\resources\restAPI\Main\Main.py. To get rid of this warning, pass the additional argument 'features="lxml"' to the BeautifulSoup constructor.
+
+  parsed_html = BeautifulSoup(body_result)
