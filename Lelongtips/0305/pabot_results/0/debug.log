@@ -1,0 +1,10 @@
+==============================================================================
+2024-05-24 10:08:31.702410 - INFO - + START SUITE: Main
+==============================================================================
+2024-05-24 10:08:36.919242 - INFO - +- START TEST: 1 - Executes Main flow
+------------------------------------------------------------------------------
+2024-05-24 10:08:36.919242 - INFO - +-- START KEYWORD: Main.When user runs main flow [ ]
+2024-05-24 10:08:36.922543 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+2024-05-24 10:08:38.127026 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&state=kl_sel&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&page=11 HTTP/1.1" 200 None
+2024-05-24 10:08:38.140577 - DEBUG - Starting new HTTPS connection (1): www.lelongtips.com.my:443
+2024-05-24 10:08:39.132399 - DEBUG - https://www.lelongtips.com.my:443 "GET /search?keyword=&property_type%5B%5D=1&property_type%5B%5D=4&property_type%5B%5D=5&property_type%5B%5D=3&state=kl_sel&min_price=150000&max_price=1000000&min_size=&max_size=&sort=price-asc&page=11 HTTP/1.1" 200 None

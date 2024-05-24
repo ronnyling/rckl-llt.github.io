@@ -41,7 +41,7 @@ icon_secret = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/ma
 icon_size_s = (100, 65)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = False
+testing = True
 
 
 class Main(object):
@@ -157,8 +157,9 @@ class Main(object):
             body_result = response.text
             page_no_upper = self.set_pages(body_result)
             draft_content = self.get_pages(page_no_upper, operating_url)
-            markers_secret = self.map_gen(draft_content)
-            self.map_gen_secret(markers_secret)
+            markers_master = self.map_gen(draft_content)
+            self.map_gen_secret(markers_master['secret'])
+            self.map_gen_opportunity(markers_master['opportunity'])
             # self.map_gen_nocomm(markers_nocomm)
             # self.git_controls()
             # self.notify_me()
@@ -246,6 +247,12 @@ class Main(object):
         for i in markers_secret:
             m_secret.add_child(i)
         m_secret.save(f"../../docs/secret.html")
+    def map_gen_opportunity(self, markers_opportunity):
+        m_opportunity = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
+        LocateControl().add_to(m_opportunity)
+        for i in markers_opportunity:
+            m_opportunity.add_child(i)
+        m_opportunity.save(f"../../docs/opportunity.html")
 
     def map_gen_bidnow(self, draft_content):
         markers_easywin = []
@@ -358,7 +365,9 @@ class Main(object):
 
 
     def map_gen(self, draft_content):
+        markers_master = {}
         markers_secret = []
+        markers_opportunity = []
         m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
         LocateControl().add_to(m)
         folium.TileLayer('openstreetmap').add_to(m)
@@ -710,6 +719,7 @@ class Main(object):
                     # print("i am in okay price " + html)
                     price = float(price)
                     build_up = float(build_up)
+
                     if price < 300000 and not i['tags'] == 'attention':
                         i['tags'] = "lrd"
                         # add_marker = folium.Marker(
@@ -757,6 +767,19 @@ class Main(object):
                         #                 <div>
                         #                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
                         #                 </div>"""
+
+                    # lazy criteria
+                    if i['prop_type'] and (re.findall(".*(walk).*", i['prop_type']) or \
+                        re.findall(".*(station).*", i['prop_type'])):
+                        div_icon = folium.features.CustomIcon(icon_0_3, icon_size=icon_size_s)
+                        add_marker = folium.Marker(
+                            location=(location['latitude'], location['longitude']),
+                            popup=popup,
+                            icon=div_icon
+                        )
+                        markers_opportunity.append(add_marker)
+
+
                     if i['prop_type'] and (
                             re.findall(".*(torey).*", i['prop_type']) or re.findall(".*(tory).*", i['prop_type'])):
                         div_icon = folium.features.CustomIcon(icon_0_3, icon_size=icon_size_s)
@@ -872,7 +895,9 @@ class Main(object):
         else:
             m.save(f"../../docs/index.html")
         # m.save(f"../../docs/LLT_" + date_file + ".html")
-        return markers_secret
+        markers_master['secret'] = markers_secret
+        markers_master['opportunity'] = markers_opportunity
+        return markers_master
 
     def get_popup_element(self, html):
         iframe = folium.IFrame(html=html, width=300, height=200)
