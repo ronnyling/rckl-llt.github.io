@@ -7,6 +7,7 @@ import time
 import ujson
 import json5
 from datetime import datetime
+import geopy.distance
 
 import googlemaps
 from folium.plugins import MarkerCluster, LocateControl
@@ -41,7 +42,7 @@ icon_secret = "https://raw.githubusercontent.com/ronnyling/rckl-llt.github.io/ma
 icon_size_s = (100, 65)
 icon_size = (35, 35)
 today_date = datetime.today().date()
-testing = False
+testing = True
 
 
 class Main(object):
@@ -159,6 +160,7 @@ class Main(object):
             draft_content = self.get_pages(page_no_upper, operating_url)
             markers_master = self.map_gen(draft_content)
             self.map_gen_custom(markers_master)
+            self.map_gen_public_transport(markers_master)
             # self.map_gen_nocomm(markers_nocomm)
             # self.git_controls()
             # self.notify_me()
@@ -241,6 +243,23 @@ class Main(object):
             m_easywin.add_child(i)
         m_easywin.save(f"../../docs/easywin.html")
     def map_gen_custom(self, markers_master):
+        markers_secret = markers_master['secret']
+        markers_opportunity = markers_master['opportunity']
+
+        m_secret = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
+        LocateControl().add_to(m_secret)
+        for i in markers_secret:
+            m_secret.add_child(i)
+        m_secret.save(f"../../docs/secret.html")
+
+        m_opportunity = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
+        LocateControl().add_to(m_opportunity)
+        for i in markers_opportunity:
+            m_opportunity.add_child(i)
+        m_opportunity.save(f"../../docs/opportunity.html")
+
+        # pt_working = ujson.load(open(f"../../docs/public transport.json"))
+    def map_gen_public_transport(self, markers_master):
         markers_secret = markers_master['secret']
         markers_opportunity = markers_master['opportunity']
 
@@ -367,6 +386,7 @@ class Main(object):
 
 
     def map_gen(self, draft_content):
+        public_transport_working_file = []
         markers_secret = []
         markers_opportunity = []
         m = folium.Map(location=(3.064119, 101.669488), tiles="OpenStreetMap", zoom_start=10,control_scale=True)
@@ -699,6 +719,16 @@ class Main(object):
                 # iframe = folium.IFrame(html=html, width=300, height=200)
                 # popup = folium.Popup(iframe, max_width=2650)
                 popup = self.get_popup_element(html)
+
+                #gathering lat long for public transport working file
+                # location['latitude'], location['longitude']
+                property ={}
+                property['html'] = html
+                property['lat'] = location['latitude']
+                property['lng'] = location['longitude']
+                property['name'] = i['prop_name']
+                public_transport_working_file.append(property)
+
                 # m_secret
                 if not price or not build_up:
                     # print("i am in not price " + html)
@@ -912,6 +942,8 @@ class Main(object):
         else:
             m.save(f"../../docs/index.html")
         # m.save(f"../../docs/LLT_" + date_file + ".html")
+        ujson.dump(public_transport_working_file, open(f"../../docs/public transport.json", 'w'))
+
         marker_master = {}
         marker_master['secret'] = markers_secret
         marker_master['opportunity'] = markers_opportunity
