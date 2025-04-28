@@ -2,83 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Property Auction Map</title>
+  
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.0/dist/leaflet.markercluster.css" />
+
   <style>
     #map { height: 100vh; }
     #sidebar { 
       position: absolute; 
-      top: 60px; 
+      top: 10px; 
       left: 10px; 
       background: rgba(255, 255, 255, 0.9); 
-      padding: 15px; 
+      padding: 20px; 
       z-index: 1000; 
       border-radius: 8px;
-      max-width: 250px;
-      display: none; /* Initially hidden */
+      max-height: 90vh;
+      overflow-y: auto;
+      width: 260px;
+      display: block;
     }
-    #toggle-sidebar {
+    #toggleSidebar {
       position: absolute;
       top: 10px;
-      left: 10px;
-      z-index: 1200;
-      background: #fff;
+      left: 280px;
+      z-index: 1100;
+      background: #007bff;
+      color: white;
       border: none;
-      padding: 6px 10px;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      border-radius: 8px;
+      padding: 8px 12px;
       cursor: pointer;
     }
     .filter-container { margin-bottom: 15px; }
     .filter-container label { font-weight: bold; }
     .filter-container select, .filter-container input { width: 100%; }
-    #save-filters { margin-top: 10px; width: 100%; }
   </style>
 </head>
 <body>
 
-<!-- Toggle Sidebar Button -->
-<button id="toggle-sidebar">Filters</button>
+<button id="toggleSidebar">☰ Filters</button>
 
-<!-- Sidebar -->
 <div id="sidebar">
   <h3>Filters</h3>
 
   <div class="filter-container">
     <label for="property-type">Property Type</label>
-    <select id="property-type"></select>
+    <select id="property-type">
+      <option value="">All Types</option>
+    </select>
   </div>
 
   <div class="filter-container">
-    <label for="auction-date">Auction Date</label>
-    <input type="date" id="auction-date">
+    <label for="auction-start">Auction Start Date</label>
+    <input type="date" id="auction-start">
   </div>
 
   <div class="filter-container">
-    <label for="price-range">Price Range (RM)</label>
-    <input type="range" id="price-range" min="0" max="10000000" step="100000" />
+    <label for="auction-end">Auction End Date</label>
+    <input type="date" id="auction-end">
+  </div>
+
+  <div class="filter-container">
+    <label for="price-range">Max Price (RM)</label>
+    <input type="range" id="price-range" min="0" max="10000000" step="100000">
     <div id="price-output">RM 0 - RM 10,000,000</div>
   </div>
 
   <div class="filter-container">
-    <label for="tenure">Tenure</label>
-    <select id="tenure"></select>
+    <label for="builtup-range">Max Built-up (sq.ft)</label>
+    <input type="range" id="builtup-range" min="0" max="10000" step="100">
+    <div id="builtup-output">0 - 10,000 sq.ft</div>
   </div>
 
   <div class="filter-container">
-    <label for="transit">Nearby Transit Station</label>
-    <select id="transit"></select>
+    <label for="tenure">Tenure</label>
+    <select id="tenure">
+      <option value="">All</option>
+      <option value="FH">Freehold (FH)</option>
+      <option value="LH">Leasehold (LH)</option>
+    </select>
+  </div>
+
+  <div class="filter-container">
+    <label for="auction-type">Auction Type</label>
+    <select id="auction-type">
+      <option value="">All Types</option>
+    </select>
+  </div>
+
+  <div class="filter-container">
+    <label for="transit">Transit Station</label>
+    <select id="transit" multiple>
+    </select>
   </div>
 
   <button id="save-filters">Save Filters</button>
   <button id="reset-filters">Reset Filters</button>
-  <button id="reload-kml">Reload KML</button>
+  <button id="reload-kml">Reload Map</button>
 </div>
 
-<!-- Map -->
 <div id="map"></div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -89,134 +114,178 @@
 <script>
 const map = L.map('map').setView([3.139, 101.6869], 12);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; OpenStreetMap contributors'
+  attribution: '&copy; OpenStreetMap'
 }).addTo(map);
 
 const markersCluster = L.markerClusterGroup();
-
 let allMarkers = [];
-let propertyTypes = new Set();
-let tenures = new Set();
-let transitStations = new Set();
 
 function loadKML() {
   markersCluster.clearLayers();
   allMarkers = [];
-  propertyTypes.clear();
-  tenures.clear();
-  transitStations.clear();
 
   omnivore.kml('auction_listings.kml')
-    .on('ready', function (e) {
-      const layers = e.target.getLayers();
-
-      layers.forEach(function (layer) {
+    .on('ready', function(e) {
+      e.target.getLayers().forEach(layer => {
         const property = layer.feature.properties;
         const description = property.description.replace(/<br\s*\/?>/gi, '\n');
-        const lines = description.split('\n').map(l => l.trim()).filter(l => l);
-
-        let item = {transits: []};
+        const name = property.name.trim();
+        const lines = description.split('\n').map(l => l.trim()).filter(l => l !== '');
+        
+        let price = 0, builtUp = 0, auctionDate = '', auctionType = '', tenure = '', transits = [];
 
         lines.forEach(line => {
-          if (line.includes('Property Type:')) item.propertyType = line.split(':')[1].trim();
-          if (line.includes('Tenure:')) item.tenure = line.split(':')[1].trim();
-          if (line.includes('Auction Date:')) item.auctionDate = line.split(':')[1].trim();
-          if (line.includes('Price:') && !line.includes('Price per Sq.Ft')) item.price = line.split(':')[1].trim().replace('RM','').replace(/,/g,'').trim();
-          if (line.includes('Top 5 Nearest Transit Stations:')) item.collectingTransit = true;
-          else if (item.collectingTransit && line) item.transits.push(line);
-          if (item.transits.length >= 5) item.collectingTransit = false;
+          if (line.startsWith('Price:')) {
+            const raw = line.split('Price:')[1].replace('Starting Bid','').replace('RM','').replace(/,/g,'').trim();
+            price = parseFloat(raw) || 0;
+          } else if (line.startsWith('Built-up:')) {
+            builtUp = parseFloat(line.split(':')[1].replace('sq.ft','').replace(',','').trim()) || 0;
+          } else if (line.startsWith('Auction Date:')) {
+            auctionDate = line.split(':')[1].trim();
+          } else if (line.startsWith('Auction Type:')) {
+            auctionType = line.split(':')[1].trim();
+          } else if (line.startsWith('Tenure:')) {
+            tenure = line.split(':')[1].trim();
+          } else if (!line.includes(':') && line.includes('(')) {
+            transits.push(line);
+          }
         });
 
-        item.layer = layer;
-        allMarkers.push(item);
+        const lat = layer.feature.geometry.coordinates[1];
+        const lng = layer.feature.geometry.coordinates[0];
 
-        propertyTypes.add(item.propertyType);
-        tenures.add(item.tenure);
-        item.transits.forEach(t => transitStations.add(t));
+        if (isNaN(lat) || isNaN(lng)) return;
 
-        layer.bindPopup(`
-          <strong>${item.propertyType || ''}</strong><br>
-          Auction Date: ${item.auctionDate || ''}<br>
-          Price: RM ${item.price || ''}<br>
-          Tenure: ${item.tenure || ''}<br>
-          Nearby Transits:<br><ul>${item.transits.map(t => `<li>${t}</li>`).join('')}</ul>
-        `);
+        layer.bindPopup(`<strong>${name}</strong><br>
+          Price: RM ${price.toLocaleString()}<br>
+          Built-up: ${builtUp} sq.ft<br>
+          Auction Date: ${auctionDate}<br>
+          Auction Type: ${auctionType}<br>
+          Tenure: ${tenure}<br>
+          Top Transit: ${transits.join('<br>')}`);
 
+        layer.options.customData = { price, builtUp, auctionDate, auctionType, tenure, name, transits };
+        
         markersCluster.addLayer(layer);
+        allMarkers.push(layer);
       });
 
       map.addLayer(markersCluster);
-      populateFilters();
-      restoreSavedFilters();
+      populateDropdowns();
+      applySavedFilters();
     }).addTo(map);
 }
 
-function populateFilters() {
-  $('#property-type').html('<option value="">All Types</option>' + Array.from(propertyTypes).map(pt => `<option value="${pt}">${pt}</option>`).join(''));
-  $('#tenure').html('<option value="">All Tenures</option>' + Array.from(tenures).map(t => `<option value="${t}">${t}</option>`).join(''));
-  $('#transit').html('<option value="">All Transits</option>' + Array.from(transitStations).map(tr => `<option value="${tr}">${tr}</option>`).join(''));
+function populateDropdowns() {
+  const propertyTypeSelect = $('#property-type');
+  const auctionTypeSelect = $('#auction-type');
+  const transitSelect = $('#transit');
+  
+  const types = new Set();
+  const auctions = new Set();
+  const stations = new Set();
+
+  allMarkers.forEach(m => {
+    types.add(m.options.customData.name);
+    auctions.add(m.options.customData.auctionType);
+    m.options.customData.transits.forEach(t => stations.add(t));
+  });
+
+  propertyTypeSelect.append([...types].sort().map(t => `<option value="${t}">${t}</option>`));
+  auctionTypeSelect.append([...auctions].sort().map(t => `<option value="${t}">${t}</option>`));
+  transitSelect.append([...stations].sort().map(t => `<option value="${t}">${t}</option>`));
 }
 
 function applyFilters() {
-  const selectedType = $('#property-type').val();
-  const selectedDate = $('#auction-date').val();
-  const selectedPrice = parseFloat($('#price-range').val());
-  const selectedTenure = $('#tenure').val();
-  const selectedTransit = $('#transit').val();
+  const type = $('#property-type').val();
+  const start = $('#auction-start').val();
+  const end = $('#auction-end').val();
+  const price = parseFloat($('#price-range').val()) || Infinity;
+  const builtup = parseFloat($('#builtup-range').val()) || Infinity;
+  const tenure = $('#tenure').val();
+  const auctionType = $('#auction-type').val();
+  const transitSelected = $('#transit').val() || [];
 
   markersCluster.clearLayers();
 
-  allMarkers.forEach(item => {
+  const filtered = allMarkers.filter(m => {
+    const d = m.options.customData;
+
     let match = true;
+    if (type && d.name !== type) match = false;
+    if (auctionType && d.auctionType !== auctionType) match = false;
+    if (tenure && d.tenure !== tenure) match = false;
+    if (d.price > price) match = false;
+    if (d.builtUp > builtup) match = false;
+    if (start && new Date(d.auctionDate.split('(')[0].trim()) < new Date(start)) match = false;
+    if (end && new Date(d.auctionDate.split('(')[0].trim()) > new Date(end)) match = false;
+    if (transitSelected.length > 0 && !d.transits.some(t => transitSelected.includes(t))) match = false;
 
-    if (selectedType && item.propertyType !== selectedType) match = false;
-    if (selectedTenure && item.tenure !== selectedTenure) match = false;
-    if (selectedTransit && !item.transits.includes(selectedTransit)) match = false;
-    if (!isNaN(selectedPrice) && item.price && parseFloat(item.price) > selectedPrice) match = false;
-    if (selectedDate && item.auctionDate !== selectedDate) match = false;
-
-    if (match) markersCluster.addLayer(item.layer);
+    return match;
   });
+
+  filtered.forEach(m => markersCluster.addLayer(m));
+
+  if (filtered.length > 0) {
+    const bounds = L.latLngBounds(filtered.map(m => m.getLatLng()));
+    map.fitBounds(bounds);
+  }
 }
 
 function saveFilters() {
   const filters = {
-    propertyType: $('#property-type').val(),
-    auctionDate: $('#auction-date').val(),
-    priceRange: $('#price-range').val(),
+    type: $('#property-type').val(),
+    start: $('#auction-start').val(),
+    end: $('#auction-end').val(),
+    price: $('#price-range').val(),
+    builtup: $('#builtup-range').val(),
     tenure: $('#tenure').val(),
+    auctionType: $('#auction-type').val(),
     transit: $('#transit').val()
   };
   localStorage.setItem('auctionFilters', JSON.stringify(filters));
 }
 
-function restoreSavedFilters() {
-  const saved = JSON.parse(localStorage.getItem('auctionFilters'));
-  if (saved) {
-    $('#property-type').val(saved.propertyType);
-    $('#auction-date').val(saved.auctionDate);
-    $('#price-range').val(saved.priceRange);
-    $('#tenure').val(saved.tenure);
-    $('#transit').val(saved.transit);
-    applyFilters();
-  }
+function applySavedFilters() {
+  const saved = localStorage.getItem('auctionFilters');
+  if (!saved) return;
+
+  const filters = JSON.parse(saved);
+  $('#property-type').val(filters.type);
+  $('#auction-start').val(filters.start);
+  $('#auction-end').val(filters.end);
+  $('#price-range').val(filters.price);
+  $('#builtup-range').val(filters.builtup);
+  $('#tenure').val(filters.tenure);
+  $('#auction-type').val(filters.auctionType);
+  $('#transit').val(filters.transit);
+
+  $('#price-output').text(`RM 0 - RM ${filters.price}`);
+  $('#builtup-output').text(`0 - ${filters.builtup} sq.ft`);
+
+  applyFilters();
 }
 
-$('#property-type, #auction-date, #price-range, #tenure, #transit').on('change', applyFilters);
+$('#property-type, #auction-start, #auction-end, #price-range, #builtup-range, #tenure, #auction-type, #transit').on('change input', applyFilters);
 $('#save-filters').on('click', saveFilters);
-$('#reset-filters').on('click', function() { localStorage.removeItem('auctionFilters'); location.reload(); });
-$('#reload-kml').on('click', loadKML);
-
-$('#price-range').on('input', function () {
+$('#reset-filters').on('click', function() {
+  localStorage.removeItem('auctionFilters');
+  location.reload();
+});
+$('#reload-kml').on('click', function() {
+  location.reload();
+});
+$('#price-range').on('input', function() {
   $('#price-output').text(`RM 0 - RM ${$(this).val()}`);
 });
-
-$('#toggle-sidebar').on('click', function() {
+$('#builtup-range').on('input', function() {
+  $('#builtup-output').text(`0 - ${$(this).val()} sq.ft`);
+});
+$('#toggleSidebar').on('click', function() {
   $('#sidebar').toggle();
 });
 
 loadKML();
 </script>
-
 </body>
 </html>
