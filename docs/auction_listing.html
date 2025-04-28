@@ -13,56 +13,65 @@
             position: absolute; 
             top: 10px; 
             left: 10px; 
-            background: rgba(255, 255, 255, 0.8); 
+            background: rgba(255, 255, 255, 0.9); 
             padding: 20px; 
             z-index: 1000; 
             border-radius: 8px;
+            max-width: 300px;
+        }
+        #filter-content {
+            margin-top: 10px;
+            display: block; /* visible by default */
         }
         .filter-container { margin-bottom: 15px; }
         .filter-container label { font-weight: bold; }
         .filter-container select, .filter-container input { width: 100%; }
+        button { margin-top: 10px; width: 100%; }
     </style>
 </head>
 <body>
 
     <!-- Sidebar for Filters -->
     <div id="sidebar">
-        <h3>Filters</h3>
+        <button onclick="toggleFilters()">Toggle Filters</button>
 
-        <div class="filter-container">
-            <label for="property-type">Property Type</label>
-            <select id="property-type">
-                <option value="">All Types</option>
-                <option value="Apartment">Apartment</option>
-                <option value="Retail Lot">Retail Lot</option>
-                <option value="Office">Office</option>
-                <option value="Industrial">Industrial</option>
-            </select>
+        <div id="filter-content">
+            <h3>Filters</h3>
+
+            <div class="filter-container">
+                <label for="property-type">Property Type</label>
+                <select id="property-type">
+                    <option value="">All Types</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Retail Lot">Retail Lot</option>
+                    <option value="Office">Office</option>
+                    <option value="Industrial">Industrial</option>
+                </select>
+            </div>
+
+            <div class="filter-container">
+                <label for="auction-date">Auction Date</label>
+                <input type="date" id="auction-date">
+            </div>
+
+            <div class="filter-container">
+                <label for="price-range">Price Range (RM)</label>
+                <input type="range" id="price-range" min="0" max="10000000" step="100000" />
+                <div id="price-output">RM 0 - RM 10,000,000</div>
+            </div>
+
+            <div class="filter-container">
+                <label for="tenure">Tenure</label>
+                <select id="tenure">
+                    <option value="">All Tenures</option>
+                    <option value="Freehold">Freehold</option>
+                    <option value="Leasehold">Leasehold</option>
+                </select>
+            </div>
+
+            <button id="reset-filters">Reset Filters</button>
+            <button id="reload-kml">Reload KML</button>
         </div>
-
-        <div class="filter-container">
-            <label for="auction-date">Auction Date</label>
-            <input type="date" id="auction-date">
-        </div>
-
-        <div class="filter-container">
-            <label for="price-range">Price Range (RM)</label>
-            <input type="range" id="price-range" min="0" max="10000000" step="100000" />
-            <div id="price-output">RM 0 - RM 10,000,000</div>
-        </div>
-
-        <div class="filter-container">
-            <label for="tenure">Tenure</label>
-            <select id="tenure">
-                <option value="">All Tenures</option>
-                <option value="Freehold">Freehold</option>
-                <option value="Leasehold">Leasehold</option>
-            </select>
-        </div>
-
-        <button id="reset-filters">Reset Filters</button>
-        <!-- Button to reload the KML file -->
-        <button id="reload-kml">Reload KML</button>
     </div>
 
     <!-- Map Container -->
@@ -74,202 +83,132 @@
     <script src="https://unpkg.com/leaflet.markercluster@1.5.0/dist/leaflet.markercluster.js"></script>
 
     <script>
-        // Initialize the map
-        const map = L.map('map').setView([3.139, 101.6869], 12); // Coordinates for Kuala Lumpur, Malaysia
+        // Collapsible Filter Panel
+        function toggleFilters() {
+            var filterContent = document.getElementById('filter-content');
+            if (filterContent.style.display === "none") {
+                filterContent.style.display = "block";
+            } else {
+                filterContent.style.display = "none";
+            }
+        }
 
-        // Add OpenStreetMap tile layer
+        // Cache filter values
+        function saveFilters() {
+            const filters = {
+                propertyType: document.getElementById('property-type').value,
+                auctionDate: document.getElementById('auction-date').value,
+                priceRange: document.getElementById('price-range').value,
+                tenure: document.getElementById('tenure').value
+            };
+            localStorage.setItem('auctionMapFilters', JSON.stringify(filters));
+        }
+
+        function loadFilters() {
+            const saved = localStorage.getItem('auctionMapFilters');
+            if (saved) {
+                const filters = JSON.parse(saved);
+                document.getElementById('property-type').value = filters.propertyType;
+                document.getElementById('auction-date').value = filters.auctionDate;
+                document.getElementById('price-range').value = filters.priceRange;
+                document.getElementById('tenure').value = filters.tenure;
+                $('#price-output').text(`RM 0 - RM ${filters.priceRange}`);
+            }
+        }
+
+        const map = L.map('map').setView([3.139, 101.6869], 12);
+
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            attribution: '&copy; OpenStreetMap contributors'
         }).addTo(map);
 
-        // Initialize marker cluster group
         const markersCluster = L.markerClusterGroup();
 
-        // Function to load the KML file and add markers
         function loadKML() {
-            // Load the KML file and add markers
-            omnivore.kml('auction_listings.kml')  // Replace with the path to your KML file
+            omnivore.kml('auction_listings.kml')
                 .on('ready', function (e) {
                     var layers = e.target.getLayers();
-                    //console.log('KML Loaded, Number of Layers:', layers.length);  // Log number of layers loaded
-
-                    // Add KML data as markers
                     layers.forEach(function (layer) {
                         const property = layer.feature.properties;
-                        //console.log('Layer Data:', property);  // Log the property data
-
-let description = property.description.replace(/<br\s*\/?>/gi, '\n');
-let name = property.name;
-//console.log('Raw Description:', description); // Log the raw description
-
-const lines = description.split('\n').map(line => line.trim()).filter(line => line !== '');
-
-let price = '';
-let auctionDate = '';
-let auctionType = '';
-let tenure = '';
-let propertyType = '';
-let builtUp = '';
-let address = '';
-let pricePsf = '';
-let auctionCount = '';
-let top5Transits = []; // <-- New array to store transit stations
-
-let collectingTransit = false; // <-- Flag to know when to start collecting transit lines
-
-lines.forEach(line => {
-    if (line.includes('Price:') && !line.includes('Price per Sq.Ft')) {
-        price = line.split(':')[1].trim();
-    } else if (line.includes('Auction Date:')) {
-        auctionDate = line.split(':')[1].trim();
-    } else if (line.includes('Auction Type:')) {
-        auctionType = line.split(':')[1].trim();
-    } else if (line.includes('Tenure:')) {
-        tenure = line.split(':')[1].trim();
-    } else if (line.includes('Property Type:')) {
-        propertyType = line.split(':')[1].trim();
-    } else if (line.includes('Built-up:')) {
-        builtUp = line.split(':')[1].trim();
-    } else if (line.includes('Address:')) {
-        address = line.split(':')[1].trim();
-            } else if (line.includes('Price per Sq.Ft:')) {
-        pricePsf = line.split(':')[1].trim();
-            } else if (line.includes('Auction Count:')) {
-        auctionCount = line.split(':')[1].trim();
-    } else if (line.includes('Top 5 Nearest Transit Stations:')) {
-        collectingTransit = true; // Start collecting from next lines
-    } else if (collectingTransit) {
-        // Assume 5 stations after the header
-        if (top5Transits.length < 5 && line.length > 0) {
-            top5Transits.push(line);
-        } else {
-            collectingTransit = false; // Stop once 5 stations are collected
-        }
-    }
-});
-
-// console.log('Price:', price);
-// console.log('Auction Date:', auctionDate);
-// console.log('Auction Type:', auctionType);
-// console.log('Tenure:', tenure);
-// console.log('Property Type:', propertyType);
-// console.log('Built Up:', builtUp);
-// console.log('Address:', address);
-// console.log('Top 5 Transits:', top5Transits);
-
-
-                        // Clean up the extracted values
+                        let description = property.description.replace(/<br\s*\/?>/gi, '\n');
+                        let lines = description.split('\n').map(line => line.trim()).filter(line => line !== '');
+                        let price = '', auctionDate = '', auctionType = '', tenure = '', propertyType = '', builtUp = '', address = '', pricePsf = '', auctionCount = '', top5Transits = [];
+                        let collectingTransit = false;
+                        lines.forEach(line => {
+                            if (line.includes('Price:') && !line.includes('Price per Sq.Ft')) price = line.split(':')[1].trim();
+                            else if (line.includes('Auction Date:')) auctionDate = line.split(':')[1].trim();
+                            else if (line.includes('Auction Type:')) auctionType = line.split(':')[1].trim();
+                            else if (line.includes('Tenure:')) tenure = line.split(':')[1].trim();
+                            else if (line.includes('Property Type:')) propertyType = line.split(':')[1].trim();
+                            else if (line.includes('Built-up:')) builtUp = line.split(':')[1].trim();
+                            else if (line.includes('Address:')) address = line.split(':')[1].trim();
+                            else if (line.includes('Price per Sq.Ft:')) pricePsf = line.split(':')[1].trim();
+                            else if (line.includes('Auction Count:')) auctionCount = line.split(':')[1].trim();
+                            else if (line.includes('Top 5 Nearest Transit Stations:')) collectingTransit = true;
+                            else if (collectingTransit && top5Transits.length < 5) top5Transits.push(line);
+                        });
                         price = price.replace('RM', '').replace(/\s/g, '').replace(/,/g, '');
-                        auctionDate = auctionDate || 'N/A';
                         builtUp = builtUp || '0';
-
-                        // Convert price and built-up to numbers
                         const numericPrice = parseFloat(price);
-                        const numericBuiltUp = parseFloat(builtUp);
-
                         const coordinates = layer.feature.geometry.coordinates;
                         const latitude = coordinates[1];
                         const longitude = coordinates[0];
-
-                        // Check for valid coordinates (not NaN or "nan")
-                        if (isNaN(latitude) || isNaN(longitude) || latitude === 'nan' || longitude === 'nan') {
-                            console.warn("Invalid coordinates for property:", layer.feature.properties);
-                            return;  // Skip this marker if coordinates are invalid
-                        }
-
-                        
-                        // layer.bindPopup(`
-                        //     <strong>${propertyType}</strong><br>
-                        //     Auction Date: ${auctionDate}<br>
-                        //     Price: RM ${numericPrice}<br>
-                        //     Auction Type: ${auctionType}<br>
-                        //     Tenure: ${tenure}<br>
-                        //     Property Type: ${propertyType}<br>
-                        //     Built-up: ${builtUp}<br>
-                        //     Address: ${address}<br>
-                        //     Top 5 Nearest Transit Stations: ${top5Transits}
-                        // `);
-                        // 📋 Format Top 5 Transits nicely
-const top5TransitsHTML = top5Transits.length > 0 
-    ? `<ul>${top5Transits.map(t => `<li>${t}</li>`).join('')}</ul>` 
-    : 'N/A';
-
-// 📌 Create a popup for each property
-layer.bindPopup(`
-    <strong> PSF (RM): ${pricePsf}</strong><br>
-    <strong>${name}</strong><br>
-    Auction Date: ${auctionDate}<br>
-    Price: RM ${numericPrice}<br>
-    Auction Type: ${auctionType}<br>
-    Tenure: ${tenure}<br>
-    Property Type: ${propertyType}<br>
-    Built-up: ${builtUp}<br>
-    Address: ${address}<br>
-    Count: ${auctionCount}<br>
-    Top 5 Nearest Transit Stations:<br>
-    ${top5TransitsHTML}
-`);
-
-
-                        // Add the marker to the cluster group
+                        if (isNaN(latitude) || isNaN(longitude) || latitude === 'nan' || longitude === 'nan') return;
+                        const top5TransitsHTML = top5Transits.length > 0 ? `<ul>${top5Transits.map(t => `<li>${t}</li>`).join('')}</ul>` : 'N/A';
+                        layer.bindPopup(`
+                            <strong>PSF (RM): ${pricePsf}</strong><br>
+                            <strong>${property.name}</strong><br>
+                            Auction Date: ${auctionDate}<br>
+                            Price: RM ${numericPrice}<br>
+                            Auction Type: ${auctionType}<br>
+                            Tenure: ${tenure}<br>
+                            Property Type: ${propertyType}<br>
+                            Built-up: ${builtUp}<br>
+                            Address: ${address}<br>
+                            Count: ${auctionCount}<br>
+                            Top 5 Nearest Transit Stations:<br>
+                            ${top5TransitsHTML}
+                        `);
                         markersCluster.addLayer(layer);
                     });
-
-                    // Add marker cluster to the map
                     map.addLayer(markersCluster);
                 })
                 .addTo(map);
         }
 
-        // Initially load KML file
         loadKML();
 
-        // Button to reload KML file when clicked
         document.getElementById('reload-kml').addEventListener('click', function() {
-            // Clear previous markers
             markersCluster.clearLayers();
-
-            // Reload the KML file
             loadKML();
         });
 
-        // Add filter functionality
         function applyFilters() {
             const propertyType = document.getElementById('property-type').value;
             const auctionDate = document.getElementById('auction-date').value;
             const priceRange = parseFloat(document.getElementById('price-range').value);
             const tenure = document.getElementById('tenure').value;
+            saveFilters(); // Save whenever applying filters
 
             const filteredActiveProperties = [];
             markersCluster.eachLayer(function (marker) {
                 const properties = marker.feature.properties;
-                let isTypeMatch = true;
-                let isDateMatch = true;
+                const description = properties.description;
+                let isTypeMatch = propertyType ? description.includes(propertyType) : true;
+                let isDateMatch = auctionDate ? description.includes(auctionDate) : true;
                 let isPriceMatch = true;
-                let isTenureMatch = true;
-
-                if (propertyType && !properties.description.includes(propertyType)) {
-                    isTypeMatch = false;
+                let isTenureMatch = tenure ? description.includes(tenure) : true;
+                if (description.includes('Price:')) {
+                    const match = description.match(/Price:\s*RM\s*([\d,]+)/i);
+                    if (match && parseFloat(match[1].replace(/,/g, '')) > priceRange) isPriceMatch = false;
                 }
-                if (auctionDate && !properties.description.includes(auctionDate)) {
-                    isDateMatch = false;
-                }
-                if (numericPrice > priceRange) {
-                    isPriceMatch = false;
-                }
-                if (tenure && !properties.description.includes(tenure)) {
-                    isTenureMatch = false;
-                }
-
                 if (isTypeMatch && isDateMatch && isPriceMatch && isTenureMatch) {
                     filteredActiveProperties.push(marker);
                 }
             });
 
             markersCluster.clearLayers();
-            filteredActiveProperties.forEach(marker => {
-                markersCluster.addLayer(marker);
-            });
+            filteredActiveProperties.forEach(marker => markersCluster.addLayer(marker));
 
             if (filteredActiveProperties.length > 0) {
                 const bounds = L.latLngBounds(filteredActiveProperties.map(marker => marker.getLatLng()));
@@ -277,14 +216,21 @@ layer.bindPopup(`
             }
         }
 
-        // Listen for filter changes and apply them
-        $('#property-type, #auction-date, #price-range, #tenure').on('change', function () {
-            applyFilters();
-        });
+        $('#property-type, #auction-date, #price-range, #tenure').on('change', applyFilters);
 
-        // Dynamically update the price range text
         $('#price-range').on('input', function () {
             $('#price-output').text(`RM 0 - RM ${$(this).val()}`);
+        });
+
+        $('#reset-filters').on('click', function () {
+            localStorage.removeItem('auctionMapFilters');
+            location.reload();
+        });
+
+        // Load filters when page loads
+        $(document).ready(function() {
+            loadFilters();
+            applyFilters();
         });
     </script>
 </body>
