@@ -125,7 +125,7 @@ function loadKML() {
   markersCluster.clearLayers();
   allMarkers = [];
 
-  omnivore.kml('auction_listings.kml')
+  omnivore.kml('auction_listings.kml') // Replace with the path to your KML file
     .on('ready', function(e) {
       e.target.getLayers().forEach(layer => {
         const property = layer.feature.properties;
