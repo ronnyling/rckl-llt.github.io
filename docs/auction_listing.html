@@ -120,6 +120,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const markersCluster = L.markerClusterGroup();
 let allMarkers = [];
 
+// Function to initialize map and add markers with optimizations
 function loadKML() {
   markersCluster.clearLayers();
   allMarkers = [];
@@ -131,9 +132,8 @@ function loadKML() {
         const description = property.description.replace(/<br\s*\/?>/gi, '\n');
         const name = property.name.trim();
         const lines = description.split('\n').map(l => l.trim()).filter(l => l !== '');
-        
-        let price = 0, builtUp = 0, auctionDate = '', auctionType = '', tenure = '', transits = [];
 
+        let price = 0, builtUp = 0, auctionDate = '', auctionType = '', tenure = '', transits = [];
         lines.forEach(line => {
           if (line.startsWith('Price:')) {
             const raw = line.split('Price:')[1].replace('Starting Bid','').replace('RM','').replace(/,/g,'').trim();
@@ -168,7 +168,10 @@ function loadKML() {
           Top Transit: ${transits.join('<br>')}`);
 
         layer.options.customData = { propertyType, price, builtUp, auctionDate, auctionType, tenure, name, transits };
-        
+
+        // Use canvas for rendering (improves performance for large number of markers)
+        layer.options.renderer = L.canvas();
+
         markersCluster.addLayer(layer);
         allMarkers.push(layer);
       });
@@ -179,11 +182,12 @@ function loadKML() {
     }).addTo(map);
 }
 
+// Populate dropdowns for filters
 function populateDropdowns() {
   const propertyTypeSelect = $('#property-type');
   const auctionTypeSelect = $('#auction-type');
   const transitSelect = $('#transit');
-  
+
   const propertyType = new Set();
   const auctions = new Set();
   const stations = new Set();
@@ -199,6 +203,7 @@ function populateDropdowns() {
   transitSelect.append([...stations].sort().map(t => `<option value="${t}">${t}</option>`));
 }
 
+// Filter markers based on selected criteria
 function applyFilters() {
   const propertyType = $('#property-type').val();
   const start = $('#auction-start').val();
@@ -233,40 +238,6 @@ function applyFilters() {
     const bounds = L.latLngBounds(filtered.map(m => m.getLatLng()));
     map.fitBounds(bounds);
   }
-}
-
-function saveFilters() {
-  const filters = {
-    propertyType: $('#property-type').val(),
-    start: $('#auction-start').val(),
-    end: $('#auction-end').val(),
-    price: $('#price-range').val(),
-    builtup: $('#builtup-range').val(),
-    tenure: $('#tenure').val(),
-    auctionType: $('#auction-type').val(),
-    transit: $('#transit').val()
-  };
-  localStorage.setItem('auctionFilters', JSON.stringify(filters));
-}
-
-function applySavedFilters() {
-  const saved = localStorage.getItem('auctionFilters');
-  if (!saved) return;
-
-  const filters = JSON.parse(saved);
-  $('#property-type').val(filters.propertyType);
-  $('#auction-start').val(filters.start);
-  $('#auction-end').val(filters.end);
-  $('#price-range').val(filters.price);
-  $('#builtup-range').val(filters.builtup);
-  $('#tenure').val(filters.tenure);
-  $('#auction-type').val(filters.auctionType);
-  $('#transit').val(filters.transit);
-
-  $('#price-output').text(`RM 0 - RM ${filters.price}`);
-  $('#builtup-output').text(`0 - ${filters.builtup} sq.ft`);
-
-  applyFilters();
 }
 
 $('#property-type, #auction-start, #auction-end, #price-range, #builtup-range, #tenure, #auction-type, #transit').on('change input', applyFilters);
