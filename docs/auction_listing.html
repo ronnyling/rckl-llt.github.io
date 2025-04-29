@@ -125,7 +125,7 @@ function loadKML() {
   markersCluster.clearLayers();
   allMarkers = [];
 
-  omnivore.kml('auction_listings.kml') // Replace with the path to your KML file
+  omnivore.kml('auction_listings.kml')
     .on('ready', function(e) {
       e.target.getLayers().forEach(layer => {
         const property = layer.feature.properties;
@@ -250,6 +250,21 @@ function applyFilters() {
     const bounds = L.latLngBounds(filtered.map(m => m.getLatLng()));
     map.fitBounds(bounds);
   }
+}
+
+// Save the filters to localStorage
+function saveFilters() {
+  const filters = {
+    propertyType: $('#property-type').val(),
+    start: $('#auction-start').val(),
+    end: $('#auction-end').val(),
+    price: $('#price-range').val(),
+    builtup: $('#builtup-range').val(),
+    tenure: $('#tenure').val(),
+    auctionType: $('#auction-type').val(),
+    transit: $('#transit').val()
+  };
+  localStorage.setItem('auctionFilters', JSON.stringify(filters));
 }
 
 $('#property-type, #auction-start, #auction-end, #price-range, #builtup-range, #tenure, #auction-type, #transit').on('change input', applyFilters);
