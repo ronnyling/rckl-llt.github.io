@@ -130,10 +130,9 @@ function loadKML() {
       e.target.getLayers().forEach(layer => {
         const property = layer.feature.properties;
         const description = property.description.replace(/<br\s*\/?>/gi, '\n');
-        const name = property.name.trim();
         const lines = description.split('\n').map(l => l.trim()).filter(l => l !== '');
 
-        let price = 0, builtUp = 0, auctionDate = '', auctionType = '', tenure = '', transits = [];
+        let price = 0, builtUp = 0, auctionDate = '', auctionType = '', tenure = '', propertyType = '', pricePSF = '', auctionCount = '', transits = [];
         lines.forEach(line => {
           if (line.startsWith('Price:')) {
             const raw = line.split('Price:')[1].replace('Starting Bid','').replace('RM','').replace(/,/g,'').trim();
@@ -148,6 +147,10 @@ function loadKML() {
             auctionType = line.split(':')[1].trim();
           } else if (line.startsWith('Tenure:')) {
             tenure = line.split(':')[1].trim();
+          } else if (line.startsWith('Price per Sq.Ft:')) {
+            pricePSF = line.split(':')[1].trim();
+          } else if (line.startsWith('Auction Count:')) {
+            auctionCount = line.split(':')[1].trim();
           } else if (!line.includes(':') && line.includes('(')) {
             transits.push(line);
           }
@@ -158,16 +161,25 @@ function loadKML() {
 
         if (isNaN(lat) || isNaN(lng)) return;
 
-        layer.bindPopup(`<strong>${name}</strong><br>
-          Property Type: ${propertyType}
-          Price: RM ${price.toLocaleString()}<br>
-          Built-up: ${builtUp} sq.ft<br>
-          Auction Date: ${auctionDate}<br>
-          Auction Type: ${auctionType}<br>
-          Tenure: ${tenure}<br>
-          Top Transit: ${transits.join('<br>')}`);
+        // Create the popup and use the propertyType to replace name
+        const top5TransitsHTML = transits.length > 0 
+            ? `<ul>${transits.map(t => `<li>${t}</li>`).join('')}</ul>` 
+            : 'N/A';
 
-        layer.options.customData = { propertyType, price, builtUp, auctionDate, auctionType, tenure, name, transits };
+        layer.bindPopup(`
+            <strong>Property Type: ${propertyType}</strong><br>
+            Auction Date: ${auctionDate}<br>
+            Price: RM ${price.toLocaleString()}<br>
+            Price per Sq.Ft: RM ${pricePSF}<br>
+            Auction Type: ${auctionType}<br>
+            Tenure: ${tenure}<br>
+            Built-up: ${builtUp} sq.ft<br>
+            Auction Count: ${auctionCount}<br>
+            Top 5 Nearest Transit Stations:<br>
+            ${top5TransitsHTML}
+        `);
+
+        layer.options.customData = { propertyType, price, builtUp, auctionDate, auctionType, tenure, pricePSF, auctionCount, transits };
 
         // Use canvas for rendering (improves performance for large number of markers)
         layer.options.renderer = L.canvas();
