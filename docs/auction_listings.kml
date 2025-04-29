@@ -2,29 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
     <Document id="1">
         <Placemark id="3">
-            <name>Retail Lot</name>
-            <description>
-        Property Type: Commercial
-        Price: RM45,000
-        Price per Sq.Ft: 381.36
-        Auction Date: 6 May 2025 (Tue)
-        Auction Type: LACA
-        Built-up: 118 sq.ft
-        Tenure: FH
-        Auction Count: N/A
-        Address: Kompleks Metro Pudu, No. 1, Jalan Metro Pudu 2, Fraser Business Park, 52100, Kuala Lumpur
-        Top 5 Nearest Transit Stations:
-        Chan Sow Lin (LRT Lines) - 0.19 km
-Chan Sow Lin (MRT Lines) - 0.23 km
-Pudu (LRT Lines) - 0.70 km
-Miharja (LRT Lines) - 0.98 km
-Cochrane (MRT Lines) - 1.03 km
-        </description>
-            <Point id="2">
-                <coordinates>101.7144368,3.1290567,0.0</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="5">
             <name>Apartment</name>
             <description>
         Property Type: Residential - Apartments/Condos
@@ -43,8 +20,31 @@ Rasa (KTM Komuter Lines) - 11.85 km
 Rawang (KTM Komuter Lines) - 13.61 km
 Kuala Kubu Bharu (KTM Komuter Lines) - 16.32 km
         </description>
-            <Point id="4">
+            <Point id="2">
                 <coordinates>101.5467281,3.4389664,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="5">
+            <name>Retail Lot</name>
+            <description>
+        Property Type: Commercial
+        Price: RM45,000
+        Price per Sq.Ft: 381.36
+        Auction Date: 6 May 2025 (Tue)
+        Auction Type: LACA
+        Built-up: 118 sq.ft
+        Tenure: FH
+        Auction Count: N/A
+        Address: Kompleks Metro Pudu, No. 1, Jalan Metro Pudu 2, Fraser Business Park, 52100, Kuala Lumpur
+        Top 5 Nearest Transit Stations:
+        Chan Sow Lin (LRT Lines) - 0.19 km
+Chan Sow Lin (MRT Lines) - 0.23 km
+Pudu (LRT Lines) - 0.70 km
+Miharja (LRT Lines) - 0.98 km
+Cochrane (MRT Lines) - 1.03 km
+        </description>
+            <Point id="4">
+                <coordinates>101.7144368,3.1290567,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="7">
