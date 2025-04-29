@@ -138,6 +138,8 @@ function loadKML() {
           if (line.startsWith('Price:')) {
             const raw = line.split('Price:')[1].replace('Starting Bid','').replace('RM','').replace(/,/g,'').trim();
             price = parseFloat(raw) || 0;
+          } else if (line.startsWith('Property Type:')) {
+            propertyType = line.split(':')[1].trim();
           } else if (line.startsWith('Built-up:')) {
             builtUp = parseFloat(line.split(':')[1].replace('sq.ft','').replace(',','').trim()) || 0;
           } else if (line.startsWith('Auction Date:')) {
@@ -157,6 +159,7 @@ function loadKML() {
         if (isNaN(lat) || isNaN(lng)) return;
 
         layer.bindPopup(`<strong>${name}</strong><br>
+          Property Type: ${propertyType}
           Price: RM ${price.toLocaleString()}<br>
           Built-up: ${builtUp} sq.ft<br>
           Auction Date: ${auctionDate}<br>
@@ -164,7 +167,7 @@ function loadKML() {
           Tenure: ${tenure}<br>
           Top Transit: ${transits.join('<br>')}`);
 
-        layer.options.customData = { price, builtUp, auctionDate, auctionType, tenure, name, transits };
+        layer.options.customData = { propertyType, price, builtUp, auctionDate, auctionType, tenure, name, transits };
         
         markersCluster.addLayer(layer);
         allMarkers.push(layer);
@@ -181,23 +184,23 @@ function populateDropdowns() {
   const auctionTypeSelect = $('#auction-type');
   const transitSelect = $('#transit');
   
-  const types = new Set();
+  const propertyType = new Set();
   const auctions = new Set();
   const stations = new Set();
 
   allMarkers.forEach(m => {
-    types.add(m.options.customData.name);
+    propertyType.add(m.options.customData.propertyType);
     auctions.add(m.options.customData.auctionType);
     m.options.customData.transits.forEach(t => stations.add(t));
   });
 
-  propertyTypeSelect.append([...types].sort().map(t => `<option value="${t}">${t}</option>`));
+  propertyTypeSelect.append([...propertyType].sort().map(t => `<option value="${t}">${t}</option>`));
   auctionTypeSelect.append([...auctions].sort().map(t => `<option value="${t}">${t}</option>`));
   transitSelect.append([...stations].sort().map(t => `<option value="${t}">${t}</option>`));
 }
 
 function applyFilters() {
-  const type = $('#property-type').val();
+  const propertyType = $('#property-type').val();
   const start = $('#auction-start').val();
   const end = $('#auction-end').val();
   const price = parseFloat($('#price-range').val()) || Infinity;
@@ -212,7 +215,7 @@ function applyFilters() {
     const d = m.options.customData;
 
     let match = true;
-    if (type && d.name !== type) match = false;
+    if (propertyType && d.propertyType !== propertyType) match = false;
     if (auctionType && d.auctionType !== auctionType) match = false;
     if (tenure && d.tenure !== tenure) match = false;
     if (d.price > price) match = false;
@@ -234,7 +237,7 @@ function applyFilters() {
 
 function saveFilters() {
   const filters = {
-    type: $('#property-type').val(),
+    propertyType: $('#property-type').val(),
     start: $('#auction-start').val(),
     end: $('#auction-end').val(),
     price: $('#price-range').val(),
@@ -251,7 +254,7 @@ function applySavedFilters() {
   if (!saved) return;
 
   const filters = JSON.parse(saved);
-  $('#property-type').val(filters.type);
+  $('#property-type').val(filters.propertyType);
   $('#auction-start').val(filters.start);
   $('#auction-end').val(filters.end);
   $('#price-range').val(filters.price);
