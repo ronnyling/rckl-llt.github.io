@@ -118,12 +118,12 @@ $(document).ready(function() {
     attribution: '&copy; OpenStreetMap'
   }).addTo(map);
 
-  const markersCluster = L.markerClusterGroup();
-  let allMarkers = [];
+  const markersCluster = L.markerClusterGroup(); // Marker cluster group
+  let allMarkers = []; // Store all markers to filter them later
 
   // Function to initialize map and add markers with optimizations
   function loadKML() {
-    markersCluster.clearLayers();
+    markersCluster.clearLayers(); // Clear existing layers
     allMarkers = [];
 
     console.log("Loading KML data...");
@@ -164,8 +164,6 @@ $(document).ready(function() {
 
           if (isNaN(lat) || isNaN(lng)) return;
 
-          console.log(`Adding marker for Property Type: ${propertyType}, Price: RM ${price}`);
-
           const top5TransitsHTML = transits.length > 0 
               ? `<ul>${transits.map(t => `<li>${t}</li>`).join('')}</ul>` 
               : 'N/A';
@@ -184,14 +182,13 @@ $(document).ready(function() {
           `);
 
           layer.options.customData = { propertyType, price, builtUp, auctionDate, auctionType, tenure, pricePSF, auctionCount, transits };
-          layer.options.renderer = L.canvas();
+          layer.options.renderer = L.canvas(); // Use canvas for performance
 
-          console.log("Marker added to cluster.");
-          markersCluster.addLayer(layer);
-          allMarkers.push(layer);
+          markersCluster.addLayer(layer); // Add marker to cluster
+          allMarkers.push(layer); // Store marker
         });
 
-        map.addLayer(markersCluster);
+        map.addLayer(markersCluster); // Add markers to map
         console.log(`Total markers added: ${allMarkers.length}`);
 
         populateDropdowns();
@@ -255,7 +252,7 @@ $(document).ready(function() {
     const auctionType = $('#auction-type').val();
     const transitSelected = $('#transit').val() || [];
 
-    markersCluster.clearLayers();
+    markersCluster.clearLayers(); // Clear previous markers
 
     const filtered = allMarkers.filter(m => {
       const d = m.options.customData;
@@ -274,7 +271,7 @@ $(document).ready(function() {
     });
 
     console.log(`Filtered markers: ${filtered.length}`);
-    filtered.forEach(m => markersCluster.addLayer(m));
+    filtered.forEach(m => markersCluster.addLayer(m)); // Add filtered markers back
 
     if (filtered.length > 0) {
       const bounds = L.latLngBounds(filtered.map(m => m.getLatLng()));
