@@ -112,201 +112,205 @@
 <script src="https://unpkg.com/leaflet.markercluster@1.5.0/dist/leaflet.markercluster.js"></script>
 
 <script>
-const map = L.map('map').setView([3.139, 101.6869], 12);
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; OpenStreetMap'
-}).addTo(map);
+// Ensure the DOM is fully loaded before running JavaScript
+$(document).ready(function() {
+  const map = L.map('map').setView([3.139, 101.6869], 12);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap'
+  }).addTo(map);
 
-const markersCluster = L.markerClusterGroup();
-let allMarkers = [];
+  const markersCluster = L.markerClusterGroup();
+  let allMarkers = [];
 
-// Function to initialize map and add markers with optimizations
-function loadKML() {
-  markersCluster.clearLayers();
-  allMarkers = [];
+  // Function to initialize map and add markers with optimizations
+  function loadKML() {
+    markersCluster.clearLayers();
+    allMarkers = [];
 
-  omnivore.kml('auction_listings.kml') // Replace with the path to your KML file
-    .on('ready', function(e) {
-      e.target.getLayers().forEach(layer => {
-        const property = layer.feature.properties;
-        const description = property.description.replace(/<br\s*\/?>/gi, '\n');
-        const lines = description.split('\n').map(l => l.trim()).filter(l => l !== '');
+    omnivore.kml('auction_listings.kml') // Replace with the path to your KML file
+      .on('ready', function(e) {
+        e.target.getLayers().forEach(layer => {
+          const property = layer.feature.properties;
+          const description = property.description.replace(/<br\s*\/?>/gi, '\n');
+          const lines = description.split('\n').map(l => l.trim()).filter(l => l !== '');
 
-        let price = 0, builtUp = 0, auctionDate = '', auctionType = '', tenure = '', propertyType = '', pricePSF = '', auctionCount = '', transits = [];
-        lines.forEach(line => {
-          if (line.startsWith('Price:')) {
-            const raw = line.split('Price:')[1].replace('Starting Bid','').replace('RM','').replace(/,/g,'').trim();
-            price = parseFloat(raw) || 0;
-          } else if (line.startsWith('Property Type:')) {
-            propertyType = line.split(':')[1].trim();
-          } else if (line.startsWith('Built-up:')) {
-            builtUp = parseFloat(line.split(':')[1].replace('sq.ft','').replace(',','').trim()) || 0;
-          } else if (line.startsWith('Auction Date:')) {
-            auctionDate = line.split(':')[1].trim();
-          } else if (line.startsWith('Auction Type:')) {
-            auctionType = line.split(':')[1].trim();
-          } else if (line.startsWith('Tenure:')) {
-            tenure = line.split(':')[1].trim();
-          } else if (line.startsWith('Price per Sq.Ft:')) {
-            pricePSF = line.split(':')[1].trim();
-          } else if (line.startsWith('Auction Count:')) {
-            auctionCount = line.split(':')[1].trim();
-          } else if (!line.includes(':') && line.includes('(')) {
-            transits.push(line);
-          }
+          let price = 0, builtUp = 0, auctionDate = '', auctionType = '', tenure = '', propertyType = '', pricePSF = '', auctionCount = '', transits = [];
+          lines.forEach(line => {
+            if (line.startsWith('Price:')) {
+              const raw = line.split('Price:')[1].replace('Starting Bid','').replace('RM','').replace(/,/g,'').trim();
+              price = parseFloat(raw) || 0;
+            } else if (line.startsWith('Property Type:')) {
+              propertyType = line.split(':')[1].trim();
+            } else if (line.startsWith('Built-up:')) {
+              builtUp = parseFloat(line.split(':')[1].replace('sq.ft','').replace(',','').trim()) || 0;
+            } else if (line.startsWith('Auction Date:')) {
+              auctionDate = line.split(':')[1].trim();
+            } else if (line.startsWith('Auction Type:')) {
+              auctionType = line.split(':')[1].trim();
+            } else if (line.startsWith('Tenure:')) {
+              tenure = line.split(':')[1].trim();
+            } else if (line.startsWith('Price per Sq.Ft:')) {
+              pricePSF = line.split(':')[1].trim();
+            } else if (line.startsWith('Auction Count:')) {
+              auctionCount = line.split(':')[1].trim();
+            } else if (!line.includes(':') && line.includes('(')) {
+              transits.push(line);
+            }
+          });
+
+          const lat = layer.feature.geometry.coordinates[1];
+          const lng = layer.feature.geometry.coordinates[0];
+
+          if (isNaN(lat) || isNaN(lng)) return;
+
+          // Create the popup and use the propertyType to replace name
+          const top5TransitsHTML = transits.length > 0 
+              ? `<ul>${transits.map(t => `<li>${t}</li>`).join('')}</ul>` 
+              : 'N/A';
+
+          layer.bindPopup(`
+              <strong>Property Type: ${propertyType}</strong><br>
+              Auction Date: ${auctionDate}<br>
+              Price: RM ${price.toLocaleString()}<br>
+              Price per Sq.Ft: RM ${pricePSF}<br>
+              Auction Type: ${auctionType}<br>
+              Tenure: ${tenure}<br>
+              Built-up: ${builtUp} sq.ft<br>
+              Auction Count: ${auctionCount}<br>
+              Top 5 Nearest Transit Stations:<br>
+              ${top5TransitsHTML}
+          `);
+
+          layer.options.customData = { propertyType, price, builtUp, auctionDate, auctionType, tenure, pricePSF, auctionCount, transits };
+
+          // Use canvas for rendering (improves performance for large number of markers)
+          layer.options.renderer = L.canvas();
+
+          markersCluster.addLayer(layer);
+          allMarkers.push(layer);
         });
 
-        const lat = layer.feature.geometry.coordinates[1];
-        const lng = layer.feature.geometry.coordinates[0];
-
-        if (isNaN(lat) || isNaN(lng)) return;
-
-        // Create the popup and use the propertyType to replace name
-        const top5TransitsHTML = transits.length > 0 
-            ? `<ul>${transits.map(t => `<li>${t}</li>`).join('')}</ul>` 
-            : 'N/A';
-
-        layer.bindPopup(`
-            <strong>Property Type: ${propertyType}</strong><br>
-            Auction Date: ${auctionDate}<br>
-            Price: RM ${price.toLocaleString()}<br>
-            Price per Sq.Ft: RM ${pricePSF}<br>
-            Auction Type: ${auctionType}<br>
-            Tenure: ${tenure}<br>
-            Built-up: ${builtUp} sq.ft<br>
-            Auction Count: ${auctionCount}<br>
-            Top 5 Nearest Transit Stations:<br>
-            ${top5TransitsHTML}
-        `);
-
-        layer.options.customData = { propertyType, price, builtUp, auctionDate, auctionType, tenure, pricePSF, auctionCount, transits };
-
-        // Use canvas for rendering (improves performance for large number of markers)
-        layer.options.renderer = L.canvas();
-
-        markersCluster.addLayer(layer);
-        allMarkers.push(layer);
-      });
-
-      map.addLayer(markersCluster);
-      populateDropdowns();
-      applySavedFilters();
-    }).addTo(map);
-}
-
-// Populate dropdowns for filters
-function populateDropdowns() {
-  const propertyTypeSelect = $('#property-type');
-  const auctionTypeSelect = $('#auction-type');
-  const transitSelect = $('#transit');
-
-  const propertyType = new Set();
-  const auctions = new Set();
-  const stations = new Set();
-
-  allMarkers.forEach(m => {
-    propertyType.add(m.options.customData.propertyType);
-    auctions.add(m.options.customData.auctionType);
-    m.options.customData.transits.forEach(t => stations.add(t));
-  });
-
-  propertyTypeSelect.append([...propertyType].sort().map(t => `<option value="${t}">${t}</option>`));
-  auctionTypeSelect.append([...auctions].sort().map(t => `<option value="${t}">${t}</option>`));
-  transitSelect.append([...stations].sort().map(t => `<option value="${t}">${t}</option>`));
-}
-
-// Apply saved filters from localStorage
-function applySavedFilters() {
-  const savedFilters = localStorage.getItem('auctionFilters');
-  if (savedFilters) {
-    const filters = JSON.parse(savedFilters);
-
-    // Apply saved filters to form fields
-    $('#property-type').val(filters.propertyType || '');
-    $('#auction-start').val(filters.start || '');
-    $('#auction-end').val(filters.end || '');
-    $('#price-range').val(filters.price || 0);
-    $('#builtup-range').val(filters.builtup || 0);
-    $('#tenure').val(filters.tenure || '');
-    $('#auction-type').val(filters.auctionType || '');
-    $('#transit').val(filters.transit || []);
-
-    // Trigger the filters to apply the saved settings
-    applyFilters();
-}
-
-// Filter markers based on selected criteria
-function applyFilters() {
-  const propertyType = $('#property-type').val();
-  const start = $('#auction-start').val();
-  const end = $('#auction-end').val();
-  const price = parseFloat($('#price-range').val()) || Infinity;
-  const builtup = parseFloat($('#builtup-range').val()) || Infinity;
-  const tenure = $('#tenure').val();
-  const auctionType = $('#auction-type').val();
-  const transitSelected = $('#transit').val() || [];
-
-  markersCluster.clearLayers();
-
-  const filtered = allMarkers.filter(m => {
-    const d = m.options.customData;
-
-    let match = true;
-    if (propertyType && d.propertyType !== propertyType) match = false;
-    if (auctionType && d.auctionType !== auctionType) match = false;
-    if (tenure && d.tenure !== tenure) match = false;
-    if (d.price > price) match = false;
-    if (d.builtUp > builtup) match = false;
-    if (start && new Date(d.auctionDate.split('(')[0].trim()) < new Date(start)) match = false;
-    if (end && new Date(d.auctionDate.split('(')[0].trim()) > new Date(end)) match = false;
-    if (transitSelected.length > 0 && !d.transits.some(t => transitSelected.includes(t))) match = false;
-
-    return match;
-  });
-
-  filtered.forEach(m => markersCluster.addLayer(m));
-
-  if (filtered.length > 0) {
-    const bounds = L.latLngBounds(filtered.map(m => m.getLatLng()));
-    map.fitBounds(bounds);
+        map.addLayer(markersCluster);
+        populateDropdowns();
+        applySavedFilters(); // Call this after markers are loaded
+      }).addTo(map);
   }
-}
 
-// Save the filters to localStorage
-function saveFilters() {
-  const filters = {
-    propertyType: $('#property-type').val(),
-    start: $('#auction-start').val(),
-    end: $('#auction-end').val(),
-    price: $('#price-range').val(),
-    builtup: $('#builtup-range').val(),
-    tenure: $('#tenure').val(),
-    auctionType: $('#auction-type').val(),
-    transit: $('#transit').val()
-  };
-  localStorage.setItem('auctionFilters', JSON.stringify(filters));
-}
+  // Populate dropdowns for filters
+  function populateDropdowns() {
+    const propertyTypeSelect = $('#property-type');
+    const auctionTypeSelect = $('#auction-type');
+    const transitSelect = $('#transit');
 
-$('#property-type, #auction-start, #auction-end, #price-range, #builtup-range, #tenure, #auction-type, #transit').on('change input', applyFilters);
-$('#save-filters').on('click', saveFilters);
-$('#reset-filters').on('click', function() {
-  localStorage.removeItem('auctionFilters');
-  location.reload();
-});
-$('#reload-kml').on('click', function() {
-  location.reload();
-});
-$('#price-range').on('input', function() {
-  $('#price-output').text(`RM 0 - RM ${$(this).val()}`);
-});
-$('#builtup-range').on('input', function() {
-  $('#builtup-output').text(`0 - ${$(this).val()} sq.ft`);
-});
-$('#toggleSidebar').on('click', function() {
-  $('#sidebar').toggle();
-});
+    const propertyType = new Set();
+    const auctions = new Set();
+    const stations = new Set();
 
-loadKML();
+    allMarkers.forEach(m => {
+      propertyType.add(m.options.customData.propertyType);
+      auctions.add(m.options.customData.auctionType);
+      m.options.customData.transits.forEach(t => stations.add(t));
+    });
+
+    propertyTypeSelect.append([...propertyType].sort().map(t => `<option value="${t}">${t}</option>`));
+    auctionTypeSelect.append([...auctions].sort().map(t => `<option value="${t}">${t}</option>`));
+    transitSelect.append([...stations].sort().map(t => `<option value="${t}">${t}</option>`));
+  }
+
+  // Apply saved filters from localStorage
+  function applySavedFilters() {
+    const savedFilters = localStorage.getItem('auctionFilters');
+    if (savedFilters) {
+      const filters = JSON.parse(savedFilters);
+
+      // Apply saved filters to form fields
+      $('#property-type').val(filters.propertyType || '');
+      $('#auction-start').val(filters.start || '');
+      $('#auction-end').val(filters.end || '');
+      $('#price-range').val(filters.price || 0);
+      $('#builtup-range').val(filters.builtup || 0);
+      $('#tenure').val(filters.tenure || '');
+      $('#auction-type').val(filters.auctionType || '');
+      $('#transit').val(filters.transit || []);
+      
+      // Trigger the filters to apply the saved settings
+      applyFilters();
+    }
+  }
+
+  // Filter markers based on selected criteria
+  function applyFilters() {
+    const propertyType = $('#property-type').val();
+    const start = $('#auction-start').val();
+    const end = $('#auction-end').val();
+    const price = parseFloat($('#price-range').val()) || Infinity;
+    const builtup = parseFloat($('#builtup-range').val()) || Infinity;
+    const tenure = $('#tenure').val();
+    const auctionType = $('#auction-type').val();
+    const transitSelected = $('#transit').val() || [];
+
+    markersCluster.clearLayers();
+
+    const filtered = allMarkers.filter(m => {
+      const d = m.options.customData;
+
+      let match = true;
+      if (propertyType && d.propertyType !== propertyType) match = false;
+      if (auctionType && d.auctionType !== auctionType) match = false;
+      if (tenure && d.tenure !== tenure) match = false;
+      if (d.price > price) match = false;
+      if (d.builtUp > builtup) match = false;
+      if (start && new Date(d.auctionDate.split('(')[0].trim()) < new Date(start)) match = false;
+      if (end && new Date(d.auctionDate.split('(')[0].trim()) > new Date(end)) match = false;
+      if (transitSelected.length > 0 && !d.transits.some(t => transitSelected.includes(t))) match = false;
+
+      return match;
+    });
+
+    filtered.forEach(m => markersCluster.addLayer(m));
+
+    if (filtered.length > 0) {
+      const bounds = L.latLngBounds(filtered.map(m => m.getLatLng()));
+      map.fitBounds(bounds);
+    }
+  }
+
+  // Save the filters to localStorage
+  function saveFilters() {
+    const filters = {
+      propertyType: $('#property-type').val(),
+      start: $('#auction-start').val(),
+      end: $('#auction-end').val(),
+      price: $('#price-range').val(),
+      builtup: $('#builtup-range').val(),
+      tenure: $('#tenure').val(),
+      auctionType: $('#auction-type').val(),
+      transit: $('#transit').val()
+    };
+    localStorage.setItem('auctionFilters', JSON.stringify(filters));
+  }
+
+  $('#property-type, #auction-start, #auction-end, #price-range, #builtup-range, #tenure, #auction-type, #transit').on('change input', applyFilters);
+  $('#save-filters').on('click', saveFilters);
+  $('#reset-filters').on('click', function() {
+    localStorage.removeItem('auctionFilters');
+    location.reload();
+  });
+  $('#reload-kml').on('click', function() {
+    location.reload();
+  });
+  $('#price-range').on('input', function() {
+    $('#price-output').text(`RM 0 - RM ${$(this).val()}`);
+  });
+  $('#builtup-range').on('input', function() {
+    $('#builtup-output').text(`0 - ${$(this).val()} sq.ft`);
+  });
+  $('#toggleSidebar').on('click', function() {
+    $('#sidebar').toggle();
+  });
+
+  loadKML();
+});
 </script>
 </body>
 </html>
