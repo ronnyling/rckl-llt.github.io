@@ -126,8 +126,10 @@ $(document).ready(function() {
     markersCluster.clearLayers();
     allMarkers = [];
 
+    console.log("Loading KML data...");
     omnivore.kml('auction_listings.kml') // Replace with the path to your KML file
       .on('ready', function(e) {
+        console.log("KML data loaded successfully.");
         e.target.getLayers().forEach(layer => {
           const property = layer.feature.properties;
           const description = property.description.replace(/<br\s*\/?>/gi, '\n');
@@ -162,7 +164,8 @@ $(document).ready(function() {
 
           if (isNaN(lat) || isNaN(lng)) return;
 
-          // Create the popup and use the propertyType to replace name
+          console.log(`Adding marker for Property Type: ${propertyType}, Price: RM ${price}`);
+
           const top5TransitsHTML = transits.length > 0 
               ? `<ul>${transits.map(t => `<li>${t}</li>`).join('')}</ul>` 
               : 'N/A';
@@ -181,15 +184,16 @@ $(document).ready(function() {
           `);
 
           layer.options.customData = { propertyType, price, builtUp, auctionDate, auctionType, tenure, pricePSF, auctionCount, transits };
-
-          // Use canvas for rendering (improves performance for large number of markers)
           layer.options.renderer = L.canvas();
 
+          console.log("Marker added to cluster.");
           markersCluster.addLayer(layer);
           allMarkers.push(layer);
         });
 
         map.addLayer(markersCluster);
+        console.log(`Total markers added: ${allMarkers.length}`);
+
         populateDropdowns();
         applySavedFilters(); // Call this after markers are loaded
       }).addTo(map);
@@ -211,6 +215,7 @@ $(document).ready(function() {
       m.options.customData.transits.forEach(t => stations.add(t));
     });
 
+    console.log("Populating filter dropdowns...");
     propertyTypeSelect.append([...propertyType].sort().map(t => `<option value="${t}">${t}</option>`));
     auctionTypeSelect.append([...auctions].sort().map(t => `<option value="${t}">${t}</option>`));
     transitSelect.append([...stations].sort().map(t => `<option value="${t}">${t}</option>`));
@@ -232,13 +237,15 @@ $(document).ready(function() {
       $('#auction-type').val(filters.auctionType || '');
       $('#transit').val(filters.transit || []);
       
-      // Trigger the filters to apply the saved settings
+      console.log("Applying saved filters...");
       applyFilters();
     }
   }
 
   // Filter markers based on selected criteria
   function applyFilters() {
+    console.log("Applying filters...");
+
     const propertyType = $('#property-type').val();
     const start = $('#auction-start').val();
     const end = $('#auction-end').val();
@@ -266,11 +273,12 @@ $(document).ready(function() {
       return match;
     });
 
+    console.log(`Filtered markers: ${filtered.length}`);
     filtered.forEach(m => markersCluster.addLayer(m));
 
     if (filtered.length > 0) {
       const bounds = L.latLngBounds(filtered.map(m => m.getLatLng()));
-      map.fitBounds(bounds);
+      map.fitBounds(bounds); // Adjust map bounds to fit filtered markers
     }
   }
 
@@ -286,26 +294,25 @@ $(document).ready(function() {
       auctionType: $('#auction-type').val(),
       transit: $('#transit').val()
     };
+    console.log("Saving filters:", filters);
     localStorage.setItem('auctionFilters', JSON.stringify(filters));
   }
 
-  $('#property-type, #auction-start, #auction-end, #price-range, #builtup-range, #tenure, #auction-type, #transit').on('change input', applyFilters);
+  // Event Listeners
+  $('#property-type, #auction-start, #auction-end, #price-range, #builtup-range, #tenure, #auction-type, #transit').on('change input', function() {
+    console.log("Filter changed...");
+    applyFilters();
+  });
+  
   $('#save-filters').on('click', saveFilters);
   $('#reset-filters').on('click', function() {
+    console.log("Resetting filters...");
     localStorage.removeItem('auctionFilters');
     location.reload();
   });
+  
   $('#reload-kml').on('click', function() {
     location.reload();
-  });
-  $('#price-range').on('input', function() {
-    $('#price-output').text(`RM 0 - RM ${$(this).val()}`);
-  });
-  $('#builtup-range').on('input', function() {
-    $('#builtup-output').text(`0 - ${$(this).val()} sq.ft`);
-  });
-  $('#toggleSidebar').on('click', function() {
-    $('#sidebar').toggle();
   });
 
   loadKML(); // Initial map loading
