@@ -125,7 +125,7 @@ function loadKML() {
   markersCluster.clearLayers();
   allMarkers = [];
 
-  omnivore.kml('auction_listings.kml')
+  omnivore.kml('auction_listings.kml') // Replace with the path to your KML file
     .on('ready', function(e) {
       e.target.getLayers().forEach(layer => {
         const property = layer.feature.properties;
@@ -213,6 +213,26 @@ function populateDropdowns() {
   propertyTypeSelect.append([...propertyType].sort().map(t => `<option value="${t}">${t}</option>`));
   auctionTypeSelect.append([...auctions].sort().map(t => `<option value="${t}">${t}</option>`));
   transitSelect.append([...stations].sort().map(t => `<option value="${t}">${t}</option>`));
+}
+
+// Apply saved filters from localStorage
+function applySavedFilters() {
+  const savedFilters = localStorage.getItem('auctionFilters');
+  if (savedFilters) {
+    const filters = JSON.parse(savedFilters);
+
+    // Apply saved filters to form fields
+    $('#property-type').val(filters.propertyType || '');
+    $('#auction-start').val(filters.start || '');
+    $('#auction-end').val(filters.end || '');
+    $('#price-range').val(filters.price || 0);
+    $('#builtup-range').val(filters.builtup || 0);
+    $('#tenure').val(filters.tenure || '');
+    $('#auction-type').val(filters.auctionType || '');
+    $('#transit').val(filters.transit || []);
+
+    // Trigger the filters to apply the saved settings
+    applyFilters();
 }
 
 // Filter markers based on selected criteria
