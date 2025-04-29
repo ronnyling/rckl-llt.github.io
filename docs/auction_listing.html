@@ -118,24 +118,45 @@ $(document).ready(function() {
     attribution: '&copy; OpenStreetMap'
   }).addTo(map);
 
-  const markersCluster = L.markerClusterGroup(); // Marker cluster group
-  let allMarkers = []; // Store all markers to filter them later
+  const markersCluster = L.markerClusterGroup();
+  let allMarkers = [];
 
-  // Function to initialize map and add markers with optimizations
+  // Sidebar toggle functionality
+  $('#toggleSidebar').click(() => $('#sidebar').toggle());
+
+  // Update range displays
+  function updateRangeDisplays() {
+    $('#price-output').text(`RM 0 - RM ${parseInt($('#price-range').val()).toLocaleString()}`);
+    $('#builtup-output').text(`0 - ${parseInt($('#builtup-range').val()).toLocaleString()} sq.ft`);
+  }
+
+  // Parse auction date safely
+  function parseAuctionDate(dateString) {
+    if (!dateString) return null;
+    const datePart = dateString.split('(')[0].trim();
+    const dateObj = new Date(datePart);
+    return isNaN(dateObj.getTime()) ? null : dateObj;
+  }
+
+  // Load KML data
   function loadKML() {
-    markersCluster.clearLayers(); // Clear existing layers
+    markersCluster.clearLayers();
     allMarkers = [];
 
     console.log("Loading KML data...");
-    omnivore.kml('auction_listings.kml') // Replace with the path to your KML file
+    omnivore.kml('auction_listings.kml')
       .on('ready', function(e) {
         console.log("KML data loaded successfully.");
         e.target.getLayers().forEach(layer => {
+          if (!layer.feature || !layer.feature.geometry) return;
+          
           const property = layer.feature.properties;
           const description = property.description.replace(/<br\s*\/?>/gi, '\n');
           const lines = description.split('\n').map(l => l.trim()).filter(l => l !== '');
 
-          let price = 0, builtUp = 0, auctionDate = '', auctionType = '', tenure = '', propertyType = '', pricePSF = '', auctionCount = '', transits = [];
+          let price = 0, builtUp = 0, auctionDate = '', auctionType = '', tenure = '', 
+              propertyType = '', pricePSF = '', auctionCount = '', transits = [];
+              
           lines.forEach(line => {
             if (line.startsWith('Price:')) {
               const raw = line.split('Price:')[1].replace('Starting Bid','').replace('RM','').replace(/,/g,'').trim();
@@ -154,18 +175,20 @@ $(document).ready(function() {
               pricePSF = line.split(':')[1].trim();
             } else if (line.startsWith('Auction Count:')) {
               auctionCount = line.split(':')[1].trim();
-            } else if (!line.includes(':') && line.includes('(')) {
-              transits.push(line);
+            } else if (line.includes('Station') || line.includes('LRT') || line.includes('MRT')) {
+              transits.push(line.replace(/\([^)]*\)/g, '').trim());
             }
           });
 
-          const lat = layer.feature.geometry.coordinates[1];
-          const lng = layer.feature.geometry.coordinates[0];
-
+          const coords = layer.feature.geometry.coordinates;
+          if (!coords || coords.length < 2) return;
+          
+          const lat = coords[1];
+          const lng = coords[0];
           if (isNaN(lat) || isNaN(lng)) return;
 
           const top5TransitsHTML = transits.length > 0 
-              ? `<ul>${transits.map(t => `<li>${t}</li>`).join('')}</ul>` 
+              ? `<ul>${transits.slice(0,5).map(t => `<li>${t}</li>`).join('')}</ul>` 
               : 'N/A';
 
           layer.bindPopup(`
@@ -181,105 +204,122 @@ $(document).ready(function() {
               ${top5TransitsHTML}
           `);
 
-          layer.options.customData = { propertyType, price, builtUp, auctionDate, auctionType, tenure, pricePSF, auctionCount, transits };
-          layer.options.renderer = L.canvas(); // Use canvas for performance
+          layer.options.customData = { 
+            propertyType, price, builtUp, 
+            auctionDate, auctionType, tenure, 
+            pricePSF, auctionCount, transits 
+          };
+          layer.options.renderer = L.canvas();
 
-          markersCluster.addLayer(layer); // Add marker to cluster
-          allMarkers.push(layer); // Store marker
+          markersCluster.addLayer(layer);
+          allMarkers.push(layer);
         });
 
-        map.addLayer(markersCluster); // Add markers to map
+        map.addLayer(markersCluster);
         console.log(`Total markers added: ${allMarkers.length}`);
-
+        
         populateDropdowns();
-        applySavedFilters(); // Call this after markers are loaded
-      }).addTo(map);
+        setDynamicRanges();
+        applySavedFilters();
+      })
+      .on('error', function(e) {
+        console.error('KML loading error:', e.error);
+        alert('Failed to load property data. Please check console for details.');
+      })
+      .addTo(map);
   }
 
-  // Populate dropdowns for filters
+  // Populate dropdown filters
   function populateDropdowns() {
-    const propertyTypeSelect = $('#property-type');
-    const auctionTypeSelect = $('#auction-type');
-    const transitSelect = $('#transit');
+    $('#property-type').html('<option value="">All Types</option>');
+    $('#auction-type').html('<option value="">All Types</option>');
+    $('#transit').empty();
 
-    const propertyType = new Set();
-    const auctions = new Set();
+    const propertyTypes = new Set();
+    const auctionTypes = new Set();
     const stations = new Set();
 
     allMarkers.forEach(m => {
-      propertyType.add(m.options.customData.propertyType);
-      auctions.add(m.options.customData.auctionType);
+      if (m.options.customData.propertyType) {
+        propertyTypes.add(m.options.customData.propertyType);
+      }
+      if (m.options.customData.auctionType) {
+        auctionTypes.add(m.options.customData.auctionType);
+      }
       m.options.customData.transits.forEach(t => stations.add(t));
     });
 
-    console.log("Populating filter dropdowns...");
-    propertyTypeSelect.append([...propertyType].sort().map(t => `<option value="${t}">${t}</option>`));
-    auctionTypeSelect.append([...auctions].sort().map(t => `<option value="${t}">${t}</option>`));
-    transitSelect.append([...stations].sort().map(t => `<option value="${t}">${t}</option>`));
-  }
-
-  // Apply saved filters from localStorage
-  function applySavedFilters() {
-    const savedFilters = localStorage.getItem('auctionFilters');
-    if (savedFilters) {
-      const filters = JSON.parse(savedFilters);
-
-      // Apply saved filters to form fields
-      $('#property-type').val(filters.propertyType || '');
-      $('#auction-start').val(filters.start || '');
-      $('#auction-end').val(filters.end || '');
-      $('#price-range').val(filters.price || 0);
-      $('#builtup-range').val(filters.builtup || 0);
-      $('#tenure').val(filters.tenure || '');
-      $('#auction-type').val(filters.auctionType || '');
-      $('#transit').val(filters.transit || []);
+    [...propertyTypes].sort().forEach(t => 
+      $('#property-type').append(`<option value="${t}">${t}</option>`));
       
-      console.log("Applying saved filters...");
-      applyFilters();
-    }
+    [...auctionTypes].sort().forEach(t => 
+      $('#auction-type').append(`<option value="${t}">${t}</option>`));
+      
+    [...stations].sort().forEach(t => 
+      $('#transit').append(`<option value="${t}">${t}</option>`));
   }
 
-  // Filter markers based on selected criteria
-  function applyFilters() {
-    console.log("Applying filters...");
+  // Set dynamic range limits based on data
+  function setDynamicRanges() {
+    const prices = allMarkers.map(m => m.options.customData.price).filter(p => p > 0);
+    const builtups = allMarkers.map(m => m.options.customData.builtUp).filter(b => b > 0);
+    
+    if (prices.length > 0) {
+      const maxPrice = Math.ceil(Math.max(...prices) / 100000) * 100000;
+      $('#price-range').attr('max', maxPrice).val(maxPrice);
+    }
+    
+    if (builtups.length > 0) {
+      const maxBuiltup = Math.ceil(Math.max(...builtups) / 100) * 100;
+      $('#builtup-range').attr('max', maxBuiltup).val(maxBuiltup);
+    }
+    
+    updateRangeDisplays();
+  }
 
+  // Apply filters
+  function applyFilters() {
     const propertyType = $('#property-type').val();
-    const start = $('#auction-start').val();
-    const end = $('#auction-end').val();
-    const price = parseFloat($('#price-range').val()) || Infinity;
-    const builtup = parseFloat($('#builtup-range').val()) || Infinity;
+    const startDate = parseAuctionDate($('#auction-start').val());
+    const endDate = parseAuctionDate($('#auction-end').val());
+    const maxPrice = parseFloat($('#price-range').val()) || Infinity;
+    const maxBuiltup = parseFloat($('#builtup-range').val()) || Infinity;
     const tenure = $('#tenure').val();
     const auctionType = $('#auction-type').val();
     const transitSelected = $('#transit').val() || [];
 
-    markersCluster.clearLayers(); // Clear previous markers
+    markersCluster.clearLayers();
 
     const filtered = allMarkers.filter(m => {
       const d = m.options.customData;
+      const auctionDate = parseAuctionDate(d.auctionDate);
 
-      let match = true;
-      if (propertyType && d.propertyType !== propertyType) match = false;
-      if (auctionType && d.auctionType !== auctionType) match = false;
-      if (tenure && d.tenure !== tenure) match = false;
-      if (d.price > price) match = false;
-      if (d.builtUp > builtup) match = false;
-      if (start && new Date(d.auctionDate.split('(')[0].trim()) < new Date(start)) match = false;
-      if (end && new Date(d.auctionDate.split('(')[0].trim()) > new Date(end)) match = false;
-      if (transitSelected.length > 0 && !d.transits.some(t => transitSelected.includes(t))) match = false;
+      // Check each filter condition
+      if (propertyType && d.propertyType !== propertyType) return false;
+      if (auctionType && d.auctionType !== auctionType) return false;
+      if (tenure && d.tenure !== tenure) return false;
+      if (d.price > maxPrice) return false;
+      if (d.builtUp > maxBuiltup) return false;
+      if (startDate && (!auctionDate || auctionDate < startDate)) return false;
+      if (endDate && (!auctionDate || auctionDate > endDate)) return false;
+      if (transitSelected.length > 0 && !d.transits.some(t => transitSelected.includes(t))) return false;
 
-      return match;
+      return true;
     });
 
     console.log(`Filtered markers: ${filtered.length}`);
-    filtered.forEach(m => markersCluster.addLayer(m)); // Add filtered markers back
+    filtered.forEach(m => markersCluster.addLayer(m));
 
     if (filtered.length > 0) {
       const bounds = L.latLngBounds(filtered.map(m => m.getLatLng()));
-      map.fitBounds(bounds); // Adjust map bounds to fit filtered markers
+      map.fitBounds(bounds);
+    } else {
+      map.setView([3.139, 101.6869], 12);
+      alert('No properties match current filters');
     }
   }
 
-  // Save the filters to localStorage
+  // Save filters to localStorage
   function saveFilters() {
     const filters = {
       propertyType: $('#property-type').val(),
@@ -289,21 +329,40 @@ $(document).ready(function() {
       builtup: $('#builtup-range').val(),
       tenure: $('#tenure').val(),
       auctionType: $('#auction-type').val(),
-      transit: $('#transit').val()
+      transit: $('#transit').val() || []
     };
-    console.log("Saving filters:", filters);
     localStorage.setItem('auctionFilters', JSON.stringify(filters));
+    alert('Filters saved successfully');
   }
 
-  // Event Listeners
-  $('#property-type, #auction-start, #auction-end, #price-range, #builtup-range, #tenure, #auction-type, #transit').on('change input', function() {
-    console.log("Filter changed...");
-    applyFilters();
-  });
+  // Apply saved filters
+  function applySavedFilters() {
+    const savedFilters = localStorage.getItem('auctionFilters');
+    if (savedFilters) {
+      const filters = JSON.parse(savedFilters);
+
+      $('#property-type').val(filters.propertyType || '');
+      $('#auction-start').val(filters.start || '');
+      $('#auction-end').val(filters.end || '');
+      $('#price-range').val(filters.price || $('#price-range').attr('max'));
+      $('#builtup-range').val(filters.builtup || $('#builtup-range').attr('max'));
+      $('#tenure').val(filters.tenure || '');
+      $('#auction-type').val(filters.auctionType || '');
+      $('#transit').val(filters.transit || []);
+      
+      updateRangeDisplays();
+      applyFilters();
+    }
+  }
+
+  // Event listeners
+  $('#price-range, #builtup-range').on('input', updateRangeDisplays);
+  
+  $('#property-type, #auction-start, #auction-end, #tenure, #auction-type, #transit').on('change', applyFilters);
   
   $('#save-filters').on('click', saveFilters);
+  
   $('#reset-filters').on('click', function() {
-    console.log("Resetting filters...");
     localStorage.removeItem('auctionFilters');
     location.reload();
   });
@@ -312,7 +371,8 @@ $(document).ready(function() {
     location.reload();
   });
 
-  loadKML(); // Initial map loading
+  // Initialize
+  loadKML();
 });
 </script>
 </body>
