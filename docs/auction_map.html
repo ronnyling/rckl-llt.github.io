@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_136c3fc27f16dd3d5a3818009a26e079 {
+                #map_d55bb88948f1ba5c39c9e7f8868160de {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -58,14 +58,14 @@
     </div>
     
     
-            <div class="folium-map" id="map_136c3fc27f16dd3d5a3818009a26e079" ></div>
+            <div class="folium-map" id="map_d55bb88948f1ba5c39c9e7f8868160de" ></div>
         
 </body>
 <script>
     
     
-            var map_136c3fc27f16dd3d5a3818009a26e079 = L.map(
-                "map_136c3fc27f16dd3d5a3818009a26e079",
+            var map_d55bb88948f1ba5c39c9e7f8868160de = L.map(
+                "map_d55bb88948f1ba5c39c9e7f8868160de",
                 {
                     center: [3.139, 101.6869],
                     crs: L.CRS.EPSG3857,
@@ -79,26 +79,26 @@
 
         
     
-            var tile_layer_21842537944b366713132e9ab189871a = L.tileLayer(
+            var tile_layer_5cb3ab2d531b50a29bc54a5c72a229eb = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_21842537944b366713132e9ab189871a.addTo(map_136c3fc27f16dd3d5a3818009a26e079);
+            tile_layer_5cb3ab2d531b50a29bc54a5c72a229eb.addTo(map_d55bb88948f1ba5c39c9e7f8868160de);
         
     
-            var locate_control_ca50d290fb677f84bec01ea715da9ce4 = L.control.locate(
+            var locate_control_f804ed22a04ca222557cf0308c09c08c = L.control.locate(
                 {}
-            ).addTo(map_136c3fc27f16dd3d5a3818009a26e079);
+            ).addTo(map_d55bb88948f1ba5c39c9e7f8868160de);
             
-                locate_control_ca50d290fb677f84bec01ea715da9ce4.start();
+                locate_control_f804ed22a04ca222557cf0308c09c08c.start();
             
         
     
-            var measure_control_cdb3e377094daaaae14389c2a3c18711 = new L.Control.Measure(
+            var measure_control_1ef741db02824028d45f033f91893a33 = new L.Control.Measure(
                 {"position": "topright", "primaryAreaUnit": "sqmeters", "primaryLengthUnit": "kilometers", "secondaryAreaUnit": "acres", "secondaryLengthUnit": "miles"});
-            map_136c3fc27f16dd3d5a3818009a26e079.addControl(measure_control_cdb3e377094daaaae14389c2a3c18711);
+            map_d55bb88948f1ba5c39c9e7f8868160de.addControl(measure_control_1ef741db02824028d45f033f91893a33);
 
             // Workaround for using this plugin with Leaflet>=1.8.0
             // https://github.com/ljagis/leaflet-measure/issues/171
@@ -117,660 +117,1308 @@
 
         
     
-            var marker_cluster_866434678f180cec8afe6f066f68cb1a = L.markerClusterGroup(
+            var marker_cluster_af80ff1027a4c315f170020edf51bff2 = L.markerClusterGroup(
                 {}
             );
         
     
-            var marker_361e8027fbfbb295a2a1b6a173da2565 = L.marker(
+            var marker_b6d34094952cfad5c0ed380deb5b7f1e = L.marker(
+                [2.9154034, 101.8737088],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_865131efc8e80301d22c83942ead8d36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b6d34094952cfad5c0ed380deb5b7f1e.setIcon(icon_865131efc8e80301d22c83942ead8d36);
+        
+    
+        var popup_a2831802ec3ccefc355db07b82deff2e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_12dbaafa4312d3c366d15d2b2a9f9eaf = $(`<div id="html_12dbaafa4312d3c366d15d2b2a9f9eaf" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [Newly Completed in 2024] Apartment [10 min to Lotus's Semenyih]<br>             RM 188.37 psf<br><br>             <strong>Nearest Transit:</strong> Kajang (MRT Lines)<br>             <strong>Size:</strong> <u>860 sq.ft</u><br>             <strong>Price:</strong> RM162,000<br><br>             <i>Residensi Kesuma 1, Jalan Kesuma, Bandar Tasik Kesuma, 43700 Beranang, Selangor</i><br><br>             <strong>Auction Date:</strong> 28 May 2025 (Wed)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> 7thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kajang (MRT Lines) - 11.89 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stdium Kajang (MRT Lines) - 13.04 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Jernih (MRT Lines) - 13.76 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bukit Dukung (MRT Lines) - 16.75 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batu 11 Cheras (MRT Lines) - 17.85 km<br>             </div>             </div>         </div>`)[0];
+                popup_a2831802ec3ccefc355db07b82deff2e.setContent(html_12dbaafa4312d3c366d15d2b2a9f9eaf);
+            
+        
+
+        marker_b6d34094952cfad5c0ed380deb5b7f1e.bindPopup(popup_a2831802ec3ccefc355db07b82deff2e)
+        ;
+
+        
+    
+    
+            var marker_61b09f5b0c8a127c1e7ca744d19cf73d = L.marker(
+                [3.413046, 101.5889508],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_565c39fd51db5656fc6cd9c7a5ade21d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_61b09f5b0c8a127c1e7ca744d19cf73d.setIcon(icon_565c39fd51db5656fc6cd9c7a5ade21d);
+        
+    
+        var popup_c4bdd30dbe586d14fd0dd33399696715 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_436a5b0118c8cfe091011093f3b1ceb2 = $(`<div id="html_436a5b0118c8cfe091011093f3b1ceb2" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [4 min to 99 Speedmart 1963 Taman Bukit Sentosa] Flat [7 min to Lotus's Bukit Beruntung]<br>             RM 27.36 psf<br><br>             <strong>Nearest Transit:</strong> Serendah (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>592 sq.ft</u><br>             <strong>Price:</strong> RM16,200<br><br>             <i>Rumah Pangsa Sri Anggerik III, Jalan Anggerik 5, Seksyen BS 7, Bukit Sentosa, 48300 Rawang, Selangor</i><br><br>             <strong>Auction Date:</strong> 29 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serendah (KTM Komuter Lines) - 4.99 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batang Kali (KTM Komuter Lines) - 8.16 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rawang (KTM Komuter Lines) - 10.49 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rasa (KTM Komuter Lines) - 10.88 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kuala Kubu Bharu (KTM Komuter Lines) - 16.50 km<br>             </div>             </div>         </div>`)[0];
+                popup_c4bdd30dbe586d14fd0dd33399696715.setContent(html_436a5b0118c8cfe091011093f3b1ceb2);
+            
+        
+
+        marker_61b09f5b0c8a127c1e7ca744d19cf73d.bindPopup(popup_c4bdd30dbe586d14fd0dd33399696715)
+        ;
+
+        
+    
+    
+            var marker_5fefe8b91b7b2ac20f7a2224391e2bbd = L.marker(
+                [3.2332539, 101.6498739],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_4e95c51615e111c94d79f8696d5403b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5fefe8b91b7b2ac20f7a2224391e2bbd.setIcon(icon_4e95c51615e111c94d79f8696d5403b9);
+        
+    
+        var popup_eb271078901a0610288c21f438021101 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2e7eb14386c09b9ec77cae6de92b80da = $(`<div id="html_2e7eb14386c09b9ec77cae6de92b80da" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Apartment<br>             RM 117.05 psf<br><br>             <strong>Nearest Transit:</strong> Metro Prima (MRT Lines)<br>             <strong>Size:</strong> <u>786 sq.ft</u><br>             <strong>Price:</strong> RM92,000<br><br>             <i>Block 2, Pangsapuri Taman Intan Baiduri, Jalan 1/1B, Taman Intan Baiduri, 52100, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 26 Jun 2025 (Thu)<br>             <strong>Auction Type:</strong> Title<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 7thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Metro Prima (MRT Lines) - 2.32 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kepong Baru (MRT Lines) - 2.40 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jinjang (MRT Lines) - 2.70 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Delima (MRT Lines) - 3.38 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kepong (KTM Komuter Lines) - 3.64 km<br>             </div>             </div>         </div>`)[0];
+                popup_eb271078901a0610288c21f438021101.setContent(html_2e7eb14386c09b9ec77cae6de92b80da);
+            
+        
+
+        marker_5fefe8b91b7b2ac20f7a2224391e2bbd.bindPopup(popup_eb271078901a0610288c21f438021101)
+        ;
+
+        
+    
+    
+            var marker_0ebf05ba6cd8b6de6faa983b10b1f6f3 = L.marker(
+                [3.1942136, 101.5915827],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_b94295c9203c1885dc50e574820ce936 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0ebf05ba6cd8b6de6faa983b10b1f6f3.setIcon(icon_b94295c9203c1885dc50e574820ce936);
+        
+    
+        var popup_fe125278d77f30f5c18568b83e78d39d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0c296b4449e445deb406ac8e36c8c1ae = $(`<div id="html_0c296b4449e445deb406ac8e36c8c1ae" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Condominium<br>             RM 296.73 psf<br><br>             <strong>Nearest Transit:</strong> Damansara Damai (MRT Lines)<br>             <strong>Size:</strong> <u>1,102 sq.ft</u><br>             <strong>Price:</strong> RM327,000<br><br>             <i>13th Floor, Block C, Residensi Suasana @ Damai, Damansara Damai, 47830 Petaling Jaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Damansara Damai (MRT Lines) - 0.63 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kampung Selamat (MRT Lines) - 1.50 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Buloh (MRT Lines) - 1.74 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Buloh (KTM Komuter Lines) - 1.77 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Barat (MRT Lines) - 1.91 km<br>             </div>             </div>         </div>`)[0];
+                popup_fe125278d77f30f5c18568b83e78d39d.setContent(html_0c296b4449e445deb406ac8e36c8c1ae);
+            
+        
+
+        marker_0ebf05ba6cd8b6de6faa983b10b1f6f3.bindPopup(popup_fe125278d77f30f5c18568b83e78d39d)
+        ;
+
+        
+    
+    
+            var marker_e1e65b4d8ce4c1b457782a834f4536d0 = L.marker(
+                [3.0297047, 101.7104323],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_1c75c8df2d7f672745f5b48055f559a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e1e65b4d8ce4c1b457782a834f4536d0.setIcon(icon_1c75c8df2d7f672745f5b48055f559a7);
+        
+    
+        var popup_fdb016df1cbd898f326e17d0737b9d4b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d5bafb763650ec3c29b28adf2adb5664 = $(`<div id="html_d5bafb763650ec3c29b28adf2adb5664" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Service Apartment<br>             RM 197.20 psf<br><br>             <strong>Nearest Transit:</strong> Serdang Jaya (MRT Lines)<br>             <strong>Size:</strong> <u>1,109 sq.ft</u><br>             <strong>Price:</strong> RM218,700<br><br>             <i>Pangsapuri Suria Perdana (Fortune Park), Taman Serdang Perdana, Seksyen 4, 43300 Seri Kembangan, Selangor</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> Title<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 7thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serdang Jaya (MRT Lines) - 0.90 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serdang Raya Utara (MRT Lines) - 1.46 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UPM (MRT Lines) - 2.38 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bukit Jalil (LRT Lines) - 3.75 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Besi (MRT Lines) - 3.76 km<br>             </div>             </div>         </div>`)[0];
+                popup_fdb016df1cbd898f326e17d0737b9d4b.setContent(html_d5bafb763650ec3c29b28adf2adb5664);
+            
+        
+
+        marker_e1e65b4d8ce4c1b457782a834f4536d0.bindPopup(popup_fdb016df1cbd898f326e17d0737b9d4b)
+        ;
+
+        
+    
+    
+            var marker_10b4bb46993a16125ee84b3afb3b5b29 = L.marker(
+                [3.053676, 101.490962],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_e573c0fb4ec9b43d8e58884ef757a1d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_10b4bb46993a16125ee84b3afb3b5b29.setIcon(icon_e573c0fb4ec9b43d8e58884ef757a1d4);
+        
+    
+        var popup_b0ddc705aeca214a98b2a87f1e8209cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_17f5a8b58c2480a57287e1769717d599 = $(`<div id="html_17f5a8b58c2480a57287e1769717d599" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             SOFO<br>             RM 289.00 psf<br><br>             <strong>Nearest Transit:</strong> Padang Jawa (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>840 sq.ft</u><br>             <strong>Price:</strong> RM242,757<br><br>             <i>Suria Jaya, Jalan Padang Jawa, Seksyen 16, 40200 Shah Alam, Selangor</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> 6thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Padang Jawa (KTM Komuter Lines) - 0.23 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bukit Badak (KTM Komuter Lines) - 2.99 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shah Alam (KTM Komuter Lines) - 3.84 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Klang (KTM Komuter Lines) - 4.73 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teluk Pulai (KTM Komuter Lines) - 6.69 km<br>             </div>             </div>         </div>`)[0];
+                popup_b0ddc705aeca214a98b2a87f1e8209cb.setContent(html_17f5a8b58c2480a57287e1769717d599);
+            
+        
+
+        marker_10b4bb46993a16125ee84b3afb3b5b29.bindPopup(popup_b0ddc705aeca214a98b2a87f1e8209cb)
+        ;
+
+        
+    
+    
+            var marker_1a97888e0870aa627ee45ef06ac3e00d = L.marker(
+                [3.4429784, 101.5548371],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_1d596d8cd3600da70042554c8ba3e69a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1a97888e0870aa627ee45ef06ac3e00d.setIcon(icon_1d596d8cd3600da70042554c8ba3e69a);
+        
+    
+        var popup_c9a2e9951f6709ebedac038acc8166eb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f4e5cff362ef0dd2baae8ea11d30b4f2 = $(`<div id="html_f4e5cff362ef0dd2baae8ea11d30b4f2" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [Opposite SK Taman Bunga Raya 2] Apartment [10 min to Lotus's Bukit Beruntung]<br>             RM 39.26 psf<br><br>             <strong>Nearest Transit:</strong> Batang Kali (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>650 sq.ft</u><br>             <strong>Price:</strong> RM25,520<br><br>             <i>Block A, Apartment Teratai, Jalan Bunga Raya 3, Taman Bunga Raya, Bukit Beruntung, 48300 Rawang, Selangor</i><br><br>             <strong>Auction Date:</strong> 29 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batang Kali (KTM Komuter Lines) - 9.64 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serendah (KTM Komuter Lines) - 9.95 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rasa (KTM Komuter Lines) - 10.86 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rawang (KTM Komuter Lines) - 13.87 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kuala Kubu Bharu (KTM Komuter Lines) - 15.41 km<br>             </div>             </div>         </div>`)[0];
+                popup_c9a2e9951f6709ebedac038acc8166eb.setContent(html_f4e5cff362ef0dd2baae8ea11d30b4f2);
+            
+        
+
+        marker_1a97888e0870aa627ee45ef06ac3e00d.bindPopup(popup_c9a2e9951f6709ebedac038acc8166eb)
+        ;
+
+        
+    
+    
+            var marker_b6c318b5db4f652b00f50f892d2aa454 = L.marker(
+                [3.0337477, 101.4120015],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_fe4ea76d57c58cd4ea03fc1bc31cb7d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b6c318b5db4f652b00f50f892d2aa454.setIcon(icon_fe4ea76d57c58cd4ea03fc1bc31cb7d4);
+        
+    
+        var popup_f373d956d1c0f4e9fb88ed1dc244611d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dc81124b5218cc580d5881d3c360d11c = $(`<div id="html_dc81124b5218cc580d5881d3c360d11c" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [5 min to Harbour Place Mall & McDonald’s] Town House (Upper Unit) [7 min to Mydin Klang, Giant Klang & Lotus's]<br>             RM 174.25 psf<br><br>             <strong>Nearest Transit:</strong> Teluk Gadong (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>1,130 sq.ft</u><br>             <strong>Price:</strong> RM196,900<br><br>             <i>Jalan Udang Cendana 3/KS3, Taman Udang Cendana, Di Jalan Kampung Delek Dalam, 41250 Klang, Selangor</i><br><br>             <strong>Auction Date:</strong> 29 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teluk Gadong (KTM Komuter Lines) - 1.44 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kampung Raja Uda (KTM Komuter Lines) - 1.53 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teluk Pulai (KTM Komuter Lines) - 2.37 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jalan Kastam (KTM Komuter Lines) - 2.53 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Klang (KTM Komuter Lines) - 4.32 km<br>             </div>             </div>         </div>`)[0];
+                popup_f373d956d1c0f4e9fb88ed1dc244611d.setContent(html_dc81124b5218cc580d5881d3c360d11c);
+            
+        
+
+        marker_b6c318b5db4f652b00f50f892d2aa454.bindPopup(popup_f373d956d1c0f4e9fb88ed1dc244611d)
+        ;
+
+        
+    
+    
+            var marker_1b0f72ef36a463fb85269cf8444d8e35 = L.marker(
+                [3.177331, 101.6858722],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_8fec7637cc2f75caaaab827fcb036c79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1b0f72ef36a463fb85269cf8444d8e35.setIcon(icon_8fec7637cc2f75caaaab827fcb036c79);
+        
+    
+        var popup_da44e7508a64c2382d2688f1e788b950 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8442872d4edccc3fa4ab132884cc25e0 = $(`<div id="html_8442872d4edccc3fa4ab132884cc25e0" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Condominium<br>             RM 176.99 psf<br><br>             <strong>Nearest Transit:</strong> Sentul Barat (MRT Lines)<br>             <strong>Size:</strong> <u>2,034 sq.ft</u><br>             <strong>Price:</strong> RM360,000<br><br>             <i>Menara KLH, 2, Jalan Kasipillay, 51200, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 24 Jun 2025 (Tue)<br>             <strong>Auction Type:</strong> Title<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sentul Barat (MRT Lines) - 0.26 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sentul (LRT Lines) - 1.08 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Titiwangsa (MRT Lines) - 1.12 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Titiwangsa (LRT Lines) - 1.13 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Titiwangsa (Monorail Line) - 1.21 km<br>             </div>             </div>         </div>`)[0];
+                popup_da44e7508a64c2382d2688f1e788b950.setContent(html_8442872d4edccc3fa4ab132884cc25e0);
+            
+        
+
+        marker_1b0f72ef36a463fb85269cf8444d8e35.bindPopup(popup_da44e7508a64c2382d2688f1e788b950)
+        ;
+
+        
+    
+    
+            var marker_0fbb8d90996c7038ea60eb357a4beb7e = L.marker(
+                [3.0682835, 101.663025],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_007034dddba44c3e4fec211ce02fc011 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0fbb8d90996c7038ea60eb357a4beb7e.setIcon(icon_007034dddba44c3e4fec211ce02fc011);
+        
+    
+        var popup_c57be5fb505ff6dd091a15acda485e14 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_05e970e45378f6527374d1046cbc6b11 = $(`<div id="html_05e970e45378f6527374d1046cbc6b11" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Condominium (Penthouse)<br>             RM 172.23 psf<br><br>             <strong>Nearest Transit:</strong> Muhibbah (LRT Lines)<br>             <strong>Size:</strong> <u>4,402 sq.ft</u><br>             <strong>Price:</strong> RM758,160<br><br>             <i>Tingkat 16, Block A, Greenpark Condominium, Jalan Awan Pintal, Taman Yarl, 58200, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 24 Jul 2025 (Thu)<br>             <strong>Auction Type:</strong> Title<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Muhibbah (LRT Lines) - 0.70 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Awan Besar (LRT Lines) - 1.09 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alam Sutera (LRT Lines) - 1.68 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jalan Templer (KTM Komuter Lines) - 1.83 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Petaling (KTM Komuter Lines) - 2.00 km<br>             </div>             </div>         </div>`)[0];
+                popup_c57be5fb505ff6dd091a15acda485e14.setContent(html_05e970e45378f6527374d1046cbc6b11);
+            
+        
+
+        marker_0fbb8d90996c7038ea60eb357a4beb7e.bindPopup(popup_c57be5fb505ff6dd091a15acda485e14)
+        ;
+
+        
+    
+    
+            var marker_4b61f335b6873220961e1ae2b717e42f = L.marker(
+                [3.1015884, 101.5358698],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_cbf8c556495fd977f434ec28ce0170c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4b61f335b6873220961e1ae2b717e42f.setIcon(icon_cbf8c556495fd977f434ec28ce0170c1);
+        
+    
+        var popup_d5cee4b9c4db6a0a83bee4e73dbfd874 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2575dac4f5222991b21308bc2527443b = $(`<div id="html_2575dac4f5222991b21308bc2527443b" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [ROI > 8%; Prime location] Office Unit [Adjacent to Shah Alam Toll Plaza]<br>             RM 218.48 psf<br><br>             <strong>Nearest Transit:</strong> Batu Tiga (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>2,002 sq.ft</u><br>             <strong>Price:</strong> RM437,400<br><br>             <i>2nd Floor, Block A, Pejabat Radia, No. 3, Persiaran Arked, Bukit Jelutong, Seksyen U8, 40150 Shah Alam, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batu Tiga (KTM Komuter Lines) - 3.90 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shah Alam (KTM Komuter Lines) - 5.13 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ara Damansara (LRT Lines) - 5.64 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subang Jaya (KTM Komuter Lines) - 6.02 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subang Jaya (LRT Lines) - 6.06 km<br>             </div>             </div>         </div>`)[0];
+                popup_d5cee4b9c4db6a0a83bee4e73dbfd874.setContent(html_2575dac4f5222991b21308bc2527443b);
+            
+        
+
+        marker_4b61f335b6873220961e1ae2b717e42f.bindPopup(popup_d5cee4b9c4db6a0a83bee4e73dbfd874)
+        ;
+
+        
+    
+    
+            var marker_d7dab8602a873dfb0d23b26b5c742521 = L.marker(
+                [3.0726512, 101.7588355],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_446ac79e242330d28f3964da570713af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d7dab8602a873dfb0d23b26b5c742521.setIcon(icon_446ac79e242330d28f3964da570713af);
+        
+    
+        var popup_46ed25db80bca924a30eee244b6836cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b79a1df83e3dec84dc03320d56e55e70 = $(`<div id="html_b79a1df83e3dec84dc03320d56e55e70" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Condominium<br>             RM 240.16 psf<br><br>             <strong>Nearest Transit:</strong> Taman Suntex (MRT Lines)<br>             <strong>Size:</strong> <u>1,457 sq.ft</u><br>             <strong>Price:</strong> RM349,920<br><br>             <i>Block B, Imperial Residence, Jalan Mas Utama, 43200 Cheras, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Taman Suntex (MRT Lines) - 0.54 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Taman Connaught (MRT Lines) - 1.68 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Raya (MRT Lines) - 1.94 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Taman Mutiara (MRT Lines) - 2.93 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bandar Tun Hussein Onn (MRT Lines) - 3.23 km<br>             </div>             </div>         </div>`)[0];
+                popup_46ed25db80bca924a30eee244b6836cb.setContent(html_b79a1df83e3dec84dc03320d56e55e70);
+            
+        
+
+        marker_d7dab8602a873dfb0d23b26b5c742521.bindPopup(popup_46ed25db80bca924a30eee244b6836cb)
+        ;
+
+        
+    
+    
+            var marker_86a35282bf11ea40ed2d65787c8a8497 = L.marker(
                 [3.4438265, 101.5539362],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_3829782875f897edf98e96c0ae2ea896 = L.AwesomeMarkers.icon(
+            var icon_94f5b457cd5a309e2be43bf5b48ec177 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_361e8027fbfbb295a2a1b6a173da2565.setIcon(icon_3829782875f897edf98e96c0ae2ea896);
+            marker_86a35282bf11ea40ed2d65787c8a8497.setIcon(icon_94f5b457cd5a309e2be43bf5b48ec177);
         
     
-        var popup_46af7739ab5e21818047b6df095123c3 = L.popup({"maxWidth": 300});
+        var popup_2128ef3e09c0c23d959ded44ed086081 = L.popup({"maxWidth": 300});
 
         
             
-                var html_7847872656c8e2326aa88c014e7b8907 = $(`<div id="html_7847872656c8e2326aa88c014e7b8907" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Apartment [Opposite SK Taman Bunga Raya 2]<br>             RM 31.77 psf<br><br>             <strong>Nearest Transit:</strong> Batang Kali (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>650 sq.ft</u><br>             <strong>Price:</strong> RM20,650<br><br>             <i>Teratai Apartment, Jalan Bunga Raya 3, Taman Bunga Raya, 48300 Rawang, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batang Kali (KTM Komuter Lines) - 9.71 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serendah (KTM Komuter Lines) - 10.09 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rasa (KTM Komuter Lines) - 10.89 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rawang (KTM Komuter Lines) - 13.98 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kuala Kubu Bharu (KTM Komuter Lines) - 15.40 km<br>             </div>             </div>         </div>`)[0];
-                popup_46af7739ab5e21818047b6df095123c3.setContent(html_7847872656c8e2326aa88c014e7b8907);
+                var html_09af55c08278a4b3e53225a29ab9c87c = $(`<div id="html_09af55c08278a4b3e53225a29ab9c87c" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Apartment [Opposite SK Taman Bunga Raya 2]<br>             RM 31.77 psf<br><br>             <strong>Nearest Transit:</strong> Batang Kali (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>650 sq.ft</u><br>             <strong>Price:</strong> RM20,650<br><br>             <i>Teratai Apartment, Jalan Bunga Raya 3, Taman Bunga Raya, 48300 Rawang, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batang Kali (KTM Komuter Lines) - 9.71 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serendah (KTM Komuter Lines) - 10.09 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rasa (KTM Komuter Lines) - 10.89 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rawang (KTM Komuter Lines) - 13.98 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kuala Kubu Bharu (KTM Komuter Lines) - 15.40 km<br>             </div>             </div>         </div>`)[0];
+                popup_2128ef3e09c0c23d959ded44ed086081.setContent(html_09af55c08278a4b3e53225a29ab9c87c);
             
         
 
-        marker_361e8027fbfbb295a2a1b6a173da2565.bindPopup(popup_46af7739ab5e21818047b6df095123c3)
+        marker_86a35282bf11ea40ed2d65787c8a8497.bindPopup(popup_2128ef3e09c0c23d959ded44ed086081)
         ;
 
         
     
     
-            var marker_5310b2456719760ca707652744adeb63 = L.marker(
+            var marker_92c9f18de2efad98f84cf330683f6a76 = L.marker(
                 [3.1658575, 101.6969811],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_d7c6a0230360986444d76aa492c16834 = L.AwesomeMarkers.icon(
+            var icon_8aa549749c59ed8700520fbc145b7b16 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_5310b2456719760ca707652744adeb63.setIcon(icon_d7c6a0230360986444d76aa492c16834);
+            marker_92c9f18de2efad98f84cf330683f6a76.setIcon(icon_8aa549749c59ed8700520fbc145b7b16);
         
     
-        var popup_4f15702c1c45733a857c5b6864af568c = L.popup({"maxWidth": 300});
+        var popup_8604ef15fcb9747e70758bb35288d703 = L.popup({"maxWidth": 300});
 
         
             
-                var html_8066a886713c04dc44ec07c9e13012b4 = $(`<div id="html_8066a886713c04dc44ec07c9e13012b4" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Retail Lot<br>             RM 2014.08 psf<br><br>             <strong>Nearest Transit:</strong> Chow Kit (Monorail Line)<br>             <strong>Size:</strong> <u>129 sq.ft</u><br>             <strong>Price:</strong> RM259,816<br><br>             <i>4th Floor, Plaza Haji Taib, Lorong Haji Taib 5, 50300, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chow Kit (Monorail Line) - 0.23 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PWTC (LRT Lines) - 0.39 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sultan Ismail (LRT Lines) - 0.60 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putra (KTM Komuter Lines) - 0.66 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Medan Tuanku (Monorail Line) - 0.75 km<br>             </div>             </div>         </div>`)[0];
-                popup_4f15702c1c45733a857c5b6864af568c.setContent(html_8066a886713c04dc44ec07c9e13012b4);
+                var html_b7cc3f1894445017b87948cf6ede5751 = $(`<div id="html_b7cc3f1894445017b87948cf6ede5751" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Retail Lot<br>             RM 2014.08 psf<br><br>             <strong>Nearest Transit:</strong> Chow Kit (Monorail Line)<br>             <strong>Size:</strong> <u>129 sq.ft</u><br>             <strong>Price:</strong> RM259,816<br><br>             <i>4th Floor, Plaza Haji Taib, Lorong Haji Taib 5, 50300, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chow Kit (Monorail Line) - 0.23 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PWTC (LRT Lines) - 0.39 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sultan Ismail (LRT Lines) - 0.60 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putra (KTM Komuter Lines) - 0.66 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Medan Tuanku (Monorail Line) - 0.75 km<br>             </div>             </div>         </div>`)[0];
+                popup_8604ef15fcb9747e70758bb35288d703.setContent(html_b7cc3f1894445017b87948cf6ede5751);
             
         
 
-        marker_5310b2456719760ca707652744adeb63.bindPopup(popup_4f15702c1c45733a857c5b6864af568c)
+        marker_92c9f18de2efad98f84cf330683f6a76.bindPopup(popup_8604ef15fcb9747e70758bb35288d703)
         ;
 
         
     
     
-            var marker_cb264926ccaf0a77d4369431f4f5eafd = L.marker(
+            var marker_3041bfa56bb7177dd1e9e468afec1473 = L.marker(
                 [3.4389664, 101.5467281],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_27ea9b8e0bc9ae58489185ba27a8fe6a = L.AwesomeMarkers.icon(
+            var icon_944341034d168d1403814f46f7a69526 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_cb264926ccaf0a77d4369431f4f5eafd.setIcon(icon_27ea9b8e0bc9ae58489185ba27a8fe6a);
+            marker_3041bfa56bb7177dd1e9e468afec1473.setIcon(icon_944341034d168d1403814f46f7a69526);
         
     
-        var popup_78fe66a132edaf6e0b5cee21d1d9a992 = L.popup({"maxWidth": 300});
+        var popup_d158dbaffd7810043c3d7644a4749f4e = L.popup({"maxWidth": 300});
 
         
             
-                var html_7847eb12290a7c5d208c6d658ef59264 = $(`<div id="html_7847eb12290a7c5d208c6d658ef59264" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Apartment<br>             RM 78.11 psf<br><br>             <strong>Nearest Transit:</strong> Serendah (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>672 sq.ft</u><br>             <strong>Price:</strong> RM52,488<br><br>             <i>4th Floor, Block D, Apartment Buginvilla, Persiaran Bunga Raya, Taman Bunga Raya, 48300 Rawang, Selangor</i><br><br>             <strong>Auction Date:</strong> 23 May 2025 (Fri)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 6thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serendah (KTM Komuter Lines) - 10.27 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batang Kali (KTM Komuter Lines) - 10.63 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rasa (KTM Komuter Lines) - 11.85 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rawang (KTM Komuter Lines) - 13.61 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kuala Kubu Bharu (KTM Komuter Lines) - 16.32 km<br>             </div>             </div>         </div>`)[0];
-                popup_78fe66a132edaf6e0b5cee21d1d9a992.setContent(html_7847eb12290a7c5d208c6d658ef59264);
+                var html_88d2535c121bd064a7c081fa20bac8fd = $(`<div id="html_88d2535c121bd064a7c081fa20bac8fd" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Apartment<br>             RM 78.11 psf<br><br>             <strong>Nearest Transit:</strong> Serendah (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>672 sq.ft</u><br>             <strong>Price:</strong> RM52,488<br><br>             <i>4th Floor, Block D, Apartment Buginvilla, Persiaran Bunga Raya, Taman Bunga Raya, 48300 Rawang, Selangor</i><br><br>             <strong>Auction Date:</strong> 23 May 2025 (Fri)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 6thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serendah (KTM Komuter Lines) - 10.27 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batang Kali (KTM Komuter Lines) - 10.63 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rasa (KTM Komuter Lines) - 11.85 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rawang (KTM Komuter Lines) - 13.61 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kuala Kubu Bharu (KTM Komuter Lines) - 16.32 km<br>             </div>             </div>         </div>`)[0];
+                popup_d158dbaffd7810043c3d7644a4749f4e.setContent(html_88d2535c121bd064a7c081fa20bac8fd);
             
         
 
-        marker_cb264926ccaf0a77d4369431f4f5eafd.bindPopup(popup_78fe66a132edaf6e0b5cee21d1d9a992)
+        marker_3041bfa56bb7177dd1e9e468afec1473.bindPopup(popup_d158dbaffd7810043c3d7644a4749f4e)
         ;
 
         
     
     
-            var marker_5303e7ecc1e4e86aa85d78a7615bb1ea = L.marker(
+            var marker_723690ed96556b948c0e21081c3965f1 = L.marker(
                 [3.1939551, 101.5850605],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_71feb230c3cf873457d05af176dd90be = L.AwesomeMarkers.icon(
+            var icon_3825e443a0b140ce0affd7d95697abd1 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_5303e7ecc1e4e86aa85d78a7615bb1ea.setIcon(icon_71feb230c3cf873457d05af176dd90be);
+            marker_723690ed96556b948c0e21081c3965f1.setIcon(icon_3825e443a0b140ce0affd7d95697abd1);
         
     
-        var popup_a7c1bb6644b4456a15a6096ba2a4d43f = L.popup({"maxWidth": 300});
+        var popup_09664e2ea324413b493080df696b5f0f = L.popup({"maxWidth": 300});
 
         
             
-                var html_7c164a3c6c331e8770b7381ea153ad3e = $(`<div id="html_7c164a3c6c331e8770b7381ea153ad3e" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [Next to SK Damansara Damai 2] Shop Apartment [5 min to Damansara Damai MRT Station]<br>             RM 107.78 psf<br><br>             <strong>Nearest Transit:</strong> Kampung Selamat (MRT Lines)<br>             <strong>Size:</strong> <u>710 sq.ft</u><br>             <strong>Price:</strong> RM76,527<br><br>             <i>Block B, Apartment Suria, Jalan PJU 10/4A, PJU 10, Damansara Damai, 47830 Petaling Jaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 26 May 2025 (Mon)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 8thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kampung Selamat (MRT Lines) - 0.83 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Damansara Damai (MRT Lines) - 1.06 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Buloh (KTM Komuter Lines) - 1.42 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Buloh (MRT Lines) - 1.43 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kwasa Damansara (MRT Lines) - 2.36 km<br>             </div>             </div>         </div>`)[0];
-                popup_a7c1bb6644b4456a15a6096ba2a4d43f.setContent(html_7c164a3c6c331e8770b7381ea153ad3e);
+                var html_08367d73629c7de1aadb9baddba4ea0d = $(`<div id="html_08367d73629c7de1aadb9baddba4ea0d" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [Next to SK Damansara Damai 2] Shop Apartment [5 min to Damansara Damai MRT Station]<br>             RM 107.78 psf<br><br>             <strong>Nearest Transit:</strong> Kampung Selamat (MRT Lines)<br>             <strong>Size:</strong> <u>710 sq.ft</u><br>             <strong>Price:</strong> RM76,527<br><br>             <i>Block B, Apartment Suria, Jalan PJU 10/4A, PJU 10, Damansara Damai, 47830 Petaling Jaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 26 May 2025 (Mon)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 8thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kampung Selamat (MRT Lines) - 0.83 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Damansara Damai (MRT Lines) - 1.06 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Buloh (KTM Komuter Lines) - 1.42 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Buloh (MRT Lines) - 1.43 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kwasa Damansara (MRT Lines) - 2.36 km<br>             </div>             </div>         </div>`)[0];
+                popup_09664e2ea324413b493080df696b5f0f.setContent(html_08367d73629c7de1aadb9baddba4ea0d);
             
         
 
-        marker_5303e7ecc1e4e86aa85d78a7615bb1ea.bindPopup(popup_a7c1bb6644b4456a15a6096ba2a4d43f)
+        marker_723690ed96556b948c0e21081c3965f1.bindPopup(popup_09664e2ea324413b493080df696b5f0f)
         ;
 
         
     
     
-            var marker_758d3ae6ddb7f04d99e8f23cbd064022 = L.marker(
+            var marker_2f19177bc96232b63448b033b566c541 = L.marker(
                 [3.0676773, 101.5533166],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_7477e53b21fa972ffe9326c4315f7ae6 = L.AwesomeMarkers.icon(
+            var icon_c429b11297d01c2492cec6d036a65182 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_758d3ae6ddb7f04d99e8f23cbd064022.setIcon(icon_7477e53b21fa972ffe9326c4315f7ae6);
+            marker_2f19177bc96232b63448b033b566c541.setIcon(icon_c429b11297d01c2492cec6d036a65182);
         
     
-        var popup_ea9afdaf407913b863089aa484e75d77 = L.popup({"maxWidth": 300});
+        var popup_436b0b0ec4b2e876cfd8b817b34e5390 = L.popup({"maxWidth": 300});
 
         
             
-                var html_57fe63af62e192694fbc77fe1c457319 = $(`<div id="html_57fe63af62e192694fbc77fe1c457319" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Condominium [7 min to the upcoming LRT3 Station - Stadium Shah Alam]<br>             RM 334.43 psf<br><br>             <strong>Nearest Transit:</strong> Batu Tiga (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>915 sq.ft</u><br>             <strong>Price:</strong> RM306,000<br><br>             <i>Residensi Hijauan (The Greens), No. 4, Jalan Budiman 22/3, Seksyen 22, 40300 Shah Alam, Selangor</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> 6thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batu Tiga (KTM Komuter Lines) - 1.17 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shah Alam (KTM Komuter Lines) - 3.34 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SS18 (LRT Lines) - 3.62 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SS15 (LRT Lines) - 3.73 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subang Jaya (KTM Komuter Lines) - 4.22 km<br>             </div>             </div>         </div>`)[0];
-                popup_ea9afdaf407913b863089aa484e75d77.setContent(html_57fe63af62e192694fbc77fe1c457319);
+                var html_27792ce4f1be3a888d6c0238a222b7e8 = $(`<div id="html_27792ce4f1be3a888d6c0238a222b7e8" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Condominium [7 min to the upcoming LRT3 Station - Stadium Shah Alam]<br>             RM 334.43 psf<br><br>             <strong>Nearest Transit:</strong> Batu Tiga (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>915 sq.ft</u><br>             <strong>Price:</strong> RM306,000<br><br>             <i>Residensi Hijauan (The Greens), No. 4, Jalan Budiman 22/3, Seksyen 22, 40300 Shah Alam, Selangor</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> 6thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batu Tiga (KTM Komuter Lines) - 1.17 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shah Alam (KTM Komuter Lines) - 3.34 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SS18 (LRT Lines) - 3.62 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SS15 (LRT Lines) - 3.73 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subang Jaya (KTM Komuter Lines) - 4.22 km<br>             </div>             </div>         </div>`)[0];
+                popup_436b0b0ec4b2e876cfd8b817b34e5390.setContent(html_27792ce4f1be3a888d6c0238a222b7e8);
             
         
 
-        marker_758d3ae6ddb7f04d99e8f23cbd064022.bindPopup(popup_ea9afdaf407913b863089aa484e75d77)
+        marker_2f19177bc96232b63448b033b566c541.bindPopup(popup_436b0b0ec4b2e876cfd8b817b34e5390)
         ;
 
         
     
     
-            var marker_14a76e14c5e5a836fdb3e529fda3b867 = L.marker(
+            var marker_cbbf08241bfc339e17fb4a61ffd5dbb7 = L.marker(
                 [3.1623279, 101.7464883],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_74f241328fc84bad12be6d0b483af7a4 = L.AwesomeMarkers.icon(
+            var icon_5298bcb9ff35f000af61950baa22aff4 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_14a76e14c5e5a836fdb3e529fda3b867.setIcon(icon_74f241328fc84bad12be6d0b483af7a4);
+            marker_cbbf08241bfc339e17fb4a61ffd5dbb7.setIcon(icon_5298bcb9ff35f000af61950baa22aff4);
         
     
-        var popup_43da8133b0c30ffbaa7b40a4c21f1713 = L.popup({"maxWidth": 300});
+        var popup_df89051fcd18043506b8e4f1ed04cc02 = L.popup({"maxWidth": 300});
 
         
             
-                var html_c595959d499cbdfbe8be168862d49654 = $(`<div id="html_c595959d499cbdfbe8be168862d49654" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Service Apartment<br>             RM 317.42 psf<br><br>             <strong>Nearest Transit:</strong> Jelatek (LRT Lines)<br>             <strong>Size:</strong> <u>1,464 sq.ft</u><br>             <strong>Price:</strong> RM464,700<br><br>             <i>Block A, Residensi Xtreme Meridian, Jalan Bemban, 55000 Ampang, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 14 May 2025 (Wed)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jelatek (LRT Lines) - 1.36 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dato Keramat (LRT Lines) - 1.66 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setiawangsa (LRT Lines) - 1.90 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ampang (LRT Lines) - 2.01 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Damai (LRT Lines) - 2.46 km<br>             </div>             </div>         </div>`)[0];
-                popup_43da8133b0c30ffbaa7b40a4c21f1713.setContent(html_c595959d499cbdfbe8be168862d49654);
+                var html_6eb08309fbc5f2573391839d0ced6450 = $(`<div id="html_6eb08309fbc5f2573391839d0ced6450" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Service Apartment<br>             RM 317.42 psf<br><br>             <strong>Nearest Transit:</strong> Jelatek (LRT Lines)<br>             <strong>Size:</strong> <u>1,464 sq.ft</u><br>             <strong>Price:</strong> RM464,700<br><br>             <i>Block A, Residensi Xtreme Meridian, Jalan Bemban, 55000 Ampang, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 14 May 2025 (Wed)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jelatek (LRT Lines) - 1.36 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dato Keramat (LRT Lines) - 1.66 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setiawangsa (LRT Lines) - 1.90 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ampang (LRT Lines) - 2.01 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Damai (LRT Lines) - 2.46 km<br>             </div>             </div>         </div>`)[0];
+                popup_df89051fcd18043506b8e4f1ed04cc02.setContent(html_6eb08309fbc5f2573391839d0ced6450);
             
         
 
-        marker_14a76e14c5e5a836fdb3e529fda3b867.bindPopup(popup_43da8133b0c30ffbaa7b40a4c21f1713)
+        marker_cbbf08241bfc339e17fb4a61ffd5dbb7.bindPopup(popup_df89051fcd18043506b8e4f1ed04cc02)
         ;
 
         
     
     
-            var marker_e5da4a4f11add6a4f0541afd3a92430b = L.marker(
+            var marker_a0719e844bf7ef4df4ec128d29d8e38b = L.marker(
                 [3.1341567, 101.6929112],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_62dd71a41fe2d91aaeff1416efc49cda = L.AwesomeMarkers.icon(
+            var icon_8e8b7a8bd1a91b1c11e3abadc9d68140 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_e5da4a4f11add6a4f0541afd3a92430b.setIcon(icon_62dd71a41fe2d91aaeff1416efc49cda);
+            marker_a0719e844bf7ef4df4ec128d29d8e38b.setIcon(icon_8e8b7a8bd1a91b1c11e3abadc9d68140);
         
     
-        var popup_40e247d3e28180168d1ec073bf4d64a3 = L.popup({"maxWidth": 300});
+        var popup_f18d3a1099159506aadb0e217ed3c90b = L.popup({"maxWidth": 300});
 
         
             
-                var html_c28e7b34c2597971cbf2e6085acc85b6 = $(`<div id="html_c28e7b34c2597971cbf2e6085acc85b6" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Condominium<br>             RM 271.13 psf<br><br>             <strong>Nearest Transit:</strong> Tun Sambanthan (Monorail Line)<br>             <strong>Size:</strong> <u>1,195 sq.ft</u><br>             <strong>Price:</strong> RM324,000<br><br>             <i>Kondominium Scott Villa, Jalan Scott Brickfields (On Site Lorong Scott), 50470, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 12 Jun 2025 (Thu)<br>             <strong>Auction Type:</strong> Title<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> 8thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tun Sambanthan (Monorail Line) - 0.37 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KL Sentral (Monorail Line) - 0.58 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kuala Lumpur (KTM Komuter Lines) - 0.60 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Muzium Negara (MRT Lines) - 0.68 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KL Sentral (KTM Komuter Lines) - 0.73 km<br>             </div>             </div>         </div>`)[0];
-                popup_40e247d3e28180168d1ec073bf4d64a3.setContent(html_c28e7b34c2597971cbf2e6085acc85b6);
+                var html_e1ac6bfcf273dab045a1b52c88dfc3a2 = $(`<div id="html_e1ac6bfcf273dab045a1b52c88dfc3a2" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Condominium<br>             RM 271.13 psf<br><br>             <strong>Nearest Transit:</strong> Tun Sambanthan (Monorail Line)<br>             <strong>Size:</strong> <u>1,195 sq.ft</u><br>             <strong>Price:</strong> RM324,000<br><br>             <i>Kondominium Scott Villa, Jalan Scott Brickfields (On Site Lorong Scott), 50470, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 12 Jun 2025 (Thu)<br>             <strong>Auction Type:</strong> Title<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> 8thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tun Sambanthan (Monorail Line) - 0.37 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KL Sentral (Monorail Line) - 0.58 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kuala Lumpur (KTM Komuter Lines) - 0.60 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Muzium Negara (MRT Lines) - 0.68 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KL Sentral (KTM Komuter Lines) - 0.73 km<br>             </div>             </div>         </div>`)[0];
+                popup_f18d3a1099159506aadb0e217ed3c90b.setContent(html_e1ac6bfcf273dab045a1b52c88dfc3a2);
             
         
 
-        marker_e5da4a4f11add6a4f0541afd3a92430b.bindPopup(popup_40e247d3e28180168d1ec073bf4d64a3)
+        marker_a0719e844bf7ef4df4ec128d29d8e38b.bindPopup(popup_f18d3a1099159506aadb0e217ed3c90b)
         ;
 
         
     
     
-            var marker_204dc765ad08b1a72c81a749823d6511 = L.marker(
+            var marker_89aa9a147842439e2f160eedcf9975b7 = L.marker(
                 [3.2101211, 101.6288295],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_4cdeb6042048532fa36391d669d0ea6d = L.AwesomeMarkers.icon(
+            var icon_10711be5ffaf5390805388000a9ca554 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_204dc765ad08b1a72c81a749823d6511.setIcon(icon_4cdeb6042048532fa36391d669d0ea6d);
+            marker_89aa9a147842439e2f160eedcf9975b7.setIcon(icon_10711be5ffaf5390805388000a9ca554);
         
     
-        var popup_9f2f70dc49f89861b17b01f2ce87bf82 = L.popup({"maxWidth": 300});
+        var popup_cab9b9395f9885f5981adf940d14df54 = L.popup({"maxWidth": 300});
 
         
             
-                var html_0c4fcc597ef0fa16795c72d588deec40 = $(`<div id="html_0c4fcc597ef0fa16795c72d588deec40" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Condominium<br>             RM 152.77 psf<br><br>             <strong>Nearest Transit:</strong> Sri Damansara Timur (MRT Lines)<br>             <strong>Size:</strong> <u>962 sq.ft</u><br>             <strong>Price:</strong> RM146,966<br><br>             <i>Block 3, Kepong Sentral Condominium, Jalan Puncak Desa 2, Taman Puncak Desa, Kepong, 52100, Selangor</i><br><br>             <strong>Auction Date:</strong> 29 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 6thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Timur (MRT Lines) - 0.26 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kepong (KTM Komuter Lines) - 1.25 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Metro Prima (MRT Lines) - 1.37 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Sentral (MRT Lines) - 1.53 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kepong Baru (MRT Lines) - 2.16 km<br>             </div>             </div>         </div>`)[0];
-                popup_9f2f70dc49f89861b17b01f2ce87bf82.setContent(html_0c4fcc597ef0fa16795c72d588deec40);
+                var html_3a222c50b08b43f55926bfec7cf2e727 = $(`<div id="html_3a222c50b08b43f55926bfec7cf2e727" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Condominium<br>             RM 152.77 psf<br><br>             <strong>Nearest Transit:</strong> Sri Damansara Timur (MRT Lines)<br>             <strong>Size:</strong> <u>962 sq.ft</u><br>             <strong>Price:</strong> RM146,966<br><br>             <i>Block 3, Kepong Sentral Condominium, Jalan Puncak Desa 2, Taman Puncak Desa, Kepong, 52100, Selangor</i><br><br>             <strong>Auction Date:</strong> 29 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 6thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Timur (MRT Lines) - 0.26 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kepong (KTM Komuter Lines) - 1.25 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Metro Prima (MRT Lines) - 1.37 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Sentral (MRT Lines) - 1.53 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kepong Baru (MRT Lines) - 2.16 km<br>             </div>             </div>         </div>`)[0];
+                popup_cab9b9395f9885f5981adf940d14df54.setContent(html_3a222c50b08b43f55926bfec7cf2e727);
             
         
 
-        marker_204dc765ad08b1a72c81a749823d6511.bindPopup(popup_9f2f70dc49f89861b17b01f2ce87bf82)
+        marker_89aa9a147842439e2f160eedcf9975b7.bindPopup(popup_cab9b9395f9885f5981adf940d14df54)
         ;
 
         
     
     
-            var marker_6a7378459b2af45d4d2fa913fba40607 = L.marker(
+            var marker_b3e4fbe8e453a9ea3ab6f18ea1628dbd = L.marker(
                 [2.9674687, 101.3842137],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_727f36ccea508ca8a36712f047347722 = L.AwesomeMarkers.icon(
+            var icon_18a2b6057e15fc94bebadcad6b995eb8 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_6a7378459b2af45d4d2fa913fba40607.setIcon(icon_727f36ccea508ca8a36712f047347722);
+            marker_b3e4fbe8e453a9ea3ab6f18ea1628dbd.setIcon(icon_18a2b6057e15fc94bebadcad6b995eb8);
         
     
-        var popup_578d08d275fd1862f1fa235eb7a43096 = L.popup({"maxWidth": 300});
+        var popup_451366bb4d23c00d6b31512ffb9e2383 = L.popup({"maxWidth": 300});
 
         
             
-                var html_3d2a728f5ad9be2ea5d275e8ad120560 = $(`<div id="html_3d2a728f5ad9be2ea5d275e8ad120560" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Apartment<br>             RM 68.34 psf<br><br>             <strong>Nearest Transit:</strong> Pelabuhan Klang (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>768 sq.ft</u><br>             <strong>Price:</strong> RM52,488<br><br>             <i>Block D, Pangsapuri Sri Nelayan, Lengkungan Kampung Nelayan, Taman Sri Nelayan, 42000 Pelabuhan Klang, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 6thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pelabuhan Klang (KTM Komuter Lines) - 3.63 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jalan Kastam (KTM Komuter Lines) - 5.43 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kampung Raja Uda (KTM Komuter Lines) - 6.49 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teluk Gadong (KTM Komuter Lines) - 8.62 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teluk Pulai (KTM Komuter Lines) - 9.70 km<br>             </div>             </div>         </div>`)[0];
-                popup_578d08d275fd1862f1fa235eb7a43096.setContent(html_3d2a728f5ad9be2ea5d275e8ad120560);
+                var html_4d2b88035ceb0ec1e5e63e1b091026f3 = $(`<div id="html_4d2b88035ceb0ec1e5e63e1b091026f3" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Apartment<br>             RM 68.34 psf<br><br>             <strong>Nearest Transit:</strong> Pelabuhan Klang (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>768 sq.ft</u><br>             <strong>Price:</strong> RM52,488<br><br>             <i>Block D, Pangsapuri Sri Nelayan, Lengkungan Kampung Nelayan, Taman Sri Nelayan, 42000 Pelabuhan Klang, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 6thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pelabuhan Klang (KTM Komuter Lines) - 3.63 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jalan Kastam (KTM Komuter Lines) - 5.43 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kampung Raja Uda (KTM Komuter Lines) - 6.49 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teluk Gadong (KTM Komuter Lines) - 8.62 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teluk Pulai (KTM Komuter Lines) - 9.70 km<br>             </div>             </div>         </div>`)[0];
+                popup_451366bb4d23c00d6b31512ffb9e2383.setContent(html_4d2b88035ceb0ec1e5e63e1b091026f3);
             
         
 
-        marker_6a7378459b2af45d4d2fa913fba40607.bindPopup(popup_578d08d275fd1862f1fa235eb7a43096)
+        marker_b3e4fbe8e453a9ea3ab6f18ea1628dbd.bindPopup(popup_451366bb4d23c00d6b31512ffb9e2383)
         ;
 
         
     
     
-            var marker_4683340bb6a7498dc9972fec4d8b9753 = L.marker(
+            var marker_77950d80a0b84378d15c90ab918f6ab0 = L.marker(
                 [2.7975543, 101.6639835],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_b01666209ff49b6db2a3ff1a04f7b4f3 = L.AwesomeMarkers.icon(
+            var icon_fc74c3fff23a4b781881b1335da9de82 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_4683340bb6a7498dc9972fec4d8b9753.setIcon(icon_b01666209ff49b6db2a3ff1a04f7b4f3);
+            marker_77950d80a0b84378d15c90ab918f6ab0.setIcon(icon_fc74c3fff23a4b781881b1335da9de82);
         
     
-        var popup_4ac7017d885e8baae1f9b87493d99ae0 = L.popup({"maxWidth": 300});
+        var popup_c2a9b6e8fa1a5565c7446734221520b5 = L.popup({"maxWidth": 300});
 
         
             
-                var html_0226dbb929a7ab484275eb0758a8a471 = $(`<div id="html_0226dbb929a7ab484275eb0758a8a471" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Duplex Apartment<br>             RM 80.54 psf<br><br>             <strong>Nearest Transit:</strong> Putrajaya Sentral (MRT Lines)<br>             <strong>Size:</strong> <u>945 sq.ft</u><br>             <strong>Price:</strong> RM76,108<br><br>             <i>Block F, Pangsapuri Taman Langat Utama, Jalan Pramugara, Taman Langat Utama, 42700 Banting, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 6thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putrajaya Sentral (MRT Lines) - 14.82 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cryberjaya City Centre (MRT Lines) - 15.67 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cyberjaya Utara (MRT Lines) - 16.87 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16 Sierra (MRT Lines) - 18.55 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putra Permai (MRT Lines) - 20.54 km<br>             </div>             </div>         </div>`)[0];
-                popup_4ac7017d885e8baae1f9b87493d99ae0.setContent(html_0226dbb929a7ab484275eb0758a8a471);
+                var html_86a582897ce908d5e12f5671f9b4b842 = $(`<div id="html_86a582897ce908d5e12f5671f9b4b842" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Duplex Apartment<br>             RM 80.54 psf<br><br>             <strong>Nearest Transit:</strong> Putrajaya Sentral (MRT Lines)<br>             <strong>Size:</strong> <u>945 sq.ft</u><br>             <strong>Price:</strong> RM76,108<br><br>             <i>Block F, Pangsapuri Taman Langat Utama, Jalan Pramugara, Taman Langat Utama, 42700 Banting, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 6thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putrajaya Sentral (MRT Lines) - 14.82 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cryberjaya City Centre (MRT Lines) - 15.67 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cyberjaya Utara (MRT Lines) - 16.87 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16 Sierra (MRT Lines) - 18.55 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putra Permai (MRT Lines) - 20.54 km<br>             </div>             </div>         </div>`)[0];
+                popup_c2a9b6e8fa1a5565c7446734221520b5.setContent(html_86a582897ce908d5e12f5671f9b4b842);
             
         
 
-        marker_4683340bb6a7498dc9972fec4d8b9753.bindPopup(popup_4ac7017d885e8baae1f9b87493d99ae0)
+        marker_77950d80a0b84378d15c90ab918f6ab0.bindPopup(popup_c2a9b6e8fa1a5565c7446734221520b5)
         ;
 
         
     
     
-            var marker_6eecc8a56457b93107f71af64bb932cb = L.marker(
+            var marker_e5cc5060e8d20179d91d0333a7863bf2 = L.marker(
                 [3.4389664, 101.5467281],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_8301506d532c4ef2a946cf8113dfbfae = L.AwesomeMarkers.icon(
+            var icon_2bf4447db9060c346d101c13eeaa1c09 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_6eecc8a56457b93107f71af64bb932cb.setIcon(icon_8301506d532c4ef2a946cf8113dfbfae);
+            marker_e5cc5060e8d20179d91d0333a7863bf2.setIcon(icon_2bf4447db9060c346d101c13eeaa1c09);
         
     
-        var popup_36ee6177851efb32d32a729e090683d0 = L.popup({"maxWidth": 300});
+        var popup_c730712d1defa37456084f18fa3179e4 = L.popup({"maxWidth": 300});
 
         
             
-                var html_a4b7945e40e9d2a1580f87cacf73a46f = $(`<div id="html_a4b7945e40e9d2a1580f87cacf73a46f" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Retail Lot [10 min to Lotus's Bukit Beruntung]<br>             RM 77.95 psf<br><br>             <strong>Nearest Transit:</strong> Serendah (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>1,347 sq.ft</u><br>             <strong>Price:</strong> RM105,000<br><br>             <i>Block B, Apartment Buginvilla, Taman Bunga Raya, Bukit Beruntung, 48300 Rawang, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> N/A<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serendah (KTM Komuter Lines) - 10.27 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batang Kali (KTM Komuter Lines) - 10.63 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rasa (KTM Komuter Lines) - 11.85 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rawang (KTM Komuter Lines) - 13.61 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kuala Kubu Bharu (KTM Komuter Lines) - 16.32 km<br>             </div>             </div>         </div>`)[0];
-                popup_36ee6177851efb32d32a729e090683d0.setContent(html_a4b7945e40e9d2a1580f87cacf73a46f);
+                var html_1ec33793e1ffe8684ac5903abfab43cf = $(`<div id="html_1ec33793e1ffe8684ac5903abfab43cf" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Retail Lot [10 min to Lotus's Bukit Beruntung]<br>             RM 77.95 psf<br><br>             <strong>Nearest Transit:</strong> Serendah (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>1,347 sq.ft</u><br>             <strong>Price:</strong> RM105,000<br><br>             <i>Block B, Apartment Buginvilla, Taman Bunga Raya, Bukit Beruntung, 48300 Rawang, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> N/A<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serendah (KTM Komuter Lines) - 10.27 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batang Kali (KTM Komuter Lines) - 10.63 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rasa (KTM Komuter Lines) - 11.85 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rawang (KTM Komuter Lines) - 13.61 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kuala Kubu Bharu (KTM Komuter Lines) - 16.32 km<br>             </div>             </div>         </div>`)[0];
+                popup_c730712d1defa37456084f18fa3179e4.setContent(html_1ec33793e1ffe8684ac5903abfab43cf);
             
         
 
-        marker_6eecc8a56457b93107f71af64bb932cb.bindPopup(popup_36ee6177851efb32d32a729e090683d0)
+        marker_e5cc5060e8d20179d91d0333a7863bf2.bindPopup(popup_c730712d1defa37456084f18fa3179e4)
         ;
 
         
     
     
-            var marker_2e31a04732b544cdedc59f46528e69b8 = L.marker(
+            var marker_6fab2eab8a3e5503e89f79e7d7fa994b = L.marker(
                 [3.1770562, 101.6171471],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_b245c1594b4c8e708cd22d15f08a3437 = L.AwesomeMarkers.icon(
+            var icon_26fa64132d2fcc62ac33afd73fe62870 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_2e31a04732b544cdedc59f46528e69b8.setIcon(icon_b245c1594b4c8e708cd22d15f08a3437);
+            marker_6fab2eab8a3e5503e89f79e7d7fa994b.setIcon(icon_26fa64132d2fcc62ac33afd73fe62870);
         
     
-        var popup_ad1001b039608cb0a16a68442c5563c7 = L.popup({"maxWidth": 300});
+        var popup_89b71e41fc89b1ff526d649e2093459c = L.popup({"maxWidth": 300});
 
         
             
-                var html_ba03adcbeab037e4937d3b6746defc97 = $(`<div id="html_ba03adcbeab037e4937d3b6746defc97" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [8 min to IKEA Damansara & Lotus's Mutiara Damansara] Apartment [9 min to Mutiara Damansara MRT Station, 1 Utama Shopping Centre & Damansara Specialist Hospital 2]<br>             RM 172.94 psf<br><br>             <strong>Nearest Transit:</strong> Sri Damansara Sentral (MRT Lines)<br>             <strong>Size:</strong> <u>850 sq.ft</u><br>             <strong>Price:</strong> RM147,000<br><br>             <i>Block H, Flora Damansara, No. 1, Jalan PJU 8/9, Bandar Damansara Perdana, 47820 Petaling Jaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 6thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Sentral (MRT Lines) - 2.42 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Barat (MRT Lines) - 2.53 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mutiara Damansara (MRT Lines) - 2.58 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bandar Utama (MRT Lines) - 3.36 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Timur (MRT Lines) - 3.63 km<br>             </div>             </div>         </div>`)[0];
-                popup_ad1001b039608cb0a16a68442c5563c7.setContent(html_ba03adcbeab037e4937d3b6746defc97);
+                var html_4c446404c1a1e0620ef00236821f34d1 = $(`<div id="html_4c446404c1a1e0620ef00236821f34d1" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [8 min to IKEA Damansara & Lotus's Mutiara Damansara] Apartment [9 min to Mutiara Damansara MRT Station, 1 Utama Shopping Centre & Damansara Specialist Hospital 2]<br>             RM 172.94 psf<br><br>             <strong>Nearest Transit:</strong> Sri Damansara Sentral (MRT Lines)<br>             <strong>Size:</strong> <u>850 sq.ft</u><br>             <strong>Price:</strong> RM147,000<br><br>             <i>Block H, Flora Damansara, No. 1, Jalan PJU 8/9, Bandar Damansara Perdana, 47820 Petaling Jaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 6thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Sentral (MRT Lines) - 2.42 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Barat (MRT Lines) - 2.53 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mutiara Damansara (MRT Lines) - 2.58 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bandar Utama (MRT Lines) - 3.36 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Timur (MRT Lines) - 3.63 km<br>             </div>             </div>         </div>`)[0];
+                popup_89b71e41fc89b1ff526d649e2093459c.setContent(html_4c446404c1a1e0620ef00236821f34d1);
             
         
 
-        marker_2e31a04732b544cdedc59f46528e69b8.bindPopup(popup_ad1001b039608cb0a16a68442c5563c7)
+        marker_6fab2eab8a3e5503e89f79e7d7fa994b.bindPopup(popup_89b71e41fc89b1ff526d649e2093459c)
         ;
 
         
     
     
-            var marker_681fe410b6d1bc190ea8972e09444c47 = L.marker(
+            var marker_80954032e2732667ee52f7dabc936708 = L.marker(
                 [2.9110321, 101.6397492],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_6615b52446c99a4df380851611acd23b = L.AwesomeMarkers.icon(
+            var icon_eeea2659ad3402002db7e200b874bc71 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_681fe410b6d1bc190ea8972e09444c47.setIcon(icon_6615b52446c99a4df380851611acd23b);
+            marker_80954032e2732667ee52f7dabc936708.setIcon(icon_eeea2659ad3402002db7e200b874bc71);
         
     
-        var popup_7c25db83bc93a102d0a35c75ce6c6956 = L.popup({"maxWidth": 300});
+        var popup_751086d05457007144c564b4dece79a5 = L.popup({"maxWidth": 300});
 
         
             
-                var html_cdb4aca7e6fb43584d3c0c2f12b9850f = $(`<div id="html_cdb4aca7e6fb43584d3c0c2f12b9850f" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Office Unit<br>             RM 208.21 psf<br><br>             <strong>Nearest Transit:</strong> Putrajaya Sentral (MRT Lines)<br>             <strong>Size:</strong> <u>1,023 sq.ft</u><br>             <strong>Price:</strong> RM213,000<br><br>             <i>Kenwingston Business Centre, Persiaran Bestari, Kenwingston Square Garden, Cyber 9, 63000 Cyberjaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putrajaya Sentral (MRT Lines) - 4.18 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cryberjaya City Centre (MRT Lines) - 4.23 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cyberjaya Utara (MRT Lines) - 4.73 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16 Sierra (MRT Lines) - 6.21 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putra Permai (MRT Lines) - 8.33 km<br>             </div>             </div>         </div>`)[0];
-                popup_7c25db83bc93a102d0a35c75ce6c6956.setContent(html_cdb4aca7e6fb43584d3c0c2f12b9850f);
+                var html_d3ba6d1a81d6fcb0b2e67c4b3afee1fd = $(`<div id="html_d3ba6d1a81d6fcb0b2e67c4b3afee1fd" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Office Unit<br>             RM 208.21 psf<br><br>             <strong>Nearest Transit:</strong> Putrajaya Sentral (MRT Lines)<br>             <strong>Size:</strong> <u>1,023 sq.ft</u><br>             <strong>Price:</strong> RM213,000<br><br>             <i>Kenwingston Business Centre, Persiaran Bestari, Kenwingston Square Garden, Cyber 9, 63000 Cyberjaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putrajaya Sentral (MRT Lines) - 4.18 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cryberjaya City Centre (MRT Lines) - 4.23 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cyberjaya Utara (MRT Lines) - 4.73 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16 Sierra (MRT Lines) - 6.21 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putra Permai (MRT Lines) - 8.33 km<br>             </div>             </div>         </div>`)[0];
+                popup_751086d05457007144c564b4dece79a5.setContent(html_d3ba6d1a81d6fcb0b2e67c4b3afee1fd);
             
         
 
-        marker_681fe410b6d1bc190ea8972e09444c47.bindPopup(popup_7c25db83bc93a102d0a35c75ce6c6956)
+        marker_80954032e2732667ee52f7dabc936708.bindPopup(popup_751086d05457007144c564b4dece79a5)
         ;
 
         
     
     
-            var marker_4ba9251b49b956558e1b9c04238bd486 = L.marker(
+            var marker_cc9db3980a3cf4fd0d5341be55b6fe3d = L.marker(
                 [3.08295, 101.4248068],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_0e6910b9721dbc375f7501bf3823a934 = L.AwesomeMarkers.icon(
+            var icon_0a3e31886834a5c4aed9b8ca60907010 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_4ba9251b49b956558e1b9c04238bd486.setIcon(icon_0e6910b9721dbc375f7501bf3823a934);
+            marker_cc9db3980a3cf4fd0d5341be55b6fe3d.setIcon(icon_0a3e31886834a5c4aed9b8ca60907010);
         
     
-        var popup_ffc0b04bd758cedc25c5787147790d44 = L.popup({"maxWidth": 300});
+        var popup_0a064b35af82a090b4786261b315ef41 = L.popup({"maxWidth": 300});
 
         
             
-                var html_77bd808fb28be2613a7cac81e40151ee = $(`<div id="html_77bd808fb28be2613a7cac81e40151ee" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Apartment<br>             RM 74.70 psf<br><br>             <strong>Nearest Transit:</strong> Teluk Pulai (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>656 sq.ft</u><br>             <strong>Price:</strong> RM49,000<br><br>             <i>Block J, Pangsapuri Rebana, Jalan Gamelan, Bandar Bukit Raja, 41050 Klang, Selangor</i><br><br>             <strong>Auction Date:</strong> 29 May 2025 (Thu)<br>             <strong>Auction Type:</strong> Title<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teluk Pulai (KTM Komuter Lines) - 4.73 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Klang (KTM Komuter Lines) - 5.19 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teluk Gadong (KTM Komuter Lines) - 5.43 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kampung Raja Uda (KTM Komuter Lines) - 7.15 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bukit Badak (KTM Komuter Lines) - 7.23 km<br>             </div>             </div>         </div>`)[0];
-                popup_ffc0b04bd758cedc25c5787147790d44.setContent(html_77bd808fb28be2613a7cac81e40151ee);
+                var html_e4ebc3ca53fd30703e66937c3bbae54b = $(`<div id="html_e4ebc3ca53fd30703e66937c3bbae54b" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Apartment<br>             RM 74.70 psf<br><br>             <strong>Nearest Transit:</strong> Teluk Pulai (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>656 sq.ft</u><br>             <strong>Price:</strong> RM49,000<br><br>             <i>Block J, Pangsapuri Rebana, Jalan Gamelan, Bandar Bukit Raja, 41050 Klang, Selangor</i><br><br>             <strong>Auction Date:</strong> 29 May 2025 (Thu)<br>             <strong>Auction Type:</strong> Title<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teluk Pulai (KTM Komuter Lines) - 4.73 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Klang (KTM Komuter Lines) - 5.19 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teluk Gadong (KTM Komuter Lines) - 5.43 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kampung Raja Uda (KTM Komuter Lines) - 7.15 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bukit Badak (KTM Komuter Lines) - 7.23 km<br>             </div>             </div>         </div>`)[0];
+                popup_0a064b35af82a090b4786261b315ef41.setContent(html_e4ebc3ca53fd30703e66937c3bbae54b);
             
         
 
-        marker_4ba9251b49b956558e1b9c04238bd486.bindPopup(popup_ffc0b04bd758cedc25c5787147790d44)
+        marker_cc9db3980a3cf4fd0d5341be55b6fe3d.bindPopup(popup_0a064b35af82a090b4786261b315ef41)
         ;
 
         
     
     
-            var marker_6662922f1977bdf4ee906c408e21b509 = L.marker(
+            var marker_2d567e4ad18088f98f93889c6493d2df = L.marker(
                 [3.1290567, 101.7144368],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_cb28bd0a47c8ef43a471a5f100470036 = L.AwesomeMarkers.icon(
+            var icon_417363aba1f44ca724895849502b55d0 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_6662922f1977bdf4ee906c408e21b509.setIcon(icon_cb28bd0a47c8ef43a471a5f100470036);
+            marker_2d567e4ad18088f98f93889c6493d2df.setIcon(icon_417363aba1f44ca724895849502b55d0);
         
     
-        var popup_bbd4beb419640fb2def3f503a44c8231 = L.popup({"maxWidth": 300});
+        var popup_4b0ab569b671213aa73c93aaae2b2eab = L.popup({"maxWidth": 300});
 
         
             
-                var html_cd84b9aa1b7f1c96ef687c8ceac8b431 = $(`<div id="html_cd84b9aa1b7f1c96ef687c8ceac8b431" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [Located at the Heart of KL City Centre] Retail Lot [3 min to Chan Sow Lin LRT Station]<br>             RM 381.36 psf<br><br>             <strong>Nearest Transit:</strong> Chan Sow Lin (LRT Lines)<br>             <strong>Size:</strong> <u>118 sq.ft</u><br>             <strong>Price:</strong> RM45,000<br><br>             <i>Kompleks Metro Pudu, No. 1, Jalan Metro Pudu 2, Fraser Business Park, 55100, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> 22thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chan Sow Lin (LRT Lines) - 0.19 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chan Sow Lin (MRT Lines) - 0.23 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pudu (LRT Lines) - 0.70 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Miharja (LRT Lines) - 0.98 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cochrane (MRT Lines) - 1.03 km<br>             </div>             </div>         </div>`)[0];
-                popup_bbd4beb419640fb2def3f503a44c8231.setContent(html_cd84b9aa1b7f1c96ef687c8ceac8b431);
+                var html_58ee31e8513b18b2341fee76c19c04b1 = $(`<div id="html_58ee31e8513b18b2341fee76c19c04b1" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [Located at the Heart of KL City Centre] Retail Lot [3 min to Chan Sow Lin LRT Station]<br>             RM 381.36 psf<br><br>             <strong>Nearest Transit:</strong> Chan Sow Lin (LRT Lines)<br>             <strong>Size:</strong> <u>118 sq.ft</u><br>             <strong>Price:</strong> RM45,000<br><br>             <i>Kompleks Metro Pudu, No. 1, Jalan Metro Pudu 2, Fraser Business Park, 55100, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> 22thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chan Sow Lin (LRT Lines) - 0.19 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chan Sow Lin (MRT Lines) - 0.23 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pudu (LRT Lines) - 0.70 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Miharja (LRT Lines) - 0.98 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cochrane (MRT Lines) - 1.03 km<br>             </div>             </div>         </div>`)[0];
+                popup_4b0ab569b671213aa73c93aaae2b2eab.setContent(html_58ee31e8513b18b2341fee76c19c04b1);
             
         
 
-        marker_6662922f1977bdf4ee906c408e21b509.bindPopup(popup_bbd4beb419640fb2def3f503a44c8231)
+        marker_2d567e4ad18088f98f93889c6493d2df.bindPopup(popup_4b0ab569b671213aa73c93aaae2b2eab)
         ;
 
         
     
     
-            var marker_c7452d1c64bcf45797632a791920f8c7 = L.marker(
+            var marker_a90c30624816d3adddcb3dca04cfdc4b = L.marker(
                 [3.1290567, 101.7144368],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_6d896a5b6f0cb8bf9531eaf5d9dbb9d0 = L.AwesomeMarkers.icon(
+            var icon_67f94846a5d9305e5e0b8f1ba7a155cb = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_c7452d1c64bcf45797632a791920f8c7.setIcon(icon_6d896a5b6f0cb8bf9531eaf5d9dbb9d0);
+            marker_a90c30624816d3adddcb3dca04cfdc4b.setIcon(icon_67f94846a5d9305e5e0b8f1ba7a155cb);
         
     
-        var popup_a045b932c4a62083b5cb78b9bdee15b3 = L.popup({"maxWidth": 300});
+        var popup_499e55b7e681798f465992e6fb1f3065 = L.popup({"maxWidth": 300});
 
         
             
-                var html_502be3bd2c288f895f4457864cfb8f65 = $(`<div id="html_502be3bd2c288f895f4457864cfb8f65" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [Located at the Heart of KL City Centre] Retail Lot [3 min to Chan Sow Lin LRT Station]<br>             RM 381.36 psf<br><br>             <strong>Nearest Transit:</strong> Chan Sow Lin (LRT Lines)<br>             <strong>Size:</strong> <u>118 sq.ft</u><br>             <strong>Price:</strong> RM45,000<br><br>             <i>Kompleks Metro Pudu, No. 1, Jalan Metro Pudu 2, Fraser Business Park, 55100, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> 22thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chan Sow Lin (LRT Lines) - 0.19 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chan Sow Lin (MRT Lines) - 0.23 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pudu (LRT Lines) - 0.70 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Miharja (LRT Lines) - 0.98 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cochrane (MRT Lines) - 1.03 km<br>             </div>             </div>         </div>`)[0];
-                popup_a045b932c4a62083b5cb78b9bdee15b3.setContent(html_502be3bd2c288f895f4457864cfb8f65);
+                var html_f1838d8fa3ce8ab2ab67550f3774f574 = $(`<div id="html_f1838d8fa3ce8ab2ab67550f3774f574" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [Located at the Heart of KL City Centre] Retail Lot [3 min to Chan Sow Lin LRT Station]<br>             RM 381.36 psf<br><br>             <strong>Nearest Transit:</strong> Chan Sow Lin (LRT Lines)<br>             <strong>Size:</strong> <u>118 sq.ft</u><br>             <strong>Price:</strong> RM45,000<br><br>             <i>Kompleks Metro Pudu, No. 1, Jalan Metro Pudu 2, Fraser Business Park, 55100, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> 22thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chan Sow Lin (LRT Lines) - 0.19 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chan Sow Lin (MRT Lines) - 0.23 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pudu (LRT Lines) - 0.70 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Miharja (LRT Lines) - 0.98 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cochrane (MRT Lines) - 1.03 km<br>             </div>             </div>         </div>`)[0];
+                popup_499e55b7e681798f465992e6fb1f3065.setContent(html_f1838d8fa3ce8ab2ab67550f3774f574);
             
         
 
-        marker_c7452d1c64bcf45797632a791920f8c7.bindPopup(popup_a045b932c4a62083b5cb78b9bdee15b3)
+        marker_a90c30624816d3adddcb3dca04cfdc4b.bindPopup(popup_499e55b7e681798f465992e6fb1f3065)
         ;
 
         
     
     
-            var marker_413429e1143bc4918ac303f86702e51d = L.marker(
+            var marker_db744cc4c06772055edf5d6559757ee7 = L.marker(
                 [3.0916127, 101.5448381],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_6302627893f79c9ad15139a212bc79e8 = L.AwesomeMarkers.icon(
+            var icon_0f2113a7a8780f874ec4e5392a31306d = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_413429e1143bc4918ac303f86702e51d.setIcon(icon_6302627893f79c9ad15139a212bc79e8);
+            marker_db744cc4c06772055edf5d6559757ee7.setIcon(icon_0f2113a7a8780f874ec4e5392a31306d);
         
     
-        var popup_bb8d5b8f0d727a01b2bc554cc56b4441 = L.popup({"maxWidth": 300});
+        var popup_0418754f1a51102ed8722945aeca3521 = L.popup({"maxWidth": 300});
 
         
             
-                var html_4977239740c1fa7c33e8dbd64ab136c0 = $(`<div id="html_4977239740c1fa7c33e8dbd64ab136c0" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Office Unit<br>             RM 144.12 psf<br><br>             <strong>Nearest Transit:</strong> Batu Tiga (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>1,593 sq.ft</u><br>             <strong>Price:</strong> RM229,583<br><br>             <i>Block 6, No. 7, Persiaran Sukan, Laman Seri Business Park, Seksyen 13, 40100 Shah Alam, Selangor</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 9thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batu Tiga (KTM Komuter Lines) - 2.41 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shah Alam (KTM Komuter Lines) - 4.45 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subang Jaya (KTM Komuter Lines) - 4.79 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subang Jaya (LRT Lines) - 4.83 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SS15 (LRT Lines) - 4.87 km<br>             </div>             </div>         </div>`)[0];
-                popup_bb8d5b8f0d727a01b2bc554cc56b4441.setContent(html_4977239740c1fa7c33e8dbd64ab136c0);
+                var html_6cfc96dbaa05b3e6d2f42ac0a1088bbd = $(`<div id="html_6cfc96dbaa05b3e6d2f42ac0a1088bbd" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Office Unit<br>             RM 144.12 psf<br><br>             <strong>Nearest Transit:</strong> Batu Tiga (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>1,593 sq.ft</u><br>             <strong>Price:</strong> RM229,583<br><br>             <i>Block 6, No. 7, Persiaran Sukan, Laman Seri Business Park, Seksyen 13, 40100 Shah Alam, Selangor</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 9thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batu Tiga (KTM Komuter Lines) - 2.41 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shah Alam (KTM Komuter Lines) - 4.45 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subang Jaya (KTM Komuter Lines) - 4.79 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subang Jaya (LRT Lines) - 4.83 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SS15 (LRT Lines) - 4.87 km<br>             </div>             </div>         </div>`)[0];
+                popup_0418754f1a51102ed8722945aeca3521.setContent(html_6cfc96dbaa05b3e6d2f42ac0a1088bbd);
             
         
 
-        marker_413429e1143bc4918ac303f86702e51d.bindPopup(popup_bb8d5b8f0d727a01b2bc554cc56b4441)
+        marker_db744cc4c06772055edf5d6559757ee7.bindPopup(popup_0418754f1a51102ed8722945aeca3521)
         ;
 
         
     
     
-            var marker_571bbb1db99e9db8d15189d3286280c4 = L.marker(
+            var marker_00ede9f0504dac8cdcd7f753f8338f47 = L.marker(
                 [3.1977847, 101.7205747],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_d28c3a9bcb41b9287426045d4bf40e32 = L.AwesomeMarkers.icon(
+            var icon_a0a285b385867aca14c65dd1fab8b3da = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_571bbb1db99e9db8d15189d3286280c4.setIcon(icon_d28c3a9bcb41b9287426045d4bf40e32);
+            marker_00ede9f0504dac8cdcd7f753f8338f47.setIcon(icon_a0a285b385867aca14c65dd1fab8b3da);
         
     
-        var popup_97095387fba7e0fe16aa86ecd0cf1b52 = L.popup({"maxWidth": 300});
+        var popup_33503928ba9831dfdd316911c6e11c10 = L.popup({"maxWidth": 300});
 
         
             
-                var html_c0e8287858ef98cc81fa6cc3d32fabd5 = $(`<div id="html_c0e8287858ef98cc81fa6cc3d32fabd5" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [ROI >5%; Prime location just behind Giant Setapak] Stratified Office Lot with lift [5 min to PV 128, Columbia Asia Hospital, Setapak Central Mall & Wangsa Maju LRT Station]<br>             RM 66.61 psf<br><br>             <strong>Nearest Transit:</strong> Wangsa Maju (LRT Lines)<br>             <strong>Size:</strong> <u>2,232 sq.ft</u><br>             <strong>Price:</strong> RM148,680<br><br>             <i>Jalan 10/23A, Medan Makmur, Off Jalan Usahawan, Setapak, 53200, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wangsa Maju (LRT Lines) - 1.53 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Rampai (LRT Lines) - 1.88 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Taman Melawati (LRT Lines) - 2.41 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setiawangsa (LRT Lines) - 2.97 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sentrul Timur (LRT Lines) - 3.10 km<br>             </div>             </div>         </div>`)[0];
-                popup_97095387fba7e0fe16aa86ecd0cf1b52.setContent(html_c0e8287858ef98cc81fa6cc3d32fabd5);
+                var html_14052fd30c5bf237bd5f2d779e789bee = $(`<div id="html_14052fd30c5bf237bd5f2d779e789bee" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [ROI >5%; Prime location just behind Giant Setapak] Stratified Office Lot with lift [5 min to PV 128, Columbia Asia Hospital, Setapak Central Mall & Wangsa Maju LRT Station]<br>             RM 66.61 psf<br><br>             <strong>Nearest Transit:</strong> Wangsa Maju (LRT Lines)<br>             <strong>Size:</strong> <u>2,232 sq.ft</u><br>             <strong>Price:</strong> RM148,680<br><br>             <i>Jalan 10/23A, Medan Makmur, Off Jalan Usahawan, Setapak, 53200, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wangsa Maju (LRT Lines) - 1.53 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Rampai (LRT Lines) - 1.88 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Taman Melawati (LRT Lines) - 2.41 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setiawangsa (LRT Lines) - 2.97 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sentrul Timur (LRT Lines) - 3.10 km<br>             </div>             </div>         </div>`)[0];
+                popup_33503928ba9831dfdd316911c6e11c10.setContent(html_14052fd30c5bf237bd5f2d779e789bee);
             
         
 
-        marker_571bbb1db99e9db8d15189d3286280c4.bindPopup(popup_97095387fba7e0fe16aa86ecd0cf1b52)
+        marker_00ede9f0504dac8cdcd7f753f8338f47.bindPopup(popup_33503928ba9831dfdd316911c6e11c10)
         ;
 
         
     
     
-            var marker_fdca2af569720ea2a599cf8c5cc23120 = L.marker(
+            var marker_6c327905e57235e8a9c283d41eab7527 = L.marker(
                 [3.1944153, 101.5849135],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_5cb20eefb46deeaa6331275b9dd444e6 = L.AwesomeMarkers.icon(
+            var icon_7c5a8169831d8b49c87bad724a33c00c = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_fdca2af569720ea2a599cf8c5cc23120.setIcon(icon_5cb20eefb46deeaa6331275b9dd444e6);
+            marker_6c327905e57235e8a9c283d41eab7527.setIcon(icon_7c5a8169831d8b49c87bad724a33c00c);
         
     
-        var popup_589f26a54b9ebe2f174e3cec9df383f8 = L.popup({"maxWidth": 300});
+        var popup_5415e17698818b35ff6eaaad7dfb2bb6 = L.popup({"maxWidth": 300});
 
         
             
-                var html_52804fda42b03d3301b411486e40f00a = $(`<div id="html_52804fda42b03d3301b411486e40f00a" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [Next to  SK Damansara Damai 2 & residential area] Stratified Office Unit [5 min to MRT Damansara Damai & MRT Sungai Buloh]<br>             RM 104.57 psf<br><br>             <strong>Nearest Transit:</strong> Kampung Selamat (MRT Lines)<br>             <strong>Size:</strong> <u>700 sq.ft</u><br>             <strong>Price:</strong> RM73,200<br><br>             <i>Block G, Suria Shop Apartment, Jalan PJU 10/4C, PJU 10, Damansara Damai, 47830 Petaling Jaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 9thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kampung Selamat (MRT Lines) - 0.79 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Damansara Damai (MRT Lines) - 1.04 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Buloh (KTM Komuter Lines) - 1.37 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Buloh (MRT Lines) - 1.37 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kwasa Damansara (MRT Lines) - 2.39 km<br>             </div>             </div>         </div>`)[0];
-                popup_589f26a54b9ebe2f174e3cec9df383f8.setContent(html_52804fda42b03d3301b411486e40f00a);
+                var html_de0a10fe39a569c0b05ad73373965f5d = $(`<div id="html_de0a10fe39a569c0b05ad73373965f5d" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [Next to  SK Damansara Damai 2 & residential area] Stratified Office Unit [5 min to MRT Damansara Damai & MRT Sungai Buloh]<br>             RM 104.57 psf<br><br>             <strong>Nearest Transit:</strong> Kampung Selamat (MRT Lines)<br>             <strong>Size:</strong> <u>700 sq.ft</u><br>             <strong>Price:</strong> RM73,200<br><br>             <i>Block G, Suria Shop Apartment, Jalan PJU 10/4C, PJU 10, Damansara Damai, 47830 Petaling Jaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 9thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kampung Selamat (MRT Lines) - 0.79 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Damansara Damai (MRT Lines) - 1.04 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Buloh (KTM Komuter Lines) - 1.37 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Buloh (MRT Lines) - 1.37 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kwasa Damansara (MRT Lines) - 2.39 km<br>             </div>             </div>         </div>`)[0];
+                popup_5415e17698818b35ff6eaaad7dfb2bb6.setContent(html_de0a10fe39a569c0b05ad73373965f5d);
             
         
 
-        marker_fdca2af569720ea2a599cf8c5cc23120.bindPopup(popup_589f26a54b9ebe2f174e3cec9df383f8)
+        marker_6c327905e57235e8a9c283d41eab7527.bindPopup(popup_5415e17698818b35ff6eaaad7dfb2bb6)
         ;
 
         
     
     
-            var marker_42cd9ae01346c87bd6059b75836fc41e = L.marker(
+            var marker_00a813690facf5fb438ea6b76a47d4d3 = L.marker(
                 [3.0751427, 101.5519094],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_a81e27d99d6030eb9ddb4291349939d5 = L.AwesomeMarkers.icon(
+            var icon_c87ce1360f765c91fec7bd157dd20000 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_42cd9ae01346c87bd6059b75836fc41e.setIcon(icon_a81e27d99d6030eb9ddb4291349939d5);
+            marker_00a813690facf5fb438ea6b76a47d4d3.setIcon(icon_c87ce1360f765c91fec7bd157dd20000);
         
     
-        var popup_76e24181cc73fa41d0d06eb962782ab9 = L.popup({"maxWidth": 300});
+        var popup_77ded30a58b1685f4f0039af3fb9b0cb = L.popup({"maxWidth": 300});
 
         
             
-                var html_379285bac74e8e860ea0ffc3cef95101 = $(`<div id="html_379285bac74e8e860ea0ffc3cef95101" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Small Office Home Office (SOHO)<br>             RM 384.96 psf<br><br>             <strong>Nearest Transit:</strong> Batu Tiga (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>452 sq.ft</u><br>             <strong>Price:</strong> RM174,000<br><br>             <i>Menara U2, Jalan Boling Padang 13/62, Section 13, 40100 Shah Alam, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batu Tiga (KTM Komuter Lines) - 0.89 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shah Alam (KTM Komuter Lines) - 3.60 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SS15 (LRT Lines) - 3.77 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SS18 (LRT Lines) - 3.88 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subang Jaya (KTM Komuter Lines) - 4.07 km<br>             </div>             </div>         </div>`)[0];
-                popup_76e24181cc73fa41d0d06eb962782ab9.setContent(html_379285bac74e8e860ea0ffc3cef95101);
+                var html_e57fc5cb12775691fe9ae93c167d5b0f = $(`<div id="html_e57fc5cb12775691fe9ae93c167d5b0f" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Small Office Home Office (SOHO)<br>             RM 384.96 psf<br><br>             <strong>Nearest Transit:</strong> Batu Tiga (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>452 sq.ft</u><br>             <strong>Price:</strong> RM174,000<br><br>             <i>Menara U2, Jalan Boling Padang 13/62, Section 13, 40100 Shah Alam, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batu Tiga (KTM Komuter Lines) - 0.89 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shah Alam (KTM Komuter Lines) - 3.60 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SS15 (LRT Lines) - 3.77 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SS18 (LRT Lines) - 3.88 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subang Jaya (KTM Komuter Lines) - 4.07 km<br>             </div>             </div>         </div>`)[0];
+                popup_77ded30a58b1685f4f0039af3fb9b0cb.setContent(html_e57fc5cb12775691fe9ae93c167d5b0f);
             
         
 
-        marker_42cd9ae01346c87bd6059b75836fc41e.bindPopup(popup_76e24181cc73fa41d0d06eb962782ab9)
+        marker_00a813690facf5fb438ea6b76a47d4d3.bindPopup(popup_77ded30a58b1685f4f0039af3fb9b0cb)
         ;
 
         
     
     
-            var marker_9fa18538f54625d9bc31aa2c2c994039 = L.marker(
+            var marker_56c53fd1fbfc8a6547e44912c2a027d7 = L.marker(
                 [3.339245, 101.5804901],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_d9206576e1649c8eb7c8eea79955f33c = L.AwesomeMarkers.icon(
+            var icon_3acfb953526ef6884bf8918597f338ce = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_9fa18538f54625d9bc31aa2c2c994039.setIcon(icon_d9206576e1649c8eb7c8eea79955f33c);
+            marker_56c53fd1fbfc8a6547e44912c2a027d7.setIcon(icon_3acfb953526ef6884bf8918597f338ce);
         
     
-        var popup_1b28c11bbd97a0dd0f40e43e92ea953f = L.popup({"maxWidth": 300});
+        var popup_995901f5b5ef68ebe25635ff9ef039d4 = L.popup({"maxWidth": 300});
 
         
             
-                var html_0b745dcdc0970daa8b8793fcc4b4ca84 = $(`<div id="html_0b745dcdc0970daa8b8793fcc4b4ca84" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Apartment<br>             RM 60.44 psf<br><br>             <strong>Nearest Transit:</strong> Rawang (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>872 sq.ft</u><br>             <strong>Price:</strong> RM52,700<br><br>             <i>Pangsapuri Bukit Rawang Jaya 2, Jalan B.R.J.D/3, Taman Bukit Rawang Jaya 2, 48000 Rawang, Selangor</i><br><br>             <strong>Auction Date:</strong> 14 May 2025 (Wed)<br>             <strong>Auction Type:</strong> Title<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> 12thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rawang (KTM Komuter Lines) - 2.30 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serendah (KTM Komuter Lines) - 5.55 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kuang (KTM Komuter Lines) - 9.41 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Buloh (MRT Lines) - 14.69 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Buloh (KTM Komuter Lines) - 14.73 km<br>             </div>             </div>         </div>`)[0];
-                popup_1b28c11bbd97a0dd0f40e43e92ea953f.setContent(html_0b745dcdc0970daa8b8793fcc4b4ca84);
+                var html_915817f0968ab0a50f05bbd9f8cfe21a = $(`<div id="html_915817f0968ab0a50f05bbd9f8cfe21a" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Apartment<br>             RM 60.44 psf<br><br>             <strong>Nearest Transit:</strong> Rawang (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>872 sq.ft</u><br>             <strong>Price:</strong> RM52,700<br><br>             <i>Pangsapuri Bukit Rawang Jaya 2, Jalan B.R.J.D/3, Taman Bukit Rawang Jaya 2, 48000 Rawang, Selangor</i><br><br>             <strong>Auction Date:</strong> 14 May 2025 (Wed)<br>             <strong>Auction Type:</strong> Title<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> 12thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rawang (KTM Komuter Lines) - 2.30 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serendah (KTM Komuter Lines) - 5.55 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kuang (KTM Komuter Lines) - 9.41 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Buloh (MRT Lines) - 14.69 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Buloh (KTM Komuter Lines) - 14.73 km<br>             </div>             </div>         </div>`)[0];
+                popup_995901f5b5ef68ebe25635ff9ef039d4.setContent(html_915817f0968ab0a50f05bbd9f8cfe21a);
             
         
 
-        marker_9fa18538f54625d9bc31aa2c2c994039.bindPopup(popup_1b28c11bbd97a0dd0f40e43e92ea953f)
+        marker_56c53fd1fbfc8a6547e44912c2a027d7.bindPopup(popup_995901f5b5ef68ebe25635ff9ef039d4)
         ;
 
         
     
     
-            var marker_2c825c82af1de070bd484a2df3681265 = L.marker(
+            var marker_dff09da534f2b257be6544d34abf9a13 = L.marker(
                 [3.1770784, 101.6184905],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_9344a8878d3cd0bbbc29f92a279c51e6 = L.AwesomeMarkers.icon(
+            var icon_30c3b9766613fb198ab1681535fcec86 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_2c825c82af1de070bd484a2df3681265.setIcon(icon_9344a8878d3cd0bbbc29f92a279c51e6);
+            marker_dff09da534f2b257be6544d34abf9a13.setIcon(icon_30c3b9766613fb198ab1681535fcec86);
         
     
-        var popup_e0b46bdc1b7f2f6835b8e6638accc3b3 = L.popup({"maxWidth": 300});
+        var popup_085fb801f20798990dcc76d8f5274b77 = L.popup({"maxWidth": 300});
 
         
             
-                var html_e3f716afbb7bd1bf5034e3a0ea8c1a8e = $(`<div id="html_e3f716afbb7bd1bf5034e3a0ea8c1a8e" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Apartment<br>             RM 182.82 psf<br><br>             <strong>Nearest Transit:</strong> Sri Damansara Sentral (MRT Lines)<br>             <strong>Size:</strong> <u>850 sq.ft</u><br>             <strong>Price:</strong> RM155,400<br><br>             <i>Flora Damansara, No. 1, Jalan PJU 8/9, Damansara Perdana, 47820 Petaling Jaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 14 May 2025 (Wed)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Sentral (MRT Lines) - 2.40 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Barat (MRT Lines) - 2.59 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mutiara Damansara (MRT Lines) - 2.64 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bandar Utama (MRT Lines) - 3.36 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kepong (KTM Komuter Lines) - 3.54 km<br>             </div>             </div>         </div>`)[0];
-                popup_e0b46bdc1b7f2f6835b8e6638accc3b3.setContent(html_e3f716afbb7bd1bf5034e3a0ea8c1a8e);
+                var html_5b36bcbd384e5fd7adf84255729fb1e2 = $(`<div id="html_5b36bcbd384e5fd7adf84255729fb1e2" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Apartment<br>             RM 182.82 psf<br><br>             <strong>Nearest Transit:</strong> Sri Damansara Sentral (MRT Lines)<br>             <strong>Size:</strong> <u>850 sq.ft</u><br>             <strong>Price:</strong> RM155,400<br><br>             <i>Flora Damansara, No. 1, Jalan PJU 8/9, Damansara Perdana, 47820 Petaling Jaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 14 May 2025 (Wed)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Sentral (MRT Lines) - 2.40 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Barat (MRT Lines) - 2.59 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mutiara Damansara (MRT Lines) - 2.64 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bandar Utama (MRT Lines) - 3.36 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kepong (KTM Komuter Lines) - 3.54 km<br>             </div>             </div>         </div>`)[0];
+                popup_085fb801f20798990dcc76d8f5274b77.setContent(html_5b36bcbd384e5fd7adf84255729fb1e2);
             
         
 
-        marker_2c825c82af1de070bd484a2df3681265.bindPopup(popup_e0b46bdc1b7f2f6835b8e6638accc3b3)
+        marker_dff09da534f2b257be6544d34abf9a13.bindPopup(popup_085fb801f20798990dcc76d8f5274b77)
         ;
 
         
     
     
-            var marker_dc9e8d210deaaa0817088244e745c103 = L.marker(
+            var marker_e9e988888e435494f94284a490812e54 = L.marker(
                 [3.2005147, 101.6908392],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_ad102e3fc4e95f4c485a1c04b0b73910 = L.AwesomeMarkers.icon(
+            var icon_3843b940a0e1d6eab2b94ff50ab3a68d = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_dc9e8d210deaaa0817088244e745c103.setIcon(icon_ad102e3fc4e95f4c485a1c04b0b73910);
+            marker_e9e988888e435494f94284a490812e54.setIcon(icon_3843b940a0e1d6eab2b94ff50ab3a68d);
         
     
-        var popup_52fa2daba04355e7a9d9bed757ad24cb = L.popup({"maxWidth": 300});
+        var popup_8e297df4432a383d87b8c740e9718133 = L.popup({"maxWidth": 300});
 
         
             
-                var html_fd79f826a129a2810f147acf8392d961 = $(`<div id="html_fd79f826a129a2810f147acf8392d961" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Condominium (Duplex)<br>             RM 124.75 psf<br><br>             <strong>Nearest Transit:</strong> Kentonmen (MRT Lines)<br>             <strong>Size:</strong> <u>1,507 sq.ft</u><br>             <strong>Price:</strong> RM188,000<br><br>             <i>Block 200, Sri Suajaya Condominium, Jalan Kampung Bandar Dalam, Sentul, 51000, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 3 Jun 2025 (Tue)<br>             <strong>Auction Type:</strong> Title<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kentonmen (MRT Lines) - 1.37 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sentrul Timur (LRT Lines) - 1.69 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kampung Batu (MRT Lines) - 1.83 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sentul Barat (MRT Lines) - 2.45 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sentul (LRT Lines) - 2.51 km<br>             </div>             </div>         </div>`)[0];
-                popup_52fa2daba04355e7a9d9bed757ad24cb.setContent(html_fd79f826a129a2810f147acf8392d961);
+                var html_19510eadd8107739b51abde7d061a079 = $(`<div id="html_19510eadd8107739b51abde7d061a079" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Condominium (Duplex)<br>             RM 124.75 psf<br><br>             <strong>Nearest Transit:</strong> Kentonmen (MRT Lines)<br>             <strong>Size:</strong> <u>1,507 sq.ft</u><br>             <strong>Price:</strong> RM188,000<br><br>             <i>Block 200, Sri Suajaya Condominium, Jalan Kampung Bandar Dalam, Sentul, 51000, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 3 Jun 2025 (Tue)<br>             <strong>Auction Type:</strong> Title<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kentonmen (MRT Lines) - 1.37 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sentrul Timur (LRT Lines) - 1.69 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kampung Batu (MRT Lines) - 1.83 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sentul Barat (MRT Lines) - 2.45 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sentul (LRT Lines) - 2.51 km<br>             </div>             </div>         </div>`)[0];
+                popup_8e297df4432a383d87b8c740e9718133.setContent(html_19510eadd8107739b51abde7d061a079);
             
         
 
-        marker_dc9e8d210deaaa0817088244e745c103.bindPopup(popup_52fa2daba04355e7a9d9bed757ad24cb)
+        marker_e9e988888e435494f94284a490812e54.bindPopup(popup_8e297df4432a383d87b8c740e9718133)
         ;
 
         
     
     
-            var marker_6709509ee8cb982d0caf9bb613ca3d61 = L.marker(
+            var marker_fac6d619e74a27bfbdfdf4d80142963c = L.marker(
                 [3.1765735, 101.6177396],
                 {}
-            ).addTo(marker_cluster_866434678f180cec8afe6f066f68cb1a);
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
         
     
-            var icon_e0959b366a8100fda4db3c22626956c7 = L.AwesomeMarkers.icon(
+            var icon_5b612340679ba1da071368acd8372c64 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_6709509ee8cb982d0caf9bb613ca3d61.setIcon(icon_e0959b366a8100fda4db3c22626956c7);
+            marker_fac6d619e74a27bfbdfdf4d80142963c.setIcon(icon_5b612340679ba1da071368acd8372c64);
         
     
-        var popup_d99660d29197e76449dc51b345dfe5dc = L.popup({"maxWidth": 300});
+        var popup_7be1620c978962554be69e4fde6fbf5f = L.popup({"maxWidth": 300});
 
         
             
-                var html_53d72c18d088aff58f017c1fbe07dbeb = $(`<div id="html_53d72c18d088aff58f017c1fbe07dbeb" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [8 min to IKEA Damansara & Lotus's Mutiara Damansara] Apartment [9 min to Mutiara Damansara MRT Station, 1 Utama Shopping Centre & Damansara Specialist Hospital 2]<br>             RM 150.67 psf<br><br>             <strong>Nearest Transit:</strong> Sri Damansara Sentral (MRT Lines)<br>             <strong>Size:</strong> <u>750 sq.ft</u><br>             <strong>Price:</strong> RM113,000<br><br>             <i>Block D, Flora Damansara, No. 1, Jalan PJU 8/9, Bandar Damansara Perdana, 47820 Petaling Jaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 8thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Sentral (MRT Lines) - 2.46 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mutiara Damansara (MRT Lines) - 2.56 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Barat (MRT Lines) - 2.61 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bandar Utama (MRT Lines) - 3.31 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kepong (KTM Komuter Lines) - 3.63 km<br>             </div>             </div>         </div>`)[0];
-                popup_d99660d29197e76449dc51b345dfe5dc.setContent(html_53d72c18d088aff58f017c1fbe07dbeb);
+                var html_78056ed02b00e21a49dd4f16d721728d = $(`<div id="html_78056ed02b00e21a49dd4f16d721728d" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [8 min to IKEA Damansara & Lotus's Mutiara Damansara] Apartment [9 min to Mutiara Damansara MRT Station, 1 Utama Shopping Centre & Damansara Specialist Hospital 2]<br>             RM 150.67 psf<br><br>             <strong>Nearest Transit:</strong> Sri Damansara Sentral (MRT Lines)<br>             <strong>Size:</strong> <u>750 sq.ft</u><br>             <strong>Price:</strong> RM113,000<br><br>             <i>Block D, Flora Damansara, No. 1, Jalan PJU 8/9, Bandar Damansara Perdana, 47820 Petaling Jaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 8thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Sentral (MRT Lines) - 2.46 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mutiara Damansara (MRT Lines) - 2.56 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Barat (MRT Lines) - 2.61 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bandar Utama (MRT Lines) - 3.31 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kepong (KTM Komuter Lines) - 3.63 km<br>             </div>             </div>         </div>`)[0];
+                popup_7be1620c978962554be69e4fde6fbf5f.setContent(html_78056ed02b00e21a49dd4f16d721728d);
             
         
 
-        marker_6709509ee8cb982d0caf9bb613ca3d61.bindPopup(popup_d99660d29197e76449dc51b345dfe5dc)
+        marker_fac6d619e74a27bfbdfdf4d80142963c.bindPopup(popup_7be1620c978962554be69e4fde6fbf5f)
         ;
 
         
     
     
-            marker_cluster_866434678f180cec8afe6f066f68cb1a.addTo(map_136c3fc27f16dd3d5a3818009a26e079);
+            var marker_23fff0d7ff053deb0ff5c9c8679134af = L.marker(
+                [2.9575904, 101.6164303],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_aee97f18f572c328f6818fb37a8f54a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_23fff0d7ff053deb0ff5c9c8679134af.setIcon(icon_aee97f18f572c328f6818fb37a8f54a6);
+        
+    
+        var popup_b1cdceb671197fccf5c21ad87a45334d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d8ab9c58f5fdedd3d5a5c2bdf0012f61 = $(`<div id="html_d8ab9c58f5fdedd3d5a5c2bdf0012f61" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [Building Facing main road - SKVE Highway] Service Apartment [Strategically located right next to Jalan Puchong]<br>             RM 221.50 psf<br><br>             <strong>Nearest Transit:</strong> 16 Sierra (MRT Lines)<br>             <strong>Size:</strong> <u>972 sq.ft</u><br>             <strong>Price:</strong> RM215,300<br><br>             <i>Saville D' Lake, Jalan Saville, 47130 Puchong, Selangor</i><br><br>             <strong>Auction Date:</strong> 20 May 2025 (Tue)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 6thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16 Sierra (MRT Lines) - 4.35 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cyberjaya Utara (MRT Lines) - 4.62 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Puchong Prima (LRT Lines) - 5.16 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putra Permai (MRT Lines) - 5.70 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Puchong Perdana (LRT Lines) - 5.71 km<br>             </div>             </div>         </div>`)[0];
+                popup_b1cdceb671197fccf5c21ad87a45334d.setContent(html_d8ab9c58f5fdedd3d5a5c2bdf0012f61);
+            
+        
+
+        marker_23fff0d7ff053deb0ff5c9c8679134af.bindPopup(popup_b1cdceb671197fccf5c21ad87a45334d)
+        ;
+
+        
+    
+    
+            var marker_f44b5fa83c1a48fb0867ea0acd23d7e3 = L.marker(
+                [3.157113, 101.5714741],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_43781327f9e16916001e59426e0042bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f44b5fa83c1a48fb0867ea0acd23d7e3.setIcon(icon_43781327f9e16916001e59426e0042bf);
+        
+    
+        var popup_350c953095a4382e3691446220209fc9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1f1b7925b4271c64a82dd0227ea1e48e = $(`<div id="html_1f1b7925b4271c64a82dd0227ea1e48e" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [Completed in 2020; 3 min to Kota Damansara MRT Station] Shop Lot [4 min to SEGi College Kota Damansara]<br>             RM 266.07 psf<br><br>             <strong>Nearest Transit:</strong> Kota Damansara (MRT Lines)<br>             <strong>Size:</strong> <u>1,238 sq.ft</u><br>             <strong>Price:</strong> RM329,400<br><br>             <i>Emporis Kota Damansara, Persiaran Surian, Seksyen 3, Taman Sains Selangor, Kota Damansara, 47810 Petaling Jaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kota Damansara (MRT Lines) - 1.10 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kwasa Sentral (MRT Lines) - 1.60 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kwasa Damansara (MRT Lines) - 2.19 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Surian (MRT Lines) - 2.60 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mutiara Damansara (MRT Lines) - 4.15 km<br>             </div>             </div>         </div>`)[0];
+                popup_350c953095a4382e3691446220209fc9.setContent(html_1f1b7925b4271c64a82dd0227ea1e48e);
+            
+        
+
+        marker_f44b5fa83c1a48fb0867ea0acd23d7e3.bindPopup(popup_350c953095a4382e3691446220209fc9)
+        ;
+
+        
+    
+    
+            var marker_7640f6040adea3857553451ce3e3a9fd = L.marker(
+                [3.157113, 101.5714741],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_9965e578a79071a89766c19ea3b299b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7640f6040adea3857553451ce3e3a9fd.setIcon(icon_9965e578a79071a89766c19ea3b299b9);
+        
+    
+        var popup_0f4257251d8e30af6ca794cd21cdf4a9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f8d5485aaa6a261a2115ae3a86bce261 = $(`<div id="html_f8d5485aaa6a261a2115ae3a86bce261" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [ROI > 5%; 3 min to Kota Damansara MRT Station] Shop Lot [3 min to Kota Damansara MRT Station & SEGi College Kota Damansara]<br>             RM 326.17 psf<br><br>             <strong>Nearest Transit:</strong> Kota Damansara (MRT Lines)<br>             <strong>Size:</strong> <u>1,238 sq.ft</u><br>             <strong>Price:</strong> RM403,800<br><br>             <i>Emporis Kota Damansara, Persiaran Surian, Seksyen 3, Taman Sains Selangor, Kota Damansara, 47810 Petaling Jaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kota Damansara (MRT Lines) - 1.10 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kwasa Sentral (MRT Lines) - 1.60 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kwasa Damansara (MRT Lines) - 2.19 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Surian (MRT Lines) - 2.60 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mutiara Damansara (MRT Lines) - 4.15 km<br>             </div>             </div>         </div>`)[0];
+                popup_0f4257251d8e30af6ca794cd21cdf4a9.setContent(html_f8d5485aaa6a261a2115ae3a86bce261);
+            
+        
+
+        marker_7640f6040adea3857553451ce3e3a9fd.bindPopup(popup_0f4257251d8e30af6ca794cd21cdf4a9)
+        ;
+
+        
+    
+    
+            var marker_89a738d9af5780d383a8bc64763b06ff = L.marker(
+                [3.157113, 101.5714741],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_f59f9cff59d5a188a719ec6f9255608a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_89a738d9af5780d383a8bc64763b06ff.setIcon(icon_f59f9cff59d5a188a719ec6f9255608a);
+        
+    
+        var popup_5ddf39cdf879f76724af0c85e90cd4c1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ac44565d4057bddadb8202fe926f959a = $(`<div id="html_ac44565d4057bddadb8202fe926f959a" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [ ROI > 5%; 3 min to Kota Damansara MRT Station] Shop Lot [3 min to Kota Damansara MRT Station & SEGi College Kota Damansara]<br>             RM 601.31 psf<br><br>             <strong>Nearest Transit:</strong> Kota Damansara (MRT Lines)<br>             <strong>Size:</strong> <u>1,679 sq.ft</u><br>             <strong>Price:</strong> RM1,009,600<br><br>             <i>Emporis Kota Damansara, Persiaran Surian, Seksyen 3, Taman Sains Selangor, Kota Damansara, 47810 Petaling Jaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kota Damansara (MRT Lines) - 1.10 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kwasa Sentral (MRT Lines) - 1.60 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kwasa Damansara (MRT Lines) - 2.19 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Surian (MRT Lines) - 2.60 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mutiara Damansara (MRT Lines) - 4.15 km<br>             </div>             </div>         </div>`)[0];
+                popup_5ddf39cdf879f76724af0c85e90cd4c1.setContent(html_ac44565d4057bddadb8202fe926f959a);
+            
+        
+
+        marker_89a738d9af5780d383a8bc64763b06ff.bindPopup(popup_5ddf39cdf879f76724af0c85e90cd4c1)
+        ;
+
+        
+    
+    
+            var marker_25be371c3a0ccf1fcccfb8922391d084 = L.marker(
+                [3.2549084, 101.4491273],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_90346f1730170bfaea043ce8869fee64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_25be371c3a0ccf1fcccfb8922391d084.setIcon(icon_90346f1730170bfaea043ce8869fee64);
+        
+    
+        var popup_474a281f34e126c921c77db1b3dd92bf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_321b0659c2ef07fdd20091104809ddef = $(`<div id="html_321b0659c2ef07fdd20091104809ddef" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [8 min to Econsave Puncak Alam] Apartment [10 min to Lotus's]<br>             RM 81.26 psf<br><br>             <strong>Nearest Transit:</strong> Kuang (KTM Komuter Lines)<br>             <strong>Size:</strong> <u>654 sq.ft</u><br>             <strong>Price:</strong> RM53,144<br><br>             <i>Jalan AP 2E/1, Kenari Court, Alam Perdana, 42300 Bandar Puncak Alam, Selangor</i><br><br>             <strong>Auction Date:</strong> 26 May 2025 (Mon)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 7thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kuang (KTM Komuter Lines) - 11.74 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Buloh (KTM Komuter Lines) - 15.60 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Buloh (MRT Lines) - 15.69 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rawang (KTM Komuter Lines) - 15.70 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kampung Selamat (MRT Lines) - 15.72 km<br>             </div>             </div>         </div>`)[0];
+                popup_474a281f34e126c921c77db1b3dd92bf.setContent(html_321b0659c2ef07fdd20091104809ddef);
+            
+        
+
+        marker_25be371c3a0ccf1fcccfb8922391d084.bindPopup(popup_474a281f34e126c921c77db1b3dd92bf)
+        ;
+
+        
+    
+    
+            var marker_ae7cce95d8ffd42583d87ad87790c36b = L.marker(
+                [3.1255428, 101.7637734],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_62c85ff3540d4207fc34a12b5003a667 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ae7cce95d8ffd42583d87ad87790c36b.setIcon(icon_62c85ff3540d4207fc34a12b5003a667);
+        
+    
+        var popup_f4a36f917e559432fabc316a4c9ec40b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c87dac2940bea3d907e42b4e8ea4c5df = $(`<div id="html_c87dac2940bea3d907e42b4e8ea4c5df" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             [Beside SMK Pandan Mewah] Apartment [Next to Ampang Hospital & SJK (C) On Pong 2]<br>             RM 169.83 psf<br><br>             <strong>Nearest Transit:</strong> Cahaya (LRT Lines)<br>             <strong>Size:</strong> <u>751 sq.ft</u><br>             <strong>Price:</strong> RM127,546<br><br>             <i>Block A, Hata Square, Jalan Mewah 1/3, Pandan Mewah, 68000 Ampang, Selangor</i><br><br>             <strong>Auction Date:</strong> 26 May 2025 (Mon)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 7thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cahaya (LRT Lines) - 1.84 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cempaka (LRT Lines) - 1.86 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pandan Indah (LRT Lines) - 2.15 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ampang (LRT Lines) - 2.77 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pandan Jaya (LRT Lines) - 2.81 km<br>             </div>             </div>         </div>`)[0];
+                popup_f4a36f917e559432fabc316a4c9ec40b.setContent(html_c87dac2940bea3d907e42b4e8ea4c5df);
+            
+        
+
+        marker_ae7cce95d8ffd42583d87ad87790c36b.bindPopup(popup_f4a36f917e559432fabc316a4c9ec40b)
+        ;
+
+        
+    
+    
+            var marker_73c11cd6d336673fd63b985bcce1ebe5 = L.marker(
+                [3.2186065, 101.6307857],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_8a518d6bd395c1faa9079af0839ec324 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_73c11cd6d336673fd63b985bcce1ebe5.setIcon(icon_8a518d6bd395c1faa9079af0839ec324);
+        
+    
+        var popup_2971d1bd43421f66ce6880163c944869 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_86419de0188df4200379cdde8df26fac = $(`<div id="html_86419de0188df4200379cdde8df26fac" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Shop Apartment<br>             RM 102.50 psf<br><br>             <strong>Nearest Transit:</strong> Metro Prima (MRT Lines)<br>             <strong>Size:</strong> <u>674 sq.ft</u><br>             <strong>Price:</strong> RM69,088<br><br>             <i>Jalan 10/1D, Taman Intan Baiduri, 52100, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 26 May 2025 (Mon)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> N/A<br>             <strong>Auction Count:</strong> 7thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Metro Prima (MRT Lines) - 1.15 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Timur (MRT Lines) - 1.22 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kepong (KTM Komuter Lines) - 1.90 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kepong Baru (MRT Lines) - 2.09 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Sentral (MRT Lines) - 2.46 km<br>             </div>             </div>         </div>`)[0];
+                popup_2971d1bd43421f66ce6880163c944869.setContent(html_86419de0188df4200379cdde8df26fac);
+            
+        
+
+        marker_73c11cd6d336673fd63b985bcce1ebe5.bindPopup(popup_2971d1bd43421f66ce6880163c944869)
+        ;
+
+        
+    
+    
+            var marker_169e5c171f512f89f750bf10dea102b7 = L.marker(
+                [2.9456444, 101.7901948],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_e17d78628f193794c170a22f20fe715d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_169e5c171f512f89f750bf10dea102b7.setIcon(icon_e17d78628f193794c170a22f20fe715d);
+        
+    
+        var popup_401790180dfb701a9af3ecedaa65ec40 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c585a51a0616b35a8beeb569774f2178 = $(`<div id="html_c585a51a0616b35a8beeb569774f2178" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Apartment [3 min to UKM KTM Station; 6 min to Econsave Bangi & Reko Sentral]<br>             RM 122.64 psf<br><br>             <strong>Nearest Transit:</strong> Kajang (MRT Lines)<br>             <strong>Size:</strong> <u>650 sq.ft</u><br>             <strong>Price:</strong> RM79,717<br><br>             <i>Blok C, Jalan Kelisa 1, Apartment Kelisa Ria, 43000 Kajang, Selangor</i><br><br>             <strong>Auction Date:</strong> 26 May 2025 (Mon)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> N/A<br>             <strong>Auction Count:</strong> 7thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kajang (MRT Lines) - 4.14 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stdium Kajang (MRT Lines) - 5.37 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Jernih (MRT Lines) - 6.16 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bukit Dukung (MRT Lines) - 9.17 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batu 11 Cheras (MRT Lines) - 10.75 km<br>             </div>             </div>         </div>`)[0];
+                popup_401790180dfb701a9af3ecedaa65ec40.setContent(html_c585a51a0616b35a8beeb569774f2178);
+            
+        
+
+        marker_169e5c171f512f89f750bf10dea102b7.bindPopup(popup_401790180dfb701a9af3ecedaa65ec40)
+        ;
+
+        
+    
+    
+            var marker_2f548403cab545acc029fd5bb364721a = L.marker(
+                [3.2406943, 101.6488773],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_3b4ced6d14b41d22ce072ca113e9e64e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2f548403cab545acc029fd5bb364721a.setIcon(icon_3b4ced6d14b41d22ce072ca113e9e64e);
+        
+    
+        var popup_1fe3dad1d9c75212503ae29d1245d92b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5576e4fd778f5a8d590e62dde2eac31d = $(`<div id="html_5576e4fd778f5a8d590e62dde2eac31d" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Retail Unit<br>             RM 97.66 psf<br><br>             <strong>Nearest Transit:</strong> Metro Prima (MRT Lines)<br>             <strong>Size:</strong> <u>3,810 sq.ft</u><br>             <strong>Price:</strong> RM372,100<br><br>             <i>Selayang Capitol Complex, Selayang - Kepong Expressway, 68100 Selayang, Selangor</i><br><br>             <strong>Auction Date:</strong> 5 Jun 2025 (Thu)<br>             <strong>Auction Type:</strong> Title<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> 10thAuction<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Metro Prima (MRT Lines) - 3.04 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kepong Baru (MRT Lines) - 3.22 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jinjang (MRT Lines) - 3.53 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Delima (MRT Lines) - 4.15 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Damansara Timur (MRT Lines) - 4.28 km<br>             </div>             </div>         </div>`)[0];
+                popup_1fe3dad1d9c75212503ae29d1245d92b.setContent(html_5576e4fd778f5a8d590e62dde2eac31d);
+            
+        
+
+        marker_2f548403cab545acc029fd5bb364721a.bindPopup(popup_1fe3dad1d9c75212503ae29d1245d92b)
+        ;
+
+        
+    
+    
+            var marker_2a90b6a09790bd1852328ac4dd0f595a = L.marker(
+                [2.9196975, 101.6370896],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_b3bafa23fb48f6159cea021fe62c7723 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2a90b6a09790bd1852328ac4dd0f595a.setIcon(icon_b3bafa23fb48f6159cea021fe62c7723);
+        
+    
+        var popup_3a828d25fc8a737b43d7eb24c4e15a02 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c580ec0fa04d7e0875c885f7e3713fe5 = $(`<div id="html_c580ec0fa04d7e0875c885f7e3713fe5" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Stratified Office<br>             RM 287.86 psf<br><br>             <strong>Nearest Transit:</strong> Cryberjaya City Centre (MRT Lines)<br>             <strong>Size:</strong> <u>2,216 sq.ft</u><br>             <strong>Price:</strong> RM637,900<br><br>             <i>Block B, Tamarind Square, Persiaran Multimedia, Cyber 10, 63000 Cyberjaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 14 May 2025 (Wed)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cryberjaya City Centre (MRT Lines) - 3.83 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cyberjaya Utara (MRT Lines) - 4.03 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putrajaya Sentral (MRT Lines) - 4.04 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16 Sierra (MRT Lines) - 5.39 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putra Permai (MRT Lines) - 7.51 km<br>             </div>             </div>         </div>`)[0];
+                popup_3a828d25fc8a737b43d7eb24c4e15a02.setContent(html_c580ec0fa04d7e0875c885f7e3713fe5);
+            
+        
+
+        marker_2a90b6a09790bd1852328ac4dd0f595a.bindPopup(popup_3a828d25fc8a737b43d7eb24c4e15a02)
+        ;
+
+        
+    
+    
+            var marker_c96b80fd97b3b0095ebf2b33a85b6728 = L.marker(
+                [3.0889596, 101.7031768],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_742880e4131d9e740c789bd9831f3cca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c96b80fd97b3b0095ebf2b33a85b6728.setIcon(icon_742880e4131d9e740c789bd9831f3cca);
+        
+    
+        var popup_9991c9e519d1bd9d9f10ba3ea35ce2b3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f719da8f25381221136bdab4e825c31f = $(`<div id="html_f719da8f25381221136bdab4e825c31f" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Apartment [Next to Kuchai Entrepreneurs Park; 4 walk to SMK Seri Sentosa; 5 min to Kuchai MRT Station]<br>             RM 94.86 psf<br><br>             <strong>Nearest Transit:</strong> Kuchai (MRT Lines)<br>             <strong>Size:</strong> <u>506 sq.ft</u><br>             <strong>Price:</strong> RM48,000<br><br>             <i>6th Floor, Block B, Jalan 1/115A, Taman Kuchai Jaya, 58200, Kuala Lumpur</i><br><br>             <strong>Auction Date:</strong> 5 Jun 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> LH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kuchai (MRT Lines) - 1.01 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bandar Tun Razak (LRT Lines) - 1.03 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Naga Emas (MRT Lines) - 1.31 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salak Selatan (LRT Lines) - 1.50 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sungai Besi (LRT Lines) - 2.82 km<br>             </div>             </div>         </div>`)[0];
+                popup_9991c9e519d1bd9d9f10ba3ea35ce2b3.setContent(html_f719da8f25381221136bdab4e825c31f);
+            
+        
+
+        marker_c96b80fd97b3b0095ebf2b33a85b6728.bindPopup(popup_9991c9e519d1bd9d9f10ba3ea35ce2b3)
+        ;
+
+        
+    
+    
+            var marker_93daea182fa6a448465b50932404aff1 = L.marker(
+                [2.9093125, 101.6631826],
+                {}
+            ).addTo(marker_cluster_af80ff1027a4c315f170020edf51bff2);
+        
+    
+            var icon_a28792426ff4a3ca7541870e2e45c64a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_93daea182fa6a448465b50932404aff1.setIcon(icon_a28792426ff4a3ca7541870e2e45c64a);
+        
+    
+        var popup_e55a89ecadb6e3b862fae7a76bffc7bc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7978fc642e80bcb24ad649c71498cf23 = $(`<div id="html_7978fc642e80bcb24ad649c71498cf23" style="width: 100.0%; height: 100.0%;">             <div style="border-top: 4px solid red; border-left: 4px solid green; border-right: 4px solid blue; border-bottom: 4px solid yellow; padding: 15px;">             Duplex Condominium<br>             RM 205.84 psf<br><br>             <strong>Nearest Transit:</strong> Putrajaya Sentral (MRT Lines)<br>             <strong>Size:</strong> <u>753 sq.ft</u><br>             <strong>Price:</strong> RM155,000<br><br>             <i>Block C, Sawtelle Suites, Jalan Cyber Heights, Cyber Heights Villa, 63000 Cyberjaya, Selangor</i><br><br>             <strong>Auction Date:</strong> 15 May 2025 (Thu)<br>             <strong>Auction Type:</strong> LACA<br>             <strong>Tenure:</strong> FH<br>             <strong>Auction Count:</strong> N/A<br><br>                      <strong>Top 5 Transit Stations:</strong><br>             <div style="background-color: #333; color: white; padding: 5px; border-radius: 5px;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putrajaya Sentral (MRT Lines) - 2.60 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cryberjaya City Centre (MRT Lines) - 3.32 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cyberjaya Utara (MRT Lines) - 4.55 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16 Sierra (MRT Lines) - 6.23 km<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putra Permai (MRT Lines) - 8.18 km<br>             </div>             </div>         </div>`)[0];
+                popup_e55a89ecadb6e3b862fae7a76bffc7bc.setContent(html_7978fc642e80bcb24ad649c71498cf23);
+            
+        
+
+        marker_93daea182fa6a448465b50932404aff1.bindPopup(popup_e55a89ecadb6e3b862fae7a76bffc7bc)
+        ;
+
+        
+    
+    
+            marker_cluster_af80ff1027a4c315f170020edf51bff2.addTo(map_d55bb88948f1ba5c39c9e7f8868160de);
         
 </script>
 </html>
