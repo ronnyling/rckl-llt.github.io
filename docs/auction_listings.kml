@@ -386,198 +386,6 @@ Batu 11 Cheras (MRT Lines) - 10.75 km
             </Point>
         </Placemark>
         <Placemark id="51">
-            <name>Apartment [Opposite SK Taman Bunga Raya 2]</name>
-            <description>
-        Property Type: Apartment [Opposite SK Taman Bunga Raya 2]
-        Price per Sq.Ft: 31.77
-        Top 5 Nearest Transit Stations:
-        Batang Kali (KTM Komuter Lines) - 9.71 km
-Serendah (KTM Komuter Lines) - 10.09 km
-Rasa (KTM Komuter Lines) - 10.89 km
-Rawang (KTM Komuter Lines) - 13.98 km
-Kuala Kubu Bharu (KTM Komuter Lines) - 15.40 km
-        </description>
-            <Point id="50">
-                <coordinates>101.5539362,3.4438265,0.0</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="53">
-            <name>Flat</name>
-            <description>
-        Property Type: Flat
-        Price per Sq.Ft: 71.90
-        Top 5 Nearest Transit Stations:
-        Pelabuhan Klang (KTM Komuter Lines) - 2.19 km
-Jalan Kastam (KTM Komuter Lines) - 3.37 km
-Kampung Raja Uda (KTM Komuter Lines) - 4.25 km
-Teluk Gadong (KTM Komuter Lines) - 6.24 km
-Teluk Pulai (KTM Komuter Lines) - 7.29 km
-        </description>
-            <Point id="52">
-                <coordinates>101.4013852,2.9826343,0.0</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="55">
-            <name>Retail Lot</name>
-            <description>
-        Property Type: Retail Lot
-        Price per Sq.Ft: 2014.08
-        Top 5 Nearest Transit Stations:
-        Chow Kit (Monorail Line) - 0.23 km
-PWTC (LRT Lines) - 0.39 km
-Sultan Ismail (LRT Lines) - 0.60 km
-Putra (KTM Komuter Lines) - 0.66 km
-Medan Tuanku (Monorail Line) - 0.75 km
-        </description>
-            <Point id="54">
-                <coordinates>101.6969811,3.1658575,0.0</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="57">
-            <name>Apartment</name>
-            <description>
-        Property Type: Apartment
-        Price per Sq.Ft: 78.11
-        Top 5 Nearest Transit Stations:
-        Serendah (KTM Komuter Lines) - 10.27 km
-Batang Kali (KTM Komuter Lines) - 10.63 km
-Rasa (KTM Komuter Lines) - 11.85 km
-Rawang (KTM Komuter Lines) - 13.61 km
-Kuala Kubu Bharu (KTM Komuter Lines) - 16.32 km
-        </description>
-            <Point id="56">
-                <coordinates>101.5467281,3.4389664,0.0</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="59">
-            <name>[Next to SK Damansara Damai 2] Shop Apartment [5 min to Damansara Damai MRT Station]</name>
-            <description>
-        Property Type: [Next to SK Damansara Damai 2] Shop Apartment [5 min to Damansara Damai MRT Station]
-        Price per Sq.Ft: 107.78
-        Top 5 Nearest Transit Stations:
-        Kampung Selamat (MRT Lines) - 0.83 km
-Damansara Damai (MRT Lines) - 1.06 km
-Sungai Buloh (KTM Komuter Lines) - 1.42 km
-Sungai Buloh (MRT Lines) - 1.43 km
-Kwasa Damansara (MRT Lines) - 2.36 km
-        </description>
-            <Point id="58">
-                <coordinates>101.5850605,3.1939551,0.0</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="61">
-            <name>Condominium [7 min to the upcoming LRT3 Station - Stadium Shah Alam]</name>
-            <description>
-        Property Type: Condominium [7 min to the upcoming LRT3 Station - Stadium Shah Alam]
-        Price per Sq.Ft: 334.43
-        Top 5 Nearest Transit Stations:
-        Batu Tiga (KTM Komuter Lines) - 1.17 km
-Shah Alam (KTM Komuter Lines) - 3.34 km
-SS18 (LRT Lines) - 3.62 km
-SS15 (LRT Lines) - 3.73 km
-Subang Jaya (KTM Komuter Lines) - 4.22 km
-        </description>
-            <Point id="60">
-                <coordinates>101.5533166,3.0676773,0.0</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="63">
-            <name>Service Apartment</name>
-            <description>
-        Property Type: Service Apartment
-        Price per Sq.Ft: 317.42
-        Top 5 Nearest Transit Stations:
-        Jelatek (LRT Lines) - 1.36 km
-Dato Keramat (LRT Lines) - 1.66 km
-Setiawangsa (LRT Lines) - 1.90 km
-Ampang (LRT Lines) - 2.01 km
-Damai (LRT Lines) - 2.46 km
-        </description>
-            <Point id="62">
-                <coordinates>101.7464883,3.1623279,0.0</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="65">
-            <name>Condominium</name>
-            <description>
-        Property Type: Condominium
-        Price per Sq.Ft: 271.13
-        Top 5 Nearest Transit Stations:
-        Tun Sambanthan (Monorail Line) - 0.37 km
-KL Sentral (Monorail Line) - 0.58 km
-Kuala Lumpur (KTM Komuter Lines) - 0.60 km
-Muzium Negara (MRT Lines) - 0.68 km
-KL Sentral (KTM Komuter Lines) - 0.73 km
-        </description>
-            <Point id="64">
-                <coordinates>101.6929112,3.1341567,0.0</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="67">
-            <name>Condominium</name>
-            <description>
-        Property Type: Condominium
-        Price per Sq.Ft: 152.77
-        Top 5 Nearest Transit Stations:
-        Sri Damansara Timur (MRT Lines) - 0.26 km
-Kepong (KTM Komuter Lines) - 1.25 km
-Metro Prima (MRT Lines) - 1.37 km
-Sri Damansara Sentral (MRT Lines) - 1.53 km
-Kepong Baru (MRT Lines) - 2.16 km
-        </description>
-            <Point id="66">
-                <coordinates>101.6288295,3.2101211,0.0</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="69">
-            <name>Apartment</name>
-            <description>
-        Property Type: Apartment
-        Price per Sq.Ft: 68.34
-        Top 5 Nearest Transit Stations:
-        Pelabuhan Klang (KTM Komuter Lines) - 3.63 km
-Jalan Kastam (KTM Komuter Lines) - 5.43 km
-Kampung Raja Uda (KTM Komuter Lines) - 6.49 km
-Teluk Gadong (KTM Komuter Lines) - 8.62 km
-Teluk Pulai (KTM Komuter Lines) - 9.70 km
-        </description>
-            <Point id="68">
-                <coordinates>101.3842137,2.9674687,0.0</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="71">
-            <name>Duplex Apartment</name>
-            <description>
-        Property Type: Duplex Apartment
-        Price per Sq.Ft: 80.54
-        Top 5 Nearest Transit Stations:
-        Putrajaya Sentral (MRT Lines) - 14.82 km
-Cryberjaya City Centre (MRT Lines) - 15.67 km
-Cyberjaya Utara (MRT Lines) - 16.87 km
-16 Sierra (MRT Lines) - 18.55 km
-Putra Permai (MRT Lines) - 20.54 km
-        </description>
-            <Point id="70">
-                <coordinates>101.6639835,2.7975543,0.0</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="73">
-            <name>Retail Lot [10 min to Lotus's Bukit Beruntung]</name>
-            <description>
-        Property Type: Retail Lot [10 min to Lotus's Bukit Beruntung]
-        Price per Sq.Ft: 77.95
-        Top 5 Nearest Transit Stations:
-        Serendah (KTM Komuter Lines) - 10.27 km
-Batang Kali (KTM Komuter Lines) - 10.63 km
-Rasa (KTM Komuter Lines) - 11.85 km
-Rawang (KTM Komuter Lines) - 13.61 km
-Kuala Kubu Bharu (KTM Komuter Lines) - 16.32 km
-        </description>
-            <Point id="72">
-                <coordinates>101.5467281,3.4389664,0.0</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="75">
             <name>Condominium</name>
             <description>
         Property Type: Condominium
@@ -589,11 +397,11 @@ Titiwangsa (MRT Lines) - 1.12 km
 Titiwangsa (LRT Lines) - 1.13 km
 Titiwangsa (Monorail Line) - 1.21 km
         </description>
-            <Point id="74">
+            <Point id="50">
                 <coordinates>101.6858722,3.177331,0.0</coordinates>
             </Point>
         </Placemark>
-        <Placemark id="77">
+        <Placemark id="53">
             <name>Condominium (Penthouse)</name>
             <description>
         Property Type: Condominium (Penthouse)
@@ -605,11 +413,11 @@ Alam Sutera (LRT Lines) - 1.68 km
 Jalan Templer (KTM Komuter Lines) - 1.83 km
 Petaling (KTM Komuter Lines) - 2.00 km
         </description>
-            <Point id="76">
+            <Point id="52">
                 <coordinates>101.663025,3.0682835,0.0</coordinates>
             </Point>
         </Placemark>
-        <Placemark id="79">
+        <Placemark id="55">
             <name>[ROI &gt; 8%; Prime location] Office Unit [Adjacent to Shah Alam Toll Plaza]</name>
             <description>
         Property Type: [ROI &gt; 8%; Prime location] Office Unit [Adjacent to Shah Alam Toll Plaza]
@@ -621,11 +429,11 @@ Ara Damansara (LRT Lines) - 5.64 km
 Subang Jaya (KTM Komuter Lines) - 6.02 km
 Subang Jaya (LRT Lines) - 6.06 km
         </description>
-            <Point id="78">
+            <Point id="54">
                 <coordinates>101.5358698,3.1015884,0.0</coordinates>
             </Point>
         </Placemark>
-        <Placemark id="81">
+        <Placemark id="57">
             <name>Condominium</name>
             <description>
         Property Type: Condominium
@@ -637,11 +445,11 @@ Sri Raya (MRT Lines) - 1.94 km
 Taman Mutiara (MRT Lines) - 2.93 km
 Bandar Tun Hussein Onn (MRT Lines) - 3.23 km
         </description>
-            <Point id="80">
+            <Point id="56">
                 <coordinates>101.7588355,3.0726512,0.0</coordinates>
             </Point>
         </Placemark>
-        <Placemark id="83">
+        <Placemark id="59">
             <name>[ROI &gt; 7%; Linked to IOI Mall Damansara] Service Apartment [Walking distance to Surian MRT Station]</name>
             <description>
         Property Type: [ROI &gt; 7%; Linked to IOI Mall Damansara] Service Apartment [Walking distance to Surian MRT Station]
@@ -653,11 +461,11 @@ Mutiara Damansara (MRT Lines) - 1.86 km
 Bandar Utama (MRT Lines) - 2.87 km
 Kwasa Damansara (MRT Lines) - 3.84 km
         </description>
-            <Point id="82">
+            <Point id="58">
                 <coordinates>101.5930935,3.1491875,0.0</coordinates>
             </Point>
         </Placemark>
-        <Placemark id="85">
+        <Placemark id="61">
             <name>[Dual Key; Completed in 2021] Service Apartment [Located behind Mydin Wholesale Hypermarket Semenyih]</name>
             <description>
         Property Type: [Dual Key; Completed in 2021] Service Apartment [Located behind Mydin Wholesale Hypermarket Semenyih]
@@ -669,11 +477,11 @@ Sungai Jernih (MRT Lines) - 5.25 km
 Bukit Dukung (MRT Lines) - 8.10 km
 Batu 11 Cheras (MRT Lines) - 9.18 km
         </description>
-            <Point id="84">
+            <Point id="60">
                 <coordinates>101.8239133,2.9757839,0.0</coordinates>
             </Point>
         </Placemark>
-        <Placemark id="87">
+        <Placemark id="63">
             <name>[ROI up to 7%] Apartment [Prime location directly adjacent to Penchala Toll Plaza]</name>
             <description>
         Property Type: [ROI up to 7%] Apartment [Prime location directly adjacent to Penchala Toll Plaza]
@@ -685,11 +493,11 @@ Mutiara Damansara (MRT Lines) - 2.64 km
 Bandar Utama (MRT Lines) - 3.36 km
 Kepong (KTM Komuter Lines) - 3.54 km
         </description>
-            <Point id="86">
+            <Point id="62">
                 <coordinates>101.6184905,3.1770784,0.0</coordinates>
             </Point>
         </Placemark>
-        <Placemark id="89">
+        <Placemark id="65">
             <name>[4 min to Super Seven Semenyih] Apartment [8 min to Econsave Semenyih &amp; Pasaraya besar CLC]</name>
             <description>
         Property Type: [4 min to Super Seven Semenyih] Apartment [8 min to Econsave Semenyih &amp; Pasaraya besar CLC]
@@ -701,11 +509,11 @@ Sungai Jernih (MRT Lines) - 8.70 km
 Bukit Dukung (MRT Lines) - 11.51 km
 Batu 11 Cheras (MRT Lines) - 12.49 km
         </description>
-            <Point id="88">
+            <Point id="64">
                 <coordinates>101.8499351,2.9587625,0.0</coordinates>
             </Point>
         </Placemark>
-        <Placemark id="91">
+        <Placemark id="67">
             <name>[ROI &gt; 6%] Service Apartment [Next to the main road - Jalan Jelatek]</name>
             <description>
         Property Type: [ROI &gt; 6%] Service Apartment [Next to the main road - Jalan Jelatek]
@@ -717,11 +525,11 @@ Setiawangsa (LRT Lines) - 1.72 km
 Jelatek (LRT Lines) - 2.66 km
 Dato Keramat (LRT Lines) - 2.92 km
         </description>
-            <Point id="90">
+            <Point id="66">
                 <coordinates>101.7347617,3.1912905,0.0</coordinates>
             </Point>
         </Placemark>
-        <Placemark id="93">
+        <Placemark id="69">
             <name>Condominium</name>
             <description>
         Property Type: Condominium
@@ -733,11 +541,11 @@ Wangsa Maju (LRT Lines) - 2.10 km
 Jelatek (LRT Lines) - 2.24 km
 Dato Keramat (LRT Lines) - 2.54 km
         </description>
-            <Point id="92">
+            <Point id="68">
                 <coordinates>101.7369197,3.1874494,0.0</coordinates>
             </Point>
         </Placemark>
-        <Placemark id="95">
+        <Placemark id="71">
             <name>Flat</name>
             <description>
         Property Type: Flat
@@ -749,11 +557,11 @@ Serendah (KTM Komuter Lines) - 8.98 km
 Sungai Buloh (MRT Lines) - 10.26 km
 Sungai Buloh (KTM Komuter Lines) - 10.31 km
         </description>
-            <Point id="94">
+            <Point id="70">
                 <coordinates>101.5890116,3.298929,0.0</coordinates>
             </Point>
         </Placemark>
-        <Placemark id="97">
+        <Placemark id="73">
             <name>Serviced Apartment</name>
             <description>
         Property Type: Serviced Apartment
@@ -765,8 +573,200 @@ Sungai Buloh (MRT Lines) - 1.74 km
 Sungai Buloh (KTM Komuter Lines) - 1.77 km
 Sri Damansara Barat (MRT Lines) - 1.91 km
         </description>
-            <Point id="96">
+            <Point id="72">
                 <coordinates>101.5915827,3.1942136,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="75">
+            <name>Apartment [Opposite SK Taman Bunga Raya 2]</name>
+            <description>
+        Property Type: Apartment [Opposite SK Taman Bunga Raya 2]
+        Price per Sq.Ft: 31.77
+        Top 5 Nearest Transit Stations:
+        Batang Kali (KTM Komuter Lines) - 9.71 km
+Serendah (KTM Komuter Lines) - 10.09 km
+Rasa (KTM Komuter Lines) - 10.89 km
+Rawang (KTM Komuter Lines) - 13.98 km
+Kuala Kubu Bharu (KTM Komuter Lines) - 15.40 km
+        </description>
+            <Point id="74">
+                <coordinates>101.5539362,3.4438265,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="77">
+            <name>Flat</name>
+            <description>
+        Property Type: Flat
+        Price per Sq.Ft: 71.90
+        Top 5 Nearest Transit Stations:
+        Pelabuhan Klang (KTM Komuter Lines) - 2.19 km
+Jalan Kastam (KTM Komuter Lines) - 3.37 km
+Kampung Raja Uda (KTM Komuter Lines) - 4.25 km
+Teluk Gadong (KTM Komuter Lines) - 6.24 km
+Teluk Pulai (KTM Komuter Lines) - 7.29 km
+        </description>
+            <Point id="76">
+                <coordinates>101.4013852,2.9826343,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="79">
+            <name>Retail Lot</name>
+            <description>
+        Property Type: Retail Lot
+        Price per Sq.Ft: 2014.08
+        Top 5 Nearest Transit Stations:
+        Chow Kit (Monorail Line) - 0.23 km
+PWTC (LRT Lines) - 0.39 km
+Sultan Ismail (LRT Lines) - 0.60 km
+Putra (KTM Komuter Lines) - 0.66 km
+Medan Tuanku (Monorail Line) - 0.75 km
+        </description>
+            <Point id="78">
+                <coordinates>101.6969811,3.1658575,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="81">
+            <name>Apartment</name>
+            <description>
+        Property Type: Apartment
+        Price per Sq.Ft: 78.11
+        Top 5 Nearest Transit Stations:
+        Serendah (KTM Komuter Lines) - 10.27 km
+Batang Kali (KTM Komuter Lines) - 10.63 km
+Rasa (KTM Komuter Lines) - 11.85 km
+Rawang (KTM Komuter Lines) - 13.61 km
+Kuala Kubu Bharu (KTM Komuter Lines) - 16.32 km
+        </description>
+            <Point id="80">
+                <coordinates>101.5467281,3.4389664,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="83">
+            <name>[Next to SK Damansara Damai 2] Shop Apartment [5 min to Damansara Damai MRT Station]</name>
+            <description>
+        Property Type: [Next to SK Damansara Damai 2] Shop Apartment [5 min to Damansara Damai MRT Station]
+        Price per Sq.Ft: 107.78
+        Top 5 Nearest Transit Stations:
+        Kampung Selamat (MRT Lines) - 0.83 km
+Damansara Damai (MRT Lines) - 1.06 km
+Sungai Buloh (KTM Komuter Lines) - 1.42 km
+Sungai Buloh (MRT Lines) - 1.43 km
+Kwasa Damansara (MRT Lines) - 2.36 km
+        </description>
+            <Point id="82">
+                <coordinates>101.5850605,3.1939551,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="85">
+            <name>Condominium [7 min to the upcoming LRT3 Station - Stadium Shah Alam]</name>
+            <description>
+        Property Type: Condominium [7 min to the upcoming LRT3 Station - Stadium Shah Alam]
+        Price per Sq.Ft: 334.43
+        Top 5 Nearest Transit Stations:
+        Batu Tiga (KTM Komuter Lines) - 1.17 km
+Shah Alam (KTM Komuter Lines) - 3.34 km
+SS18 (LRT Lines) - 3.62 km
+SS15 (LRT Lines) - 3.73 km
+Subang Jaya (KTM Komuter Lines) - 4.22 km
+        </description>
+            <Point id="84">
+                <coordinates>101.5533166,3.0676773,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="87">
+            <name>Service Apartment</name>
+            <description>
+        Property Type: Service Apartment
+        Price per Sq.Ft: 317.42
+        Top 5 Nearest Transit Stations:
+        Jelatek (LRT Lines) - 1.36 km
+Dato Keramat (LRT Lines) - 1.66 km
+Setiawangsa (LRT Lines) - 1.90 km
+Ampang (LRT Lines) - 2.01 km
+Damai (LRT Lines) - 2.46 km
+        </description>
+            <Point id="86">
+                <coordinates>101.7464883,3.1623279,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="89">
+            <name>Condominium</name>
+            <description>
+        Property Type: Condominium
+        Price per Sq.Ft: 271.13
+        Top 5 Nearest Transit Stations:
+        Tun Sambanthan (Monorail Line) - 0.37 km
+KL Sentral (Monorail Line) - 0.58 km
+Kuala Lumpur (KTM Komuter Lines) - 0.60 km
+Muzium Negara (MRT Lines) - 0.68 km
+KL Sentral (KTM Komuter Lines) - 0.73 km
+        </description>
+            <Point id="88">
+                <coordinates>101.6929112,3.1341567,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="91">
+            <name>Condominium</name>
+            <description>
+        Property Type: Condominium
+        Price per Sq.Ft: 152.77
+        Top 5 Nearest Transit Stations:
+        Sri Damansara Timur (MRT Lines) - 0.26 km
+Kepong (KTM Komuter Lines) - 1.25 km
+Metro Prima (MRT Lines) - 1.37 km
+Sri Damansara Sentral (MRT Lines) - 1.53 km
+Kepong Baru (MRT Lines) - 2.16 km
+        </description>
+            <Point id="90">
+                <coordinates>101.6288295,3.2101211,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="93">
+            <name>Apartment</name>
+            <description>
+        Property Type: Apartment
+        Price per Sq.Ft: 68.34
+        Top 5 Nearest Transit Stations:
+        Pelabuhan Klang (KTM Komuter Lines) - 3.63 km
+Jalan Kastam (KTM Komuter Lines) - 5.43 km
+Kampung Raja Uda (KTM Komuter Lines) - 6.49 km
+Teluk Gadong (KTM Komuter Lines) - 8.62 km
+Teluk Pulai (KTM Komuter Lines) - 9.70 km
+        </description>
+            <Point id="92">
+                <coordinates>101.3842137,2.9674687,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="95">
+            <name>Duplex Apartment</name>
+            <description>
+        Property Type: Duplex Apartment
+        Price per Sq.Ft: 80.54
+        Top 5 Nearest Transit Stations:
+        Putrajaya Sentral (MRT Lines) - 14.82 km
+Cryberjaya City Centre (MRT Lines) - 15.67 km
+Cyberjaya Utara (MRT Lines) - 16.87 km
+16 Sierra (MRT Lines) - 18.55 km
+Putra Permai (MRT Lines) - 20.54 km
+        </description>
+            <Point id="94">
+                <coordinates>101.6639835,2.7975543,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="97">
+            <name>Retail Lot [10 min to Lotus's Bukit Beruntung]</name>
+            <description>
+        Property Type: Retail Lot [10 min to Lotus's Bukit Beruntung]
+        Price per Sq.Ft: 77.95
+        Top 5 Nearest Transit Stations:
+        Serendah (KTM Komuter Lines) - 10.27 km
+Batang Kali (KTM Komuter Lines) - 10.63 km
+Rasa (KTM Komuter Lines) - 11.85 km
+Rawang (KTM Komuter Lines) - 13.61 km
+Kuala Kubu Bharu (KTM Komuter Lines) - 16.32 km
+        </description>
+            <Point id="96">
+                <coordinates>101.5467281,3.4389664,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="99">
